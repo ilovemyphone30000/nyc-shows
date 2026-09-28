@@ -98,7 +98,7 @@ main { padding-block: 8px 80px; }
 .rows { min-width: 0; }
 
 .row {
-  display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: 4px 16px;
+  display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 4px 16px;
   padding: 14px 0 14px 18px; align-items: start; border-bottom: 1px dotted var(--grey1);
 }
 .rows .row:last-child { border-bottom: 0; }
@@ -264,7 +264,7 @@ function row(s, withVenue) {
     ? `<div class="support"><span class="label">Support</span><span class="acts">${s.support.map(esc).join("<i>·</i>")}</span></div>`
     : `<div class="support none"><span class="label">Support</span><span class="acts">None listed</span></div>`;
   return `<div class="row">
-    <div class="when label"><b>${day}</b><span>${dates.length > 1 ? dates.length + " nights" : d8(dates[0]).getDate()}</span></div>
+    <div class="when label"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
       <div class="head">${s.ticketUrl ? `<a href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : esc(s.headliner)}</div>
       ${support}
