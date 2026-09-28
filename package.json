@@ -1,0 +1,24 @@
+{
+  "name": "scout-nyc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilovemyphone30000/nyc-shows.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ilovemyphone30000/nyc-shows/issues"
+  },
+  "homepage": "https://github.com/ilovemyphone30000/nyc-shows#readme",
+  "devDependencies": {
+    "staticrypt": "^3.5.4"
+  }
+}

@@ -1,2 +1,8 @@
 __pycache__/
 .DS_Store
+clients_raw.json
+node_modules/
+.staticrypt-password
+plain/
+shows_merged.json
+artifact.html
