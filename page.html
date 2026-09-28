@@ -15,7 +15,7 @@
   --grey1: #d9d9d6;       /* Cool Grey 1 */
   --muted: #6f7173;       /* Cool Grey 7, deepened for small text */
   --accent: #2e7040;      /* Forest Green */
-  --tint: #eef3ef;        /* Forest Green at ~8% on Digital White: client rows */
+  --tint: #e2ece4;        /* Forest Green at ~14% on Digital White: client rows */
   --sans: "Gotham", "Montserrat", "Helvetica Neue", Arial, sans-serif;
   --serif: "Times New Roman", "Tinos", Times, serif;
   color-scheme: light;
@@ -72,7 +72,8 @@ button { font: inherit; color: inherit; }
 .toggle:not([aria-pressed="true"]):hover { background: var(--panel); }
 .compact-btn { margin-left: auto; background: none; border: 0; padding: 10px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
 .compact-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
-.compact-btn:hover, .compact-btn[aria-pressed="true"] { color: var(--ink); }
+.compact-btn { color: var(--ink); border-bottom: 1px solid var(--grey4) !important; padding: 4px 0 !important; }
+.compact-btn:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
 .tab.saved { padding: 10px 0; background: none; color: var(--muted); border-bottom: 1px solid transparent; }
 .tab.saved[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .tab.saved:hover { color: var(--accent); }
@@ -132,7 +133,9 @@ main { padding-block: 8px 80px; }
 .save[aria-pressed="true"] svg { fill: currentColor; }
 .save:hover { color: var(--accent); }
 
-.row.ours { background: var(--tint); box-shadow: inset 3px 0 0 var(--accent); padding-left: 16px; padding-right: 12px; }
+.row.ours { background: var(--tint); box-shadow: inset 4px 0 0 var(--accent), inset 0 0 0 1px var(--accent); padding-left: 16px; padding-right: 12px; border-bottom-color: transparent; }
+.row.ours + .row.ours { margin-top: 3px; }
+.row.ours .head { font-weight: 600; }
 .list .row.ours { padding-left: 16px; }
 .mine { color: var(--accent); }
 .head a.mine { border-color: var(--accent); }
@@ -154,6 +157,7 @@ body.compact { font-size: 12.5px; }
 .compact .row { grid-template-columns: 92px minmax(0, 1fr) 132px; padding: 5px 0 5px 12px; gap: 0 12px; align-items: center; border-bottom: 1px solid var(--grey1); }
 .compact .list .row, .compact .row.ours { padding-left: 10px; padding-right: 8px; }
 .compact .row:nth-child(even):not(.ours) { background: var(--panel); }
+.compact .row.ours + .row.ours { margin-top: 2px; }
 .compact .when { padding-top: 0; font-size: 9.5px; white-space: nowrap; }
 .compact .when b, .compact .when span { display: inline; margin-right: 4px; }
 .compact .bill { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 14px; align-items: baseline; }
@@ -212,7 +216,7 @@ body.compact { font-size: 12.5px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
-    <button class="compact-btn" id="compactBtn" aria-pressed="false" title="Show one line per show"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h12M2 6.5h12M2 9.5h12M2 12.5h12"/></svg>Compact view</button>
+    <button class="compact-btn" id="compactBtn"></button>
     <button class="tab saved" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
@@ -403,10 +407,16 @@ document.querySelector(".bar").addEventListener("click", e => {
   if (c.dataset.day) state.day = c.dataset.day;
   render();
 });
-let compact = !!store.get("compact", false);
-const applyCompact = () => { document.body.classList.toggle("compact", compact); document.getElementById("compactBtn").setAttribute("aria-pressed", compact); };
+// Compact is the default; the button offers whichever view you're not in.
+let compact = store.get("compact2", true) !== false;
+const applyCompact = () => {
+  document.body.classList.toggle("compact", compact);
+  document.getElementById("compactBtn").innerHTML = compact
+    ? '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12M2 5.5h8M2 10h12M2 12.5h8"/></svg>Expanded view'
+    : '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h12M2 6.5h12M2 9.5h12M2 12.5h12"/></svg>Compact view';
+};
 applyCompact();
-document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact", compact); applyCompact(); });
+document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact2", compact); applyCompact(); });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
