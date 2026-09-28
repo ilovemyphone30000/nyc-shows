@@ -70,7 +70,10 @@ button { font: inherit; color: inherit; }
 .toggle.team:not([aria-pressed="true"]):hover { background: var(--tint); }
 .toggle.team[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .toggle:not([aria-pressed="true"]):hover { background: var(--panel); }
-.tab.saved { margin-left: auto; padding: 10px 0; background: none; color: var(--muted); border-bottom: 1px solid transparent; }
+.compact-btn { margin-left: auto; background: none; border: 0; padding: 10px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
+.compact-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.compact-btn:hover, .compact-btn[aria-pressed="true"] { color: var(--ink); }
+.tab.saved { padding: 10px 0; background: none; color: var(--muted); border-bottom: 1px solid transparent; }
 .tab.saved[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .tab.saved:hover { color: var(--accent); }
 
@@ -142,6 +145,38 @@ main { padding-block: 8px 80px; }
 .foot p { max-width: 70ch; margin: 0 0 6px; }
 .credit { margin-top: 18px !important; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--grey7); }
 
+/* Compact view: one line per show, spreadsheet-style columns. */
+body.compact { font-size: 12.5px; }
+.compact .sect-head { padding-block: 18px 6px; }
+.compact .sect-head h2 { font-size: 18px; }
+.compact .venue-name { padding: 8px 12px 8px 0; }
+.compact .venue-name h3 { font-size: 16px; margin: 0 0 2px; }
+.compact .row { grid-template-columns: 92px minmax(0, 1fr) 132px; padding: 5px 0 5px 12px; gap: 0 12px; align-items: center; border-bottom: 1px solid var(--grey1); }
+.compact .list .row { padding-left: 0; }
+.compact .row.ours { padding-left: 10px; padding-right: 8px; }
+.compact .row:nth-child(even):not(.ours) { background: var(--panel); }
+.compact .when { padding-top: 0; font-size: 9.5px; white-space: nowrap; }
+.compact .when b, .compact .when span { display: inline; margin-right: 4px; }
+.compact .bill { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 14px; align-items: baseline; }
+.compact .rows .bill { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr); }
+.compact .bill > * { grid-row: 1; margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+.compact .head { grid-column: 1; font-size: 13px; }
+.compact .support { grid-column: 2; }
+.compact .support .acts i { margin: 0 3px; }
+.compact .support.none .acts { font-size: 11.5px; }
+.compact .agents-line { grid-column: 3; font-size: 12px; }
+.compact .agents-line .label { display: none; }
+.compact .at { grid-column: 4; font-size: 12.5px; }
+.compact .meta { padding-top: 0; gap: 10px; font-size: 11.5px; justify-content: flex-end; }
+.compact .save svg { width: 14px; height: 14px; }
+.agents-line:empty { display: none; }
+.compact .agents-line:empty { display: block; }
+@media (max-width: 720px) {
+  .compact .bill, .compact .rows .bill { grid-template-columns: 1fr; }
+  .compact .bill > * { grid-row: auto; grid-column: 1; white-space: normal; }
+  .compact .row { grid-template-columns: 52px minmax(0, 1fr); }
+  .compact .when b, .compact .when span { display: block; }
+}
 @media (max-width: 720px) {
   .venue { grid-template-columns: 1fr; }
   .venue-name { border-right: 0; border-bottom: 1px solid var(--grey1); padding: 16px 0 10px; }
@@ -178,6 +213,7 @@ main { padding-block: 8px 80px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
+    <button class="compact-btn" id="compactBtn" aria-pressed="false" title="Show one line per show"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h12M2 6.5h12M2 9.5h12M2 12.5h12"/></svg>Compact view</button>
     <button class="tab saved" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
@@ -284,21 +320,21 @@ function row(s, withVenue) {
   const mine = new Set(s.clients.map(c => c.artist.toLowerCase()));
   const name = a => mine.has(a.toLowerCase()) ? `<span class="mine">${esc(a)}</span>` : esc(a);
   const support = s.support.length
-    ? `<div class="support"><span class="acts">${s.support.map(name).join("<i>·</i>")}</span></div>`
+    ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(name).join("<i>·</i>")}</span></div>`
     : `<div class="support none"><span class="acts">No support listed</span></div>`;
   const agents = s.clients.length
-    ? `<div class="agents-line"><span class="label">Agents</span>${s.clients.map(c =>
+    ? `<div class="agents-line" title="${esc(agentsOf(s).join(", "))}"><span class="label">Agents</span>${s.clients.map(c =>
         (s.clients.length > 1 ? `<em>${esc(c.artist)}:</em> ` : "") + c.agents.map(esc).join(", ") +
         (c.service.length ? ` <span class="svc">(service: ${c.service.map(esc).join(", ")})</span>` : "")
       ).join("<em> · </em>")}</div>`
-    : "";
+    : `<div class="agents-line"></div>`;
   return `<div class="row${s.clients.length ? " ours" : ""}">
     <div class="when label"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
       <div class="head">${s.ticketUrl ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
       ${support}
       ${agents}
-      ${withVenue ? `<div class="at"><b>${esc(s.venue)}</b></div>` : ""}
+      ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
     <div class="meta">
       <span class="t">${s.time ? fmtTime(s.time) : ""}</span>
@@ -368,6 +404,10 @@ document.querySelector(".bar").addEventListener("click", e => {
   if (c.dataset.day) state.day = c.dataset.day;
   render();
 });
+let compact = !!store.get("compact", false);
+const applyCompact = () => { document.body.classList.toggle("compact", compact); document.getElementById("compactBtn").setAttribute("aria-pressed", compact); };
+applyCompact();
+document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact", compact); applyCompact(); });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
