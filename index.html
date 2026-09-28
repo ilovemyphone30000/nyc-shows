@@ -56,10 +56,19 @@ button { font: inherit; color: inherit; }
 
 /* tabs + filters */
 .tabs { border-top: 1px solid var(--grey1); }
-.tabs .wrap { display: flex; gap: 22px; padding-block: 14px 0; flex-wrap: wrap; }
-.tab { background: none; border: 0; padding: 0 0 10px; cursor: pointer; font-weight: 500; font-size: 13px; border-bottom: 1px solid transparent; color: var(--muted); }
-.tab[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--ink); }
-.tab:hover { color: var(--ink); }
+.tabs .wrap { display: flex; gap: 12px 20px; padding-block: 16px; flex-wrap: wrap; align-items: center; }
+.sortby { color: var(--grey7); }
+.seg { display: inline-flex; border: 1px solid var(--ink); }
+.tab {
+  background: var(--bg); border: 0; padding: 10px 22px; cursor: pointer;
+  font-weight: 500; font-size: 14px; color: var(--ink);
+}
+.seg .tab + .tab { border-left: 1px solid var(--ink); }
+.seg .tab[aria-selected="true"] { background: var(--ink); color: var(--bg); }
+.seg .tab:not([aria-selected="true"]):hover { background: var(--panel); }
+.tab.saved { margin-left: auto; padding: 10px 0; background: none; color: var(--muted); border-bottom: 1px solid transparent; }
+.tab.saved[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
+.tab.saved:hover { color: var(--accent); }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-block: 1px solid var(--grey1); }
 .bar .wrap { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding-block: 10px; }
@@ -130,7 +139,8 @@ main { padding-block: 8px 80px; }
   .search { max-width: none; }
 }
 @media (prefers-reduced-motion: no-preference) {
-  .chip, .tab, .save, }
+  .chip, .tab, .save, .head a { transition: color .12s, background-color .12s, border-color .12s; }
+}
 </style>
 
 <header class="mast">
@@ -149,9 +159,12 @@ main { padding-block: 8px 80px; }
 
 <nav class="tabs" aria-label="Views">
   <div class="wrap" role="tablist">
-    <button class="tab" role="tab" data-view="date">By date</button>
-    <button class="tab" role="tab" data-view="venue">By venue</button>
-    <button class="tab" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
+    <span class="label sortby">Sort by</span>
+    <span class="seg">
+      <button class="tab" role="tab" data-view="date">Date</button>
+      <button class="tab" role="tab" data-view="venue">Venue</button>
+    </span>
+    <button class="tab saved" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
 
