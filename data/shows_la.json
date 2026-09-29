@@ -558,9 +558,8 @@
    "id": "473497",
    "date": "2026-09-30",
    "time": "20:00",
-   "headliner": "Hey",
+   "headliner": "Hey, Nothing",
    "support": [
-    "Nothing",
     "The Man The Myth The Meatslab"
    ],
    "venue": "El Rey Theatre",
@@ -1093,8 +1092,7 @@
    "time": "20:00",
    "headliner": "DJ_Dave",
    "support": [
-    "Computer Art",
-    "LLC"
+    "Computer Art, LLC"
    ],
    "venue": "El Rey Theatre",
    "borough": null,
@@ -1411,8 +1409,7 @@
    "time": "19:00",
    "headliner": "Jawdropped",
    "support": [
-    "Fat",
-    "Evil Children"
+    "Fat, Evil Children"
    ],
    "venue": "The Echo",
    "borough": null,
@@ -2337,8 +2334,7 @@
    "headliner": "Apocalypsis",
    "support": [
     "The Burners",
-    "My Heart",
-    "Your Mind"
+    "My Heart, Your Mind"
    ],
    "venue": "The Smell",
    "borough": null,
@@ -3054,10 +3050,8 @@
    "id": "478367",
    "date": "2026-10-05",
    "time": "20:00",
-   "headliner": "Girlfriend",
-   "support": [
-    "Wife"
-   ],
+   "headliner": "Girlfriend, Wife",
+   "support": [],
    "venue": "Zebulon",
    "borough": null,
    "tier": null,

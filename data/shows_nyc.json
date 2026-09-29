@@ -1932,10 +1932,8 @@
    "id": "475714",
    "date": "2026-10-02",
    "time": "18:30",
-   "headliner": "The Reds",
-   "support": [
-    "Pinks and Purples"
-   ],
+   "headliner": "The Reds, Pinks and Purples",
+   "support": [],
    "venue": "Baby's All Right",
    "borough": "Brooklyn",
    "tier": "Small room",
@@ -2594,6 +2592,20 @@
    "pick": false
   },
   {
+   "id": "479721",
+   "date": "2026-10-02",
+   "time": "23:00",
+   "headliner": "The Rocky Horror Picture Show",
+   "support": [],
+   "venue": "Brooklyn Bowl",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "21+",
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://www.universe.com/events/rocky-horror-picture-show-screening-hosted-by-androgyny-tickets-TB3M71",
+   "pick": false
+  },
+  {
    "id": "473199",
    "date": "2026-10-02",
    "time": "23:00",
@@ -3202,6 +3214,25 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventbrite.com/e/kelsey-lu-tickets-1991104192238",
    "pick": true
+  },
+  {
+   "id": "479707",
+   "date": "2026-10-03",
+   "time": "20:00",
+   "headliner": "ESP",
+   "support": [
+    "Tiger Mafia",
+    "Cry",
+    "$quib",
+    "Negashi Armada"
+   ],
+   "venue": "Trans-Pecos",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.thetranspecos.com/",
+   "pick": false
   },
   {
    "id": "475942",
@@ -3899,6 +3930,25 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.eventim.us/event/leila-abdul-rauf-vaelastrasz-dahjyn-unfeeling/701951",
+   "pick": false
+  },
+  {
+   "id": "479706",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "headliner": "Guiding Light",
+   "support": [
+    "Jolana Star",
+    "Heartknit",
+    "Last Touch",
+    "Van Goth"
+   ],
+   "venue": "Trans-Pecos",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.thetranspecos.com/",
    "pick": false
   },
   {
