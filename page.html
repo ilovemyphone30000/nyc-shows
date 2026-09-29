@@ -148,37 +148,41 @@ main { padding-block: 8px 80px; }
 .foot p { max-width: 70ch; margin: 0 0 6px; }
 .credit { margin-top: 18px !important; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; color: var(--grey7); }
 
-/* Compact view: one line per show, spreadsheet-style columns. */
+/* Compact view: one line per show, spreadsheet-style columns. Click a row to open it (.open) back to full layout. */
+.compact .row:not(.open) { cursor: pointer; }
+.compact .row.open { font-size: 14px; box-shadow: inset 3px 0 0 var(--ink); background: var(--bg); }
+.compact .row.ours.open { box-shadow: inset 3px 0 0 var(--accent), inset 0 0 0 .5px var(--accent); background: var(--tint); }
+.compact .row:not(.open):hover { outline: 1px solid var(--grey4); outline-offset: -1px; }
 body.compact { font-size: 12.5px; }
 .compact .sect-head { padding-block: 18px 6px; }
 .compact .sect-head h2 { font-size: 18px; }
 .compact .venue-name { padding: 8px 12px 8px 0; }
 .compact .venue-name h3 { font-size: 16px; margin: 0 0 2px; }
-.compact .row { grid-template-columns: 92px minmax(0, 1fr) 132px; padding: 5px 0 5px 12px; gap: 0 12px; align-items: center; border-bottom: 1px solid var(--grey1); }
-.compact .list .row, .compact .row.ours { padding-left: 10px; padding-right: 8px; }
-.compact .row:nth-child(even):not(.ours) { background: var(--panel); }
+.compact .row:not(.open) { grid-template-columns: 92px minmax(0, 1fr) 132px; padding: 5px 0 5px 12px; gap: 0 12px; align-items: center; border-bottom: 1px solid var(--grey1); }
+.compact .list .row:not(.open), .compact .row.ours:not(.open) { padding-left: 10px; padding-right: 8px; }
+.compact .row:nth-child(even):not(.ours):not(.open) { background: var(--panel); }
 .compact .row.ours + .row.ours { margin-top: 2px; }
-.compact .when { padding-top: 0; font-size: 9.5px; white-space: nowrap; }
-.compact .when b, .compact .when span { display: inline; margin-right: 4px; }
-.compact .bill { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 14px; align-items: baseline; }
-.compact .rows .bill { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr); }
-.compact .bill > * { grid-row: 1; margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
-.compact .head { grid-column: 1; font-size: 13px; }
-.compact .support { grid-column: 2; }
-.compact .support .acts i { margin: 0 3px; }
-.compact .support.none .acts { font-size: 11.5px; }
-.compact .agents-line { grid-column: 3; font-size: 12px; }
-.compact .agents-line .label { display: none; }
-.compact .at { grid-column: 4; font-size: 12.5px; }
-.compact .meta { padding-top: 0; gap: 10px; font-size: 11.5px; justify-content: flex-end; }
-.compact .save svg { width: 14px; height: 14px; }
+.compact .row:not(.open) .when { padding-top: 0; font-size: 9.5px; white-space: nowrap; }
+.compact .row:not(.open) .when b, .compact .row:not(.open) .when span { display: inline; margin-right: 4px; }
+.compact .row:not(.open) .bill { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 14px; align-items: baseline; }
+.compact .rows .row:not(.open) .bill { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr); }
+.compact .row:not(.open) .bill > * { grid-row: 1; margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
+.compact .row:not(.open) .head { grid-column: 1; font-size: 13px; }
+.compact .row:not(.open) .support { grid-column: 2; }
+.compact .row:not(.open) .support .acts i { margin: 0 3px; }
+.compact .row:not(.open) .support.none .acts { font-size: 11.5px; }
+.compact .row:not(.open) .agents-line { grid-column: 3; font-size: 12px; }
+.compact .row:not(.open) .agents-line .label { display: none; }
+.compact .row:not(.open) .at { grid-column: 4; font-size: 12.5px; }
+.compact .row:not(.open) .meta { padding-top: 0; gap: 10px; font-size: 11.5px; justify-content: flex-end; }
+.compact .row:not(.open) .save svg { width: 14px; height: 14px; }
 .agents-line:empty { display: none; }
-.compact .agents-line:empty { display: block; }
+.compact .row:not(.open) .agents-line:empty { display: block; }
 @media (max-width: 720px) {
-  .compact .bill, .compact .rows .bill { grid-template-columns: 1fr; }
-  .compact .bill > * { grid-row: auto; grid-column: 1; white-space: normal; }
-  .compact .row { grid-template-columns: 52px minmax(0, 1fr); }
-  .compact .when b, .compact .when span { display: block; }
+  .compact .row:not(.open) .bill, .compact .rows .row:not(.open) .bill { grid-template-columns: 1fr; }
+  .compact .row:not(.open) .bill > * { grid-row: auto; grid-column: 1; white-space: normal; }
+  .compact .row:not(.open) { grid-template-columns: 52px minmax(0, 1fr); }
+  .compact .row:not(.open) .when b, .compact .row:not(.open) .when span { display: block; }
 }
 @media (max-width: 720px) {
   .venue { grid-template-columns: 1fr; }
@@ -233,7 +237,6 @@ body.compact { font-size: 12.5px; }
 
 <footer class="foot">
   <div class="wrap">
-    <p id="source"></p>
     <p>Hearts are saved in this browser only.</p>
     <p class="credit">Created by Jonah Bierman</p>
   </div>
@@ -272,10 +275,6 @@ let saved = new Set(store.get("saved", []));
 document.getElementById("checked").textContent = "Checked " + dow(DATA.checked) + " " + md(DATA.checked);
 document.getElementById("eyebrow").textContent = "New York City";
 document.getElementById("range").textContent = md(DATA.week[0]) + " – " + md(DATA.week[1]);
-document.getElementById("source").textContent =
-  "Listings checked " + md(DATA.checked) + ". Comedy, spoken word and out-of-state dates are left out. " +
-  "Runs with an identical bill on consecutive nights are folded into one row in the venue view. " +
-  "Green rows are THE·TEAM client shows, with their agents.";
 
 /* agents */
 const agentsOf = s => [...new Set(s.clients.flatMap(c => [...c.agents, ...c.service]))];
@@ -331,7 +330,7 @@ function row(s, withVenue) {
         (c.service.length ? ` <span class="svc">(service: ${c.service.map(esc).join(", ")})</span>` : "")
       ).join("<em> · </em>")}</div>`
     : `<div class="agents-line"></div>`;
-  return `<div class="row${s.clients.length ? " ours" : ""}">
+  return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}">
     <div class="when label"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
       <div class="head">${s.ticketUrl ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
@@ -420,7 +419,16 @@ document.getElementById("compactBtn").addEventListener("click", () => { compact 
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
+const openRows = new Set();  // rows opened out of the compact view, by show id
 document.getElementById("out").addEventListener("click", e => {
+  const r = e.target.closest(".row");
+  if (r && document.body.classList.contains("compact") && !e.target.closest("a, button")) {
+    const ids = r.dataset.ids.split(",");
+    const open = !r.classList.contains("open");
+    ids.forEach(id => open ? openRows.add(id) : openRows.delete(id));
+    r.classList.toggle("open", open);
+    return;
+  }
   const b = e.target.closest(".save"); if (!b) return;
   const ids = b.dataset.ids.split(",");
   const on = !ids.every(id => saved.has(id));
