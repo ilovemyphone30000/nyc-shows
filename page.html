@@ -134,6 +134,14 @@ main { padding-block: 8px 80px; }
 .meta .t { font-variant-numeric: tabular-nums; }
 .save { background: none; border: 0; cursor: pointer; padding: 2px; line-height: 0; color: var(--grey7); }
 .save svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.4; }
+.cal { background: none; border: 0; cursor: pointer; padding: 2px; line-height: 0; color: var(--grey7); }
+.cal svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.4; }
+.cal:hover { color: var(--accent); }
+/* Inside the Claude artifact viewer, file saves are limited to types that exclude .ics: hide calendar UI there. */
+.no-ics .cal, .no-ics .ics-btn { display: none !important; }
+.ics-btn { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--grey4); display: inline-flex; gap: 6px; align-items: center; }
+.ics-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
+.ics-btn:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .save[aria-pressed="true"] { color: var(--accent); }
 .save[aria-pressed="true"] svg { fill: currentColor; }
 .save:hover { color: var(--accent); }
@@ -176,7 +184,7 @@ body.compact { font-size: 12.5px; }
 .compact .row:not(.open) .support.none .acts { font-size: 11.5px; }
 .compact .row:not(.open) .at { grid-column: 3; font-size: 12.5px; }
 .compact .row:not(.open) .meta { padding-top: 0; gap: 10px; font-size: 11.5px; justify-content: flex-end; }
-.compact .row:not(.open) .save svg { width: 14px; height: 14px; }
+.compact .row:not(.open) .save svg, .compact .row:not(.open) .cal svg { width: 14px; height: 14px; }
 @media (max-width: 720px) {
   .compact .row:not(.open) .bill, .compact .rows .row:not(.open) .bill { grid-template-columns: 1fr; }
   .compact .row:not(.open) .bill > * { grid-row: auto; grid-column: 1; white-space: normal; }
@@ -220,6 +228,7 @@ body.compact { font-size: 12.5px; }
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
     <button class="compact-btn" id="compactBtn"></button>
+    <button class="ics-btn" id="icsBtn" title="Download the shows on screen as a calendar file"></button>
     <button class="tab saved" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
@@ -324,6 +333,60 @@ function foldRuns(list) {
   return out;
 }
 
+const CAL = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4M12 12.5v5M9.5 15h5"/></svg>';
+
+/* Calendar export (.ics). Times are the venue's local time, tagged with the city's zone. */
+const TZ = { nyc: "America/New_York", chi: "America/Chicago", la: "America/Los_Angeles" };
+const icsText = v => String(v).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
+// Fold at 75 bytes (not characters): accented names are multi-byte in UTF-8.
+const icsFold = line => {
+  const enc = new TextEncoder(), out = []; let cur = "", n = 0;
+  for (const ch of line) {
+    const w = enc.encode(ch).length;
+    if (n + w > (out.length ? 74 : 75)) { out.push(cur); cur = ""; n = 0; }
+    cur += ch; n += w;
+  }
+  out.push(cur);
+  return out.join("\r\n ");
+};
+function icsEvent(s, stamp) {
+  const day = s.date.replace(/-/g, "");
+  const lines = ["BEGIN:VEVENT", `UID:${s.id.replace(/[^\w:-]/g, "")}@nyc-shows`, `DTSTAMP:${stamp}`];
+  if (s.time) {
+    const [h, m] = s.time.split(":").map(Number);
+    const end = new Date(Date.UTC(2000, 0, 1, h + 3, m));  // assume a three-hour night
+    const endDay = h + 3 >= 24 ? d8(s.date) : null;
+    if (endDay) endDay.setDate(endDay.getDate() + 1);
+    const endDate = endDay ? `${endDay.getFullYear()}${String(endDay.getMonth() + 1).padStart(2, "0")}${String(endDay.getDate()).padStart(2, "0")}` : day;
+    lines.push(`DTSTART;TZID=${TZ[cityKey]}:${day}T${s.time.replace(":", "")}00`,
+               `DTEND;TZID=${TZ[cityKey]}:${endDate}T${String(end.getUTCHours()).padStart(2, "0")}${String(end.getUTCMinutes()).padStart(2, "0")}00`);
+  } else {
+    const next = d8(s.date); next.setDate(next.getDate() + 1);
+    lines.push(`DTSTART;VALUE=DATE:${day}`, `DTEND;VALUE=DATE:${next.getFullYear()}${String(next.getMonth() + 1).padStart(2, "0")}${String(next.getDate()).padStart(2, "0")}`);
+  }
+  const ours = s.clients.map(c => c.artist);
+  const desc = [s.support.length ? "With " + s.support.join(", ") : "", ours.length ? "THE·TEAM: " + ours.join(", ") : "", s.ticketUrl || ""].filter(Boolean).join("\n");
+  lines.push(`SUMMARY:${icsText(s.headliner + (s.support.length ? " + " + s.support.join(", ") : ""))}`,
+             `LOCATION:${icsText(s.venue + ", " + city.name)}`);
+  if (desc) lines.push(`DESCRIPTION:${icsText(desc)}`);
+  if (s.ticketUrl) lines.push(`URL:${s.ticketUrl}`);
+  lines.push("END:VEVENT");
+  return lines.map(icsFold).join("\r\n");
+}
+function downloadIcs(list, name) {
+  const now = new Date();
+  const stamp = now.toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const body = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//nyc-shows//Shows This Week//EN", "CALSCALE:GREGORIAN",
+    `X-WR-CALNAME:${icsText(name)}`, ...list.map(s => icsEvent(s, stamp)), "END:VCALENDAR"].join("\r\n") + "\r\n";
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([body], { type: "text/calendar;charset=utf-8" }));
+  a.download = name.replace(/[^\w .-]+/g, "").replace(/\s+/g, "-") + ".ics";
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
+let visible = [];  // the shows on screen, for the export button
+if (window.claude) document.body.classList.add("no-ics");
+
 const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>';
 
 function row(s, withVenue) {
@@ -346,6 +409,7 @@ function row(s, withVenue) {
     <div class="meta">
       <span class="t">${s.time ? fmtTime(s.time) : ""}</span>
       ${s.age ? `<span>${esc(s.age)}</span>` : ""}
+      <button class="cal" data-ids="${ids.join(",")}" aria-label="Add ${esc(s.headliner)} to your calendar" title="Add to calendar">${CAL}</button>
       <button class="save" data-ids="${ids.join(",")}" aria-pressed="${on}" aria-label="${on ? "Unsave" : "Save"} ${esc(s.headliner)}">${HEART}</button>
     </div>
   </div>`;
@@ -391,6 +455,9 @@ function render() {
   document.getElementById("savedN").textContent = saved.size;
 
   const list = shows.filter(matches);
+  visible = list;
+  document.getElementById("icsBtn").innerHTML = `${CAL}Add ${list.length} to calendar`;
+  document.getElementById("icsBtn").disabled = !list.length;
   const nv = new Set(list.map(s => s.venue)).size;
   document.getElementById("count").textContent = list.length + " shows · " + nv + " venues";
 
@@ -423,6 +490,11 @@ const applyCompact = () => {
 };
 applyCompact();
 document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact2", compact); applyCompact(); });
+document.getElementById("icsBtn").addEventListener("click", () => {
+  if (!visible.length) return;
+  const label = state.view === "saved" ? "Saved shows" : state.ours ? "THE·TEAM shows" : "Shows";
+  downloadIcs(visible, `${label} ${city.name} ${state.day === "all" ? md(DATA.week[0]) + "-" + md(DATA.week[1]) : md(state.day)}`);
+});
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
@@ -434,6 +506,13 @@ document.getElementById("out").addEventListener("click", e => {
     const open = !r.classList.contains("open");
     ids.forEach(id => open ? openRows.add(id) : openRows.delete(id));
     r.classList.toggle("open", open);
+    return;
+  }
+  const c = e.target.closest(".cal");
+  if (c) {
+    const s = shows.find(x => x.id === c.dataset.ids.split(",")[0]);
+    const all = shows.filter(x => c.dataset.ids.split(",").includes(x.id));  // a folded run exports every night
+    downloadIcs(all, `${s.headliner} ${md(s.date)}`);
     return;
   }
   const b = e.target.closest(".save"); if (!b) return;
