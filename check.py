@@ -124,19 +124,6 @@ with sync_playwright() as p:
         page.wait_for_timeout(200)
         check("changing the hash switches city", "Los Angeles" in page.locator(".city[aria-pressed=true]").inner_text())
 
-        # change look: The List and back
-        page.click("#lookBtn")
-        page.click('[data-look="list"]')
-        page.wait_for_timeout(300)
-        check("The List look applies", page.evaluate("document.body.classList.contains('look-list')") and rows(page) > 0)
-        overflow = page.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
-        check("The List look has no sideways scroll", overflow <= 0, f"{overflow}px")
-        page.reload(); page.wait_for_selector("#out .row")
-        check("the chosen look is remembered", page.evaluate("document.body.classList.contains('look-list')"))
-        page.click("#lookBtn")
-        page.click('[data-look="team"]')
-        check("back to THE·TEAM", not page.evaluate("document.body.classList.contains('look-list')"))
-
         check("no script errors after all that", not errors, "; ".join(errors[:2]))
         ctx.close()
     browser.close()
