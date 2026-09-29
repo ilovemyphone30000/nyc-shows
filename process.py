@@ -24,7 +24,8 @@ NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park
 # Comedy, musical comedy and spoken word that share music calendars.
 DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
              "olivia harrison",  # in conversation with Martin Scorsese at BAM
-             "comedy bang! bang! live!"}
+             "comedy bang! bang! live!",
+             "the rocky horror picture show"}  # a screening with a shadow cast
 
 # Chicago and LA: OMR's own regions, minus what is plainly out of town or not music.
 CITY = {
