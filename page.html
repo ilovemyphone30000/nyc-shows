@@ -164,6 +164,7 @@ body.compact { font-size: 12.5px; }
 .compact .row.ours + .row.ours { margin-top: 2px; }
 .compact .row:not(.open) .when { padding-top: 0; font-size: 9.5px; white-space: nowrap; }
 .compact .row:not(.open) .when b, .compact .row:not(.open) .when span { display: inline; margin-right: 4px; }
+.compact .row:not(.open) .when.multi b, .compact .row:not(.open) .when.multi span { display: block; margin-right: 0; line-height: 1.35; }  /* runs: days over dates, so the label fits its column */
 .compact .row:not(.open) .bill { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 14px; align-items: baseline; }
 .compact .rows .row:not(.open) .bill { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr); }
 .compact .row:not(.open) .bill > * { grid-row: 1; margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
@@ -331,7 +332,7 @@ function row(s, withVenue) {
       ).join("<em> · </em>")}</div>`
     : `<div class="agents-line"></div>`;
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}">
-    <div class="when label"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
+    <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
       <div class="head">${s.ticketUrl ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
       ${support}
