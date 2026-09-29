@@ -207,12 +207,95 @@ body.compact { font-size: 12.5px; }
 @media (prefers-reduced-motion: no-preference) {
   .chip, .tab, .toggle, .save, .head a { transition: color .12s, background-color .12s, border-color .12s; }
 }
+/* ---------- Look switcher (top bar) ---------- */
+.mast-right { display: flex; align-items: center; gap: 16px; }
+.look { position: relative; }
+.look-btn { background: none; border: 0; padding: 0; cursor: pointer; color: var(--muted); border-bottom: 1px solid var(--grey4); }
+.look-btn:hover { color: var(--accent); border-color: var(--accent); }
+.look-menu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 20; background: var(--bg); border: 1px solid var(--ink); min-width: 150px; padding: 4px 0; }
+.look-menu button { display: block; width: 100%; text-align: left; background: none; border: 0; padding: 7px 12px; cursor: pointer; font-size: 13px; color: var(--ink); }
+.look-menu button:hover { background: var(--panel); }
+.look-menu button[aria-pressed="true"]::after { content: " ✓"; color: var(--accent); }
+.legend { display: none; }
+
+/* ---------- Look: The List (foopee.com/punk/the-list) - browser defaults, on purpose ---------- */
+body.look-list { --bg: #fff; --panel: #fff; --ink: #000; --grey1: #fff; --grey4: #000; --grey7: #000; --muted: #000; --tint: transparent;
+  font: 16px/normal Times, "Times New Roman", serif; letter-spacing: normal; background: #fff; color: #000; }
+.look-list .wrap { max-width: none; padding-inline: 8px; }
+.look-list .label, .look-list .chip, .look-list .chip small { font: inherit; text-transform: none; letter-spacing: normal; opacity: 1; }
+.look-list .dot, .look-list .compact-btn, .look-list .sortby, .look-list .sect-head .label, .look-list .count { display: none; }
+.look-list .mast, .look-list .tabs, .look-list .bar, .look-list .sect-head, .look-list .venue, .look-list .venue-name, .look-list .foot { border: 0; background: none; }
+.look-list .mast .wrap, .look-list .tabs .wrap, .look-list .bar .wrap { padding-block: 2px; }
+.look-list .bar { position: static; }
+.look-list .hero .wrap { padding-block: 4px 0; }
+.look-list .hero h1 { font: bold 2em Times, serif; transform: none; letter-spacing: normal; margin: .4em 0 .2em; }
+.look-list .hero h1 em { font-style: normal; color: #000; }
+.look-list .legend { display: block; font: 13px Courier, "Courier New", monospace; margin: .5em 0; white-space: pre; }
+.look-list a, .look-list .city, .look-list .tab, .look-list .toggle, .look-list .chip, .look-list .ics-btn, .look-list .look-btn {
+  font: inherit; font-size: 16px; color: #0000ee; background: none; border: 0; padding: 0; margin: 0; border-radius: 0;
+  text-decoration: underline; cursor: pointer; }
+.look-list .seg { border: 0; gap: 0 12px; }
+.look-list .seg .tab + .tab { border: 0; }
+.look-list .tabs .wrap, .look-list .bar .wrap, .look-list .chips, .look-list .cities { gap: 4px 12px; }
+.look-list .city[aria-pressed="true"], .look-list .tab[aria-selected="true"], .look-list .toggle[aria-pressed="true"], .look-list .chip[aria-pressed="true"] {
+  color: #000; font-weight: bold; text-decoration: none; background: none; }
+.look-list .city small { font: inherit; letter-spacing: normal; color: #000; margin-left: 4px; vertical-align: baseline; }
+.look-list .city small::before { content: "("; } .look-list .city small::after { content: ")"; }
+.look-list .new-count { background: none; color: #000; padding: 0; font-size: inherit; }
+.look-list .new-count::before { content: "("; } .look-list .new-count::after { content: ")"; }
+.look-list .search { all: revert; font-size: 13px; }
+.look-list .look-menu { border: 1px solid #000; }
+.look-list .look-menu button { font: 16px Times, serif; color: #0000ee; text-decoration: underline; }
+.look-list main { padding-block: 0 40px; }
+.look-list .sect-head { display: block; padding: 0; margin: 1em 0 .3em; }
+.look-list .sect-head h2 { font: bold 1.17em Times, serif; letter-spacing: normal; }
+.look-list .sect-head h2 em { font-style: normal; font-weight: normal; }
+.look-list .venue { display: block; }
+.look-list .venue-name { padding: 0; margin: 1em 0 .2em; }
+.look-list .venue-name h3 { font: bold 1.17em Times, serif; color: #000; margin: 0; letter-spacing: normal; }
+/* one show per line: bold venue, bands, age, time - The List's order */
+.look-list .row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 .3em; position: relative; margin: 0; padding: 0 0 0 40px !important;
+  border: 0; background: none !important; box-shadow: none !important; min-height: 0; }
+.look-list .row::before { content: "◦"; position: absolute; left: 26px; }
+.look-list .row + .row { margin-top: 0 !important; }
+.look-list .list .when { display: none; }
+.look-list .rows .when { display: inline; font: inherit; } .look-list .rows .when b, .look-list .rows .when span { display: inline; color: #000; font-weight: normal; margin-right: 4px; }
+.look-list .bill, .look-list .meta { display: contents; }
+.look-list .at { order: -1; margin: 0; font-size: 16px; }
+.look-list .at b { color: #0000ee; font-weight: bold; text-decoration: underline; }
+.look-list .head { font-size: 16px; font-weight: normal !important; letter-spacing: normal; }
+.look-list .head a { color: #0000ee; border: 0; text-decoration: underline; }
+.look-list .head:has(+ .support:not(.none))::after { content: ","; color: #000; }
+.look-list .support { margin: 0; gap: 0; }
+.look-list .support.none { display: none; }
+.look-list .support .acts { color: #000; }
+.look-list .support .acts i { display: none; }
+.look-list .act { color: #0000ee; text-decoration: underline; }
+.look-list .act:not(:first-child)::before { content: ", "; color: #000; display: inline-block; white-space: pre; text-decoration: none; }
+.look-list .meta { font-size: 16px; color: #000; white-space: normal; }
+.look-list .meta .t { order: 2; }
+.look-list .meta .t:empty { display: none; }
+.look-list .cal, .look-list .save { order: 3; color: #000; }
+.look-list .cal svg, .look-list .save svg { width: 12px; height: 12px; }
+.look-list .mine { background: none; color: #0000ee; padding: 0; font-weight: bold; border-radius: 0; }
+.look-list .mine::after { content: " *"; color: #000; font-weight: normal; }
+.look-list .head a.mine:hover { background: none; color: #551a8b; }
+.look-list .new-tag { border: 0; color: #000; font: inherit; font-size: 16px; letter-spacing: normal; text-transform: none; margin: 0; padding: 0; }
+.look-list .new-tag::before { content: "("; } .look-list .new-tag::after { content: ")"; }
+.look-list .empty { color: #000; }
+.look-list .foot { font-size: 13px; }
 </style>
 
 <header class="mast">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span class="label">Shows</span></div>
-    <div class="checked label"><span class="dot"></span><span id="checked"></span></div>
+    <div class="mast-right">
+      <div class="look">
+        <button class="look-btn label" id="lookBtn" aria-haspopup="true" aria-expanded="false">change look</button>
+        <div class="look-menu" id="lookMenu" hidden></div>
+      </div>
+      <div class="checked label"><span class="dot"></span><span id="checked"></span></div>
+    </div>
   </div>
 </header>
 
@@ -220,6 +303,7 @@ body.compact { font-size: 12.5px; }
   <div class="wrap">
     <nav class="cities" id="cities" aria-label="City"></nav>
     <h1><em id="range"></em></h1>
+    <div class="legend">*    THE·TEAM act          (new)  announced in the last 24 hours</div>
   </div>
 </section>
 
@@ -441,7 +525,7 @@ function row(s, withVenue) {
   const mine = new Set(s.clients.map(c => c.artist.toLowerCase()));
   const name = a => mine.has(a.toLowerCase()) ? `<span class="mine">${esc(a)}</span>` : esc(a);
   const support = s.support.length
-    ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(name).join("<i>·</i>")}</span></div>`
+    ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(a => `<span class="act">${name(a)}</span>`).join("<i>·</i>")}</span></div>`
     : `<div class="support none"><span class="acts">No support listed</span></div>`;
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
@@ -535,12 +619,32 @@ document.querySelector(".bar").addEventListener("click", e => {
 // Compact is the default; the button offers whichever view you're not in.
 let compact = store.get("compact2", true) !== false;
 const applyCompact = () => {
-  document.body.classList.toggle("compact", compact);
+  document.body.classList.toggle("compact", compact && look === "team");  // The List has its own one-line layout
   document.getElementById("compactBtn").innerHTML = compact
     ? '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12M2 5.5h8M2 10h12M2 12.5h8"/></svg>Expanded view'
     : '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h12M2 6.5h12M2 9.5h12M2 12.5h12"/></svg>Compact view';
 };
-applyCompact();
+
+/* Looks: the "change look" menu in the top bar. From the aesthetics library; THE·TEAM is the default. */
+const LOOKS = { team: "THE·TEAM", list: "The List" };
+let look = store.get("look", "team");
+if (!LOOKS[look]) look = "team";
+const lookBtn = document.getElementById("lookBtn"), lookMenu = document.getElementById("lookMenu");
+function applyLook() {
+  document.body.classList.toggle("look-list", look === "list");
+  lookMenu.innerHTML = Object.entries(LOOKS).map(([k, v]) => `<button data-look="${k}" aria-pressed="${k === look}">${v}</button>`).join("");
+  applyCompact();
+}
+lookBtn.addEventListener("click", () => {
+  lookMenu.hidden = !lookMenu.hidden; lookBtn.setAttribute("aria-expanded", !lookMenu.hidden);
+});
+lookMenu.addEventListener("click", e => {
+  const b = e.target.closest("[data-look]"); if (!b) return;
+  look = b.dataset.look; store.set("look", look); lookMenu.hidden = true; lookBtn.setAttribute("aria-expanded", false); applyLook();
+});
+document.addEventListener("click", e => { if (!e.target.closest(".look")) { lookMenu.hidden = true; lookBtn.setAttribute("aria-expanded", false); } });
+document.addEventListener("keydown", e => { if (e.key === "Escape") { lookMenu.hidden = true; lookBtn.setAttribute("aria-expanded", false); } });
+applyLook();
 document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact2", compact); applyCompact(); });
 document.getElementById("icsBtn").addEventListener("click", () => {
   const favs = favorites();
