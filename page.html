@@ -228,7 +228,7 @@ body.compact { font-size: 12.5px; }
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
     <button class="compact-btn" id="compactBtn"></button>
-    <button class="ics-btn" id="icsBtn" title="Download the shows on screen as a calendar file"></button>
+    <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
     <button class="tab saved" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
@@ -359,7 +359,7 @@ const icsFold = line => {
   out.push(cur);
   return out.join("\r\n ");
 };
-function icsEvent(s, stamp) {
+function icsEvent(s, stamp, c = city) {  // c: the show's city, for its time zone and name
   const day = s.date.replace(/-/g, "");
   const lines = ["BEGIN:VEVENT", `UID:${s.id.replace(/[^\w:-]/g, "")}@nyc-shows`, `DTSTAMP:${stamp}`];
   if (s.time) {
@@ -368,8 +368,8 @@ function icsEvent(s, stamp) {
     const endDay = h + 3 >= 24 ? d8(s.date) : null;
     if (endDay) endDay.setDate(endDay.getDate() + 1);
     const endDate = endDay ? `${endDay.getFullYear()}${String(endDay.getMonth() + 1).padStart(2, "0")}${String(endDay.getDate()).padStart(2, "0")}` : day;
-    lines.push(`DTSTART;TZID=${TZ[cityKey]}:${day}T${s.time.replace(":", "")}00`,
-               `DTEND;TZID=${TZ[cityKey]}:${endDate}T${String(end.getUTCHours()).padStart(2, "0")}${String(end.getUTCMinutes()).padStart(2, "0")}00`);
+    lines.push(`DTSTART;TZID=${TZ[c.key]}:${day}T${s.time.replace(":", "")}00`,
+               `DTEND;TZID=${TZ[c.key]}:${endDate}T${String(end.getUTCHours()).padStart(2, "0")}${String(end.getUTCMinutes()).padStart(2, "0")}00`);
   } else {
     const next = d8(s.date); next.setDate(next.getDate() + 1);
     lines.push(`DTSTART;VALUE=DATE:${day}`, `DTEND;VALUE=DATE:${next.getFullYear()}${String(next.getMonth() + 1).padStart(2, "0")}${String(next.getDate()).padStart(2, "0")}`);
@@ -377,24 +377,25 @@ function icsEvent(s, stamp) {
   const ours = s.clients.map(c => c.artist);
   const desc = [s.support.length ? "With " + s.support.join(", ") : "", ours.length ? "THE·TEAM: " + ours.join(", ") : "", s.ticketUrl || ""].filter(Boolean).join("\n");
   lines.push(`SUMMARY:${icsText(s.headliner + (s.support.length ? " + " + s.support.join(", ") : ""))}`,
-             `LOCATION:${icsText(s.venue + ", " + city.name)}`);
+             `LOCATION:${icsText(s.venue + ", " + c.name)}`);
   if (desc) lines.push(`DESCRIPTION:${icsText(desc)}`);
   if (s.ticketUrl) lines.push(`URL:${s.ticketUrl}`);
   lines.push("END:VEVENT");
   return lines.map(icsFold).join("\r\n");
 }
-function downloadIcs(list, name) {
+function downloadIcs(list, name) {  // list: shows, or [show, city] pairs
   const now = new Date();
   const stamp = now.toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
   const body = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//nyc-shows//Shows This Week//EN", "CALSCALE:GREGORIAN",
-    `X-WR-CALNAME:${icsText(name)}`, ...list.map(s => icsEvent(s, stamp)), "END:VCALENDAR"].join("\r\n") + "\r\n";
+    `X-WR-CALNAME:${icsText(name)}`, ...list.map(x => Array.isArray(x) ? icsEvent(x[0], stamp, x[1]) : icsEvent(x, stamp)), "END:VCALENDAR"].join("\r\n") + "\r\n";
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([body], { type: "text/calendar;charset=utf-8" }));
   a.download = name.replace(/[^\w .-]+/g, "").replace(/\s+/g, "-") + ".ics";
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 1000);
 }
-let visible = [];  // the shows on screen, for the export button
+// Hearted shows in every city, within the window, as [show, city] pairs for the export button.
+const favorites = () => CITIES.flatMap(c => c.shows.filter(s => saved.has(s.id)).map(s => [s, c]));
 if (window.claude) document.body.classList.add("no-ics");
 
 const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>';
@@ -465,9 +466,9 @@ function render() {
   document.getElementById("savedN").textContent = saved.size;
 
   const list = shows.filter(matches);
-  visible = list;
-  document.getElementById("icsBtn").innerHTML = `${CAL}Add ${list.length} to calendar`;
-  document.getElementById("icsBtn").disabled = !list.length;
+  const favs = favorites().length;
+  document.getElementById("icsBtn").innerHTML = `${CAL}Add ${favs} favorite${favs === 1 ? "" : "s"} to calendar`;
+  document.getElementById("icsBtn").hidden = !favs;  // appears once something is hearted
   const nv = new Set(list.map(s => s.venue)).size;
   document.getElementById("count").textContent = list.length + " shows · " + nv + " venues";
 
@@ -501,9 +502,8 @@ const applyCompact = () => {
 applyCompact();
 document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact2", compact); applyCompact(); });
 document.getElementById("icsBtn").addEventListener("click", () => {
-  if (!visible.length) return;
-  const label = state.view === "saved" ? "Saved shows" : state.ours ? "THE·TEAM shows" : "Shows";
-  downloadIcs(visible, `${label} ${city.name} ${state.day === "all" ? md(FROM) + "-" + md(TO) : md(state.day)}`);
+  const favs = favorites();
+  if (favs.length) downloadIcs(favs, `Favorite shows ${md(FROM)}-${md(TO)}`);
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
