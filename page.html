@@ -137,12 +137,9 @@ main { padding-block: 8px 80px; }
 .row.ours + .row.ours { margin-top: 3px; }
 .row.ours .head { font-weight: 600; }
 .list .row.ours { padding-left: 16px; }
-.mine { color: var(--accent); }
-.head a.mine { border-color: var(--accent); }
-.agents-line { margin-top: 6px; font-size: 13.5px; color: var(--ink); display: flex; gap: 2px 8px; flex-wrap: wrap; align-items: baseline; }
-.agents-line .label { color: var(--accent); font-size: 10px; }
-.agents-line em { font-style: normal; color: var(--muted); }
-.agents-line .svc { color: var(--muted); }
+.mine { color: var(--bg); font-weight: 500; background: var(--accent); padding: 1px 5px; border-radius: 2px; }  /* a THE·TEAM act */
+.head a.mine { border-bottom: 0; }
+.head a.mine:hover { color: var(--bg); background: var(--ink); }
 .empty { padding: 48px 0; color: var(--muted); max-width: 52ch; }
 .foot { color: var(--muted); border-top: 1px solid var(--grey1); padding-block: 24px 40px; font-size: 13px; }
 .foot p { max-width: 70ch; margin: 0 0 6px; }
@@ -165,20 +162,16 @@ body.compact { font-size: 12.5px; }
 .compact .row:not(.open) .when { padding-top: 0; font-size: 9.5px; white-space: nowrap; }
 .compact .row:not(.open) .when b, .compact .row:not(.open) .when span { display: inline; margin-right: 4px; }
 .compact .row:not(.open) .when.multi b, .compact .row:not(.open) .when.multi span { display: block; margin-right: 0; line-height: 1.35; }  /* runs: days over dates, so the label fits its column */
-.compact .row:not(.open) .bill { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.5fr) minmax(0, 1.2fr) minmax(0, 1fr); gap: 0 14px; align-items: baseline; }
-.compact .rows .row:not(.open) .bill { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr); }
+.compact .row:not(.open) .bill { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) minmax(0, 1.1fr); gap: 0 14px; align-items: baseline; }
+.compact .rows .row:not(.open) .bill { grid-template-columns: minmax(0, 1.2fr) minmax(0, 2.2fr); }
 .compact .row:not(.open) .bill > * { grid-row: 1; margin: 0; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: block; }
 .compact .row:not(.open) .head { grid-column: 1; font-size: 13px; }
 .compact .row:not(.open) .support { grid-column: 2; }
 .compact .row:not(.open) .support .acts i { margin: 0 3px; }
 .compact .row:not(.open) .support.none .acts { font-size: 11.5px; }
-.compact .row:not(.open) .agents-line { grid-column: 3; font-size: 12px; }
-.compact .row:not(.open) .agents-line .label { display: none; }
-.compact .row:not(.open) .at { grid-column: 4; font-size: 12.5px; }
+.compact .row:not(.open) .at { grid-column: 3; font-size: 12.5px; }
 .compact .row:not(.open) .meta { padding-top: 0; gap: 10px; font-size: 11.5px; justify-content: flex-end; }
 .compact .row:not(.open) .save svg { width: 14px; height: 14px; }
-.agents-line:empty { display: none; }
-.compact .row:not(.open) .agents-line:empty { display: block; }
 @media (max-width: 720px) {
   .compact .row:not(.open) .bill, .compact .rows .row:not(.open) .bill { grid-template-columns: 1fr; }
   .compact .row:not(.open) .bill > * { grid-row: auto; grid-column: 1; white-space: normal; }
@@ -277,8 +270,6 @@ document.getElementById("checked").textContent = "Checked " + dow(DATA.checked) 
 document.getElementById("eyebrow").textContent = "New York City";
 document.getElementById("range").textContent = md(DATA.week[0]) + " – " + md(DATA.week[1]);
 
-/* agents */
-const agentsOf = s => [...new Set(s.clients.flatMap(c => [...c.agents, ...c.service]))];
 
 
 /* chips */
@@ -295,7 +286,7 @@ function matches(s) {
   if (state.ours && !s.clients.length) return false;
   if (state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
-    const hay = norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" "));
+    const hay = norm([s.headliner, ...s.support, s.venue].join(" "));
     if (!norm(state.q).split(/\s+/).every(w => hay.includes(w))) return false;
   }
   return true;
@@ -325,18 +316,11 @@ function row(s, withVenue) {
   const support = s.support.length
     ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(name).join("<i>·</i>")}</span></div>`
     : `<div class="support none"><span class="acts">No support listed</span></div>`;
-  const agents = s.clients.length
-    ? `<div class="agents-line" title="${esc(agentsOf(s).join(", "))}"><span class="label">Agents</span>${s.clients.map(c =>
-        (s.clients.length > 1 ? `<em>${esc(c.artist)}:</em> ` : "") + c.agents.map(esc).join(", ") +
-        (c.service.length ? ` <span class="svc">(service: ${c.service.map(esc).join(", ")})</span>` : "")
-      ).join("<em> · </em>")}</div>`
-    : `<div class="agents-line"></div>`;
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
       <div class="head">${s.ticketUrl ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
       ${support}
-      ${agents}
       ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
     <div class="meta">

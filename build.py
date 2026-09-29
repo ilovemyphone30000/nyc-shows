@@ -12,7 +12,10 @@ import json, os, subprocess
 
 page = open("page.html").read()
 src = "shows_merged.json" if os.path.exists("shows_merged.json") else "shows.json"
-data = json.dumps(json.load(open(src)), ensure_ascii=False, separators=(",", ":"))
+doc = json.load(open(src))
+for show in doc["shows"]:  # the page marks THE·TEAM acts; agent names never ship
+    show["clients"] = [{"artist": c["artist"]} for c in show.get("clients", [])]
+data = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
 a, b = "/*DATA*/", "/*END*/"
 i, j = page.index(a) + len(a), page.index(b)
 body = page[:i] + data.replace("</", "<\\/") + page[j:]
