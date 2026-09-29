@@ -23,12 +23,19 @@ EXTRACT = r"""() => {
     const inner=u.searchParams.get('u')||u.searchParams.get('url')||u.searchParams.get('murl');
     if(inner && /^https?:/.test(inner)) u=new URL(inner); return u.origin+u.pathname; }catch(e){ return null } }
   return [...document.querySelectorAll('.row.vevent')].map(r => {
+    // One link per band on OMR, so names with commas ("Hey, Nothing") survive. Any text
+    // outside a link is split on commas as a fallback.
     const bands = r.querySelector('.bands').cloneNode(true);
     bands.querySelectorAll('.recommended').forEach(e => e.remove());
+    const acts = [];
+    for (const n of bands.childNodes) {
+      if (n.nodeName === 'A') { const t = n.textContent.replace(/\s+/g,' ').trim(); if (t) acts.push(t); }
+      else acts.push(...n.textContent.replace(/\s+/g,' ').split(/\s*,\s*/).map(x => x.trim()).filter(Boolean));
+    }
     const t = r.querySelector('a.ticketLink');
     const info = r.querySelector('a.show-more-info')?.getAttribute('href') || '';
     return [info.match(/\/shows\/(\d+)/)?.[1], r.querySelector('.dtstart .value-title')?.title,
-      bands.textContent.replace(/\s+/g,' ').trim().split(/\s*,\s*/).filter(Boolean),
+      acts,
       r.querySelector('.venue .fn')?.textContent.trim(), [], r.querySelector('.age')?.textContent.trim() || null,
       t?.textContent.trim() || null, unwrap(t?.getAttribute('href')), r.querySelector('.recommended') ? 1 : 0];
   });
