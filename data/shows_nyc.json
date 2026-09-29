@@ -1,8 +1,8 @@
 {
- "checked": "2026-09-28",
+ "checked": "2026-09-29",
  "week": [
   "2026-09-28",
-  "2026-10-04"
+  "2026-10-06"
  ],
  "shows": [
   {
@@ -407,7 +407,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketweb.com/event/lrain-night-club-101-tickets/14235294",
-   "pick": false
+   "pick": true
   },
   {
    "id": "471573",
@@ -1485,6 +1485,23 @@
    "pick": false
   },
   {
+   "id": "479637",
+   "date": "2026-10-01",
+   "time": "19:00",
+   "headliner": "Mars Motel",
+   "support": [
+    "Whenwolves",
+    "Holly Overton"
+   ],
+   "venue": "Sleepwalk",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/eonod6-mars-motel-album-release-whenwolves-holly-overton-1st-oct-sleepwalk-new-york-city-tickets",
+   "pick": false
+  },
+  {
    "id": "477571",
    "date": "2026-10-01",
    "time": "19:00",
@@ -2163,20 +2180,6 @@
    "pick": false
   },
   {
-   "id": "472301",
-   "date": "2026-10-02",
-   "time": "19:00",
-   "headliner": "Ali",
-   "support": [],
-   "venue": "The Sultan Room",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/v3nopv-ali-2nd-oct-the-sultan-room-new-york-tickets",
-   "pick": false
-  },
-  {
    "id": "477104",
    "date": "2026-10-02",
    "time": "19:00",
@@ -2191,6 +2194,20 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/ryr35w-jill-mccracken-dakota-jones-the-womens-national-hockey-league-2nd-oct-the-sultan-room-rooftop-brooklyn-tickets",
+   "pick": false
+  },
+  {
+   "id": "472301",
+   "date": "2026-10-02",
+   "time": "19:00",
+   "headliner": "Ali",
+   "support": [],
+   "venue": "The Sultan Room",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/v3nopv-ali-2nd-oct-the-sultan-room-new-york-tickets",
    "pick": false
   },
   {
@@ -2277,6 +2294,23 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.nyphil.org/concerts-tickets/2627/yo-yo-ma",
    "pick": true
+  },
+  {
+   "id": "479628",
+   "date": "2026-10-02",
+   "time": "19:30",
+   "headliner": "Flake Avenue",
+   "support": [
+    "Home For The Day",
+    "The Hand Off"
+   ],
+   "venue": "Gold Sounds",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/q232qo-flake-avenue-home-for-the-day-the-hand-off-2nd-oct-gold-sounds-new-york-tickets",
+   "pick": false
   },
   {
    "id": "477448",
@@ -2478,6 +2512,23 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/event/00006518BAB74223",
+   "pick": false
+  },
+  {
+   "id": "479692",
+   "date": "2026-10-02",
+   "time": "22:00",
+   "headliner": "Fundido",
+   "support": [
+    "Emma Dufaux",
+    "Gianna"
+   ],
+   "venue": "Good Room",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://ra.co/events/2533505",
    "pick": false
   },
   {
@@ -2931,6 +2982,23 @@
    "pick": true
   },
   {
+   "id": "479631",
+   "date": "2026-10-03",
+   "time": "19:00",
+   "headliner": "Funeral Doors",
+   "support": [
+    "Umiris",
+    "OBOY!"
+   ],
+   "venue": "Purgatory",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/dkylro-funeral-doors-umiris-and-oboy-3rd-oct-purgatory-new-york-tickets",
+   "pick": false
+  },
+  {
    "id": "472538",
    "date": "2026-10-03",
    "time": "19:00",
@@ -3169,6 +3237,22 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/stanley-simmons-new-york-new-york-10-03-2026/event/000064EED74B7AE5",
+   "pick": false
+  },
+  {
+   "id": "479691",
+   "date": "2026-10-03",
+   "time": "22:00",
+   "headliner": "Jordan Nocturne",
+   "support": [
+    "Arvin T"
+   ],
+   "venue": "Good Room",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://ra.co/events/2540465",
    "pick": false
   },
   {
@@ -3678,6 +3762,462 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.eventim.us/event/prince-of-eden/699630",
+   "pick": false
+  },
+  {
+   "id": "478769",
+   "date": "2026-10-05",
+   "time": "18:00",
+   "headliner": "T.3",
+   "support": [],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/t3-new-york-new-york-10-05-2026/event/0000650DA9F70A77",
+   "pick": false
+  },
+  {
+   "id": "478073",
+   "date": "2026-10-05",
+   "time": "18:00",
+   "headliner": "Vacations (solo)",
+   "support": [],
+   "venue": "Rough Trade NYC",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/eon5dy-vacations-solo-performance-signing-5th-oct-rough-trade-below-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "478287",
+   "date": "2026-10-05",
+   "time": "18:00",
+   "headliner": "Krallice",
+   "support": [
+    "Veldune"
+   ],
+   "venue": "Saint Vitus",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/v3lwx6-krallice-veldune-5th-oct-saint-vitus-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "476855",
+   "date": "2026-10-05",
+   "time": "18:30",
+   "headliner": "Ella Boh",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/ella-boh/699803",
+   "pick": false
+  },
+  {
+   "id": "474399",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "headliner": "Asha Banks",
+   "support": [],
+   "venue": "Bowery Ballroom",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/asha-banks-something-inbetween-tour-new-york-new-york-10-05-2026/event/000064D1AB50143C",
+   "pick": false
+  },
+  {
+   "id": "475385",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "headliner": "Spacehog",
+   "support": [],
+   "venue": "Gramercy Theatre",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/spacehog-new-york-new-york-10-05-2026/event/000064EDDD8E869E",
+   "pick": false
+  },
+  {
+   "id": "471006",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "headliner": "Everything Everything",
+   "support": [
+    "Psymon Spine"
+   ],
+   "venue": "Irving Plaza",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/000064A8D3096B01",
+   "pick": false
+  },
+  {
+   "id": "476554",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "headliner": "Lia Menaker",
+   "support": [
+    "Addi McDaniel",
+    "Ari Weissberger"
+   ],
+   "venue": "Sleepwalk",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/ry8weq-lia-menaker-album-release-addi-mcdaniel-ari-weissberger-5th-oct-sleepwalk-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "478445",
+   "date": "2026-10-05",
+   "time": "19:00",
+   "headliner": "Leila Abdul-Rauf",
+   "support": [
+    "Vaelastrasz",
+    "Dahjyn",
+    "Unfeeling"
+   ],
+   "venue": "TV Eye",
+   "borough": "Queens",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/leila-abdul-rauf-vaelastrasz-dahjyn-unfeeling/701951",
+   "pick": false
+  },
+  {
+   "id": "476607",
+   "date": "2026-10-05",
+   "time": "20:00",
+   "headliner": "Ruthie Foster",
+   "support": [],
+   "venue": "Cafe Wha?",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/ruthie-foster-bleecker-bell-tickets/14995453",
+   "pick": false
+  },
+  {
+   "id": "474411",
+   "date": "2026-10-05",
+   "time": "20:00",
+   "headliner": "beabadoobee",
+   "support": [
+    "Wisp"
+   ],
+   "venue": "Madison Square Garden",
+   "borough": "Manhattan",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/beabadoobee-the-powerlines-tour-new-york-new-york-10-05-2026/event/3B0064D1CF355790",
+   "pick": true
+  },
+  {
+   "id": "478733",
+   "date": "2026-10-05",
+   "time": "20:00",
+   "headliner": "Kurt Braunohler",
+   "support": [
+    "Wyatt Cenac",
+    "Jo Firestone",
+    "Roy Wood Jr.",
+    "Hari Kondabolu",
+    "Aparna Nancherla",
+    "Jean Grae",
+    "Sabrina Wu"
+   ],
+   "venue": "The Bell House",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/hot-butter-train-brooklyn-new-york-10-05-2026/event/300064A647EB9910",
+   "pick": false
+  },
+  {
+   "id": "478770",
+   "date": "2026-10-05",
+   "time": "21:00",
+   "headliner": "EmmaLee and the Dream",
+   "support": [
+    "Orlando"
+   ],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/emmalee-and-the-dream-orlando-new-york-new-york-10-05-2026/event/00006512FD4E5EC4",
+   "pick": false
+  },
+  {
+   "id": "479643",
+   "date": "2026-10-05",
+   "time": "21:30",
+   "headliner": "Say Now",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/say-now/706101",
+   "pick": false
+  },
+  {
+   "id": "475595",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "headliner": "The Royston Club",
+   "support": [
+    "White China"
+   ],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-royston-club-new-york-new-york-10-06-2026/event/000064CFB791D45A",
+   "pick": false
+  },
+  {
+   "id": "472358",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "headliner": "Knocked Loose",
+   "support": [
+    "Denzel Curry",
+    "Superheaven",
+    "Boundaries"
+   ],
+   "venue": "Pier 17",
+   "borough": "Manhattan",
+   "tier": "Seasonal",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1459422/knocked-loose-denzel-curry-tickets",
+   "pick": true
+  },
+  {
+   "id": "479008",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "headliner": "Ok Cowgirl",
+   "support": [],
+   "venue": "Rough Trade NYC",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/2wa8em-ok-cowgirl-live-signing-6th-oct-rough-trade-below-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "479006",
+   "date": "2026-10-06",
+   "time": "18:00",
+   "headliner": "Alabama Shakes",
+   "support": [],
+   "venue": "Venue TBA",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.thesohosessions.com/giveaway",
+   "pick": false
+  },
+  {
+   "id": "474427",
+   "date": "2026-10-06",
+   "time": "18:30",
+   "headliner": "Angelo De Augustine",
+   "support": [
+    "Erin Rae"
+   ],
+   "venue": "Le Poisson Rouge",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://kydlabs.com/e/EV1e2a0db0-846e-4021-a378-49040d45fe97",
+   "pick": true
+  },
+  {
+   "id": "468780",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "headliner": "Sub Urban",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/sub-urban/686444",
+   "pick": false
+  },
+  {
+   "id": "477093",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "headliner": "Olivia O'Brien",
+   "support": [],
+   "venue": "Irving Plaza",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/00006507398FE162",
+   "pick": false
+  },
+  {
+   "id": "478715",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "headliner": "Westside Cowboy",
+   "support": [],
+   "venue": "Music Hall of Williamsburg",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1607124/westside-cowboy-tickets",
+   "pick": true
+  },
+  {
+   "id": "477671",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "headliner": "Fox Indigo",
+   "support": [
+    "Camille De Beus",
+    "Hey Fever"
+   ],
+   "venue": "Sleepwalk",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/pyw3ny-fox-indigo-camille-de-beus-hey-fever-6th-oct-sleepwalk-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "477404",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "headliner": "Ryan Peter Murphy",
+   "support": [],
+   "venue": "TV Eye",
+   "borough": "Queens",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventim.us/event/ryan-peter-murphy/702630",
+   "pick": false
+  },
+  {
+   "id": "473706",
+   "date": "2026-10-06",
+   "time": "19:00",
+   "headliner": "The Schizophonics",
+   "support": [],
+   "venue": "The Broadway",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/the-schizophonics-burning-floor-tour-tickets-1991808367445",
+   "pick": false
+  },
+  {
+   "id": "476608",
+   "date": "2026-10-06",
+   "time": "20:00",
+   "headliner": "The Yawpers",
+   "support": [
+    "Shane Guerrette"
+   ],
+   "venue": "Cafe Wha?",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/the-yawpers-with-shane-guerrette-bleecker-bell-tickets/14244114",
+   "pick": false
+  },
+  {
+   "id": "478707",
+   "date": "2026-10-06",
+   "time": "20:00",
+   "headliner": "WILLOW",
+   "support": [],
+   "venue": "Sony Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/willow-new-york-new-york-10-06-2026/event/00006523BBB15C4D",
+   "pick": false
+  },
+  {
+   "id": "474134",
+   "date": "2026-10-06",
+   "time": "20:30",
+   "headliner": "Chelsea Wolfe",
+   "support": [],
+   "venue": "Town Hall",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/chelsea-wolfe-the-dark-world-tour-new-york-new-york-10-06-2026/event/030064D1DC0C15B5",
+   "pick": true
+  },
+  {
+   "id": "478771",
+   "date": "2026-10-06",
+   "time": "21:00",
+   "headliner": "Ryman Leon",
+   "support": [],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/ryman-leon-new-york-new-york-10-06-2026/event/00006504B049E30E",
+   "pick": false
+  },
+  {
+   "id": "475993",
+   "date": "2026-10-06",
+   "time": "21:30",
+   "headliner": "Cain Culto",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/cain-culto/698258",
    "pick": false
   }
  ]

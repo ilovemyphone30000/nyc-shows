@@ -4,10 +4,11 @@
 
 Raw row: [id, iso_datetime, [acts], venue, extra, age, ticket_label, ticket_url, omr_pick]
 """
-import json, re, sys
+import datetime, json, re, sys
 
-WEEK = ["2026-09-28", "2026-10-04"]
-CHECKED = {"nyc": "2026-09-28", "chi": "2026-09-29", "la": "2026-09-29"}
+# Yesterday through a week from today. The page narrows this again by the viewer's own date.
+TODAY = datetime.date.today()
+WEEK = [str(TODAY - datetime.timedelta(days=1)), str(TODAY + datetime.timedelta(days=7))]
 
 RENAME = {
     "(Le) Poisson Rouge": "Le Poisson Rouge", "TV EYE": "TV Eye", "ALPHAVILLE": "Alphaville",
@@ -16,12 +17,14 @@ RENAME = {
     "Footlight Underground at The Windjammer": "Footlight Underground",
 }
 OUT_OF_CITY = {"Bearsville Theater", "Starland Ballroom", "PNC Bank Arts Center", "Stone Pony",
-               "The Wellmont Theater", "Crossroads"}
+               "The Wellmont Theater", "Crossroads", "MetLife Stadium", "The Paramount"}
 NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park",
                 "Robert F. Wagner Jr. Park", "Co-Cathedral of Saint Joseph", "St. Francis Xavier Church",
                 "St. Bartholomew's Church", "New York Society for Ethical Culture"}
 # Comedy, musical comedy and spoken word that share music calendars.
-DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb"}
+DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
+             "olivia harrison",  # in conversation with Martin Scorsese at BAM
+             "comedy bang! bang! live!"}
 
 # Chicago and LA: OMR's own regions, minus what is plainly out of town or not music.
 CITY = {
@@ -38,14 +41,15 @@ BOROUGH = {
          "Gramercy Theatre", "Madison Square Garden", "Radio City Music Hall", "Terminal 5", "Pier 17",
          "Bowery Palace", "Central Park SummerStage", "Sony Hall", "Apollo Theater", "DROM",
          "David Geffen Hall", "Pianos", "Cooper Union", "Metropolitan Museum of Art", "The Greene Space",
-         "Silver Lining Lounge", "Pacha New York", "Berlin", "Racket"],
+         "Silver Lining Lounge", "Pacha New York", "Berlin", "Racket", "Rough Trade NYC", "Town Hall"],
     BK: ["Elsewhere", "Music Hall of Williamsburg", "Pioneer Works", "Public Records", "Sleepwalk",
          "Cassette", "Brooklyn Paramount", "Barclays Center", "The Bell House", "The Meadows",
          "The Sultan Room", "Union Pool", "Baby's All Right", "Warsaw", "Brooklyn Steel", "Brooklyn Bowl",
          "Gold Sounds", "Alphaville", "Main Drag Music", "Saint Vitus", "Industry City", "Park Slope",
          "The Broadway", "The Wood Shop", "Maker Park", "99 Scott", "Market Hotel", "National Sawdust",
          "House of Yes", "Littlefield", "The Gutter", "Hart Bar", "Mama Tried", "Maria Hernandez Park",
-         "Xanadu", "St. Ann & The Holy Trinity", "Roulette"],
+         "Xanadu", "St. Ann & The Holy Trinity", "Roulette", "Good Room", "Purgatory",
+         "BAM: Brooklyn Academy of Music"],
     QN: ["TV Eye", "Knockdown Center", "Trans-Pecos", "Stone Circle Theatre", "Flushing Meadows-Corona Park",
          "Forest Hills Stadium", "Bar Freda", "Footlight Underground"],
 }
@@ -81,7 +85,7 @@ for sid, dt, acts, venue, extra, age, tlabel, turl, pick in raw:
     if nyc and venue in NOT_BOOKABLE: dropped.append((venue, acts[0], "not a bookable room")); continue
     if acts[0].lower() in drop_acts: dropped.append((venue, acts[0], "comedy / spoken word")); continue
     if any("(screening)" in a.lower() for a in acts): dropped.append((venue, acts[0], "film screening")); continue
-    if nyc: assert venue in BORO_OF, venue
+    if nyc: assert venue in BORO_OF or venue == "Venue TBA", f"sort {venue} into a borough or OUT_OF_CITY"
     shows.append({
         "id": sid, "date": dt[:10], "time": dt[11:16], "headliner": acts[0], "support": acts[1:],
         "venue": venue, "borough": BORO_OF.get(venue) if nyc else None, "tier": TIER.get(venue) if nyc else None,
@@ -90,7 +94,7 @@ for sid, dt, acts, venue, extra, age, tlabel, turl, pick in raw:
     })
 
 shows.sort(key=lambda s: (s["date"], s["time"], s["venue"]))
-json.dump({"checked": CHECKED[city], "week": WEEK, "shows": shows},
+json.dump({"checked": str(TODAY), "week": WEEK, "shows": shows},
           open(f"data/shows_{city}.json", "w"), indent=1, ensure_ascii=False)
 print(city, len(raw), "raw ->", len(shows), "kept")
 for d in dropped: print("  dropped:", *d)

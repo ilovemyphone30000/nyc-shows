@@ -276,8 +276,18 @@ let cityKey = HASH[location.hash.slice(1)] || store.get("city", "nyc");
 if (!CITIES.some(c => c.key === cityKey)) cityKey = "nyc";
 let city = CITIES.find(c => c.key === cityKey);
 let shows = city.shows;
+// Window: yesterday through seven days ahead, by the viewer's clock, within the data we have.
+const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+const now = new Date(); now.setHours(0, 0, 0, 0);
+const winStart = new Date(now); winStart.setDate(now.getDate() - 1);
+const winEnd = new Date(now); winEnd.setDate(now.getDate() + 7);
+const FROM = iso(winStart) > DATA.week[0] ? iso(winStart) : DATA.week[0];
+const TO = iso(winEnd) < DATA.week[1] ? iso(winEnd) : DATA.week[1];
+const TODAY_ISO = iso(now);
+for (const c of CITIES) c.shows = c.shows.filter(s => s.date >= FROM && s.date <= TO);
+shows = city.shows;
 const weekDays = [];
-for (let d = d8(DATA.week[0]); d <= d8(DATA.week[1]); d.setDate(d.getDate() + 1)) {
+for (let d = d8(FROM); d <= d8(TO); d.setDate(d.getDate() + 1)) {
   weekDays.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"));
 }
 
@@ -297,7 +307,7 @@ function setCity(key) {
 document.getElementById("cities").addEventListener("click", e => {
   const b = e.target.closest(".city"); if (b && b.dataset.city !== cityKey) setCity(b.dataset.city);
 });
-document.getElementById("range").textContent = md(DATA.week[0]) + " – " + md(DATA.week[1]);
+document.getElementById("range").textContent = md(FROM) + " – " + md(TO);
 
 
 
@@ -438,7 +448,7 @@ function renderDates(list) {
   for (const d of weekDays) {
     const inD = list.filter(s => s.date === d).sort((a, b) => (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));  // no time (added from the agency list) sorts last
     if (!inD.length) continue;
-    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
+    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}${d === TODAY_ISO ? " <em>· Today</em>" : d < TODAY_ISO ? " <em>· Yesterday</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
       <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;
   }
   return html;
@@ -493,7 +503,7 @@ document.getElementById("compactBtn").addEventListener("click", () => { compact 
 document.getElementById("icsBtn").addEventListener("click", () => {
   if (!visible.length) return;
   const label = state.view === "saved" ? "Saved shows" : state.ours ? "THE·TEAM shows" : "Shows";
-  downloadIcs(visible, `${label} ${city.name} ${state.day === "all" ? md(DATA.week[0]) + "-" + md(DATA.week[1]) : md(state.day)}`);
+  downloadIcs(visible, `${label} ${city.name} ${state.day === "all" ? md(FROM) + "-" + md(TO) : md(state.day)}`);
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });

@@ -72,5 +72,10 @@ if __name__ == "__main__":
     rows = scrape(city, start, end)
     os.makedirs("data", exist_ok=True)
     out = f"data/omr_raw_{city}.json"
-    json.dump(rows, open(out, "w"), ensure_ascii=False)
-    print(f"{city}: {len(rows)} shows {start}..{end} -> {out}")
+    # OMR drops a day once it has passed, so keep earlier rows in range that this run
+    # no longer sees (yesterday's shows); fresh rows win for anything listed again.
+    fresh = {r[0] for r in rows}
+    kept = [r for r in (json.load(open(out)) if os.path.exists(out) else [])
+            if r[0] not in fresh and start <= r[1][:10] <= end]
+    json.dump(sorted(kept + rows, key=lambda r: r[1]), open(out, "w"), ensure_ascii=False)
+    print(f"{city}: {len(rows)} scraped + {len(kept)} kept from earlier, {start}..{end} -> {out}")
