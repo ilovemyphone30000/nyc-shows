@@ -4,7 +4,7 @@
 
 Raw row: [id, iso_datetime, [acts], venue, extra, age, ticket_label, ticket_url, omr_pick]
 """
-import datetime, json, re, sys
+import datetime, json, os, re, sys
 
 # Yesterday through a week from today. The page narrows this again by the viewer's own date.
 TODAY = datetime.date.today()
@@ -67,34 +67,56 @@ for v in ["Madison Square Garden", "Barclays Center", "Radio City Music Hall", "
           "Apollo Theater", "Kings Theatre", "Forest Hills Stadium", "Citi Field", "Yankee Stadium"]: TIER[v] = "Big room"
 TIER["Pier 17"] = "Seasonal"
 
-city = sys.argv[1]
-nyc = city == "nyc"
-cfg = CITY[city]
-rename = RENAME if nyc else cfg["rename"]
-out_of_town = OUT_OF_CITY if nyc else cfg["out"]
-drop_acts = DROP_ACTS if nyc else cfg["acts"]
+def clean(city, raw, window=None):
+    """Raw OMR rows -> (shows, dropped) under this city's rules. window: (from, to) dates, or None for all."""
+    nyc = city == "nyc"
+    cfg = CITY[city]
+    rename = RENAME if nyc else cfg["rename"]
+    out_of_town = OUT_OF_CITY if nyc else cfg["out"]
+    drop_acts = DROP_ACTS if nyc else cfg["acts"]
+    shows, dropped = [], []
+    for sid, dt, acts, venue, extra, age, tlabel, turl, pick in raw:
+        venue = rename.get(venue, venue)
+        acts = [re.sub(r",?\s*and more!?$", "", a, flags=re.I).strip() for a in acts]
+        acts = [a for a in acts if a and a.lower() not in ("and more!", "and more")]
+        if not acts: continue
+        if window and not window[0] <= dt[:10] <= window[1]: continue
+        if venue in out_of_town: dropped.append((venue, acts[0], "out of town")); continue
+        if nyc and venue in NOT_BOOKABLE: dropped.append((venue, acts[0], "not a bookable room")); continue
+        if acts[0].lower() in drop_acts: dropped.append((venue, acts[0], "comedy / spoken word")); continue
+        if any("(screening)" in a.lower() for a in acts): dropped.append((venue, acts[0], "film screening")); continue
+        shows.append({
+            "id": sid, "date": dt[:10], "time": dt[11:16], "headliner": acts[0], "support": acts[1:],
+            "venue": venue, "borough": BORO_OF.get(venue) if nyc else None, "tier": TIER.get(venue) if nyc else None,
+            "age": age, "ticketLabel": "RSVP" if tlabel == "RSVP" else "Tickets", "ticketUrl": turl,
+            "pick": bool(pick),
+        })
+    shows.sort(key=lambda s: (s["date"], s["time"], s["venue"]))
+    return shows, dropped
 
-raw = json.load(open(f"data/omr_raw_{city}.json"))
-shows, dropped = [], []
-for sid, dt, acts, venue, extra, age, tlabel, turl, pick in raw:
-    venue = rename.get(venue, venue)
-    acts = [re.sub(r",?\s*and more!?$", "", a, flags=re.I).strip() for a in acts]
-    acts = [a for a in acts if a and a.lower() not in ("and more!", "and more")]
-    if not WEEK[0] <= dt[:10] <= WEEK[1]: continue
-    if venue in out_of_town: dropped.append((venue, acts[0], "out of town")); continue
-    if nyc and venue in NOT_BOOKABLE: dropped.append((venue, acts[0], "not a bookable room")); continue
-    if acts[0].lower() in drop_acts: dropped.append((venue, acts[0], "comedy / spoken word")); continue
-    if any("(screening)" in a.lower() for a in acts): dropped.append((venue, acts[0], "film screening")); continue
-    if nyc: assert venue in BORO_OF or venue == "Venue TBA", f"sort {venue} into a borough or OUT_OF_CITY"
-    shows.append({
-        "id": sid, "date": dt[:10], "time": dt[11:16], "headliner": acts[0], "support": acts[1:],
-        "venue": venue, "borough": BORO_OF.get(venue) if nyc else None, "tier": TIER.get(venue) if nyc else None,
-        "age": age, "ticketLabel": "RSVP" if tlabel == "RSVP" else "Tickets", "ticketUrl": turl,
-        "pick": bool(pick),
-    })
 
-shows.sort(key=lambda s: (s["date"], s["time"], s["venue"]))
-json.dump({"checked": str(TODAY), "week": WEEK, "shows": shows},
-          open(f"data/shows_{city}.json", "w"), indent=1, ensure_ascii=False)
-print(city, len(raw), "raw ->", len(shows), "kept")
-for d in dropped: print("  dropped:", *d)
+def main(city):
+    nyc = city == "nyc"
+    raw = json.load(open(f"data/omr_raw_{city}.json"))
+    # Venues someone has already looked at. Anything else is kept but logged to
+    # data/unreviewed_venues.txt, since the daily run is unattended: the weekly review
+    # decides whether a new room is in town and hosts music (see the refresh-shows skill).
+    reviewed_all = json.load(open("data/venues_reviewed.json"))
+    reviewed = set(reviewed_all.get(city, [])) | (set(BORO_OF) if nyc else set())
+    shows, dropped = clean(city, raw, WEEK)
+    json.dump({"checked": str(TODAY), "week": WEEK, "shows": shows},
+              open(f"data/shows_{city}.json", "w"), indent=1, ensure_ascii=False)
+    print(city, len(raw), "raw ->", len(shows), "kept")
+    new = sorted({s["venue"] for s in shows} - reviewed)
+    log = "data/unreviewed_venues.txt"
+    kept = [l for l in (open(log).read().splitlines() if os.path.exists(log) else []) if not l.startswith(city + " | ")]
+    for v in new:
+        bills = [f'{s["date"][5:]} {s["headliner"]}' for s in shows if s["venue"] == v]
+        kept.append(f"{city} | {v} | {'; '.join(bills[:3])}")
+        print(f"  NEW VENUE: {v} ({'; '.join(bills[:3])})")
+    open(log, "w").write("\n".join(kept) + ("\n" if kept else ""))
+    for d in dropped: print("  dropped:", *d)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1])

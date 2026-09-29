@@ -3,8 +3,9 @@
     .venv/bin/python scrape.py nyc 2026-09-28 2026-10-04
     .venv/bin/python scrape.py chi 2026-09-28 2026-10-04
     .venv/bin/python scrape.py la  2026-09-28 2026-10-04
+    .venv/bin/python scrape.py nyc --announced          (the Just Announced list)
 
-Writes data/omr_raw_<city>.json as rows of
+Writes data/omr_raw_<city>.json (or data/announced_raw_<city>.json) as rows of
 [id, iso_datetime, [acts], venue, extra, age, ticket_label, ticket_url, omr_pick].
 
 House rules (from the handoff brief): one page, one at a time, with a pause between
@@ -34,14 +35,17 @@ EXTRACT = r"""() => {
 }"""
 
 
-def scrape(city, start, end, max_pages=15, pause=1.5):
+def scrape(city, start, end, max_pages=15, pause=1.5, path="/shows"):
+    """Listings on `path` dated start..end. For the date-ordered /shows list, stops once
+    past `end`; the Just Announced list is in announcement order, so it reads every page."""
     host = HOSTS[city]
+    by_date = path == "/shows"
     rows, seen = [], set()
     with sync_playwright() as p:
         browser = p.chromium.launch()
         page = browser.new_page()
         for n in range(1, max_pages + 1):
-            page.goto(f"https://{host}/shows?page={n}", wait_until="domcontentloaded")
+            page.goto(f"https://{host}{path}?page={n}", wait_until="domcontentloaded")
             try:  # listings render client-side; ads keep the network busy, so wait for rows
                 page.wait_for_selector(".row.vevent", timeout=20000)
             except Exception:
@@ -59,8 +63,8 @@ def scrape(city, start, end, max_pages=15, pause=1.5):
                 seen.add(r[0])
                 if start <= r[1][:10] <= end:
                     rows.append(r)
-            print(f"  page {n}: {len(got)} listings, through {got[-1][1][:10]}", file=sys.stderr)
-            if got[-1][1][:10] > end:
+            print(f"  {city} {path} page {n}: {len(got)} listings", file=sys.stderr)
+            if by_date and got[-1][1][:10] > end:
                 break
             time.sleep(pause)
         browser.close()
@@ -68,6 +72,15 @@ def scrape(city, start, end, max_pages=15, pause=1.5):
 
 
 if __name__ == "__main__":
+    if sys.argv[2:3] == ["--announced"]:
+        # Every show on the city's Just Announced list that hasn't happened yet.
+        city = sys.argv[1]
+        today = time.strftime("%Y-%m-%d")
+        rows = scrape(city, today, "9999-12-31", max_pages=10, path="/shows/just-announced")
+        out = f"data/announced_raw_{city}.json"
+        json.dump(rows, open(out, "w"), ensure_ascii=False)
+        print(f"{city}: {len(rows)} on Just Announced -> {out}")
+        sys.exit(0)
     city, start, end = sys.argv[1:4]
     rows = scrape(city, start, end)
     os.makedirs("data", exist_ok=True)

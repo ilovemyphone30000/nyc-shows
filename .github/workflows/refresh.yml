@@ -1,0 +1,71 @@
+# Daily refresh: scrape Oh My Rockness for NYC, Chicago and LA (yesterday through a week
+# ahead, plus each city's Just Announced list), merge THE·TEAM client shows, rebuild the
+# locked page, run the browser checks, and push. A bot-check page stops the scrape for
+# that city; it is never worked around.
+#
+# Secrets (repo Settings > Secrets and variables > Actions):
+#   STATICRYPT_PASSWORD  the page password
+#   CLIENTS_KEY          decrypts data/clients.enc (the key lives in .clients-key locally)
+name: Refresh listings
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 11:00 UTC = 7 AM New York, 4 AM LA
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+          npm ci
+
+      - name: Unlock client list and page password
+        env:
+          CLIENTS_KEY: ${{ secrets.CLIENTS_KEY }}
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD }}
+        run: |
+          test -n "$STATICRYPT_PASSWORD" || { echo "::error::STATICRYPT_PASSWORD secret is missing"; exit 1; }
+          printf '%s' "$STATICRYPT_PASSWORD" > .staticrypt-password
+          python decrypt_clients.py
+
+      - name: Scrape, build, check, publish
+        env:
+          TZ: America/New_York
+          PY: python
+        run: |
+          git config user.name "ilovemyphone30000"
+          git config user.email "327179323+ilovemyphone30000@users.noreply.github.com"
+          ./refresh.sh
+
+      - name: Report
+        if: always()
+        run: |
+          [ -s data/changes.md ] && cat data/changes.md >> "$GITHUB_STEP_SUMMARY"
+          if [ -s data/unreviewed_venues.txt ]; then
+            { echo "### Venues to review"; echo '```'; cat data/unreviewed_venues.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          fi
+          true

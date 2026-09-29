@@ -1,0 +1,78 @@
+---
+name: refresh-shows
+description: Refresh the Shows This Week site (NYC, Chicago, LA) — scrape, review new venues, load a new THE·TEAM client sheet, rebuild the locked page, run the browser checks, and publish. Use when asked to refresh, update or rebuild the shows site, add a client sheet, or do the weekly review.
+---
+
+# Refresh the shows site
+
+Project: `/Users/jonahisaac/Downloads/scout-nyc`. Live (password-locked) at
+https://ilovemyphone30000.github.io/nyc-shows/ from `main` of `ilovemyphone30000/nyc-shows`.
+GitHub Actions (`.github/workflows/refresh.yml`) already refreshes it every day at 7 AM
+New York time, so this skill is for the weekly review and for on-demand runs.
+
+## Rules that do not bend
+
+- **Agent names never leave this machine.** The page marks which acts are THE·TEAM's and
+  nothing more. `data/clients_raw_*.json` is gitignored; `data/clients.enc` is encrypted
+  and has the agent columns stripped. Before any push, `git grep --cached` for an agent
+  name from the sheet must come back empty.
+- **A bot-check page stops the scrape.** Never retry around it, change the user agent,
+  or add proxies. Record the gap and move on; the city keeps its last good data.
+- **Never request axs.com.** AXS ticket links are stored, never opened.
+- Commits use the repo's pseudonymous noreply identity. Never a real name or email.
+
+## 1. Pull and run
+
+```bash
+cd /Users/jonahisaac/Downloads/scout-nyc && git pull -q --rebase origin main
+./refresh.sh --no-push
+```
+
+`refresh.sh` scrapes the three cities in parallel (the week window plus each city's
+Just Announced list), then runs `process.py`, `clients.py` and `announce.py` per city,
+`changes.py`, `build.py`, and `check.py` (the browser checks; all must pass).
+
+## 2. Review new venues
+
+Read `data/unreviewed_venues.txt` (`city | venue | example bills`). For each venue decide:
+
+- **Out of town** (outside the five boroughs for NYC; far outside the metro for Chicago
+  and LA, e.g. Pappy & Harriet's): add to `OUT_OF_CITY` (NYC) or that city's `out` set
+  in `process.py`.
+- **Not music** (comedy, podcasts, talks, screenings): add the headliner, lowercased, to
+  `DROP_ACTS` (NYC) or the city's `acts` set.
+- **Fine**: for NYC add it to the right borough list in `BOROUGH`; for any city add it to
+  that city's list in `data/venues_reviewed.json`.
+
+Look venues up rather than guessing when unsure. Rerun `./refresh.sh --no-push` until
+`data/unreviewed_venues.txt` is empty or only lists venues you have asked the user about.
+
+## 3. A new client sheet (only when the user provides one)
+
+The user adds client sheets manually ("Client shows in our cities YYYY-MM-DD.xlsx").
+
+```bash
+.venv/bin/python export_clients.py "/path/to/Client shows in our cities YYYY-MM-DD.xlsx"
+```
+
+That refreshes the local exports and `data/clients.enc`. Then rerun `./refresh.sh --no-push`
+and read the `clients.py` output: rows that were added rather than matched to a bill are
+worth a glance — a mismatch in venue or artist spelling belongs in that city's `venue` or
+`artist` map in `clients.py`.
+
+## 4. Report and publish
+
+Summarise for the user: `data/changes.md` (new shows, acts added to bills, shows no
+longer listed), anything newly announced, venues reviewed, and the client-sheet result.
+Then publish:
+
+```bash
+./refresh.sh
+```
+
+## If the daily GitHub run failed
+
+`gh` is not installed; check https://github.com/ilovemyphone30000/nyc-shows/actions in the
+browser. Common causes: a missing secret (`STATICRYPT_PASSWORD`, `CLIENTS_KEY`), a bot
+check on a city (that city is skipped, the rest publish), or a check failure — reproduce
+it locally with `./refresh.sh --no-push` and fix before pushing.

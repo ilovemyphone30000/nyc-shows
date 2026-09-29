@@ -70,6 +70,7 @@ rows = [r for r in json.load(open(f"data/clients_raw_{city}.json"))
 
 added, matched = [], 0
 for date, artist, venue, _city, _state, agents, service in rows:
+    artist, venue = str(artist), str(venue)  # a numeric band name arrives from the sheet as a number
     venue = VENUE.get(venue, venue)
     billed = ARTIST.get(artist, artist)
     client = {"artist": billed, "agents": split_names(agents), "service": split_names(service)}

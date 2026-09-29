@@ -19,13 +19,19 @@ for key, name in CITIES:
         src = f"data/shows_{key}.json"
     d = json.load(open(src))
     doc["week"] = d["week"]
-    for show in d["shows"]:
+    # When each show was first seen (announce.py); "backfill" means already listed when tracking began.
+    seen = json.load(open(f"data/first_seen_{key}.json")) if os.path.exists(f"data/first_seen_{key}.json") else {}
+    announced = json.load(open(f"data/announced_{key}.json")) if os.path.exists(f"data/announced_{key}.json") else []
+    for show in d["shows"] + announced:
         show["clients"] = [{"artist": c["artist"]} for c in show.get("clients", [])]  # agent names never ship
+        fs = seen.get(show["id"], [None])[0]
+        if fs and fs != "backfill":
+            show["firstSeen"] = fs
         if key != "nyc":  # OMR ids are per region; keep NYC's bare so existing saved hearts survive
             show["id"] = f"{key}:{show['id']}"
         for k in ("borough", "tier", "pick", "joined"):
             show.pop(k, None)
-    doc["cities"].append({"key": key, "name": name, "checked": d["checked"], "shows": d["shows"]})
+    doc["cities"].append({"key": key, "name": name, "checked": d["checked"], "shows": d["shows"], "announced": announced})
 data = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
 a, b = "/*DATA*/", "/*END*/"
 i, j = page.index(a) + len(a), page.index(b)
@@ -44,7 +50,7 @@ password = open(".staticrypt-password").read().strip()
 subprocess.run([
     "npx", "--no-install", "staticrypt", "plain/index.html", "-d", ".", "--short", "--remember", "30",
     "-p", password,
-    "--template-title", "NYC Shows",
+    "--template-title", "Shows",
     "--template-instructions", "Enter the password to see this week's shows.",
     "--template-button", "Open",
     "--template-placeholder", "Password",

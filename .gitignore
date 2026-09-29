@@ -9,3 +9,5 @@ artifact.html
 .venv/
 data/clients_raw_*
 data/shows_merged_*
+.clients-key
+logs/

@@ -69,6 +69,11 @@ with sync_playwright() as p:
         # venue view and back
         page.click('.tab[data-view="venue"]')
         check("venue view renders", page.locator(".venue").count() > 10)
+        page.click('.tab[data-view="new"]')
+        new_rows = rows(page)
+        check("Just announced shows new shows or says there are none",
+              new_rows > 0 or page.locator(".empty").count() == 1, f"{new_rows} rows")
+        check("day buttons hide on Just announced", page.locator("#dayChips").is_hidden())
         page.click('.tab[data-view="date"]')
 
         # open a compact row by click and by keyboard

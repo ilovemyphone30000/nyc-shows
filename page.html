@@ -79,6 +79,10 @@ button { font: inherit; color: inherit; }
 .compact-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .compact-btn { color: var(--ink); border-bottom: 1px solid var(--grey4) !important; padding: 4px 0 !important; }
 .compact-btn:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
+.new-count { font-size: 11px; margin-left: 6px; padding: 1px 6px; border-radius: 9px; background: var(--accent); color: var(--bg); font-variant-numeric: tabular-nums; }
+.new-count:empty { display: none; }
+.new-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 0 4px; margin-left: 8px; vertical-align: 2px; border-radius: 2px; }
+.view-new #dayChips { display: none; }
 .tab.saved { padding: 10px 0; background: none; color: var(--muted); border-bottom: 1px solid transparent; }
 .tab.saved[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .tab.saved:hover { color: var(--accent); }
@@ -225,6 +229,7 @@ body.compact { font-size: 12.5px; }
     <span class="seg">
       <button class="tab" role="tab" data-view="date">Date</button>
       <button class="tab" role="tab" data-view="venue">Venue</button>
+      <button class="tab" role="tab" data-view="new">Just announced<span class="new-count" id="newN"></span></button>
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
@@ -286,16 +291,25 @@ const winEnd = new Date(now); winEnd.setDate(now.getDate() + 7);
 const FROM = iso(winStart) > DATA.week[0] ? iso(winStart) : DATA.week[0];
 const TO = iso(winEnd) < DATA.week[1] ? iso(winEnd) : DATA.week[1];
 const TODAY_ISO = iso(now);
+const YESTERDAY_ISO = iso(winStart);
 const STALE = FROM > TO;  // the page hasn't been rebuilt in over a week: the window is past the data
 for (const c of CITIES) c.shows = c.shows.filter(s => s.date >= FROM && s.date <= TO);
 shows = city.shows;
+// Newly announced: first seen by the daily refresh within the last 24 hours (viewer's clock).
+const NEW_SINCE = Date.now() - 864e5;
+const isNew = s => !!s.firstSeen && Date.parse(s.firstSeen) > NEW_SINCE;
+for (const c of CITIES) {
+  const ids = new Set();  // the Just Announced list, plus anything new inside the window
+  c.fresh = [...(c.announced || []), ...c.shows].filter(s => s.date >= FROM && isNew(s) && !ids.has(s.id) && ids.add(s.id));
+  c.all = [...c.shows, ...c.fresh.filter(s => !c.shows.some(x => x.id === s.id))];  // for hearts and calendar lookups
+}
 const weekDays = [];
 for (let d = d8(FROM); d <= d8(TO); d.setDate(d.getDate() + 1)) {
   weekDays.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"));
 }
 
 let state = { view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false };
-if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
+if (!["date", "venue", "new", "saved"].includes(state.view)) state.view = "date";
 let saved = new Set(store.get("saved", []));
 
 /* static copy */
@@ -326,7 +340,7 @@ document.getElementById("dayChips").innerHTML =
 
 /* filtering */
 function matches(s) {
-  if (state.day !== "all" && s.date !== state.day) return false;
+  if (state.view !== "new" && state.day !== "all" && s.date !== state.day) return false;  // announcements span weeks, not the day chips
   if (state.noSupport && s.support.length) return false;
   if (state.ours && !s.clients.length) return false;
   if (state.view === "saved" && !saved.has(s.id)) return false;
@@ -413,8 +427,8 @@ function downloadIcs(list, name) {  // list: shows, or [show, city] pairs
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 30000);  // Safari reads the blob late
 }
-// Hearted shows in every city, within the window, as [show, city] pairs for the export button.
-const favorites = () => CITIES.flatMap(c => c.shows.filter(s => saved.has(s.id)).map(s => [s, c]));
+// Hearted shows in every city (this week and newly announced), as [show, city] pairs for the export button.
+const favorites = () => CITIES.flatMap(c => c.all.filter(s => saved.has(s.id)).map(s => [s, c]));
 if (window.claude) document.body.classList.add("no-ics");
 
 const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>';
@@ -432,7 +446,7 @@ function row(s, withVenue) {
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
-      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
+      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}</div>
       ${support}
       ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
@@ -465,10 +479,10 @@ function renderVenues(list) {
 
 function renderDates(list) {
   let html = "";
-  for (const d of weekDays) {
+  // Every date in the list, in order: this week's days, or weeks out for announcements and saved shows.
+  for (const d of [...new Set(list.map(s => s.date))].sort()) {
     const inD = list.filter(s => s.date === d).sort((a, b) => (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));  // no time (added from the agency list) sorts last
-    if (!inD.length) continue;
-    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}${d === TODAY_ISO ? " <em>· Today</em>" : d < TODAY_ISO ? " <em>· Yesterday</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
+    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}${d === TODAY_ISO ? " <em>· Today</em>" : d === YESTERDAY_ISO ? " <em>· Yesterday</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
       <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;
   }
   return html;
@@ -482,10 +496,14 @@ function render() {
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
-  const savedHere = shows.filter(s => saved.has(s.id)).length;
+  document.body.classList.toggle("view-new", state.view === "new");
+  const savedHere = city.all.filter(s => saved.has(s.id)).length;
   document.getElementById("savedN").textContent = savedHere;
+  document.getElementById("newN").textContent = city.fresh.length || "";
 
-  const list = shows.filter(matches);
+  // Which shows the view draws from: this week, the newly announced, or everything hearted.
+  const pool = state.view === "new" ? city.fresh : state.view === "saved" ? city.all : shows;
+  const list = pool.filter(matches);
   const favs = favorites().length;
   document.getElementById("icsBtn").innerHTML = `${CAL}Add ${favs} favorite${favs === 1 ? "" : "s"} to calendar`;
   document.getElementById("icsBtn").hidden = !favs;  // appears once something is hearted
@@ -498,6 +516,7 @@ function render() {
     out.innerHTML = `<p class="empty">${
       STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
       : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
+      : state.view === "new" && !city.fresh.length ? `Nothing newly announced in ${esc(city.name)} in the last 24 hours. New shows appear here the morning after they're announced.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
     return;
   }
@@ -525,7 +544,7 @@ applyCompact();
 document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact2", compact); applyCompact(); });
 document.getElementById("icsBtn").addEventListener("click", () => {
   const favs = favorites();
-  if (favs.length) downloadIcs(favs, `Favorite shows ${md(FROM)}-${md(TO)}`);
+  if (favs.length) downloadIcs(favs, "Favorite shows");
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
@@ -547,8 +566,8 @@ document.getElementById("out").addEventListener("click", e => {
   }
   const c = e.target.closest(".cal");
   if (c) {
-    const s = shows.find(x => x.id === c.dataset.ids.split(",")[0]);
-    const all = shows.filter(x => c.dataset.ids.split(",").includes(x.id));  // a folded run exports every night
+    const s = city.all.find(x => x.id === c.dataset.ids.split(",")[0]);
+    const all = city.all.filter(x => c.dataset.ids.split(",").includes(x.id));  // a folded run exports every night
     downloadIcs(all, `${s.headliner} ${md(s.date)}`);
     return;
   }
