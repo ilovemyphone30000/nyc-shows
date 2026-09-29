@@ -36,6 +36,7 @@ os.makedirs("plain", exist_ok=True)
 open("plain/index.html", "w").write(
     '<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+    '<meta name="robots" content="noindex, nofollow">\n'
     '<style>body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>\n'
     + body + "\n</html>\n")
 
@@ -52,4 +53,9 @@ subprocess.run([
     "--template-color-primary", "#2e7040",
     "--template-color-secondary", "#fffdf8",
 ], check=True, stdout=subprocess.DEVNULL)
+# StatiCrypt writes its own <head>: keep search engines off the lock page too.
+locked = open("index.html").read()
+if 'name="robots"' not in locked:
+    locked = locked.replace("<head>", '<head>\n<meta name="robots" content="noindex, nofollow">', 1)
+    open("index.html", "w").write(locked)
 print("built " + ", ".join(f"{c['name']} {len(c['shows'])}" for c in doc["cities"]) + ": artifact.html, plain/index.html, index.html (locked)")

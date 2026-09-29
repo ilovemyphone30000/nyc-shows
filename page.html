@@ -44,7 +44,7 @@ button { font: inherit; color: inherit; }
   font-family: var(--serif); font-weight: 400;
   font-size: clamp(30px, 4.2vw, 44px); line-height: 1; letter-spacing: -.02em;
   margin: 16px 0 0; text-wrap: balance;
-  display: inline-block; transform: scaleX(.9); transform-origin: left; width: 111%;
+  display: inline-block; transform: scaleX(.9); transform-origin: left;
 }
 .hero h1 em { font-style: italic; color: var(--accent); }
 .hero p { color: var(--muted); max-width: 58ch; margin: 20px 0 0; }
@@ -163,6 +163,7 @@ main { padding-block: 8px 80px; }
 .compact .row.open { font-size: 14px; box-shadow: inset 3px 0 0 var(--ink); background: var(--bg); }
 .compact .row.ours.open { box-shadow: inset 3px 0 0 var(--accent), inset 0 0 0 .5px var(--accent); background: var(--tint); }
 .compact .row:not(.open):hover { outline: 1px solid var(--grey4); outline-offset: -1px; }
+.compact .row:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 body.compact { font-size: 12.5px; }
 .compact .sect-head { padding-block: 18px 6px; }
 .compact .sect-head h2 { font-size: 18px; }
@@ -261,6 +262,7 @@ const d8 = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y,
 const dow = s => DAYS[d8(s).getDay()];
 const md = s => { const d = d8(s); return MONTHS[d.getMonth()] + " " + d.getDate(); };
 const fmtTime = t => { let [h, m] = t.split(":").map(Number); const ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12; return h + (m ? ":" + String(m).padStart(2, "0") : "") + " " + ap; };
+const safeUrl = u => (typeof u === "string" && /^https?:\/\//i.test(u)) ? u : null;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const norm = s => s.normalize("NFKD").replace(/[̀-ͯ]/g, "").toLowerCase();
 
@@ -284,6 +286,7 @@ const winEnd = new Date(now); winEnd.setDate(now.getDate() + 7);
 const FROM = iso(winStart) > DATA.week[0] ? iso(winStart) : DATA.week[0];
 const TO = iso(winEnd) < DATA.week[1] ? iso(winEnd) : DATA.week[1];
 const TODAY_ISO = iso(now);
+const STALE = FROM > TO;  // the page hasn't been rebuilt in over a week: the window is past the data
 for (const c of CITIES) c.shows = c.shows.filter(s => s.date >= FROM && s.date <= TO);
 shows = city.shows;
 const weekDays = [];
@@ -307,7 +310,10 @@ function setCity(key) {
 document.getElementById("cities").addEventListener("click", e => {
   const b = e.target.closest(".city"); if (b && b.dataset.city !== cityKey) setCity(b.dataset.city);
 });
-document.getElementById("range").textContent = md(FROM) + " – " + md(TO);
+window.addEventListener("hashchange", () => {
+  const k = HASH[location.hash.slice(1)]; if (k && k !== cityKey && CITIES.some(c => c.key === k)) setCity(k);
+});
+document.getElementById("range").textContent = STALE ? "Listings out of date" : md(FROM) + " – " + md(TO);
 
 
 
@@ -345,8 +351,26 @@ function foldRuns(list) {
 
 const CAL = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="1.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4M12 12.5v5M9.5 15h5"/></svg>';
 
-/* Calendar export (.ics). Times are the venue's local time, tagged with the city's zone. */
+/* Calendar export (.ics). A show's time is venue-local; it is converted to UTC so every
+   calendar app (Outlook included) places it correctly in the viewer's own time zone. */
 const TZ = { nyc: "America/New_York", chi: "America/Chicago", la: "America/Los_Angeles" };
+// Offset of zone tz at instant ms, in ms: wall-clock time there minus UTC.
+function tzOffset(ms, tz) {
+  const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: tz, hourCycle: "h23",
+    year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit" })
+    .formatToParts(new Date(ms)).map(x => [x.type, x.value]));
+  return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute, +p.second) - ms;
+}
+// Wall-clock date + time in tz -> the real instant (checked twice to get DST edges right).
+function zonedToUtc(date, time, tz) {
+  const [y, mo, d] = date.split("-").map(Number), [h, mi] = time.split(":").map(Number);
+  const wall = Date.UTC(y, mo - 1, d, h, mi);
+  let ms = wall - tzOffset(wall, tz);
+  ms = wall - tzOffset(ms, tz);
+  return ms;
+}
+const icsUtc = ms => new Date(ms).toISOString().replace(/[-:]/g, "").replace(/\.\d+Z$/, "Z");
+const icsDate = d => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
 const icsText = v => String(v).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n");
 // Fold at 75 bytes (not characters): accented names are multi-byte in UTF-8.
 const icsFold = line => {
@@ -363,23 +387,18 @@ function icsEvent(s, stamp, c = city) {  // c: the show's city, for its time zon
   const day = s.date.replace(/-/g, "");
   const lines = ["BEGIN:VEVENT", `UID:${s.id.replace(/[^\w:-]/g, "")}@nyc-shows`, `DTSTAMP:${stamp}`];
   if (s.time) {
-    const [h, m] = s.time.split(":").map(Number);
-    const end = new Date(Date.UTC(2000, 0, 1, h + 3, m));  // assume a three-hour night
-    const endDay = h + 3 >= 24 ? d8(s.date) : null;
-    if (endDay) endDay.setDate(endDay.getDate() + 1);
-    const endDate = endDay ? `${endDay.getFullYear()}${String(endDay.getMonth() + 1).padStart(2, "0")}${String(endDay.getDate()).padStart(2, "0")}` : day;
-    lines.push(`DTSTART;TZID=${TZ[c.key]}:${day}T${s.time.replace(":", "")}00`,
-               `DTEND;TZID=${TZ[c.key]}:${endDate}T${String(end.getUTCHours()).padStart(2, "0")}${String(end.getUTCMinutes()).padStart(2, "0")}00`);
-  } else {
+    const start = zonedToUtc(s.date, s.time, TZ[c.key]);
+    lines.push(`DTSTART:${icsUtc(start)}`, `DTEND:${icsUtc(start + 3 * 36e5)}`);  // assume a three-hour night
+  } else {  // no listed time: an all-day entry on its date
     const next = d8(s.date); next.setDate(next.getDate() + 1);
-    lines.push(`DTSTART;VALUE=DATE:${day}`, `DTEND;VALUE=DATE:${next.getFullYear()}${String(next.getMonth() + 1).padStart(2, "0")}${String(next.getDate()).padStart(2, "0")}`);
+    lines.push(`DTSTART;VALUE=DATE:${day}`, `DTEND;VALUE=DATE:${icsDate(next)}`);
   }
   const ours = s.clients.map(c => c.artist);
   const desc = [s.support.length ? "With " + s.support.join(", ") : "", ours.length ? "THE·TEAM: " + ours.join(", ") : "", s.ticketUrl || ""].filter(Boolean).join("\n");
   lines.push(`SUMMARY:${icsText(s.headliner + (s.support.length ? " + " + s.support.join(", ") : ""))}`,
              `LOCATION:${icsText(s.venue + ", " + c.name)}`);
   if (desc) lines.push(`DESCRIPTION:${icsText(desc)}`);
-  if (s.ticketUrl) lines.push(`URL:${s.ticketUrl}`);
+  if (safeUrl(s.ticketUrl)) lines.push(`URL:${s.ticketUrl}`);
   lines.push("END:VEVENT");
   return lines.map(icsFold).join("\r\n");
 }
@@ -390,9 +409,9 @@ function downloadIcs(list, name) {  // list: shows, or [show, city] pairs
     `X-WR-CALNAME:${icsText(name)}`, ...list.map(x => Array.isArray(x) ? icsEvent(x[0], stamp, x[1]) : icsEvent(x, stamp)), "END:VCALENDAR"].join("\r\n") + "\r\n";
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([body], { type: "text/calendar;charset=utf-8" }));
-  a.download = name.replace(/[^\w .-]+/g, "").replace(/\s+/g, "-") + ".ics";
+  a.download = (name.normalize("NFKD").replace(/[^\w .-]+/g, "").trim().replace(/\s+/g, "-") || "show") + ".ics";
   document.body.appendChild(a); a.click(); a.remove();
-  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  setTimeout(() => URL.revokeObjectURL(a.href), 30000);  // Safari reads the blob late
 }
 // Hearted shows in every city, within the window, as [show, city] pairs for the export button.
 const favorites = () => CITIES.flatMap(c => c.shows.filter(s => saved.has(s.id)).map(s => [s, c]));
@@ -410,10 +429,10 @@ function row(s, withVenue) {
   const support = s.support.length
     ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(name).join("<i>·</i>")}</span></div>`
     : `<div class="support none"><span class="acts">No support listed</span></div>`;
-  return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}">
+  return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
     <div class="bill">
-      <div class="head">${s.ticketUrl ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
+      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}</div>
       ${support}
       ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
@@ -463,19 +482,22 @@ function render() {
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
-  document.getElementById("savedN").textContent = saved.size;
+  const savedHere = shows.filter(s => saved.has(s.id)).length;
+  document.getElementById("savedN").textContent = savedHere;
 
   const list = shows.filter(matches);
   const favs = favorites().length;
   document.getElementById("icsBtn").innerHTML = `${CAL}Add ${favs} favorite${favs === 1 ? "" : "s"} to calendar`;
   document.getElementById("icsBtn").hidden = !favs;  // appears once something is hearted
   const nv = new Set(list.map(s => s.venue)).size;
-  document.getElementById("count").textContent = list.length + " shows · " + nv + " venues";
+  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+  document.getElementById("count").textContent = plural(list.length, "show") + " · " + plural(nv, "venue");
 
   const out = document.getElementById("out");
   if (!list.length) {
     out.innerHTML = `<p class="empty">${
-      state.view === "saved" && !saved.size ? "Nothing saved yet. Tap the heart on any show to keep it here."
+      STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
+      : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
     return;
   }
@@ -509,6 +531,11 @@ document.getElementById("noSupport").addEventListener("click", () => { state.noS
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
 const openRows = new Set();  // rows opened out of the compact view, by show id
+document.getElementById("out").addEventListener("keydown", e => {
+  if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("row") && document.body.classList.contains("compact")) {
+    e.preventDefault(); e.target.click();
+  }
+});
 document.getElementById("out").addEventListener("click", e => {
   const r = e.target.closest(".row");
   if (r && document.body.classList.contains("compact") && !e.target.closest("a, button")) {

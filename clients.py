@@ -102,7 +102,8 @@ for date, artist, venue, _city, _state, agents, service in rows:
             prior["clients"].append(client)
         continue
     added.append({
-        "id": f"agency-{date}-{key.replace(' ', '-')}", "date": date, "time": None,
+        # venue in the id: one act can play two rooms in a night (Zeds Dead, Exchange LA and Grand Park)
+        "id": f"agency-{date}-{key.replace(' ', '-')}-{norm(venue).replace(' ', '-')}", "date": date, "time": None,
         "headliner": billed, "support": [], "venue": venue, "borough": None, "tier": None,
         "age": None, "ticketLabel": None, "ticketUrl": None, "pick": False,
         "source": "agency", "clients": [client],
