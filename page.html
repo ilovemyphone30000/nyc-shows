@@ -1,4 +1,4 @@
-<title>NYC Shows This Week</title>
+<title>Shows This Week</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Tinos:ital@0;1&display=swap">
@@ -48,6 +48,11 @@ button { font: inherit; color: inherit; }
 }
 .hero h1 em { font-style: italic; color: var(--accent); }
 .hero p { color: var(--muted); max-width: 58ch; margin: 20px 0 0; }
+.cities { display: flex; gap: 4px 26px; flex-wrap: wrap; }
+.city { background: none; border: 0; padding: 0 0 4px; cursor: pointer; font-family: var(--serif); font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -.02em; color: var(--grey7); border-bottom: 1px solid transparent; }
+.city:hover { color: var(--ink); }
+.city[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.city small { font-family: var(--sans); font-size: 10px; letter-spacing: .1em; color: var(--grey7); margin-left: 6px; vertical-align: 3px; font-variant-numeric: tabular-nums; }
 
 /* tabs + filters */
 .tabs { border-top: 1px solid var(--grey1); }
@@ -193,14 +198,14 @@ body.compact { font-size: 12.5px; }
 
 <header class="mast">
   <div class="wrap">
-    <div class="brand"><span class="dot"></span><span class="label">NYC Shows</span></div>
+    <div class="brand"><span class="dot"></span><span class="label">Shows</span></div>
     <div class="checked label"><span class="dot"></span><span id="checked"></span></div>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap">
-    <div class="label" id="eyebrow"></div>
+    <nav class="cities" id="cities" aria-label="City"></nav>
     <h1><em id="range"></em></h1>
   </div>
 </section>
@@ -255,7 +260,13 @@ const store = {
   set(k, v) { try { localStorage.setItem("nycshows_" + k, JSON.stringify(v)); } catch (e) {} },
 };
 
-const shows = DATA.shows;
+// One tab per city; #nyc / #chicago / #la deep-links to a tab.
+const CITIES = DATA.cities;
+const HASH = { nyc: "nyc", chicago: "chi", chi: "chi", la: "la" };
+let cityKey = HASH[location.hash.slice(1)] || store.get("city", "nyc");
+if (!CITIES.some(c => c.key === cityKey)) cityKey = "nyc";
+let city = CITIES.find(c => c.key === cityKey);
+let shows = city.shows;
 const weekDays = [];
 for (let d = d8(DATA.week[0]); d <= d8(DATA.week[1]); d.setDate(d.getDate() + 1)) {
   weekDays.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"));
@@ -266,8 +277,17 @@ if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
 let saved = new Set(store.get("saved", []));
 
 /* static copy */
-document.getElementById("checked").textContent = "Checked " + dow(DATA.checked) + " " + md(DATA.checked);
-document.getElementById("eyebrow").textContent = "New York City";
+document.getElementById("cities").innerHTML = CITIES.map(c =>
+  `<button class="city" data-city="${c.key}" aria-pressed="false">${esc(c.name)}<small>${c.shows.length}</small></button>`).join("");
+function setCity(key) {
+  city = CITIES.find(c => c.key === key); cityKey = key; shows = city.shows;
+  store.set("city", key);
+  try { history.replaceState(null, "", "#" + (key === "chi" ? "chicago" : key)); } catch (e) {}
+  render();
+}
+document.getElementById("cities").addEventListener("click", e => {
+  const b = e.target.closest(".city"); if (b && b.dataset.city !== cityKey) setCity(b.dataset.city);
+});
 document.getElementById("range").textContent = md(DATA.week[0]) + " – " + md(DATA.week[1]);
 
 
@@ -361,6 +381,8 @@ function renderDates(list) {
 }
 
 function render() {
+  document.querySelectorAll(".city").forEach(b => b.setAttribute("aria-pressed", b.dataset.city === cityKey));
+  document.getElementById("checked").textContent = "Checked " + dow(city.checked) + " " + md(city.checked);
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.view === state.view));
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);

@@ -6,3 +6,6 @@ node_modules/
 plain/
 shows_merged.json
 artifact.html
+.venv/
+data/clients_raw_*
+data/shows_merged_*

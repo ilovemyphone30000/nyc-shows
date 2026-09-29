@@ -1,8 +1,13 @@
-"""omr_raw.json (browser scrub of ohmyrockness.com/shows) -> shows.json.
+"""data/omr_raw_<city>.json (scrape.py) -> data/shows_<city>.json.
+
+    python3 process.py nyc   (or chi, la)
 
 Raw row: [id, iso_datetime, [acts], venue, extra, age, ticket_label, ticket_url, omr_pick]
 """
-import json, re
+import json, re, sys
+
+WEEK = ["2026-09-28", "2026-10-04"]
+CHECKED = {"nyc": "2026-09-28", "chi": "2026-09-29", "la": "2026-09-29"}
 
 RENAME = {
     "(Le) Poisson Rouge": "Le Poisson Rouge", "TV EYE": "TV Eye", "ALPHAVILLE": "Alphaville",
@@ -17,6 +22,14 @@ NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park
                 "St. Bartholomew's Church", "New York Society for Ethical Culture"}
 # Comedy, musical comedy and spoken word that share music calendars.
 DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb"}
+
+# Chicago and LA: OMR's own regions, minus what is plainly out of town or not music.
+CITY = {
+    "nyc": {"rename": None, "out": None, "acts": None},
+    "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon"}},
+    "la": {"rename": {"Amoeba Music- Hollywood": "Amoeba Music Hollywood"},
+           "out": {"Pappy & Harriet's"}, "acts": {"dynasty handbag"}},
+}
 
 MN, BK, QN = "Manhattan", "Brooklyn", "Queens"
 BOROUGH = {
@@ -50,25 +63,34 @@ for v in ["Madison Square Garden", "Barclays Center", "Radio City Music Hall", "
           "Apollo Theater", "Kings Theatre", "Forest Hills Stadium", "Citi Field", "Yankee Stadium"]: TIER[v] = "Big room"
 TIER["Pier 17"] = "Seasonal"
 
-raw = json.load(open("omr_raw.json"))
+city = sys.argv[1]
+nyc = city == "nyc"
+cfg = CITY[city]
+rename = RENAME if nyc else cfg["rename"]
+out_of_town = OUT_OF_CITY if nyc else cfg["out"]
+drop_acts = DROP_ACTS if nyc else cfg["acts"]
+
+raw = json.load(open(f"data/omr_raw_{city}.json"))
 shows, dropped = [], []
 for sid, dt, acts, venue, extra, age, tlabel, turl, pick in raw:
-    venue = RENAME.get(venue, venue)
+    venue = rename.get(venue, venue)
     acts = [re.sub(r",?\s*and more!?$", "", a, flags=re.I).strip() for a in acts]
     acts = [a for a in acts if a and a.lower() not in ("and more!", "and more")]
-    if venue in OUT_OF_CITY: dropped.append((venue, acts[0], "outside NYC")); continue
-    if venue in NOT_BOOKABLE: dropped.append((venue, acts[0], "not a bookable room")); continue
-    if acts[0].lower() in DROP_ACTS: dropped.append((venue, acts[0], "comedy / spoken word")); continue
-    assert venue in BORO_OF, venue
+    if not WEEK[0] <= dt[:10] <= WEEK[1]: continue
+    if venue in out_of_town: dropped.append((venue, acts[0], "out of town")); continue
+    if nyc and venue in NOT_BOOKABLE: dropped.append((venue, acts[0], "not a bookable room")); continue
+    if acts[0].lower() in drop_acts: dropped.append((venue, acts[0], "comedy / spoken word")); continue
+    if any("(screening)" in a.lower() for a in acts): dropped.append((venue, acts[0], "film screening")); continue
+    if nyc: assert venue in BORO_OF, venue
     shows.append({
         "id": sid, "date": dt[:10], "time": dt[11:16], "headliner": acts[0], "support": acts[1:],
-        "venue": venue, "borough": BORO_OF[venue], "tier": TIER.get(venue),
+        "venue": venue, "borough": BORO_OF.get(venue) if nyc else None, "tier": TIER.get(venue) if nyc else None,
         "age": age, "ticketLabel": "RSVP" if tlabel == "RSVP" else "Tickets", "ticketUrl": turl,
         "pick": bool(pick),
     })
 
 shows.sort(key=lambda s: (s["date"], s["time"], s["venue"]))
-json.dump({"checked": "2026-09-28", "week": ["2026-09-28", "2026-10-04"], "shows": shows},
-          open("shows.json", "w"), indent=1, ensure_ascii=False)
-print(len(raw), "raw ->", len(shows), "kept")
+json.dump({"checked": CHECKED[city], "week": WEEK, "shows": shows},
+          open(f"data/shows_{city}.json", "w"), indent=1, ensure_ascii=False)
+print(city, len(raw), "raw ->", len(shows), "kept")
 for d in dropped: print("  dropped:", *d)

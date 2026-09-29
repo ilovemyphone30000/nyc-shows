@@ -5,16 +5,27 @@ artifact.html    - bare fragment for the private Claude artifact (its host adds 
                    doctype/head skeleton). Gitignored; it carries the client data.
 index.html       - plain/index.html locked with StatiCrypt. The only page GitHub serves.
 
-Data: shows_merged.json (after clients.py) or shows.json. The password is read from
+Data: data/shows_merged_<city>.json (after clients.py) or data/shows_<city>.json, for nyc, chi, la. The password is read from
 .staticrypt-password, which is gitignored. Run after process.py and clients.py.
 """
 import json, os, subprocess
 
 page = open("page.html").read()
-src = "shows_merged.json" if os.path.exists("shows_merged.json") else "shows.json"
-doc = json.load(open(src))
-for show in doc["shows"]:  # the page marks THE·TEAM acts; agent names never ship
-    show["clients"] = [{"artist": c["artist"]} for c in show.get("clients", [])]
+CITIES = [("nyc", "New York"), ("chi", "Chicago"), ("la", "Los Angeles")]
+doc = {"cities": []}
+for key, name in CITIES:
+    src = f"data/shows_merged_{key}.json"
+    if not os.path.exists(src):
+        src = f"data/shows_{key}.json"
+    d = json.load(open(src))
+    doc["week"] = d["week"]
+    for show in d["shows"]:
+        show["clients"] = [{"artist": c["artist"]} for c in show.get("clients", [])]  # agent names never ship
+        if key != "nyc":  # OMR ids are per region; keep NYC's bare so existing saved hearts survive
+            show["id"] = f"{key}:{show['id']}"
+        for k in ("borough", "tier", "pick", "joined"):
+            show.pop(k, None)
+    doc["cities"].append({"key": key, "name": name, "checked": d["checked"], "shows": d["shows"]})
 data = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
 a, b = "/*DATA*/", "/*END*/"
 i, j = page.index(a) + len(a), page.index(b)
@@ -41,4 +52,4 @@ subprocess.run([
     "--template-color-primary", "#2e7040",
     "--template-color-secondary", "#fffdf8",
 ], check=True, stdout=subprocess.DEVNULL)
-print(f"built from {src}: artifact.html, plain/index.html, index.html (locked)")
+print("built " + ", ".join(f"{c['name']} {len(c['shows'])}" for c in doc["cities"]) + ": artifact.html, plain/index.html, index.html (locked)")
