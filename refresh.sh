@@ -23,7 +23,7 @@ done
 failed=0
 for i in 0 1 2; do
   c=(nyc chi la); c=${c[$i]}
-  if wait "${pids[$i]}"; then tail -2 "logs/scrape_$c.log"; else echo "!! $c scrape failed:"; tail -5 "logs/scrape_$c.log"; failed=1; fi
+  if wait "${pids[$i]}"; then tail -2 "logs/scrape_$c.log"; else echo "!! $c scrape failed (kept its last good data):"; tail -3 "logs/scrape_$c.log"; failed=1; fi
 done
 
 SNAP=$(mktemp -d)
@@ -52,4 +52,6 @@ fi
 git commit -q -m "Refresh listings $FROM to $TO"
 git push -q origin main
 echo "== pushed; live within a couple of minutes"
+# A blocked city still publishes the others, but the run ends red so GitHub emails about it.
+if [ "$failed" -ne 0 ]; then echo "::error::one or more cities were blocked; see logs above"; fi
 exit $failed

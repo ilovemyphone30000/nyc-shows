@@ -16,7 +16,11 @@ import json, os, sys, time
 from playwright.sync_api import sync_playwright
 
 HOSTS = {"nyc": "www.ohmyrockness.com", "chi": "chicago.ohmyrockness.com", "la": "losangeles.ohmyrockness.com"}
-CHALLENGE = ("Just a moment", "Verify you are human", "fair fan experience")
+CHALLENGE = ("Just a moment", "Verify you are human", "fair fan experience", "security verification")
+
+
+class Blocked(Exception):
+    """The site served a bot check (or nothing at all). Stop; never work around it."""
 
 EXTRACT = r"""() => {
   function unwrap(h){ if(!h) return null; try{ let u=new URL(h, location.origin);
@@ -52,17 +56,20 @@ def scrape(city, start, end, max_pages=15, pause=1.5, path="/shows"):
         browser = p.chromium.launch()
         page = browser.new_page()
         for n in range(1, max_pages + 1):
-            page.goto(f"https://{host}{path}?page={n}", wait_until="domcontentloaded")
+            resp = page.goto(f"https://{host}{path}?page={n}", wait_until="domcontentloaded")
             try:  # listings render client-side; ads keep the network busy, so wait for rows
                 page.wait_for_selector(".row.vevent", timeout=20000)
             except Exception:
                 pass
-            text = page.inner_text("body")
-            if any(c in text for c in CHALLENGE):
-                print(f"  page {n}: challenge page, stopping here", file=sys.stderr)
-                break
+            seen_text = page.title() + " " + page.inner_text("body")
+            if (resp and resp.status >= 400) or any(c in seen_text for c in CHALLENGE):
+                browser.close()
+                raise Blocked(f"{host}{path} page {n}: bot check (HTTP {resp.status if resp else '?'})")
             got = page.evaluate(EXTRACT)
             if not got:
+                if n == 1:  # a listings page with no listings is a failure, not an empty week
+                    browser.close()
+                    raise Blocked(f"{host}{path} page 1: no listings found")
                 break
             for r in got:
                 if r[0] in seen or not r[1]:
@@ -78,18 +85,32 @@ def scrape(city, start, end, max_pages=15, pause=1.5, path="/shows"):
     return rows
 
 
+def mark_scraped(city):
+    """Record a successful scrape, so the page shows when data was really last checked."""
+    open(f"data/scraped_{city}.txt", "w").write(time.strftime("%Y-%m-%d") + "\n")
+
+
 if __name__ == "__main__":
     if sys.argv[2:3] == ["--announced"]:
         # Every show on the city's Just Announced list that hasn't happened yet.
         city = sys.argv[1]
         today = time.strftime("%Y-%m-%d")
-        rows = scrape(city, today, "9999-12-31", max_pages=10, path="/shows/just-announced")
+        try:
+            rows = scrape(city, today, "9999-12-31", max_pages=10, path="/shows/just-announced")
+        except Blocked as e:  # keep the last good list rather than emptying it
+            print(f"{city}: BLOCKED, keeping the last Just Announced list ({e})")
+            sys.exit(2)
         out = f"data/announced_raw_{city}.json"
         json.dump(rows, open(out, "w"), ensure_ascii=False)
         print(f"{city}: {len(rows)} on Just Announced -> {out}")
         sys.exit(0)
     city, start, end = sys.argv[1:4]
-    rows = scrape(city, start, end)
+    try:
+        rows = scrape(city, start, end)
+    except Blocked as e:  # keep yesterday's data and its real date; the run is marked failed
+        print(f"{city}: BLOCKED, keeping the last good listings ({e})")
+        sys.exit(2)
+    mark_scraped(city)
     os.makedirs("data", exist_ok=True)
     out = f"data/omr_raw_{city}.json"
     # OMR drops a day once it has passed, so keep earlier rows in range that this run

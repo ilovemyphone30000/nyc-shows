@@ -489,7 +489,8 @@ function renderDates(list) {
 
 function render() {
   document.querySelectorAll(".city").forEach(b => b.setAttribute("aria-pressed", b.dataset.city === cityKey));
-  document.getElementById("checked").textContent = "Checked " + dow(city.checked) + " " + md(city.checked);
+  const stale = city.checked < TODAY_ISO;  // the last refresh for this city didn't get through
+  document.getElementById("checked").textContent = "Checked " + dow(city.checked) + " " + md(city.checked) + (stale ? " · may be out of date" : "");
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.view === state.view));
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);

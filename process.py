@@ -105,7 +105,10 @@ def main(city):
     reviewed_all = json.load(open("data/venues_reviewed.json"))
     reviewed = set(reviewed_all.get(city, [])) | (set(BORO_OF) if nyc else set())
     shows, dropped = clean(city, raw, WEEK)
-    json.dump({"checked": str(TODAY), "week": WEEK, "shows": shows},
+    # "checked" is the last successful scrape, not today: a blocked day must not look fresh.
+    scraped = f"data/scraped_{city}.txt"
+    checked = open(scraped).read().strip() if os.path.exists(scraped) else str(TODAY)
+    json.dump({"checked": checked, "week": WEEK, "shows": shows},
               open(f"data/shows_{city}.json", "w"), indent=1, ensure_ascii=False)
     print(city, len(raw), "raw ->", len(shows), "kept")
     new = sorted({s["venue"] for s in shows} - reviewed)
