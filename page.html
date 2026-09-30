@@ -283,15 +283,14 @@ let cityKey = HASH[location.hash.slice(1)] || store.get("city", "nyc");
 if (!CITIES.some(c => c.key === cityKey)) cityKey = "nyc";
 let city = CITIES.find(c => c.key === cityKey);
 let shows = city.shows;
-// Window: yesterday through seven days ahead, by the viewer's clock, within the data we have.
+// Window: today through seven days ahead, by the viewer's clock, within the data we have.
 const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
 const now = new Date(); now.setHours(0, 0, 0, 0);
-const winStart = new Date(now); winStart.setDate(now.getDate() - 1);
+const winStart = new Date(now);
 const winEnd = new Date(now); winEnd.setDate(now.getDate() + 7);
 const FROM = iso(winStart) > DATA.week[0] ? iso(winStart) : DATA.week[0];
 const TO = iso(winEnd) < DATA.week[1] ? iso(winEnd) : DATA.week[1];
 const TODAY_ISO = iso(now);
-const YESTERDAY_ISO = iso(winStart);
 const STALE = FROM > TO;  // the page hasn't been rebuilt in over a week: the window is past the data
 for (const c of CITIES) c.shows = c.shows.filter(s => s.date >= FROM && s.date <= TO);
 shows = city.shows;
@@ -482,7 +481,7 @@ function renderDates(list) {
   // Every date in the list, in order: this week's days, or weeks out for announcements and saved shows.
   for (const d of [...new Set(list.map(s => s.date))].sort()) {
     const inD = list.filter(s => s.date === d).sort((a, b) => (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));  // no time (added from the agency list) sorts last
-    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}${d === TODAY_ISO ? " <em>· Today</em>" : d === YESTERDAY_ISO ? " <em>· Yesterday</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
+    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}${d === TODAY_ISO ? " <em>· Today</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
       <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;
   }
   return html;

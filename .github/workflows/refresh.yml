@@ -1,4 +1,4 @@
-# Daily refresh: scrape Oh My Rockness for NYC, Chicago and LA (yesterday through a week
+# Daily refresh: scrape Oh My Rockness for NYC, Chicago and LA (today through a week
 # ahead, plus each city's Just Announced list), merge THE·TEAM client shows, rebuild the
 # locked page, run the browser checks, and push. A bot-check page stops the scrape for
 # that city; it is never worked around.
