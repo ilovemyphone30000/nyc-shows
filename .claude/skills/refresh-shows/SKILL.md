@@ -7,7 +7,7 @@ description: Refresh the Shows This Week site (NYC, Chicago, LA) — scrape, rev
 
 Project: `/Users/jonahisaac/Downloads/scout-nyc`. Live (password-locked) at
 https://ilovemyphone30000.github.io/nyc-shows/ from `main` of `ilovemyphone30000/nyc-shows`.
-GitHub Actions (`.github/workflows/refresh.yml`) already refreshes it every day at 7 AM
+GitHub Actions (`.github/workflows/refresh.yml`) already refreshes it every day at 11 AM
 New York time, so this skill is for the weekly review and for on-demand runs.
 
 ## Rules that do not bend

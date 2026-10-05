@@ -10,7 +10,7 @@ name: Refresh listings
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # 11:00 UTC = 7 AM New York, 4 AM LA
+    - cron: "0 15 * * *"   # 15:00 UTC = 11 AM New York in daylight time (10 AM from November to March)
   workflow_dispatch: {}
 
 permissions:
