@@ -39,6 +39,25 @@ for key, name in CITIES:
         src = f"data/shows_{key}.json"
     d = json.load(open(src))
     doc["week"] = d["week"]
+    # Shows a tracked venue lists on its own calendar (venues.py) that OMR doesn't carry join
+    # the two-week list too, so a venue's whole bill shows, not just what OMR picked up.
+    vpath = f"data/venue_raw_{key}.json"
+    if os.path.exists(vpath):
+        from process import clean
+        acts = lambda s: {norm(x) for x in [s["headliner"], *s["support"]]}
+        have = {}
+        for s in d["shows"]:
+            have.setdefault(s["date"], []).append((s["venue"], norm(s["headliner"]), acts(s)))
+        same = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
+        ours_v = client_acts(key)
+        for s in clean(key, json.load(open(vpath))["rows"], window=tuple(d["week"]))[0]:
+            # the same show: same headliner that night, or the same room sharing any act
+            if any(same(norm(s["headliner"]), h) or (v == s["venue"] and acts(s) & a) for v, h, a in have.get(s["date"], [])):
+                continue
+            have.setdefault(s["date"], []).append((s["venue"], norm(s["headliner"]), acts(s)))
+            s["clients"] = [{"artist": x} for x in [s["headliner"], *s["support"]] if norm(x) in ours_v.get(s["date"], ())]
+            d["shows"].append(s)
+        d["shows"].sort(key=lambda s: (s["date"], s["time"] or "99", s["venue"]))
     # The announcement log (announce.py). Shows count as news only if first seen on Just
     # Announced or added mid-week; one that merely slid into the window is not "New".
     ledger = json.load(open(f"data/ledger_{key}.json"))["shows"] if os.path.exists(f"data/ledger_{key}.json") else {}
