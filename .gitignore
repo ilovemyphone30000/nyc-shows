@@ -16,3 +16,5 @@ data/announced_nyc.json
 data/announced_chi.json
 data/announced_la.json
 data/first_seen_*.json
+# Raw page reads waiting to be normalized (venues.py, browser scans)
+data/inbox/

@@ -51,6 +51,19 @@ for key, name in CITIES:
             a = {"id": i, **{k: e[k] for k in ("date", "time", "venue", "headliner", "support", "age", "ticketUrl")}}
             a["clients"] = [{"artist": x} for x in [a["headliner"], *a["support"]] if norm(x) in ours.get(a["date"], ())]
             announced.append(a)
+    # One row per show: a venue-calendar entry and OMR's listing of the same night are the
+    # same show. Keep whichever was seen first, with OMR's details when it has them.
+    same_show = lambda s: (s["date"], norm(s["headliner"]))
+    week_keys = {same_show(s) for s in d["shows"]}
+    best = {}
+    for a in sorted(announced, key=lambda a: (news[a["id"]]["seen"], news[a["id"]]["how"] == "venue")):
+        k = same_show(a)
+        if k in best:
+            if news[best[k]["id"]]["how"] == "venue" and news[a["id"]]["how"] != "venue":
+                best[k] = {**a, "id": best[k]["id"]}
+            continue
+        best[k] = a
+    announced = [a for k, a in best.items() if not (news[a["id"]]["how"] == "venue" and k in week_keys)]
     for show in d["shows"] + announced:
         show["clients"] = [{"artist": c["artist"]} for c in show.get("clients", [])]  # agent names never ship
         e = news.get(show["id"])

@@ -40,6 +40,16 @@ page (`#nyc/announced`): every show the first time a scan sees it, however far o
 slid into the window; not news). It only grows on a day with a good scan, and notes the
 gap when the previous good scan was over 30 hours earlier.
 
+## 1b. Venue calendars (the 16 tracked rooms)
+
+`venues.py` lists them (slug, city, OMR's spelling of the name, calendar URL). Read each
+calendar in the user's Chrome, one page at a time, with the reader named for it in
+`venue_read.js`. Post each result to the local receiver as `venue_<slug>` so it lands in
+`data/inbox/`, then run `python3 venues.py` and `python3 announce.py <city>`. A venue's
+first read is a baseline; after that, every show not seen before goes on the Just announced
+page (deduped against OMR). Not-music and comedy are dropped by `NOT_MUSIC` in
+`venues.py`; extend it rather than letting a comedian through. Never open axs.com.
+
 ## 2. Review new venues
 
 Read `data/unreviewed_venues.txt` (`city | venue | example bills`). For each venue decide:

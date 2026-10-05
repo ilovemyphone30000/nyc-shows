@@ -8,17 +8,20 @@ data/ledger_<city>.json is {"meta": {...}, "shows": {omr_id: entry}}, one entry 
            added      first seen in the week's listings on a date the previous scan already
                       covered, so it was put up mid-week
            range      first seen only because the window slid onto its date: not news
+           venue      first seen on one of the 16 venue calendars (venues.py); a venue's
+                      first read is a baseline ("seen": "backfill"), not a burst of news
   since    set when the previous good scan was over 30 hours earlier (a blocked morning,
            say): the show went up somewhere between `since` and `seen`
   date, time, venue, headliner, support, age, ticketUrl   the latest listing; refreshed on
            every sighting, so acts added to a bill later show up here too
-meta: lastScan (UTC time of the last good scan) and lastTo (the last date it covered).
+meta: lastScan (UTC time of the last good scan), lastTo (the last date it covered), and
+venueScans {venue: UTC time that venue's calendar was last read}.
 
 Only a scan from today (data/scraped_<city>.txt) adds to the log, so a blocked morning
 never reads as a quiet one. Entries go 30 days after the show. The repo is public, so no
 client data is stored here; build.py marks THE·TEAM acts at build time.
 """
-import datetime, json, os, sys
+import datetime, json, os, re, sys, unicodedata
 
 from process import clean
 
@@ -28,6 +31,11 @@ stamp = now.strftime("%Y-%m-%dT%H:%M:%SZ")
 today = datetime.date.today()
 path = f"data/ledger_{city}.json"
 FIELDS = ("date", "time", "venue", "headliner", "support", "age", "ticketUrl")
+def norm(s):
+    s = "".join(ch for ch in unicodedata.normalize("NFKD", s) if not unicodedata.combining(ch))
+    return re.sub(r"^the ", "", re.sub(r"[^a-z0-9]+", " ", s.lower()).strip())
+
+
 parse = lambda ts: datetime.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
 
 announced_raw = json.load(open(f"data/announced_raw_{city}.json"))
@@ -75,7 +83,38 @@ if scanned == str(today):
     meta["lastTo"] = max((s["date"] for s in in_window), default=meta.get("lastTo"))
     note = f"{added} new announcements" + (f" (first good scan since {prev[:10]})" if gap else "")
 else:
-    note = f"no scan today (last {scanned or 'never'}), log unchanged"
+    note = f"no OMR scan today (last {scanned or 'never'})"
+
+# The venue calendars, read on their own schedule (venues.py). Only venues read today add.
+vpath = f"data/venue_raw_{city}.json"
+vdoc = json.load(open(vpath)) if os.path.exists(vpath) else {"scanned": {}, "rows": []}
+vscans = meta.setdefault("venueScans", {})
+read_today = {v for v, d in vdoc["scanned"].items() if d == str(today)}
+if read_today:
+    known = {}
+    for e in log.values():
+        known.setdefault(e["date"], []).append(norm(e["headliner"]))
+    same = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
+    vnew = 0
+    for s in clean(city, vdoc["rows"])[0]:
+        if s["venue"] not in read_today:
+            continue
+        e = log.get(s["id"])
+        if e:
+            e.update({k: s[k] for k in FIELDS})
+            continue
+        if any(same(norm(s["headliner"]), k) for k in known.get(s["date"], [])):
+            continue  # already in the log from OMR
+        prev_v = vscans.get(s["venue"])
+        v_gap = bool(prev_v) and now - parse(prev_v) > datetime.timedelta(hours=30)
+        log[s["id"]] = {"seen": stamp if prev_v else "backfill", **({"since": prev_v} if v_gap else {}), "how": "venue",
+                        **{k: s[k] for k in FIELDS}}
+        known.setdefault(s["date"], []).append(norm(s["headliner"]))
+        vnew += bool(prev_v)
+    first = sorted(v for v in read_today if v not in vscans)
+    for v in read_today:
+        vscans[v] = stamp
+    note += f"; venue calendars: {vnew} new" + (f", baseline set for {len(first)} venue(s)" if first else "")
 
 cutoff = str(today - datetime.timedelta(days=30))
 ledger["shows"] = log = {k: v for k, v in sorted(log.items(), key=lambda kv: (kv[1]["seen"], kv[1]["date"], kv[0])) if v["date"] >= cutoff}
@@ -83,5 +122,6 @@ with open(path, "w") as f:  # one show per line, so each day's commit diff reads
     f.write('{"meta": ' + json.dumps(meta) + ', "shows": {\n')
     f.write(",\n".join(json.dumps(k) + ": " + json.dumps(v, ensure_ascii=False) for k, v in log.items()))
     f.write("\n}}\n")
-counts = {h: sum(v["how"] == h for v in log.values()) for h in ("announced", "added", "range")}
-print(f"{city}: {note}; log holds {counts['announced']} announced, {counts['added']} added mid-week, {counts['range']} other")
+counts = {h: sum(v["how"] == h for v in log.values()) for h in ("announced", "added", "venue", "range")}
+print(f"{city}: {note}; log holds {counts['announced']} announced, {counts['added']} added mid-week, "
+      f"{counts['venue']} from venue calendars, {counts['range']} other")

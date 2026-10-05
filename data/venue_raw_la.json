@@ -1,0 +1,2529 @@
+{
+"scanned": {
+"Fonda Theatre": "2026-10-05",
+"The Ford": "2026-10-05",
+"The Greek Theatre": "2026-10-05",
+"Hollywood Bowl": "2026-10-05",
+"Hollywood Forever": "2026-10-05",
+"The Novo": "2026-10-05",
+"Hollywood Palladium": "2026-10-05"
+},
+"rows": [
+[
+"v-fonda-2026-10-06-father-john-misty",
+"2026-10-06T19:00:00",
+[
+"Father John Misty",
+"Omar Velasco"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-07-oskar-med-k",
+"2026-10-07T20:00:00",
+[
+"Oskar Med K",
+"me n ü & Lilya Mandr"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-08-adela",
+"2026-10-08T20:00:00",
+[
+"Adéla",
+"Zoe Gitter"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-09-adela",
+"2026-10-09T20:00:00",
+[
+"Adéla",
+"Zoe Gitter"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-10-remi-wolf",
+"2026-10-10T20:00:00",
+[
+"Remi Wolf"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-11-the-blasting-company-plays-over-the-gard",
+"2026-10-11T19:00:00",
+[
+"The Blasting Company Plays Over The Garden Wall"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-12-matchbox-20",
+"2026-10-12T18:30:00",
+[
+"Matchbox 20"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-13-finn-wolfhard",
+"2026-10-13T19:00:00",
+[
+"Finn Wolfhard",
+"Malcy"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-15-mico",
+"2026-10-15T19:00:00",
+[
+"MICO",
+"Will Linley"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-16-mico",
+"2026-10-16T19:00:00",
+[
+"MICO",
+"Will Linley"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-17-peaches",
+"2026-10-17T20:00:00",
+[
+"Peaches",
+"Gelli Haha & Soltera"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-21-cuco",
+"2026-10-21T19:00:00",
+[
+"CUCO"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-22-mac-demarco",
+"2026-10-22T19:00:00",
+[
+"Mac Demarco"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-23-flying-lotus",
+"2026-10-23T20:00:00",
+[
+"Flying Lotus"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-24-animal-collective",
+"2026-10-24T20:00:00",
+[
+"Animal Collective"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-25-julia-wolf",
+"2026-10-25T19:00:00",
+[
+"Julia Wolf",
+"Bee Blackwell"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-26-julia-wolf",
+"2026-10-26T19:00:00",
+[
+"Julia Wolf",
+"Bee Blackwell"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-27-moonbloom",
+"2026-10-27T19:00:00",
+[
+"Moonbloom",
+"Weathers & Ella Red"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-29-knox",
+"2026-10-29T19:30:00",
+[
+"KNOX",
+"Emi Grace"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-30-dj-mandy",
+"2026-10-30T20:00:00",
+[
+"DJ Mandy"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-10-31-bleood",
+"2026-10-31T19:00:00",
+[
+"Bleood"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-02-stella-lefty",
+"2026-11-02T19:00:00",
+[
+"Stella Lefty",
+"Grace Enger"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-04-the-black-angels",
+"2026-11-04T19:00:00",
+[
+"The Black Angels",
+"Ghostwoman"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-05-rebecca-black",
+"2026-11-05T20:00:00",
+[
+"Rebecca Black",
+"Bayli"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-06-nia-archives",
+"2026-11-06T20:00:00",
+[
+"Nia Archives",
+"Bambii"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-08-plini",
+"2026-11-08T18:00:00",
+[
+"Plini",
+"Night Verses & Portraits"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-09-they-are-gutting-a-body-of-water",
+"2026-11-09T19:00:00",
+[
+"They Are Gutting A Body Of Water"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-10-quadeca",
+"2026-11-10T19:00:00",
+[
+"Quadeca",
+"Derby & Olēka"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-11-ninajirachi",
+"2026-11-11T19:00:00",
+[
+"Ninajirachi",
+"MGNA Crrrta"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-12-ninajirachi",
+"2026-11-12T20:00:00",
+[
+"Ninajirachi",
+"MGNA Crrrta"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-13-ninajirachi",
+"2026-11-13T20:00:00",
+[
+"Ninajirachi",
+"MGNA Crrrta"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-14-ninajirachi",
+"2026-11-14T20:00:00",
+[
+"Ninajirachi",
+"MGNA Crrrta"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-15-the-milk-carton-kids",
+"2026-11-15T19:00:00",
+[
+"The Milk Carton Kids",
+"Paper Wings"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-16-gary-numan",
+"2026-11-16T19:00:00",
+[
+"Gary Numan",
+"Tremours"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-17-danna",
+"2026-11-17T19:00:00",
+[
+"Danna"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-19-lucy-bedroque",
+"2026-11-19T19:00:00",
+[
+"Lucy Bedroque",
+"pinponpanpon"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-20-lucy-bedroque",
+"2026-11-20T19:00:00",
+[
+"Lucy Bedroque",
+"Pinponpanpon"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-21-takuya-nakamura",
+"2026-11-21T20:00:00",
+[
+"Takuya Nakamura"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-22-holywatr",
+"2026-11-22T19:00:00",
+[
+"Holywatr",
+"Mercury"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-11-24-cocorosie",
+"2026-11-24T19:00:00",
+[
+"Cocorosie"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-03-jalen-ngonda",
+"2026-12-03T20:00:00",
+[
+"Jalen Ngonda",
+"Brooke Combe"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-04-the-hellp",
+"2026-12-04T19:00:00",
+[
+"The Hellp"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-05-the-hellp",
+"2026-12-05T19:00:00",
+[
+"The Hellp"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-06-the-hellp",
+"2026-12-06T19:00:00",
+[
+"The Hellp"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-09-frost-children",
+"2026-12-09T19:00:00",
+[
+"Frost Children",
+"Kuru"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-10-frost-children",
+"2026-12-10T20:00:00",
+[
+"Frost Children",
+"Kuru"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-11-frost-children",
+"2026-12-11T20:00:00",
+[
+"Frost Children",
+"Kuru"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-12-feeble-little-horse",
+"2026-12-12T20:00:00",
+[
+"Feeble Little Horse",
+"MOP"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-13-tiny-habits",
+"2026-12-13T19:00:00",
+[
+"Tiny Habits",
+"Marie Dresselhuis"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2026-12-15-yaelokre",
+"2026-12-15T19:00:00",
+[
+"Yaelokre",
+"Ben Caplan"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2027-01-15-twinsick",
+"2027-01-15T20:00:00",
+[
+"Twinsick"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2027-02-04-aj-mclean-of-backstreet-boys",
+"2027-02-04T19:00:00",
+[
+"AJ Mclean Of Backstreet Boys"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2027-02-18-the-high-kings",
+"2027-02-18T20:00:00",
+[
+"The High Kings"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2027-03-05-braxton-keith",
+"2027-03-05T19:00:00",
+[
+"Braxton Keith",
+"Tyla Rodrigues"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2027-04-23-mei-semones",
+"2027-04-23T20:00:00",
+[
+"Mei Semones"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-fonda-2027-05-16-palaye-royale",
+"2027-05-16T19:00:00",
+[
+"Palaye Royale"
+],
+"Fonda Theatre",
+[],
+null,
+"Tickets",
+"https://www.fondatheatre.com/events/detail",
+0
+],
+[
+"v-hollywoodbowl-2026-10-05-the-hayley-williams-show",
+"2026-10-05T19:00:00",
+[
+"The Hayley Williams Show"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4885/2026-10-05/the-hayley-williams-show",
+0
+],
+[
+"v-hollywoodbowl-2026-10-06-the-hayley-williams-show",
+"2026-10-06T19:00:00",
+[
+"The Hayley Williams Show"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4888/2026-10-06/the-hayley-williams-show",
+0
+],
+[
+"v-hollywoodbowl-2026-10-08-empire-of-the-sun",
+"2026-10-08T19:30:00",
+[
+"Empire of the Sun",
+"Polo & Pan",
+"Midnight Gen"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4537/2026-10-08/empire-of-the-sun",
+0
+],
+[
+"v-hollywoodbowl-2026-10-09-mac-demarco",
+"2026-10-09T19:00:00",
+[
+"Mac DeMarco"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4363/2026-10-09/mac-demarco",
+0
+],
+[
+"v-hollywoodbowl-2026-10-10-jack-johnson",
+"2026-10-10T19:30:00",
+[
+"Jack Johnson",
+"Hermanos Gutiérrez"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4256/2026-10-10/jack-johnson",
+0
+],
+[
+"v-hollywoodbowl-2026-10-11-jack-johnson",
+"2026-10-11T19:00:00",
+[
+"Jack Johnson",
+"Hermanos Gutiérrez"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4257/2026-10-11/jack-johnson",
+0
+],
+[
+"v-hollywoodbowl-2026-10-15-cynthia-erivo",
+"2026-10-15T19:30:00",
+[
+"Cynthia Erivo"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4891/2026-10-15/cynthia-erivo",
+0
+],
+[
+"v-hollywoodbowl-2026-10-16-miley",
+"2026-10-16T19:30:00",
+[
+"Miley",
+"Model/Actriz"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4905/2026-10-16/miley-bass-persuades",
+0
+],
+[
+"v-hollywoodbowl-2026-10-18-miley",
+"2026-10-18T19:30:00",
+[
+"Miley",
+"Model/Actriz"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4906/2026-10-18/miley-bass-persuades",
+0
+],
+[
+"v-hollywoodbowl-2026-10-21-my-chemical-romance",
+"2026-10-21T20:00:00",
+[
+"My Chemical Romance"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4231/2026-10-21/my-chemical-romance",
+0
+],
+[
+"v-hollywoodbowl-2026-10-23-my-chemical-romance",
+"2026-10-23T20:00:00",
+[
+"My Chemical Romance"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4232/2026-10-23/my-chemical-romance",
+0
+],
+[
+"v-hollywoodbowl-2026-10-24-my-chemical-romance",
+"2026-10-24T20:00:00",
+[
+"My Chemical Romance"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4233/2026-10-24/my-chemical-romance",
+0
+],
+[
+"v-hollywoodbowl-2026-10-30-my-chemical-romance",
+"2026-10-30T19:00:00",
+[
+"My Chemical Romance",
+"The Used"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4263/2026-10-30/my-chemical-romance",
+0
+],
+[
+"v-hollywoodbowl-2026-10-31-my-chemical-romance",
+"2026-10-31T19:00:00",
+[
+"My Chemical Romance",
+"Thrice"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4264/2026-10-31/my-chemical-romance",
+0
+],
+[
+"v-hollywoodbowl-2026-11-07-jimmy-eat-world",
+"2026-11-07T19:00:00",
+[
+"Jimmy Eat World",
+"The Format",
+"The Linda Lindas"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4898/2026-11-07/jimmy-eat-world-the-format",
+0
+],
+[
+"v-hollywoodbowl-2026-11-08-ms-lauryn-hill-wyclef-jean",
+"2026-11-08T19:30:00",
+[
+"Ms. Lauryn Hill & Wyclef Jean"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4899/2026-11-08/ms-lauryn-hill-wyclef-jean-celebrating-30-years-of-fugees-the-score",
+0
+],
+[
+"v-hollywoodbowl-2026-11-18-jonas-brothers",
+"2026-11-18T19:30:00",
+[
+"Jonas Brothers",
+"All Time Low",
+"Magnus Ferrell"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4902/2026-11-18/jonas-brothers",
+0
+],
+[
+"v-hollywoodbowl-2026-11-19-jonas-brothers",
+"2026-11-19T19:30:00",
+[
+"Jonas Brothers",
+"All Time Low",
+"Magnus Ferrell"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4904/2026-11-19/jonas-brothers",
+0
+],
+[
+"v-hollywoodbowl-2026-11-21-steve-lacy",
+"2026-11-21T20:00:00",
+[
+"Steve Lacy"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4900/2026-11-21/steve-lacy",
+0
+],
+[
+"v-hollywoodbowl-2027-06-06-a-perfect-circle",
+"2027-06-06T19:30:00",
+[
+"A Perfect Circle",
+"The Cult"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4908/2027-06-06/a-perfect-circle",
+0
+],
+[
+"v-hollywoodbowl-2027-08-25-the-legend-of-zelda",
+"2027-08-25T20:00:00",
+[
+"The Legend of Zelda"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4909/2027-08-25/the-legend-of-zelda",
+0
+],
+[
+"v-hollywoodforever-2026-10-08-jacob-alon",
+"2026-10-08T19:00:00",
+[
+"Jacob Alon"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/jacob-alon/",
+0
+],
+[
+"v-hollywoodforever-2026-10-15-geese",
+"2026-10-15T18:00:00",
+[
+"Geese"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/geese-getting-killed-again-tour/",
+0
+],
+[
+"v-hollywoodforever-2026-10-16-geese",
+"2026-10-16T18:00:00",
+[
+"Geese"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/geese-getting-killed-again-tour-2/",
+0
+],
+[
+"v-hollywoodforever-2026-10-17-geese",
+"2026-10-17T18:00:00",
+[
+"Geese"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/geese-getting-killed-again-tour-3/",
+0
+],
+[
+"v-hollywoodforever-2026-11-11-isabel-dumaa",
+"2026-11-11T19:00:00",
+[
+"Isabel Dumaa"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/isabel-dumaa-lost-in-reverie/",
+0
+],
+[
+"v-hollywoodforever-2026-11-12-grahame-lesh-and-friends",
+"2026-11-12T19:00:00",
+[
+"Grahame Lesh and Friends"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/grahame-lesh-and-friends/",
+0
+],
+[
+"v-hollywoodforever-2026-11-13-grahame-lesh-and-friends",
+"2026-11-13T19:00:00",
+[
+"Grahame Lesh and Friends"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/grahame-lesh-and-friends-2/",
+0
+],
+[
+"v-hollywoodforever-2026-11-14-grahame-lesh-and-friends",
+"2026-11-14T19:00:00",
+[
+"Grahame Lesh and Friends"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/grahame-lesh-and-friends-3/",
+0
+],
+[
+"v-hollywoodforever-2026-12-09-why",
+"2026-12-09T19:00:00",
+[
+"WHY?"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/why/",
+0
+],
+[
+"v-hollywoodforever-2027-05-05-jean-michel-blais",
+"2027-05-05T19:00:00",
+[
+"Jean-Michel Blais"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/jean-michel-blais/",
+0
+],
+[
+"v-palladium-2026-10-07-esdeekid",
+"2026-10-07T19:00:00",
+[
+"EsDeeKid"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/esdeekid-council-house-rat-tour-hollywood-california-10-07-2026/event/090064F0F51C470D",
+0
+],
+[
+"v-palladium-2026-10-09-schoolboy-q",
+"2026-10-09T20:00:00",
+[
+"Schoolboy Q"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/schoolboy-q-10-years-of-blank-hollywood-california-10-09-2026/event/090064ED8E51464F",
+0
+],
+[
+"v-palladium-2026-10-10-mastodon",
+"2026-10-10T18:00:00",
+[
+"Mastodon"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/mastodon-hollywood-california-10-10-2026/event/090064BD4B3E8A67",
+0
+],
+[
+"v-palladium-2026-10-11-loathe",
+"2026-10-11T18:30:00",
+[
+"Loathe"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/loathe-a-stranger-to-you-hollywood-california-10-11-2026/event/090064987F5E5CAE",
+0
+],
+[
+"v-palladium-2026-10-15-iration",
+"2026-10-15T18:00:00",
+[
+"Iration"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/iration-hollywood-california-10-15-2026/event/090064DA83834398",
+0
+],
+[
+"v-palladium-2026-10-16-boy-harsher",
+"2026-10-16T19:00:00",
+[
+"Boy Harsher"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/boy-harsher-hollywood-california-10-16-2026/event/090064C325F30F8A",
+0
+],
+[
+"v-palladium-2026-10-17-silverlake-conservatory-of-music-celebra",
+"2026-10-17T19:00:00",
+[
+"Silverlake Conservatory of Music celebrates 25 years!"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/silverlake-conservatory-of-music-celebrates-25-hollywood-california-10-17-2026/event/0900653276CE3529",
+0
+],
+[
+"v-palladium-2026-10-18-sex-pistols",
+"2026-10-18T19:30:00",
+[
+"Sex Pistols",
+"Frank Carter"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/sex-pistols-steve-jones-paul-cook-hollywood-california-10-18-2026/event/0900627AEA50512B",
+0
+],
+[
+"v-palladium-2026-10-19-vanillamace",
+"2026-10-19T21:00:00",
+[
+"Vanillamace"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/vanillamace-ghosted-by-vanilla-hollywood-california-10-19-2026/event/09006521C63DAF94",
+0
+],
+[
+"v-palladium-2026-10-20-modest-mouse",
+"2026-10-20T19:00:00",
+[
+"Modest Mouse"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/modest-mouse-hollywood-california-10-20-2026/event/0900648FCF4AA265",
+0
+],
+[
+"v-palladium-2026-10-23-two-friends",
+"2026-10-23T20:00:00",
+[
+"Two Friends"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/two-friends-hollywood-california-10-23-2026/event/090064A4ABA1D8E9",
+0
+],
+[
+"v-palladium-2026-10-24-two-friends",
+"2026-10-24T20:00:00",
+[
+"Two Friends"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/two-friends-hollywood-california-10-24-2026/event/090064A4AC83DB33",
+0
+],
+[
+"v-palladium-2026-10-25-xavier-wulf",
+"2026-10-25T19:00:00",
+[
+"Xavier Wulf"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/xavier-wulf-the-cool-world-tour-hollywood-california-10-25-2026/event/090064F4D3499ECC",
+0
+],
+[
+"v-palladium-2026-11-06-carl-cox",
+"2026-11-06T19:00:00",
+[
+"Carl Cox"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/carl-cox-hollywood-california-11-06-2026/event/09006503777A2802",
+0
+],
+[
+"v-palladium-2026-11-07-tinashe",
+"2026-11-07T19:00:00",
+[
+"Tinashe"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/tinashe-one-night-with-a-popstar-hollywood-california-11-07-2026/event/090064F499E14E53",
+0
+],
+[
+"v-palladium-2026-11-11-turnover",
+"2026-11-11T18:30:00",
+[
+"Turnover"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/turnover-down-on-earth-tour-hollywood-california-11-11-2026/event/090064D2BD80BA7E",
+0
+],
+[
+"v-palladium-2026-11-12-sabaton",
+"2026-11-12T18:00:00",
+[
+"Sabaton"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/sabaton-legends-on-tour-hollywood-california-11-12-2026/event/09006455C0F6592F",
+0
+],
+[
+"v-palladium-2026-11-13-underoath",
+"2026-11-13T17:30:00",
+[
+"Underoath"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/underoath-define-the-great-line-20th-hollywood-california-11-13-2026/event/090064F50081FBAA",
+0
+],
+[
+"v-palladium-2026-11-14-valentino-khan",
+"2026-11-14T20:00:00",
+[
+"Valentino Khan"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/insomniac-presents-valentino-khan-hollywood-california-11-14-2026/event/090064BDA75FB781",
+0
+],
+[
+"v-palladium-2026-11-15-lil-peep-30th-birthday-celebration",
+"2026-11-15T19:00:00",
+[
+"Lil Peep 30th Birthday Celebration"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/lil-peep-30th-birthday-celebration-hollywood-california-11-15-2026/event/090065068E7555BB",
+0
+],
+[
+"v-palladium-2026-11-19-bolo",
+"2026-11-19T20:00:00",
+[
+"BOLO"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/bolo-hollywood-california-11-19-2026/event/0900650CAE378D35",
+0
+],
+[
+"v-palladium-2026-11-20-rhye",
+"2026-11-20T19:00:00",
+[
+"Rhye"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/rhye-hollywood-california-11-20-2026/event/090064C32762134F",
+0
+],
+[
+"v-palladium-2026-11-21-bolo",
+"2026-11-21T20:00:00",
+[
+"BOLO"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/bolo-hollywood-california-11-21-2026/event/09006506891F4B69",
+0
+],
+[
+"v-palladium-2026-11-22-bolo",
+"2026-11-22T19:00:00",
+[
+"BOLO"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/bolo-hollywood-california-11-22-2026/event/0900650CD725EBE0",
+0
+],
+[
+"v-palladium-2026-11-27-devault",
+"2026-11-27T20:00:00",
+[
+"Devault"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/insomniac-presents-devault-hollywood-california-11-27-2026/event/090064CD1DD77F50",
+0
+],
+[
+"v-palladium-2026-12-04-fetty-wap",
+"2026-12-04T19:00:00",
+[
+"Fetty Wap"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/fetty-wap-nostalgia-tour-hollywood-california-12-04-2026/event/090064AB3B0AFD8F",
+0
+],
+[
+"v-palladium-2026-12-05-thundercat",
+"2026-12-05T19:00:00",
+[
+"Thundercat"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/thundercat-distracted-af-tour-hollywood-california-12-05-2026/event/090064E88ABF42B0",
+0
+],
+[
+"v-palladium-2026-12-11-virtual-riot-blanke",
+"2026-12-11T20:00:00",
+[
+"Virtual Riot & Blanke"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/bassrush-presents-virtual-riot-blanke-far-hollywood-california-12-11-2026/event/090064D6B46E7E1D",
+0
+],
+[
+"v-palladium-2026-12-15-trippie-redd",
+"2026-12-15T19:00:00",
+[
+"Trippie Redd"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/trippie-redd-the-nondisclosure-agreement-tour-hollywood-california-12-15-2026/event/090065303EFFBE81",
+0
+],
+[
+"v-palladium-2026-12-17-kim-petras",
+"2026-12-17T19:00:00",
+[
+"Kim Petras"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/mixed-feelings-presents-kim-petras-detour-hollywood-california-12-17-2026/event/090065371323C327",
+0
+],
+[
+"v-palladium-2026-12-18-beartooth",
+"2026-12-18T17:30:00",
+[
+"Beartooth"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/beartooth-pure-ecstasy-world-tour-hollywood-california-12-18-2026/event/090064AB1333BE7A",
+0
+],
+[
+"v-palladium-2026-12-19-earl-sweatshirt-mike-home-on-the-range-t",
+"2026-12-19T19:00:00",
+[
+"Earl Sweatshirt & MIKE Home on the Range Tour 2026"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/earl-sweatshirt-mike-home-on-the-hollywood-california-12-19-2026/event/09006466BA1DF6D7",
+0
+],
+[
+"v-palladium-2027-01-09-cid",
+"2027-01-09T20:00:00",
+[
+"CID"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/cid-hollywood-california-01-09-2027/event/0900653032FDAFBF",
+0
+],
+[
+"v-palladium-2027-01-19-fakemink",
+"2027-01-19T19:00:00",
+[
+"fakemink"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/fakemink-a-terrible-beauty-the-tour-hollywood-california-01-19-2027/event/09006513D701D1D2",
+0
+],
+[
+"v-palladium-2027-01-20-fakemink",
+"2027-01-20T19:00:00",
+[
+"fakemink"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/fakemink-a-terrible-beauty-the-tour-hollywood-california-01-20-2027/event/0900651978D425F7",
+0
+],
+[
+"v-palladium-2027-02-09-polyphia",
+"2027-02-09T18:30:00",
+[
+"Polyphia"
+],
+"Hollywood Palladium",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/polyphia-be-not-afraid-world-tour-hollywood-california-02-09-2027/event/090064CAF59921C5",
+0
+],
+[
+"v-ford-2026-10-08-punch-brothers",
+"2026-10-08T20:00:00",
+[
+"Punch Brothers"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4875/2026-10-08/punch-brothers",
+0
+],
+[
+"v-ford-2026-10-10-bambu",
+"2026-10-10T20:00:00",
+[
+"Bambu"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4876/2026-10-10/bambu-bass-building",
+0
+],
+[
+"v-ford-2026-10-11-jacob-collier",
+"2026-10-11T19:30:00",
+[
+"Jacob Collier"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4535/2026-10-11/jacob-collier",
+0
+],
+[
+"v-ford-2026-10-12-jacob-collier",
+"2026-10-12T20:00:00",
+[
+"Jacob Collier"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4536/2026-10-12/jacob-collier",
+0
+],
+[
+"v-ford-2026-10-16-maroons",
+"2026-10-16T20:00:00",
+[
+"Maroons"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4877/2026-10-16/maroons",
+0
+],
+[
+"v-ford-2026-10-17-iron-wine",
+"2026-10-17T20:00:00",
+[
+"Iron & Wine",
+"Ken Pomeroy"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4878/2026-10-17/iron-wine",
+0
+],
+[
+"v-ford-2026-10-18-iron-wine",
+"2026-10-18T19:30:00",
+[
+"Iron & Wine",
+"DUG"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4879/2026-10-18/iron-wine",
+0
+],
+[
+"v-ford-2026-10-23-julian-lage",
+"2026-10-23T20:00:00",
+[
+"Julian Lage",
+"John Medeski",
+"Jorge Roeder",
+"Kenny Wollesen",
+"Laura Itandehui"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4880/2026-10-23/julian-lage-featuring-john-medeski-jorge-roeder-kenny-wollesen",
+0
+],
+[
+"v-ford-2026-10-24-music-beyond-borders",
+"2026-10-24T20:00:00",
+[
+"Music Beyond Borders"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4881/2026-10-24/music-beyond-borders-discostan-with-lifafa-and-arushi-jain",
+0
+],
+[
+"v-ford-2026-10-25-drumatix",
+"2026-10-25T11:30:00",
+[
+"DrumatiX"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4882/2026-10-25/drumatix-rhythm-redefined",
+0
+],
+[
+"v-ford-2026-10-27-montell-fish",
+"2026-10-27T20:00:00",
+[
+"Montell Fish"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4901/2026-10-27/montell-fish-the-nest-tour",
+0
+],
+[
+"v-ford-2027-05-18-agnes-obel",
+"2027-05-18T20:00:00",
+[
+"Agnes Obel"
+],
+"The Ford",
+[],
+null,
+"Tickets",
+"https://www.theford.com/events/performances/4907/2027-05-18/agnes-obel",
+0
+],
+[
+"v-greek-2026-10-06-clair-obscur",
+"2026-10-06T20:00:00",
+[
+"Clair Obscur"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/clair-obscur%3a-expedition-33-%e2%80%9ca-painted-symphony%e2%80%9d/211/",
+0
+],
+[
+"v-greek-2026-10-07-clair-obscur",
+"2026-10-07T20:00:00",
+[
+"Clair Obscur"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/clair-obscur%3a-expedition-33-%e2%80%9ca-painted-symphony%e2%80%9d/212/",
+0
+],
+[
+"v-greek-2026-10-09-for-king-country",
+"2026-10-09T19:00:00",
+[
+"for KING + COUNTRY"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064AEDD6E900E",
+0
+],
+[
+"v-greek-2026-10-10-air-supply",
+"2026-10-10T20:00:00",
+[
+"Air Supply"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064FFD304DE2B",
+0
+],
+[
+"v-greek-2026-10-11-palace",
+"2026-10-11T19:20:00",
+[
+"Palace"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064943F8E8F86",
+0
+],
+[
+"v-greek-2026-10-13-ella-langley",
+"2026-10-13T19:10:00",
+[
+"Ella Langley"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/ella-langley/206/",
+0
+],
+[
+"v-greek-2026-10-14-ella-langley",
+"2026-10-14T19:10:00",
+[
+"Ella Langley"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/ella-langley/207/",
+0
+],
+[
+"v-greek-2026-10-15-role-model",
+"2026-10-15T20:00:00",
+[
+"Role Model"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/role-model-presents%3a-chuck-on-tour/204/",
+0
+],
+[
+"v-greek-2026-10-16-role-model",
+"2026-10-16T20:00:00",
+[
+"Role Model"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/role-model-presents%3a-chuck-on-tour/205/",
+0
+],
+[
+"v-greek-2026-10-17-vulfpeck",
+"2026-10-17T20:00:00",
+[
+"Vulfpeck"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/0900648DE474A9BA",
+0
+],
+[
+"v-greek-2026-10-19-dermot-kennedy",
+"2026-10-19T19:30:00",
+[
+"Dermot Kennedy"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064787D02336C",
+0
+],
+[
+"v-greek-2026-10-20-jessie-ware",
+"2026-10-20T20:00:00",
+[
+"Jessie Ware"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/0900648D8AE9388F",
+0
+],
+[
+"v-greek-2026-10-23-foster-the-people",
+"2026-10-23T19:30:00",
+[
+"Foster The People"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/foster-the-people/179/",
+0
+],
+[
+"v-greek-2026-10-26-tom-jones",
+"2026-10-26T20:00:00",
+[
+"Tom Jones"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064B43E17B4D1",
+0
+],
+[
+"v-greek-2026-10-27-shaboozey",
+"2026-10-27T19:30:00",
+[
+"Shaboozey"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/shaboozey/176/",
+0
+],
+[
+"v-greek-2026-10-28-malcolm-todd",
+"2026-10-28T20:00:00",
+[
+"Malcolm Todd"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064C3B5A6FC88",
+0
+],
+[
+"v-greek-2026-10-29-malcolm-todd",
+"2026-10-29T20:00:00",
+[
+"Malcolm Todd"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064C591D293A2",
+0
+],
+[
+"v-greek-2026-10-30-malcolm-todd",
+"2026-10-30T20:00:00",
+[
+"Malcolm Todd"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/090064C591DF93F9",
+0
+],
+[
+"v-greek-2027-06-26-two-feet",
+"2027-06-26T20:00:00",
+[
+"Two Feet"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/0900652997806748",
+0
+],
+[
+"v-greek-2027-08-17-the-red-clay-strays",
+"2027-08-17T19:00:00",
+[
+"The Red Clay Strays"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/the-red-clay-strays/215/",
+0
+],
+[
+"v-greek-2027-09-11-roger-waters",
+"2027-09-11T20:00:00",
+[
+"Roger Waters"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.lagreektheatre.com/event/roger-waters-presents-legacy-a-pink-floyd-show/214/",
+0
+],
+[
+"v-novo-2026-10-07-rusowsky",
+"2026-10-07T00:00:00",
+[
+"Rusowsky"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-09-hudson-westbrook",
+"2026-10-09T00:00:00",
+[
+"Hudson Westbrook",
+"Kenny Whitmire & Ethan Burdick"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-10-dying-fetus-sanguisugabogg",
+"2026-10-10T00:00:00",
+[
+"Dying Fetus & Sanguisugabogg",
+"Crowbar",
+"Left to Suffer",
+"Deterioration"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-11-jo1",
+"2026-10-11T00:00:00",
+[
+"JO1"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-12-schoolboy-q",
+"2026-10-12T00:00:00",
+[
+"Schoolboy Q"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-15-epik-high",
+"2026-10-15T00:00:00",
+[
+"Epik High"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-16-sunset-rollercoaster",
+"2026-10-16T00:00:00",
+[
+"Sunset Rollercoaster"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-20-underscores",
+"2026-10-20T00:00:00",
+[
+"Underscores",
+"umru"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-22-kylie-cantrall",
+"2026-10-22T00:00:00",
+[
+"Kylie Cantrall",
+"Girlset"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-23-the-adicts",
+"2026-10-23T00:00:00",
+[
+"The Adicts",
+"Dead City",
+"Clit 45",
+"Gvllow"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-24-ten",
+"2026-10-24T00:00:00",
+[
+"TEN"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-29-shyne",
+"2026-10-29T00:00:00",
+[
+"Shyne",
+"Barrington Levy and Lil' Cease"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-30-emei",
+"2026-10-30T00:00:00",
+[
+"EMEI",
+"Madelline"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-10-31-nobuo-uematsu",
+"2026-10-31T00:00:00",
+[
+"Nobuo Uematsu"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-01-krs-one",
+"2026-11-01T00:00:00",
+[
+"Krs‐one"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-04-henry-lau",
+"2026-11-04T00:00:00",
+[
+"Henry Lau"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-05-kwn",
+"2026-11-05T00:00:00",
+[
+"KWN"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-07-countess-luann",
+"2026-11-07T00:00:00",
+[
+"Countess Luann"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-12-lawrence",
+"2026-11-12T00:00:00",
+[
+"Lawrence",
+"Family Company & Lindsey Lomis"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-13-lawrence",
+"2026-11-13T00:00:00",
+[
+"Lawrence",
+"Jacob Jeffries & Oh He Dead"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-14-lawrence",
+"2026-11-14T00:00:00",
+[
+"Lawrence",
+"Rozzi & Still Grounded"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-15-ghostface-killah-raekwon-gza",
+"2026-11-15T00:00:00",
+[
+"Ghostface Killah, Raekwon, & Gza"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-18-cupcakke",
+"2026-11-18T00:00:00",
+[
+"Cupcakke"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-19-the-amity-affliction",
+"2026-11-19T00:00:00",
+[
+"The Amity Affliction",
+"blessthefall",
+"Orthodox",
+"Buried In Spring"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-20-ceremony",
+"2026-11-20T00:00:00",
+[
+"Ceremony",
+"Skinhead",
+"Spellling",
+"Nuovo Testamento",
+"Birdlegs",
+"Peace Cross"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-27-saosin",
+"2026-11-27T00:00:00",
+[
+"Saosin",
+"Silent Planet",
+"Like Moths to Flames",
+"Save Us"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-12-04-night-lovell",
+"2026-12-04T00:00:00",
+[
+"Night Lovell"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-12-05-the-buttertones",
+"2026-12-05T00:00:00",
+[
+"The Buttertones",
+"Ashes to Amber",
+"Alex Vile",
+"Pleasure Pill"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-12-06-roa",
+"2026-12-06T00:00:00",
+[
+"ROA"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-12-18-dalvin-la-melodia",
+"2026-12-18T00:00:00",
+[
+"Dalvin LA Melodia"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-12-19-dj-quik",
+"2026-12-19T00:00:00",
+[
+"DJ Quik"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+]
+]
+}
