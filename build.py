@@ -2,7 +2,7 @@
 
 plain/index.html - full document, unencrypted. Gitignored.
 artifact.html    - bare fragment for the private Claude artifact (its host adds the
-                   doctype/head skeleton). Gitignored; it carries the client data.
+                   doctype/head skeleton). Gitignored; it carries the client data and agents.
 index.html       - plain/index.html locked with StatiCrypt. The only page GitHub serves.
 
 Data: data/shows_merged_<city>.json (after clients.py) or data/shows_<city>.json, plus the
@@ -21,13 +21,22 @@ def norm(s):
 
 
 def client_acts(city):
-    """THE·TEAM acts by date, from the (gitignored) client sheet: {date: {normalized act}}."""
+    """THE·TEAM acts by date, from the (gitignored) client sheet:
+    {date: {normalized act: {"agents": [...], "service": [...]}}}."""
+    names = lambda s: [x.strip() for x in str(s or "").split(",") if x.strip()]
     ours = {}
     if os.path.exists(f"data/clients_raw_{city}.json"):
         for r in json.load(open(f"data/clients_raw_{city}.json")):
-            if r[0] and r[1]:
-                ours.setdefault(r[0], set()).add(norm(str(r[1])))  # a numeric band name arrives as a number
+            if r[0] and r[1]:  # a numeric band name arrives as a number
+                ours.setdefault(r[0], {})[norm(str(r[1]))] = {"agents": names(r[5] if len(r) > 5 else None),
+                                                              "service": names(r[6] if len(r) > 6 else None)}
     return ours
+
+
+def mark(show, ours):
+    """THE·TEAM acts on a bill, with their agents, by the act's spelling on the bill."""
+    day = ours.get(show["date"], {})
+    return [{"artist": x, **day[norm(x)]} for x in [show["headliner"], *show["support"]] if norm(x) in day]
 
 
 page = open("page.html").read()
@@ -55,7 +64,7 @@ for key, name in CITIES:
             if any(same(norm(s["headliner"]), h) or (v == s["venue"] and acts(s) & a) for v, h, a in have.get(s["date"], [])):
                 continue
             have.setdefault(s["date"], []).append((s["venue"], norm(s["headliner"]), acts(s)))
-            s["clients"] = [{"artist": x} for x in [s["headliner"], *s["support"]] if norm(x) in ours_v.get(s["date"], ())]
+            s["clients"] = mark(s, ours_v)
             d["shows"].append(s)
         d["shows"].sort(key=lambda s: (s["date"], s["time"] or "99", s["venue"]))
     # The announcement log (announce.py). Shows count as news only if first seen on Just
@@ -68,7 +77,7 @@ for key, name in CITIES:
     for i, e in news.items():
         if e["seen"] >= cutoff and e["date"] >= str(datetime.date.today() - datetime.timedelta(days=1)):
             a = {"id": i, **{k: e[k] for k in ("date", "time", "venue", "headliner", "support", "age", "ticketUrl")}}
-            a["clients"] = [{"artist": x} for x in [a["headliner"], *a["support"]] if norm(x) in ours.get(a["date"], ())]
+            a["clients"] = mark(a, ours)
             announced.append(a)
     # One row per show: a venue-calendar entry and OMR's listing of the same night are the
     # same show. Keep whichever was seen first, with OMR's details when it has them.
@@ -84,7 +93,9 @@ for key, name in CITIES:
         best[k] = a
     announced = [a for k, a in best.items() if not (news[a["id"]]["how"] == "venue" and k in week_keys)]
     for show in d["shows"] + announced:
-        show["clients"] = [{"artist": c["artist"]} for c in show.get("clients", [])]  # agent names never ship
+        # THE·TEAM acts with their agents. Only inside the locked page; never in a committed file.
+        show["clients"] = [{"artist": c["artist"], "agents": c.get("agents", []), "service": c.get("service", [])}
+                           for c in show.get("clients", [])]
         e = news.get(show["id"])
         if e:
             show["firstSeen"] = e["seen"]

@@ -15,7 +15,8 @@ New York time, so this skill is for the weekly review and for on-demand runs.
 - **The repo is public; client data never goes in it.** Which acts are THE·TEAM's appears
   only inside the StatiCrypt-locked `index.html`, marked at build time. No committed data
   file may carry a `"clients"` field (an old `announced_<city>.json` did, leaking two names,
-  2026-10). Agent names never leave this machine. `.githooks/guard.sh` enforces this: it
+  2026-10). Agent names appear only encrypted: in `data/clients.enc` and inside the locked page (under
+  each THE·TEAM show); never in plain text in any committed file. `.githooks/guard.sh` enforces this: it
   runs as the pre-commit hook (`git config core.hooksPath .githooks`) and inside
   `refresh.sh`, and refuses the commit. Never bypass it with `--no-verify`.
 - **A bot-check page stops the scrape.** Never retry around it, change the user agent,

@@ -51,6 +51,8 @@ with sync_playwright() as p:
         all_rows = rows(page)
         page.click("#oursOnly")
         ours = rows(page)
+        check("every THE·TEAM row shows its agents",
+              page.locator("#out .row.ours").count() == page.locator("#out .row.ours .agents-line").count() > 0)
         check("THE·TEAM filter narrows to client shows", 0 < ours < all_rows and page.locator("#out .row:not(.ours)").count() == 0, f"{ours}")
         page.click("#oursOnly")
         page.click("#noSupport")

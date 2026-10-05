@@ -163,6 +163,11 @@ main { padding-block: 8px 80px; }
 .mine { color: var(--bg); font-weight: 500; background: var(--accent); padding: 1px 5px; border-radius: 2px; }  /* a THE·TEAM act */
 .head a.mine { border-bottom: 0; }
 .head a.mine:hover { color: var(--bg); background: var(--ink); }
+/* Under a THE·TEAM show: each client act's agents, service agent in brackets. */
+.agents-line { margin-top: 5px; font-size: 13px; color: var(--ink); }
+.agents-line .label { color: var(--accent); font-size: 9px; margin-right: 6px; }
+.agents-line em { font-style: normal; color: var(--accent); font-weight: 500; }
+.agents-line .svc { color: var(--muted); }
 .empty { padding: 48px 0; color: var(--muted); max-width: 52ch; }
 .foot { color: var(--muted); border-top: 1px solid var(--grey1); padding-block: 24px 40px; font-size: 13px; }
 .foot p { max-width: 70ch; margin: 0 0 6px; }
@@ -194,6 +199,8 @@ body.compact { font-size: 12.5px; }
 .compact .row:not(.open) .support .acts i { margin: 0 3px; }
 .compact .row:not(.open) .support.none .acts { font-size: 11.5px; }
 .compact .row:not(.open) .at { grid-column: 3; font-size: 12.5px; }
+.compact .row:not(.open) .bill > .agents-line { grid-row: 2; grid-column: 1 / -1; margin-top: 2px; font-size: 11.5px; white-space: normal; overflow: visible; }
+@media (max-width: 720px) { .compact .row:not(.open) .bill > .agents-line { grid-row: auto; } }  /* phones: one column, so under the support acts */
 .compact .row:not(.open) .meta { padding-top: 0; gap: 10px; font-size: 11.5px; justify-content: flex-end; }
 .compact .row:not(.open) .save svg, .compact .row:not(.open) .cal svg { width: 14px; height: 14px; }
 @media (max-width: 720px) {
@@ -366,6 +373,13 @@ function chip(label, key, val, extra) {
 document.getElementById("dayChips").innerHTML =
   chip("All days", "day", "all") + weekDays.map(d => chip(dow(d), "day", d, md(d))).join("");
 
+const billPos = (s, a) => { const i = [s.headliner, ...s.support].indexOf(a); return i < 0 ? 99 : i; };
+const agentsOf = s => [...new Set(s.clients.flatMap(c => [...(c.agents || []), ...(c.service || [])]))];
+// "Agents  Agent One, Agent Two (Service Agent)"; each act named when a bill has more than one client.
+const agentsLine = s => !s.clients.length ? "" : `<div class="agents-line" title="${esc(agentsOf(s).join(", "))}"><span class="label">Agents</span>${
+  [...s.clients].sort((a, b) => billPos(s, a.artist) - billPos(s, b.artist)).map(c => (s.clients.length > 1 ? `<em>${esc(c.artist)}:</em> ` : "") + ((c.agents || []).map(esc).join(", ") || "—") +
+    ((c.service || []).length ? ` <span class="svc">(${c.service.map(esc).join(", ")})</span>` : "")).join(" · ")}</div>`;
+
 /* filtering */
 function matches(s) {
   if (state.page === "week" && state.day !== "all" && s.date !== state.day) return false;  // announcements span months, not the day chips
@@ -373,7 +387,7 @@ function matches(s) {
   if (state.ours && !s.clients.length) return false;
   if (state.page === "week" && state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
-    const hay = norm([s.headliner, ...s.support, s.venue].join(" "));
+    const hay = norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" "));
     if (!norm(state.q).split(/\s+/).every(w => hay.includes(w))) return false;
   }
   return true;
@@ -476,6 +490,7 @@ function row(s, withVenue) {
     <div class="bill">
       <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}</div>
       ${support}
+      ${agentsLine(s)}
       ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
     <div class="meta">
