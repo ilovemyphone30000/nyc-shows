@@ -74,10 +74,7 @@ button { font: inherit; color: inherit; }
 .toggle.team:not([aria-pressed="true"]):hover { background: var(--tint); }
 .toggle.team[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .toggle:not([aria-pressed="true"]):hover { background: var(--panel); }
-.compact-btn { margin-left: auto; background: none; border: 0; padding: 10px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--muted); display: inline-flex; gap: 6px; align-items: center; }
-.compact-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
-.compact-btn { color: var(--ink); border-bottom: 1px solid var(--grey4) !important; padding: 4px 0 !important; }
-.compact-btn:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
+.spacer { margin-left: auto; }
 .new-count { font-size: 11px; margin-left: 6px; padding: 1px 6px; border-radius: 9px; background: var(--accent); color: var(--bg); font-variant-numeric: tabular-nums; }
 .new-count:empty { display: none; }
 .new-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 0 4px; margin-left: 8px; vertical-align: 2px; border-radius: 2px; }
@@ -251,7 +248,7 @@ body.compact { font-size: 12.5px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
-    <button class="compact-btn" id="compactBtn"></button>
+    <span class="spacer"></span>
     <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
     <button class="tab saved week-only" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
@@ -591,17 +588,8 @@ document.querySelector(".bar").addEventListener("click", e => {
   if (c.dataset.day) state.day = c.dataset.day;
   render();
 });
-// Compact is the default; the button offers whichever view you're not in.
-let compact = store.get("compact2", true) !== false;
-const applyCompact = () => {
-  document.body.classList.toggle("compact", compact);
-  document.getElementById("compactBtn").innerHTML = compact
-    ? '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12M2 5.5h8M2 10h12M2 12.5h8"/></svg>Expanded view'
-    : '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3.5h12M2 6.5h12M2 9.5h12M2 12.5h12"/></svg>Compact view';
-};
-
-applyCompact();
-document.getElementById("compactBtn").addEventListener("click", () => { compact = !compact; store.set("compact2", compact); applyCompact(); });
+// Always the compact, spreadsheet-style list; click a row to open it out.
+document.body.classList.add("compact");
 document.getElementById("icsBtn").addEventListener("click", () => {
   const favs = favorites();
   if (favs.length) downloadIcs(favs, "Favorite shows");

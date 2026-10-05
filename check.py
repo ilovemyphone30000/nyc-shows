@@ -37,7 +37,7 @@ with sync_playwright() as p:
         check("no script errors on load", not errors, "; ".join(errors[:2]))
         overflow = page.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
         check("no sideways scroll", overflow <= 0, f"{overflow}px too wide")
-        check("compact view by default", page.evaluate("document.body.classList.contains('compact')"))
+        check("compact view always", page.evaluate("document.body.classList.contains('compact')"))
         n = rows(page)
         check("shows render", n > 100, f"{n} rows")
 
@@ -125,11 +125,7 @@ with sync_playwright() as p:
         check("Saved view shows the hearted show", rows(page) == 1)
         page.click('.tab[data-view="date"]')
 
-        # expanded view
-        page.click("#compactBtn")
-        check("Expanded view toggles off compact", not page.evaluate("document.body.classList.contains('compact')"))
-        overflow = page.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
-        check("expanded view has no sideways scroll", overflow <= 0, f"{overflow}px")
+        check("no expanded-view button", page.locator("#compactBtn").count() == 0)
 
         # deep link
         page.goto(URL + "#chicago")
