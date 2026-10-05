@@ -243,8 +243,8 @@ body.compact { font-size: 12.5px; }
     </span>
     <span class="label sortby new-only">Group by</span>
     <span class="seg new-only" id="groupSeg">
-      <button class="tab" data-group="found">Day found</button>
-      <button class="tab" data-group="date">Show date</button>
+      <button class="tab" data-group="found">Day found<span class="dir" aria-hidden="true"></span></button>
+      <button class="tab" data-group="date">Show date<span class="dir" aria-hidden="true"></span></button>
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
@@ -330,6 +330,9 @@ let state = { page: route().page || "week", view: store.get("view2", "date"), da
 if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
 if (![1, 7, 30].includes(state.period)) state.period = 7;
 if (!["found", "date"].includes(state.group)) state.group = "found";
+// Sort direction per grouping; clicking the selected one flips it. Day found starts newest
+// first, show date soonest first.
+const annDir = Object.assign({ found: "desc", date: "asc" }, store.get("annDir", {}));
 const syncHash = () => { try { history.replaceState(null, "", "#" + (cityKey === "chi" ? "chicago" : cityKey) + (state.page === "new" ? "/announced" : "")); } catch (e) {} };
 let saved = new Set(store.get("saved", []));
 
@@ -506,10 +509,11 @@ function renderVenues(list) {
   return html;
 }
 
-function renderDates(list) {
+function renderDates(list, desc) {
   let html = "";
   // Every date in the list, in order: this week's days, or weeks out for announcements and saved shows.
-  for (const d of [...new Set(list.map(s => s.date))].sort()) {
+  const days = [...new Set(list.map(s => s.date))].sort();
+  for (const d of desc ? days.reverse() : days) {
     const inD = list.filter(s => s.date === d).sort((a, b) => (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));  // no time (added from the agency list) sorts last
     html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${mdy(d)}${d === TODAY_ISO ? " <em>· Today</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
       <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;
@@ -522,7 +526,8 @@ function renderFound(list) {
   const day = s => iso(new Date(s.firstSeen));
   const yest = new Date(now); yest.setDate(now.getDate() - 1);
   let html = "";
-  for (const d of [...new Set(list.map(day))].sort().reverse()) {
+  const days = [...new Set(list.map(day))].sort();
+  for (const d of annDir.found === "desc" ? days.reverse() : days) {
     const inD = list.filter(s => day(s) === d).sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));
     const label = d === TODAY_ISO ? "Found today" : d === iso(yest) ? "Found yesterday" : `Found ${FULLDAY[d8(d).getDay()]}, ${md(d)}`;
     const since = inD.map(s => s.since).filter(Boolean).sort()[0];  // the scan before this one was blocked
@@ -544,7 +549,12 @@ function render() {
   document.getElementById("range").textContent = state.page === "new" ? "Just announced" : STALE ? "Listings out of date" : md(FROM) + " – " + md(TO);
   document.querySelectorAll(".tab[data-view]").forEach(t => t.setAttribute("aria-selected", t.dataset.view === state.view));
   document.querySelectorAll(".tab[data-period]").forEach(t => t.setAttribute("aria-selected", +t.dataset.period === state.period));
-  document.querySelectorAll(".tab[data-group]").forEach(t => t.setAttribute("aria-selected", t.dataset.group === state.group));
+  document.querySelectorAll(".tab[data-group]").forEach(t => {
+    const on = t.dataset.group === state.group, desc = annDir[t.dataset.group] === "desc";
+    t.setAttribute("aria-selected", on);
+    t.querySelector(".dir").textContent = on ? (desc ? " ↓" : " ↑") : "";
+    t.title = on ? `${t.dataset.group === "found" ? (desc ? "Newest" : "Oldest") : (desc ? "Furthest out" : "Soonest")} first. Click to reverse.` : "";
+  });
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
@@ -572,14 +582,17 @@ function render() {
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
     return;
   }
-  out.innerHTML = state.page === "new" ? (state.group === "found" ? renderFound(list) : renderDates(list))
+  out.innerHTML = state.page === "new" ? (state.group === "found" ? renderFound(list) : renderDates(list, annDir.date === "desc"))
     : state.view === "venue" ? renderVenues(list) : renderDates(list);
 }
 
 document.querySelector(".tabs").addEventListener("click", e => {
   const t = e.target.closest(".tab"); if (!t) return;
   if (t.dataset.period) { state.period = +t.dataset.period; store.set("annPeriod", state.period); }
-  else if (t.dataset.group) { state.group = t.dataset.group; store.set("annGroup", state.group); }
+  else if (t.dataset.group) {
+    if (t.dataset.group === state.group) { annDir[state.group] = annDir[state.group] === "desc" ? "asc" : "desc"; store.set("annDir", annDir); }
+    else { state.group = t.dataset.group; store.set("annGroup", state.group); }
+  }
   else { state.view = t.dataset.view; store.set("view2", state.view); }
   render();
 });
