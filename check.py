@@ -69,12 +69,27 @@ with sync_playwright() as p:
         # venue view and back
         page.click('.tab[data-view="venue"]')
         check("venue view renders", page.locator(".venue").count() > 10)
-        page.click('.tab[data-view="new"]')
-        new_rows = rows(page)
-        check("Just announced shows new shows or says there are none",
-              new_rows > 0 or page.locator(".empty").count() == 1, f"{new_rows} rows")
-        check("day buttons hide on Just announced", page.locator("#dayChips").is_hidden())
         page.click('.tab[data-view="date"]')
+
+        # the Just announced page: the log of shows as first seen
+        page.click('#pages a[data-page="new"]')
+        check("Just announced page opens", page.inner_text("#range") == "Just announced" and page.evaluate("location.hash") == "#nyc/announced")
+        check("day buttons and Saved hide there", page.locator("#dayChips").is_hidden() and page.locator(".tab.saved").is_hidden())
+        page.click('.tab[data-period="30"]')
+        found = rows(page)
+        check("30 days of announcements render", found > 0 or page.locator(".empty").count() == 1, f"{found} rows")
+        heads = page.locator(".sect-head h2").all_inner_texts()
+        check("grouped by day found", all(h.startswith("Found") for h in heads), heads[0] if heads else "none")
+        page.click('.tab[data-group="date"]')
+        check("group by show date", rows(page) == found and not any(h.startswith("Found") for h in page.locator(".sect-head h2").all_inner_texts()))
+        page.click('.tab[data-period="1"]')
+        check("24 hours is a subset", rows(page) <= found)
+        page.click('.tab[data-group="found"]')
+        page.click('.tab[data-period="7"]')
+        overflow = page.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
+        check("announced page has no sideways scroll", overflow <= 0, f"{overflow}px")
+        page.click('#pages a[data-page="week"]')
+        check("back to This week", page.inner_text("#range") != "Just announced" and rows(page) > 50)
 
         # open a compact row by click and by keyboard
         first = page.locator("#out .row").first
@@ -123,6 +138,9 @@ with sync_playwright() as p:
         page.evaluate("location.hash = 'la'")
         page.wait_for_timeout(200)
         check("changing the hash switches city", "Los Angeles" in page.locator(".city[aria-pressed=true]").inner_text())
+        page.goto(URL + "#chicago/announced")
+        page.wait_for_timeout(300)
+        check("#chicago/announced opens Chicago's Just announced", "Chicago" in page.locator(".city[aria-pressed=true]").inner_text() and page.inner_text("#range") == "Just announced")
 
         check("no script errors after all that", not errors, "; ".join(errors[:2]))
         ctx.close()

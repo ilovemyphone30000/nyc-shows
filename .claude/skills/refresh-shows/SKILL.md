@@ -12,10 +12,12 @@ New York time, so this skill is for the weekly review and for on-demand runs.
 
 ## Rules that do not bend
 
-- **Agent names never leave this machine.** The page marks which acts are THE·TEAM's and
-  nothing more. `data/clients_raw_*.json` is gitignored; `data/clients.enc` is encrypted
-  and has the agent columns stripped. Before any push, `git grep --cached` for an agent
-  name from the sheet must come back empty.
+- **The repo is public; client data never goes in it.** Which acts are THE·TEAM's appears
+  only inside the StatiCrypt-locked `index.html`, marked at build time. No committed data
+  file may carry a `"clients"` field (an old `announced_<city>.json` did, leaking two names,
+  2026-10). Agent names never leave this machine. `.githooks/guard.sh` enforces this: it
+  runs as the pre-commit hook (`git config core.hooksPath .githooks`) and inside
+  `refresh.sh`, and refuses the commit. Never bypass it with `--no-verify`.
 - **A bot-check page stops the scrape.** Never retry around it, change the user agent,
   or add proxies. Record the gap and move on; the city keeps its last good data.
 - **Never request axs.com.** AXS ticket links are stored, never opened.
@@ -31,6 +33,12 @@ cd /Users/jonahisaac/Downloads/scout-nyc && git pull -q --rebase origin main
 `refresh.sh` scrapes the three cities in parallel (the week window plus each city's
 Just Announced list), then runs `process.py`, `clients.py` and `announce.py` per city,
 `changes.py`, `build.py`, and `check.py` (the browser checks; all must pass).
+
+`announce.py` keeps `data/ledger_<city>.json`, the log behind the site's **Just announced**
+page (`#nyc/announced`): every show the first time a scan sees it, however far out, marked
+`announced` (on OMR's Just Announced list), `added` (appeared mid-week) or `range` (only
+slid into the window; not news). It only grows on a day with a good scan, and notes the
+gap when the previous good scan was over 30 hours earlier.
 
 ## 2. Review new venues
 

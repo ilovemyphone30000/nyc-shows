@@ -43,9 +43,7 @@ if [[ "${1:-}" == "--no-push" ]]; then
 fi
 
 git add -A
-if git grep --cached -q -e "RESPONSIBLE AGENT" -e "SERVICE AGENT" -- ':!refresh.sh'; then  # sheet headers = raw sheet data
-  echo "refusing to commit: client sheet data is staged"; exit 1
-fi
+.githooks/guard.sh || { echo "::error::client data was staged; nothing committed"; exit 1; }  # this repo is public
 if git diff --cached --quiet; then
   echo "== nothing changed"; exit 0
 fi

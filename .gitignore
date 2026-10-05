@@ -11,3 +11,8 @@ data/clients_raw_*
 data/shows_merged_*
 .clients-key
 logs/
+# Old per-city announcement files: they carried THE·TEAM client matches. Never commit them.
+data/announced_nyc.json
+data/announced_chi.json
+data/announced_la.json
+data/first_seen_*.json

@@ -82,7 +82,13 @@ button { font: inherit; color: inherit; }
 .new-count { font-size: 11px; margin-left: 6px; padding: 1px 6px; border-radius: 9px; background: var(--accent); color: var(--bg); font-variant-numeric: tabular-nums; }
 .new-count:empty { display: none; }
 .new-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); border: 1px solid var(--accent); padding: 0 4px; margin-left: 8px; vertical-align: 2px; border-radius: 2px; }
-.view-new #dayChips { display: none; }
+/* Two pages: This week, and Just announced (the log of every show as it was first seen). */
+.pages { display: flex; gap: 22px; }
+.pages a { color: var(--grey7); text-decoration: none; padding-bottom: 3px; border-bottom: 1px solid transparent; display: inline-flex; align-items: center; }
+.pages a:hover { color: var(--ink); }
+.pages a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+.page-new .week-only, body:not(.page-new) .new-only { display: none !important; }
+.gap-note { color: var(--muted); font-family: var(--sans); font-size: 12px; margin: 6px 0 0; }
 .tab.saved { padding: 10px 0; background: none; color: var(--muted); border-bottom: 1px solid transparent; }
 .tab.saved[aria-selected="true"] { color: var(--accent); border-bottom-color: var(--accent); }
 .tab.saved:hover { color: var(--accent); }
@@ -212,6 +218,10 @@ body.compact { font-size: 12.5px; }
 <header class="mast">
   <div class="wrap">
     <div class="brand"><span class="dot"></span><span class="label">Shows</span></div>
+    <nav class="pages label" id="pages" aria-label="Page">
+      <a href="#nyc" data-page="week">This week</a>
+      <a href="#nyc/announced" data-page="new">Just announced<span class="new-count" id="newN"></span></a>
+    </nav>
     <div class="checked label"><span class="dot"></span><span id="checked"></span></div>
   </div>
 </header>
@@ -225,23 +235,33 @@ body.compact { font-size: 12.5px; }
 
 <nav class="tabs" aria-label="Views">
   <div class="wrap" role="tablist">
-    <span class="label sortby">Sort by</span>
-    <span class="seg">
+    <span class="label sortby week-only">Sort by</span>
+    <span class="seg week-only">
       <button class="tab" role="tab" data-view="date">Date</button>
       <button class="tab" role="tab" data-view="venue">Venue</button>
-      <button class="tab" role="tab" data-view="new">Just announced<span class="new-count" id="newN"></span></button>
+    </span>
+    <span class="label sortby new-only">Found in the last</span>
+    <span class="seg new-only" id="periodSeg">
+      <button class="tab" data-period="1">24 hours</button>
+      <button class="tab" data-period="7">7 days</button>
+      <button class="tab" data-period="30">30 days</button>
+    </span>
+    <span class="label sortby new-only">Group by</span>
+    <span class="seg new-only" id="groupSeg">
+      <button class="tab" data-group="found">Day found</button>
+      <button class="tab" data-group="date">Show date</button>
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
     <button class="compact-btn" id="compactBtn"></button>
     <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
-    <button class="tab saved" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
+    <button class="tab saved week-only" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
 
 <div class="bar">
   <div class="wrap">
-    <div class="chips" id="dayChips" aria-label="Day"></div>
+    <div class="chips week-only" id="dayChips" aria-label="Day"></div>
     <input class="search" id="q" type="search" placeholder="Search artist or venue" aria-label="Search artist or venue">
     <div class="count label" id="count"></div>
   </div>
@@ -266,6 +286,7 @@ const FULLDAY = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday
 const d8 = s => { const [y, m, d] = s.split("-").map(Number); return new Date(y, m - 1, d); };
 const dow = s => DAYS[d8(s).getDay()];
 const md = s => { const d = d8(s); return MONTHS[d.getMonth()] + " " + d.getDate(); };
+const mdy = s => md(s) + (d8(s).getFullYear() !== new Date().getFullYear() ? " ’" + String(d8(s).getFullYear()).slice(2) : "");  // far-out dates carry their year
 const fmtTime = t => { let [h, m] = t.split(":").map(Number); const ap = h >= 12 ? "PM" : "AM"; h = h % 12 || 12; return h + (m ? ":" + String(m).padStart(2, "0") : "") + " " + ap; };
 const safeUrl = u => (typeof u === "string" && /^https?:\/\//i.test(u)) ? u : null;
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -279,7 +300,8 @@ const store = {
 // One tab per city; #nyc / #chicago / #la deep-links to a tab.
 const CITIES = DATA.cities;
 const HASH = { nyc: "nyc", chicago: "chi", chi: "chi", la: "la" };
-let cityKey = HASH[location.hash.slice(1)] || store.get("city", "nyc");
+const route = () => { const [c, pg] = location.hash.slice(1).split("/"); return { city: HASH[c], page: pg === "announced" ? "new" : c ? "week" : null }; };
+let cityKey = route().city || store.get("city", "nyc");
 if (!CITIES.some(c => c.key === cityKey)) cityKey = "nyc";
 let city = CITIES.find(c => c.key === cityKey);
 let shows = city.shows;
@@ -294,21 +316,26 @@ const TODAY_ISO = iso(now);
 const STALE = FROM > TO;  // the page hasn't been rebuilt in over a week: the window is past the data
 for (const c of CITIES) c.shows = c.shows.filter(s => s.date >= FROM && s.date <= TO);
 shows = city.shows;
-// Newly announced: first seen by the daily refresh within the last 24 hours (viewer's clock).
+// Announcements: shows the refresh first saw on Just Announced, or that went up mid-week,
+// within the last 30 days. "New" = first seen in the last 24 hours (viewer's clock).
 const NEW_SINCE = Date.now() - 864e5;
 const isNew = s => !!s.firstSeen && Date.parse(s.firstSeen) > NEW_SINCE;
 for (const c of CITIES) {
-  const ids = new Set();  // the Just Announced list, plus anything new inside the window
-  c.fresh = [...(c.announced || []), ...c.shows].filter(s => s.date >= FROM && isNew(s) && !ids.has(s.id) && ids.add(s.id));
-  c.all = [...c.shows, ...c.fresh.filter(s => !c.shows.some(x => x.id === s.id))];  // for hearts and calendar lookups
+  const ids = new Set();
+  c.feed = [...(c.announced || []), ...c.shows.filter(s => s.firstSeen)].filter(s => s.date >= TODAY_ISO && !ids.has(s.id) && ids.add(s.id));
+  c.all = [...c.shows, ...c.feed.filter(s => !c.shows.some(x => x.id === s.id))];  // for hearts and calendar lookups
 }
 const weekDays = [];
 for (let d = d8(FROM); d <= d8(TO); d.setDate(d.getDate() + 1)) {
   weekDays.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"));
 }
 
-let state = { view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false };
-if (!["date", "venue", "new", "saved"].includes(state.view)) state.view = "date";
+let state = { page: route().page || "week", view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false,
+  period: store.get("annPeriod", 7), group: store.get("annGroup", "found") };
+if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
+if (![1, 7, 30].includes(state.period)) state.period = 7;
+if (!["found", "date"].includes(state.group)) state.group = "found";
+const syncHash = () => { try { history.replaceState(null, "", "#" + (cityKey === "chi" ? "chicago" : cityKey) + (state.page === "new" ? "/announced" : "")); } catch (e) {} };
 let saved = new Set(store.get("saved", []));
 
 /* static copy */
@@ -317,16 +344,23 @@ document.getElementById("cities").innerHTML = CITIES.map(c =>
 function setCity(key) {
   city = CITIES.find(c => c.key === key); cityKey = key; shows = city.shows;
   store.set("city", key);
-  try { history.replaceState(null, "", "#" + (key === "chi" ? "chicago" : key)); } catch (e) {}
+  syncHash();
   render();
 }
 document.getElementById("cities").addEventListener("click", e => {
   const b = e.target.closest(".city"); if (b && b.dataset.city !== cityKey) setCity(b.dataset.city);
 });
-window.addEventListener("hashchange", () => {
-  const k = HASH[location.hash.slice(1)]; if (k && k !== cityKey && CITIES.some(c => c.key === k)) setCity(k);
+function setPage(pg) { state.page = pg; syncHash(); render(); window.scrollTo(0, 0); }
+document.getElementById("pages").addEventListener("click", e => {
+  const a = e.target.closest("a"); if (!a) return;
+  e.preventDefault(); if (a.dataset.page !== state.page) setPage(a.dataset.page);
 });
-document.getElementById("range").textContent = STALE ? "Listings out of date" : md(FROM) + " – " + md(TO);
+window.addEventListener("hashchange", () => {
+  const r = route();
+  if (r.city && r.city !== cityKey && CITIES.some(c => c.key === r.city)) { cityKey = r.city; city = CITIES.find(c => c.key === r.city); shows = city.shows; store.set("city", r.city); }
+  if (r.page) state.page = r.page;
+  render();
+});
 
 
 
@@ -339,10 +373,11 @@ document.getElementById("dayChips").innerHTML =
 
 /* filtering */
 function matches(s) {
-  if (state.view !== "new" && state.day !== "all" && s.date !== state.day) return false;  // announcements span weeks, not the day chips
+  if (state.page === "new") { if (!(Date.parse(s.firstSeen) > Date.now() - state.period * 864e5)) return false; }
+  else if (state.day !== "all" && s.date !== state.day) return false;  // announcements span months, not the day chips
   if (state.noSupport && s.support.length) return false;
   if (state.ours && !s.clients.length) return false;
-  if (state.view === "saved" && !saved.has(s.id)) return false;
+  if (state.page === "week" && state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
     const hay = norm([s.headliner, ...s.support, s.venue].join(" "));
     if (!norm(state.q).split(/\s+/).every(w => hay.includes(w))) return false;
@@ -426,7 +461,7 @@ function downloadIcs(list, name) {  // list: shows, or [show, city] pairs
   document.body.appendChild(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 30000);  // Safari reads the blob late
 }
-// Hearted shows in every city (this week and newly announced), as [show, city] pairs for the export button.
+// Hearted shows in every city (this week and announced), as [show, city] pairs for the export button.
 const favorites = () => CITIES.flatMap(c => c.all.filter(s => saved.has(s.id)).map(s => [s, c]));
 if (window.claude) document.body.classList.add("no-ics");
 
@@ -443,7 +478,7 @@ function row(s, withVenue) {
     ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(a => `<span class="act">${name(a)}</span>`).join("<i>·</i>")}</span></div>`
     : `<div class="support none"><span class="acts">No support listed</span></div>`;
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
-    <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : md(dates[0])}</span></div>
+    <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : mdy(dates[0])}</span></div>
     <div class="bill">
       <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}</div>
       ${support}
@@ -481,7 +516,22 @@ function renderDates(list) {
   // Every date in the list, in order: this week's days, or weeks out for announcements and saved shows.
   for (const d of [...new Set(list.map(s => s.date))].sort()) {
     const inD = list.filter(s => s.date === d).sort((a, b) => (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));  // no time (added from the agency list) sorts last
-    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${md(d)}${d === TODAY_ISO ? " <em>· Today</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
+    html += `<div class="sect-head"><h2>${FULLDAY[d8(d).getDay()]}, ${mdy(d)}${d === TODAY_ISO ? " <em>· Today</em>" : ""}</h2><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
+      <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;
+  }
+  return html;
+}
+
+// Just announced, grouped by the day the refresh found each show (viewer's clock), newest first.
+function renderFound(list) {
+  const day = s => iso(new Date(s.firstSeen));
+  const yest = new Date(now); yest.setDate(now.getDate() - 1);
+  let html = "";
+  for (const d of [...new Set(list.map(day))].sort().reverse()) {
+    const inD = list.filter(s => day(s) === d).sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));
+    const label = d === TODAY_ISO ? "Found today" : d === iso(yest) ? "Found yesterday" : `Found ${FULLDAY[d8(d).getDay()]}, ${md(d)}`;
+    const since = inD.map(s => s.since).filter(Boolean).sort()[0];  // the scan before this one was blocked
+    html += `<div class="sect-head"><div><h2>${label}</h2>${since ? `<p class="gap-note">First check since ${dow(iso(new Date(since)))} ${md(iso(new Date(since)))}, so some of these went up in between.</p>` : ""}</div><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
       <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;
   }
   return html;
@@ -491,18 +541,25 @@ function render() {
   document.querySelectorAll(".city").forEach(b => b.setAttribute("aria-pressed", b.dataset.city === cityKey));
   const stale = city.checked < TODAY_ISO;  // the last refresh for this city didn't get through
   document.getElementById("checked").textContent = "Checked " + dow(city.checked) + " " + md(city.checked) + (stale ? " · may be out of date" : "");
-  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-selected", t.dataset.view === state.view));
+  document.body.classList.toggle("page-new", state.page === "new");
+  document.querySelectorAll("#pages a").forEach(a => {
+    a.href = "#" + (cityKey === "chi" ? "chicago" : cityKey) + (a.dataset.page === "new" ? "/announced" : "");
+    a.toggleAttribute("aria-current", a.dataset.page === state.page); if (a.dataset.page === state.page) a.setAttribute("aria-current", "page");
+  });
+  document.getElementById("range").textContent = state.page === "new" ? "Just announced" : STALE ? "Listings out of date" : md(FROM) + " – " + md(TO);
+  document.querySelectorAll(".tab[data-view]").forEach(t => t.setAttribute("aria-selected", t.dataset.view === state.view));
+  document.querySelectorAll(".tab[data-period]").forEach(t => t.setAttribute("aria-selected", +t.dataset.period === state.period));
+  document.querySelectorAll(".tab[data-group]").forEach(t => t.setAttribute("aria-selected", t.dataset.group === state.group));
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
-  document.body.classList.toggle("view-new", state.view === "new");
   const savedHere = city.all.filter(s => saved.has(s.id)).length;
   document.getElementById("savedN").textContent = savedHere;
-  document.getElementById("newN").textContent = city.fresh.length || "";
+  document.getElementById("newN").textContent = city.feed.filter(isNew).length || "";
 
-  // Which shows the view draws from: this week, the newly announced, or everything hearted.
-  const pool = state.view === "new" ? city.fresh : state.view === "saved" ? city.all : shows;
+  // Which shows the view draws from: the announcement log, this week, or everything hearted.
+  const pool = state.page === "new" ? city.feed : state.view === "saved" ? city.all : shows;
   const list = pool.filter(matches);
   const favs = favorites().length;
   document.getElementById("icsBtn").innerHTML = `${CAL}Add ${favs} favorite${favs === 1 ? "" : "s"} to calendar`;
@@ -514,18 +571,22 @@ function render() {
   const out = document.getElementById("out");
   if (!list.length) {
     out.innerHTML = `<p class="empty">${
-      STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
+      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced in ${esc(city.name)} in the last ${state.period === 1 ? "24 hours" : state.period + " days"}. The log fills in each morning as new shows go up.`
+      : STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
       : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
-      : state.view === "new" && !city.fresh.length ? `Nothing newly announced in ${esc(city.name)} in the last 24 hours. New shows appear here the morning after they're announced.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
     return;
   }
-  out.innerHTML = state.view === "venue" ? renderVenues(list) : renderDates(list);
+  out.innerHTML = state.page === "new" ? (state.group === "found" ? renderFound(list) : renderDates(list))
+    : state.view === "venue" ? renderVenues(list) : renderDates(list);
 }
 
 document.querySelector(".tabs").addEventListener("click", e => {
   const t = e.target.closest(".tab"); if (!t) return;
-  state.view = t.dataset.view; store.set("view2", state.view); render();
+  if (t.dataset.period) { state.period = +t.dataset.period; store.set("annPeriod", state.period); }
+  else if (t.dataset.group) { state.group = t.dataset.group; store.set("annGroup", state.group); }
+  else { state.view = t.dataset.view; store.set("view2", state.view); }
+  render();
 });
 document.querySelector(".bar").addEventListener("click", e => {
   const c = e.target.closest(".chip"); if (!c) return;
