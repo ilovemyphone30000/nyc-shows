@@ -1,31 +1,64 @@
-nyc | Amityville Music Hall | 10-11 Lucero
-nyc | Basilica Hudson | 10-09 Sunn O)))
+nyc | Amityville Music Hall | 10-11 Lucero; 10-16 AJJ; 10-17 Sweet Pill
+nyc | BRIC House | 10-16 Bilal
+nyc | Basilica Hudson | 10-09 Sunn O))); 10-18 Sugar
+nyc | Bleecker Bell | 10-17 Buffalo Nichols
+nyc | Blue Note | 10-17 Robert Glasper; 10-17 Robert Glasper; 10-18 Robert Glasper
+nyc | C'mon Everybody | 10-15 Spencer Mackey
+nyc | City Winery | 10-15 Andrew McMahon; 10-16 Andrew McMahon
+nyc | Crown Hill Theatre | 10-15 Blue
 nyc | Dada | 10-09 Great Lake Swimmers
-nyc | David Rubenstein Atrium at Lincoln Center | 10-08 Elisapie; 10-09 Nicolás y Los Fumadores
+nyc | David Rubenstein Atrium at Lincoln Center | 10-08 Elisapie; 10-09 Nicolás y Los Fumadores; 10-15 Mei Semones
 nyc | ERF Gallery | 10-10 Public Circuit
+nyc | Guggenheim Museum | 10-15 Arushi Jain
 nyc | Jalopy Theater | 10-08 Matt Sucich
 nyc | Joe's Pub | 10-12 Elissa Mielke; 10-12 Christeene
 nyc | LIFE WORLD | 10-08 Slow Fiction
-nyc | P.I.T. | 10-09 Mirah
+nyc | Massapequa VFW Hall | 10-16 Four Year Strong
+nyc | New Jersey Performing Arts Center | 10-16 Patti Smith
+nyc | P&T Knitwear | 10-16 Blythe Roberson
+nyc | P.I.T. | 10-09 Mirah; 10-17 Huasipungo
+nyc | Paragon | 10-16 Joey Beltram
+nyc | Reforesters Laboratory | 10-17 places i saw you last
 nyc | Riverside Church | 10-06 David Byrne
 nyc | Robert F. Wagner, Jr. Park (Battery Park City) | 10-08 The Lovestruck Balladeers
+nyc | Rubulad | 10-15 DD Island
+nyc | S.O.B.'s | 10-06 Jeff Bernat; 10-16 AZ Chike
+nyc | SILO Brooklyn | 10-16 Morgan Seatree
 nyc | South Street Seaport | 10-10 Native Sun
 nyc | Starr Bar | 10-07 Legitimate Business
 nyc | The Brooklyn Monarch | 10-10 Voivod
+nyc | The Capitol Theatre | 10-17 Daniel Donato's Cosmic Country
+nyc | The Chocolate Factory | 10-16 Armana Khan
+nyc | The Cobra Club | 10-09 New Vision
+nyc | The Count Basie Center for the Arts | 10-18 Trombone Shorty & Orleans Avenue
 nyc | The Sheen Center for Thought & Culture | 10-07 Maggie Rose
+nyc | Under the K Bridge Park | 10-17 Gryffin
+nyc | Union Hall | 10-17 Chris Gethard
 chi | Andrew Rafacz Gallery | 10-10 Jimmy Flemion (of The Frogs)
-chi | City Winery | 10-08 Rhett Miller
-chi | GMan Tavern | 10-09 Grace Bloom
-chi | Radius | 10-08 Overmono; 10-09 Afrojack
+chi | Avondale Music Hall | 10-15 Aria Vega; 10-18 The Toxhards
+chi | Chicago Theatre | 10-15 Robert Plant's Saving Grace
+chi | City Winery | 10-08 Rhett Miller; 10-14 Rakim; 10-14 Rakim
+chi | Color Club | 10-15 Kurt Braunohler; 10-15 Kurt Braunohler; 10-16 Emily Bjorke
+chi | GMan Tavern | 10-09 Grace Bloom; 10-15 Holy Joke; 10-16 Julia Minkin
+chi | Grand Ballroom at Navy Pier | 10-17 Lenny Pearce
+chi | Navy Pier | 10-16 Charlotte de Witte; 10-17 deadmau5
+chi | Radius | 10-08 Overmono; 10-09 Afrojack; 10-15 Subtronics
+chi | Ramova Theatre | 10-17 BALTHVS; 10-18 French Police
 chi | The WC Social Club | 10-10 Weedeater
 chi | Three Top Lounge | 10-11 Paul Banks (DJ Set)
-la | Aviator Nation Dreamland | 10-10 Bobby Alu; 10-11 Alisan Porter
+la | Aviator Nation Dreamland | 10-10 Bobby Alu; 10-11 Alisan Porter; 10-15 Manon Mathews
 la | Blue Note Los Angeles | 10-08 friqtao; 10-08 friqtao; 10-09 Shabaka
-la | Crypto.com Arena | 10-10 Jungle
-la | Dolby Theatre | 10-07 Aziz Ansari; 10-12 Sara Bareilles
+la | Cafe Trieste | 10-14 Mackeeper (listening party)
+la | Casita Hollywood | 10-17 Baltra
+la | Crypto.com Arena | 10-10 Jungle; 10-18 Kacey Musgraves; 10-19 Kacey Musgraves
+la | Dolby Theatre | 10-07 Aziz Ansari; 10-12 Sara Bareilles; 10-13 Sara Bareilles
+la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
 la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
 la | Fox Theater Pomona | 10-08 Last Dinosaurs; 10-09 The Living Tombstone
 la | LACMA | 10-09 Hidden Identity
 la | LAX | 10-10 Cuddle Magic
+la | Largo | 10-17 Lloyd Cole
 la | Pico-Union Project | 10-09 Levi.SCT
-la | Santa Barbara Bowl | 10-09 Jungle
+la | Santa Barbara Bowl | 10-09 Jungle; 10-17 MUNA
+la | The Peppermint Club | 10-15 Laura Veirs
+la | Ventura County Fairgrounds | 10-14 Turnstile

@@ -1,3 +1,82 @@
 ## Changes since the last refresh (2026-10-05)
 
-No changes to the listings already on the page.
+### New York
+- **New:** 10-05 Leon Bridges + Adrian Quesada @ Music Hall of Williamsburg
+- **New:** 10-06 Jeff Bernat @ S.O.B.'s
+- **New:** 10-07 Friend Crush + Pleasure Island, Kind Kid, Star Girl @ Alphaville
+- **New:** 10-09 New Vision + Alien, Xavier Ayy, Cairoskill @ The Cobra Club
+- **Added to the bill:** Alfie Jukes → 10-05 Asha Banks @ Bowery Ballroom
+- **Added to the bill:** Psylosia → 10-05 Ella Boh @ Baby's All Right
+- **Added to the bill:** Dornika, Neila → 10-06 Cain Culto @ Baby's All Right
+- **Added to the bill:** Star Moles → 10-06 Westside Cowboy @ Music Hall of Williamsburg
+- **Added to the bill:** Dale Crover (of Melvins) → 10-06 The Schizophonics @ The Broadway
+- **Added to the bill:** Jonathan Hulten → 10-06 Chelsea Wolfe @ Town Hall
+- **Added to the bill:** Samuel Nicholson → 10-06 Ryman Leon @ Mercury Lounge
+- **Added to the bill:** Chloe Jane → 10-07 Raegan @ The Sultan Room
+- **Added to the bill:** Loods, Willo → 10-07 Kettama @ Knockdown Center
+- **Added to the bill:** Jana Horn → 10-07 Hana Stretton @ Public Records
+- **Added to the bill:** Alexa Cappelli → 10-07 Avery Cochrane @ Bowery Ballroom
+- **Added to the bill:** Rhododendron → 10-07 SLIFT @ Le Poisson Rouge
+- **Added to the bill:** Loods, Fifi → 10-08 Kettama @ Knockdown Center
+- **Added to the bill:** Glassio → 10-08 Elder Island @ Music Hall of Williamsburg
+- **Added to the bill:** Stoven, Anna Is A Toy → 10-08 Sad Pageant @ Mama Tried
+- **Added to the bill:** Holdfast → 10-09 Cardinal Bloom @ Baby's All Right
+- **Added to the bill:** Nussy Andrews → 10-09 Odie Leigh @ Nightclub 101
+- **Added to the bill:** Loods, Fifi → 10-09 Kettama @ Knockdown Center
+- **Added to the bill:** Fundido → 10-09 Lewis OfMan @ Knockdown Center
+- **Added to the bill:** White Collar Crime → 10-09 The Damnwells @ Racket
+- **Added to the bill:** Blue Mena → 10-09 Liam Benzvi @ Public Records
+- **Added to the bill:** KeiyaA → 10-09 Kelela @ Brooklyn Paramount
+- **Added to the bill:** Colleen Brown → 10-09 Great Lake Swimmers @ Dada
+- **Added to the bill:** Fred Fancy → 10-10 Mind Enterprises @ Brooklyn Steel
+- **Added to the bill:** Nathan Farrell → 10-10 Forager @ Racket
+- **Added to the bill:** Bones Forever, The Orange Blossoms → 10-10 Flurry @ Alphaville
+- **Added to the bill:** Sunfade → 10-10 Supertaste @ Music Hall of Williamsburg
+- **Added to the bill:** KeiyaA → 10-10 Kelela @ Brooklyn Paramount
+- **Added to the bill:** Yetep, Leotrix → 10-10 San Holo @ Pier 17
+- **Added to the bill:** Mirror Mirror → 10-11 Psychobuildings @ Nightclub 101
+- **Added to the bill:** Earthman → 10-11 Elis Lovrić @ DROM
+- **Added to the bill:** That Matt → 10-11 Danny Krivit @ Good Room
+- **Added to the bill:** Crayon → 10-11 bunii @ Racket
+
+### Los Angeles
+- **Added to the bill:** Magdalena Bay, Rico Nasty → 10-05 Hayley Williams @ Hollywood Bowl
+- **Added to the bill:** Hudson Freeman → 10-05 Jesse Welles @ The Wiltern
+- **Added to the bill:** Trestles → 10-05 Rum Jungle @ Echoplex
+- **Added to the bill:** Josh Okeefe → 10-05 Seasick Steve @ Troubadour
+- **Added to the bill:** Hailey Picardi → 10-05 Bella Kay @ El Rey Theatre
+- **Added to the bill:** Sweet Nothin's → 10-06 Anna Graves @ Moroccan Lounge
+- **Added to the bill:** Tommy Ragen → 10-06 overtonight @ The Roxy
+- **Added to the bill:** Magdalena Bay, Rico Nasty → 10-06 Hayley Williams @ Hollywood Bowl
+- **Added to the bill:** Zyah Belle → 10-06 Jai'Len Josey @ The Echo
+- **Added to the bill:** Hailey Picardi → 10-06 Bella Kay @ El Rey Theatre
+- **Added to the bill:** Lilya Mandr → 10-07 oskar med k @ Fonda Theatre
+- **Added to the bill:** Camille Trust → 10-07 MT Jones @ Moroccan Lounge
+- **Added to the bill:** Spiral, Intestinehead → 10-07 The Yeahtones @ El Cid
+- **Added to the bill:** Arima Ederra → 10-07 Nick Hakim @ Lodge Room
+- **Added to the bill:** The Vom Pops, The Ruby Brat Band → 10-07 Handsome Dick Manitoba @ Gold-Diggers
+- **Added to the bill:** James the Seventh → 10-08 lilyisthatyou @ The Roxy
+- **Added to the bill:** My Generation → 10-08 Body/Head @ Zebulon
+- **Added to the bill:** Zoe Gitter → 10-08 Adéla @ Fonda Theatre
+- **Added to the bill:** Jojomber → 10-08 Stephen Dawes @ The Echo
+- **Added to the bill:** Stress Actual, Thomas Luminoso → 10-08 Finnish Postcard @ The Airliner
+- **Added to the bill:** Golf Alpha Bravo → 10-08 Last Dinosaurs @ Fox Theater Pomona
+- **Added to the bill:** Cissi TV → 10-09 Death Valley Girls @ Scribble
+- **Added to the bill:** Helsloot → 10-09 Tinlicker @ The Wiltern
+- **Added to the bill:** White China → 10-09 The Royston Club @ Moroccan Lounge
+- **Added to the bill:** QBomb → 10-09 The Living Tombstone @ Fox Theater Pomona
+- **Added to the bill:** Baby J → 10-09 Arin Ray @ Echoplex
+- **Added to the bill:** Zoe Gitter → 10-09 Adéla @ Fonda Theatre
+- **Added to the bill:** Angel Money → 10-10 ilykimchi @ Moroccan Lounge
+- **Added to the bill:** Snacktime → 10-10 Devon Gilfillian @ The Roxy
+- **Added to the bill:** The Braymores, Jade Street → 10-10 Evening Elephants @ El Rey Theatre
+- **Added to the bill:** Vanessa Zamora, Emma Platais → 10-10 Y La Bamba @ Lodge Room
+- **Added to the bill:** Slowly Crushed → 10-10 Bit Brigade @ The Echo
+- **Added to the bill:** Sudi → 10-10 Raaginder @ The Paramount
+- **Added to the bill:** Eva Rose → 10-10 Rachel Bochner @ Moroccan Lounge
+- **Added to the bill:** Nora Kenny → 10-11 Cooper Kenward @ Permanent Records Roadhouse
+- **Added to the bill:** Rollo Doherty, Rory Andrew → 10-11 Palace @ The Greek Theatre
+- **Added to the bill:** Snakes of Russia → 10-11 Dalek @ Moroccan Lounge
+- **Added to the bill:** Kenny Sharp → 10-11 Sons of Legion @ The Wiltern
+- **Added to the bill:** Mylie Taylor, Sydney Sherrill → 10-11 LØLØ @ The Roxy
+
