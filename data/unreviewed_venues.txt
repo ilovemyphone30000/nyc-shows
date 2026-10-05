@@ -1,19 +1,31 @@
+nyc | Amityville Music Hall | 10-11 Lucero
 nyc | Basilica Hudson | 10-09 Sunn O)))
 nyc | Dada | 10-09 Great Lake Swimmers
 nyc | David Rubenstein Atrium at Lincoln Center | 10-08 Elisapie; 10-09 Nicolás y Los Fumadores
+nyc | ERF Gallery | 10-10 Public Circuit
 nyc | Jalopy Theater | 10-08 Matt Sucich
+nyc | Joe's Pub | 10-12 Elissa Mielke; 10-12 Christeene
 nyc | LIFE WORLD | 10-08 Slow Fiction
 nyc | P.I.T. | 10-09 Mirah
 nyc | Riverside Church | 10-06 David Byrne
 nyc | Robert F. Wagner, Jr. Park (Battery Park City) | 10-08 The Lovestruck Balladeers
+nyc | South Street Seaport | 10-10 Native Sun
 nyc | Starr Bar | 10-07 Legitimate Business
+nyc | The Brooklyn Monarch | 10-10 Voivod
 nyc | The Sheen Center for Thought & Culture | 10-07 Maggie Rose
+chi | Andrew Rafacz Gallery | 10-10 Jimmy Flemion (of The Frogs)
 chi | City Winery | 10-08 Rhett Miller
 chi | GMan Tavern | 10-09 Grace Bloom
 chi | Radius | 10-08 Overmono; 10-09 Afrojack
+chi | The WC Social Club | 10-10 Weedeater
+chi | Three Top Lounge | 10-11 Paul Banks (DJ Set)
+la | Aviator Nation Dreamland | 10-10 Bobby Alu; 10-11 Alisan Porter
 la | Blue Note Los Angeles | 10-08 friqtao; 10-08 friqtao; 10-09 Shabaka
-la | Dolby Theatre | 10-07 Aziz Ansari
+la | Crypto.com Arena | 10-10 Jungle
+la | Dolby Theatre | 10-07 Aziz Ansari; 10-12 Sara Bareilles
+la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
 la | Fox Theater Pomona | 10-08 Last Dinosaurs; 10-09 The Living Tombstone
 la | LACMA | 10-09 Hidden Identity
+la | LAX | 10-10 Cuddle Magic
 la | Pico-Union Project | 10-09 Levi.SCT
 la | Santa Barbara Bowl | 10-09 Jungle
