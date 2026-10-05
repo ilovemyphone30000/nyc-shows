@@ -92,7 +92,10 @@ button { font: inherit; color: inherit; }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-block: 1px solid var(--grey1); }
 .bar .wrap { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding-block: 10px; }
-.chips { display: flex; gap: 4px; flex-wrap: wrap; }
+.chips { display: flex; gap: 4px; flex: 1 1 100%; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }  /* two weeks of days: one row that scrolls sideways */
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; }
+@media (min-width: 900px) { .chips { flex-wrap: wrap; overflow: visible; } }  /* room for two rows; no sideways scrolling with a mouse */
 .chip {
   font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase;
   background: var(--bg); border: 1px solid var(--grey1); padding: 7px 10px; cursor: pointer; border-radius: 0;
@@ -215,7 +218,7 @@ body.compact { font-size: 12.5px; }
 <header class="mast">
   <div class="wrap">
     <nav class="pages label" id="pages" aria-label="Page">
-      <a href="#nyc" data-page="week">This week</a>
+      <a href="#nyc" data-page="week">Next two weeks</a>
       <a href="#nyc/announced" data-page="new">Just announced<span class="new-count" id="newN"></span></a>
     </nav>
     <div class="checked label"><span class="dot"></span><span id="checked"></span></div>
@@ -295,11 +298,11 @@ let cityKey = route().city || store.get("city", "nyc");
 if (!CITIES.some(c => c.key === cityKey)) cityKey = "nyc";
 let city = CITIES.find(c => c.key === cityKey);
 let shows = city.shows;
-// Window: today through seven days ahead, by the viewer's clock, within the data we have.
+// Window: today through fourteen days ahead, by the viewer's clock, within the data we have.
 const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
 const now = new Date(); now.setHours(0, 0, 0, 0);
 const winStart = new Date(now);
-const winEnd = new Date(now); winEnd.setDate(now.getDate() + 7);
+const winEnd = new Date(now); winEnd.setDate(now.getDate() + 14);
 const FROM = iso(winStart) > DATA.week[0] ? iso(winStart) : DATA.week[0];
 const TO = iso(winEnd) < DATA.week[1] ? iso(winEnd) : DATA.week[1];
 const TODAY_ISO = iso(now);

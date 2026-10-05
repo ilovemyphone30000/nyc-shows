@@ -46,7 +46,7 @@ EXTRACT = r"""() => {
 }"""
 
 
-def scrape(city, start, end, max_pages=15, pause=1.5, path="/shows"):
+def scrape(city, start, end, max_pages=25, pause=1.5, path="/shows"):
     """Listings on `path` dated start..end. For the date-ordered /shows list, stops once
     past `end`; the Just Announced list is in announcement order, so it reads every page."""
     host = HOSTS[city]

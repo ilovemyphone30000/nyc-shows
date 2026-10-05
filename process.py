@@ -6,9 +6,9 @@ Raw row: [id, iso_datetime, [acts], venue, extra, age, ticket_label, ticket_url,
 """
 import datetime, json, os, re, sys
 
-# Today through a week ahead. The page narrows this again by the viewer's own date.
+# Today through two weeks ahead. The page narrows this again by the viewer's own date.
 TODAY = datetime.date.today()
-WEEK = [str(TODAY), str(TODAY + datetime.timedelta(days=7))]
+WEEK = [str(TODAY), str(TODAY + datetime.timedelta(days=14))]
 
 RENAME = {
     "(Le) Poisson Rouge": "Le Poisson Rouge", "TV EYE": "TV Eye", "ALPHAVILLE": "Alphaville",
