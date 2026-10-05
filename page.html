@@ -33,7 +33,6 @@ button { font: inherit; color: inherit; }
 /* masthead */
 .mast { border-bottom: 1px solid var(--grey1); }
 .mast .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
-.brand { display: flex; align-items: center; gap: 10px; }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
 .checked { color: var(--muted); display: flex; align-items: center; gap: 8px; }
 .checked .dot { width: 7px; height: 7px; }
@@ -217,7 +216,6 @@ body.compact { font-size: 12.5px; }
 
 <header class="mast">
   <div class="wrap">
-    <div class="brand"><span class="dot"></span><span class="label">Shows</span></div>
     <nav class="pages label" id="pages" aria-label="Page">
       <a href="#nyc" data-page="week">This week</a>
       <a href="#nyc/announced" data-page="new">Just announced<span class="new-count" id="newN"></span></a>
