@@ -238,7 +238,7 @@ body.compact { font-size: 12.5px; }
     </span>
     <span class="label sortby new-only">Group by</span>
     <span class="seg new-only" id="groupSeg">
-      <button class="tab" data-group="found">Day found<span class="dir" aria-hidden="true"></span></button>
+      <button class="tab" data-group="found">Day announced<span class="dir" aria-hidden="true"></span></button>
       <button class="tab" data-group="date">Show date<span class="dir" aria-hidden="true"></span></button>
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
@@ -528,7 +528,7 @@ function renderFound(list) {
   const days = [...new Set(list.map(day))].sort();
   for (const d of annDir.found === "desc" ? days.reverse() : days) {
     const inD = list.filter(s => day(s) === d).sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99") || a.venue.localeCompare(b.venue));
-    const label = d === TODAY_ISO ? "Found today" : d === iso(yest) ? "Found yesterday" : `Found ${FULLDAY[d8(d).getDay()]}, ${md(d)}`;
+    const label = d === TODAY_ISO ? "Announced today" : d === iso(yest) ? "Announced yesterday" : `Announced ${FULLDAY[d8(d).getDay()]}, ${md(d)}`;
     const since = inD.map(s => s.since).filter(Boolean).sort()[0];  // the scan before this one was blocked
     html += `<div class="sect-head"><div><h2>${label}</h2>${since ? `<p class="gap-note">First check since ${dow(iso(new Date(since)))} ${md(iso(new Date(since)))}, so some of these went up in between.</p>` : ""}</div><span class="label">${inD.length} show${inD.length === 1 ? "" : "s"}</span></div>
       <div class="list">${inD.map(s => row(s, true)).join("")}</div>`;

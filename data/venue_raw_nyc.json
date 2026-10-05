@@ -5,8 +5,10 @@
 "Pier 17": "2026-10-05",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-10-05"
+"Webster Hall": "2026-10-05",
+"Nightclub 101": "2026-10-05"
 },
+"seenAt": {},
 "rows": [
 [
 "v-beacon-2026-10-10-the-chicks",
@@ -268,6 +270,1086 @@ null,
 null,
 "Tickets",
 "https://www.livenation.com/event/k7vGF_8MeNMlL/yll-limani-international-live-tour-2026-new-york",
+0
+],
+[
+"v-nightclub101-2026-10-05-rocknite-ny",
+"2026-10-05T22:00:00",
+[
+"rocknite.ny",
+"Leah Rando",
+"My Guitar Is Trying To Kill Me",
+"The Bronx River"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/rockniteny-night-club-101-tickets/14347054",
+0
+],
+[
+"v-nightclub101-2026-10-06-hell-gate-battle-of-journalist-bands",
+"2026-10-06T19:30:00",
+[
+"Hell Gate Battle of Journalist Bands",
+"Crisis Public Relations",
+"Ghost Rodeo",
+"Monotone Assassins",
+"Lost Dog",
+"Sui Mote",
+"DJ Koho"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/hell-gate-battle-of-journalist-night-club-101-tickets/14320424",
+0
+],
+[
+"v-nightclub101-2026-10-07-revenge-wife",
+"2026-10-07T19:00:00",
+[
+"Revenge Wife"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/revenge-wife-night-club-101-tickets/15020783",
+0
+],
+[
+"v-nightclub101-2026-10-07-music",
+"2026-10-07T22:00:00",
+[
+"Music!",
+"Hearing Things"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/music-with-hearing-things-night-club-101-tickets/14321824",
+0
+],
+[
+"v-nightclub101-2026-10-08-jawdropped",
+"2026-10-08T19:00:00",
+[
+"Jawdropped",
+"The Heaven"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/jawdropped-the-heaven-night-club-101-tickets/14237344",
+0
+],
+[
+"v-nightclub101-2026-10-08-don-t-hold-your-breath",
+"2026-10-08T22:00:00",
+[
+"Don't Hold Your Breath",
+"Mal Sounds",
+"TALIA",
+"Isa Reyes"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dont-hold-your-breath-night-club-101-tickets/14295774",
+0
+],
+[
+"v-nightclub101-2026-10-09-odie-leigh",
+"2026-10-09T19:00:00",
+[
+"Odie Leigh",
+"Nussy Andrews"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/odie-leigh-nussy-andrews-night-club-101-tickets/14279884",
+0
+],
+[
+"v-nightclub101-2026-10-09-send-it-up",
+"2026-10-09T22:00:00",
+[
+"Send It Up"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/send-it-up-night-club-101-tickets/14336754",
+0
+],
+[
+"v-nightclub101-2026-10-10-ammi-boys-album-release-party",
+"2026-10-10T19:00:00",
+[
+"Ammi Boys Album Release Party"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/ammi-boys-album-release-party-night-club-101-tickets/14353004",
+0
+],
+[
+"v-nightclub101-2026-10-10-teilz",
+"2026-10-10T22:30:00",
+[
+"Teilz",
+"queenie",
+"Bea Hardy",
+"Justin Strauss"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/teilz-queenie-bea-hardy-justin-night-club-101-tickets/14343924",
+0
+],
+[
+"v-nightclub101-2026-10-11-psychobuildings",
+"2026-10-11T19:00:00",
+[
+"Psychobuildings"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/psychobuildings-night-club-101-tickets/14307854",
+0
+],
+[
+"v-nightclub101-2026-10-12-de-wayne",
+"2026-10-12T19:00:00",
+[
+"De'Wayne",
+"Phoenix James"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dewayne-phoenix-james-night-club-101-tickets/14289314",
+0
+],
+[
+"v-nightclub101-2026-10-12-pyrex",
+"2026-10-12T22:00:00",
+[
+"Pyrex",
+"Conspire",
+"Rejekts",
+"Promise"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/pyrex-conspire-rejekts-promise-night-club-101-tickets/14336704",
+0
+],
+[
+"v-nightclub101-2026-10-13-drinkabir",
+"2026-10-13T19:00:00",
+[
+"Drinkabir",
+"Daniella Faith",
+"Brokeland"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/drinkabir-daniella-faith-brokeland-night-club-101-tickets/14350204",
+0
+],
+[
+"v-nightclub101-2026-10-14-paint",
+"2026-10-14T19:00:00",
+[
+"Paint",
+"EZ Company"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/paint-ez-company-night-club-101-tickets/14304744",
+0
+],
+[
+"v-nightclub101-2026-10-14-jahson-paynter",
+"2026-10-14T22:00:00",
+[
+"Jahson Paynter"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/jahson-paynter-night-club-101-tickets/15040653",
+0
+],
+[
+"v-nightclub101-2026-10-15-brotherkenzie",
+"2026-10-15T19:00:00",
+[
+"Brotherkenzie",
+"Dirt Buyer"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/brotherkenzie-dirt-buyer-night-club-101-tickets/14296344",
+0
+],
+[
+"v-nightclub101-2026-10-15-vlad-holiday",
+"2026-10-15T22:00:00",
+[
+"Vlad Holiday",
+"Michael Ian Cummings"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/vlad-holiday-michael-ian-cummings-night-club-101-tickets/14219404",
+0
+],
+[
+"v-nightclub101-2026-10-16-dogwood-tales",
+"2026-10-16T19:30:00",
+[
+"Dogwood Tales",
+"Mer Marcum"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dogwood-tales-mer-marcum-night-club-101-tickets/14965613",
+0
+],
+[
+"v-nightclub101-2026-10-17-baba-stiltz",
+"2026-10-17T19:00:00",
+[
+"Baba Stiltz",
+"Natasha Stagg",
+"Barrett Avner",
+"Ana Roxanne DJ"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/baba-stiltz-natasha-stagg-reading-night-club-101-tickets/14304674",
+0
+],
+[
+"v-nightclub101-2026-10-17-the-rose-hips",
+"2026-10-17T22:00:00",
+[
+"The Rose Hips",
+"Buffchick"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/the-rose-hips-buffchick-night-club-101-tickets/15026353",
+0
+],
+[
+"v-nightclub101-2026-10-18-dani-offline",
+"2026-10-18T19:00:00",
+[
+"Dani Offline",
+"Margaux"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dani-offline-lovers-night-club-101-tickets/14298704",
+0
+],
+[
+"v-nightclub101-2026-10-18-giovannie-and-the-hired-guns",
+"2026-10-18T22:00:00",
+[
+"Giovannie and the Hired Guns"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/giovannie-and-the-hired-guns-night-club-101-tickets/14272154",
+0
+],
+[
+"v-nightclub101-2026-10-19-elanor-moss",
+"2026-10-19T19:00:00",
+[
+"Elanor Moss",
+"Jana Horn"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/elanor-moss-jana-horn-night-club-101-tickets/14240574",
+0
+],
+[
+"v-nightclub101-2026-10-20-saoirse-dream",
+"2026-10-20T22:00:00",
+[
+"saoirse dream",
+"Anita Velveeta",
+"Estelle Allen"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/saoirse-dream-anita-velveeta-estelle-night-club-101-tickets/14325054",
+0
+],
+[
+"v-nightclub101-2026-10-21-georgia-gets-by",
+"2026-10-21T19:00:00",
+[
+"Georgia Gets By"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/georgia-gets-by-night-club-101-tickets/14295484",
+0
+],
+[
+"v-nightclub101-2026-10-22-lamplight",
+"2026-10-22T18:30:00",
+[
+"Lamplight",
+"Anna McClellan",
+"Margaux"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/lamplight-anna-mcclellan-margaux-night-club-101-tickets/15014583",
+0
+],
+[
+"v-nightclub101-2026-10-23-pardoner",
+"2026-10-23T19:00:00",
+[
+"Pardoner",
+"Laughing Cocks",
+"The Smarthearts"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/pardoner-laughing-cocks-the-smarthearts-night-club-101-tickets/14284454",
+0
+],
+[
+"v-nightclub101-2026-10-23-dogs-on-shady-lane",
+"2026-10-23T22:30:00",
+[
+"Dogs on Shady Lane",
+"Why Bonnie"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dogs-on-shady-lane-why-night-club-101-tickets/15047033",
+0
+],
+[
+"v-nightclub101-2026-10-24-dead-gowns",
+"2026-10-24T19:00:00",
+[
+"Dead Gowns",
+"Helenor"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dead-gowns-helenor-night-club-101-tickets/14283924",
+0
+],
+[
+"v-nightclub101-2026-10-25-mia-wilson",
+"2026-10-25T19:00:00",
+[
+"Mia Wilson",
+"Haylie Davis",
+"Donald Beaman"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/mia-wilson-haylie-davis-donald-night-club-101-tickets/14308984",
+0
+],
+[
+"v-nightclub101-2026-10-25-telehealth",
+"2026-10-25T22:00:00",
+[
+"Telehealth",
+"Imperial Motors"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/telehealth-imperial-motors-night-club-101-tickets/14302474",
+0
+],
+[
+"v-nightclub101-2026-10-26-dazies-lp-release-show",
+"2026-10-26T18:30:00",
+[
+"Dazies LP Release Show"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dazies-lp-release-show-night-club-101-tickets/15034823",
+0
+],
+[
+"v-nightclub101-2026-10-27-coco-smith",
+"2026-10-27T19:00:00",
+[
+"Coco Smith",
+"Aidan Puntes",
+"Nikita Lev"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/-coco-smith-aidan-puntes-night-club-101-tickets/14336554",
+0
+],
+[
+"v-nightclub101-2026-10-27-frau",
+"2026-10-27T22:00:00",
+[
+"frau"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/frau-night-club-101-tickets/14355994",
+0
+],
+[
+"v-nightclub101-2026-10-28-smidley",
+"2026-10-28T19:00:00",
+[
+"Smidley"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/smidley-night-club-101-tickets/15001423",
+0
+],
+[
+"v-nightclub101-2026-10-28-my-wonderful-boyfriend",
+"2026-10-28T22:00:00",
+[
+"My Wonderful Boyfriend",
+"Or Best Offer",
+"perfectangel420"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/my-wonderful-boyfriend-or-best-night-club-101-tickets/14324774",
+0
+],
+[
+"v-nightclub101-2026-10-29-man-woman-chainsaw",
+"2026-10-29T19:00:00",
+[
+"Man/Woman/Chainsaw"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/manwomanchainsaw-night-club-101-tickets/14932643",
+0
+],
+[
+"v-nightclub101-2026-10-29-gatekeeper",
+"2026-10-29T22:00:00",
+[
+"Gatekeeper",
+"Gobby",
+"Logan Takahashi",
+"Glasser DJ"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/gatekeeper-gobby-glasser-dj-logan-night-club-101-tickets/14307874",
+0
+],
+[
+"v-nightclub101-2026-10-30-shearing",
+"2026-10-30T18:30:00",
+[
+"Shearing",
+"Warmachine",
+"Chemical",
+"German Suplex"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/shearing-warmachine-chemical-german-suplex-night-club-101-tickets/15046193",
+0
+],
+[
+"v-nightclub101-2026-10-30-mackeeper",
+"2026-10-30T22:30:00",
+[
+"Mackeeper"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/mackeeper-night-club-101-tickets/14287794",
+0
+],
+[
+"v-nightclub101-2026-10-31-nabihah-iqbal",
+"2026-10-31T19:30:00",
+[
+"Nabihah Iqbal"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/nabihah-iqbal-night-club-101-tickets/14338434",
+0
+],
+[
+"v-nightclub101-2026-11-01-sweetbreads",
+"2026-11-01T19:00:00",
+[
+"Sweetbreads",
+"Lily Too",
+"Amelia Jackie"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/sweetbreads-lily-too-amelia-jackie-night-club-101-tickets/14336644",
+0
+],
+[
+"v-nightclub101-2026-11-05-the-haunted-youth",
+"2026-11-05T19:00:00",
+[
+"The Haunted Youth"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/the-haunted-youth-night-club-101-tickets/15041053",
+0
+],
+[
+"v-nightclub101-2026-11-05-tiny-gun",
+"2026-11-05T22:00:00",
+[
+"Tiny Gun",
+"Ultra Lights",
+"Lost Boys"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/tiny-gun-ultra-lights-lost-night-club-101-tickets/14286884",
+0
+],
+[
+"v-nightclub101-2026-11-06-rebounder",
+"2026-11-06T18:30:00",
+[
+"Rebounder"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/rebounder-downtown-people-night-club-101-tickets/15017973",
+0
+],
+[
+"v-nightclub101-2026-11-06-bobbyy",
+"2026-11-06T22:30:00",
+[
+"bobbyy",
+"Akai Solo",
+"DJ Stacy"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/bobbyy-akai-solo-dj-stacy-night-club-101-tickets/14289484",
+0
+],
+[
+"v-nightclub101-2026-11-07-supertall",
+"2026-11-07T23:00:00",
+[
+"Supertall"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/supertall-night-club-101-tickets/14297754",
+0
+],
+[
+"v-nightclub101-2026-11-08-tommy-oeffling",
+"2026-11-08T19:00:00",
+[
+"Tommy Oeffling"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/tommy-oeffling-night-club-101-tickets/14296244",
+0
+],
+[
+"v-nightclub101-2026-11-10-sweeping-promises",
+"2026-11-10T19:00:00",
+[
+"Sweeping Promises",
+"Van Goth"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/sweeping-promises-van-goth-night-club-101-tickets/14908543",
+0
+],
+[
+"v-nightclub101-2026-11-11-lighthearted",
+"2026-11-11T19:00:00",
+[
+"Lighthearted",
+"Kate Stephenson"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/lighthearted-kate-stephenson-night-club-101-tickets/14272234",
+0
+],
+[
+"v-nightclub101-2026-11-11-dylan-thom",
+"2026-11-11T22:00:00",
+[
+"Dylan Thom"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/dylan-thom-night-club-101-tickets/14342854",
+0
+],
+[
+"v-nightclub101-2026-11-12-jasper-llewellyn",
+"2026-11-12T19:00:00",
+[
+"Jasper Llewellyn"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/jasper-llewellyn-night-club-101-tickets/14277384",
+0
+],
+[
+"v-nightclub101-2026-11-12-rip-magic",
+"2026-11-12T22:00:00",
+[
+"RIP Magic"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/rip-magic-night-club-101-tickets/14118414",
+0
+],
+[
+"v-nightclub101-2026-11-13-the-sound-chalk-makes",
+"2026-11-13T22:30:00",
+[
+"The Sound Chalk Makes"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/the-sound-chalk-makes-night-club-101-tickets/14336964",
+0
+],
+[
+"v-nightclub101-2026-11-14-marci",
+"2026-11-14T22:30:00",
+[
+"Marci",
+"aLex vs aLex"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/marci-alex-vs-alex-night-club-101-tickets/15002133",
+0
+],
+[
+"v-nightclub101-2026-11-15-rentboy",
+"2026-11-15T22:00:00",
+[
+"Rentboy",
+"jasper dean",
+"The French Kissed",
+"Le Bang"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/rentboy-jasper-dean-the-french-night-club-101-tickets/14350024",
+0
+],
+[
+"v-nightclub101-2026-11-17-ovrkast",
+"2026-11-17T19:00:00",
+[
+"Ovrkast."
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/ovrkast-still-striking-night-club-101-tickets/14341954",
+0
+],
+[
+"v-nightclub101-2026-11-18-samy-sharif",
+"2026-11-18T19:00:00",
+[
+"Samy Sharif",
+"Cauley"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/samy-sharif-cauley-night-club-101-tickets/14284844",
+0
+],
+[
+"v-nightclub101-2026-11-21-ex-pilots",
+"2026-11-21T19:00:00",
+[
+"Ex Pilots",
+"The Materialistics",
+"Tracey Nelson"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/ex-pilots-the-materialistics-tracey-night-club-101-tickets/14293004",
+0
+],
+[
+"v-nightclub101-2026-11-22-hank-heaven",
+"2026-11-22T19:00:00",
+[
+"Hank Heaven"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/hank-heaven-night-club-101-tickets/14342834",
+0
+],
+[
+"v-nightclub101-2026-11-23-quantrell",
+"2026-11-23T19:00:00",
+[
+"Quantrell"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/quantrell-night-club-101-tickets/14348594",
+0
+],
+[
+"v-nightclub101-2026-11-27-young-friend",
+"2026-11-27T19:00:00",
+[
+"young friend"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/young-friend-night-club-101-tickets/14250044",
+0
+],
+[
+"v-nightclub101-2026-12-03-hayden-everett",
+"2026-12-03T19:00:00",
+[
+"Hayden Everett",
+"Noah Pope",
+"Lily Talmers"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/hayden-everett-noah-pope-lily-night-club-101-tickets/14997133",
+0
+],
+[
+"v-nightclub101-2026-12-03-hathway",
+"2026-12-03T22:00:00",
+[
+"Hathway",
+"Honest Mistakes"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/hathway-honest-mistakes-night-club-101-tickets/15047013",
+0
+],
+[
+"v-nightclub101-2026-12-04-lily-seabird",
+"2026-12-04T19:00:00",
+[
+"Lily Seabird",
+"Eliza Niemi"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/lily-seabird-eliza-niemi-night-club-101-tickets/14288224",
+0
+],
+[
+"v-nightclub101-2026-12-04-la-securite",
+"2026-12-04T22:00:00",
+[
+"La Sécurité",
+"CDSM"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/la-scurit-cdsm-night-club-101-tickets/14877633",
+0
+],
+[
+"v-nightclub101-2026-12-05-supertall",
+"2026-12-05T23:00:00",
+[
+"Supertall"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/supertall-night-club-101-tickets/14297764",
+0
+],
+[
+"v-nightclub101-2026-12-09-iluka",
+"2026-12-09T19:00:00",
+[
+"Iluka"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/iluka-night-club-101-tickets/14322644",
+0
+],
+[
+"v-nightclub101-2026-12-10-chase-elodia",
+"2026-12-10T19:00:00",
+[
+"Chase Elodia",
+"Anjoli Simone",
+"Elora"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/chase-elodia-anjoli-simone-elora-night-club-101-tickets/14352444",
+0
+],
+[
+"v-nightclub101-2026-12-11-emma-who",
+"2026-12-11T19:00:00",
+[
+"emma who?"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/emma-who-night-club-101-tickets/14335364",
+0
+],
+[
+"v-nightclub101-2027-01-02-seamstress",
+"2027-01-02T19:00:00",
+[
+"Seamstress",
+"heavensouls",
+"Gwen"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/seamstress-heavensouls-gwen-night-club-101-tickets/14352514",
+0
+],
+[
+"v-nightclub101-2027-01-15-winter-jazzfest",
+"2027-01-15T19:00:00",
+[
+"Winter Jazzfest"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/winter-jazzfest-night-club-101-tickets/14350544",
+0
+],
+[
+"v-nightclub101-2027-01-28-boy-golden",
+"2027-01-28T19:00:00",
+[
+"Boy Golden"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/boy-golden-night-club-101-tickets/14297584",
+0
+],
+[
+"v-nightclub101-2027-02-03-capyac",
+"2027-02-03T19:00:00",
+[
+"Capyac"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/capyac-nyc-residency-night-1-night-club-101-tickets/14312314",
+0
+],
+[
+"v-nightclub101-2027-02-10-capyac",
+"2027-02-10T19:00:00",
+[
+"Capyac"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/capyac-nyc-residency-night-2-night-club-101-tickets/14312324",
+0
+],
+[
+"v-nightclub101-2027-02-17-capyac",
+"2027-02-17T19:00:00",
+[
+"Capyac"
+],
+"Nightclub 101",
+[],
+null,
+"Tickets",
+"https://www.ticketweb.com/event/capyac-nyc-residency-night-3-night-club-101-tickets/14312334",
 0
 ],
 [

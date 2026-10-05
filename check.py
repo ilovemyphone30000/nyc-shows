@@ -79,7 +79,7 @@ with sync_playwright() as p:
         found = rows(page)
         check("30 days of announcements render", found > 0 or page.locator(".empty").count() == 1, f"{found} rows")
         heads = page.locator(".sect-head h2").all_inner_texts()
-        check("grouped by day found", all(h.startswith("Found") for h in heads), heads[0] if heads else "none")
+        check("grouped by day announced", all(h.startswith("Announced") for h in heads), heads[0] if heads else "none")
         page.click('.tab[data-group="date"]')
         first = page.locator("#out .row .when").all_inner_texts()
         check("show date is one list with no date headings", rows(page) == found and page.locator("#out .sect-head").count() == 0)

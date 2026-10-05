@@ -8,7 +8,7 @@ data/ledger_<city>.json is {"meta": {...}, "shows": {omr_id: entry}}, one entry 
            added      first seen in the week's listings on a date the previous scan already
                       covered, so it was put up mid-week
            range      first seen only because the window slid onto its date: not news
-           venue      first seen on one of the 16 venue calendars (venues.py); a venue's
+           venue      first seen on one of the tracked venue calendars (venues.py); a venue's
                       first read is a baseline ("seen": "backfill"), not a burst of news
   since    set when the previous good scan was over 30 hours earlier (a blocked morning,
            say): the show went up somewhere between `since` and `seen`
@@ -107,10 +107,11 @@ if read_today:
             continue  # already in the log from OMR
         prev_v = vscans.get(s["venue"])
         v_gap = bool(prev_v) and now - parse(prev_v) > datetime.timedelta(hours=30)
-        log[s["id"]] = {"seen": stamp if prev_v else "backfill", **({"since": prev_v} if v_gap else {}), "how": "venue",
-                        **{k: s[k] for k in FIELDS}}
+        stated = vdoc.get("seenAt", {}).get(s["id"])  # the source's own date (a newsletter's send time)
+        log[s["id"]] = {"seen": stated or (stamp if prev_v else "backfill"), **({"since": prev_v} if v_gap and not stated else {}),
+                        "how": "venue", **{k: s[k] for k in FIELDS}}
         known.setdefault(s["date"], []).append(norm(s["headliner"]))
-        vnew += bool(prev_v)
+        vnew += bool(prev_v or stated)
     first = sorted(v for v in read_today if v not in vscans)
     for v in read_today:
         vscans[v] = stamp

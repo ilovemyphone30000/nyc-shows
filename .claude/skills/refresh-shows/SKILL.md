@@ -40,7 +40,7 @@ page (`#nyc/announced`): every show the first time a scan sees it, however far o
 slid into the window; not news). It only grows on a day with a good scan, and notes the
 gap when the previous good scan was over 30 hours earlier.
 
-## 1b. Venue calendars (the 16 tracked rooms)
+## 1b. Venue calendars (the tracked rooms)
 
 `venues.py` lists them (slug, city, OMR's spelling of the name, calendar URL). Read each
 calendar in the user's Chrome, one page at a time, with the reader named for it in

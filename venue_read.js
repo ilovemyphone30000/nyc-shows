@@ -1,4 +1,4 @@
-// Readers for the 16 venue calendars, run in the user's own Chrome (javascript_tool) on
+// Readers for the tracked venue calendars, run in the user's own Chrome (javascript_tool) on
 // the page listed in venues.py. Each returns a list of {name, support?, start?|date?, time?, url}
 // for data/inbox/venue_<slug>.json; venues.py normalizes them. Post the list to the local
 // receiver as a form (fetch to localhost is blocked from these pages):
@@ -7,7 +7,8 @@
 // Never open axs.com links (Pier 17's "View all shows" goes there; read its own page only).
 
 // 1. schema.org JSON-LD. palladium, radiocity, aragon, chicagotheatre, beacon, hammerstein,
-//    terminal5, hollywoodforever. Terminal 5 (Ticketmaster) lists 20 at a time: click
+//    terminal5, hollywoodforever, nightclub101 (TicketWeb: read ?page=1, 2, ... until one is
+//    empty, and keep each event's @type as `type` so readings and screenings drop out). Terminal 5 (Ticketmaster) lists 20 at a time: click
 //    "More Events", then add the extra cards from reader 6.
 const jsonld = () => {
   const out = [];
