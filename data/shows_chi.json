@@ -1,83 +1,10 @@
 {
  "checked": "2026-10-05",
  "week": [
-  "2026-10-05",
-  "2026-10-19"
+  "2026-10-06",
+  "2026-10-20"
  ],
  "shows": [
-  {
-   "id": "475368",
-   "date": "2026-10-05",
-   "time": "19:00",
-   "headliner": "Cardinal Bloom",
-   "support": [],
-   "venue": "Beat Kitchen",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/cardinal-bloom-burn-the-house-tour/696239",
-   "pick": false
-  },
-  {
-   "id": "477644",
-   "date": "2026-10-05",
-   "time": "19:30",
-   "headliner": "bunii",
-   "support": [],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/bunii-buniiversity-tour-thalia-hall-tickets/15044553",
-   "pick": false
-  },
-  {
-   "id": "472782",
-   "date": "2026-10-05",
-   "time": "20:00",
-   "headliner": "Haley Reinhart",
-   "support": [],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-05-2026-haley-reinhart/",
-   "pick": false
-  },
-  {
-   "id": "464494",
-   "date": "2026-10-05",
-   "time": "20:00",
-   "headliner": "Ludovico Einaudi",
-   "support": [],
-   "venue": "Symphony Center",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1313678",
-   "pick": false
-  },
-  {
-   "id": "478312",
-   "date": "2026-10-05",
-   "time": "21:00",
-   "headliner": "Able Baker",
-   "support": [
-    "Giant Pit of Glass",
-    "Sick Day"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/free-monday-w-able-baker-empty-bottle-tickets/14284044",
-   "pick": false
-  },
   {
    "id": "475895",
    "date": "2026-10-06",
