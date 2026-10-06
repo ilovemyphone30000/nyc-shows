@@ -40,7 +40,7 @@ def mark(show, ours):
 
 
 page = open("page.html").read()
-CITIES = [("nyc", "New York"), ("chi", "Chicago"), ("la", "Los Angeles")]
+CITIES = [("nyc", "New York"), ("chi", "Chicago"), ("la", "Los Angeles"), ("nash", "Nashville"), ("sd", "San Diego")]
 doc = {"cities": []}
 for key, name in CITIES:
     src = f"data/shows_merged_{key}.json"

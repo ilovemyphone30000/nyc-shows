@@ -28,7 +28,7 @@ done
 
 SNAP=$(mktemp -d)
 cp data/shows_*.json "$SNAP"/ 2>/dev/null || true
-for c in nyc chi la; do
+for c in nyc chi la nash sd; do  # Nashville and San Diego: venue calendars and the client sheet only
   python3 process.py "$c"
   python3 clients.py "$c"
   python3 announce.py "$c"

@@ -297,9 +297,10 @@ const store = {
   set(k, v) { try { localStorage.setItem("nycshows_" + k, JSON.stringify(v)); } catch (e) {} },
 };
 
-// One tab per city; #nyc / #chicago / #la deep-links to a tab.
+// One tab per city; #nyc / #chicago / #la / #nashville / #sandiego deep-links to a tab.
 const CITIES = DATA.cities;
-const HASH = { nyc: "nyc", chicago: "chi", chi: "chi", la: "la" };
+const HASH = { nyc: "nyc", chicago: "chi", chi: "chi", la: "la", nashville: "nash", nash: "nash", sandiego: "sd", sd: "sd" };
+const SLUG = { nyc: "nyc", chi: "chicago", la: "la", nash: "nashville", sd: "sandiego" };
 const route = () => { const [c, pg] = location.hash.slice(1).split("/"); return { city: HASH[c], page: pg === "announced" ? "new" : c ? "week" : null }; };
 let cityKey = route().city || store.get("city", "nyc");
 if (!CITIES.some(c => c.key === cityKey)) cityKey = "nyc";
@@ -337,7 +338,7 @@ if (!["found", "date"].includes(state.group)) state.group = "found";
 // Sort direction per grouping; clicking the selected one flips it. Day found starts newest
 // first, show date soonest first.
 const annDir = Object.assign({ found: "desc", date: "asc" }, store.get("annDir", {}));
-const syncHash = () => { try { history.replaceState(null, "", "#" + (cityKey === "chi" ? "chicago" : cityKey) + (state.page === "new" ? "/announced" : "")); } catch (e) {} };
+const syncHash = () => { try { history.replaceState(null, "", "#" + SLUG[cityKey] + (state.page === "new" ? "/announced" : "")); } catch (e) {} };
 let saved = new Set(store.get("saved", []));
 
 /* static copy */
@@ -409,7 +410,7 @@ const CAL = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" wid
 
 /* Calendar export (.ics). A show's time is venue-local; it is converted to UTC so every
    calendar app (Outlook included) places it correctly in the viewer's own time zone. */
-const TZ = { nyc: "America/New_York", chi: "America/Chicago", la: "America/Los_Angeles" };
+const TZ = { nyc: "America/New_York", chi: "America/Chicago", la: "America/Los_Angeles", nash: "America/Chicago", sd: "America/Los_Angeles" };
 // Offset of zone tz at instant ms, in ms: wall-clock time there minus UTC.
 function tzOffset(ms, tz) {
   const p = Object.fromEntries(new Intl.DateTimeFormat("en-US", { timeZone: tz, hourCycle: "h23",
@@ -560,7 +561,7 @@ function render() {
   document.getElementById("checked").textContent = "Checked " + dow(city.checked) + " " + md(city.checked) + (stale ? " · may be out of date" : "");
   document.body.classList.toggle("page-new", state.page === "new");
   document.querySelectorAll("#pages a").forEach(a => {
-    a.href = "#" + (cityKey === "chi" ? "chicago" : cityKey) + (a.dataset.page === "new" ? "/announced" : "");
+    a.href = "#" + SLUG[cityKey] + (a.dataset.page === "new" ? "/announced" : "");
     a.toggleAttribute("aria-current", a.dataset.page === state.page); if (a.dataset.page === state.page) a.setAttribute("aria-current", "page");
   });
   document.getElementById("range").textContent = state.page === "new" ? "Just announced" : STALE ? "Listings out of date" : md(FROM) + " – " + md(TO);
