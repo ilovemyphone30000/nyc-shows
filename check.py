@@ -48,6 +48,8 @@ with sync_playwright() as p:
             check(f"{name} tab switches", name in active and rows(page) > 50, f"{rows(page)} rows")
 
         for key, name in [("nash", "Nashville"), ("sd", "San Diego")]:  # client sheet + venue calendars only
+            if not page.locator(f'.city[data-city="{key}"]').count():
+                continue  # held back from the published page (build.py HELD)
             page.click(f'.city[data-city="{key}"]')
             check(f"{name} tab shows THE·TEAM shows with agents", name in page.locator(".city[aria-pressed=true]").inner_text()
                   and page.locator("#out .row.ours .agents-line").count() > 0, f"{rows(page)} rows")
@@ -143,7 +145,8 @@ with sync_playwright() as p:
         page.wait_for_selector("#out .row")
         check("#chicago opens Chicago", "Chicago" in page.locator(".city[aria-pressed=true]").inner_text())
         page.goto(URL + "#sandiego"); page.wait_for_timeout(300)
-        check("#sandiego opens San Diego", "San Diego" in page.locator(".city[aria-pressed=true]").inner_text())
+        if page.locator('.city[data-city="sd"]').count():
+            check("#sandiego opens San Diego", "San Diego" in page.locator(".city[aria-pressed=true]").inner_text())
         page.evaluate("location.hash = 'la'")
         page.wait_for_timeout(200)
         check("changing the hash switches city", "Los Angeles" in page.locator(".city[aria-pressed=true]").inner_text())

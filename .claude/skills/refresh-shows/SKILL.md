@@ -44,6 +44,8 @@ gap when the previous good scan was over 30 hours earlier.
 Nashville (`nash`) and San Diego (`sd`) have no OMR site: their tabs are THE·TEAM's shows
 from the client sheet ("Nashville, TN" and "San Diego, CA" tabs) plus any venue calendars
 added for them in `venues.py`. San Diego drops the tab's Orange County and Temecula rows.
+Both are held off the published page (`HELD` in `build.py`) until the Ticketmaster
+Discovery API gives them real listings; remove a city from `HELD` to publish it.
 
 ## 1b. Venue calendars (the tracked rooms)
 

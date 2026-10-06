@@ -41,6 +41,10 @@ def mark(show, ours):
 
 page = open("page.html").read()
 CITIES = [("nyc", "New York"), ("chi", "Chicago"), ("la", "Los Angeles"), ("nash", "Nashville"), ("sd", "San Diego")]
+# Processed every run but not published yet: Nashville and San Diego wait on a proper
+# listings source (the Ticketmaster Discovery API). Remove a city from HELD to publish it.
+HELD = {"nash", "sd"}
+CITIES = [c for c in CITIES if c[0] not in HELD]
 doc = {"cities": []}
 for key, name in CITIES:
     src = f"data/shows_merged_{key}.json"
