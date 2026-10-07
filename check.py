@@ -93,7 +93,14 @@ with sync_playwright() as p:
         page.click('.tab[data-group="found"]')
         overflow = page.evaluate("document.documentElement.scrollWidth - document.documentElement.clientWidth")
         check("announced page has no sideways scroll", overflow <= 0, f"{overflow}px")
+        page.click('.tab[data-group="found"]')
+        before = rows(page)
+        page.click("#bigRooms")
+        big = rows(page)
+        check("1,000+ cap narrows Just announced", big <= before and page.locator("#bigRooms").get_attribute("aria-pressed") == "true", f"{before} -> {big}")
+        page.click("#bigRooms")
         page.click('#pages a[data-page="week"]')
+        check("1,000+ cap only on Just announced", page.locator("#bigRooms").is_hidden())
         check("back to This week", page.inner_text("#range") != "Just announced" and rows(page) > 50)
 
         # open a compact row by click and by keyboard

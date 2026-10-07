@@ -253,6 +253,7 @@ body.compact { font-size: 12.5px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
+    <button class="toggle new-only" id="bigRooms" aria-pressed="false" title="Rooms that hold about 1,000 or more">1,000+ cap</button>
     <span class="spacer"></span>
     <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
     <button class="tab saved week-only" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
@@ -331,7 +332,7 @@ for (let d = d8(FROM); d <= d8(TO); d.setDate(d.getDate() + 1)) {
   weekDays.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"));
 }
 
-let state = { page: route().page || "week", view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false,
+let state = { page: route().page || "week", view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false, big: false,
   group: store.get("annGroup", "found") };
 if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
 if (!["found", "date"].includes(state.group)) state.group = "found";
@@ -385,6 +386,7 @@ const agentsLine = s => !s.clients.length ? "" : `<div class="agents-line" title
 function matches(s) {
   if (state.page === "week" && state.day !== "all" && s.date !== state.day) return false;  // announcements span months, not the day chips
   if (state.noSupport && s.support.length) return false;
+  if (state.page === "new" && state.big && !s.big) return false;  // Just announced only
   if (state.ours && !s.clients.length) return false;
   if (state.page === "week" && state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
@@ -574,6 +576,7 @@ function render() {
   });
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
+  document.getElementById("bigRooms").setAttribute("aria-pressed", state.big);
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
   const savedHere = city.all.filter(s => saved.has(s.id)).length;
@@ -593,7 +596,7 @@ function render() {
   const out = document.getElementById("out");
   if (!list.length) {
     out.innerHTML = `<p class="empty">${
-      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
+      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced${state.big ? " at 1,000+ cap rooms" : ""} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
       : STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
       : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
@@ -624,6 +627,7 @@ document.getElementById("icsBtn").addEventListener("click", () => {
   if (favs.length) downloadIcs(favs, "Favorite shows");
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
+document.getElementById("bigRooms").addEventListener("click", () => { state.big = !state.big; render(); });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
 const openRows = new Set();  // rows opened out of the compact view, by show id
