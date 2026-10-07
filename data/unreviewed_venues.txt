@@ -1,15 +1,19 @@
+nyc | Alice Tully Hall | 10-21 Fuji||||||||||ta
 nyc | Amityville Music Hall | 10-11 Lucero; 10-16 AJJ; 10-17 Sweet Pill
 nyc | BRIC House | 10-16 Bilal
 nyc | Basilica Hudson | 10-09 Sunn O))); 10-18 Sugar
 nyc | Bleecker Bell | 10-17 Buffalo Nichols
 nyc | Blue Note | 10-17 Robert Glasper; 10-17 Robert Glasper; 10-18 Robert Glasper
 nyc | C'mon Everybody | 10-15 Spencer Mackey
+nyc | Cherry Lane Theatre | 10-10 Vince Staples; 10-21 Gracie Abrams
 nyc | City Winery | 10-15 Andrew McMahon; 10-16 Andrew McMahon
 nyc | Crown Hill Theatre | 10-15 Blue
 nyc | Dada | 10-09 Great Lake Swimmers
 nyc | David Rubenstein Atrium at Lincoln Center | 10-08 Elisapie; 10-09 Nicolás y Los Fumadores; 10-15 Mei Semones
 nyc | ERF Gallery | 10-10 Public Circuit
+nyc | Greeley Square Park | 10-08 The Jump Cuts
 nyc | Guggenheim Museum | 10-15 Arushi Jain
+nyc | Hammerstein Ballroom | 10-20 Sienna Spiro
 nyc | Jalopy Theater | 10-08 Matt Sucich
 nyc | Joe's Pub | 10-12 Elissa Mielke; 10-12 Christeene
 nyc | LIFE WORLD | 10-08 Slow Fiction
@@ -54,10 +58,14 @@ la | Dolby Theatre | 10-07 Aziz Ansari; 10-12 Sara Bareilles; 10-13 Sara Bareill
 la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
 la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
 la | Fox Theater Pomona | 10-08 Last Dinosaurs; 10-09 The Living Tombstone
-la | LACMA | 10-09 Hidden Identity
+la | LA River | 10-08 @
+la | LACMA | 10-09 Hidden Identity; 10-20 Melissa Auf der Maur
 la | LAX | 10-10 Cuddle Magic
 la | Largo | 10-17 Lloyd Cole
 la | Pico-Union Project | 10-09 Levi.SCT
+la | SUPERVINYL | 10-10 Remi Wolf (signing)
 la | Santa Barbara Bowl | 10-09 Jungle; 10-17 MUNA
-la | The Peppermint Club | 10-15 Laura Veirs
+la | Shrine Auditorium | 10-21 Chappell Roan
+la | The Peppermint Club | 10-15 Laura Veirs; 10-21 Post Sex Nachos
+la | Townhouse Venice | 10-16 Dylan Meek
 la | Ventura County Fairgrounds | 10-14 Turnstile

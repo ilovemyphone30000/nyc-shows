@@ -43,7 +43,7 @@ NOT_MUSIC = re.compile(r"(?i)\b(comedy|comedian|stand-?up|podcast|anniversary sc
     r"jerry seinfeld|aziz ansari|john oliver|seth meyers|kara swisher|lucy darling|gary owen|elon gold|zarna garg|"
     r"mulaney|josh johnson|matt mathews|jeff arcuri|brad williams|ben schwartz|brett goldstein|dl hughley|joey diaz|"
     r"bert kreischer|ron white|nikki glaser|nurse john|george lopez|aries spears|basement yard|ali wong|iliza|"
-    r"variety show|vir das|matt rogers|two cuzzos|chicks in the office|yohay sponder|fred armisen|starbomb)")
+    r"taskmaster|variety show|vir das|matt rogers|two cuzzos|chicks in the office|yohay sponder|fred armisen|starbomb)")
 # Promoters that put their name first: "Insomniac presents Valentino Khan" -> Valentino Khan.
 PROMOTERS = re.compile(r"(?i)^(?:ny comedy festival|insomniac|bassrush|mixed feelings|93xrt winter jam|voil[aà]|"
                        r"goldenvoice(?: & cmn)?|lucid live music & aivn|project91)\s+presents?\b[\s:–-]*")

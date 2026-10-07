@@ -1,28 +1,15 @@
 {
 "scanned": {
-"Fonda Theatre": "2026-10-05",
-"The Ford": "2026-10-05",
-"The Greek Theatre": "2026-10-05",
-"Hollywood Bowl": "2026-10-05",
-"Hollywood Forever": "2026-10-05",
-"The Novo": "2026-10-05",
+"Fonda Theatre": "2026-10-07",
+"The Ford": "2026-10-07",
+"The Greek Theatre": "2026-10-07",
+"Hollywood Bowl": "2026-10-07",
+"Hollywood Forever": "2026-10-07",
+"The Novo": "2026-10-07",
 "Hollywood Palladium": "2026-10-05"
 },
+"seenAt": {},
 "rows": [
-[
-"v-fonda-2026-10-06-father-john-misty",
-"2026-10-06T19:00:00",
-[
-"Father John Misty",
-"Omar Velasco"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
 [
 "v-fonda-2026-10-07-oskar-med-k",
 "2026-10-07T20:00:00",
@@ -770,32 +757,6 @@ null,
 null,
 "Tickets",
 "https://www.fondatheatre.com/events/detail",
-0
-],
-[
-"v-hollywoodbowl-2026-10-05-the-hayley-williams-show",
-"2026-10-05T19:00:00",
-[
-"The Hayley Williams Show"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/performances/4885/2026-10-05/the-hayley-williams-show",
-0
-],
-[
-"v-hollywoodbowl-2026-10-06-the-hayley-williams-show",
-"2026-10-06T19:00:00",
-[
-"The Hayley Williams Show"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/performances/4888/2026-10-06/the-hayley-williams-show",
 0
 ],
 [
@@ -1822,19 +1783,6 @@ null,
 0
 ],
 [
-"v-greek-2026-10-06-clair-obscur",
-"2026-10-06T20:00:00",
-[
-"Clair Obscur"
-],
-"The Greek Theatre",
-[],
-null,
-"Tickets",
-"https://www.lagreektheatre.com/event/clair-obscur%3a-expedition-33-%e2%80%9ca-painted-symphony%e2%80%9d/211/",
-0
-],
-[
 "v-greek-2026-10-07-clair-obscur",
 "2026-10-07T20:00:00",
 [
@@ -2056,6 +2004,19 @@ null,
 0
 ],
 [
+"v-greek-2027-05-04-lola-young",
+"2027-05-04T20:00:00",
+[
+"Lola Young"
+],
+"The Greek Theatre",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/event/09006542913F8147",
+0
+],
+[
 "v-greek-2027-06-26-two-feet",
 "2027-06-26T20:00:00",
 [
@@ -2096,7 +2057,7 @@ null,
 ],
 [
 "v-novo-2026-10-07-rusowsky",
-"2026-10-07T00:00:00",
+"2026-10-07",
 [
 "Rusowsky"
 ],
@@ -2109,7 +2070,7 @@ null,
 ],
 [
 "v-novo-2026-10-09-hudson-westbrook",
-"2026-10-09T00:00:00",
+"2026-10-09",
 [
 "Hudson Westbrook",
 "Kenny Whitmire & Ethan Burdick"
@@ -2123,7 +2084,7 @@ null,
 ],
 [
 "v-novo-2026-10-10-dying-fetus-sanguisugabogg",
-"2026-10-10T00:00:00",
+"2026-10-10",
 [
 "Dying Fetus & Sanguisugabogg",
 "Crowbar",
@@ -2139,7 +2100,7 @@ null,
 ],
 [
 "v-novo-2026-10-11-jo1",
-"2026-10-11T00:00:00",
+"2026-10-11",
 [
 "JO1"
 ],
@@ -2152,7 +2113,7 @@ null,
 ],
 [
 "v-novo-2026-10-12-schoolboy-q",
-"2026-10-12T00:00:00",
+"2026-10-12",
 [
 "Schoolboy Q"
 ],
@@ -2165,7 +2126,7 @@ null,
 ],
 [
 "v-novo-2026-10-15-epik-high",
-"2026-10-15T00:00:00",
+"2026-10-15",
 [
 "Epik High"
 ],
@@ -2178,7 +2139,7 @@ null,
 ],
 [
 "v-novo-2026-10-16-sunset-rollercoaster",
-"2026-10-16T00:00:00",
+"2026-10-16",
 [
 "Sunset Rollercoaster"
 ],
@@ -2191,7 +2152,7 @@ null,
 ],
 [
 "v-novo-2026-10-20-underscores",
-"2026-10-20T00:00:00",
+"2026-10-20",
 [
 "Underscores",
 "umru"
@@ -2205,7 +2166,7 @@ null,
 ],
 [
 "v-novo-2026-10-22-kylie-cantrall",
-"2026-10-22T00:00:00",
+"2026-10-22",
 [
 "Kylie Cantrall",
 "Girlset"
@@ -2219,7 +2180,7 @@ null,
 ],
 [
 "v-novo-2026-10-23-the-adicts",
-"2026-10-23T00:00:00",
+"2026-10-23",
 [
 "The Adicts",
 "Dead City",
@@ -2235,7 +2196,7 @@ null,
 ],
 [
 "v-novo-2026-10-24-ten",
-"2026-10-24T00:00:00",
+"2026-10-24",
 [
 "TEN"
 ],
@@ -2248,7 +2209,7 @@ null,
 ],
 [
 "v-novo-2026-10-29-shyne",
-"2026-10-29T00:00:00",
+"2026-10-29",
 [
 "Shyne",
 "Barrington Levy and Lil' Cease"
@@ -2262,7 +2223,7 @@ null,
 ],
 [
 "v-novo-2026-10-30-emei",
-"2026-10-30T00:00:00",
+"2026-10-30",
 [
 "EMEI",
 "Madelline"
@@ -2276,7 +2237,7 @@ null,
 ],
 [
 "v-novo-2026-10-31-nobuo-uematsu",
-"2026-10-31T00:00:00",
+"2026-10-31",
 [
 "Nobuo Uematsu"
 ],
@@ -2289,7 +2250,7 @@ null,
 ],
 [
 "v-novo-2026-11-01-krs-one",
-"2026-11-01T00:00:00",
+"2026-11-01",
 [
 "Krs‐one"
 ],
@@ -2302,7 +2263,7 @@ null,
 ],
 [
 "v-novo-2026-11-04-henry-lau",
-"2026-11-04T00:00:00",
+"2026-11-04",
 [
 "Henry Lau"
 ],
@@ -2315,7 +2276,7 @@ null,
 ],
 [
 "v-novo-2026-11-05-kwn",
-"2026-11-05T00:00:00",
+"2026-11-05",
 [
 "KWN"
 ],
@@ -2327,8 +2288,21 @@ null,
 0
 ],
 [
+"v-novo-2026-11-06-pedro-sampaio",
+"2026-11-06",
+[
+"Pedro Sampaio"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
 "v-novo-2026-11-07-countess-luann",
-"2026-11-07T00:00:00",
+"2026-11-07",
 [
 "Countess Luann"
 ],
@@ -2340,8 +2314,21 @@ null,
 0
 ],
 [
+"v-novo-2026-11-08-kwn",
+"2026-11-08",
+[
+"KWN"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
 "v-novo-2026-11-12-lawrence",
-"2026-11-12T00:00:00",
+"2026-11-12",
 [
 "Lawrence",
 "Family Company & Lindsey Lomis"
@@ -2355,7 +2342,7 @@ null,
 ],
 [
 "v-novo-2026-11-13-lawrence",
-"2026-11-13T00:00:00",
+"2026-11-13",
 [
 "Lawrence",
 "Jacob Jeffries & Oh He Dead"
@@ -2369,7 +2356,7 @@ null,
 ],
 [
 "v-novo-2026-11-14-lawrence",
-"2026-11-14T00:00:00",
+"2026-11-14",
 [
 "Lawrence",
 "Rozzi & Still Grounded"
@@ -2383,7 +2370,7 @@ null,
 ],
 [
 "v-novo-2026-11-15-ghostface-killah-raekwon-gza",
-"2026-11-15T00:00:00",
+"2026-11-15",
 [
 "Ghostface Killah, Raekwon, & Gza"
 ],
@@ -2396,7 +2383,7 @@ null,
 ],
 [
 "v-novo-2026-11-18-cupcakke",
-"2026-11-18T00:00:00",
+"2026-11-18",
 [
 "Cupcakke"
 ],
@@ -2409,7 +2396,7 @@ null,
 ],
 [
 "v-novo-2026-11-19-the-amity-affliction",
-"2026-11-19T00:00:00",
+"2026-11-19",
 [
 "The Amity Affliction",
 "blessthefall",
@@ -2425,7 +2412,7 @@ null,
 ],
 [
 "v-novo-2026-11-20-ceremony",
-"2026-11-20T00:00:00",
+"2026-11-20",
 [
 "Ceremony",
 "Skinhead",
@@ -2442,8 +2429,47 @@ null,
 0
 ],
 [
+"v-novo-2026-11-21-r-z",
+"2026-11-21",
+[
+"RØZ"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-22-r-z",
+"2026-11-22",
+[
+"RØZ"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2026-11-25-song-dongye",
+"2026-11-25",
+[
+"Song Dongye"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
 "v-novo-2026-11-27-saosin",
-"2026-11-27T00:00:00",
+"2026-11-27",
 [
 "Saosin",
 "Silent Planet",
@@ -2459,7 +2485,7 @@ null,
 ],
 [
 "v-novo-2026-12-04-night-lovell",
-"2026-12-04T00:00:00",
+"2026-12-04",
 [
 "Night Lovell"
 ],
@@ -2472,7 +2498,7 @@ null,
 ],
 [
 "v-novo-2026-12-05-the-buttertones",
-"2026-12-05T00:00:00",
+"2026-12-05",
 [
 "The Buttertones",
 "Ashes to Amber",
@@ -2488,7 +2514,7 @@ null,
 ],
 [
 "v-novo-2026-12-06-roa",
-"2026-12-06T00:00:00",
+"2026-12-06",
 [
 "ROA"
 ],
@@ -2501,7 +2527,7 @@ null,
 ],
 [
 "v-novo-2026-12-18-dalvin-la-melodia",
-"2026-12-18T00:00:00",
+"2026-12-18",
 [
 "Dalvin LA Melodia"
 ],
@@ -2514,7 +2540,7 @@ null,
 ],
 [
 "v-novo-2026-12-19-dj-quik",
-"2026-12-19T00:00:00",
+"2026-12-19",
 [
 "DJ Quik"
 ],

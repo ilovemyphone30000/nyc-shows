@@ -2,8 +2,9 @@
 "scanned": {
 "Aragon Ballroom": "2026-10-05",
 "Chicago Theatre": "2026-10-05",
-"The Salt Shed": "2026-10-05"
+"The Salt Shed": "2026-10-07"
 },
+"seenAt": {},
 "rows": [
 [
 "v-aragon-2026-10-09-shaboozey",
@@ -515,21 +516,8 @@ null,
 0
 ],
 [
-"v-saltshed-2026-10-06-malcolm-todd",
-"2026-10-06T00:00:00",
-[
-"Malcolm Todd"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/malcolm-todd-do-that-again-tour-chicago-illinois-10-06-2026/event/040064C4CD7BA202",
-0
-],
-[
 "v-saltshed-2026-10-07-malcolm-todd",
-"2026-10-07T00:00:00",
+"2026-10-07",
 [
 "Malcolm Todd"
 ],
@@ -542,7 +530,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-08-koe-wetzel",
-"2026-10-08T00:00:00",
+"2026-10-08",
 [
 "Koe Wetzel"
 ],
@@ -555,7 +543,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-09-muna",
-"2026-10-09T00:00:00",
+"2026-10-09",
 [
 "MUNA"
 ],
@@ -568,7 +556,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-11-interpol",
-"2026-10-11T00:00:00",
+"2026-10-11",
 [
 "Interpol"
 ],
@@ -581,7 +569,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-16-tinashe",
-"2026-10-16T00:00:00",
+"2026-10-16",
 [
 "Tinashe"
 ],
@@ -594,7 +582,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-17-jesse-welles",
-"2026-10-17T00:00:00",
+"2026-10-17",
 [
 "Jesse Welles"
 ],
@@ -607,7 +595,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-18-movements",
-"2026-10-18T00:00:00",
+"2026-10-18",
 [
 "Movements"
 ],
@@ -620,7 +608,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-20-the-black-keys",
-"2026-10-20T00:00:00",
+"2026-10-20",
 [
 "The Black Keys"
 ],
@@ -633,7 +621,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-21-the-black-keys",
-"2026-10-21T00:00:00",
+"2026-10-21",
 [
 "The Black Keys"
 ],
@@ -646,7 +634,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-22-sylvan-esso",
-"2026-10-22T00:00:00",
+"2026-10-22",
 [
 "Sylvan Esso",
 "Sen Morimoto"
@@ -660,21 +648,20 @@ null,
 ],
 [
 "v-saltshed-2026-10-23-sammy-rae-the-friends",
-"2026-10-23T00:00:00",
+"2026-10-23",
 [
-"Sammy Rae & The Friends",
-"MELT"
+"Sammy Rae & The Friends"
 ],
 "The Salt Shed",
 [],
 null,
 "Tickets",
-"https://www.ticketmaster.com/sammy-rae-the-friends-with-special-chicago-illinois-10-23-2026/event/04006477BA496E98",
+"https://www.ticketmaster.com/sammy-rae-the-friends-the-get-chicago-illinois-10-23-2026/event/04006477BA496E98",
 0
 ],
 [
 "v-saltshed-2026-10-24-fruit-bats",
-"2026-10-24T00:00:00",
+"2026-10-24",
 [
 "Fruit Bats",
 "Matthew Logan Vasquez"
@@ -688,7 +675,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-25-sleeping-with-sirens",
-"2026-10-25T00:00:00",
+"2026-10-25",
 [
 "Sleeping With Sirens"
 ],
@@ -701,7 +688,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-29-the-dresden-dolls",
-"2026-10-29T00:00:00",
+"2026-10-29",
 [
 "The Dresden Dolls"
 ],
@@ -714,7 +701,7 @@ null,
 ],
 [
 "v-saltshed-2026-10-31-geese",
-"2026-10-31T00:00:00",
+"2026-10-31",
 [
 "Geese"
 ],
@@ -727,7 +714,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-01-geese",
-"2026-11-01T00:00:00",
+"2026-11-01",
 [
 "Geese"
 ],
@@ -740,7 +727,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-04-boynextdoor",
-"2026-11-04T00:00:00",
+"2026-11-04",
 [
 "Boynextdoor"
 ],
@@ -753,7 +740,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-07-orville-peck",
-"2026-11-07T00:00:00",
+"2026-11-07",
 [
 "Orville Peck"
 ],
@@ -766,7 +753,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-12-charles-wesley-godwin",
-"2026-11-12T00:00:00",
+"2026-11-12",
 [
 "Charles Wesley Godwin",
 "Tyler Nance"
@@ -780,7 +767,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-13-palace",
-"2026-11-13T00:00:00",
+"2026-11-13",
 [
 "Palace",
 "Willie J Healey"
@@ -794,7 +781,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-14-the-menzingers",
-"2026-11-14T00:00:00",
+"2026-11-14",
 [
 "The Menzingers"
 ],
@@ -807,7 +794,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-19-slow-pulp",
-"2026-11-19T00:00:00",
+"2026-11-19",
 [
 "Slow Pulp"
 ],
@@ -820,7 +807,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-20-fetty-wap",
-"2026-11-20T00:00:00",
+"2026-11-20",
 [
 "Fetty Wap"
 ],
@@ -833,7 +820,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-21-2026-beyond-hunger-benefit",
-"2026-11-21T00:00:00",
+"2026-11-21",
 [
 "2026 Beyond Hunger Benefit",
 "Death Cab For Cutie"
@@ -847,7 +834,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-24-sabaton",
-"2026-11-24T00:00:00",
+"2026-11-24",
 [
 "Sabaton"
 ],
@@ -860,7 +847,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-25-turnover",
-"2026-11-25T00:00:00",
+"2026-11-25",
 [
 "Turnover"
 ],
@@ -873,7 +860,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-27-daily-bread",
-"2026-11-27T00:00:00",
+"2026-11-27",
 [
 "Daily Bread"
 ],
@@ -886,7 +873,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-27-malcolm-todd",
-"2026-11-27T00:00:00",
+"2026-11-27",
 [
 "Malcolm Todd"
 ],
@@ -899,7 +886,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-28-daily-bread",
-"2026-11-28T00:00:00",
+"2026-11-28",
 [
 "Daily Bread"
 ],
@@ -912,7 +899,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-29-angine-de-poitrine",
-"2026-11-29T00:00:00",
+"2026-11-29",
 [
 "Angine De Poitrine",
 "ZOUZ"
@@ -926,7 +913,7 @@ null,
 ],
 [
 "v-saltshed-2026-11-30-angine-de-poitrine",
-"2026-11-30T00:00:00",
+"2026-11-30",
 [
 "Angine De Poitrine",
 "ZOUZ"
@@ -940,7 +927,7 @@ null,
 ],
 [
 "v-saltshed-2026-12-18-svdden-death",
-"2026-12-18T00:00:00",
+"2026-12-18",
 [
 "Svdden Death"
 ],
@@ -953,7 +940,7 @@ null,
 ],
 [
 "v-saltshed-2026-12-19-ratboys",
-"2026-12-19T00:00:00",
+"2026-12-19",
 [
 "Ratboys",
 "Friko And Florry"
@@ -967,7 +954,7 @@ null,
 ],
 [
 "v-saltshed-2026-12-30-greensky-bluegrass",
-"2026-12-30T00:00:00",
+"2026-12-30",
 [
 "Greensky Bluegrass"
 ],
@@ -980,7 +967,7 @@ null,
 ],
 [
 "v-saltshed-2026-12-31-greensky-bluegrass",
-"2026-12-31T00:00:00",
+"2026-12-31",
 [
 "Greensky Bluegrass"
 ],
@@ -992,8 +979,21 @@ null,
 0
 ],
 [
+"v-saltshed-2027-01-15-the-roots",
+"2027-01-15",
+[
+"The Roots"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/the-roots-chicago-illinois-01-15-2027/event/040065443B59B4FE",
+0
+],
+[
 "v-saltshed-2027-01-22-twinsick-s-good-company-2027",
-"2027-01-22T00:00:00",
+"2027-01-22",
 [
 "Twinsick's Good Company 2027"
 ],
@@ -1006,7 +1006,7 @@ null,
 ],
 [
 "v-saltshed-2027-02-19-chelsea-cutler",
-"2027-02-19T00:00:00",
+"2027-02-19",
 [
 "Chelsea Cutler"
 ],
@@ -1018,8 +1018,21 @@ null,
 0
 ],
 [
+"v-saltshed-2027-02-20-level-up",
+"2027-02-20",
+[
+"Level Up"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/level-up-the-ritual-tour-2027-chicago-illinois-02-20-2027/event/04006541C0E7BBBF",
+0
+],
+[
 "v-saltshed-2027-03-05-cory-wong",
-"2027-03-05T00:00:00",
+"2027-03-05",
 [
 "Cory Wong",
 "Dodie With Prep"
@@ -1033,7 +1046,7 @@ null,
 ],
 [
 "v-saltshed-2027-03-13-michael-shannon-jason-narducy-and-friend",
-"2027-03-13T00:00:00",
+"2027-03-13",
 [
 "Michael Shannon & Jason Narducy And Friends Play R.E.M.'S Document"
 ],
@@ -1046,7 +1059,7 @@ null,
 ],
 [
 "v-saltshed-2027-04-10-beirut",
-"2027-04-10T00:00:00",
+"2027-04-10",
 [
 "Beirut"
 ],
@@ -1059,7 +1072,7 @@ null,
 ],
 [
 "v-saltshed-2027-04-12-nothing-but-thieves",
-"2027-04-12T00:00:00",
+"2027-04-12",
 [
 "Nothing But Thieves"
 ],
@@ -1071,8 +1084,34 @@ null,
 0
 ],
 [
+"v-saltshed-2027-04-17-warren-zeiders",
+"2027-04-17",
+[
+"Warren Zeiders"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/warren-zeiders-no-brakes-tour-chicago-illinois-04-17-2027/event/0400654296D17207",
+0
+],
+[
+"v-saltshed-2027-04-20-lola-young",
+"2027-04-20",
+[
+"Lola Young"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/lola-young-everything-begins-chicago-illinois-04-20-2027/event/0400654292006697",
+0
+],
+[
 "v-saltshed-2027-04-28-fontaines-d-c",
-"2027-04-28T00:00:00",
+"2027-04-28",
 [
 "Fontaines D.C."
 ],
@@ -1085,7 +1124,7 @@ null,
 ],
 [
 "v-saltshed-2027-05-27-fkj",
-"2027-05-27T00:00:00",
+"2027-05-27",
 [
 "FKJ"
 ],
