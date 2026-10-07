@@ -17,22 +17,26 @@ RENAME = {
     "Footlight Underground at The Windjammer": "Footlight Underground",
 }
 OUT_OF_CITY = {"Bearsville Theater", "Starland Ballroom", "PNC Bank Arts Center", "Stone Pony",
-               "The Wellmont Theater", "Crossroads", "MetLife Stadium", "The Paramount"}
+               "The Wellmont Theater", "Crossroads", "MetLife Stadium", "The Paramount",
+               # Long Island, New Jersey and upstate rooms OMR lists
+               "Massapequa VFW Hall", "Amityville Music Hall", "The Count Basie Center for the Arts",
+               "Count Basie Center for the Arts", "Basilica Hudson", "Tarrytown Music Hall"}
 NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park",
                 "Robert F. Wagner Jr. Park", "Co-Cathedral of Saint Joseph", "St. Francis Xavier Church",
                 "St. Bartholomew's Church", "New York Society for Ethical Culture"}
 # Comedy, musical comedy and spoken word that share music calendars.
 DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
              "olivia harrison",  # in conversation with Martin Scorsese at BAM
+             "iliza shlesinger",
              "comedy bang! bang! live!",
              "the rocky horror picture show"}  # a screening with a shadow cast
 
 # Chicago and LA: OMR's own regions, minus what is plainly out of town or not music.
 CITY = {
     "nyc": {"rename": None, "out": None, "acts": None},
-    "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon"}},
+    "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon", "iliza shlesinger"}},
     "la": {"rename": {"Amoeba Music- Hollywood": "Amoeba Music Hollywood"},
-           "out": {"Pappy & Harriet's"}, "acts": {"dynasty handbag"}},
+           "out": {"Pappy & Harriet's"}, "acts": {"dynasty handbag", "carmen christopher"}},
 }
 
 MN, BK, QN = "Manhattan", "Brooklyn", "Queens"
@@ -68,6 +72,19 @@ for v in ["Madison Square Garden", "Barclays Center", "Radio City Music Hall", "
           "Apollo Theater", "Kings Theatre", "Forest Hills Stadium", "Citi Field", "Yankee Stadium"]: TIER[v] = "Big room"
 TIER["Pier 17"] = "Seasonal"
 
+def excluded(city, venue, acts):
+    """Why a show at this (already renamed) venue with these acts is left off, or None.
+    Also applied at build time to the announcement log, so a rule added later clears old entries."""
+    nyc = city == "nyc"
+    cfg = CITY[city]
+    if venue in (OUT_OF_CITY if nyc else cfg["out"]): return "out of town"
+    if nyc and venue in NOT_BOOKABLE: return "not a bookable room"
+    if acts[0].lower() in (DROP_ACTS if nyc else cfg["acts"]): return "comedy / spoken word"
+    if any(re.search(r"\((?:film )?screening\)", a, re.I) for a in acts): return "film screening"
+    if re.search(r"\((?:in-?store )?signing\)", acts[0], re.I): return "record-store signing"
+    return None
+
+
 def clean(city, raw, window=None):
     """Raw OMR rows -> (shows, dropped) under this city's rules. window: (from, to) dates, or None for all."""
     nyc = city == "nyc"
@@ -82,10 +99,8 @@ def clean(city, raw, window=None):
         acts = [a for a in acts if a and a.lower() not in ("and more!", "and more")]
         if not acts: continue
         if window and not window[0] <= dt[:10] <= window[1]: continue
-        if venue in out_of_town: dropped.append((venue, acts[0], "out of town")); continue
-        if nyc and venue in NOT_BOOKABLE: dropped.append((venue, acts[0], "not a bookable room")); continue
-        if acts[0].lower() in drop_acts: dropped.append((venue, acts[0], "comedy / spoken word")); continue
-        if any("(screening)" in a.lower() for a in acts): dropped.append((venue, acts[0], "film screening")); continue
+        why = excluded(city, venue, acts)
+        if why: dropped.append((venue, acts[0], why)); continue
         shows.append({
             "id": sid, "date": dt[:10], "time": dt[11:16], "headliner": acts[0], "support": acts[1:],
             "venue": venue, "borough": BORO_OF.get(venue) if nyc else None, "tier": TIER.get(venue) if nyc else None,

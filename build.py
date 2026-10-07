@@ -92,6 +92,9 @@ for key, name in CITIES:
             continue
         best[k] = a
     announced = [a for k, a in best.items() if not (news[a["id"]]["how"] == "venue" and k in week_keys)]
+    # Rules added since a show was logged still apply (an out-of-town room, a comedian).
+    from process import excluded
+    announced = [a for a in announced if not excluded(key, a["venue"], [a["headliner"], *a["support"]])]
     for show in d["shows"] + announced:
         # THE·TEAM acts with their agents. Only inside the locked page; never in a committed file.
         show["clients"] = [{"artist": c["artist"], "agents": c.get("agents", []), "service": c.get("service", [])}

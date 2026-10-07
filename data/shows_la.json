@@ -55,22 +55,6 @@
    "pick": false
   },
   {
-   "id": "479909",
-   "date": "2026-10-07",
-   "time": "19:00",
-   "headliner": "Labyrinth (film screening)",
-   "support": [
-    "Lennon Stella (host)"
-   ],
-   "venue": "Brain Dead Studios",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/pyxgvl-lennon-stella-presents-a-special-screening-of-labyrinth-7th-oct-brain-dead-studios-los-angeles-tickets",
-   "pick": false
-  },
-  {
    "id": "476503",
    "date": "2026-10-07",
    "time": "19:00",
@@ -1526,20 +1510,6 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://headtripindio.com/",
    "pick": true
-  },
-  {
-   "id": "480248",
-   "date": "2026-10-10",
-   "time": "12:00",
-   "headliner": "Remi Wolf (signing)",
-   "support": [],
-   "venue": "SUPERVINYL",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/xe8brk-remi-wolf-mud-in-store-signing-10th-oct-supervinyl-los-angeles-tickets",
-   "pick": false
   },
   {
    "id": "476243",
@@ -3850,20 +3820,6 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/allan-rayman-hotelallanthe10yearanniversarytour-los-angeles-california-10-15-2026/event/090064C8B6C69904",
-   "pick": false
-  },
-  {
-   "id": "479779",
-   "date": "2026-10-16",
-   "time": "13:30",
-   "headliner": "Boy Harsher (signing)",
-   "support": [],
-   "venue": "Amoeba Music Hollywood",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "RSVP",
-   "ticketUrl": "https://www.amoeba.com/live-shows/upcoming/detail-3170/",
    "pick": false
   },
   {
