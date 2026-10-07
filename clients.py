@@ -34,10 +34,6 @@ CITY = {
             "venue": {"House of Blues": "House of Blues Chicago", "The Salt Shed Outdoors": "The Salt Shed",
                       "Schubas Tavern": "Schubas", "The Auditorium Theatre": "Auditorium Theatre",
                       "Vic Theatre": "The Vic Theatre", "Cahn Auditorium": "Northwestern University"}},
-    "nash": {"keep": lambda r: True, "artist": {}, "venue": {"Brooklyn Bowl - Nashville": "Brooklyn Bowl Nashville"}},
-    # San Diego County only: the tab also carries Orange County (Dana Point, Laguna Beach) and Temecula.
-    "sd": {"keep": lambda r: r[3] not in {"Dana Point", "Laguna Beach", "Temecula"}, "artist": {},
-           "venue": {"Belly Up  Solana Beach": "Belly Up", "House of Blues - San Diego": "House of Blues San Diego"}},
     "la": {"keep": lambda r: True, "artist": {},
            "venue": {"The Moroccan Lounge": "Moroccan Lounge", "The Fonda Theatre": "Fonda Theatre",
                      "The Roxy Theatre": "The Roxy", "Masonic Lodge at Hollywood Forever Cemetery": "Hollywood Forever",

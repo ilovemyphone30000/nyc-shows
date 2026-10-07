@@ -12,7 +12,7 @@ are only ever stored encrypted: in clients.enc and inside the password-locked pa
 import json, os, sys
 from cryptography.fernet import Fernet
 
-TABS = {"nyc": "New York, NY", "chi": "Chicago IL", "la": "Los Angeles, CA", "nash": "Nashville, TN", "sd": "San Diego, CA"}
+TABS = {"nyc": "New York, NY", "chi": "Chicago IL", "la": "Los Angeles, CA"}
 
 if sys.argv[1:] == ["--from-local"]:
     by_city = {k: json.load(open(f"data/clients_raw_{k}.json")) for k in TABS}

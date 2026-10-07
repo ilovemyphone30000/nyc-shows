@@ -10,7 +10,7 @@ import datetime, json, os, sys
 
 snap = sys.argv[1]
 today = str(datetime.date.today())
-NAMES = {"nyc": "New York", "chi": "Chicago", "la": "Los Angeles", "nash": "Nashville", "sd": "San Diego"}
+NAMES = {"nyc": "New York", "chi": "Chicago", "la": "Los Angeles"}
 out = [f"## Changes since the last refresh ({today})", ""]
 total = 0
 

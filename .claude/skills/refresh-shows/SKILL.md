@@ -1,6 +1,6 @@
 ---
 name: refresh-shows
-description: Refresh the Shows site (NYC, Chicago, LA, Nashville, San Diego) — scrape, review new venues, load a new THE·TEAM client sheet, rebuild the locked page, run the browser checks, and publish. Use when asked to refresh, update or rebuild the shows site, add a client sheet, or do the weekly review.
+description: Refresh the Shows site (NYC, Chicago, LA) — scrape, review new venues, load a new THE·TEAM client sheet, rebuild the locked page, run the browser checks, and publish. Use when asked to refresh, update or rebuild the shows site, add a client sheet, or do the weekly review.
 ---
 
 # Refresh the shows site
@@ -40,12 +40,6 @@ page (`#nyc/announced`): every show the first time a scan sees it, however far o
 `announced` (on OMR's Just Announced list), `added` (appeared mid-week) or `range` (only
 slid into the window; not news). It only grows on a day with a good scan, and notes the
 gap when the previous good scan was over 30 hours earlier.
-
-Nashville (`nash`) and San Diego (`sd`) have no OMR site: their tabs are THE·TEAM's shows
-from the client sheet ("Nashville, TN" and "San Diego, CA" tabs) plus any venue calendars
-added for them in `venues.py`. San Diego drops the tab's Orange County and Temecula rows.
-Both are held off the published page (`HELD` in `build.py`) until the Ticketmaster
-Discovery API gives them real listings; remove a city from `HELD` to publish it.
 
 ## 1b. Venue calendars (the tracked rooms)
 

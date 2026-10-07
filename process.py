@@ -31,9 +31,6 @@ DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbo
 CITY = {
     "nyc": {"rename": None, "out": None, "acts": None},
     "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon"}},
-    # Nashville and San Diego: no OMR site, so their listings come from venue calendars only.
-    "nash": {"rename": {}, "out": set(), "acts": set()},
-    "sd": {"rename": {}, "out": set(), "acts": set()},
     "la": {"rename": {"Amoeba Music- Hollywood": "Amoeba Music Hollywood"},
            "out": {"Pappy & Harriet's"}, "acts": {"dynasty handbag"}},
 }
@@ -101,7 +98,7 @@ def clean(city, raw, window=None):
 
 def main(city):
     nyc = city == "nyc"
-    path = f"data/omr_raw_{city}.json"  # absent for Nashville and San Diego (no OMR site)
+    path = f"data/omr_raw_{city}.json"  # not there before a city's first scrape
     raw = json.load(open(path)) if os.path.exists(path) else []
     # Venues someone has already looked at. Anything else is kept but logged to
     # data/unreviewed_venues.txt, since the daily run is unattended: the weekly review

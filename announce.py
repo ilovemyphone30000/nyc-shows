@@ -38,7 +38,7 @@ def norm(s):
 
 parse = lambda ts: datetime.datetime.strptime(ts, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=datetime.timezone.utc)
 
-load = lambda p: json.load(open(p)) if os.path.exists(p) else []  # no OMR files for Nashville, San Diego
+load = lambda p: json.load(open(p)) if os.path.exists(p) else []  # a file not written yet reads as empty
 announced_raw = load(f"data/announced_raw_{city}.json")
 window_raw = load(f"data/omr_raw_{city}.json")
 on_list, _ = clean(city, announced_raw)
