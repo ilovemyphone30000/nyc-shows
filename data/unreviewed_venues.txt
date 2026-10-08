@@ -1,25 +1,3 @@
-chi | Andrew Rafacz Gallery | 10-10 Jimmy Flemion (of The Frogs)
-chi | GMan Tavern | 10-09 Grace Bloom; 10-15 Holy Joke; 10-16 Julia Minkin
-chi | Grand Ballroom at Navy Pier | 10-17 Lenny Pearce
-chi | Navy Pier | 10-16 Charlotte de Witte; 10-17 deadmau5
-chi | Ramova Theatre | 10-17 BALTHVS; 10-18 French Police
-chi | The WC Social Club | 10-10 Weedeater
-chi | Three Top Lounge | 10-11 Paul Banks (DJ Set)
-la | Cafe Trieste | 10-14 Mackeeper (listening party)
-la | Crypto.com Arena | 10-10 Jungle; 10-18 Kacey Musgraves; 10-19 Kacey Musgraves
-la | Dolby Theatre | 10-07 Aziz Ansari; 10-12 Sara Bareilles; 10-13 Sara Bareilles
-la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
-la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
-la | Fox Theater Pomona | 10-08 Last Dinosaurs; 10-09 The Living Tombstone
-la | LA River | 10-08 @
-la | LACMA | 10-09 Hidden Identity; 10-20 Melissa Auf der Maur
-la | LAX | 10-10 Cuddle Magic
-la | Pico-Union Project | 10-09 Levi.SCT
-la | Santa Barbara Bowl | 10-09 Jungle; 10-17 MUNA
-la | Shrine Auditorium | 10-21 Chappell Roan
-la | The Peppermint Club | 10-15 Laura Veirs; 10-21 Post Sex Nachos
-la | Townhouse Venice | 10-16 Dylan Meek
-la | Ventura County Fairgrounds | 10-14 Turnstile
 nyc | Alice Tully Hall | 10-21 Fuji||||||||||ta
 nyc | BRIC House | 10-16 Bilal
 nyc | Bleecker Bell | 10-17 Buffalo Nichols
@@ -42,10 +20,30 @@ nyc | Robert F. Wagner, Jr. Park (Battery Park City) | 10-08 The Lovestruck Ball
 nyc | Rubulad | 10-15 DD Island
 nyc | S.O.B.'s | 10-16 AZ Chike
 nyc | SILO Brooklyn | 10-16 Morgan Seatree
-nyc | Starr Bar | 10-07 Legitimate Business
 nyc | The Brooklyn Monarch | 10-10 Voivod
 nyc | The Capitol Theatre | 10-17 Daniel Donato's Cosmic Country
 nyc | The Chocolate Factory | 10-16 Armana Khan
-nyc | The Sheen Center for Thought & Culture | 10-07 Maggie Rose
 nyc | Under the K Bridge Park | 10-17 Gryffin
 nyc | Union Hall | 10-17 Chris Gethard
+chi | Andrew Rafacz Gallery | 10-10 Jimmy Flemion (of The Frogs)
+chi | GMan Tavern | 10-09 Grace Bloom; 10-15 Holy Joke; 10-16 Julia Minkin
+chi | Grand Ballroom at Navy Pier | 10-17 Lenny Pearce
+chi | Navy Pier | 10-16 Charlotte de Witte; 10-17 deadmau5
+chi | Ramova Theatre | 10-17 BALTHVS; 10-18 French Police
+chi | The WC Social Club | 10-10 Weedeater
+chi | Three Top Lounge | 10-11 Paul Banks (DJ Set)
+la | Cafe Trieste | 10-14 Mackeeper (listening party)
+la | Crypto.com Arena | 10-10 Jungle; 10-18 Kacey Musgraves; 10-19 Kacey Musgraves
+la | Dolby Theatre | 10-12 Sara Bareilles; 10-13 Sara Bareilles
+la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
+la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
+la | Fox Theater Pomona | 10-08 Last Dinosaurs; 10-09 The Living Tombstone
+la | LA River | 10-08 @
+la | LACMA | 10-09 Hidden Identity; 10-20 Melissa Auf der Maur
+la | LAX | 10-10 Cuddle Magic
+la | Pico-Union Project | 10-09 Levi.SCT
+la | Santa Barbara Bowl | 10-09 Jungle; 10-17 MUNA
+la | Shrine Auditorium | 10-21 Chappell Roan
+la | The Peppermint Club | 10-15 Laura Veirs; 10-21 Post Sex Nachos
+la | Townhouse Venice | 10-16 Dylan Meek
+la | Ventura County Fairgrounds | 10-14 Turnstile
