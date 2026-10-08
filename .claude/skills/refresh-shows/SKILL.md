@@ -37,7 +37,7 @@ Just Announced list), then runs `process.py`, `clients.py` and `announce.py` per
 
 `announce.py` keeps `data/ledger_<city>.json`, the log behind the site's **Just announced**
 page (`#nyc/announced`): every show the first time a scan sees it, however far out, marked
-`announced` (on OMR's Just Announced list), `added` (appeared mid-week) or `range` (only
+`announced` (on OMR's Just Announced or On Sale Soon list), `added` (appeared mid-week) or `range` (only
 slid into the window; not news). It only grows on a day with a good scan, and notes the
 gap when the previous good scan was over 30 hours earlier.
 

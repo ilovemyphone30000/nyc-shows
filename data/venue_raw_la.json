@@ -1,29 +1,15 @@
 {
 "scanned": {
-"Fonda Theatre": "2026-10-07",
-"The Ford": "2026-10-07",
-"The Greek Theatre": "2026-10-07",
-"Hollywood Bowl": "2026-10-07",
-"Hollywood Forever": "2026-10-07",
-"The Novo": "2026-10-07",
+"Fonda Theatre": "2026-10-08",
+"The Ford": "2026-10-08",
+"The Greek Theatre": "2026-10-08",
+"Hollywood Bowl": "2026-10-08",
+"Hollywood Forever": "2026-10-08",
+"The Novo": "2026-10-08",
 "Hollywood Palladium": "2026-10-05"
 },
 "seenAt": {},
 "rows": [
-[
-"v-fonda-2026-10-07-oskar-med-k",
-"2026-10-07T20:00:00",
-[
-"Oskar Med K",
-"me n ü & Lilya Mandr"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
 [
 "v-fonda-2026-10-08-adela",
 "2026-10-08T20:00:00",
@@ -355,7 +341,8 @@ null,
 "v-fonda-2026-11-09-they-are-gutting-a-body-of-water",
 "2026-11-09T19:00:00",
 [
-"They Are Gutting A Body Of Water"
+"They Are Gutting A Body Of Water",
+"Dead Sullivan"
 ],
 "Fonda Theatre",
 [],
@@ -896,6 +883,20 @@ null,
 0
 ],
 [
+"v-hollywoodbowl-2026-10-29-aerosmith-friends",
+"2026-10-29T19:00:00",
+[
+"Aerosmith & Friends",
+"Two Nights Only at the Hollywood Bowl"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4914/2026-10-29/aerosmith-friends",
+0
+],
+[
 "v-hollywoodbowl-2026-10-30-my-chemical-romance",
 "2026-10-30T19:00:00",
 [
@@ -921,6 +922,20 @@ null,
 null,
 "Tickets",
 "https://www.hollywoodbowl.com/events/performances/4264/2026-10-31/my-chemical-romance",
+0
+],
+[
+"v-hollywoodbowl-2026-11-01-aerosmith-friends",
+"2026-11-01T18:30:00",
+[
+"Aerosmith & Friends",
+"Two Nights Only at the Hollywood Bowl"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4915/2026-11-01/aerosmith-friends",
 0
 ],
 [
@@ -992,6 +1007,21 @@ null,
 null,
 "Tickets",
 "https://www.hollywoodbowl.com/events/performances/4900/2026-11-21/steve-lacy",
+0
+],
+[
+"v-hollywoodbowl-2027-05-01-def-leppard",
+"2027-05-01T19:00:00",
+[
+"Def Leppard",
+"Goo Goo Dolls",
+"The Struts"
+],
+"Hollywood Bowl",
+[],
+null,
+"Tickets",
+"https://www.hollywoodbowl.com/events/performances/4917/2027-05-01/def-leppardgoo-goo-dolls",
 0
 ],
 [
@@ -1783,19 +1813,6 @@ null,
 0
 ],
 [
-"v-greek-2026-10-07-clair-obscur",
-"2026-10-07T20:00:00",
-[
-"Clair Obscur"
-],
-"The Greek Theatre",
-[],
-null,
-"Tickets",
-"https://www.lagreektheatre.com/event/clair-obscur%3a-expedition-33-%e2%80%9ca-painted-symphony%e2%80%9d/212/",
-0
-],
-[
 "v-greek-2026-10-09-for-king-country",
 "2026-10-09T19:00:00",
 [
@@ -2053,19 +2070,6 @@ null,
 null,
 "Tickets",
 "https://www.lagreektheatre.com/event/roger-waters-presents-legacy-a-pink-floyd-show/214/",
-0
-],
-[
-"v-novo-2026-10-07-rusowsky",
-"2026-10-07",
-[
-"Rusowsky"
-],
-"The Novo",
-[],
-null,
-"Tickets",
-"https://www.thenovodtla.com/events/detail",
 0
 ],
 [

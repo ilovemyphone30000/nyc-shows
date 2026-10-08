@@ -2,10 +2,10 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-10-07",
+"Pier 17": "2026-10-08",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-10-07",
+"Webster Hall": "2026-10-08",
 "Nightclub 101": "2026-10-05"
 },
 "seenAt": {},
@@ -1405,6 +1405,19 @@ null,
 0
 ],
 [
+"v-pier17-2026-10-30-swae-lee",
+"2026-10-30",
+[
+"Swae Lee"
+],
+"Pier 17",
+[],
+null,
+"Tickets",
+"https://rooftopatpier17.com/events/swae-lee-2026/",
+0
+],
+[
 "v-radiocity-2026-10-08-jessie-ware",
 "2026-10-08T20:00:00",
 [
@@ -1884,19 +1897,6 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/event/Z7r9jZ1AAvt4k",
-0
-],
-[
-"v-websterhall-2026-10-07-art-of-blue-blood",
-"2026-10-07",
-[
-"Art Of Blue Blood"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
 0
 ],
 [

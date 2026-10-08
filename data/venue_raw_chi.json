@@ -2,7 +2,7 @@
 "scanned": {
 "Aragon Ballroom": "2026-10-05",
 "Chicago Theatre": "2026-10-05",
-"The Salt Shed": "2026-10-07"
+"The Salt Shed": "2026-10-08"
 },
 "seenAt": {},
 "rows": [
@@ -516,19 +516,6 @@ null,
 0
 ],
 [
-"v-saltshed-2026-10-07-malcolm-todd",
-"2026-10-07",
-[
-"Malcolm Todd"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/malcolm-todd-do-that-again-tour-chicago-illinois-10-07-2026/event/040064C5CA58C202",
-0
-],
-[
 "v-saltshed-2026-10-08-koe-wetzel",
 "2026-10-08",
 [
@@ -872,10 +859,10 @@ null,
 0
 ],
 [
-"v-saltshed-2026-11-27-malcolm-todd",
+"v-saltshed-2026-11-27-koe-wetzel",
 "2026-11-27",
 [
-"Malcolm Todd"
+"Koe Wetzel"
 ],
 "The Salt Shed",
 [],
@@ -1107,6 +1094,19 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/lola-young-everything-begins-chicago-illinois-04-20-2027/event/0400654292006697",
+0
+],
+[
+"v-saltshed-2027-04-21-lola-young",
+"2027-04-21",
+[
+"Lola Young"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/lola-young-everything-begins-chicago-illinois-04-21-2027/event/040065442BCBA6D8",
 0
 ],
 [

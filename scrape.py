@@ -92,17 +92,20 @@ def mark_scraped(city):
 
 if __name__ == "__main__":
     if sys.argv[2:3] == ["--announced"]:
-        # Every show on the city's Just Announced list that hasn't happened yet.
+        # Every show on the city's Just Announced list that hasn't happened yet, plus its
+        # On Sale Soon list (fresh announcements that sometimes skip Just Announced).
         city = sys.argv[1]
         today = time.strftime("%Y-%m-%d")
         try:
             rows = scrape(city, today, "9999-12-31", max_pages=10, path="/shows/just-announced")
+            ids = {r[0] for r in rows}
+            rows += [r for r in scrape(city, today, "9999-12-31", max_pages=3, path="/shows/on-sale-soon") if r[0] not in ids]
         except Blocked as e:  # keep the last good list rather than emptying it
             print(f"{city}: BLOCKED, keeping the last Just Announced list ({e})")
             sys.exit(2)
         out = f"data/announced_raw_{city}.json"
         json.dump(rows, open(out, "w"), ensure_ascii=False)
-        print(f"{city}: {len(rows)} on Just Announced -> {out}")
+        print(f"{city}: {len(rows)} on Just Announced and On Sale Soon -> {out}")
         sys.exit(0)
     city, start, end = sys.argv[1:4]
     try:

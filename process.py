@@ -20,7 +20,8 @@ OUT_OF_CITY = {"Bearsville Theater", "Starland Ballroom", "PNC Bank Arts Center"
                "The Wellmont Theater", "Crossroads", "MetLife Stadium", "The Paramount",
                # Long Island, New Jersey and upstate rooms OMR lists
                "Massapequa VFW Hall", "Amityville Music Hall", "The Count Basie Center for the Arts",
-               "Count Basie Center for the Arts", "Basilica Hudson", "Tarrytown Music Hall"}
+               "Count Basie Center for the Arts", "Basilica Hudson", "Tarrytown Music Hall",
+               "Prudential Center"}
 NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park",
                 "Robert F. Wagner Jr. Park", "Co-Cathedral of Saint Joseph", "St. Francis Xavier Church",
                 "St. Bartholomew's Church", "New York Society for Ethical Culture"}
@@ -82,6 +83,7 @@ def excluded(city, venue, acts):
     if acts[0].lower() in (DROP_ACTS if nyc else cfg["acts"]): return "comedy / spoken word"
     if any(re.search(r"\((?:film )?screening\)", a, re.I) for a in acts): return "film screening"
     if re.search(r"\((?:in-?store )?signing\)", acts[0], re.I): return "record-store signing"
+    if re.fullmatch(r"(?i)(schedule|lineup|artist)s? (tbd|tba)|tbd|tba", acts[0].strip()): return "placeholder, no act named"
     return None
 
 
