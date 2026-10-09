@@ -4,13 +4,11 @@ nyc | Bleecker Bell | 10-17 Buffalo Nichols
 nyc | Blue Note | 10-17 Robert Glasper; 10-17 Robert Glasper; 10-18 Robert Glasper
 nyc | C'mon Everybody | 10-15 Spencer Mackey
 nyc | Dada | 10-09 Great Lake Swimmers
-nyc | David Rubenstein Atrium at Lincoln Center | 10-08 Elisapie; 10-09 Nicolás y Los Fumadores; 10-15 Mei Semones
+nyc | David Rubenstein Atrium at Lincoln Center | 10-09 Nicolás y Los Fumadores; 10-15 Mei Semones; 10-16 Emilia y Pablo
 nyc | ERF Gallery | 10-10 Public Circuit
 nyc | Guggenheim Museum | 10-15 Arushi Jain
 nyc | Hammerstein Ballroom | 10-20 Sienna Spiro
-nyc | Jalopy Theater | 10-08 Matt Sucich
 nyc | Joe's Pub | 10-12 Elissa Mielke; 10-12 Christeene
-nyc | LIFE WORLD | 10-08 Slow Fiction
 nyc | MoMA PS1 | 10-22 Isabella Lovestory
 nyc | New Jersey Performing Arts Center | 10-16 Patti Smith
 nyc | Our Wicked Lady | 10-22 Jupiter Boys
@@ -18,7 +16,6 @@ nyc | P&T Knitwear | 10-16 Blythe Roberson
 nyc | P.I.T. | 10-09 Mirah; 10-17 Huasipungo
 nyc | Paragon | 10-16 Joey Beltram
 nyc | Reforesters Laboratory | 10-17 places i saw you last
-nyc | Robert F. Wagner, Jr. Park (Battery Park City) | 10-08 The Lovestruck Balladeers
 nyc | Rubulad | 10-15 DD Island
 nyc | S.O.B.'s | 10-16 AZ Chike
 nyc | SILO Brooklyn | 10-16 Morgan Seatree
@@ -39,11 +36,10 @@ la | Crypto.com Arena | 10-10 Jungle; 10-18 Kacey Musgraves; 10-19 Kacey Musgrav
 la | Dolby Theatre | 10-12 Sara Bareilles; 10-13 Sara Bareilles
 la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
 la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
-la | Fox Theater Pomona | 10-08 Last Dinosaurs; 10-09 The Living Tombstone
+la | Fox Theater Pomona | 10-09 The Living Tombstone
 la | In Sheep's Clothing HQ | 10-22 Fenne Lily
 la | Kiss Kiss Bang Bang | 10-22 Flamingosis
 la | Knucklehead Hollywood | 10-17 Lesser Care
-la | LA River | 10-08 @
 la | LACMA | 10-09 Hidden Identity; 10-20 Melissa Auf der Maur
 la | LAX | 10-10 Cuddle Magic
 la | Los Feliz Car Wash | 10-09 Remi Wolf
