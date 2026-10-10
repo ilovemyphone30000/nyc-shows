@@ -3,8 +3,7 @@ nyc | BRIC House | 10-16 Bilal
 nyc | Bleecker Bell | 10-17 Buffalo Nichols
 nyc | Blue Note | 10-17 Robert Glasper; 10-17 Robert Glasper; 10-18 Robert Glasper
 nyc | C'mon Everybody | 10-15 Spencer Mackey
-nyc | Dada | 10-09 Great Lake Swimmers
-nyc | David Rubenstein Atrium at Lincoln Center | 10-09 Nicolás y Los Fumadores; 10-15 Mei Semones; 10-16 Emilia y Pablo
+nyc | David Rubenstein Atrium at Lincoln Center | 10-15 Mei Semones; 10-16 Emilia y Pablo; 10-22 claire rousay
 nyc | ERF Gallery | 10-10 Public Circuit
 nyc | Guggenheim Museum | 10-15 Arushi Jain
 nyc | Hammerstein Ballroom | 10-20 Sienna Spiro
@@ -13,7 +12,7 @@ nyc | MoMA PS1 | 10-22 Isabella Lovestory
 nyc | New Jersey Performing Arts Center | 10-16 Patti Smith
 nyc | Our Wicked Lady | 10-22 Jupiter Boys
 nyc | P&T Knitwear | 10-16 Blythe Roberson
-nyc | P.I.T. | 10-09 Mirah; 10-17 Huasipungo
+nyc | P.I.T. | 10-17 Huasipungo
 nyc | Paragon | 10-16 Joey Beltram
 nyc | Reforesters Laboratory | 10-17 places i saw you last
 nyc | Rubulad | 10-15 DD Island
@@ -25,7 +24,7 @@ nyc | The Chocolate Factory | 10-16 Armana Khan
 nyc | Under the K Bridge Park | 10-17 Gryffin
 nyc | Union Hall | 10-17 Chris Gethard
 chi | Andrew Rafacz Gallery | 10-10 Jimmy Flemion (of The Frogs)
-chi | GMan Tavern | 10-09 Grace Bloom; 10-15 Holy Joke; 10-16 Julia Minkin
+chi | GMan Tavern | 10-15 Holy Joke; 10-16 Julia Minkin; 10-21 Dogwood Tales
 chi | Grand Ballroom at Navy Pier | 10-17 Lenny Pearce
 chi | Navy Pier | 10-16 Charlotte de Witte; 10-17 deadmau5
 chi | Ramova Theatre | 10-17 BALTHVS; 10-18 French Police
@@ -36,15 +35,12 @@ la | Crypto.com Arena | 10-10 Jungle; 10-18 Kacey Musgraves; 10-19 Kacey Musgrav
 la | Dolby Theatre | 10-12 Sara Bareilles; 10-13 Sara Bareilles
 la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
 la | Empire Polo Club | 10-10 Calvin Harris; 10-11 Swedish House Mafia
-la | Fox Theater Pomona | 10-09 The Living Tombstone
 la | In Sheep's Clothing HQ | 10-22 Fenne Lily
 la | Kiss Kiss Bang Bang | 10-22 Flamingosis
 la | Knucklehead Hollywood | 10-17 Lesser Care
-la | LACMA | 10-09 Hidden Identity; 10-20 Melissa Auf der Maur
+la | LACMA | 10-20 Melissa Auf der Maur
 la | LAX | 10-10 Cuddle Magic
-la | Los Feliz Car Wash | 10-09 Remi Wolf
-la | Pico-Union Project | 10-09 Levi.SCT
-la | Santa Barbara Bowl | 10-09 Jungle; 10-17 MUNA
+la | Santa Barbara Bowl | 10-17 MUNA
 la | Shrine Auditorium | 10-21 Chappell Roan; 10-22 Chappell Roan
 la | The Peppermint Club | 10-15 Laura Veirs; 10-21 Post Sex Nachos
 la | Townhouse Venice | 10-16 Dylan Meek
