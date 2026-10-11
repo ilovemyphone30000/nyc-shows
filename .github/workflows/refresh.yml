@@ -1,4 +1,4 @@
-# Daily refresh: scrape Oh My Rockness for NYC, Chicago and LA (today through two weeks
+# Refresh, run by hand only (Actions tab > Run workflow): scrape Oh My Rockness for NYC, Chicago and LA (today through two weeks
 # ahead, plus each city's Just Announced list), merge THE·TEAM client shows, rebuild the
 # locked page, run the browser checks, and push. A bot-check page stops the scrape for
 # that city; it is never worked around.
@@ -9,8 +9,8 @@
 name: Refresh listings
 
 on:
-  schedule:
-    - cron: "0 15 * * *"   # 15:00 UTC = 11 AM New York in daylight time (10 AM from November to March)
+  # The daily schedule is off (2026-10-11): Oh My Rockness blocked it most mornings. To
+  # restore it, add back:  schedule: [{cron: "0 15 * * *"}]   (11 AM New York, daylight time)
   workflow_dispatch: {}
 
 permissions:

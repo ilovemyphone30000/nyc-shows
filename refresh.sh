@@ -2,7 +2,7 @@
 # Refresh every city for today through two weeks ahead, rebuild, test, and publish.
 #   ./refresh.sh            scrape, process, merge clients, build, check, push
 #   ./refresh.sh --no-push  everything but the push (for a look first)
-# Runs daily on GitHub Actions (.github/workflows/refresh.yml); also runs locally.
+# Runs locally, or by hand on GitHub Actions (.github/workflows/refresh.yml); no schedule.
 set -euo pipefail
 cd "$(dirname "$0")"
 

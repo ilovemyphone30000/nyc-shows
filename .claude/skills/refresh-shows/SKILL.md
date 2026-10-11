@@ -7,8 +7,10 @@ description: Refresh the Shows site (NYC, Chicago, LA) — scrape, review new ve
 
 Project: `/Users/jonahisaac/Downloads/scout-nyc`. Live (password-locked) at
 https://ilovemyphone30000.github.io/nyc-shows/ from `main` of `ilovemyphone30000/nyc-shows`.
-GitHub Actions (`.github/workflows/refresh.yml`) already refreshes it every day at 11 AM
-New York time, so this skill is for the weekly review and for on-demand runs.
+Nothing runs on a schedule: the daily GitHub Actions run (`.github/workflows/refresh.yml`) was
+turned off on 2026-10-11 because Oh My Rockness blocked it most mornings. Refreshes happen when
+the user asks; read OMR in their Chrome at a human pace (the browser fallback) and publish.
+The workflow can still be started by hand from the repo's Actions tab.
 
 ## Rules that do not bend
 
@@ -89,7 +91,7 @@ Then publish:
 ./refresh.sh
 ```
 
-## If the daily GitHub run failed
+## If a GitHub run failed
 
 `gh` is not installed; check https://github.com/ilovemyphone30000/nyc-shows/actions in the
 browser. Common causes: a missing secret (`STATICRYPT_PASSWORD`, `CLIENTS_KEY`), a bot
