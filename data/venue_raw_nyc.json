@@ -2,10 +2,10 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-10-08",
+"Pier 17": "2026-10-11",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-10-08",
+"Webster Hall": "2026-10-11",
 "Nightclub 101": "2026-10-05"
 },
 "seenAt": {},
@@ -1353,45 +1353,6 @@ null,
 0
 ],
 [
-"v-pier17-2026-10-08-modest-mouse",
-"2026-10-08",
-[
-"Modest Mouse"
-],
-"Pier 17",
-[],
-null,
-"Tickets",
-"https://rooftopatpier17.com/events/modest-mouse-2026/",
-0
-],
-[
-"v-pier17-2026-10-09-dj-pauly-d",
-"2026-10-09",
-[
-"DJ Pauly D"
-],
-"Pier 17",
-[],
-null,
-"Tickets",
-"https://rooftopatpier17.com/events/dj-pauly-d-2026/",
-0
-],
-[
-"v-pier17-2026-10-10-san-holo",
-"2026-10-10",
-[
-"San Holo"
-],
-"Pier 17",
-[],
-null,
-"Tickets",
-"https://rooftopatpier17.com/events/san-holo-2026/",
-0
-],
-[
 "v-pier17-2026-10-24-steve-aoki",
 "2026-10-24",
 [
@@ -1402,19 +1363,6 @@ null,
 null,
 "Tickets",
 "https://rooftopatpier17.com/events/steve-aoki-2026/",
-0
-],
-[
-"v-pier17-2026-10-30-swae-lee",
-"2026-10-30",
-[
-"Swae Lee"
-],
-"Pier 17",
-[],
-null,
-"Tickets",
-"https://rooftopatpier17.com/events/swae-lee-2026/",
 0
 ],
 [
@@ -1900,49 +1848,10 @@ null,
 0
 ],
 [
-"v-websterhall-2026-10-09-medium-build",
-"2026-10-09",
-[
-"Medium Build"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-10-notd",
-"2026-10-10",
-[
-"NOTD"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
 "v-websterhall-2026-10-13-remi-wolf",
 "2026-10-13",
 [
 "Remi Wolf"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-14-seun-kuti-egypt-80",
-"2026-10-14",
-[
-"Seun Kuti & Egypt 80"
 ],
 "Webster Hall",
 [],

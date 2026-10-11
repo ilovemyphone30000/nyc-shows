@@ -2,7 +2,7 @@
 "scanned": {
 "Aragon Ballroom": "2026-10-05",
 "Chicago Theatre": "2026-10-05",
-"The Salt Shed": "2026-10-08"
+"The Salt Shed": "2026-10-11"
 },
 "seenAt": {},
 "rows": [
@@ -516,32 +516,6 @@ null,
 0
 ],
 [
-"v-saltshed-2026-10-08-koe-wetzel",
-"2026-10-08",
-[
-"Koe Wetzel"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/koe-wetzel-the-night-champion-world-chicago-illinois-10-08-2026/event/0400653E8D604D1E",
-0
-],
-[
-"v-saltshed-2026-10-09-muna",
-"2026-10-09",
-[
-"MUNA"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/muna-gets-so-hot-tour-chicago-illinois-10-09-2026/event/040064A5EF7C3DA5",
-0
-],
-[
 "v-saltshed-2026-10-11-interpol",
 "2026-10-11",
 [
@@ -597,26 +571,28 @@ null,
 "v-saltshed-2026-10-20-the-black-keys",
 "2026-10-20",
 [
-"The Black Keys"
+"The Black Keys",
+"Eddie 9v"
 ],
 "The Salt Shed",
 [],
 null,
 "Tickets",
-"https://www.ticketmaster.com/the-black-keys-peaches-n-kream-chicago-illinois-10-20-2026/event/04006503F3401026",
+"https://www.ticketmaster.com/the-black-keys-with-eddie-9v-chicago-illinois-10-20-2026/event/04006503F3401026",
 0
 ],
 [
 "v-saltshed-2026-10-21-the-black-keys",
 "2026-10-21",
 [
-"The Black Keys"
+"The Black Keys",
+"Eddie 9v"
 ],
 "The Salt Shed",
 [],
 null,
 "Tickets",
-"https://www.ticketmaster.com/the-black-keys-peaches-n-kream-chicago-illinois-10-21-2026/event/04006503F2D60F48",
+"https://www.ticketmaster.com/the-black-keys-with-eddie-9v-chicago-illinois-10-21-2026/event/04006503F2D60F48",
 0
 ],
 [
@@ -859,10 +835,10 @@ null,
 0
 ],
 [
-"v-saltshed-2026-11-27-koe-wetzel",
+"v-saltshed-2026-11-27-interpol",
 "2026-11-27",
 [
-"Koe Wetzel"
+"Interpol"
 ],
 "The Salt Shed",
 [],
@@ -1029,6 +1005,19 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/cory-wong-feat-dodie-with-prep-chicago-illinois-03-05-2027/event/04006537E370437B",
+0
+],
+[
+"v-saltshed-2027-03-09-remi-wolf",
+"2027-03-09",
+[
+"Remi Wolf"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/remi-wolf-the-mud-tour-chicago-illinois-03-09-2027/event/04006548D8121164",
 0
 ],
 [

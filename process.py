@@ -28,7 +28,7 @@ NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park
 # Comedy, musical comedy and spoken word that share music calendars.
 DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
              "olivia harrison",  # in conversation with Martin Scorsese at BAM
-             "iliza shlesinger",
+             "iliza shlesinger", "susan orlean",
              "comedy bang! bang! live!",
              "the rocky horror picture show"}  # a screening with a shadow cast
 

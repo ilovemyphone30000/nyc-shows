@@ -1,42 +1,57 @@
+chi | GMan Tavern | 10-15 Holy Joke; 10-16 Julia Minkin; 10-21 Dogwood Tales
+chi | Grand Ballroom at Navy Pier | 10-17 Lenny Pearce
+chi | Navy Pier | 10-16 Charlotte de Witte; 10-17 deadmau5; 10-18 Black Coffee
+chi | Ramova Theatre | 10-17 BALTHVS; 10-18 French Police; 10-24 Mobb Deep
+chi | Three Top Lounge | 10-11 Paul Banks (DJ Set)
+la | Cafe Trieste | 10-14 Mackeeper (listening party)
+la | Crypto.com Arena | 10-18 Kacey Musgraves; 10-19 Kacey Musgraves; 10-24 Weezer
+la | Dolby Theatre | 10-12 Sara Bareilles; 10-13 Sara Bareilles
+la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
+la | Empire Polo Club | 10-11 Swedish House Mafia
+la | Exposition Park | 10-23 Gryffin; 10-24 Gryffin
+la | Great Park, Irvine | 10-23 Rise Against
+la | Grove of Anaheim | 10-23 Fred Armisen
+la | In Sheep's Clothing HQ | 10-22 Fenne Lily
+la | Kiss Kiss Bang Bang | 10-22 Flamingosis
+la | Knucklehead Hollywood | 10-17 Lesser Care
+la | LACMA | 10-20 Melissa Auf der Maur
+la | Milky's | 10-24 Romeos
+la | Run Out Groove Records | 10-25 Silversun Pickups
+la | Santa Barbara Bowl | 10-17 MUNA
+la | Shrine Auditorium | 10-21 Chappell Roan; 10-22 Chappell Roan
+la | The Haven | 10-23 Thee Heart Tones; 10-24 Levitation Room; 10-25 Tropa Magica
+la | The Peppermint Club | 10-15 Laura Veirs; 10-21 Post Sex Nachos
+la | Townhouse Venice | 10-16 Dylan Meek
+la | Ventura County Fairgrounds | 10-14 Turnstile
+la | Walt Disney Concert Hall | 10-23 Andrew Bird
 nyc | Alice Tully Hall | 10-21 Fuji||||||||||ta
 nyc | BRIC House | 10-16 Bilal
 nyc | Bleecker Bell | 10-17 Buffalo Nichols
 nyc | Blue Note | 10-17 Robert Glasper; 10-17 Robert Glasper; 10-18 Robert Glasper
 nyc | C'mon Everybody | 10-15 Spencer Mackey
 nyc | David Rubenstein Atrium at Lincoln Center | 10-15 Mei Semones; 10-16 Emilia y Pablo; 10-22 claire rousay
+nyc | Dead Letter No. 9 | 10-23 Lauren Flax; 10-24 Mike Servito
 nyc | Guggenheim Museum | 10-15 Arushi Jain
+nyc | H0L0 | 10-23 Effy
 nyc | Hammerstein Ballroom | 10-20 Sienna Spiro
-nyc | Joe's Pub | 10-12 Elissa Mielke; 10-12 Christeene
+nyc | Joe's Pub | 10-12 Elissa Mielke; 10-12 Christeene; 10-23 Stephin Merritt (of The Magnetic Fields)
+nyc | Kings Theatre | 10-23 Thundercat; 10-25 Maher Zain
 nyc | MoMA PS1 | 10-22 Isabella Lovestory
 nyc | New Jersey Performing Arts Center | 10-16 Patti Smith
+nyc | Nublu 151 | 10-23 Sorry Darling
+nyc | Nublu Classic | 10-16 Walkmanbaby
 nyc | Our Wicked Lady | 10-22 Jupiter Boys
 nyc | P&T Knitwear | 10-16 Blythe Roberson
-nyc | P.I.T. | 10-17 Huasipungo
+nyc | P.I.T. | 10-17 Huasipungo; 10-24 first president of japan
 nyc | Paragon | 10-16 Joey Beltram
 nyc | Reforesters Laboratory | 10-17 places i saw you last
+nyc | Rodrigue's Coffee House | 10-23 Whisper Doll
 nyc | Rubulad | 10-15 DD Island
 nyc | S.O.B.'s | 10-16 AZ Chike
 nyc | SILO Brooklyn | 10-16 Morgan Seatree
-nyc | The Capitol Theatre | 10-17 Daniel Donato's Cosmic Country
+nyc | The Brooklyn Monarch | 10-23 Aria Vega
+nyc | The Capitol Theatre | 10-17 Daniel Donato's Cosmic Country; 10-24 Trombone Shorty & Orleans Avenue
 nyc | The Chocolate Factory | 10-16 Armana Khan
+nyc | UBS Arena | 10-24 KATSEYE
 nyc | Under the K Bridge Park | 10-17 Gryffin
 nyc | Union Hall | 10-17 Chris Gethard
-chi | GMan Tavern | 10-15 Holy Joke; 10-16 Julia Minkin; 10-21 Dogwood Tales
-chi | Grand Ballroom at Navy Pier | 10-17 Lenny Pearce
-chi | Navy Pier | 10-16 Charlotte de Witte; 10-17 deadmau5
-chi | Ramova Theatre | 10-17 BALTHVS; 10-18 French Police
-chi | Three Top Lounge | 10-11 Paul Banks (DJ Set)
-la | Cafe Trieste | 10-14 Mackeeper (listening party)
-la | Crypto.com Arena | 10-18 Kacey Musgraves; 10-19 Kacey Musgraves
-la | Dolby Theatre | 10-12 Sara Bareilles; 10-13 Sara Bareilles
-la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
-la | Empire Polo Club | 10-11 Swedish House Mafia
-la | In Sheep's Clothing HQ | 10-22 Fenne Lily
-la | Kiss Kiss Bang Bang | 10-22 Flamingosis
-la | Knucklehead Hollywood | 10-17 Lesser Care
-la | LACMA | 10-20 Melissa Auf der Maur
-la | Santa Barbara Bowl | 10-17 MUNA
-la | Shrine Auditorium | 10-21 Chappell Roan; 10-22 Chappell Roan
-la | The Peppermint Club | 10-15 Laura Veirs; 10-21 Post Sex Nachos
-la | Townhouse Venice | 10-16 Dylan Meek
-la | Ventura County Fairgrounds | 10-14 Turnstile

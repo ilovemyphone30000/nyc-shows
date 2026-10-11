@@ -1,56 +1,15 @@
 {
 "scanned": {
-"Fonda Theatre": "2026-10-08",
-"The Ford": "2026-10-08",
-"The Greek Theatre": "2026-10-08",
-"Hollywood Bowl": "2026-10-08",
-"Hollywood Forever": "2026-10-08",
-"The Novo": "2026-10-08",
+"Fonda Theatre": "2026-10-11",
+"The Ford": "2026-10-11",
+"The Greek Theatre": "2026-10-11",
+"Hollywood Bowl": "2026-10-11",
+"Hollywood Forever": "2026-10-11",
+"The Novo": "2026-10-11",
 "Hollywood Palladium": "2026-10-05"
 },
 "seenAt": {},
 "rows": [
-[
-"v-fonda-2026-10-08-adela",
-"2026-10-08T20:00:00",
-[
-"Adéla",
-"Zoe Gitter"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
-[
-"v-fonda-2026-10-09-adela",
-"2026-10-09T20:00:00",
-[
-"Adéla",
-"Zoe Gitter"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
-[
-"v-fonda-2026-10-10-remi-wolf",
-"2026-10-10T20:00:00",
-[
-"Remi Wolf"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
 [
 "v-fonda-2026-10-11-the-blasting-company-plays-over-the-gard",
 "2026-10-11T19:00:00",
@@ -747,48 +706,6 @@ null,
 0
 ],
 [
-"v-hollywoodbowl-2026-10-08-empire-of-the-sun",
-"2026-10-08T19:30:00",
-[
-"Empire of the Sun",
-"Polo & Pan",
-"Midnight Gen"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/performances/4537/2026-10-08/empire-of-the-sun",
-0
-],
-[
-"v-hollywoodbowl-2026-10-09-mac-demarco",
-"2026-10-09T19:00:00",
-[
-"Mac DeMarco"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/performances/4363/2026-10-09/mac-demarco",
-0
-],
-[
-"v-hollywoodbowl-2026-10-10-jack-johnson",
-"2026-10-10T19:30:00",
-[
-"Jack Johnson",
-"Hermanos Gutiérrez"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/performances/4256/2026-10-10/jack-johnson",
-0
-],
-[
 "v-hollywoodbowl-2026-10-11-jack-johnson",
 "2026-10-11T19:00:00",
 [
@@ -1052,19 +969,6 @@ null,
 0
 ],
 [
-"v-hollywoodforever-2026-10-08-jacob-alon",
-"2026-10-08T19:00:00",
-[
-"Jacob Alon"
-],
-"Hollywood Forever",
-[],
-null,
-"Tickets",
-"https://hollywoodforever.com/event/jacob-alon/",
-0
-],
-[
 "v-hollywoodforever-2026-10-15-geese",
 "2026-10-15T18:00:00",
 [
@@ -1101,6 +1005,19 @@ null,
 null,
 "Tickets",
 "https://hollywoodforever.com/event/geese-getting-killed-again-tour-3/",
+0
+],
+[
+"v-hollywoodforever-2026-11-04-cage-the-elephant",
+"2026-11-04T19:00:00",
+[
+"Cage the Elephant"
+],
+"Hollywood Forever",
+[],
+null,
+"Tickets",
+"https://hollywoodforever.com/event/cage-the-elephant/",
 0
 ],
 [
@@ -1651,32 +1568,6 @@ null,
 0
 ],
 [
-"v-ford-2026-10-08-punch-brothers",
-"2026-10-08T20:00:00",
-[
-"Punch Brothers"
-],
-"The Ford",
-[],
-null,
-"Tickets",
-"https://www.theford.com/events/performances/4875/2026-10-08/punch-brothers",
-0
-],
-[
-"v-ford-2026-10-10-bambu",
-"2026-10-10T20:00:00",
-[
-"Bambu"
-],
-"The Ford",
-[],
-null,
-"Tickets",
-"https://www.theford.com/events/performances/4876/2026-10-10/bambu-bass-building",
-0
-],
-[
 "v-ford-2026-10-11-jacob-collier",
 "2026-10-11T19:30:00",
 [
@@ -1813,32 +1704,6 @@ null,
 0
 ],
 [
-"v-greek-2026-10-09-for-king-country",
-"2026-10-09T19:00:00",
-[
-"for KING + COUNTRY"
-],
-"The Greek Theatre",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/event/090064AEDD6E900E",
-0
-],
-[
-"v-greek-2026-10-10-air-supply",
-"2026-10-10T20:00:00",
-[
-"Air Supply"
-],
-"The Greek Theatre",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/event/090064FFD304DE2B",
-0
-],
-[
 "v-greek-2026-10-11-palace",
 "2026-10-11T19:20:00",
 [
@@ -1914,19 +1779,6 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/event/0900648DE474A9BA",
-0
-],
-[
-"v-greek-2026-10-19-dermot-kennedy",
-"2026-10-19T19:30:00",
-[
-"Dermot Kennedy"
-],
-"The Greek Theatre",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/event/090064787D02336C",
 0
 ],
 [
@@ -2070,36 +1922,6 @@ null,
 null,
 "Tickets",
 "https://www.lagreektheatre.com/event/roger-waters-presents-legacy-a-pink-floyd-show/214/",
-0
-],
-[
-"v-novo-2026-10-09-hudson-westbrook",
-"2026-10-09",
-[
-"Hudson Westbrook",
-"Kenny Whitmire & Ethan Burdick"
-],
-"The Novo",
-[],
-null,
-"Tickets",
-"https://www.thenovodtla.com/events/detail",
-0
-],
-[
-"v-novo-2026-10-10-dying-fetus-sanguisugabogg",
-"2026-10-10",
-[
-"Dying Fetus & Sanguisugabogg",
-"Crowbar",
-"Left to Suffer",
-"Deterioration"
-],
-"The Novo",
-[],
-null,
-"Tickets",
-"https://www.thenovodtla.com/events/detail",
 0
 ],
 [
