@@ -28,7 +28,10 @@ SKIP_NAMES = re.compile(
     r"merch|hotel package|add-on|tailgate|in concert|live to film|film with live|"
     r"reading|film fest|short film|cabaret|awards?|rumble|show and tell|rave|disco|emo night|"
     r"sessions?|in the mix|disney|halloween|dance feat|k-pop night|next level k-pop|real estate|storytelling|podcast)\b")
-SKIP_VENUES = set()   # e.g. {"Kingston Mines - Chicago Blues Center"}
+# Dance clubs: their Ticketmaster listings are DJ nights (DJ-named headliners are dropped
+# everywhere by process.DJ_NIGHT).
+SKIP_VENUES = {"Pacha New York", "TIME Nightclub", "Exchange LA", "Avalon Hollywood", "Academy LA",
+               "Sound Nightclub", "Smartbar", "Spybar"}
 # lowercased. Tribute bands, drag and comedy tours, a kids' show: names that don't give it away.
 SKIP_ACTS = {"shane dawson", "led zeppelin 2", "bruce in the usa", "alaska thunderf**k", "bianca del rio",
              "the rock and roll playhouse"}

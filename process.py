@@ -73,6 +73,11 @@ for v in ["Madison Square Garden", "Barclays Center", "Radio City Music Hall", "
           "Apollo Theater", "Kings Theatre", "Forest Hills Stadium", "Citi Field", "Yankee Stadium"]: TIER[v] = "Big room"
 TIER["Pier 17"] = "Seasonal"
 
+# DJ nights (Jonah, 2026-10-14): the headliner is a DJ or plays a DJ set. A band with a DJ
+# opening stays.
+DJ_NIGHT = re.compile(r"(?i)\bdj\b|\bdj[ -]set\b|\(dj\)|\bb2b\b|all night long|extended set|vinyl set")
+
+
 def excluded(city, venue, acts):
     """Why a show at this (already renamed) venue with these acts is left off, or None.
     Also applied at build time to the announcement log, so a rule added later clears old entries."""
@@ -83,6 +88,7 @@ def excluded(city, venue, acts):
     if acts[0].lower() in (DROP_ACTS if nyc else cfg["acts"]): return "comedy / spoken word"
     if any(re.search(r"\((?:film )?screening\)", a, re.I) for a in acts): return "film screening"
     if re.search(r"\((?:in-?store )?signing\)", acts[0], re.I): return "record-store signing"
+    if DJ_NIGHT.search(acts[0]): return "DJ night"
     if re.fullmatch(r"(?i)(schedule|lineup|artist)s? (tbd|tba)|tbd|tba", acts[0].strip()): return "placeholder, no act named"
     return None
 
