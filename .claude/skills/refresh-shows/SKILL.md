@@ -54,7 +54,10 @@ It paces itself at 4 requests a second and stops well short of the 5,000-a-day q
 Output, all gitignored, in `data/tm/`: `market_<city>.json` (the whole calendar, with
 `firstSeen`), `<city>.json` (our shows matched). `build.py` adds the acts Oh My Rockness left
 off to each show's support, plus price range, on-sale/presale date and a cancelled/postponed
-tag. `python3 audit_tm.py` writes `reports/ticketmaster-audit.html`: recently announced on
+tag. Ticketmaster events no other source has ("TM only", tagged on the page) are added to the
+two-week list and Just announced when they pass `tm_rules.py`: a room we already cover, not
+jazz/classical/blues/religious/kids, no tributes, theme nights or talks. Clean up there
+(`TM_ONLY = False` turns them all off; or skip a venue, act, genre or event id). `python3 audit_tm.py` writes `reports/ticketmaster-audit.html`: recently announced on
 Ticketmaster (and whether we have it), Ticketmaster concerts missing from the two-week list,
 shows with no support, support added, status flags, and every room with its size class.
 

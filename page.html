@@ -144,6 +144,10 @@ main { padding-block: 8px 80px; }
 .meta .t { font-variant-numeric: tabular-nums; }
 .meta .price, .meta .onsale { font-variant-numeric: tabular-nums; }
 .meta .onsale { color: var(--accent); }
+.meta .onsale.past { color: var(--muted); }
+.meta .onsale:not(.past) { font-weight: 600; }
+.page-new.compact .row:not(.open) { grid-template-columns: 92px minmax(0, 1fr) 280px; }
+@media (max-width: 720px) { .page-new.compact .row:not(.open) { grid-template-columns: 52px minmax(0, 1fr); } }
 .status-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--grey4); padding: 0 4px; margin-left: 8px; vertical-align: 2px; border-radius: 2px; }
 .save { background: none; border: 0; cursor: pointer; padding: 2px; line-height: 0; color: var(--grey7); }
 .save svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.4; }
@@ -253,6 +257,7 @@ body.compact { font-size: 12.5px; }
     <span class="seg new-only" id="groupSeg">
       <button class="tab" data-group="found">Day announced<span class="dir" aria-hidden="true"></span></button>
       <button class="tab" data-group="date">Show date<span class="dir" aria-hidden="true"></span></button>
+      <button class="tab" data-group="onsale">On sale<span class="dir" aria-hidden="true"></span></button>
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
@@ -338,10 +343,10 @@ for (let d = d8(FROM); d <= d8(TO); d.setDate(d.getDate() + 1)) {
 let state = { page: route().page || "week", view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false, big: false,
   group: store.get("annGroup", "found") };
 if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
-if (!["found", "date"].includes(state.group)) state.group = "found";
+if (!["found", "date", "onsale"].includes(state.group)) state.group = "found";
 // Sort direction per grouping; clicking the selected one flips it. Day found starts newest
 // first, show date soonest first.
-const annDir = Object.assign({ found: "desc", date: "asc" }, store.get("annDir", {}));
+const annDir = Object.assign({ found: "desc", date: "asc", onsale: "desc" }, store.get("annDir", {}));
 const syncHash = () => { try { history.replaceState(null, "", "#" + SLUG[cityKey] + (state.page === "new" ? "/announced" : "")); } catch (e) {} };
 let saved = new Set(store.get("saved", []));
 
@@ -484,8 +489,11 @@ const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.
 // Ticketmaster's details (ticketmaster.py): price range, an on-sale still to come, status.
 const money = (n, cur) => (cur === "USD" || !cur ? "$" : cur + " ") + (Number.isInteger(n) ? n : n.toFixed(2));
 const priceOf = s => { const p = s.tm && s.tm.price; if (!p || p[0] == null) return ""; return p[1] != null && p[1] !== p[0] ? money(p[0], p[2]) + "–" + money(p[1], p[2]).replace(/^\$/, "") : money(p[0], p[2]); };
-const onsaleOf = s => {
-  const t = s.tm && (s.tm.presale && Date.parse(s.tm.presale) > Date.now() ? ["Presale", s.tm.presale] : s.tm.onsale && Date.parse(s.tm.onsale) > Date.now() ? ["On sale", s.tm.onsale] : null);
+const notOnSale = s => !!(s.tm && s.tm.onsale && Date.parse(s.tm.onsale) > Date.now());
+// The next sale moment still to come; with `always`, the general on-sale even once it has passed.
+const onsaleOf = (s, always) => {
+  const t = s.tm && (notOnSale(s) ? ["Not on sale ·", s.tm.presale && Date.parse(s.tm.presale) > Date.now() ? s.tm.presale : s.tm.onsale]
+    : always && s.tm.onsale ? ["On sale since", s.tm.onsale] : null);
   if (!t) return "";
   const d = new Date(t[1]), o = { timeZone: TZ[city.key] };
   return `${t[0]} ${d.toLocaleDateString("en-US", { ...o, month: "numeric", day: "numeric" })} ${d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }).replace(":00", "").replace(" ", "")}`;
@@ -505,13 +513,13 @@ function row(s, withVenue) {
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : mdy(dates[0])}</span></div>
     <div class="bill">
-      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}${s.tm && STATUS[s.tm.status] ? `<span class="status-tag">${STATUS[s.tm.status]}</span>` : ""}</div>
+      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}${s.tm && STATUS[s.tm.status] ? `<span class="status-tag">${STATUS[s.tm.status]}</span>` : ""}${s.tmOnly ? '<span class="status-tag" title="Found only on Ticketmaster, not on Oh My Rockness or the venue\'s calendar">TM</span>' : ""}</div>
       ${support}
       ${agentsLine(s)}
       ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
     <div class="meta">
-      ${onsaleOf(s) ? `<span class="onsale">${esc(onsaleOf(s))}</span>` : ""}
+      ${onsaleOf(s, state.page === "new" && state.group === "onsale") ? `<span class="onsale${notOnSale(s) ? "" : " past"}" title="${notOnSale(s) ? (s.tm.presale && Date.parse(s.tm.presale) > Date.now() ? "Presale opens then; general on-sale " + new Date(s.tm.onsale).toLocaleString() : "General on-sale opens then") : "General on-sale opened then"}">${esc(onsaleOf(s, state.page === "new" && state.group === "onsale"))}</span>` : ""}
       ${priceOf(s) ? `<span class="price" title="Ticketmaster price range">${esc(priceOf(s))}</span>` : ""}
       <span class="t">${s.time ? fmtTime(s.time) : ""}</span>
       ${s.age ? `<span>${esc(s.age)}</span>` : ""}
@@ -557,6 +565,18 @@ function renderByShowDate(list, desc) {
   return `<div class="list by-date">${(desc ? sorted.reverse() : sorted).map(s => row(s, true)).join("")}</div>`;
 }
 
+// Just announced by general on-sale time (Ticketmaster's), latest first by default, so what
+// isn't on sale yet leads. Shows with no on-sale date (not on Ticketmaster) follow, by show date.
+function renderByOnsale(list, desc) {
+  const has = list.filter(s => s.tm && s.tm.onsale), none = list.filter(s => !(s.tm && s.tm.onsale));
+  const sorted = has.sort((a, b) => a.tm.onsale.localeCompare(b.tm.onsale) || a.date.localeCompare(b.date));
+  if (desc) sorted.reverse();
+  const rest = none.sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99"));
+  return `<div class="list by-date">${sorted.map(s => row(s, true)).join("")}</div>` +
+    (rest.length ? `<div class="sect-head"><div><h2>No on-sale date</h2><p class="gap-note">Not on Ticketmaster, so no on-sale time to sort by.</p></div><span class="label">${rest.length} show${rest.length === 1 ? "" : "s"}</span></div>
+      <div class="list">${rest.map(s => row(s, true)).join("")}</div>` : "");
+}
+
 // Just announced, grouped by the day the refresh found each show (viewer's clock), newest first.
 function renderFound(list) {
   const day = s => iso(new Date(s.firstSeen));
@@ -588,7 +608,7 @@ function render() {
     const on = t.dataset.group === state.group, desc = annDir[t.dataset.group] === "desc";
     t.setAttribute("aria-selected", on);
     t.querySelector(".dir").textContent = on ? (desc ? " ↓" : " ↑") : "";
-    t.title = on ? `${t.dataset.group === "found" ? (desc ? "Newest" : "Oldest") : (desc ? "Furthest out" : "Soonest")} first. Click to reverse.` : "";
+    t.title = on ? `${t.dataset.group === "found" ? (desc ? "Newest" : "Oldest") : t.dataset.group === "onsale" ? (desc ? "Latest on-sale" : "Earliest on-sale") : (desc ? "Furthest out" : "Soonest")} first. Click to reverse.` : "";
   });
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
@@ -618,7 +638,7 @@ function render() {
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
     return;
   }
-  out.innerHTML = state.page === "new" ? (state.group === "found" ? renderFound(list) : renderByShowDate(list, annDir.date === "desc"))
+  out.innerHTML = state.page === "new" ? (state.group === "found" ? renderFound(list) : state.group === "onsale" ? renderByOnsale(list, annDir.onsale === "desc") : renderByShowDate(list, annDir.date === "desc"))
     : state.view === "venue" ? renderVenues(list) : renderDates(list);
 }
 

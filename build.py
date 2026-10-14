@@ -39,6 +39,69 @@ def mark(show, ours):
     return [{"artist": x, **day[norm(x)]} for x in [show["headliner"], *show["support"]] if norm(x) in day]
 
 
+def tm_only(key, d, announced, ledger, tm, near):
+    """Ticketmaster events no other source gave us, at rooms we already cover (tm_rules.py):
+    added to the two-week list when in its window, and to Just announced when new."""
+    import collections, tm_rules
+    from process import BOROUGH, excluded
+    mpath = f"data/tm/market_{key}.json"
+    if not tm_rules.TM_ONLY or not os.path.exists(mpath):
+        return
+    market = json.load(open(mpath))
+    swept = datetime.datetime.fromtimestamp(os.path.getmtime(mpath), datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    reviewed = json.load(open("data/venues_reviewed.json")).get(key, []) if os.path.exists("data/venues_reviewed.json") else []
+    vrows = json.load(open(f"data/venue_raw_{key}.json"))["rows"] if os.path.exists(f"data/venue_raw_{key}.json") else []
+    spellings = collections.Counter([e["venue"] for e in ledger.values()] + [s["venue"] for s in d["shows"]] + [r[3] for r in vrows]
+                                    + list(reviewed) + ([v for vs in BOROUGH.values() for v in vs] if key == "nyc" else []))
+    rooms = {}
+    for v, _ in spellings.most_common():  # a room's most common spelling is the one we show
+        rooms.setdefault(tm_rules.room(v), v)
+    have = {}
+    for x in [*ledger.values(), *d["shows"], *announced]:
+        have.setdefault(x["date"], []).append((norm(x["venue"]), {norm(a) for a in [x["headliner"], *x["support"]]}))
+    matched = {r["tmId"] for r in tm.values()}
+    today, (_, week_to) = str(datetime.date.today()), d["week"]
+    cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=FEED_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    now = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    added = [0, 0]
+    for r in sorted(market.values(), key=lambda r: (r["date"], r["time"] or "")):
+        if r["date"] < today or r["tmId"] in matched or not tm_rules.in_city(key, r):
+            continue
+        venue = rooms.get(tm_rules.room(r["venue"] or ""))
+        if not tm_rules.wanted(r, bool(venue)):
+            continue
+        # the bill: Ticketmaster's acts, or the event name less its age note ("... (21 and Over)");
+        # a bill typed as one name, "A | B | C", is split
+        acts = r["acts"] or [re.sub(r"\s*[-–(]?\s*(ages? )?\d\d\s*(\+|and over).*$|\s*\(.*?\)\s*$", "", r["name"], flags=re.I).strip()]
+        if len(acts) == 1 and " | " in acts[0]:
+            acts = [a.strip() for a in acts[0].split(" | ") if a.strip()]
+        nacts = {norm(a) for a in acts}
+        if any(any(near(a, h) for a in nacts for h in hs) for _, hs in have.get(r["date"], [])):
+            continue  # already listed that night (any room): OMR or a venue calendar has it
+        if excluded(key, venue, acts):
+            continue
+        have.setdefault(r["date"], []).append((norm(venue), nacts))
+        age = re.search(r"(?i)(\d\d)\s*(?:\+|and over)|all ages", r["name"] or "")
+        show = {"id": "tm:" + r["tmId"], "date": r["date"], "time": r["time"], "headliner": acts[0], "support": acts[1:],
+                "venue": venue, "age": (age.group(1) + "+" if age and age.group(1) else "All Ages" if age else None),
+                "ticketUrl": r["url"], "tmOnly": 1, "_tm": r}
+        show["clients"] = mark(show, client_acts(key))
+        if r["date"] <= week_to:
+            d["shows"].append(dict(show))
+            added[0] += 1
+        # Just announced: first seen by a sweep after the first one; or, in the first sweep's
+        # calendar, a show whose first sale opened in the last FEED_DAYS or hasn't opened yet.
+        first = r.get("firstSeen")
+        if not first or first == "baseline":
+            sale = min([t for t in (r["presale"], r["onsale"]) if t] or [None]) if (r["presale"] or r["onsale"]) else None
+            first = sale if sale and sale <= now else swept if sale else None
+        if first and first >= cutoff:
+            announced.append({**show, "firstSeen": first})
+            added[1] += 1
+    d["shows"].sort(key=lambda s: (s["date"], s["time"] or "99", s["venue"]))
+    print(f"  {key}: {added[0]} Ticketmaster-only shows in the two-week list, {added[1]} in Just announced (tm_rules.py)")
+
+
 page = open("page.html").read()
 CITIES = [("nyc", "New York"), ("chi", "Chicago"), ("la", "Los Angeles")]
 doc = {"cities": []}
@@ -100,8 +163,9 @@ for key, name in CITIES:
     # Oh My Rockness leaves off, the price range and the on-sale date.
     tm = json.load(open(f"data/tm/{key}.json")) if os.path.exists(f"data/tm/{key}.json") else {}
     near = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
+    tm_only(key, d, announced, ledger, tm, near)
     for show in d["shows"] + announced:
-        r = tm.get(show["id"])
+        r = tm.get(show["id"]) or show.pop("_tm", None)
         if not r:
             continue
         billed = [norm(x) for x in [show["headliner"], *show["support"]]]
