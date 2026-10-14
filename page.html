@@ -142,6 +142,9 @@ main { padding-block: 8px 80px; }
 .at b { color: var(--accent); font-weight: 500; }
 .meta { display: flex; gap: 12px; align-items: center; white-space: nowrap; font-size: 12px; color: var(--muted); padding-top: 2px; }
 .meta .t { font-variant-numeric: tabular-nums; }
+.meta .price, .meta .onsale { font-variant-numeric: tabular-nums; }
+.meta .onsale { color: var(--accent); }
+.status-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--grey4); padding: 0 4px; margin-left: 8px; vertical-align: 2px; border-radius: 2px; }
 .save { background: none; border: 0; cursor: pointer; padding: 2px; line-height: 0; color: var(--grey7); }
 .save svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.4; }
 .cal { background: none; border: 0; cursor: pointer; padding: 2px; line-height: 0; color: var(--grey7); }
@@ -478,6 +481,17 @@ if (window.claude) document.body.classList.add("no-ics");
 
 const HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.6a4.3 4.3 0 0 1 7.5 2.7c0 5.6-7.5 10.2-7.5 10.2z"/></svg>';
 
+// Ticketmaster's details (ticketmaster.py): price range, an on-sale still to come, status.
+const money = (n, cur) => (cur === "USD" || !cur ? "$" : cur + " ") + (Number.isInteger(n) ? n : n.toFixed(2));
+const priceOf = s => { const p = s.tm && s.tm.price; if (!p || p[0] == null) return ""; return p[1] != null && p[1] !== p[0] ? money(p[0], p[2]) + "–" + money(p[1], p[2]).replace(/^\$/, "") : money(p[0], p[2]); };
+const onsaleOf = s => {
+  const t = s.tm && (s.tm.presale && Date.parse(s.tm.presale) > Date.now() ? ["Presale", s.tm.presale] : s.tm.onsale && Date.parse(s.tm.onsale) > Date.now() ? ["On sale", s.tm.onsale] : null);
+  if (!t) return "";
+  const d = new Date(t[1]), o = { timeZone: TZ[city.key] };
+  return `${t[0]} ${d.toLocaleDateString("en-US", { ...o, month: "numeric", day: "numeric" })} ${d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }).replace(":00", "").replace(" ", "")}`;
+};
+const STATUS = { cancelled: "Cancelled", postponed: "Postponed", rescheduled: "Rescheduled" };
+
 function row(s, withVenue) {
   const dates = s.dates || [s.date];
   const day = dates.length > 1 ? dow(dates[0]) + "–" + dow(dates[dates.length - 1]) : dow(dates[0]);
@@ -491,12 +505,14 @@ function row(s, withVenue) {
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : mdy(dates[0])}</span></div>
     <div class="bill">
-      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}</div>
+      <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}${s.tm && STATUS[s.tm.status] ? `<span class="status-tag">${STATUS[s.tm.status]}</span>` : ""}</div>
       ${support}
       ${agentsLine(s)}
       ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
     <div class="meta">
+      ${onsaleOf(s) ? `<span class="onsale">${esc(onsaleOf(s))}</span>` : ""}
+      ${priceOf(s) ? `<span class="price" title="Ticketmaster price range">${esc(priceOf(s))}</span>` : ""}
       <span class="t">${s.time ? fmtTime(s.time) : ""}</span>
       ${s.age ? `<span>${esc(s.age)}</span>` : ""}
       <button class="cal" data-ids="${ids.join(",")}" aria-label="Add ${esc(s.headliner)} to your calendar" title="Add to calendar">${CAL}</button>

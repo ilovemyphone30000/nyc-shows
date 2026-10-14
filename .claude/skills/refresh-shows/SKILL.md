@@ -43,6 +43,21 @@ page (`#nyc/announced`): every show the first time a scan sees it, however far o
 slid into the window; not news). It only grows on a day with a good scan, and notes the
 gap when the previous good scan was over 30 hours earlier.
 
+## 1a. Ticketmaster (Discovery API)
+
+`ticketmaster.py` runs inside `refresh.sh`. It needs `TICKETMASTER_API_KEY`, from the
+environment or `.env` (gitignored; the guard also refuses any commit containing the key).
+One sweep per city pulls every Music and "Undefined" event within a radius of the city for a
+year (about 35 requests in all), then matches our shows locally by date and act. A show with a
+Ticketmaster ticket link the sweep missed gets one lookup by headliner; misses wait 3 days.
+It paces itself at 4 requests a second and stops well short of the 5,000-a-day quota.
+Output, all gitignored, in `data/tm/`: `market_<city>.json` (the whole calendar, with
+`firstSeen`), `<city>.json` (our shows matched). `build.py` adds the acts Oh My Rockness left
+off to each show's support, plus price range, on-sale/presale date and a cancelled/postponed
+tag. `python3 audit_tm.py` writes `reports/ticketmaster-audit.html`: recently announced on
+Ticketmaster (and whether we have it), Ticketmaster concerts missing from the two-week list,
+shows with no support, support added, status flags, and every room with its size class.
+
 ## 1b. Venue calendars (the tracked rooms)
 
 `venues.py` lists them (slug, city, OMR's spelling of the name, calendar URL). Read each

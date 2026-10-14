@@ -33,6 +33,9 @@ for c in nyc chi la; do
   python3 clients.py "$c"
   python3 announce.py "$c"
 done
+# Ticketmaster details (support acts, prices, on-sale dates, status): one sweep per city.
+# Needs TICKETMASTER_API_KEY (environment or .env); without it the site builds as before.
+python3 ticketmaster.py || echo "!! Ticketmaster step skipped or failed; building without it"
 python3 changes.py "$SNAP"
 python3 build.py
 "$PY" check.py

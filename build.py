@@ -96,6 +96,27 @@ for key, name in CITIES:
     from process import excluded
     announced = [a for a in announced if not excluded(key, a["venue"], [a["headliner"], *a["support"]])]
     from capacity import BIG
+    # Ticketmaster's record of each show (ticketmaster.py; gitignored, local only): the acts
+    # Oh My Rockness leaves off, the price range and the on-sale date.
+    tm = json.load(open(f"data/tm/{key}.json")) if os.path.exists(f"data/tm/{key}.json") else {}
+    near = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
+    for show in d["shows"] + announced:
+        r = tm.get(show["id"])
+        if not r:
+            continue
+        billed = [norm(x) for x in [show["headliner"], *show["support"]]]
+        extra = [a for a in r["acts"] if norm(a) and not any(near(norm(a), b) for b in billed)]
+        if extra:
+            show["support"] = [*show["support"], *extra]
+            show["clients"] = [*show.get("clients", []), *[c for c in mark(show, client_acts(key)) if c["artist"] in extra]]
+        prices = sorted(r["prices"], key=lambda p: p.get("type") != "standard")
+        show["tm"] = {k: v for k, v in {
+            "url": r["url"], "onsale": r["onsale"], "presale": r["presale"],
+            "price": [prices[0].get("min"), prices[0].get("max"), prices[0].get("currency")] if prices else None,
+            "status": r["status"] if r["status"] not in ("onsale", "offsale") else None,
+        }.items() if v}
+        if not show.get("ticketUrl"):
+            show["ticketUrl"] = r["url"]
     for show in d["shows"] + announced:
         if show["venue"] in BIG.get(key, ()):
             show["big"] = 1  # about 1,000 capacity or more (capacity.py)

@@ -6,6 +6,7 @@
 # Secrets (repo Settings > Secrets and variables > Actions):
 #   STATICRYPT_PASSWORD  the page password
 #   CLIENTS_KEY          decrypts data/clients.enc (the key lives in .clients-key locally)
+#   TICKETMASTER_API_KEY optional: Discovery API key for ticketmaster.py (locally it lives in .env)
 name: Refresh listings
 
 on:
@@ -56,6 +57,7 @@ jobs:
         env:
           TZ: America/New_York
           PY: python
+          TICKETMASTER_API_KEY: ${{ secrets.TICKETMASTER_API_KEY }}  # optional; the step is skipped without it
         run: |
           git config user.name "ilovemyphone30000"
           git config user.email "327179323+ilovemyphone30000@users.noreply.github.com"
