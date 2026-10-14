@@ -1,10 +1,14 @@
+nyc | 92NY | 10-28 Sō Percussion (Steve Reich's Drumming)
 nyc | Alice Tully Hall | 10-21 Fuji||||||||||ta
+nyc | Arlene's Grocery | 10-16 Narrow's End
 nyc | BRIC House | 10-16 Bilal
 nyc | Bleecker Bell | 10-17 Buffalo Nichols
 nyc | Blue Note | 10-17 Robert Glasper; 10-17 Robert Glasper; 10-18 Robert Glasper
 nyc | C'mon Everybody | 10-15 Spencer Mackey
+nyc | Café Carlyle | 10-27 St. Vincent; 10-28 St. Vincent
 nyc | David Rubenstein Atrium at Lincoln Center | 10-15 Mei Semones; 10-16 Emilia y Pablo; 10-22 claire rousay
 nyc | Dead Letter No. 9 | 10-23 Lauren Flax; 10-24 Mike Servito
+nyc | Full Kit Garage | 10-27 Drook
 nyc | Guggenheim Museum | 10-15 Arushi Jain
 nyc | H0L0 | 10-23 Effy
 nyc | Hammerstein Ballroom | 10-20 Sienna Spiro
@@ -18,14 +22,16 @@ nyc | Our Wicked Lady | 10-22 Jupiter Boys
 nyc | P&T Knitwear | 10-16 Blythe Roberson
 nyc | P.I.T. | 10-17 Huasipungo; 10-24 first president of japan
 nyc | Paragon | 10-16 Joey Beltram
-nyc | Reforesters Laboratory | 10-17 places i saw you last
+nyc | Reforesters Laboratory | 10-17 places i saw you last; 10-25 Cecilio
 nyc | Rodrigue's Coffee House | 10-23 Whisper Doll
 nyc | Rubulad | 10-15 DD Island
 nyc | S.O.B.'s | 10-16 AZ Chike
 nyc | SILO Brooklyn | 10-16 Morgan Seatree
+nyc | The Bitter End | 10-28 Elizabeth and the Catapult
 nyc | The Brooklyn Monarch | 10-23 Aria Vega
 nyc | The Capitol Theatre | 10-17 Daniel Donato's Cosmic Country; 10-24 Trombone Shorty & Orleans Avenue
 nyc | The Chocolate Factory | 10-16 Armana Khan
+nyc | The Hancock | 10-18 Deseo
 nyc | UBS Arena | 10-24 KATSEYE
 nyc | Under the K Bridge Park | 10-17 Gryffin
 nyc | Union Hall | 10-17 Chris Gethard
@@ -37,12 +43,14 @@ la | Cafe Trieste | 10-14 Mackeeper (listening party)
 la | Crypto.com Arena | 10-18 Kacey Musgraves; 10-19 Kacey Musgraves; 10-24 Weezer
 la | Don Quixote | 10-16 Tinzo + Jojo; 10-17 Armana Khan
 la | Exposition Park | 10-23 Gryffin; 10-24 Gryffin
+la | Fox Theater Pomona | 10-26 Animal Collective (Feels Live)
 la | Great Park, Irvine | 10-23 Rise Against
 la | Grove of Anaheim | 10-23 Fred Armisen
 la | In Sheep's Clothing HQ | 10-22 Fenne Lily
 la | Kiss Kiss Bang Bang | 10-22 Flamingosis
 la | Knucklehead Hollywood | 10-17 Lesser Care
 la | LACMA | 10-20 Melissa Auf der Maur
+la | Licorice Pizza Records | 10-15 Peter Bjorn and John
 la | Milky's | 10-24 Romeos
 la | Run Out Groove Records | 10-25 Silversun Pickups
 la | Santa Barbara Bowl | 10-17 MUNA

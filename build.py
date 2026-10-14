@@ -204,7 +204,12 @@ for key, name in CITIES:
             show["id"] = f"{key}:{show['id']}"
         for k in ("borough", "tier", "pick", "joined"):
             show.pop(k, None)
-    doc["cities"].append({"key": key, "name": name, "checked": d["checked"], "shows": d["shows"], "announced": announced})
+    # When each source was last read: the header shows Oh My Rockness's date, the tooltip all three.
+    tm_day = (datetime.date.fromtimestamp(os.path.getmtime(f"data/tm/market_{key}.json")).isoformat()
+              if os.path.exists(f"data/tm/market_{key}.json") else None)
+    v_day = max(json.load(open(vpath))["scanned"].values(), default=None) if os.path.exists(vpath) else None
+    sources = {k: v for k, v in (("Oh My Rockness", d["checked"]), ("Ticketmaster", tm_day), ("Venue calendars", v_day)) if v}
+    doc["cities"].append({"key": key, "name": name, "checked": d["checked"], "sources": sources, "shows": d["shows"], "announced": announced})
 data = json.dumps(doc, ensure_ascii=False, separators=(",", ":"))
 a, b = "/*DATA*/", "/*END*/"
 i, j = page.index(a) + len(a), page.index(b)

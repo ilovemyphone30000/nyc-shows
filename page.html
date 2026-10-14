@@ -632,6 +632,7 @@ function render() {
   document.querySelectorAll(".city").forEach(b => b.setAttribute("aria-pressed", b.dataset.city === cityKey));
   const stale = city.checked < TODAY_ISO;  // the last refresh for this city didn't get through
   document.getElementById("checked").textContent = "Checked " + dow(city.checked) + " " + md(city.checked) + (stale ? " · may be out of date" : "");
+  document.getElementById("checked").title = Object.entries(city.sources || {}).map(([k, v]) => `${k}: ${v === TODAY_ISO ? "today" : dow(v) + " " + md(v)}`).join("\n");
   document.body.classList.toggle("page-new", state.page === "new");
   document.querySelectorAll("#pages a").forEach(a => {
     a.href = "#" + SLUG[cityKey] + (a.dataset.page === "new" ? "/announced" : "");
