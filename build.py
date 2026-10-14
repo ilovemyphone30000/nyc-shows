@@ -158,12 +158,19 @@ for key, name in CITIES:
     # Rules added since a show was logged still apply (an out-of-town room, a comedian).
     from process import excluded
     announced = [a for a in announced if not excluded(key, a["venue"], [a["headliner"], *a["support"]])]
-    from capacity import BIG
+    from capacity import BIG, cap as room_cap
     # Ticketmaster's record of each show (ticketmaster.py; gitignored, local only): the acts
     # Oh My Rockness leaves off, the price range and the on-sale date.
     tm = json.load(open(f"data/tm/{key}.json")) if os.path.exists(f"data/tm/{key}.json") else {}
     near = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
     tm_only(key, d, announced, ledger, tm, near)
+    fixes = json.load(open("data/corrections.json")).get(key, {}) if os.path.exists("data/corrections.json") else {}
+    for show in d["shows"] + announced:  # hand fixes win over every source (data/corrections.json)
+        for k, v in fixes.get(show["id"], {}).items():
+            if k in ("headliner", "support", "venue", "date", "time", "ticketUrl", "age"):
+                show[k] = v
+        if show["id"] in fixes:
+            show["clients"] = mark(show, client_acts(key))
     for show in d["shows"] + announced:
         r = tm.get(show["id"]) or show.pop("_tm", None)
         if not r:
@@ -182,8 +189,9 @@ for key, name in CITIES:
         if not show.get("ticketUrl"):
             show["ticketUrl"] = r["url"]
     for show in d["shows"] + announced:
-        if show["venue"] in BIG.get(key, ()):
-            show["big"] = 1  # about 1,000 capacity or more (capacity.py)
+        c = room_cap(key, show["venue"])
+        if c:
+            show["cap"] = c  # approximate room capacity (capacity.py), for the cap slider
         # THE·TEAM acts with their agents. Only inside the locked page; never in a committed file.
         show["clients"] = [{"artist": c["artist"], "agents": c.get("agents", []), "service": c.get("service", [])}
                            for c in show.get("clients", [])]

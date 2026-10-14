@@ -1,0 +1,7 @@
+{"_about": "Hand fixes applied by build.py over every source, by show id. A source can be wrong or stale (Oh My Rockness kept the old headliner after the venue changed the bill). Fields given replace the listing's.",
+ "nyc": {
+  "477029": {"headliner": "Gemma Wyles", "support": ["Michael Byrde"], "ticketUrl": "https://pools.events/event/amNznrLr/gemma-wyles-michael-byrde/", "why": "Footlight renamed the event; OMR still says Lottie Malkmus (2026-10-14)"}
+ },
+ "chi": {},
+ "la": {}
+}

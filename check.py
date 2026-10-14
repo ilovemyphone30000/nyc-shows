@@ -95,12 +95,16 @@ with sync_playwright() as p:
         check("announced page has no sideways scroll", overflow <= 0, f"{overflow}px")
         page.click('.tab[data-group="found"]')
         before = rows(page)
-        page.click("#bigRooms")
+        page.eval_on_selector("#capLo", "e => { e.value = 4; e.dispatchEvent(new Event('input', {bubbles: true})); }")  # 1,000+
         big = rows(page)
-        check("1,000+ cap narrows Just announced", big <= before and page.locator("#bigRooms").get_attribute("aria-pressed") == "true", f"{before} -> {big}")
-        page.click("#bigRooms")
+        check("cap slider at 1k+ narrows Just announced", 0 < big < before and page.inner_text("#capVal") == "1k+", f"{before} -> {big}, {page.inner_text('#capVal')}")
+        page.eval_on_selector("#capHi", "e => { e.value = 3; e.dispatchEvent(new Event('input', {bubbles: true})); }")  # ends can't cross
+        check("cap slider ends never cross", page.eval_on_selector("#capHi", "e => +e.value") == 5)
+        page.eval_on_selector("#capLo", "e => { e.value = 0; e.dispatchEvent(new Event('input', {bubbles: true})); }")
+        page.eval_on_selector("#capHi", "e => { e.value = 10; e.dispatchEvent(new Event('input', {bubbles: true})); }")
+        check("cap slider back to Any restores the list", rows(page) == before and page.inner_text("#capVal") == "Any")
         page.click('#pages a[data-page="week"]')
-        check("1,000+ cap only on Just announced", page.locator("#bigRooms").is_hidden())
+        check("cap slider is on the week page too", page.locator("#capBox").is_visible())
         check("back to This week", page.inner_text("#range") != "Just announced" and rows(page) > 50)
 
         # open a compact row by click and by keyboard

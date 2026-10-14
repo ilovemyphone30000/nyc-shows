@@ -10,7 +10,7 @@ To clean up:
   - everything off ......... TM_ONLY = False
   - one room ............... add its name (any spelling) to SKIP_VENUES
   - one act ................ add it, lowercased, to SKIP_ACTS
-  - a kind of music ........ add the Ticketmaster genre to SKIP_GENRES
+  - a kind of music ........ take the Ticketmaster genre out of GENRES
   - one show ............... add its Ticketmaster event id (the tm:... id) to SKIP_EVENTS
 """
 import re
@@ -19,6 +19,10 @@ from ticketmaster import norm
 
 TM_ONLY = True
 
+# Only these Ticketmaster genres count. "Other", "Undefined" and no genre at all are where
+# tribute bands, talk shows, film tours, recitals and theme nights hide (Jonah: tighten up).
+GENRES = {"Rock", "Pop", "Alternative", "Hip-Hop/Rap", "R&B", "Dance/Electronic", "Country", "Folk",
+          "Metal", "Latin", "Reggae", "World"}
 SKIP_GENRES = {"Jazz", "Classical", "Blues", "Religious", "Children's Music", "Holiday", "New Age"}
 SKIP_NAMES = re.compile(
     r"(?i)\b(tribute|symphony|orchestra|philharmonic|opera|ballet|choir|chorus|big band|happy hour|brunch|"
@@ -27,7 +31,9 @@ SKIP_NAMES = re.compile(
     r"parking|tour experience|guided tour|museum|upgrade|vip package|locker|gift card|membership|suite|"
     r"merch|hotel package|add-on|tailgate|in concert|live to film|film with live|"
     r"reading|film fest|short film|cabaret|awards?|rumble|show and tell|rave|disco|emo night|"
-    r"sessions?|in the mix|disney|halloween|dance feat|k-pop night|next level k-pop|real estate|storytelling|podcast)\b")
+    r"sessions?|in the mix|disney|halloween|dance feat|dancing with the stars|american idol|the voice|"
+    r"so you think|on ice|cirque|magic|illusion|experience|variety show|showcase|talk|live podcast|"
+    r"film tour|mountainfilm|birthday bash|k-pop night|next level k-pop|real estate|storytelling|podcast)\b")
 # Dance clubs: their Ticketmaster listings are DJ nights (DJ-named headliners are dropped
 # everywhere by process.DJ_NIGHT).
 SKIP_VENUES = {"Pacha New York", "TIME Nightclub", "Exchange LA", "Avalon Hollywood", "Academy LA",
@@ -65,7 +71,7 @@ def wanted(r, known_room):
         return False
     if r["segment"] not in ("Music", "Undefined"):
         return False
-    if r["genre"] in SKIP_GENRES:
+    if r["genre"] in SKIP_GENRES or r["genre"] not in GENRES:
         return False
     if not known_room:  # only rooms Oh My Rockness, a venue calendar or our review already covers
         return False

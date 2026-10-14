@@ -74,6 +74,19 @@ button { font: inherit; color: inherit; }
 .toggle.team:not([aria-pressed="true"]):hover { background: var(--tint); }
 .toggle.team[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--bg); }
 .toggle:not([aria-pressed="true"]):hover { background: var(--panel); }
+.cap { display: inline-flex; align-items: center; gap: 10px; border: 1px solid var(--ink); padding: 0 14px; min-height: 41px; background: var(--bg); }
+.cap.on { background: var(--panel); }
+.cap-label { font-size: 14px; font-weight: 500; }
+.cap-val { font-size: 13px; font-variant-numeric: tabular-nums; min-width: 92px; white-space: nowrap; }
+.cap-range { position: relative; width: 150px; height: 22px; }
+.cap-track { position: absolute; left: 7px; right: 7px; top: 10px; height: 2px; background: var(--grey4); }
+.cap-fill { position: absolute; top: 0; height: 2px; background: var(--ink); }
+.cap-range input { position: absolute; inset: 0; width: 100%; height: 22px; margin: 0; background: none; pointer-events: none; -webkit-appearance: none; appearance: none; }
+.cap-range input::-webkit-slider-runnable-track { background: none; height: 22px; }
+.cap-range input::-moz-range-track { background: none; }
+.cap-range input::-webkit-slider-thumb { pointer-events: auto; -webkit-appearance: none; width: 14px; height: 14px; margin-top: 4px; border-radius: 50%; background: var(--ink); border: 2px solid var(--bg); box-shadow: 0 0 0 1px var(--ink); cursor: pointer; }
+.cap-range input::-moz-range-thumb { pointer-events: auto; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); border: 2px solid var(--bg); box-shadow: 0 0 0 1px var(--ink); cursor: pointer; }
+.cap-range input:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 3px var(--accent); }
 .spacer { margin-left: auto; }
 .list.by-date { margin-top: 20px; border-top: 1px solid var(--grey1); }
 .new-count { font-size: 11px; margin-left: 6px; padding: 1px 6px; border-radius: 9px; background: var(--accent); color: var(--bg); font-variant-numeric: tabular-nums; }
@@ -261,7 +274,13 @@ body.compact { font-size: 12.5px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
-    <button class="toggle new-only" id="bigRooms" aria-pressed="false" title="Rooms that hold about 1,000 or more">1,000+ cap</button>
+    <div class="cap" id="capBox" title="Room capacity (approximate). Drag either end.">
+      <span class="cap-label">Cap</span>
+      <div class="cap-range"><div class="cap-track"><div class="cap-fill" id="capFill"></div></div>
+        <input type="range" id="capLo" min="0" max="10" step="1" value="0" aria-label="Smallest room">
+        <input type="range" id="capHi" min="0" max="10" step="1" value="10" aria-label="Largest room"></div>
+      <span class="cap-val" id="capVal">Any</span>
+    </div>
     <span class="spacer"></span>
     <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
     <button class="tab saved week-only" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
@@ -340,7 +359,7 @@ for (let d = d8(FROM); d <= d8(TO); d.setDate(d.getDate() + 1)) {
   weekDays.push(d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0"));
 }
 
-let state = { page: route().page || "week", view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false, big: false,
+let state = { page: route().page || "week", view: store.get("view2", "date"), day: "all", q: "", noSupport: false, ours: false,
   group: store.get("annGroup", "found") };
 if (!["date", "venue", "saved"].includes(state.view)) state.view = "date";
 if (!["found", "date", "onsale"].includes(state.group)) state.group = "found";
@@ -391,10 +410,26 @@ const agentsLine = s => !s.clients.length ? "" : `<div class="agents-line" title
     ((c.service || []).length ? ` <span class="svc">(${c.service.map(esc).join(", ")})</span>` : "")).join(" · ")}</div>`;
 
 /* filtering */
+// The cap slider: two ends on these stops. A room of unknown size shows only at full width.
+const CAP_STOPS = [0, 100, 250, 500, 1000, 2000, 3500, 5000, 10000, 20000, Infinity];
+const capSel = Object.assign({ lo: 0, hi: 10 }, store.get("cap", {}));
+const capFull = () => capSel.lo === 0 && capSel.hi === 10;
+const capOk = s => capFull() || (s.cap != null && s.cap >= CAP_STOPS[capSel.lo] && s.cap <= CAP_STOPS[capSel.hi]);
+const capNum = n => n >= 1000 ? (n / 1000).toLocaleString("en-US", { maximumFractionDigits: 1 }) + "k" : String(n);
+const capText = () => capFull() ? "Any" : capSel.hi === 10 ? capNum(CAP_STOPS[capSel.lo]) + "+" : capSel.lo === 0 ? "Up to " + capNum(CAP_STOPS[capSel.hi]) : capNum(CAP_STOPS[capSel.lo]) + "–" + capNum(CAP_STOPS[capSel.hi]);
+function syncCap() {
+  const lo = document.getElementById("capLo"), hi = document.getElementById("capHi");
+  lo.value = capSel.lo; hi.value = capSel.hi;
+  document.getElementById("capFill").style.cssText = `left:${capSel.lo * 10}%;right:${100 - capSel.hi * 10}%`;
+  document.getElementById("capVal").textContent = capText();
+  document.getElementById("capBox").classList.toggle("on", !capFull());
+  lo.setAttribute("aria-valuetext", capText()); hi.setAttribute("aria-valuetext", capText());
+}
+
 function matches(s) {
   if (state.page === "week" && state.day !== "all" && s.date !== state.day) return false;  // announcements span months, not the day chips
   if (state.noSupport && s.support.length) return false;
-  if (state.page === "new" && state.big && !s.big) return false;  // Just announced only
+  if (!capOk(s)) return false;
   if (state.ours && !s.clients.length) return false;
   if (state.page === "week" && state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
@@ -516,7 +551,7 @@ function row(s, withVenue) {
       <div class="head">${safeUrl(s.ticketUrl) ? `<a${mine.has(s.headliner.toLowerCase()) ? ' class="mine"' : ""} href="${esc(s.ticketUrl)}" target="_blank" rel="noopener">${esc(s.headliner)}</a>` : name(s.headliner)}${isNew(s) ? '<span class="new-tag">New</span>' : ""}${s.tm && STATUS[s.tm.status] ? `<span class="status-tag">${STATUS[s.tm.status]}</span>` : ""}${s.tmOnly ? '<span class="status-tag" title="Found only on Ticketmaster, not on Oh My Rockness or the venue\'s calendar">TM</span>' : ""}</div>
       ${support}
       ${agentsLine(s)}
-      ${withVenue ? `<div class="at" title="${esc(s.venue)}"><b>${esc(s.venue)}</b></div>` : ""}
+      ${withVenue ? `<div class="at" title="${esc(s.venue)}${s.cap ? " · about " + s.cap.toLocaleString("en-US") + " cap" : ""}"><b>${esc(s.venue)}</b></div>` : ""}
     </div>
     <div class="meta">
       ${onsaleOf(s, state.page === "new" && state.group === "onsale") ? `<span class="onsale${notOnSale(s) ? "" : " past"}" title="${notOnSale(s) ? (s.tm.presale && Date.parse(s.tm.presale) > Date.now() ? "Presale opens then; general on-sale " + new Date(s.tm.onsale).toLocaleString() : "General on-sale opens then") : "General on-sale opened then"}">${esc(onsaleOf(s, state.page === "new" && state.group === "onsale"))}</span>` : ""}
@@ -612,7 +647,7 @@ function render() {
   });
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
-  document.getElementById("bigRooms").setAttribute("aria-pressed", state.big);
+  syncCap();
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
   const savedHere = city.all.filter(s => saved.has(s.id)).length;
@@ -632,7 +667,7 @@ function render() {
   const out = document.getElementById("out");
   if (!list.length) {
     out.innerHTML = `<p class="empty">${
-      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced${state.big ? " at 1,000+ cap rooms" : ""} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
+      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced${capFull() ? "" : " at rooms of that size"} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
       : STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
       : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
@@ -663,7 +698,13 @@ document.getElementById("icsBtn").addEventListener("click", () => {
   if (favs.length) downloadIcs(favs, "Favorite shows");
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
-document.getElementById("bigRooms").addEventListener("click", () => { state.big = !state.big; render(); });
+for (const [id, end] of [["capLo", "lo"], ["capHi", "hi"]])
+  document.getElementById(id).addEventListener("input", e => {
+    let v = +e.target.value;
+    if (end === "lo") v = Math.min(v, capSel.hi - 1); else v = Math.max(v, capSel.lo + 1);  // the ends never cross
+    capSel[end] = v; e.target.value = v;
+    store.set("cap", capSel); render();
+  });
 document.getElementById("oursOnly").addEventListener("click", () => { state.ours = !state.ours; render(); });
 document.getElementById("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
 const openRows = new Set();  // rows opened out of the compact view, by show id
