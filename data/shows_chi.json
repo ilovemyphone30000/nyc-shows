@@ -1,230 +1,10 @@
 {
- "checked": "2026-10-14",
+ "checked": "2026-10-15",
  "week": [
-  "2026-10-14",
-  "2026-10-28"
+  "2026-10-15",
+  "2026-10-29"
  ],
  "shows": [
-  {
-   "id": "473917",
-   "date": "2026-10-14",
-   "time": "18:00",
-   "headliner": "Rakim",
-   "support": [],
-   "venue": "City Winery",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://tickets.citywinery.com/event/rakim-to9y9k",
-   "pick": false
-  },
-  {
-   "id": "476456",
-   "date": "2026-10-14",
-   "time": "18:00",
-   "headliner": "Peelingflesh",
-   "support": [
-    "Gridiron",
-    "Outta Pocket",
-    "Grounds for Assault"
-   ],
-   "venue": "Metro",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://metrochicago.com/event/peelingflesh/",
-   "pick": false
-  },
-  {
-   "id": "477221",
-   "date": "2026-10-14",
-   "time": "18:30",
-   "headliner": "Avery Cochrane",
-   "support": [
-    "Karly Bowman"
-   ],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/avery-cochrane/702115",
-   "pick": false
-  },
-  {
-   "id": "473401",
-   "date": "2026-10-14",
-   "time": "19:00",
-   "headliner": "Magenta Wave",
-   "support": [
-    "Neighbour Andy"
-   ],
-   "venue": "Beat Kitchen",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/magenta-wave/694181",
-   "pick": false
-  },
-  {
-   "id": "480288",
-   "date": "2026-10-14",
-   "time": "19:00",
-   "headliner": "Glad",
-   "support": [
-    "Merked",
-    "Sarin",
-    "Human Glue"
-   ],
-   "venue": "Cobra Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/ryev75-glad-merked-sarin-human-glue-14th-oct-cobra-lounge-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "475900",
-   "date": "2026-10-14",
-   "time": "19:00",
-   "headliner": "Michael Franti",
-   "support": [
-    "Wheeland Brothers"
-   ],
-   "venue": "Park West",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/michael-franti-trio-1533666",
-   "pick": false
-  },
-  {
-   "id": "477148",
-   "date": "2026-10-14",
-   "time": "19:00",
-   "headliner": "Max Diaz",
-   "support": [
-    "Moon Rules Apply"
-   ],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/max-diaz/699422",
-   "pick": false
-  },
-  {
-   "id": "471778",
-   "date": "2026-10-14",
-   "time": "20:00",
-   "headliner": "Lewis OfMan",
-   "support": [],
-   "venue": "Chop Shop",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/dkpbw6-lewis-ofman-14th-oct-chop-shop-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "475400",
-   "date": "2026-10-14",
-   "time": "20:00",
-   "headliner": "Joshua Burnside",
-   "support": [],
-   "venue": "Old Town School of Folk Music",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.oldtownschool.org/concerts/2026/10-14-2026-joshua-burnside",
-   "pick": false
-  },
-  {
-   "id": "470818",
-   "date": "2026-10-14",
-   "time": "20:00",
-   "headliner": "Acid Mothers Temple",
-   "support": [
-    "Magick Potion"
-   ],
-   "venue": "Reggie's Rock Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/acid-mothers-temple-magick-potion-reggies-rock-club-tickets/14888483",
-   "pick": true
-  },
-  {
-   "id": "473879",
-   "date": "2026-10-14",
-   "time": "20:00",
-   "headliner": "Swapmeet",
-   "support": [
-    "Baby Wave"
-   ],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-14-2026-swapmeet/",
-   "pick": true
-  },
-  {
-   "id": "477881",
-   "date": "2026-10-14",
-   "time": "20:00",
-   "headliner": "Fisk",
-   "support": [
-    "TV in Color",
-    "Blue Stoplights",
-    "Clocking Out"
-   ],
-   "venue": "The Burlington",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/l87mmp-fisk-tv-in-color-blue-stoplights-clocking-out-14th-oct-the-burlington-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "471570",
-   "date": "2026-10-14",
-   "time": "20:00",
-   "headliner": "The Smashing Pumpkins",
-   "support": [],
-   "venue": "United Center",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/the-smashing-pumpkins-the-rats-in-chicago-illinois-10-14-2026/event/040064AEC927C088",
-   "pick": true
-  },
-  {
-   "id": "473918",
-   "date": "2026-10-14",
-   "time": "21:30",
-   "headliner": "Rakim",
-   "support": [],
-   "venue": "City Winery",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://tickets.citywinery.com/event/rakim-m61ahy",
-   "pick": false
-  },
   {
    "id": "478295",
    "date": "2026-10-15",
@@ -514,20 +294,6 @@
    "pick": false
   },
   {
-   "id": "475340",
-   "date": "2026-10-15",
-   "time": "20:00",
-   "headliner": "La Reezy",
-   "support": [],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-15-2026-la-reezy/",
-   "pick": false
-  },
-  {
    "id": "477546",
    "date": "2026-10-15",
    "time": "20:00",
@@ -541,6 +307,20 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://lh-st.com/shows/10-15-2026-the-rose-hips/",
+   "pick": false
+  },
+  {
+   "id": "475340",
+   "date": "2026-10-15",
+   "time": "20:00",
+   "headliner": "La Reezy",
+   "support": [],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/10-15-2026-la-reezy/",
    "pick": false
   },
   {
@@ -3486,6 +3266,189 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.hideoutchicago.com/shows/alga-adelaide-sleep-tight-tiger-28-oct",
+   "pick": false
+  },
+  {
+   "id": "472772",
+   "date": "2026-10-29",
+   "time": "18:00",
+   "headliner": "Dweezil Zappa",
+   "support": [],
+   "venue": "Riviera Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.jamusa.com/events/detail/dweezil-zappa-dz20-like-father-like-son-1464605",
+   "pick": false
+  },
+  {
+   "id": "480479",
+   "date": "2026-10-29",
+   "time": "18:30",
+   "headliner": "Microgoblet",
+   "support": [
+    "Naomi 10 Million",
+    "BABY"
+   ],
+   "venue": "Lowdown",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/p/DePhL-Hp_Qk/",
+   "pick": false
+  },
+  {
+   "id": "475006",
+   "date": "2026-10-29",
+   "time": "19:00",
+   "headliner": "gavn!",
+   "support": [],
+   "venue": "Reggie's Rock Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/gavn-tba-reggies-rock-club-tickets/14208404",
+   "pick": false
+  },
+  {
+   "id": "476766",
+   "date": "2026-10-29",
+   "time": "19:30",
+   "headliner": "Tommy LeFroy",
+   "support": [],
+   "venue": "Hideout",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.hideoutchicago.com/shows/tommy-lefroy-29-oct",
+   "pick": false
+  },
+  {
+   "id": "480277",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "headliner": "Zoofunkyou",
+   "support": [
+    "San Leandro",
+    "Eve Casino"
+   ],
+   "venue": "Chop Shop",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/l8p2vx-zoofunkyou-san-leandro-eve-casino-29th-oct-chop-shop-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "479061",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "headliner": "Little Barrie",
+   "support": [],
+   "venue": "Old Town School of Folk Music",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.oldtownschool.org/concerts/2026/10-29-2026-little-barrie",
+   "pick": false
+  },
+  {
+   "id": "477135",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "headliner": "Parrotfish",
+   "support": [],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/10-29-2026-parrotfish/",
+   "pick": false
+  },
+  {
+   "id": "475355",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "headliner": "Cortisa Star",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/cortisa-star-for-all-the-dolls-tour/696971",
+   "pick": false
+  },
+  {
+   "id": "472413",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "headliner": "The Tallest Man On Earth",
+   "support": [
+    "Gwenifer Raymond"
+   ],
+   "venue": "Thalia Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/the-tallest-man-on-earth-thalia-hall-tickets/14940063",
+   "pick": true
+  },
+  {
+   "id": "471098",
+   "date": "2026-10-29",
+   "time": "20:00",
+   "headliner": "The Dresden Dolls",
+   "support": [],
+   "venue": "The Salt Shed",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-dresden-dolls-chicago-illinois-10-29-2026/event/040064A8C315EAAF",
+   "pick": false
+  },
+  {
+   "id": "479846",
+   "date": "2026-10-29",
+   "time": "21:00",
+   "headliner": "Spread Joy",
+   "support": [
+    "Body Shop",
+    "Goo",
+    "Crassostrea LLC",
+    "Elyse Johnson"
+   ],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/spread-joy-album-release-empty-bottle-tickets/14343974",
+   "pick": false
+  },
+  {
+   "id": "474355",
+   "date": "2026-10-29",
+   "time": "21:00",
+   "headliner": "Flamingosis",
+   "support": [
+    "Pure Colors"
+   ],
+   "venue": "Sleeping Village",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/l8kalw-flamingosis-29th-oct-sleeping-village-chicago-tickets",
    "pick": false
   }
  ]
