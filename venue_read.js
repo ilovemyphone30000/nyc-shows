@@ -32,8 +32,10 @@ const axsCards = () => [...document.querySelectorAll('a[class*="c-axs-event-card
   const L = a.parentElement.innerText.split("\n").map(s => s.trim()).filter(Boolean);
   const di = L.findIndex(s => /\b20\d\d\b/.test(s));
   const pre = L.slice(0, di < 0 ? L.length : di).filter(s => !/presents?$/i.test(s) && !/^BUY|^SELECT/i.test(s));
-  const w = pre.find(s => /^with /i.test(s));
-  return { name: pre.find(s => !/^with /i.test(s)), support: w ? w.replace(/^with /i, "") : null, date: L[di] || null, url: a.href };
+  // first line is the headliner; every other line before the date is support, "with ..." or not
+  // (Webster Hall prints "THIS IS LORELEI" / "@"; Fonda prints "with Zoe Gitter")
+  const sup = pre.slice(1).map(s => s.replace(/^with /i, "")).filter(s => !/^(on sale|sold out|postponed|cancel+ed|rescheduled|tbd|tba)\b/i.test(s));
+  return { name: pre[0], support: sup.join(", ") || null, date: L[di] || null, url: a.href };
 });
 
 // 3. novo: the same AXS cards, but the date comes first and has no year.

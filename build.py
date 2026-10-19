@@ -105,6 +105,44 @@ def tm_only(key, d, announced, ledger, tm, near):
     print(f"  {key}: {added[0]} Ticketmaster-only shows in the two-week list, {added[1]} in Just announced (tm_rules.py)")
 
 
+# Words that fill a bill without naming an act.
+FILLER_ACTS = re.compile(r"(?i)^(and )?more( tba)?!?$|^tb[ad]$|^special guests?$|^guests?$|^\+ ?more$|nights? only|^presents?$|^and friends$")
+
+
+def cross_support(key, shows, near):
+    """Every source's lineup for the same night and room, merged into each show's support:
+    Oh My Rockness (listings and Just Announced), the venue calendars and Ticketmaster's whole
+    calendar. A show matched to one source can still be missing an act another source lists."""
+    import tm_rules
+    rows = []
+    for p in (f"data/omr_raw_{key}.json", f"data/announced_raw_{key}.json"):
+        if os.path.exists(p):
+            rows += [(r[1][:10], r[3], r[2]) for r in json.load(open(p))]
+    if os.path.exists(f"data/venue_raw_{key}.json"):
+        rows += [(r[1][:10], r[3], r[2]) for r in json.load(open(f"data/venue_raw_{key}.json"))["rows"]]
+    if os.path.exists(f"data/tm/market_{key}.json"):
+        rows += [(r["date"], r["venue"] or "", r["acts"]) for r in json.load(open(f"data/tm/market_{key}.json")).values() if r["acts"]]
+    by = {}
+    for date, venue, acts in rows:
+        by.setdefault((date, tm_rules.room(venue)), []).append(acts)
+    for show in shows:
+        billed = [norm(x) for x in [show["headliner"], *show["support"]]]
+        for acts in by.get((show["date"], tm_rules.room(show["venue"])), []):
+            if not acts or not near(norm(acts[0]), billed[0]):
+                continue  # another show in the room that night
+            for a in acts[1:]:
+                if norm(a) and not FILLER_ACTS.search(a.strip()) and not any(near(norm(a), b) for b in billed):
+                    show["support"] = [*show["support"], a]
+                    billed.append(norm(a))
+                    show["_grew"] = 1
+    ours = None
+    for show in shows:
+        if show.pop("_grew", None):  # an act added here may be a THE·TEAM client
+            ours = ours or client_acts(key)
+            have = {c["artist"] for c in show.get("clients", [])}
+            show["clients"] = [*show.get("clients", []), *[c for c in mark(show, ours) if c["artist"] not in have]]
+
+
 page = open("page.html").read()
 CITIES = [("nyc", "New York"), ("chi", "Chicago"), ("la", "Los Angeles")]
 doc = {"cities": []}
@@ -167,6 +205,7 @@ for key, name in CITIES:
     tm = json.load(open(f"data/tm/{key}.json")) if os.path.exists(f"data/tm/{key}.json") else {}
     near = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
     tm_only(key, d, announced, ledger, tm, near)
+    cross_support(key, d["shows"] + announced, near)
     # Shows the listing audit (audit_apply.py) or a person decided to leave off: data/drops.json
     dropped = json.load(open("data/drops.json")).get(key, {}) if os.path.exists("data/drops.json") else {}
     d["shows"] = [x for x in d["shows"] if x["id"] not in dropped]
