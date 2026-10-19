@@ -47,7 +47,12 @@ if not dry:
     json.dump(drops, open("data/drops.json", "w"), ensure_ascii=False, indent=1)
     json.dump(fixes, open("data/corrections.json", "w"), ensure_ascii=False, indent=1)
 os.makedirs("reports", exist_ok=True)
-line = lambda x: f"- **{x.get('city', '').upper()}** {x['id']}: {x.get('reason', '')}" + (f" — support: {', '.join(x['support'])}" if x.get("support") else "") + (f" ([source]({x['source']}))" if x.get("source", "").startswith("http") else "")
+names = {}
+for f in glob.glob("data/audit/worklist_*.json"):
+    w = json.load(open(f))
+    for r in w["listings"] + [r for v in w["no_support"].values() for r in v]:
+        names[r["id"]] = f"{r['headliner']} @ {r['venue']}, {r['date']}"
+line = lambda x: f"- **{x.get('city', '').upper()}** {names.get(x['id'], x['id'])} ({x.get('action')}, {x.get('confidence', '?')}): {x.get('reason', '')}" + (f" — support: {', '.join(x['support'])}" if x.get("support") else "") + (f" ([source]({x['source']}))" if x.get("source", "").startswith("http") else "")
 md = [f"# Listing audit {today}", "",
       f"{len(found)} shows checked: {len(applied['drop'])} hidden, {len(applied['support'])} given support, "
       f"{sum(1 for x in found if x['action'] == 'keep')} confirmed as listed, {len(review)} left for you.", "",
