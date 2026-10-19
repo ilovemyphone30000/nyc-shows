@@ -1,7 +1,7 @@
 <title>Shows This Week</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Tinos:ital@0;1&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital@0;1&display=swap">
 <style>
 /* Layout: masthead + one Times headline, then a sticky filter strip over a two-column venue ledger (venue | its week of bills).
    Palette and type follow the THE·TEAM identity system (Mar '26): Softened Black on Digital White, cool greys as neutrals,
@@ -16,13 +16,13 @@
   --muted: #6f7173;       /* Cool Grey 7, deepened for small text */
   --accent: #2e7040;      /* Forest Green */
   --tint: #e2ece4;        /* Forest Green at ~14% on Digital White: client rows */
-  --sans: "Gotham", "Montserrat", "Helvetica Neue", Arial, sans-serif;
+  --sans: Arial, "Helvetica Neue", Helvetica, sans-serif;  /* on every computer, so it looks the same everywhere */
   --serif: "Times New Roman", "Tinos", Times, serif;
   color-scheme: light;
 }
 
 * { box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 400; font-size: 14px; line-height: 1.45; letter-spacing: -.02em; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 400; font-size: 14px; line-height: 1.45; letter-spacing: -.02em; }
 a { color: inherit; }
 button { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -159,7 +159,6 @@ main { padding-block: 8px 80px; }
 .meta .price, .meta .onsale { font-variant-numeric: tabular-nums; }
 .meta .onsale { color: var(--accent); }
 .meta .onsale.past { color: var(--muted); }
-.meta .onsale:not(.past) { font-weight: 600; }
 .page-new.compact .row:not(.open) { grid-template-columns: 92px minmax(0, 1fr) 280px; }
 @media (max-width: 720px) { .page-new.compact .row:not(.open) { grid-template-columns: 52px minmax(0, 1fr); } }
 .status-tag { font-family: var(--sans); font-size: 9px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--grey4); padding: 0 4px; margin-left: 8px; vertical-align: 2px; border-radius: 2px; }
@@ -292,7 +291,6 @@ body.compact { font-size: 12.5px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
-    <button class="toggle" id="favOnly" aria-pressed="false" title="Only the favorite rooms">Favorite venues</button>
     <div class="cap" id="capBox" title="Room capacity (approximate). Drag either end.">
       <span class="cap-label">Cap</span>
       <div class="cap-range"><div class="cap-track"><div class="cap-fill" id="capFill"></div></div>
@@ -301,7 +299,7 @@ body.compact { font-size: 12.5px; }
       <span class="cap-val" id="capVal">Any</span>
     </div>
     <span class="spacer"></span>
-    <button class="toggle new-only" id="exportBtn" title="Download this list as a CSV or PDF">Export</button>
+    <button class="toggle" id="exportBtn" title="Download this list as a CSV or PDF">Export</button>
     <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
     <button class="tab saved week-only" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
@@ -309,9 +307,12 @@ body.compact { font-size: 12.5px; }
 
 <dialog id="exportDlg" aria-labelledby="exportTitle">
   <form method="dialog" class="xp">
-    <div class="xp-head"><h2 id="exportTitle">Export announcements</h2><button class="xp-x" value="cancel" aria-label="Close">×</button></div>
+    <div class="xp-head"><h2 id="exportTitle">Export</h2><button class="xp-x" value="cancel" aria-label="Close">×</button></div>
     <fieldset><legend>Cities</legend><div class="xp-row" id="xpCities"></div></fieldset>
-    <fieldset><legend>Announced</legend>
+    <fieldset><legend>List</legend>
+      <div class="xp-row"><label><input type="radio" name="xpList" value="new"> Just announced</label><label><input type="radio" name="xpList" value="week"> Next two weeks</label></div>
+    </fieldset>
+    <fieldset id="xpSinceBox"><legend>Announced</legend>
       <div class="xp-row">
         <select id="xpSince">
           <option value="1">In the last 24 hours</option><option value="3">In the last 3 days</option>
@@ -336,7 +337,7 @@ body.compact { font-size: 12.5px; }
     <fieldset><legend>Sort by</legend>
       <div class="xp-row"><select id="xpSort">
         <option value="found">Day announced, newest first</option><option value="date">Show date, soonest first</option>
-        <option value="onsale">On-sale date, soonest first</option><option value="cap">Room size, largest first</option>
+        <option value="cap">Room size, largest first</option>
       </select></div>
     </fieldset>
     <textarea id="xpTextOut" class="xp-text" readonly hidden aria-label="Copied text"></textarea>
@@ -506,7 +507,6 @@ function matches(s) {
   if (state.page === "week" && state.day !== "all" && s.date !== state.day) return false;  // announcements span months, not the day chips
   if (state.noSupport && (s.support.length || coBill(s))) return false;
   if (!capOk(s)) return false;
-  if (state.fav && !isFav(s, city)) return false;
   if (state.ours && !s.clients.length) return false;
   if (state.page === "week" && state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
@@ -726,7 +726,6 @@ function render() {
   });
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
-  document.getElementById("favOnly").setAttribute("aria-pressed", state.fav);
   syncCap();
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
@@ -747,7 +746,7 @@ function render() {
   const out = document.getElementById("out");
   if (!list.length) {
     out.innerHTML = `<p class="empty">${
-      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.fav || state.q ? "matching these filters " : ""}announced${capFull() ? "" : " at rooms of that size"} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
+      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced${capFull() ? "" : " at rooms of that size"} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
       : STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
       : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
@@ -761,41 +760,41 @@ function render() {
 // window, show dates, columns and sort. Agents export only when their column is ticked.
 const XP_COLS = [
   ["announced", "Announced", true, s => s.firstSeen ? iso(new Date(s.firstSeen)) : ""],
-  ["date", "Show date", true, s => s.date],
-  ["day", "Day", false, s => FULLDAY[d8(s.date).getDay()]],
-  ["time", "Time", false, s => s.time ? fmtTime(s.time) : ""],
+  ["date", "Show date", true, s => xpShowDate(s)],
   ["headliner", "Headliner", true, s => s.headliner],
   ["support", "Support", true, s => s.support.join(", ") || (coBill(s) ? "Shared bill" : "")],
   ["venue", "Venue", true, s => s.venue],
   ["city", "City", true, (s, c) => c.name],
   ["cap", "Cap (approx.)", true, s => s.cap || ""],
   ["age", "Age", false, s => s.age || ""],
-  ["price", "Price", false, s => priceOf(s)],
-  ["onsale", "On sale", true, (s, c) => s.tm && s.tm.onsale ? xpWhen(s.tm.onsale, c) : ""],
-  ["presale", "Presale", false, (s, c) => s.tm && s.tm.presale ? xpWhen(s.tm.presale, c) : ""],
-  ["notonsale", "Not on sale yet", false, s => notOnSale(s) ? "Yes" : ""],
-  ["status", "Status", false, s => s.tm && STATUS[s.tm.status] || ""],
   ["team", "THE·TEAM acts", false, s => s.clients.map(c => c.artist).join(", ")],
-  ["agents", "Agents", false, s => agentsOf(s).join(", ")],
-  ["tmonly", "Ticketmaster only", false, s => s.tmOnly ? "Yes" : ""],
   ["link", "Tickets", false, s => xpLink(s)],
 ];
+// "Sat, Mar 27, 2027 · 8 PM": day, date and time in one column
+const xpShowDate = s => { const x = d8(s.date);
+  return `${FULLDAY[x.getDay()].slice(0, 3)}, ${MONTHS[x.getMonth()]} ${x.getDate()}, ${x.getFullYear()}` + (s.time ? " · " + fmtTime(s.time) : ""); };
 const xpLink = s => [s.ticketUrl, s.tm && s.tm.url].find(u => u && safeUrl(u)) || "";
 const xpWhen = (t, c) => { const d = new Date(t), o = { timeZone: TZ[c.key] };
   return d.toLocaleDateString("en-CA", o) + " " + d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }); };
 const xpPrefs = Object.assign({ cols: XP_COLS.filter(c => c[2]).map(c => c[0]), since: "7", sort: "found" }, store.get("xp", {}));
+xpPrefs.cols = xpPrefs.cols.filter(k => XP_COLS.some(c => c[0] === k));  // columns since retired
+if (xpPrefs.sort === "onsale") xpPrefs.sort = "found";
 const xpEl = id => document.getElementById(id);
 const xpCap = () => ({ lo: +xpEl("xpCapLo").value, hi: +xpEl("xpCapHi").value });
 const xpCapFull = () => xpCap().lo === 0 && xpCap().hi === 10;
 const xpCapOk = s => { const { lo, hi } = xpCap(); return (lo === 0 && hi === 10) || (s.cap != null && s.cap >= CAP_STOPS[lo] && s.cap <= CAP_STOPS[hi]); };
 const xpCapText = () => { const { lo, hi } = xpCap(); return lo === 0 && hi === 10 ? "Any" : hi === 10 ? capNum(CAP_STOPS[lo]) + "+" : lo === 0 ? "up to " + capNum(CAP_STOPS[hi]) : capNum(CAP_STOPS[lo]) + "–" + capNum(CAP_STOPS[hi]); };
 const xpNoSupport = s => !s.support.length && !coBill(s);
+const xpList = () => (document.querySelector('input[name="xpList"]:checked') || {}).value || "new";
 function xpInit() {
+  document.querySelector(`input[name="xpList"][value="${state.page === "new" ? "new" : "week"}"]`).checked = true;
+  xpEl("xpSinceBox").hidden = xpList() !== "new";
+  xpEl("xpSort").value = xpList() === "week" && xpPrefs.sort === "found" ? "date" : xpPrefs.sort;
   xpEl("xpCities").innerHTML = CITIES.map(c => `<label><input type="checkbox" value="${c.key}"${c.key === city.key ? " checked" : ""}> ${esc(c.name)}</label>`).join("");
   xpEl("xpCols").innerHTML = XP_COLS.map(([k, label]) => `<label><input type="checkbox" value="${k}"${xpPrefs.cols.includes(k) ? " checked" : ""}> ${esc(label)}</label>`).join("");
-  xpEl("xpSince").value = xpPrefs.since; xpEl("xpSort").value = xpPrefs.sort;
+  xpEl("xpSince").value = xpPrefs.since; xpEl("xpSort").value = xpList() === "week" && xpPrefs.sort === "found" ? "date" : xpPrefs.sort;
   xpEl("xpSinceDate").hidden = xpPrefs.since !== "date";
-  xpEl("xpFav").checked = !!state.fav; xpEl("xpTextOut").hidden = true;
+  xpEl("xpTextOut").hidden = true;
   xpEl("xpNoSup").checked = !!state.noSupport;  // start from the page's settings, then change freely
   const opt = (i, end) => `<option value="${i}">${i === 0 && end === "lo" ? "Any" : i === 10 ? "Any" : CAP_STOPS[i].toLocaleString("en-US")}</option>`;
   xpEl("xpCapLo").innerHTML = CAP_STOPS.slice(0, 10).map((_, i) => opt(i, "lo")).join("");
@@ -808,14 +807,15 @@ function xpInit() {
 function xpRows() {
   const keys = [...xpEl("xpCities").querySelectorAll("input:checked")].map(i => i.value);
   const v = xpEl("xpSince").value;
-  const since = v === "date" ? (xpEl("xpSinceDate").value ? new Date(xpEl("xpSinceDate").value + "T00:00").getTime() : 0) : Date.now() - (+v) * 864e5;
+  const week = xpList() === "week";
+  const since = week ? -Infinity : v === "date" ? (xpEl("xpSinceDate").value ? new Date(xpEl("xpSinceDate").value + "T00:00").getTime() : 0) : Date.now() - (+v) * 864e5;
   const from = xpEl("xpFrom").value, to = xpEl("xpTo").value, usePage = xpEl("xpPage").checked;
   let rows = [];
   for (const c of CITIES.filter(c => keys.includes(c.key)))
-    for (const s of c.feed) {
-      if (!s.firstSeen || Date.parse(s.firstSeen) < since) continue;
+    for (const s of week ? c.shows : c.feed) {
+      if (!week && (!s.firstSeen || Date.parse(s.firstSeen) < since)) continue;
       if ((from && s.date < from) || (to && s.date > to)) continue;
-      if ((xpEl("xpFav").checked || (usePage && state.fav)) && !isFav(s, c)) continue;
+      if (xpEl("xpFav").checked && !isFav(s, c)) continue;
       if (xpEl("xpNoSup").checked && !xpNoSupport(s)) continue;
       if (!xpCapOk(s)) continue;
       if (usePage && ((state.ours && !s.clients.length) ||
@@ -823,7 +823,7 @@ function xpRows() {
       rows.push([s, c]);
     }
   const by = xpEl("xpSort").value;
-  const key = ([s]) => by === "found" ? -Date.parse(s.firstSeen) : by === "onsale" ? (s.tm && s.tm.onsale ? Date.parse(s.tm.onsale) : Infinity) : by === "cap" ? -(s.cap || 0) : 0;
+  const key = ([s]) => by === "found" ? -Date.parse(s.firstSeen) : by === "cap" ? -(s.cap || 0) : 0;
   rows.sort((a, b) => key(a) - key(b) || a[0].date.localeCompare(b[0].date) || (a[0].time || "99").localeCompare(b[0].time || "99"));
   const cols = XP_COLS.filter(([k]) => xpEl("xpCols").querySelector(`input[value="${k}"]`).checked);
   return { rows, cols, keys };
@@ -837,7 +837,7 @@ function xpCount() {
 function xpTitle(keys) {
   const v = xpEl("xpSince").value;
   const when = v === "date" ? "since " + (xpEl("xpSinceDate").value || "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
-  return `Shows announced ${when} · ${CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ")}` + (xpCapFull() ? "" : ` · cap ${xpCapText()}`);
+  return `${xpList() === "week" ? `Shows ${md(FROM)} – ${md(TO)}` : `Shows announced ${when}`} · ${CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ")}` + (xpCapFull() ? "" : ` · cap ${xpCapText()}`);
 }
 function xpSave(body, type, name) {
   const a = document.createElement("a");
@@ -859,14 +859,10 @@ xpEl("xpCsv").addEventListener("click", () => {
 // support, the room over its size, on-sale details with a "Not on sale yet" tag.
 function xpPdfDoc(rows, cols, keys) {
   const on = k => cols.some(c => c[0] === k);
-  const thisYear = new Date().getFullYear();
-  const showDate = d => { const x = d8(d); return `${FULLDAY[x.getDay()].slice(0, 3)} ${MONTHS[x.getMonth()]} ${x.getDate()}${x.getFullYear() !== thisYear ? ", " + x.getFullYear() : ""}`; };
-  const sale = (t, c) => { const d = new Date(t), o = { timeZone: TZ[c.key] };
-    return d.toLocaleDateString("en-US", { ...o, month: "short", day: "numeric" }) + ", " + d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }).replace(":00", ""); };
   const many = keys.length > 1;
   const C = [];
   if (on("announced")) C.push(["Announced", "n", s => s.firstSeen ? esc(md(iso(new Date(s.firstSeen)))) : ""]);
-  if (on("date") || on("day") || on("time")) C.push(["Show", "n", s => esc([on("date") || on("day") ? showDate(s.date) : "", on("time") && s.time ? fmtTime(s.time) : ""].filter(Boolean).join(" · "))]);
+  if (on("date")) C.push(["Show", "n", s => esc(xpShowDate(s).replace(/, \d{4}( ·|$)/, (m, t) => new Date().getFullYear() === d8(s.date).getFullYear() ? (t || "") : m))]);
   if (on("headliner") || on("support")) C.push(["Bill", "bill", s => {
     const h = on("headliner") ? (xpLink(s) ? `<a class="hl" href="${esc(xpLink(s))}">${esc(s.headliner)}</a>` : `<span class="hl">${esc(s.headliner)}</span>`) : "";
     const sup = on("support") ? (s.support.length ? esc(s.support.join(", ")) : coBill(s) ? "<i>Shared bill</i>" : "") : "";
@@ -875,14 +871,7 @@ function xpPdfDoc(rows, cols, keys) {
   if (on("venue") || on("cap")) C.push(["Venue", "", s => (on("venue") ? esc(s.venue) : "") + (on("cap") && s.cap ? `<div class="sub">${s.cap.toLocaleString("en-US")} cap</div>` : "")]);
   if (on("city") && !many) C.push(["City", "", (s, c) => esc(c.name)]);
   if (on("age")) C.push(["Age", "n", s => esc(s.age || "")]);
-  if (on("price")) C.push(["Price", "n", s => esc(priceOf(s))]);
-  if (on("onsale") || on("presale") || on("notonsale")) C.push(["On sale", "n", (s, c) => [
-    on("onsale") && s.tm && s.tm.onsale ? esc(sale(s.tm.onsale, c)) : "",
-    on("presale") && s.tm && s.tm.presale ? `<div class="sub">Presale ${esc(sale(s.tm.presale, c))}</div>` : "",
-    on("notonsale") && notOnSale(s) ? `<div><span class="tag">Not on sale yet</span></div>` : ""].join("")]);
-  if (on("status")) C.push(["Status", "n", s => s.tm && STATUS[s.tm.status] ? `<span class="tag warn">${STATUS[s.tm.status]}</span>` : ""]);
-  if (on("team") || on("agents")) C.push(["THE·TEAM", "", s => s.clients.length ? (on("team") ? esc(s.clients.map(c => c.artist).join(", ")) : "") + (on("agents") && agentsOf(s).length ? `<div class="sub">${esc(agentsOf(s).join(", "))}</div>` : "") : ""]);
-  if (on("tmonly")) C.push(["Source", "", s => s.tmOnly ? "Ticketmaster" : ""]);
+  if (on("team")) C.push(["THE·TEAM", "", s => esc(s.clients.map(c => c.artist).join(", "))]);
   if (on("link")) C.push(["Tickets", "", s => xpLink(s) ? `<a href="${esc(xpLink(s))}">${esc(new URL(xpLink(s)).hostname.replace(/^www\./, ""))}</a>` : ""]);
   for (let i = C.length - 1; i >= 0; i--)  // a column empty in every row only takes room
     if (C[i][0] !== "Bill" && rows.every(([s, c]) => !C[i][2](s, c))) C.splice(i, 1);
@@ -891,11 +880,11 @@ function xpPdfDoc(rows, cols, keys) {
   const groups = many ? CITIES.filter(c => keys.includes(c.key)).map(c => [c, rows.filter(r => r[1] === c)]).filter(g => g[1].length) : [[null, rows]];
   const v = xpEl("xpSince").value;
   const when = v === "date" ? "since " + (xpEl("xpSinceDate").value ? md(xpEl("xpSinceDate").value) : "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
-  const filters = [xpEl("xpFav").checked || (xpEl("xpPage").checked && state.fav) ? "favorite venues" : "", xpCapFull() ? "" : `rooms ${xpCapText()} cap`, xpEl("xpPage").checked && state.ours ? "THE·TEAM shows only" : "",
+  const filters = [xpEl("xpFav").checked ? "favorite venues" : "", xpCapFull() ? "" : `rooms ${xpCapText()} cap`, xpEl("xpPage").checked && state.ours ? "THE·TEAM shows only" : "",
     xpEl("xpNoSup").checked ? "no support only" : "", xpEl("xpPage").checked && state.q ? `matching “${state.q}”` : "",
     xpEl("xpFrom").value || xpEl("xpTo").value ? `shows ${xpEl("xpFrom").value ? "from " + md(xpEl("xpFrom").value) : ""}${xpEl("xpTo").value ? " to " + md(xpEl("xpTo").value) : ""}` : ""].filter(Boolean);
   const cities = CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ");
-  const title = `Shows announced ${when}`;
+  const title = xpList() === "week" ? `Shows ${md(FROM)} – ${md(TO)}` : `Shows announced ${when}`;
   return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
     @page { size: letter landscape; margin: 14mm 13mm 15mm;
       @bottom-left { content: "Just announced · ${esc(cities)}"; font: 7.5pt "Helvetica Neue", Helvetica, Arial, sans-serif; color: #8a877e; }
@@ -966,6 +955,10 @@ xpEl("xpText").addEventListener("click", async () => {
 xpEl("exportDlg").addEventListener("input", e => {
   if (e.target.id === "xpCapLo" && +xpEl("xpCapLo").value >= +xpEl("xpCapHi").value) xpEl("xpCapHi").value = +xpEl("xpCapLo").value + 1;
   if (e.target.id === "xpCapHi" && +xpEl("xpCapHi").value <= +xpEl("xpCapLo").value) xpEl("xpCapLo").value = +xpEl("xpCapHi").value - 1;
+  if (e.target.name === "xpList") {
+    xpEl("xpSinceBox").hidden = xpList() !== "new";
+    if (xpList() === "week" && xpEl("xpSort").value === "found") xpEl("xpSort").value = "date";
+  }
   if (e.target.id === "xpSince") xpEl("xpSinceDate").hidden = e.target.value !== "date";
   xpCount();
 });
@@ -992,7 +985,6 @@ document.getElementById("icsBtn").addEventListener("click", () => {
   if (favs.length) downloadIcs(favs, "Favorite shows");
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
-document.getElementById("favOnly").addEventListener("click", () => { state.fav = !state.fav; render(); });
 for (const [id, end] of [["capLo", "lo"], ["capHi", "hi"]])
   document.getElementById(id).addEventListener("input", e => {
     let v = +e.target.value;
