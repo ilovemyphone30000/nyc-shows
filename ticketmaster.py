@@ -133,6 +133,11 @@ def geohash(lat, lon, n=9):
     return out
 
 
+def real(ts):
+    """A sale time, or None for Ticketmaster's placeholders (1900-01-01 means "no date")."""
+    return ts if ts and ts >= "2000" else None
+
+
 def record(ev):
     """The fields kept from one Discovery event."""
     v = (ev.get("_embedded", {}).get("venues") or [{}])[0]
@@ -150,8 +155,8 @@ def record(ev):
         "venueId": v.get("id"),
         "city": v.get("city", {}).get("name"),
         "state": v.get("state", {}).get("stateCode"),
-        "onsale": sales.get("public", {}).get("startDateTime"),
-        "presale": pre[0]["startDateTime"] if pre else None,
+        "onsale": real(sales.get("public", {}).get("startDateTime")),
+        "presale": real(pre[0]["startDateTime"]) if pre else None,
         "prices": [{k: p.get(k) for k in ("type", "min", "max", "currency")} for p in ev.get("priceRanges", [])],
         "acts": [a["name"] for a in ev.get("_embedded", {}).get("attractions", []) if a.get("name")],
         "segment": (cls.get("segment") or {}).get("name"),

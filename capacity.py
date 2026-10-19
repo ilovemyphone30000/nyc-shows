@@ -35,7 +35,7 @@ BIG = {
 # it's in BIG, else counts as unknown (shown only when the slider is at its widest).
 CAP = {
     "nyc": {
-        "Madison Square Garden": 19500, "Barclays Center": 19000, "UBS Arena": 17000, "Forest Hills Stadium": 13000,
+        "MetLife Stadium": 82500, "Yankee Stadium": 47000, "Citi Field": 42000, "Madison Square Garden": 19500, "Barclays Center": 19000, "UBS Arena": 17000, "Forest Hills Stadium": 13000,
         "Flushing Meadows-Corona Park": 10000, "Radio City Music Hall": 6000, "United Palace": 3400, "Pier 17": 3400,
         "Brooklyn Storehouse": 3000, "Knockdown Center": 3000, "Terminal 5": 3000, "Kings Theatre": 3000,
         "Under the K Bridge Park": 3000, "Beacon Theatre": 2900, "Carnegie Hall": 2800, "New Jersey Performing Arts Center": 2800,
@@ -64,7 +64,7 @@ CAP = {
         "The Cobra Club": 100, "Bar Freda": 80, "P&T Knitwear": 80, "Rodrigue's Coffee House": 60,
     },
     "chi": {
-        "Soldier Field": 61500, "FirstMerit Bank Pavilion at Northerly Island": 30000, "United Center": 23500,
+        "Soldier Field": 61500, "Wrigley Field": 41000, "Wintrust Arena": 10000, "FirstMerit Bank Pavilion at Northerly Island": 30000, "United Center": 23500,
         "Allstate Arena": 18000, "Hard Rock Casino Northern Indiana - Hard Rock Live": 7000, "Aragon Ballroom": 5000,
         "Auditorium Theatre": 3900, "Chicago Theatre": 3600, "The Salt Shed": 3600, "Radius": 3000, "Riviera Theatre": 2500,
         "Navy Pier": 1800, "Grand Ballroom at Navy Pier": 1800, "House of Blues Chicago": 1800, "Ramova Theatre": 1800,
@@ -78,7 +78,7 @@ CAP = {
         "Hideout": 150, "Lowdown": 150, "Constellation": 150, "Three Top Lounge": 150, "GMan Tavern": 100, "Cole's": 100,
     },
     "la": {
-        "SoFi Stadium": 70000, "Exposition Park": 20000, "Crypto.com Arena": 20000, "Intuit Dome": 18000,
+        "Rose Bowl": 90000, "SoFi Stadium": 70000, "Dodger Stadium": 56000, "BMO Stadium": 22000, "Acrisure Arena": 11000, "Exposition Park": 20000, "Crypto.com Arena": 20000, "Intuit Dome": 18000,
         "Honda Center": 18000, "Kia Forum": 17500, "Hollywood Bowl": 17500, "Ventura County Fairgrounds": 10000,
         "Great Park, Irvine": 10000, "Great Park Live": 10000, "OC Fair & Event Center": 8000, "Shrine Auditorium": 6300,
         "YouTube Theater": 6000, "The Greek Theatre": 5900, "Shrine Expo Hall": 5000, "Sunset Strip": 5000,

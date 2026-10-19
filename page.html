@@ -169,6 +169,22 @@ main { padding-block: 8px 80px; }
 .cal:hover { color: var(--accent); }
 /* Inside the Claude artifact viewer, file saves are limited to types that exclude .ics: hide calendar UI there. */
 .no-ics .cal, .no-ics .ics-btn { display: none !important; }
+#exportDlg { border: 1px solid var(--ink); padding: 0; background: var(--bg); color: var(--ink); width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 32px); }
+#exportDlg::backdrop { background: rgba(0, 0, 0, .35); }
+.xp { padding: 20px 22px; display: grid; gap: 14px; }
+.xp-head { display: flex; justify-content: space-between; align-items: center; }
+.xp-head h2 { margin: 0; font-size: 22px; font-weight: 400; }
+.xp-x { background: none; border: 0; font-size: 24px; line-height: 1; cursor: pointer; color: var(--ink); }
+.xp fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: 6px; }
+.xp legend { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding: 0; margin-bottom: 6px; }
+.xp-opt { text-transform: none; letter-spacing: 0; font-weight: 400; }
+.xp-row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 14px; }
+.xp select, .xp input[type=date] { font: inherit; font-size: 14px; padding: 6px 8px; border: 1px solid var(--grey4); background: var(--bg); color: var(--ink); }
+.xp-cols { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 12px; font-size: 14px; }
+.xp-check, .xp-cols label, .xp-row label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.xp-foot { display: flex; gap: 10px; align-items: center; justify-content: flex-end; border-top: 1px solid var(--grey1); padding-top: 14px; flex-wrap: wrap; }
+.xp-n { margin-right: auto; font-size: 13px; color: var(--muted); }
+.xp-main { background: var(--ink); color: var(--bg); }
 .ics-btn { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--grey4); display: inline-flex; gap: 6px; align-items: center; }
 .ics-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .ics-btn:hover { color: var(--accent); border-bottom-color: var(--accent); }
@@ -282,10 +298,46 @@ body.compact { font-size: 12.5px; }
       <span class="cap-val" id="capVal">Any</span>
     </div>
     <span class="spacer"></span>
+    <button class="toggle new-only" id="exportBtn" title="Download this list as a CSV or PDF">Export</button>
     <button class="ics-btn" id="icsBtn" title="Download your hearted shows as a calendar file"></button>
     <button class="tab saved week-only" role="tab" data-view="saved">Saved (<span id="savedN">0</span>)</button>
   </div>
 </nav>
+
+<dialog id="exportDlg" aria-labelledby="exportTitle">
+  <form method="dialog" class="xp">
+    <div class="xp-head"><h2 id="exportTitle">Export announcements</h2><button class="xp-x" value="cancel" aria-label="Close">×</button></div>
+    <fieldset><legend>Cities</legend><div class="xp-row" id="xpCities"></div></fieldset>
+    <fieldset><legend>Announced</legend>
+      <div class="xp-row">
+        <select id="xpSince">
+          <option value="1">In the last 24 hours</option><option value="3">In the last 3 days</option>
+          <option value="7" selected>In the last 7 days</option><option value="14">In the last 14 days</option>
+          <option value="30">In the last 30 days</option><option value="date">Since a date…</option>
+        </select>
+        <input type="date" id="xpSinceDate" hidden aria-label="Announced on or after">
+      </div>
+    </fieldset>
+    <fieldset><legend>Show dates <span class="xp-opt">optional</span></legend>
+      <div class="xp-row"><label>From <input type="date" id="xpFrom"></label><label>To <input type="date" id="xpTo"></label></div>
+    </fieldset>
+    <fieldset><legend>Filters</legend>
+      <label class="xp-check"><input type="checkbox" id="xpPage" checked> Use the page's filters: <span id="xpPageNote"></span></label>
+    </fieldset>
+    <fieldset><legend>Columns</legend><div class="xp-cols" id="xpCols"></div></fieldset>
+    <fieldset><legend>Sort by</legend>
+      <div class="xp-row"><select id="xpSort">
+        <option value="found">Day announced, newest first</option><option value="date">Show date, soonest first</option>
+        <option value="onsale">On-sale date, soonest first</option><option value="cap">Room size, largest first</option>
+      </select></div>
+    </fieldset>
+    <div class="xp-foot">
+      <span class="xp-n" id="xpN"></span>
+      <button type="button" class="toggle" id="xpCsv">Download CSV</button>
+      <button type="button" class="toggle xp-main" id="xpPdf">Save PDF</button>
+    </div>
+  </form>
+</dialog>
 
 <div class="bar">
   <div class="wrap">
@@ -677,6 +729,111 @@ function render() {
   out.innerHTML = state.page === "new" ? (state.group === "found" ? renderFound(list) : state.group === "onsale" ? renderByOnsale(list, annDir.onsale === "desc") : renderByShowDate(list, annDir.date === "desc"))
     : state.view === "venue" ? renderVenues(list) : renderDates(list);
 }
+
+// Export: the Just announced log as a CSV or a printable PDF, with chosen cities, announcement
+// window, show dates, columns and sort. Agents export only when their column is ticked.
+const XP_COLS = [
+  ["announced", "Announced", true, s => s.firstSeen ? iso(new Date(s.firstSeen)) : ""],
+  ["date", "Show date", true, s => s.date],
+  ["day", "Day", false, s => FULLDAY[d8(s.date).getDay()]],
+  ["time", "Time", false, s => s.time ? fmtTime(s.time) : ""],
+  ["headliner", "Headliner", true, s => s.headliner],
+  ["support", "Support", true, s => s.support.join(", ")],
+  ["venue", "Venue", true, s => s.venue],
+  ["city", "City", true, (s, c) => c.name],
+  ["cap", "Cap (approx.)", true, s => s.cap || ""],
+  ["age", "Age", false, s => s.age || ""],
+  ["price", "Price", false, s => priceOf(s)],
+  ["onsale", "On sale", true, (s, c) => s.tm && s.tm.onsale ? xpWhen(s.tm.onsale, c) : ""],
+  ["presale", "Presale", false, (s, c) => s.tm && s.tm.presale ? xpWhen(s.tm.presale, c) : ""],
+  ["notonsale", "Not on sale yet", false, s => notOnSale(s) ? "Yes" : ""],
+  ["status", "Status", false, s => s.tm && STATUS[s.tm.status] || ""],
+  ["team", "THE·TEAM acts", false, s => s.clients.map(c => c.artist).join(", ")],
+  ["agents", "Agents", false, s => agentsOf(s).join(", ")],
+  ["tmonly", "Ticketmaster only", false, s => s.tmOnly ? "Yes" : ""],
+  ["link", "Tickets", true, s => s.ticketUrl || (s.tm && s.tm.url) || ""],
+];
+const xpWhen = (t, c) => { const d = new Date(t), o = { timeZone: TZ[c.key] };
+  return d.toLocaleDateString("en-CA", o) + " " + d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }); };
+const xpPrefs = Object.assign({ cols: XP_COLS.filter(c => c[2]).map(c => c[0]), since: "7", sort: "found" }, store.get("xp", {}));
+const xpEl = id => document.getElementById(id);
+function xpInit() {
+  xpEl("xpCities").innerHTML = CITIES.map(c => `<label><input type="checkbox" value="${c.key}"${c.key === city.key ? " checked" : ""}> ${esc(c.name)}</label>`).join("");
+  xpEl("xpCols").innerHTML = XP_COLS.map(([k, label]) => `<label><input type="checkbox" value="${k}"${xpPrefs.cols.includes(k) ? " checked" : ""}> ${esc(label)}</label>`).join("");
+  xpEl("xpSince").value = xpPrefs.since; xpEl("xpSort").value = xpPrefs.sort;
+  xpEl("xpSinceDate").hidden = xpPrefs.since !== "date";
+  const f = [capFull() ? "" : "cap " + capText(), state.ours ? "THE·TEAM only" : "", state.noSupport ? "no support only" : "", state.q ? `search “${state.q}”` : ""].filter(Boolean);
+  xpEl("xpPageNote").textContent = f.length ? f.join(", ") : "none set";
+  xpCount();
+}
+function xpRows() {
+  const keys = [...xpEl("xpCities").querySelectorAll("input:checked")].map(i => i.value);
+  const v = xpEl("xpSince").value;
+  const since = v === "date" ? (xpEl("xpSinceDate").value ? new Date(xpEl("xpSinceDate").value + "T00:00").getTime() : 0) : Date.now() - (+v) * 864e5;
+  const from = xpEl("xpFrom").value, to = xpEl("xpTo").value, usePage = xpEl("xpPage").checked;
+  let rows = [];
+  for (const c of CITIES.filter(c => keys.includes(c.key)))
+    for (const s of c.feed) {
+      if (!s.firstSeen || Date.parse(s.firstSeen) < since) continue;
+      if ((from && s.date < from) || (to && s.date > to)) continue;
+      if (usePage && (!capOk(s) || (state.ours && !s.clients.length) || (state.noSupport && s.support.length) ||
+          (state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))))) continue;
+      rows.push([s, c]);
+    }
+  const by = xpEl("xpSort").value;
+  const key = ([s]) => by === "found" ? -Date.parse(s.firstSeen) : by === "onsale" ? (s.tm && s.tm.onsale ? Date.parse(s.tm.onsale) : Infinity) : by === "cap" ? -(s.cap || 0) : 0;
+  rows.sort((a, b) => key(a) - key(b) || a[0].date.localeCompare(b[0].date) || (a[0].time || "99").localeCompare(b[0].time || "99"));
+  const cols = XP_COLS.filter(([k]) => xpEl("xpCols").querySelector(`input[value="${k}"]`).checked);
+  return { rows, cols, keys };
+}
+function xpCount() {
+  const { rows } = xpRows();
+  xpEl("xpN").textContent = rows.length + " show" + (rows.length === 1 ? "" : "s");
+  xpPrefs.cols = [...xpEl("xpCols").querySelectorAll("input:checked")].map(i => i.value);
+  xpPrefs.since = xpEl("xpSince").value; xpPrefs.sort = xpEl("xpSort").value; store.set("xp", xpPrefs);
+}
+function xpTitle(keys) {
+  const v = xpEl("xpSince").value;
+  const when = v === "date" ? "since " + (xpEl("xpSinceDate").value || "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
+  return `Shows announced ${when} · ${CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ")}` + (xpEl("xpPage").checked && !capFull() ? ` · cap ${capText()}` : "");
+}
+function xpSave(body, type, name) {
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([body], { type }));
+  a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 30000);
+}
+xpEl("xpCsv").addEventListener("click", () => {
+  const { rows, cols } = xpRows();
+  const cell = v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
+  const csv = [cols.map(c => c[1]), ...rows.map(([s, c]) => cols.map(col => col[3](s, c)))].map(r => r.map(cell).join(",")).join("\r\n");
+  xpSave("\ufeff" + csv, "text/csv;charset=utf-8", `announcements-${TODAY_ISO}.csv`);  // the BOM keeps Excel on UTF-8
+});
+xpEl("xpPdf").addEventListener("click", () => {
+  const { rows, cols, keys } = xpRows();
+  const title = xpTitle(keys);
+  const doc = `<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
+    @page { size: landscape; margin: 12mm; }
+    body { font: 10px/1.35 -apple-system, "Helvetica Neue", Arial, sans-serif; color: #111; margin: 0; }
+    h1 { font-size: 16px; margin: 0 0 2px; font-weight: 600; } p { margin: 0 0 10px; color: #555; }
+    table { border-collapse: collapse; width: 100%; } th { text-align: left; font-weight: 600; border-bottom: 1.5px solid #111; padding: 4px 6px 4px 0; }
+    td { border-bottom: 1px solid #ddd; padding: 4px 6px 4px 0; vertical-align: top; } tr { page-break-inside: avoid; }
+    a { color: inherit; text-decoration: none; } td.n { white-space: nowrap; }
+  </style></head><body><h1>${esc(title)}</h1><p>${rows.length} show${rows.length === 1 ? "" : "s"} · exported ${esc(new Date().toLocaleString("en-US"))}</p>
+  <table><thead><tr>${cols.map(c => `<th>${esc(c[1])}</th>`).join("")}</tr></thead><tbody>${rows.map(([s, c]) =>
+    `<tr>${cols.map(col => { const v = col[3](s, c); return col[0] === "link" && v ? `<td><a href="${esc(v)}">${esc(new URL(v).hostname.replace(/^www\./, ""))}</a></td>` :
+      `<td${["announced", "date", "onsale", "presale", "cap", "price"].includes(col[0]) ? ' class="n"' : ""}>${esc(v)}</td>`; }).join("")}</tr>`).join("")}</tbody></table></body></html>`;
+  const f = document.createElement("iframe");  // print from a hidden frame: no pop-up to block
+  f.style.cssText = "position:fixed;width:0;height:0;border:0;right:0;bottom:0";
+  document.body.appendChild(f);
+  f.contentDocument.open(); f.contentDocument.write(doc); f.contentDocument.close();
+  setTimeout(() => { f.contentWindow.focus(); f.contentWindow.print(); setTimeout(() => f.remove(), 60000); }, 250);
+});
+xpEl("exportDlg").addEventListener("input", e => {
+  if (e.target.id === "xpSince") xpEl("xpSinceDate").hidden = e.target.value !== "date";
+  xpCount();
+});
+xpEl("exportBtn").addEventListener("click", () => { xpInit(); xpEl("exportDlg").showModal(); });
 
 document.querySelector(".tabs").addEventListener("click", e => {
   const t = e.target.closest(".tab"); if (!t) return;

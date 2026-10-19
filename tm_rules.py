@@ -25,7 +25,7 @@ GENRES = {"Rock", "Pop", "Alternative", "Hip-Hop/Rap", "R&B", "Dance/Electronic"
           "Metal", "Latin", "Reggae", "World"}
 SKIP_GENRES = {"Jazz", "Classical", "Blues", "Religious", "Children's Music", "Holiday", "New Age"}
 SKIP_NAMES = re.compile(
-    r"(?i)\b(tribute|symphony|orchestra|philharmonic|opera|ballet|choir|chorus|big band|happy hour|brunch|"
+    r"(?i)\b(tributes?|symphony|orchestra|philharmonic|opera|ballet|choir|chorus|big band|happy hour|brunch|"
     r"candlelight|nutcracker|karaoke|bingo|trivia|drag|burlesque|comedy|open mic|jam session|silent disco|"
     r"salute to|the music of|celebrat(?:es|ing) the music|plays the music|sings the|cover band|"
     r"parking|tour experience|guided tour|museum|upgrade|vip package|locker|gift card|membership|suite|"

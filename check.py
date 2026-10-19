@@ -103,8 +103,17 @@ with sync_playwright() as p:
         page.eval_on_selector("#capLo", "e => { e.value = 0; e.dispatchEvent(new Event('input', {bubbles: true})); }")
         page.eval_on_selector("#capHi", "e => { e.value = 10; e.dispatchEvent(new Event('input', {bubbles: true})); }")
         check("cap slider back to Any restores the list", rows(page) == before and page.inner_text("#capVal") == "Any")
+        page.click("#exportBtn")
+        n = int(page.inner_text("#xpN").split()[0])
+        check("export panel opens with a count", page.locator("#exportDlg").is_visible() and n >= 0, page.inner_text("#xpN"))
+        with page.expect_download() as dl:
+            page.click("#xpCsv")
+        lines = open(dl.value.path(), encoding="utf-8-sig", newline="").read().split("\r\n")
+        check("export CSV has a header and one row per show", lines[0].startswith("Announced,") and len(lines) - 1 == n, f"{len(lines) - 1} rows vs {n}")
+        page.keyboard.press("Escape")
         page.click('#pages a[data-page="week"]')
         check("cap slider is on the week page too", page.locator("#capBox").is_visible())
+        check("export only on Just announced", page.locator("#exportBtn").is_hidden())
         check("back to This week", page.inner_text("#range") != "Just announced" and rows(page) > 50)
 
         # open a compact row by click and by keyboard

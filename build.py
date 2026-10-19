@@ -92,7 +92,10 @@ def tm_only(key, d, announced, ledger, tm, near):
         # Just announced: first seen by a sweep after the first one; or, in the first sweep's
         # calendar, a show whose first sale opened in the last FEED_DAYS or hasn't opened yet.
         first = r.get("firstSeen")
-        if not first or first == "baseline":
+        opened = [t for t in (r["presale"], r["onsale"]) if t and t >= "2000"]
+        if opened and min(opened) < cutoff:
+            first = None  # tickets went out long ago: Ticketmaster only just listed an old show
+        elif not first or first == "baseline":
             sale = min([t for t in (r["presale"], r["onsale"]) if t] or [None]) if (r["presale"] or r["onsale"]) else None
             first = sale if sale and sale <= now else swept if sale else None
         if first and first >= cutoff:

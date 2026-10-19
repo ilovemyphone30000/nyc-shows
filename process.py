@@ -28,14 +28,14 @@ NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park
 # Comedy, musical comedy and spoken word that share music calendars.
 DROP_ACTS = {"michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
              "olivia harrison",  # in conversation with Martin Scorsese at BAM
-             "iliza shlesinger", "susan orlean",
+             "iliza shlesinger", "susan orlean", "jerry seinfeld",
              "comedy bang! bang! live!",
              "the rocky horror picture show"}  # a screening with a shadow cast
 
 # Chicago and LA: OMR's own regions, minus what is plainly out of town or not music.
 CITY = {
     "nyc": {"rename": None, "out": None, "acts": None},
-    "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon", "iliza shlesinger"}},
+    "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon", "iliza shlesinger", "jerry seinfeld"}},
     "la": {"rename": {"Amoeba Music- Hollywood": "Amoeba Music Hollywood"},
            "out": {"Pappy & Harriet's"}, "acts": {"dynasty handbag", "carmen christopher"}},
 }
@@ -75,7 +75,7 @@ TIER["Pier 17"] = "Seasonal"
 
 # DJ nights (Jonah, 2026-10-14): the headliner is a DJ or plays a DJ set. A band with a DJ
 # opening stays.
-DJ_NIGHT = re.compile(r"(?i)\bdj\b|\bdj[ -]set\b|\(dj\)|\bb2b\b|all night long|extended set|vinyl set")
+DJ_NIGHT = re.compile(r"(?i)\bboiler room\b|\bdj\b|\bdj[ -]set\b|\(dj\)|\bb2b\b|all night long|extended set|vinyl set")
 
 
 def excluded(city, venue, acts):

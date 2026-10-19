@@ -61,6 +61,14 @@ jazz/classical/blues/religious/kids, no tributes, theme nights or talks. Clean u
 Ticketmaster (and whether we have it), Ticketmaster concerts missing from the two-week list,
 shows with no support, support added, status flags, and every room with its size class.
 
+## 1c. Export (on the page)
+
+Just announced has an **Export** button: cities, announced window (24h / 3 / 7 / 14 / 30 days or
+since a date), optional show-date range, the page's own filters (cap slider, THE·TEAM only, no
+support, search), columns and sort, then **Download CSV** or **Save PDF** (the browser's print
+dialog). Agents export only when their column is ticked. To make one for the user without the
+page, drive plain/index.html with Playwright the same way and save to reports/ (gitignored).
+
 ## 1b. Venue calendars (the tracked rooms)
 
 `venues.py` lists them (slug, city, OMR's spelling of the name, calendar URL). Read each
