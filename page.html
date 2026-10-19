@@ -751,8 +751,9 @@ const XP_COLS = [
   ["team", "THE·TEAM acts", false, s => s.clients.map(c => c.artist).join(", ")],
   ["agents", "Agents", false, s => agentsOf(s).join(", ")],
   ["tmonly", "Ticketmaster only", false, s => s.tmOnly ? "Yes" : ""],
-  ["link", "Tickets", true, s => s.ticketUrl || (s.tm && s.tm.url) || ""],
+  ["link", "Tickets", false, s => xpLink(s)],
 ];
+const xpLink = s => [s.ticketUrl, s.tm && s.tm.url].find(u => u && safeUrl(u)) || "";
 const xpWhen = (t, c) => { const d = new Date(t), o = { timeZone: TZ[c.key] };
   return d.toLocaleDateString("en-CA", o) + " " + d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }); };
 const xpPrefs = Object.assign({ cols: XP_COLS.filter(c => c[2]).map(c => c[0]), since: "7", sort: "found" }, store.get("xp", {}));
@@ -806,7 +807,10 @@ function xpSave(body, type, name) {
 xpEl("xpCsv").addEventListener("click", () => {
   const { rows, cols } = xpRows();
   const cell = v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
-  const csv = [cols.map(c => c[1]), ...rows.map(([s, c]) => cols.map(col => col[3](s, c)))].map(r => r.map(cell).join(",")).join("\r\n");
+  // The headliner links to the tickets: Excel and Google Sheets show a HYPERLINK cell as a link.
+  const q = v => String(v).replace(/"/g, '""');
+  const val = (col, s, c) => col[0] === "headliner" && xpLink(s) ? `=HYPERLINK("${q(xpLink(s))}","${q(s.headliner)}")` : col[3](s, c);
+  const csv = [cols.map(c => c[1]), ...rows.map(([s, c]) => cols.map(col => val(col, s, c)))].map(r => r.map(cell).join(",")).join("\r\n");
   xpSave("\ufeff" + csv, "text/csv;charset=utf-8", `announcements-${TODAY_ISO}.csv`);  // the BOM keeps Excel on UTF-8
 });
 xpEl("xpPdf").addEventListener("click", () => {
@@ -818,10 +822,13 @@ xpEl("xpPdf").addEventListener("click", () => {
     h1 { font-size: 16px; margin: 0 0 2px; font-weight: 600; } p { margin: 0 0 10px; color: #555; }
     table { border-collapse: collapse; width: 100%; } th { text-align: left; font-weight: 600; border-bottom: 1.5px solid #111; padding: 4px 6px 4px 0; }
     td { border-bottom: 1px solid #ddd; padding: 4px 6px 4px 0; vertical-align: top; } tr { page-break-inside: avoid; }
-    a { color: inherit; text-decoration: none; } td.n { white-space: nowrap; }
-  </style></head><body><h1>${esc(title)}</h1><p>${rows.length} show${rows.length === 1 ? "" : "s"} · exported ${esc(new Date().toLocaleString("en-US"))}</p>
+    a { color: inherit; text-decoration: none; } a.t { color: #1a5c2e; text-decoration: underline; text-decoration-thickness: .5px; text-underline-offset: 2px; }
+    td.n { white-space: nowrap; }
+  </style></head><body><h1>${esc(title)}</h1><p>${rows.length} show${rows.length === 1 ? "" : "s"} · exported ${esc(new Date().toLocaleString("en-US"))} · headliners link to tickets</p>
   <table><thead><tr>${cols.map(c => `<th>${esc(c[1])}</th>`).join("")}</tr></thead><tbody>${rows.map(([s, c]) =>
-    `<tr>${cols.map(col => { const v = col[3](s, c); return col[0] === "link" && v ? `<td><a href="${esc(v)}">${esc(new URL(v).hostname.replace(/^www\./, ""))}</a></td>` :
+    `<tr>${cols.map(col => { const v = col[3](s, c);
+      if (col[0] === "headliner" && xpLink(s)) return `<td><a class="t" href="${esc(xpLink(s))}">${esc(v)}</a></td>`;
+      return col[0] === "link" && v ? `<td><a href="${esc(v)}">${esc(new URL(v).hostname.replace(/^www\./, ""))}</a></td>` :
       `<td${["announced", "date", "onsale", "presale", "cap", "price"].includes(col[0]) ? ' class="n"' : ""}>${esc(v)}</td>`; }).join("")}</tr>`).join("")}</tbody></table></body></html>`;
   const f = document.createElement("iframe");  // print from a hidden frame: no pop-up to block
   f.style.cssText = "position:fixed;width:0;height:0;border:0;right:0;bottom:0";
