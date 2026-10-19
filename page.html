@@ -186,6 +186,7 @@ main { padding-block: 8px 80px; }
 .xp-foot { display: flex; gap: 10px; align-items: center; justify-content: flex-end; border-top: 1px solid var(--grey1); padding-top: 14px; flex-wrap: wrap; }
 .xp-n { margin-right: auto; font-size: 13px; color: var(--muted); }
 .xp-main { background: var(--ink); color: var(--bg); }
+.xp-cap { justify-self: start; min-height: 36px; }
 .xp-text { max-height: 220px; overflow: auto; font-size: 13px; line-height: 1.45; border: 1px solid var(--grey4); background: var(--panel); color: var(--ink); padding: 4px 12px; }
 .xp-text p { margin: 10px 0 4px; } .xp-text ul { margin: 0; padding-left: 18px; } .xp-text a { color: var(--accent); }
 .ics-btn { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--grey4); display: inline-flex; gap: 6px; align-items: center; }
@@ -331,7 +332,14 @@ body.compact { font-size: 12.5px; }
       <label class="xp-check"><input type="checkbox" id="xpFav"> Favorite venues only</label>
       <label class="xp-check"><input type="checkbox" id="xpTeam"> THE·TEAM shows only</label>
       <label class="xp-check"><input type="checkbox" id="xpNoSup"> No support only</label>
-      <label class="xp-check"><input type="checkbox" id="xpPage" checked> Also use the page's filters: <span id="xpPageNote"></span></label>
+      <div class="cap xp-cap" id="xpCapBox" title="Room capacity (approximate). Drag either end.">
+        <span class="cap-label">Cap</span>
+        <div class="cap-range"><div class="cap-track"><div class="cap-fill" id="xpCapFill"></div></div>
+          <input type="range" id="xpCapLo" min="0" max="10" step="1" value="0" aria-label="Smallest room">
+          <input type="range" id="xpCapHi" min="0" max="10" step="1" value="10" aria-label="Largest room"></div>
+        <span class="cap-val" id="xpCapVal">Any</span>
+      </div>
+      <label class="xp-check"><input type="checkbox" id="xpPage" checked> Also use the page's search: <span id="xpPageNote"></span></label>
     </fieldset>
     <fieldset><legend>Columns</legend><div class="xp-cols" id="xpCols"></div></fieldset>
     <fieldset><legend>Sort by</legend>
@@ -778,9 +786,17 @@ const xpPrefs = Object.assign({ cols: XP_COLS.filter(c => c[2]).map(c => c[0]), 
 xpPrefs.cols = xpPrefs.cols.filter(k => XP_COLS.some(c => c[0] === k));  // columns since retired
 if (xpPrefs.sort === "onsale") xpPrefs.sort = "found";
 const xpEl = id => document.getElementById(id);
-const xpCapFull = () => !xpEl("xpPage").checked || capFull();  // the page's cap slider, if used
-const xpCapOk = s => xpCapFull() || capOk(s);
-const xpCapText = () => capText();
+// The export's own cap slider: starts from the page's, changes only the export.
+const xpCapSel = { lo: 0, hi: 10 };
+const xpCapFull = () => xpCapSel.lo === 0 && xpCapSel.hi === 10;
+const xpCapOk = s => xpCapFull() || (s.cap != null && s.cap >= CAP_STOPS[xpCapSel.lo] && s.cap <= CAP_STOPS[xpCapSel.hi]);
+const xpCapText = () => xpCapFull() ? "Any" : xpCapSel.hi === 10 ? capNum(CAP_STOPS[xpCapSel.lo]) + "+" : xpCapSel.lo === 0 ? "up to " + capNum(CAP_STOPS[xpCapSel.hi]) : capNum(CAP_STOPS[xpCapSel.lo]) + "–" + capNum(CAP_STOPS[xpCapSel.hi]);
+function xpCapSync() {
+  xpEl("xpCapLo").value = xpCapSel.lo; xpEl("xpCapHi").value = xpCapSel.hi;
+  xpEl("xpCapFill").style.cssText = `left:${xpCapSel.lo * 10}%;right:${100 - xpCapSel.hi * 10}%`;
+  xpEl("xpCapVal").textContent = xpCapText();
+  xpEl("xpCapBox").classList.toggle("on", !xpCapFull());
+}
 const xpNoSupport = s => !s.support.length && !coBill(s);
 const xpList = () => (document.querySelector('input[name="xpList"]:checked') || {}).value || "new";
 function xpInit() {
@@ -795,7 +811,8 @@ function xpInit() {
   xpEl("xpNoSup").checked = !!state.noSupport;  // start from the page's settings, then change freely
   const opt = (i, end) => `<option value="${i}">${i === 0 && end === "lo" ? "Any" : i === 10 ? "Any" : CAP_STOPS[i].toLocaleString("en-US")}</option>`;
   xpEl("xpTeam").checked = !!state.ours;
-  const f = [capFull() ? "" : "cap " + capText(), state.q ? `search “${state.q}”` : ""].filter(Boolean);
+  Object.assign(xpCapSel, capSel); xpCapSync();
+  const f = [state.q ? `“${state.q}”` : ""].filter(Boolean);
   xpEl("xpPageNote").textContent = f.length ? f.join(", ") : "none set";
   xpCount();
 }
@@ -1010,6 +1027,11 @@ xpEl("xpText").addEventListener("click", async () => {
   setTimeout(() => { btn.textContent = "Copy text"; }, 2000);
 });
 xpEl("exportDlg").addEventListener("input", e => {
+  if (e.target.id === "xpCapLo" || e.target.id === "xpCapHi") {
+    let v = +e.target.value;
+    if (e.target.id === "xpCapLo") xpCapSel.lo = Math.min(v, xpCapSel.hi - 1); else xpCapSel.hi = Math.max(v, xpCapSel.lo + 1);  // ends never cross
+    xpCapSync();
+  }
   if (e.target.name === "xpList") {
     xpEl("xpSinceBox").hidden = xpList() !== "new";
     if (xpList() === "week" && xpEl("xpSort").value === "found") xpEl("xpSort").value = "date";

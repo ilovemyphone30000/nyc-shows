@@ -122,8 +122,13 @@ with sync_playwright() as p:
         page.check("#xpTeam")
         n2 = int(page.inner_text("#xpN").split()[0])
         check("export filters: no support only and THE·TEAM only narrow the count", n2 <= n, f"{n} -> {n2}")
-        check("export has no Cap, THE·TEAM acts or Tickets column, and no capacity picker",
-              not page.locator('#xpCols input[value="cap"], #xpCols input[value="team"], #xpCols input[value="link"], #xpCapLo').count())
+        check("export has no Cap, THE·TEAM acts or Tickets column",
+              not page.locator('#xpCols input[value="cap"], #xpCols input[value="team"], #xpCols input[value="link"]').count())
+        page.uncheck("#xpNoSup"); page.uncheck("#xpTeam")
+        page.eval_on_selector("#xpCapLo", "e => { e.value = 4; e.dispatchEvent(new Event('input', {bubbles: true})); }")  # 1,000+
+        n3 = int(page.inner_text("#xpN").split()[0])
+        check("export cap slider narrows the count and leaves the page alone", n3 <= n and page.inner_text("#xpCapVal") == "1k+" and page.inner_text("#capVal") == "Any", f"{n} -> {n3}")
+        page.eval_on_selector("#xpCapLo", "e => { e.value = 0; e.dispatchEvent(new Event('input', {bubbles: true})); }")
         page.uncheck("#xpNoSup")
         page.uncheck("#xpTeam")
         page.keyboard.press("Escape")
