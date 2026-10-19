@@ -22,3 +22,4 @@ data/inbox/
 .env
 data/tm/
 reports/
+data/audit/

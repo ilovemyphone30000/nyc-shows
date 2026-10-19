@@ -167,10 +167,16 @@ for key, name in CITIES:
     tm = json.load(open(f"data/tm/{key}.json")) if os.path.exists(f"data/tm/{key}.json") else {}
     near = lambda a, b: a == b or (min(len(a), len(b)) > 3 and (a.startswith(b) or b.startswith(a)))
     tm_only(key, d, announced, ledger, tm, near)
+    # Shows the listing audit (audit_apply.py) or a person decided to leave off: data/drops.json
+    dropped = json.load(open("data/drops.json")).get(key, {}) if os.path.exists("data/drops.json") else {}
+    d["shows"] = [x for x in d["shows"] if x["id"] not in dropped]
+    announced[:] = [x for x in announced if x["id"] not in dropped]
     fixes = json.load(open("data/corrections.json")).get(key, {}) if os.path.exists("data/corrections.json") else {}
     for show in d["shows"] + announced:  # hand fixes win over every source (data/corrections.json)
         for k, v in fixes.get(show["id"], {}).items():
-            if k in ("headliner", "support", "venue", "date", "time", "ticketUrl", "age"):
+            if k == "support":  # merged: a source may add acts after the fix was made
+                show[k] = list(dict.fromkeys([*show.get("support", []), *v]))
+            elif k in ("headliner", "venue", "date", "time", "ticketUrl", "age"):
                 show[k] = v
         if show["id"] in fixes:
             show["clients"] = mark(show, client_acts(key))

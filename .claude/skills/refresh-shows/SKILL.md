@@ -72,6 +72,16 @@ in page.html, with a toggle on both pages. A headliner naming 3+ artists is a "S
 "No support". Agents export only when their column is ticked. To make one for the user without the
 page, drive plain/index.html with Playwright the same way and save to reports/ (gitignored).
 
+## 1d. Listing audit (agent)
+
+`python3 audit_prep.py --parts 2` writes worklists to data/audit/ (gitignored). Run the
+`listing-auditor` agent (.claude/agents/listing-auditor.md) once per worklist, in parallel. It
+drops tributes, theme and DJ nights, talks, film, packages and duplicates, and checks every
+"No support listed" show against a second source (venue site, allowed ticket page, web search;
+never Ticketmaster/Live Nation/TicketWeb/AXS pages). Then `python3 audit_apply.py`: confident
+drops go to data/drops.json (build hides them), found support to data/corrections.json, the
+rest to reports/audit-<date>.md for the user. THE·TEAM shows are never hidden by the audit.
+
 ## 1b. Venue calendars (the tracked rooms)
 
 `venues.py` lists them (slug, city, OMR's spelling of the name, calendar URL). Read each
