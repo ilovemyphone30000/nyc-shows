@@ -234,8 +234,8 @@ for key, name in CITIES:
             "price": [prices[0].get("min"), prices[0].get("max"), prices[0].get("currency")] if prices else None,
             "status": r["status"] if r["status"] not in ("onsale", "offsale") else None,
         }.items() if v}
-        if not show.get("ticketUrl"):
-            show["ticketUrl"] = r["url"]
+        if not show.get("ticketUrl") or re.search(r"ticketmaster\.com/[^/]+/artist/", show["ticketUrl"]):
+            show["ticketUrl"] = r["url"]  # the show's own event page, not the artist's page of every date
     for show in d["shows"] + announced:
         c = room_cap(key, show["venue"])
         if c:
