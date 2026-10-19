@@ -119,11 +119,13 @@ with sync_playwright() as p:
             page.click("#xpXlsx")
         check("export Excel downloads a real .xlsx", dl.value.suggested_filename.endswith(".xlsx") and open(dl.value.path(), "rb").read(2) == b"PK", dl.value.suggested_filename)
         page.check("#xpNoSup")
-        page.select_option("#xpCapLo", "4")  # 1,000+
+        page.check("#xpTeam")
         n2 = int(page.inner_text("#xpN").split()[0])
-        check("export filters: no support only and capacity narrow the count", n2 <= n, f"{n} -> {n2}")
+        check("export filters: no support only and THE·TEAM only narrow the count", n2 <= n, f"{n} -> {n2}")
+        check("export has no Cap, THE·TEAM acts or Tickets column, and no capacity picker",
+              not page.locator('#xpCols input[value="cap"], #xpCols input[value="team"], #xpCols input[value="link"], #xpCapLo').count())
         page.uncheck("#xpNoSup")
-        page.select_option("#xpCapLo", "0")
+        page.uncheck("#xpTeam")
         page.keyboard.press("Escape")
         page.click("#exportBtn")
         page.check("#xpFav")

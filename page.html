@@ -329,17 +329,15 @@ body.compact { font-size: 12.5px; }
     </fieldset>
     <fieldset><legend>Filters</legend>
       <label class="xp-check"><input type="checkbox" id="xpFav"> Favorite venues only</label>
+      <label class="xp-check"><input type="checkbox" id="xpTeam"> THE·TEAM shows only</label>
       <label class="xp-check"><input type="checkbox" id="xpNoSup"> No support only</label>
-      <div class="xp-row"><span>Capacity</span>
-        <select id="xpCapLo" aria-label="Smallest room"></select><span>to</span><select id="xpCapHi" aria-label="Largest room"></select>
-        <span class="xp-opt" title="Rooms of unknown size count only when both ends are Any">(approx.)</span></div>
       <label class="xp-check"><input type="checkbox" id="xpPage" checked> Also use the page's filters: <span id="xpPageNote"></span></label>
     </fieldset>
     <fieldset><legend>Columns</legend><div class="xp-cols" id="xpCols"></div></fieldset>
     <fieldset><legend>Sort by</legend>
       <div class="xp-row"><select id="xpSort">
         <option value="found">Day announced, newest first</option><option value="date">Show date, soonest first</option>
-        <option value="cap">Room size, largest first</option>
+
       </select></div>
     </fieldset>
     <div id="xpTextOut" class="xp-text" hidden aria-label="Copied text"></div>
@@ -769,8 +767,6 @@ const XP_COLS = [
   ["venue", "Venue", true, s => s.venue],
   ["city", "City", true, (s, c) => c.name],
   ["age", "Age", false, s => s.age || ""],
-  ["team", "THE·TEAM acts", false, s => s.clients.map(c => c.artist).join(", ")],
-  ["link", "Tickets", false, s => xpLink(s)],
 ];
 // "Sat, Mar 27, 2027 · 8 PM": day, date and time in one column
 const xpShowDate = s => { const x = d8(s.date);
@@ -782,10 +778,9 @@ const xpPrefs = Object.assign({ cols: XP_COLS.filter(c => c[2]).map(c => c[0]), 
 xpPrefs.cols = xpPrefs.cols.filter(k => XP_COLS.some(c => c[0] === k));  // columns since retired
 if (xpPrefs.sort === "onsale") xpPrefs.sort = "found";
 const xpEl = id => document.getElementById(id);
-const xpCap = () => ({ lo: +xpEl("xpCapLo").value, hi: +xpEl("xpCapHi").value });
-const xpCapFull = () => xpCap().lo === 0 && xpCap().hi === 10;
-const xpCapOk = s => { const { lo, hi } = xpCap(); return (lo === 0 && hi === 10) || (s.cap != null && s.cap >= CAP_STOPS[lo] && s.cap <= CAP_STOPS[hi]); };
-const xpCapText = () => { const { lo, hi } = xpCap(); return lo === 0 && hi === 10 ? "Any" : hi === 10 ? capNum(CAP_STOPS[lo]) + "+" : lo === 0 ? "up to " + capNum(CAP_STOPS[hi]) : capNum(CAP_STOPS[lo]) + "–" + capNum(CAP_STOPS[hi]); };
+const xpCapFull = () => !xpEl("xpPage").checked || capFull();  // the page's cap slider, if used
+const xpCapOk = s => xpCapFull() || capOk(s);
+const xpCapText = () => capText();
 const xpNoSupport = s => !s.support.length && !coBill(s);
 const xpList = () => (document.querySelector('input[name="xpList"]:checked') || {}).value || "new";
 function xpInit() {
@@ -799,10 +794,8 @@ function xpInit() {
   xpEl("xpTextOut").hidden = true;
   xpEl("xpNoSup").checked = !!state.noSupport;  // start from the page's settings, then change freely
   const opt = (i, end) => `<option value="${i}">${i === 0 && end === "lo" ? "Any" : i === 10 ? "Any" : CAP_STOPS[i].toLocaleString("en-US")}</option>`;
-  xpEl("xpCapLo").innerHTML = CAP_STOPS.slice(0, 10).map((_, i) => opt(i, "lo")).join("");
-  xpEl("xpCapHi").innerHTML = CAP_STOPS.slice(1).map((_, i) => opt(i + 1, "hi")).join("");
-  xpEl("xpCapLo").value = capSel.lo; xpEl("xpCapHi").value = capSel.hi;
-  const f = [state.ours ? "THE·TEAM only" : "", state.q ? `search “${state.q}”` : ""].filter(Boolean);
+  xpEl("xpTeam").checked = !!state.ours;
+  const f = [capFull() ? "" : "cap " + capText(), state.q ? `search “${state.q}”` : ""].filter(Boolean);
   xpEl("xpPageNote").textContent = f.length ? f.join(", ") : "none set";
   xpCount();
 }
@@ -820,12 +813,12 @@ function xpRows() {
       if (xpEl("xpFav").checked && !isFav(s, c)) continue;
       if (xpEl("xpNoSup").checked && !xpNoSupport(s)) continue;
       if (!xpCapOk(s)) continue;
-      if (usePage && ((state.ours && !s.clients.length) ||
-          (state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))))) continue;
+      if (xpEl("xpTeam").checked && !s.clients.length) continue;
+      if (usePage && state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))) continue;
       rows.push([s, c]);
     }
   const by = xpEl("xpSort").value;
-  const key = ([s]) => by === "found" ? -Date.parse(s.firstSeen) : by === "cap" ? -(s.cap || 0) : 0;
+  const key = ([s]) => by === "found" ? -Date.parse(s.firstSeen) : 0;
   rows.sort((a, b) => key(a) - key(b) || a[0].date.localeCompare(b[0].date) || (a[0].time || "99").localeCompare(b[0].time || "99"));
   const cols = XP_COLS.filter(([k]) => xpEl("xpCols").querySelector(`input[value="${k}"]`).checked);
   return { rows, cols, keys };
@@ -852,7 +845,7 @@ xpEl("xpCsv").addEventListener("click", () => {
   const cell = v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
   // The headliner links to the tickets: Excel and Google Sheets show a HYPERLINK cell as a link.
   const q = v => String(v).replace(/"/g, '""');
-  const val = (col, s, c) => col[3](s, c);
+  const val = (col, s, c) => col[0] === "headliner" && xpLink(s) ? `=HYPERLINK("${q(xpLink(s))}","${q(s.headliner)}")` : col[3](s, c);
   const csv = [cols.map(c => c[1]), ...rows.map(([s, c]) => cols.map(col => val(col, s, c)))].map(r => r.map(cell).join(",")).join("\r\n");
   xpSave("\ufeff" + csv, "text/csv;charset=utf-8", `announcements-${TODAY_ISO}.csv`);  // the BOM keeps Excel on UTF-8
 });
@@ -873,8 +866,6 @@ function xpPdfDoc(rows, cols, keys) {
   if (on("venue")) C.push(["Venue", "", s => esc(s.venue)]);
   if (on("city") && !many) C.push(["City", "", (s, c) => esc(c.name)]);
   if (on("age")) C.push(["Age", "n", s => esc(s.age || "")]);
-  if (on("team")) C.push(["THE·TEAM", "", s => esc(s.clients.map(c => c.artist).join(", "))]);
-  if (on("link")) C.push(["Tickets", "", s => xpLink(s) ? `<a href="${esc(xpLink(s))}">${esc(new URL(xpLink(s)).hostname.replace(/^www\./, ""))}</a>` : ""]);
   for (let i = C.length - 1; i >= 0; i--)  // a column empty in every row only takes room
     if (C[i][0] !== "Bill" && rows.every(([s, c]) => !C[i][2](s, c))) C.splice(i, 1);
   const table = list => `<table><thead><tr>${C.map(([h, k]) => `<th class="${k}">${esc(h)}</th>`).join("")}</tr></thead><tbody>${
@@ -882,7 +873,7 @@ function xpPdfDoc(rows, cols, keys) {
   const groups = many ? CITIES.filter(c => keys.includes(c.key)).map(c => [c, rows.filter(r => r[1] === c)]).filter(g => g[1].length) : [[null, rows]];
   const v = xpEl("xpSince").value;
   const when = v === "date" ? "since " + (xpEl("xpSinceDate").value ? md(xpEl("xpSinceDate").value) : "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
-  const filters = [xpEl("xpFav").checked ? "favorite venues" : "", xpCapFull() ? "" : `rooms ${xpCapText()} cap`, xpEl("xpPage").checked && state.ours ? "THE·TEAM shows only" : "",
+  const filters = [xpEl("xpFav").checked ? "favorite venues" : "", xpCapFull() ? "" : `rooms ${xpCapText()} cap`, xpEl("xpTeam").checked ? "THE·TEAM shows only" : "",
     xpEl("xpNoSup").checked ? "no support only" : "", xpEl("xpPage").checked && state.q ? `matching “${state.q}”` : "",
     xpEl("xpFrom").value || xpEl("xpTo").value ? `shows ${xpEl("xpFrom").value ? "from " + md(xpEl("xpFrom").value) : ""}${xpEl("xpTo").value ? " to " + md(xpEl("xpTo").value) : ""}` : ""].filter(Boolean);
   const cities = CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ");
@@ -950,10 +941,10 @@ xpEl("xpXlsx").addEventListener("click", async () => {
       const row = ws.getRow(r + 4);
       cols.forEach((col, i) => {
         const cell = row.getCell(i + 1), v = col[3](s, c);
-        cell.value = col[0] === "headliner" && xpLink(s) ? { text: v, hyperlink: xpLink(s) } : col[0] === "link" && v ? { text: v, hyperlink: v } : v;
+        cell.value = col[0] === "headliner" && xpLink(s) ? { text: v, hyperlink: xpLink(s) } : v;
         cell.font = { name: "Arial", size: 10, bold: col[0] === "headliner",
-          ...(col[0] === "headliner" && xpLink(s) || col[0] === "link" && v ? { color: { argb: "FF24603A" }, underline: true } : {}) };
-        cell.alignment = { vertical: "top", wrapText: col[0] === "support" || col[0] === "team" };
+          ...(col[0] === "headliner" && xpLink(s) ? { color: { argb: "FF24603A" }, underline: true } : {}) };
+        cell.alignment = { vertical: "top", wrapText: col[0] === "support" };
         if (r % 2) cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "FFF4F2EC" } };
         cell.border = { bottom: { style: "thin", color: { argb: "FFE2DFD6" } } };
       });
@@ -1012,8 +1003,6 @@ xpEl("xpText").addEventListener("click", async () => {
   setTimeout(() => { btn.textContent = "Copy text"; }, 2000);
 });
 xpEl("exportDlg").addEventListener("input", e => {
-  if (e.target.id === "xpCapLo" && +xpEl("xpCapLo").value >= +xpEl("xpCapHi").value) xpEl("xpCapHi").value = +xpEl("xpCapLo").value + 1;
-  if (e.target.id === "xpCapHi" && +xpEl("xpCapHi").value <= +xpEl("xpCapLo").value) xpEl("xpCapLo").value = +xpEl("xpCapHi").value - 1;
   if (e.target.name === "xpList") {
     xpEl("xpSinceBox").hidden = xpList() !== "new";
     if (xpList() === "week" && xpEl("xpSort").value === "found") xpEl("xpSort").value = "date";
