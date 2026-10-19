@@ -984,8 +984,15 @@ function xpTextGroups(rows) {
 // real link, so it pastes as links into email, Google Docs, Notes, Slack and the like.
 const xpText = rows => xpTextGroups(rows).map(g => g.head + "\n\n" +
   g.items.map(i => `* ${i.url ? `[${i.name}](${i.url})` : i.name} – ${i.day}`).join("\n")).join("\n\n");
-const xpTextHtml = rows => xpTextGroups(rows).map(g => `<p><b>${esc(g.head)}</b></p><ul>` +
-  g.items.map(i => `<li>${i.url ? `<a href="${esc(i.url)}">${esc(i.name)}</a>` : esc(i.name)} – ${esc(i.day)}</li>`).join("") + "</ul>").join("");
+// Inline styles only: Outlook drops <style> blocks and classes, Google Docs keeps inline
+// fonts, sizes, colours and real bullets. Arial 11pt, bold venue headings, linked artists.
+const XP_FONT = "font-family:Arial,Helvetica,sans-serif;font-size:11pt;color:#1b1b18;";
+const xpTextHtml = rows => `<div style="${XP_FONT}">` + xpTextGroups(rows).map((g, n) =>
+  `<p style="${XP_FONT}font-weight:bold;letter-spacing:0.5px;margin:${n ? 16 : 0}px 0 6px 0;">${esc(g.head)}</p>` +
+  `<ul style="${XP_FONT}margin:0 0 0 0;padding-left:22px;">` +
+  g.items.map(i => `<li style="${XP_FONT}margin:0 0 3px 0;">${i.url
+    ? `<a href="${esc(i.url)}" style="${XP_FONT}color:#1155cc;text-decoration:underline;">${esc(i.name)}</a>` : esc(i.name)}` +
+    `<span style="${XP_FONT}color:#5f5d57;"> – ${esc(i.day)}</span></li>`).join("") + "</ul>").join("") + "</div>";
 xpEl("xpText").addEventListener("click", async () => {
   const rows = xpRows().rows, text = xpText(rows), html = xpTextHtml(rows), box = xpEl("xpTextOut"), btn = xpEl("xpText");
   box.innerHTML = html; box.hidden = false;
