@@ -65,8 +65,11 @@ shows with no support, support added, status flags, and every room with its size
 
 Just announced has an **Export** button: cities, announced window (24h / 3 / 7 / 14 / 30 days or
 since a date), optional show-date range, the page's own filters (cap slider, THE·TEAM only, no
-support, search), columns and sort, then **Download CSV** or **Save PDF** (the browser's print
-dialog). Agents export only when their column is ticked. To make one for the user without the
+support, search), a "Favorite venues only" box, columns and sort, then **Copy text** (venue headings,
+`* [Artist](tickets) – Tue 9/29`), **Download CSV** (headliners as HYPERLINK cells) or **Save PDF**
+(the browser's print dialog; grouped by city, headliners linked). Favorite venues are `FAV_VENUES`
+in page.html, with a toggle on both pages. A headliner naming 3+ artists is a "Shared bill", not
+"No support". Agents export only when their column is ticked. To make one for the user without the
 page, drive plain/index.html with Playwright the same way and save to reports/ (gitignored).
 
 ## 1b. Venue calendars (the tracked rooms)

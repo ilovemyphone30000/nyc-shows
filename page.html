@@ -151,6 +151,7 @@ main { padding-block: 8px 80px; }
 .support .acts { color: var(--ink); }
 .support .acts i { font-style: normal; color: var(--grey4); margin: 0 6px; }
 .support.none .acts { color: var(--grey7); font-size: 12px; }
+.support .acts.shared { color: var(--muted); font-style: italic; font-size: 12px; }
 .at { margin-top: 5px; color: var(--muted); font-size: 15px; }
 .at b { color: var(--accent); font-weight: 500; }
 .meta { display: flex; gap: 12px; align-items: center; white-space: nowrap; font-size: 12px; color: var(--muted); padding-top: 2px; }
@@ -185,6 +186,7 @@ main { padding-block: 8px 80px; }
 .xp-foot { display: flex; gap: 10px; align-items: center; justify-content: flex-end; border-top: 1px solid var(--grey1); padding-top: 14px; flex-wrap: wrap; }
 .xp-n { margin-right: auto; font-size: 13px; color: var(--muted); }
 .xp-main { background: var(--ink); color: var(--bg); }
+.xp-text { width: 100%; min-height: 160px; font: 12px/1.45 ui-monospace, Menlo, monospace; border: 1px solid var(--grey4); background: var(--panel); color: var(--ink); padding: 8px; resize: vertical; }
 .ics-btn { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--grey4); display: inline-flex; gap: 6px; align-items: center; }
 .ics-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .ics-btn:hover { color: var(--accent); border-bottom-color: var(--accent); }
@@ -290,6 +292,7 @@ body.compact { font-size: 12.5px; }
     </span>
     <button class="toggle team" id="oursOnly" aria-pressed="false">THE·TEAM Shows Only</button>
     <button class="toggle" id="noSupport" aria-pressed="false">No support only</button>
+    <button class="toggle" id="favOnly" aria-pressed="false" title="Only the favorite rooms">Favorite venues</button>
     <div class="cap" id="capBox" title="Room capacity (approximate). Drag either end.">
       <span class="cap-label">Cap</span>
       <div class="cap-range"><div class="cap-track"><div class="cap-fill" id="capFill"></div></div>
@@ -322,6 +325,7 @@ body.compact { font-size: 12.5px; }
       <div class="xp-row"><label>From <input type="date" id="xpFrom"></label><label>To <input type="date" id="xpTo"></label></div>
     </fieldset>
     <fieldset><legend>Filters</legend>
+      <label class="xp-check"><input type="checkbox" id="xpFav"> Favorite venues only</label>
       <label class="xp-check"><input type="checkbox" id="xpPage" checked> Use the page's filters: <span id="xpPageNote"></span></label>
     </fieldset>
     <fieldset><legend>Columns</legend><div class="xp-cols" id="xpCols"></div></fieldset>
@@ -331,8 +335,10 @@ body.compact { font-size: 12.5px; }
         <option value="onsale">On-sale date, soonest first</option><option value="cap">Room size, largest first</option>
       </select></div>
     </fieldset>
+    <textarea id="xpTextOut" class="xp-text" readonly hidden aria-label="Copied text"></textarea>
     <div class="xp-foot">
       <span class="xp-n" id="xpN"></span>
+      <button type="button" class="toggle" id="xpText" title="Venue by venue: * [Artist](tickets) – Tue 9/29">Copy text</button>
       <button type="button" class="toggle" id="xpCsv">Download CSV</button>
       <button type="button" class="toggle xp-main" id="xpPdf">Save PDF</button>
     </div>
@@ -478,10 +484,25 @@ function syncCap() {
   lo.setAttribute("aria-valuetext", capText()); hi.setAttribute("aria-valuetext", capText());
 }
 
+// Favorite venues: [city, venue as the page spells it, heading for the copy-as-text export].
+const FAV_VENUES = [
+  ["nyc", "Brooklyn Paramount", "BK PARAMOUNT"], ["nyc", "Brooklyn Steel", "BK STEEL"], ["nyc", "Warsaw"], ["nyc", "Irving Plaza"],
+  ["nyc", "Webster Hall"], ["la", "Fonda Theatre", "FONDA"], ["la", "The Wiltern"], ["la", "Hollywood Palladium"], ["la", "The Belasco"],
+  ["la", "Sid The Cat Auditorium"], ["la", "The Bellwether"], ["la", "Pacific Electric"], ["la", "The Regent Theater"],
+];
+const favKey = (k, v) => k + "|" + v;
+const FAV = new Map(FAV_VENUES.map(([k, v, h], i) => [favKey(k, v), { i, head: h || v.toUpperCase() }]));
+const isFav = (s, c) => FAV.has(favKey(c.key, s.venue));
+
+// A headliner naming three or more artists ("Medeski, Martin, Metzger & Cline") is a shared
+// bill: there is no separate support, but it isn't a solo show either.
+const coBill = s => !s.support.length && (s.headliner.match(/,/g) || []).length >= 2;
+
 function matches(s) {
   if (state.page === "week" && state.day !== "all" && s.date !== state.day) return false;  // announcements span months, not the day chips
-  if (state.noSupport && s.support.length) return false;
+  if (state.noSupport && (s.support.length || coBill(s))) return false;
   if (!capOk(s)) return false;
+  if (state.fav && !isFav(s, city)) return false;
   if (state.ours && !s.clients.length) return false;
   if (state.page === "week" && state.view === "saved" && !saved.has(s.id)) return false;
   if (state.q) {
@@ -596,6 +617,7 @@ function row(s, withVenue) {
   const name = a => mine.has(a.toLowerCase()) ? `<span class="mine">${esc(a)}</span>` : esc(a);
   const support = s.support.length
     ? `<div class="support" title="${esc(s.support.join(", "))}"><span class="acts">${s.support.map(a => `<span class="act">${name(a)}</span>`).join("<i>·</i>")}</span></div>`
+    : coBill(s) ? `<div class="support" title="Several artists billed together"><span class="acts shared">Shared bill</span></div>`
     : `<div class="support none"><span class="acts">No support listed</span></div>`;
   return `<div class="row${s.clients.length ? " ours" : ""}${ids.some(id => openRows.has(id)) ? " open" : ""}" data-ids="${ids.join(",")}" tabindex="0">
     <div class="when label${dates.length > 1 ? " multi" : ""}"><b>${day}</b><span>${dates.length > 1 ? md(dates[0]) + "–" + (d8(dates[0]).getMonth() === d8(dates[dates.length - 1]).getMonth() ? d8(dates[dates.length - 1]).getDate() : md(dates[dates.length - 1])) : mdy(dates[0])}</span></div>
@@ -700,6 +722,7 @@ function render() {
   });
   document.querySelectorAll("[data-day]").forEach(c => c.setAttribute("aria-pressed", c.dataset.day === state.day));
   document.getElementById("noSupport").setAttribute("aria-pressed", state.noSupport);
+  document.getElementById("favOnly").setAttribute("aria-pressed", state.fav);
   syncCap();
   document.getElementById("oursOnly").setAttribute("aria-pressed", state.ours);
 
@@ -720,7 +743,7 @@ function render() {
   const out = document.getElementById("out");
   if (!list.length) {
     out.innerHTML = `<p class="empty">${
-      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.q ? "matching these filters " : ""}announced${capFull() ? "" : " at rooms of that size"} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
+      state.page === "new" ? `Nothing ${state.ours || state.noSupport || state.fav || state.q ? "matching these filters " : ""}announced${capFull() ? "" : " at rooms of that size"} in ${esc(city.name)} in the last 30 days. The log fills in each morning as new shows go up.`
       : STALE ? `These listings only run through ${md(DATA.week[1])}. Check back after the next update.`
       : state.view === "saved" && !savedHere ? `Nothing saved in ${esc(city.name)} yet. Tap the heart on any show to keep it here.`
       : "No shows match these filters. Try another day, turn off the toggles, or clear the search."}</p>`;
@@ -738,7 +761,7 @@ const XP_COLS = [
   ["day", "Day", false, s => FULLDAY[d8(s.date).getDay()]],
   ["time", "Time", false, s => s.time ? fmtTime(s.time) : ""],
   ["headliner", "Headliner", true, s => s.headliner],
-  ["support", "Support", true, s => s.support.join(", ")],
+  ["support", "Support", true, s => s.support.join(", ") || (coBill(s) ? "Shared bill" : "")],
   ["venue", "Venue", true, s => s.venue],
   ["city", "City", true, (s, c) => c.name],
   ["cap", "Cap (approx.)", true, s => s.cap || ""],
@@ -763,6 +786,7 @@ function xpInit() {
   xpEl("xpCols").innerHTML = XP_COLS.map(([k, label]) => `<label><input type="checkbox" value="${k}"${xpPrefs.cols.includes(k) ? " checked" : ""}> ${esc(label)}</label>`).join("");
   xpEl("xpSince").value = xpPrefs.since; xpEl("xpSort").value = xpPrefs.sort;
   xpEl("xpSinceDate").hidden = xpPrefs.since !== "date";
+  xpEl("xpFav").checked = !!state.fav; xpEl("xpTextOut").hidden = true;
   const f = [capFull() ? "" : "cap " + capText(), state.ours ? "THE·TEAM only" : "", state.noSupport ? "no support only" : "", state.q ? `search “${state.q}”` : ""].filter(Boolean);
   xpEl("xpPageNote").textContent = f.length ? f.join(", ") : "none set";
   xpCount();
@@ -777,6 +801,7 @@ function xpRows() {
     for (const s of c.feed) {
       if (!s.firstSeen || Date.parse(s.firstSeen) < since) continue;
       if ((from && s.date < from) || (to && s.date > to)) continue;
+      if ((xpEl("xpFav").checked || (usePage && state.fav)) && !isFav(s, c)) continue;
       if (usePage && (!capOk(s) || (state.ours && !s.clients.length) || (state.noSupport && s.support.length) ||
           (state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))))) continue;
       rows.push([s, c]);
@@ -813,28 +838,114 @@ xpEl("xpCsv").addEventListener("click", () => {
   const csv = [cols.map(c => c[1]), ...rows.map(([s, c]) => cols.map(col => val(col, s, c)))].map(r => r.map(cell).join(",")).join("\r\n");
   xpSave("\ufeff" + csv, "text/csv;charset=utf-8", `announcements-${TODAY_ISO}.csv`);  // the BOM keeps Excel on UTF-8
 });
+// The PDF is laid out for reading, not a copy of the CSV: grouped by city when there are
+// several, date and time in one column, the bill as headliner (linked to tickets) over its
+// support, the room over its size, on-sale details with a "Not on sale yet" tag.
+function xpPdfDoc(rows, cols, keys) {
+  const on = k => cols.some(c => c[0] === k);
+  const thisYear = new Date().getFullYear();
+  const showDate = d => { const x = d8(d); return `${FULLDAY[x.getDay()].slice(0, 3)} ${MONTHS[x.getMonth()]} ${x.getDate()}${x.getFullYear() !== thisYear ? ", " + x.getFullYear() : ""}`; };
+  const sale = (t, c) => { const d = new Date(t), o = { timeZone: TZ[c.key] };
+    return d.toLocaleDateString("en-US", { ...o, month: "short", day: "numeric" }) + ", " + d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }).replace(":00", ""); };
+  const many = keys.length > 1;
+  const C = [];
+  if (on("announced")) C.push(["Announced", "n", s => s.firstSeen ? esc(md(iso(new Date(s.firstSeen)))) : ""]);
+  if (on("date") || on("day") || on("time")) C.push(["Show", "n", s => esc([on("date") || on("day") ? showDate(s.date) : "", on("time") && s.time ? fmtTime(s.time) : ""].filter(Boolean).join(" · "))]);
+  if (on("headliner") || on("support")) C.push(["Bill", "bill", s => {
+    const h = on("headliner") ? (xpLink(s) ? `<a class="hl" href="${esc(xpLink(s))}">${esc(s.headliner)}</a>` : `<span class="hl">${esc(s.headliner)}</span>`) : "";
+    const sup = on("support") ? (s.support.length ? esc(s.support.join(", ")) : coBill(s) ? "<i>Shared bill</i>" : "") : "";
+    return h + (sup ? `<div class="sub">${on("headliner") ? "with " : ""}${sup}</div>` : "");
+  }]);
+  if (on("venue") || on("cap")) C.push(["Venue", "", s => (on("venue") ? esc(s.venue) : "") + (on("cap") && s.cap ? `<div class="sub">${s.cap.toLocaleString("en-US")} cap</div>` : "")]);
+  if (on("city") && !many) C.push(["City", "", (s, c) => esc(c.name)]);
+  if (on("age")) C.push(["Age", "n", s => esc(s.age || "")]);
+  if (on("price")) C.push(["Price", "n", s => esc(priceOf(s))]);
+  if (on("onsale") || on("presale") || on("notonsale")) C.push(["On sale", "n", (s, c) => [
+    on("onsale") && s.tm && s.tm.onsale ? esc(sale(s.tm.onsale, c)) : "",
+    on("presale") && s.tm && s.tm.presale ? `<div class="sub">Presale ${esc(sale(s.tm.presale, c))}</div>` : "",
+    on("notonsale") && notOnSale(s) ? `<div><span class="tag">Not on sale yet</span></div>` : ""].join("")]);
+  if (on("status")) C.push(["Status", "n", s => s.tm && STATUS[s.tm.status] ? `<span class="tag warn">${STATUS[s.tm.status]}</span>` : ""]);
+  if (on("team") || on("agents")) C.push(["THE·TEAM", "", s => s.clients.length ? (on("team") ? esc(s.clients.map(c => c.artist).join(", ")) : "") + (on("agents") && agentsOf(s).length ? `<div class="sub">${esc(agentsOf(s).join(", "))}</div>` : "") : ""]);
+  if (on("tmonly")) C.push(["Source", "", s => s.tmOnly ? "Ticketmaster" : ""]);
+  if (on("link")) C.push(["Tickets", "", s => xpLink(s) ? `<a href="${esc(xpLink(s))}">${esc(new URL(xpLink(s)).hostname.replace(/^www\./, ""))}</a>` : ""]);
+  for (let i = C.length - 1; i >= 0; i--)  // a column empty in every row only takes room
+    if (C[i][0] !== "Bill" && rows.every(([s, c]) => !C[i][2](s, c))) C.splice(i, 1);
+  const table = list => `<table><thead><tr>${C.map(([h, k]) => `<th class="${k}">${esc(h)}</th>`).join("")}</tr></thead><tbody>${
+    list.map(([s, c]) => `<tr>${C.map(([, k, f]) => `<td class="${k}">${f(s, c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+  const groups = many ? CITIES.filter(c => keys.includes(c.key)).map(c => [c, rows.filter(r => r[1] === c)]).filter(g => g[1].length) : [[null, rows]];
+  const v = xpEl("xpSince").value;
+  const when = v === "date" ? "since " + (xpEl("xpSinceDate").value ? md(xpEl("xpSinceDate").value) : "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
+  const filters = [xpEl("xpFav").checked || (xpEl("xpPage").checked && state.fav) ? "favorite venues" : "", xpEl("xpPage").checked && !capFull() ? `rooms ${capText()} cap` : "", xpEl("xpPage").checked && state.ours ? "THE·TEAM shows only" : "",
+    xpEl("xpPage").checked && state.noSupport ? "no support only" : "", xpEl("xpPage").checked && state.q ? `matching “${state.q}”` : "",
+    xpEl("xpFrom").value || xpEl("xpTo").value ? `shows ${xpEl("xpFrom").value ? "from " + md(xpEl("xpFrom").value) : ""}${xpEl("xpTo").value ? " to " + md(xpEl("xpTo").value) : ""}` : ""].filter(Boolean);
+  const cities = CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ");
+  const title = `Shows announced ${when}`;
+  return `<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
+    @page { size: letter landscape; margin: 14mm 13mm 15mm;
+      @bottom-left { content: "Just announced · ${esc(cities)}"; font: 7.5pt "Helvetica Neue", Helvetica, Arial, sans-serif; color: #8a877e; }
+      @bottom-right { content: counter(page) " / " counter(pages); font: 7.5pt "Helvetica Neue", Helvetica, Arial, sans-serif; color: #8a877e; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 8.6pt/1.38 "Helvetica Neue", Helvetica, Arial, sans-serif; color: #1b1b18; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1.6pt solid #1b1b18; padding-bottom: 7pt; margin-bottom: 4pt; }
+    h1 { font: italic 400 21pt/1.1 Georgia, "Times New Roman", serif; color: #2e7040; margin: 0; }
+    .meta { font-size: 8.6pt; color: #55534c; margin-top: 3pt; }
+    .stamp { text-align: right; font-size: 7.6pt; color: #8a877e; line-height: 1.5; }
+    .stamp b { display: block; font-size: 15pt; color: #1b1b18; font-weight: 500; }
+    h2 { font: 600 10.5pt/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif; margin: 15pt 0 3pt; display: flex; gap: 8pt; align-items: baseline; break-after: avoid; }
+    h2 span { font-weight: 400; color: #8a877e; font-size: 8pt; }
+    table { width: 100%; border-collapse: collapse; }
+    thead { display: table-header-group; }
+    th { font-size: 6.6pt; font-weight: 600; letter-spacing: .09em; text-transform: uppercase; color: #8a877e; text-align: left; padding: 5pt 9pt 4pt 0; border-bottom: .6pt solid #1b1b18; }
+    td { padding: 4.6pt 9pt 4.6pt 0; border-bottom: .4pt solid #e2dfd6; vertical-align: top; }
+    tr { break-inside: avoid; }
+    .n { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .bill { width: 38%; }
+    .hl { font-weight: 600; font-size: 9.2pt; color: #1b1b18; }
+    a.hl { color: #24603a; text-decoration: none; border-bottom: .5pt solid #9fc1a8; }
+    a { color: #24603a; text-decoration: none; }
+    .sub { color: #6b6a63; font-size: 7.8pt; margin-top: 1pt; }
+    .tag { display: inline-block; margin-top: 2pt; font-size: 6.4pt; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #fff; background: #2e7040; padding: 1pt 4pt; border-radius: 2pt; }
+    .tag.warn { background: #b3402a; }
+    .foot { margin-top: 10pt; font-size: 7.4pt; color: #8a877e; }
+  </style></head><body>
+  <header><div><h1>${esc(title)}</h1><div class="meta">${esc([cities, ...filters].join(" · "))}</div></div>
+    <div class="stamp"><b>${rows.length.toLocaleString("en-US")} show${rows.length === 1 ? "" : "s"}</b>Exported ${esc(new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }))}</div></header>
+  ${groups.map(([c, list]) => (c ? `<h2>${esc(c.name)} <span>${list.length} show${list.length === 1 ? "" : "s"}</span></h2>` : "") + table(list)).join("")}
+  <p class="foot">${on("headliner") ? "Headliners link to their ticket page. " : ""}${on("cap") ? "Capacities are approximate. " : ""}Times are local to each city.</p>
+  </body></html>`;
+}
 xpEl("xpPdf").addEventListener("click", () => {
   const { rows, cols, keys } = xpRows();
-  const title = xpTitle(keys);
-  const doc = `<!doctype html><html><head><meta charset="utf-8"><title>${esc(title)}</title><style>
-    @page { size: landscape; margin: 12mm; }
-    body { font: 10px/1.35 -apple-system, "Helvetica Neue", Arial, sans-serif; color: #111; margin: 0; }
-    h1 { font-size: 16px; margin: 0 0 2px; font-weight: 600; } p { margin: 0 0 10px; color: #555; }
-    table { border-collapse: collapse; width: 100%; } th { text-align: left; font-weight: 600; border-bottom: 1.5px solid #111; padding: 4px 6px 4px 0; }
-    td { border-bottom: 1px solid #ddd; padding: 4px 6px 4px 0; vertical-align: top; } tr { page-break-inside: avoid; }
-    a { color: inherit; text-decoration: none; } a.t { color: #1a5c2e; text-decoration: underline; text-decoration-thickness: .5px; text-underline-offset: 2px; }
-    td.n { white-space: nowrap; }
-  </style></head><body><h1>${esc(title)}</h1><p>${rows.length} show${rows.length === 1 ? "" : "s"} · exported ${esc(new Date().toLocaleString("en-US"))} · headliners link to tickets</p>
-  <table><thead><tr>${cols.map(c => `<th>${esc(c[1])}</th>`).join("")}</tr></thead><tbody>${rows.map(([s, c]) =>
-    `<tr>${cols.map(col => { const v = col[3](s, c);
-      if (col[0] === "headliner" && xpLink(s)) return `<td><a class="t" href="${esc(xpLink(s))}">${esc(v)}</a></td>`;
-      return col[0] === "link" && v ? `<td><a href="${esc(v)}">${esc(new URL(v).hostname.replace(/^www\./, ""))}</a></td>` :
-      `<td${["announced", "date", "onsale", "presale", "cap", "price"].includes(col[0]) ? ' class="n"' : ""}>${esc(v)}</td>`; }).join("")}</tr>`).join("")}</tbody></table></body></html>`;
+  const doc = xpPdfDoc(rows, cols, keys);
   const f = document.createElement("iframe");  // print from a hidden frame: no pop-up to block
   f.style.cssText = "position:fixed;width:0;height:0;border:0;right:0;bottom:0";
   document.body.appendChild(f);
   f.contentDocument.open(); f.contentDocument.write(doc); f.contentDocument.close();
   setTimeout(() => { f.contentWindow.focus(); f.contentWindow.print(); setTimeout(() => f.remove(), 60000); }, 250);
+});
+// Copy as text, venue by venue (favorites first, in their order), each show as
+//   * [Artist](ticket link) – Tue 9/29
+function xpText(rows) {
+  const groups = new Map();
+  for (const [s, c] of rows) {
+    const k = favKey(c.key, s.venue);
+    (groups.get(k) || groups.set(k, { v: s.venue, list: [] }).get(k)).list.push(s);
+  }
+  const rank = k => FAV.has(k) ? FAV.get(k).i : 1e3;
+  const thisYear = new Date().getFullYear();
+  const day = d => { const x = d8(d); return `${FULLDAY[x.getDay()].slice(0, 3)} ${x.getMonth() + 1}/${x.getDate()}${x.getFullYear() !== thisYear ? "/" + String(x.getFullYear()).slice(2) : ""}`; };
+  return [...groups.entries()].sort((a, b) => rank(a[0]) - rank(b[0]) || a[1].v.localeCompare(b[1].v)).map(([k, g]) =>
+    (FAV.has(k) ? FAV.get(k).head : g.v.toUpperCase()) + "\n\n" +
+    g.list.sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99"))
+      .map(s => `* ${xpLink(s) ? `[${s.headliner}](${xpLink(s)})` : s.headliner} – ${day(s.date)}`).join("\n")).join("\n\n");
+}
+xpEl("xpText").addEventListener("click", async () => {
+  const text = xpText(xpRows().rows), box = xpEl("xpTextOut"), btn = xpEl("xpText");
+  box.value = text; box.hidden = false;
+  let ok = false;
+  try { await navigator.clipboard.writeText(text); ok = true; } catch (e) { box.select(); try { ok = document.execCommand("copy"); } catch (e2) {} }
+  btn.textContent = ok ? "Copied" : "Select and copy below";
+  setTimeout(() => { btn.textContent = "Copy text"; }, 2000);
 });
 xpEl("exportDlg").addEventListener("input", e => {
   if (e.target.id === "xpSince") xpEl("xpSinceDate").hidden = e.target.value !== "date";
@@ -863,6 +974,7 @@ document.getElementById("icsBtn").addEventListener("click", () => {
   if (favs.length) downloadIcs(favs, "Favorite shows");
 });
 document.getElementById("noSupport").addEventListener("click", () => { state.noSupport = !state.noSupport; render(); });
+document.getElementById("favOnly").addEventListener("click", () => { state.fav = !state.fav; render(); });
 for (const [id, end] of [["capLo", "lo"], ["capHi", "hi"]])
   document.getElementById(id).addEventListener("input", e => {
     let v = +e.target.value;
