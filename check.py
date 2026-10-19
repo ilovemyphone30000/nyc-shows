@@ -114,6 +114,12 @@ with sync_playwright() as p:
         txt = page.input_value("#xpTextOut")
         check("export copy-as-text uses the venue / * [Artist](link) – Day M/D format",
               n == 0 or (bool(re.search(r"^\* .+ – (Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d+/\d+", txt, re.M)) and txt.split("\n")[0].isupper()), txt[:80])
+        page.check("#xpNoSup")
+        page.select_option("#xpCapLo", "4")  # 1,000+
+        n2 = int(page.inner_text("#xpN").split()[0])
+        check("export filters: no support only and capacity narrow the count", n2 <= n, f"{n} -> {n2}")
+        page.uncheck("#xpNoSup")
+        page.select_option("#xpCapLo", "0")
         page.keyboard.press("Escape")
         before = rows(page)
         page.click("#favOnly")

@@ -326,7 +326,11 @@ body.compact { font-size: 12.5px; }
     </fieldset>
     <fieldset><legend>Filters</legend>
       <label class="xp-check"><input type="checkbox" id="xpFav"> Favorite venues only</label>
-      <label class="xp-check"><input type="checkbox" id="xpPage" checked> Use the page's filters: <span id="xpPageNote"></span></label>
+      <label class="xp-check"><input type="checkbox" id="xpNoSup"> No support only</label>
+      <div class="xp-row"><span>Capacity</span>
+        <select id="xpCapLo" aria-label="Smallest room"></select><span>to</span><select id="xpCapHi" aria-label="Largest room"></select>
+        <span class="xp-opt" title="Rooms of unknown size count only when both ends are Any">(approx.)</span></div>
+      <label class="xp-check"><input type="checkbox" id="xpPage" checked> Also use the page's filters: <span id="xpPageNote"></span></label>
     </fieldset>
     <fieldset><legend>Columns</legend><div class="xp-cols" id="xpCols"></div></fieldset>
     <fieldset><legend>Sort by</legend>
@@ -781,13 +785,23 @@ const xpWhen = (t, c) => { const d = new Date(t), o = { timeZone: TZ[c.key] };
   return d.toLocaleDateString("en-CA", o) + " " + d.toLocaleTimeString("en-US", { ...o, hour: "numeric", minute: "2-digit" }); };
 const xpPrefs = Object.assign({ cols: XP_COLS.filter(c => c[2]).map(c => c[0]), since: "7", sort: "found" }, store.get("xp", {}));
 const xpEl = id => document.getElementById(id);
+const xpCap = () => ({ lo: +xpEl("xpCapLo").value, hi: +xpEl("xpCapHi").value });
+const xpCapFull = () => xpCap().lo === 0 && xpCap().hi === 10;
+const xpCapOk = s => { const { lo, hi } = xpCap(); return (lo === 0 && hi === 10) || (s.cap != null && s.cap >= CAP_STOPS[lo] && s.cap <= CAP_STOPS[hi]); };
+const xpCapText = () => { const { lo, hi } = xpCap(); return lo === 0 && hi === 10 ? "Any" : hi === 10 ? capNum(CAP_STOPS[lo]) + "+" : lo === 0 ? "up to " + capNum(CAP_STOPS[hi]) : capNum(CAP_STOPS[lo]) + "–" + capNum(CAP_STOPS[hi]); };
+const xpNoSupport = s => !s.support.length && !coBill(s);
 function xpInit() {
   xpEl("xpCities").innerHTML = CITIES.map(c => `<label><input type="checkbox" value="${c.key}"${c.key === city.key ? " checked" : ""}> ${esc(c.name)}</label>`).join("");
   xpEl("xpCols").innerHTML = XP_COLS.map(([k, label]) => `<label><input type="checkbox" value="${k}"${xpPrefs.cols.includes(k) ? " checked" : ""}> ${esc(label)}</label>`).join("");
   xpEl("xpSince").value = xpPrefs.since; xpEl("xpSort").value = xpPrefs.sort;
   xpEl("xpSinceDate").hidden = xpPrefs.since !== "date";
   xpEl("xpFav").checked = !!state.fav; xpEl("xpTextOut").hidden = true;
-  const f = [capFull() ? "" : "cap " + capText(), state.ours ? "THE·TEAM only" : "", state.noSupport ? "no support only" : "", state.q ? `search “${state.q}”` : ""].filter(Boolean);
+  xpEl("xpNoSup").checked = !!state.noSupport;  // start from the page's settings, then change freely
+  const opt = (i, end) => `<option value="${i}">${i === 0 && end === "lo" ? "Any" : i === 10 ? "Any" : CAP_STOPS[i].toLocaleString("en-US")}</option>`;
+  xpEl("xpCapLo").innerHTML = CAP_STOPS.slice(0, 10).map((_, i) => opt(i, "lo")).join("");
+  xpEl("xpCapHi").innerHTML = CAP_STOPS.slice(1).map((_, i) => opt(i + 1, "hi")).join("");
+  xpEl("xpCapLo").value = capSel.lo; xpEl("xpCapHi").value = capSel.hi;
+  const f = [state.ours ? "THE·TEAM only" : "", state.q ? `search “${state.q}”` : ""].filter(Boolean);
   xpEl("xpPageNote").textContent = f.length ? f.join(", ") : "none set";
   xpCount();
 }
@@ -802,7 +816,9 @@ function xpRows() {
       if (!s.firstSeen || Date.parse(s.firstSeen) < since) continue;
       if ((from && s.date < from) || (to && s.date > to)) continue;
       if ((xpEl("xpFav").checked || (usePage && state.fav)) && !isFav(s, c)) continue;
-      if (usePage && (!capOk(s) || (state.ours && !s.clients.length) || (state.noSupport && s.support.length) ||
+      if (xpEl("xpNoSup").checked && !xpNoSupport(s)) continue;
+      if (!xpCapOk(s)) continue;
+      if (usePage && ((state.ours && !s.clients.length) ||
           (state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))))) continue;
       rows.push([s, c]);
     }
@@ -821,7 +837,7 @@ function xpCount() {
 function xpTitle(keys) {
   const v = xpEl("xpSince").value;
   const when = v === "date" ? "since " + (xpEl("xpSinceDate").value || "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
-  return `Shows announced ${when} · ${CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ")}` + (xpEl("xpPage").checked && !capFull() ? ` · cap ${capText()}` : "");
+  return `Shows announced ${when} · ${CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ")}` + (xpCapFull() ? "" : ` · cap ${xpCapText()}`);
 }
 function xpSave(body, type, name) {
   const a = document.createElement("a");
@@ -875,8 +891,8 @@ function xpPdfDoc(rows, cols, keys) {
   const groups = many ? CITIES.filter(c => keys.includes(c.key)).map(c => [c, rows.filter(r => r[1] === c)]).filter(g => g[1].length) : [[null, rows]];
   const v = xpEl("xpSince").value;
   const when = v === "date" ? "since " + (xpEl("xpSinceDate").value ? md(xpEl("xpSinceDate").value) : "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
-  const filters = [xpEl("xpFav").checked || (xpEl("xpPage").checked && state.fav) ? "favorite venues" : "", xpEl("xpPage").checked && !capFull() ? `rooms ${capText()} cap` : "", xpEl("xpPage").checked && state.ours ? "THE·TEAM shows only" : "",
-    xpEl("xpPage").checked && state.noSupport ? "no support only" : "", xpEl("xpPage").checked && state.q ? `matching “${state.q}”` : "",
+  const filters = [xpEl("xpFav").checked || (xpEl("xpPage").checked && state.fav) ? "favorite venues" : "", xpCapFull() ? "" : `rooms ${xpCapText()} cap`, xpEl("xpPage").checked && state.ours ? "THE·TEAM shows only" : "",
+    xpEl("xpNoSup").checked ? "no support only" : "", xpEl("xpPage").checked && state.q ? `matching “${state.q}”` : "",
     xpEl("xpFrom").value || xpEl("xpTo").value ? `shows ${xpEl("xpFrom").value ? "from " + md(xpEl("xpFrom").value) : ""}${xpEl("xpTo").value ? " to " + md(xpEl("xpTo").value) : ""}` : ""].filter(Boolean);
   const cities = CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ");
   const title = `Shows announced ${when}`;
@@ -948,6 +964,8 @@ xpEl("xpText").addEventListener("click", async () => {
   setTimeout(() => { btn.textContent = "Copy text"; }, 2000);
 });
 xpEl("exportDlg").addEventListener("input", e => {
+  if (e.target.id === "xpCapLo" && +xpEl("xpCapLo").value >= +xpEl("xpCapHi").value) xpEl("xpCapHi").value = +xpEl("xpCapLo").value + 1;
+  if (e.target.id === "xpCapHi" && +xpEl("xpCapHi").value <= +xpEl("xpCapLo").value) xpEl("xpCapLo").value = +xpEl("xpCapHi").value - 1;
   if (e.target.id === "xpSince") xpEl("xpSinceDate").hidden = e.target.value !== "date";
   xpCount();
 });
