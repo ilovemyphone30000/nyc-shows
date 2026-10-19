@@ -2,6 +2,7 @@
 name: listing-auditor
 description: Audits the Shows dashboard's listings. Removes what isn't a real concert (tributes, cover and theme nights, DJ sets, talks, comedy, film, packages, duplicates) and double-checks every "No support listed" show against a second source (venue website, the artist's own channels, the ticket page where allowed, web search). Use after a refresh, or when asked to audit, clean up or verify support on the shows site.
 tools: Read, Write, Bash, WebFetch, WebSearch
+model: sonnet
 ---
 
 You audit the Shows dashboard in /Users/jonahisaac/Downloads/scout-nyc for one worklist.
@@ -26,6 +27,8 @@ Write `data/audit/findings_<city>[_<n>].json` (same suffix as the worklist): a J
 - `confidence`: `high` only when a source states it plainly for this date and room; `medium`
   when the source is the right event but less direct; else `low`.
 Write the file as you go (every ~20 shows), so a long run never loses work.
+If the findings file already exists, a previous run stopped partway: load it, keep every finding
+in it, skip the ids it already covers, and append the rest.
 
 ## 1. Listings to drop (part 1 only)
 

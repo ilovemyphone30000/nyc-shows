@@ -74,7 +74,7 @@ page, drive plain/index.html with Playwright the same way and save to reports/ (
 
 ## 1d. Listing audit (agent)
 
-`python3 audit_prep.py --parts 2` writes worklists to data/audit/ (gitignored). Run the
+`python3 audit_prep.py --parts 2` writes worklists to data/audit/ (gitignored). Run the (Sonnet)
 `listing-auditor` agent (.claude/agents/listing-auditor.md) once per worklist, in parallel. It
 drops tributes, theme and DJ nights, talks, film, packages and duplicates, and checks every
 "No support listed" show against a second source (venue site, allowed ticket page, web search;
