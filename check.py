@@ -110,6 +110,7 @@ with sync_playwright() as p:
             page.click("#xpCsv")
         lines = open(dl.value.path(), encoding="utf-8-sig", newline="").read().split("\r\n")
         check("export CSV has a header and one row per show", lines[0].startswith("Announced,") and len(lines) - 1 == n, f"{len(lines) - 1} rows vs {n}")
+        check("export always has headliner, support, venue and city", all(h in lines[0].split(",") for h in ("Headliner", "Support", "Venue", "City")), lines[0])
         page.click("#xpText")
         txt = page.evaluate("xpText(xpRows().rows)")
         links = page.locator("#xpTextOut a").count()

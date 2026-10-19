@@ -187,6 +187,9 @@ main { padding-block: 8px 80px; }
 .xp-n { margin-right: auto; font-size: 13px; color: var(--muted); }
 .xp-main { background: var(--ink); color: var(--bg); }
 .xp-cap { justify-self: start; min-height: 36px; }
+.xp-adv summary { cursor: pointer; font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.xp-adv[open] summary { margin-bottom: 10px; }
+.xp-adv .xp-opt { margin: 6px 0 0; font-size: 12px; color: var(--muted); }
 .xp-text { max-height: 220px; overflow: auto; font-size: 13px; line-height: 1.45; border: 1px solid var(--grey4); background: var(--panel); color: var(--ink); padding: 4px 12px; }
 .xp-text p { margin: 10px 0 4px; } .xp-text ul { margin: 0; padding-left: 18px; } .xp-text a { color: var(--accent); }
 .ics-btn { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--grey4); display: inline-flex; gap: 6px; align-items: center; }
@@ -339,9 +342,11 @@ body.compact { font-size: 12.5px; }
           <input type="range" id="xpCapHi" min="0" max="10" step="1" value="10" aria-label="Largest room"></div>
         <span class="cap-val" id="xpCapVal">Any</span>
       </div>
-      <label class="xp-check"><input type="checkbox" id="xpPage" checked> Also use the page's search: <span id="xpPageNote"></span></label>
     </fieldset>
-    <fieldset><legend>Columns</legend><div class="xp-cols" id="xpCols"></div></fieldset>
+    <details class="xp-adv"><summary>Advanced settings</summary>
+      <fieldset><legend>Extra columns</legend><div class="xp-cols" id="xpCols"></div>
+        <p class="xp-opt">Headliner, support, venue and city are always included.</p></fieldset>
+    </details>
     <fieldset><legend>Sort by</legend>
       <div class="xp-row"><select id="xpSort">
         <option value="found">Day announced, newest first</option><option value="date">Show date, soonest first</option>
@@ -770,10 +775,10 @@ function render() {
 const XP_COLS = [
   ["announced", "Announced", true, s => s.firstSeen ? iso(new Date(s.firstSeen)) : ""],
   ["date", "Show date", true, s => xpShowDate(s)],
-  ["headliner", "Headliner", true, s => s.headliner],
-  ["support", "Support", true, s => s.support.join(", ") || (coBill(s) ? "Shared bill" : "")],
-  ["venue", "Venue", true, s => s.venue],
-  ["city", "City", true, (s, c) => c.name],
+  ["headliner", "Headliner", "always", s => s.headliner],
+  ["support", "Support", "always", s => s.support.join(", ") || (coBill(s) ? "Shared bill" : "")],
+  ["venue", "Venue", "always", s => s.venue],
+  ["city", "City", "always", (s, c) => c.name],
   ["age", "Age", false, s => s.age || ""],
 ];
 // "Sat, Mar 27, 2027 · 8 PM": day, date and time in one column
@@ -804,7 +809,7 @@ function xpInit() {
   xpEl("xpSinceBox").hidden = xpList() !== "new";
   xpEl("xpSort").value = xpList() === "week" && xpPrefs.sort === "found" ? "date" : xpPrefs.sort;
   xpEl("xpCities").innerHTML = CITIES.map(c => `<label><input type="checkbox" value="${c.key}"${c.key === city.key ? " checked" : ""}> ${esc(c.name)}</label>`).join("");
-  xpEl("xpCols").innerHTML = XP_COLS.map(([k, label]) => `<label><input type="checkbox" value="${k}"${xpPrefs.cols.includes(k) ? " checked" : ""}> ${esc(label)}</label>`).join("");
+  xpEl("xpCols").innerHTML = XP_COLS.filter(c => c[2] !== "always").map(([k, label]) => `<label><input type="checkbox" value="${k}"${xpPrefs.cols.includes(k) ? " checked" : ""}> ${esc(label)}</label>`).join("");
   xpEl("xpSince").value = xpPrefs.since; xpEl("xpSort").value = xpList() === "week" && xpPrefs.sort === "found" ? "date" : xpPrefs.sort;
   xpEl("xpSinceDate").hidden = xpPrefs.since !== "date";
   xpEl("xpTextOut").hidden = true;
@@ -812,8 +817,6 @@ function xpInit() {
   const opt = (i, end) => `<option value="${i}">${i === 0 && end === "lo" ? "Any" : i === 10 ? "Any" : CAP_STOPS[i].toLocaleString("en-US")}</option>`;
   xpEl("xpTeam").checked = !!state.ours;
   Object.assign(xpCapSel, capSel); xpCapSync();
-  const f = [state.q ? `“${state.q}”` : ""].filter(Boolean);
-  xpEl("xpPageNote").textContent = f.length ? f.join(", ") : "none set";
   xpCount();
 }
 function xpRows() {
@@ -821,7 +824,7 @@ function xpRows() {
   const v = xpEl("xpSince").value;
   const week = xpList() === "week";
   const since = week ? -Infinity : v === "date" ? (xpEl("xpSinceDate").value ? new Date(xpEl("xpSinceDate").value + "T00:00").getTime() : 0) : Date.now() - (+v) * 864e5;
-  const from = xpEl("xpFrom").value, to = xpEl("xpTo").value, usePage = xpEl("xpPage").checked;
+  const from = xpEl("xpFrom").value, to = xpEl("xpTo").value;
   let rows = [];
   for (const c of CITIES.filter(c => keys.includes(c.key)))
     for (const s of week ? c.shows : c.feed) {
@@ -831,13 +834,13 @@ function xpRows() {
       if (xpEl("xpNoSup").checked && !xpNoSupport(s)) continue;
       if (!xpCapOk(s)) continue;
       if (xpEl("xpTeam").checked && !s.clients.length) continue;
-      if (usePage && state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))) continue;
+      if (state.q && !norm([s.headliner, ...s.support, s.venue, ...agentsOf(s)].join(" ")).includes(norm(state.q))) continue;
       rows.push([s, c]);
     }
   const by = xpEl("xpSort").value;
   const key = ([s]) => by === "found" ? -Date.parse(s.firstSeen) : 0;
   rows.sort((a, b) => key(a) - key(b) || a[0].date.localeCompare(b[0].date) || (a[0].time || "99").localeCompare(b[0].time || "99"));
-  const cols = XP_COLS.filter(([k]) => xpEl("xpCols").querySelector(`input[value="${k}"]`).checked);
+  const cols = XP_COLS.filter(([k, , fixed]) => fixed === "always" || xpEl("xpCols").querySelector(`input[value="${k}"]`).checked);
   return { rows, cols, keys };
 }
 function xpCount() {
@@ -891,7 +894,7 @@ function xpPdfDoc(rows, cols, keys) {
   const v = xpEl("xpSince").value;
   const when = v === "date" ? "since " + (xpEl("xpSinceDate").value ? md(xpEl("xpSinceDate").value) : "the start") : v === "1" ? "in the last 24 hours" : `in the last ${v} days`;
   const filters = [xpEl("xpFav").checked ? "favorite venues" : "", xpCapFull() ? "" : `rooms ${xpCapText()} cap`, xpEl("xpTeam").checked ? "THE·TEAM shows only" : "",
-    xpEl("xpNoSup").checked ? "no support only" : "", xpEl("xpPage").checked && state.q ? `matching “${state.q}”` : "",
+    xpEl("xpNoSup").checked ? "no support only" : "", state.q ? `matching “${state.q}”` : "",
     xpEl("xpFrom").value || xpEl("xpTo").value ? `shows ${xpEl("xpFrom").value ? "from " + md(xpEl("xpFrom").value) : ""}${xpEl("xpTo").value ? " to " + md(xpEl("xpTo").value) : ""}` : ""].filter(Boolean);
   const cities = CITIES.filter(c => keys.includes(c.key)).map(c => c.name).join(", ");
   const title = xpList() === "week" ? `Shows ${md(FROM)} – ${md(TO)}` : `Shows announced ${when}`;
