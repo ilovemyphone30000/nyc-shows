@@ -1,1 +1,534 @@
-{"_about": "Shows left off the page on purpose, by show id. Written by audit_apply.py; edit by hand to undo.", "nyc": {}, "chi": {}, "la": {}}
+{
+ "_about": "Shows left off the page on purpose (tributes, theme nights, talks, DJ sets, junk), by show id, with the reason and the source that settled it. Written by audit_apply.py; edit by hand to undo.",
+ "nyc": {
+  "480111": {
+   "why": "Halloween cover night: Cherch performing as Rage Against the Machine, other bands as Alice in Chains etc.",
+   "source": "https://www.ticketmaster.com/our-wicked-lady-presents-90s-cover-brooklyn-new-york-10-21-2026/event/00006523A66EF1C5",
+   "on": "2026-10-19"
+  },
+  "478218": {
+   "why": "Comedy show: David Cross with comedians Sean Patton, H. Jon Benjamin and others.",
+   "source": "https://www.ticketmaster.com/a-benefit-for-little-essentials-with-brooklyn-new-york-10-20-2026/event/30006512E9FA7FBD",
+   "on": "2026-10-19"
+  },
+  "480816": {
+   "why": "Halloween cover night: Cowboygirl as Tom Petty, with other acts covering other artists.",
+   "source": "https://pools.events/event/t6RSuqCG/halloween-cover-show-art-market/",
+   "on": "2026-10-19"
+  },
+  "478366": {
+   "why": "Talk: Conan O'Brien in conversation with David Remnick (New Yorker Festival).",
+   "source": "https://festival.newyorker.com/event-details/",
+   "on": "2026-10-19"
+  },
+  "478369": {
+   "why": "Live film score performed to a screening of Tenebre.",
+   "source": "https://wl.eventim.us/event/tenebre/702281",
+   "on": "2026-10-19"
+  },
+  "480860": {
+   "why": "Rocky Horror Picture Show screening/shadow-cast event, not a concert.",
+   "source": "https://wl.eventim.us/event/the-rocky-horror-picture-show-extra-transsexual/707116",
+   "on": "2026-10-19"
+  },
+  "480861": {
+   "why": "Rocky Horror Picture Show screening/shadow-cast event, not a concert.",
+   "source": "https://wl.eventim.us/event/THE-ROCKY-HORROR-PICTURE-SHOW-EXTRA-TRANSSEXUAL/707121",
+   "on": "2026-10-19"
+  },
+  "477439": {
+   "why": "Rocky Horror Picture Show live theme event, not a concert.",
+   "source": "https://www.ticketweb.com/event/the-rocky-horror-picture-show-berlin-tickets/15039393",
+   "on": "2026-10-19"
+  },
+  "477440": {
+   "why": "Rocky Horror Picture Show live theme event, not a concert.",
+   "source": "https://www.ticketweb.com/event/the-rocky-horror-picture-show-berlin-tickets/15039403",
+   "on": "2026-10-19"
+  },
+  "478867": {
+   "why": "Rocky Horror Picture Show live theme event, not a concert.",
+   "source": "https://dice.fm/event/6dgnn8-the-rocky-horror-picture-show-live-30th-oct-cmon-everybody-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "478868": {
+   "why": "Rocky Horror Picture Show live theme event, not a concert.",
+   "source": "https://dice.fm/event/l8mbbp-the-rocky-horror-picture-show-live-31st-oct-cmon-everybody-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "477925": {
+   "why": "Rocky Horror Halloween theme show, not a concert.",
+   "source": "https://www.ticketmaster.com/the-rocky-horror-halloween-show-new-york-new-york-10-31-2026/event/0000650ACAF81A19",
+   "on": "2026-10-19"
+  },
+  "480163": {
+   "why": "Halloween cover night: Michael Eliran as The Beatles, Helenor as The Kinks.",
+   "source": "https://www.eventim.us/event/diyween-2026/707153",
+   "on": "2026-10-19"
+  },
+  "480573": {
+   "why": "Cover night: Belle & Sebastian house band, Majorette as The Magnetic Fields, etc.",
+   "source": "https://dice.fm/event/eo9236-twee-halloween-belle-sebastian-magnetic-fields-velvet-underground-28th-oct-union-pool-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "479078": {
+   "why": "Halloween cover set: Florry performing as The Rolling Stones (\"The Florring Stones\").",
+   "source": "https://dice.fm/event/eonwl2-the-florring-stones-and-big-star-29th-oct-alphaville-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "479079": {
+   "why": "Halloween cover set: Florry performing as The Rolling Stones (\"The Florring Stones\").",
+   "source": "https://dice.fm/event/ryo9ow-the-florring-stones-and-big-star-late-show-29th-oct-alphaville-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "479347": {
+   "why": "Halloween cover night: Mixed State as Bikini Kill, Bastards of Young as The Replacements.",
+   "source": "https://bandnada.com/p/82888-gutterween-thurs-bikini-kill-mixed-state-the",
+   "on": "2026-10-19"
+  },
+  "479346": {
+   "why": "Halloween cover night: Steal, Cheat and Gamble as Creed, Cherch as Kendrick Lamar.",
+   "source": "https://bandnada.com/p/82891-gutterween-friday-distillers-brody-baby",
+   "on": "2026-10-19"
+  },
+  "479340": {
+   "why": "Halloween cover night: Sana Sana as Deftones, Bad Timing as Joyce Manor.",
+   "source": "https://www.eventbrite.com/e/halloween-cover-show-ft-deftones-joyce-manor-modest-mouse-siouxsie-tickets-2001931311443",
+   "on": "2026-10-19"
+  },
+  "479345": {
+   "why": "Halloween cover night: Sammi Lanzetta as Amy Winehouse, Pete Mancini as Oasis.",
+   "source": "https://bandnada.com/p/82892-gutterween-saturday-amy-winehouse-sammi",
+   "on": "2026-10-19"
+  },
+  "480009": {
+   "why": "Halloween cover night: Scarys On The Wall as Alice in Chains, Onesie as Stone Temple Pilots.",
+   "source": "https://bandnada.com/p/83272-saturday-10-31-26-halloween-1995-alice-in-chains",
+   "on": "2026-10-19"
+  },
+  "479258": {
+   "why": "Halloween cover night: Wince as Black Sabbath, Venus Twins as Modern Baseball.",
+   "source": "https://tickets.venuepilot.com/e/cropsey-halloween-2026-10-31-market-hotel-1140-myrtle-ave-brooklyn-nyc-ny-bushwick-brooklyn-new-york--5831f9",
+   "on": "2026-10-19"
+  },
+  "480556": {
+   "why": "Halloween cover night: Freyja as The Cranberries, The Planes as Violent Femmes.",
+   "source": "https://bandnada.com/p/83025-owl-o-ween-prom-post-gutterween-rager-the",
+   "on": "2026-10-19"
+  },
+  "468877": {
+   "why": "Grateful Shred is a Grateful Dead cover band.",
+   "source": "https://www.axs.com/events/1401238/grateful-shred-tickets",
+   "on": "2026-10-19"
+  },
+  "479319": {
+   "why": "Halloween theme party (Halloween at 9AM), not a concert.",
+   "source": "https://www.axs.com/events/1622834/9am-banger-halloween-at-9am-tickets",
+   "on": "2026-10-19"
+  },
+  "480822": {
+   "why": "Tribute: The Last Waltz performed by Stagefright.",
+   "source": "https://dice.fm/event/ryew6v-the-last-waltz-performed-by-stagefright-12th-dec-union-pool-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "480823": {
+   "why": "Tribute: The Last Waltz performed by Stagefright.",
+   "source": "https://dice.fm/event/mxw5rk-the-last-waltz-performed-by-stagefright-13th-dec-union-pool-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "470473": {
+   "why": "Screening of Blade Runner with live score, not a concert.",
+   "source": "https://us.atgtickets.com/events/blade-runner/kings-theatre-brooklyn/",
+   "on": "2026-10-19"
+  },
+  "tm:Z7r9jZ1A70U00": {
+   "why": "Blade Runner screening with live score; duplicate of the Kings Theatre listing the same night.",
+   "source": "https://www.ticketmaster.com/event/Z7r9jZ1A70U00",
+   "on": "2026-10-19"
+  },
+  "480303": {
+   "why": "Jacqueline Novak is a stand-up comedian.",
+   "source": "https://www.ticketmaster.com/jacqueline-novak-brooklyn-new-york-11-23-2026/event/30006546423DA25E",
+   "on": "2026-10-19"
+  },
+  "480304": {
+   "why": "Jacqueline Novak is a stand-up comedian.",
+   "source": "https://www.ticketmaster.com/jacqueline-novak-brooklyn-new-york-11-24-2026/event/3000654647B1A44D",
+   "on": "2026-10-19"
+  },
+  "480842": {
+   "why": "Talk: Andi Harriman in conversation.",
+   "source": "https://dice.fm/event/l8pgrp-33-13-the-cures-disintegration-in-conversation-14th-nov-rough-trade-below-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "475130": {
+   "why": "Steve Aoki DJ show with DJ support (Nostalgix, Henry Fong, iaco).",
+   "source": "https://www.axs.com/events/1518849/steve-aoki-tickets",
+   "on": "2026-10-19"
+  },
+  "478478": {
+   "why": "Mike Servito DJ night at Dead Letter No. 9 with DJ support.",
+   "source": "https://dice.fm/event/xegpxl-mike-servito-sister-system-acid-mama-beewack-24th-oct-dead-letter-no9-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "477765": {
+   "why": "Mozhgan DJ night at Good Room with JDH & Dave P.",
+   "source": "https://ra.co/events/2519302",
+   "on": "2026-10-19"
+  },
+  "478476": {
+   "why": "Lauren Flax DJ night at Dead Letter No. 9.",
+   "source": "https://dice.fm/event/g58enb-psychosis-halloween-pt-1-of-4-lauren-flax-more-23rd-oct-dead-letter-no9-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "478475": {
+   "why": "DJ night at Dead Letter No. 9 (Ron Like Hell and DJs).",
+   "source": "https://dice.fm/event/eonelw-ron-like-hell-sissies-of-mercy-planet-b-more-30th-oct-dead-letter-no9-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "478477": {
+   "why": "DJ night at Dead Letter No. 9 (Sterling Juan Diaz and DJs).",
+   "source": "https://dice.fm/event/bbgm6o-halloween-sterling-juan-diaz-haruka-boyyyish-31st-oct-dead-letter-no9-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "477119": {
+   "why": "House/techno DJ party at Brooklyn Storehouse (Beltran, Mochakk, Carlita and others).",
+   "source": "https://dice.fm/event/7dxmrb-teksupport-circoloco-halloween-friday-30th-oct-brooklyn-storehouse-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "477120": {
+   "why": "House/techno DJ party at Brooklyn Storehouse (ANOTR, Dixon, Jimi Jules and others).",
+   "source": "https://dice.fm/event/pyw9aw-teksupport-circoloco-halloween-saturday-31st-oct-brooklyn-storehouse-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "479937": {
+   "why": "House/techno DJ party at Brooklyn Storehouse (Bedouin, Dixon and others).",
+   "source": "https://dice.fm/event/l8pw3p-teksupport-circoloco-halloween-sunday-1st-nov-brooklyn-storehouse-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "477764": {
+   "why": "Techno club night at Good Room (Terence Fixmer, Andi).",
+   "source": "https://ra.co/events/2519294",
+   "on": "2026-10-19"
+  },
+  "477210": {
+   "why": "Purple Disco Machine DJ set at Pacha New York nightclub.",
+   "source": "https://dice.fm/event/v3xyyg-purple-disco-machine-31st-oct-pacha-new-york-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "478740": {
+   "why": "Horse Meat Disco is a DJ collective and dance party.",
+   "source": "https://dice.fm/event/6dgpq8-horse-meat-disco-new-york-halloween-31st-oct-knockdown-center-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "480563": {
+   "why": "Tiki Disco is a dance party.",
+   "source": "https://ra.co/events/2553958",
+   "on": "2026-10-19"
+  },
+  "480772": {
+   "why": "DJ night at Jupiter Disco (Ayanna Heaven).",
+   "source": "https://dice.fm/event/6dywmb-halloween-part-i-ayanna-heaven-akanbi-lafhomme-30th-oct-jupiter-disco-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "480773": {
+   "why": "DJ night at Jupiter Disco (Stacey Hotwaxx Hale, Pat Lok).",
+   "source": "https://dice.fm/event/g5vkna-halloween-part-ii-stacey-hotwaxx-hale-pat-lok-31st-oct-jupiter-disco-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "480369": {
+   "why": "DJ night at Public Records (Turtle Bugg, 4AM NYC, Ge-ology).",
+   "source": "https://dice.fm/event/mxyrmv-dope-jams-halloween-ball-turtle-bugg-4am-nyc-ge-ology-31st-oct-public-records-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "476042": {
+   "why": "DJ show: Paul Oakenfold with The Crystal Method.",
+   "source": "https://www.axs.com/events/1535117/paul-oakenfold-the-crystal-method-tickets",
+   "on": "2026-10-19"
+  },
+  "475815": {
+   "why": "Techno DJ night at Knockdown Center (Massano, Konstantin Sibold, Soel).",
+   "source": "https://dice.fm/event/pywyyy-massano-konstantin-sibold-soel-23rd-oct-knockdown-center-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "tm:17GZv0G65tTxsBE": {
+   "why": "John Summit is a DJ; arena DJ show.",
+   "source": "https://www.ticketmaster.com/john-summit-ctrl-escape-arena-tour-brooklyn-new-york-11-29-2026/event/300064BA7F8B1EA7",
+   "on": "2026-10-19"
+  },
+  "480857": {
+   "why": "DJ night: Moodymann with DJs Dam-Funk, DJ Lloyd, Las Flaquitas.",
+   "source": "https://tickets.venuepilot.com/e/the-do-over-20-year-anniversary-2026-11-06-lohi-brooklyn-eb439d",
+   "on": "2026-10-19"
+  },
+  "480255": {
+   "why": "Eli Escobar is a DJ; club night at Elsewhere.",
+   "source": "https://dice.fm/event/k67bqp-eli-escobar-open-to-close-23rd-jan-elsewhere-brooklyn-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "480368": {
+   "why": "DJ night: Eli Escobar and Jen Cardini at Public Records.",
+   "source": "https://dice.fm/event/nvrq8q-the-atrium-eli-escobar-jen-cardini-29th-nov-public-records-new-york-tickets",
+   "on": "2026-10-19"
+  },
+  "480564": {
+   "why": "DJ night at Good Room (Anastazja, Honey Bun).",
+   "source": "https://ra.co/events/2559200",
+   "on": "2026-10-19"
+  },
+  "480529": {
+   "why": "WFMU DJs at the WFMU Record Fair, not a concert.",
+   "source": "https://wfmu.org/recordfair/",
+   "on": "2026-10-19"
+  },
+  "480777": {
+   "why": "TMOTV: The Music of Tom Verlaine is a tribute to Tom Verlaine.",
+   "source": "https://mercuryeastpresents.com/mercurylounge/",
+   "on": "2026-10-19"
+  },
+  "480858": {
+   "why": "Bolo is a DJ/producer at 314 Scholes; DJ rave night.",
+   "source": "https://dice.fm/event/q2qqna-bolo-14th-nov-314-scholes-street-new-york-city-tickets",
+   "on": "2026-10-19"
+  },
+  "476953": {
+   "why": "New York Philharmonic Get Out in Concert is a live film score over a screening.",
+   "source": "https://www.nyphil.org/concerts-tickets/2627/get-out-in-concert/",
+   "on": "2026-10-19"
+  },
+  "476954": {
+   "why": "New York Philharmonic Get Out in Concert is a live film score over a screening.",
+   "source": "https://www.nyphil.org/concerts-tickets/2627/get-out-in-concert/",
+   "on": "2026-10-19"
+  },
+  "476955": {
+   "why": "New York Philharmonic Get Out in Concert is a live film score over a screening.",
+   "source": "https://www.nyphil.org/concerts-tickets/2627/get-out-in-concert/",
+   "on": "2026-10-19"
+  },
+  "476956": {
+   "why": "New York Philharmonic Get Out in Concert is a live film score over a screening.",
+   "source": "https://www.nyphil.org/concerts-tickets/2627/get-out-in-concert/",
+   "on": "2026-10-19"
+  },
+  "479726": {
+   "why": "Elsewhere club night (49th & Main DJ set, Tre Reynolds, cRave, Glass Halo, kylxr), a dance event.",
+   "source": "https://www.eventbrite.com/e/tre-reynolds-tickets-2002456754056",
+   "on": "2026-10-19"
+  },
+  "479727": {
+   "why": "Elsewhere 10:30pm electronic club night, Miss Bashful full venue takeover.",
+   "source": "https://www.eventbrite.com/e/miss-bashful-live-full-venue-takeover-tickets-2002089160574",
+   "on": "2026-10-19"
+  },
+  "480847": {
+   "why": "Mayo Performing Arts Center is in Morristown, New Jersey, not New York City.",
+   "source": "https://www.mayoarts.org/",
+   "on": "2026-10-19"
+  },
+  "480848": {
+   "why": "Mayo Performing Arts Center is in Morristown, New Jersey, not New York City.",
+   "source": "https://www.mayoarts.org/",
+   "on": "2026-10-19"
+  },
+  "480850": {
+   "why": "Mayo Performing Arts Center is in Morristown, New Jersey, not New York City.",
+   "source": "https://www.mayoarts.org/",
+   "on": "2026-10-19"
+  },
+  "480851": {
+   "why": "Mayo Performing Arts Center is in Morristown, New Jersey, not New York City.",
+   "source": "https://www.mayoarts.org/",
+   "on": "2026-10-19"
+  }
+ },
+ "chi": {
+  "480687": {
+   "why": "Chicago Film Society presents an evening with animator Jim Trainor: a film screening, not a concert.",
+   "source": "https://wl.seetickets.us/event/cfs-presents-an-evening-with-jim-trainor/703888",
+   "on": "2026-10-19"
+  },
+  "tm:vv1A7ZkftGkezUDF8": {
+   "why": "Duplicate of the Nice As Fuck early show at Outset the same night (same Ticketmaster event id).",
+   "source": "https://www.ticketmaster.com/event/04006529B8DBB210",
+   "on": "2026-10-19"
+  },
+  "tm:vv1A7Zkf4Gkei-Rpy": {
+   "why": "CircuitMOM x Uncle 'Haunted Hollywood' is a Halloween dance party with DJs, not a concert.",
+   "source": "https://www.ticketmaster.com/circuitmom-uncle-present-haunted-hollywood-ft-chicago-illinoi",
+   "on": "2026-10-19"
+  },
+  "479550": {
+   "why": "Duplicate of the other SWMRS listing at Reggie's the same night (same ticket link).",
+   "source": "https://www.ticketweb.com/event/swmrs-north-by-north-repent-reggies-rock-club-tickets/14334684",
+   "on": "2026-10-19"
+  },
+  "480698": {
+   "why": "Halloween DJ night at Spybar nightclub.",
+   "source": "https://dice.fm/event/oemwqa-halloween-night-ft-iglesias-31st-oct-spybar-chicago-tickets",
+   "on": "2026-10-19"
+  },
+  "478421": {
+   "why": "Goblin performing a live score to the film Tenebre: a screening with live score.",
+   "source": "https://skeletix.com/4787-claudio-simonettis-goblin-tenebre-tour/",
+   "on": "2026-10-19"
+  },
+  "tm:vv1A7Zk4aGkem96z3": {
+   "why": "Q101 Twisted 3-night super ticket: a package covering the separate Aragon nights already listed.",
+   "source": "https://www.ticketmaster.com/q101-twisted-3night-super-ticket-chicago-illinois-12-08-2026/",
+   "on": "2026-10-19"
+  },
+  "480735": {
+   "why": "Pure Soul presents Stop Making Sense: a Talking Heads tribute.",
+   "source": "https://www.ticketmaster.com/pure-soul-presents-stop-making-sense-chicago-illinois-12-31-2",
+   "on": "2026-10-19"
+  },
+  "tm:vv178Z_fGklqkb0U": {
+   "why": "Pure Soul presents Stop Making Sense: a Talking Heads tribute.",
+   "source": "https://www.ticketmaster.com/pure-soul-presents-stop-making-sense-chicago-illinois-12-30-2",
+   "on": "2026-10-19"
+  },
+  "480720": {
+   "why": "Jerrod Carmichael On Stage is a comedy show, not a concert.",
+   "source": "https://www.hideoutchicago.com/shows",
+   "on": "2026-10-19"
+  },
+  "479868": {
+   "why": "'You Are One' is a Substance parody play by drag performer Derry Queen, not a concert (early show).",
+   "source": "https://www.hideoutchicago.com/events",
+   "on": "2026-10-19"
+  },
+  "479869": {
+   "why": "Hideout lists this as a Substance parody play by Derry Queen, not a concert.",
+   "source": "https://www.hideoutchicago.com/shows",
+   "on": "2026-10-19"
+  },
+  "480275": {
+   "why": "Earlybirds Club is a 6-10pm dance party series, not a concert.",
+   "source": "https://www.axs.com/events/1405849/earlybirds-club-tickets",
+   "on": "2026-10-19"
+  },
+  "tm:vv1A7ZkfVGkeUJQv-": {
+   "why": "Garcia's bills Rock & Rye as a Grateful Dead tribute.",
+   "source": "https://garciaschicago.live/shows",
+   "on": "2026-10-19"
+  },
+  "480740": {
+   "why": "Cole's page bills it as Dead Dove Presents AlgoRhythm, an alternative drag showcase.",
+   "source": "https://colesbarchicago.com/shows/dead-dove-presents-algorhythm-november-28-2026-761841",
+   "on": "2026-10-19"
+  },
+  "476757": {
+   "why": "Halloweensteen: Michael McDermott and the Duke Street Kings playing the music of Bruce Springsteen and Tom Petty, a cover/theme night.",
+   "source": "https://www.jamusa.com/events/detail/halloweensteen-1542184",
+   "on": "2026-10-19"
+  }
+ },
+ "la": {
+  "tm:rZ7HnEZ1AfuPpf": {
+   "why": "All-star benefit jam session, not an artist concert.",
+   "source": "https://www.whiskyagogo.com/calendar/",
+   "on": "2026-10-19"
+  },
+  "479953": {
+   "why": "Cali Maiden is an Iron Maiden tribute act.",
+   "source": "https://roadhouse.permanentrecordsla.com/",
+   "on": "2026-10-19"
+  },
+  "480218": {
+   "why": "Cali Maiden is an Iron Maiden tribute act.",
+   "source": "https://roadhouse.permanentrecordsla.com/",
+   "on": "2026-10-19"
+  },
+  "478141": {
+   "why": "The Moth StorySLAM is an open-mic storytelling event, and the ticket page puts it at Jam In The Van, not Los Globos.",
+   "source": "https://www.themoth.org/tickets/frenemies-7",
+   "on": "2026-10-19"
+  },
+  "473841": {
+   "why": "Comedy: ticket is for Anthony Jeselnik and Enemies, a stand-up night.",
+   "source": "https://wl.seetickets.us/event/anthony-jeselnik-and-enemies/695093",
+   "on": "2026-10-19"
+  },
+  "tm:vv1AaZk4kGkdM7Jpz": {
+   "why": "Scam and Jam is an 80s/lowrider/funk DJ night.",
+   "source": "https://app.discotech.me/events/38293359-scam-and-jam-ft-von-kiss-mvsagua-vick-jagger-at-the-regent-theater",
+   "on": "2026-10-19"
+  },
+  "tm:rZ7HnEZ1A4ZPxK": {
+   "why": "Max Weinberg's Jukebox is a covers show, billed with Shelvis (Elvis tribute).",
+   "source": "https://www.whiskyagogo.com/calendar/",
+   "on": "2026-10-19"
+  },
+  "471725": {
+   "why": "The Rocky Horror Picture Show screening tour with Barry Bostwick.",
+   "source": "https://www.wiltern.com/",
+   "on": "2026-10-19"
+  },
+  "471174": {
+   "why": "The Rocky Horror Picture Show screening with shadow cast.",
+   "source": "https://www.theford.com/events/performances/4884/2026-10-31/the-rocky-horror-picture-show-feat-sins-o-the-flesh",
+   "on": "2026-10-19"
+  },
+  "480758": {
+   "why": "The-Dream in conversation: a talk, not a concert.",
+   "source": "https://grammymuseum.org/event/spotlight-the-dream",
+   "on": "2026-10-19"
+  },
+  "480760": {
+   "why": "Grammy Museum event is a talk: A Conversation With Boys Noize, moderated by Billboard's Katie Bain.",
+   "source": "https://grammymuseum.org/event/a-conversation-with-boys-noize",
+   "on": "2026-10-19"
+  },
+  "479903": {
+   "why": "Pete Tong DJ set at The Spotlight.",
+   "source": "https://dice.fm/event/oe99ma-pete-tong-7th-nov-the-spotlight-los-angeles-tickets",
+   "on": "2026-10-19"
+  },
+  "479910": {
+   "why": "I Hate Models techno DJ set.",
+   "source": "https://ra.co/",
+   "on": "2026-10-19"
+  },
+  "480645": {
+   "why": "DJ night: Paul Oakenfold, The Crystal Method (DJ set), Zen Freeman.",
+   "source": "https://www.thebellwether.la/",
+   "on": "2026-10-19"
+  },
+  "479611": {
+   "why": "LACMA 'In Conversation' with Melissa Auf der Maur and Shirley Manson is a book talk, not a concert.",
+   "source": "https://www.lacma.org/event/melissa-aug-der-maur",
+   "on": "2026-10-19"
+  },
+  "v-ford-2026-10-25-drumatix": {
+   "why": "DrumatiX: Rhythm, Redefined is a daytime kids' show (ages 3-11).",
+   "source": "https://hollywoodpartnership.com/do/drumatix-rhythm-redefined",
+   "on": "2026-10-19"
+  },
+  "479768": {
+   "why": "Permanent Records Roadhouse bills this night as tribute acts: Nirvana (Fime), Killers (Hot Hot Fuss), No Doubt (Iconique).",
+   "source": "https://roadhouse.permanentrecordsla.com/",
+   "on": "2026-10-19"
+  },
+  "478981": {
+   "why": "Permanent Records Roadhouse bills Fime as the Nirvana tribute on a tribute-act night.",
+   "source": "https://roadhouse.permanentrecordsla.com/",
+   "on": "2026-10-19"
+  },
+  "479964": {
+   "why": "Weird Al Yankovic at the Greek on Oct 31 is a UHF live-to-screen film screening with orchestra and Q&A.",
+   "source": "https://www.weirdal.com/uhf-life-to-screen-event-sat-october-31-2026-los-angeles/",
+   "on": "2026-10-19"
+  },
+  "v-ford-2026-10-24-music-beyond-borders": {
+   "why": "Duplicate of the Discostan with Lifafa and Arushi Jain listing the same night at the Ford.",
+   "source": "https://www.theford.com/events/performances/4881/2026-10-24/music-beyond-borders-discostan-with-lifafa-and-arushi-jain",
+   "on": "2026-10-19"
+  },
+  "477791": {
+   "why": "Permanent Records lists it as an evening of stand-up comedy with Nate Varrone and special guests.",
+   "source": "https://app.opendate.io/e/nate-varrone-november-01-2026-744519",
+   "on": "2026-10-19"
+  }
+ }
+}

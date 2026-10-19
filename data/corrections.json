@@ -1,7 +1,337 @@
-{"_about": "Hand fixes applied by build.py over every source, by show id. A source can be wrong or stale (Oh My Rockness kept the old headliner after the venue changed the bill). Fields given replace the listing's.",
+{
+ "_about": "Hand fixes applied by build.py over every source, by show id. A source can be wrong or stale (Oh My Rockness kept the old headliner after the venue changed the bill). Fields given replace the listing's.",
  "nyc": {
-  "477029": {"headliner": "Gemma Wyles", "support": ["Michael Byrde"], "ticketUrl": "https://pools.events/event/amNznrLr/gemma-wyles-michael-byrde/", "why": "Footlight renamed the event; OMR still says Lottie Malkmus (2026-10-14)"}
+  "477029": {
+   "headliner": "Gemma Wyles",
+   "support": [
+    "Michael Byrde"
+   ],
+   "ticketUrl": "https://pools.events/event/amNznrLr/gemma-wyles-michael-byrde/",
+   "why": "Footlight renamed the event; OMR still says Lottie Malkmus (2026-10-14)"
+  },
+  "473636": {
+   "support": [
+    "Torture and the Desert Spiders",
+    "Nudey"
+   ],
+   "why": "Bowery Ballroom calendar bills Nudey alongside Torture and the Desert Spiders. (https://mercuryeastpresents.com/boweryballroom/, audit 2026-10-19)"
+  },
+  "471789": {
+   "support": [
+    "Benét"
+   ],
+   "why": "DICE titles the show Dent May, Benét. (https://dice.fm/event/g5q72p-dent-may-29th-oct-public-records-new-york-tickets, audit 2026-10-19)"
+  },
+  "476399": {
+   "support": [
+    "Jonah Smith"
+   ],
+   "why": "City Winery titles the Oct 26 show Los Lobos with Jonah Smith. (https://tickets.citywinery.com/event/los-lobos-msa5m0, audit 2026-10-19)"
+  },
+  "475437": {
+   "support": [
+    "Jason Afovi"
+   ],
+   "why": "Benefit piano concert at Weill Recital Hall with featured guest pianist Jason Afovi. (https://www.broadwayworld.com/article/PIANISTICALLY-SPEAKING-to-Benefit-Education-Through-Music-at-Carnegie-Hall-20260803, audit 2026-10-19)"
+  },
+  "480141": {
+   "support": [
+    "Conor Hanick",
+    "Elspeth Davis"
+   ],
+   "why": "Met page bills Sandbox Percussion with pianist Conor Hanick and mezzo-soprano Elspeth Davis. (https://engage.metmuseum.org/events/metlivearts/2026-27-season/sandbox-percussion, audit 2026-10-19)"
+  },
+  "477042": {
+   "support": [
+    "Jon Titterington"
+   ],
+   "why": "Calendar listing says Jon Titterington opens with his own set at the album-release show. (https://www.jazznearyou.com/nyc/events/elizabeth-and-the-catapult-at-the-bitter-end-on-october-28, audit 2026-10-19)"
+  },
+  "480348": {
+   "support": [
+    "Von"
+   ],
+   "why": "Elsewhere's calendar bills the show as \"EARTH TO EMILY, Von\". (https://www.elsewhere.club/, audit 2026-10-19)"
+  },
+  "479405": {
+   "support": [
+    "Matt Bloyd",
+    "DJ Gab Wright"
+   ],
+   "why": "Brooklyn Bowl bills \"AJ McLean presents Alexander James: The Better Man Tour\" with Matt Bloyd and DJ Gab Wright. (https://www.brooklynbowl.com/brooklyn/shows/all, audit 2026-10-19)"
+  },
+  "476511": {
+   "support": [
+    "Chelsea Plank"
+   ],
+   "why": "Brooklyn Bowl's calendar bills Abbie Gamboa with Chelsea Plank on Oct 24. (https://www.brooklynbowl.com/brooklyn/shows/all, audit 2026-10-19)"
+  },
+  "480346": {
+   "support": [
+    "Eilish Constance"
+   ],
+   "why": "Elsewhere's Eventbrite page lists Eilish Constance on the lineup with daine. (https://www.eventbrite.com/e/daine-tickets-1997150902110, audit 2026-10-19)"
+  },
+  "tm:rZ7HnEZ1AfuI17": {
+   "support": [
+    "Deante' Hitchcock"
+   ],
+   "why": "Ticket title is 'Augustus Banks w/ Deante' Hitchcock'. (https://www.ticketweb.com/event/augustus-banks-w-deante-hitchcock-the-broadway-tickets/14368284, audit 2026-10-19)"
+  }
  },
- "chi": {},
- "la": {}
+ "chi": {
+  "479836": {
+   "support": [
+    "Commonweather",
+    "Raccoon Junior"
+   ],
+   "why": "Venue calendar lists Flycatcher with Commonweather and Raccoon Junior. (https://subt.net/, audit 2026-10-19)"
+  },
+  "476743": {
+   "support": [
+    "Sweet Tangerine"
+   ],
+   "why": "Venue calendar lists Paige Fish (The Midnight Crisis Tour) with Sweet Tangerine. (https://subt.net/, audit 2026-10-19)"
+  },
+  "477544": {
+   "support": [
+    "Ganser",
+    "Gloin"
+   ],
+   "why": "Lincoln Hall/Schubas calendar lists DITZ with Ganser and Gloin. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "474305": {
+   "support": [
+    "Manwolves"
+   ],
+   "why": "Lincoln Hall/Schubas calendar lists The Hails with Manwolves. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "477553": {
+   "support": [
+    "chrysalis",
+    "Hannah Sandoz"
+   ],
+   "why": "Beat Kitchen calendar lists June Henry with chrysalis and Hannah Sandoz. (https://www.beatkitchen.com/, audit 2026-10-19)"
+  },
+  "478335": {
+   "support": [
+    "Akili Ni Mali"
+   ],
+   "why": "Garcia's calendar lists Oh He Dead with opener Akili Ni Mali. (https://garciaschicago.live/, audit 2026-10-19)"
+  },
+  "tm:vv178Z_8GkTNscfQ": {
+   "support": [
+    "Lost Pyramids"
+   ],
+   "why": "Garcia's calendar lists Dumpstaphunk with Lost Pyramids. (https://garciaschicago.live/shows, audit 2026-10-19)"
+  },
+  "tm:vv178Z_8GkTNwufO": {
+   "support": [
+    "Lost Pyramids"
+   ],
+   "why": "Garcia's calendar lists Dumpstaphunk with Lost Pyramids. (https://garciaschicago.live/shows, audit 2026-10-19)"
+  },
+  "471417": {
+   "support": [
+    "The Goldenrods",
+    "Meg and the Wheelers"
+   ],
+   "why": "Reggie's calendar lists these supports for William Elliott Whitmore. (https://www.reggieslive.com/, audit 2026-10-19)"
+  },
+  "474359": {
+   "support": [
+    "Evan Bartels"
+   ],
+   "why": "Bottom Lounge calendar lists Evan Bartels as support for Shawn James. (https://www.bottomlounge.com/, audit 2026-10-19)"
+  },
+  "473375": {
+   "support": [
+    "Summer Joy"
+   ],
+   "why": "Jam Productions lists Sienna Spiro with Summer Joy. (https://www.jamusa.com/, audit 2026-10-19)"
+  },
+  "470790": {
+   "support": [
+    "Vincent Lima"
+   ],
+   "why": "Jam Productions lists Amble with Vincent Lima. (https://www.jamusa.com/, audit 2026-10-19)"
+  },
+  "474314": {
+   "support": [
+    "Tenille Townes"
+   ],
+   "why": "Jam Productions lists Patrick Droney with Tenille Townes. (https://www.jamusa.com/, audit 2026-10-19)"
+  },
+  "tm:rZ7HnEZ1Af-kPN": {
+   "support": [
+    "JB Vannatta"
+   ],
+   "why": "Happeningnext lists the SPACE Oct 25 show as Jackopierce w. JB Vannatta (acoustic); single aggregator source. (https://happeningnext.com/evanston/live-music, audit 2026-10-19)"
+  },
+  "471343": {
+   "support": [
+    "Lisa Curtis",
+    "Lainey Jean"
+   ],
+   "why": "Schubas calendar bills Lisa Curtis and Lainey Jean as support. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "473390": {
+   "support": [
+    "Dead Sullivan",
+    "Sacred Heart Academy"
+   ],
+   "why": "Lincoln Hall calendar bills Dead Sullivan and Sacred Heart Academy as support. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "476315": {
+   "support": [
+    "Emma Andersen"
+   ],
+   "why": "Lincoln Hall calendar bills Emma Andersen as support. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "477135": {
+   "support": [
+    "Moravian",
+    "Scorched Waves"
+   ],
+   "why": "Schubas calendar bills Moravian and Scorched Waves as support. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "472357": {
+   "support": [
+    "Starcharm"
+   ],
+   "why": "Schubas calendar bills Starcharm as support. (https://lh-st.com/, audit 2026-10-19)"
+  },
+  "479433": {
+   "support": [
+    "Defcee",
+    "SPEAK!"
+   ],
+   "why": "Subterranean calendar bills Defcee and SPEAK! with Intuition and Equalibrum. (https://www.subt.net/, audit 2026-10-19)"
+  },
+  "477856": {
+   "support": [
+    "Thompson Springs"
+   ],
+   "why": "Subterranean calendar bills Thompson Springs with The Band Memo. (https://www.subt.net/, audit 2026-10-19)"
+  },
+  "tm:vvG18Z_uNj_9nD": {
+   "support": [
+    "WOLPH"
+   ],
+   "why": "Garcia's calendar bills WOLPH as opening act for Houseplant. (https://garciaschicago.live/, audit 2026-10-19)"
+  },
+  "agency-2026-10-23-maggie-rose-garcia-s": {
+   "support": [
+    "MP Gannon"
+   ],
+   "why": "Garcia's calendar bills MP Gannon as opening act for Maggie Rose on Oct 23. (https://garciaschicago.live/, audit 2026-10-19)"
+  },
+  "475399": {
+   "support": [
+    "Sarah Borges with Eric Ambel"
+   ],
+   "why": "Old Town School lists special guest Sarah Borges with Eric Ambel. (https://www.oldtownschool.org/concerts/, audit 2026-10-19)"
+  },
+  "479857": {
+   "support": [
+    "Ani Mari"
+   ],
+   "why": "Old Town School lists special guest Ani Mari. (https://www.oldtownschool.org/concerts/, audit 2026-10-19)"
+  },
+  "479858": {
+   "support": [
+    "MGNA CRRRTA",
+    "iKeda"
+   ],
+   "why": "Tour announcements name MGNA CRRRTA and iKeda as support on the January 2027 run that includes Chicago. (https://www.nylon.com/nylon-nights/on-tour-with-ninajirachi, audit 2026-10-19)"
+  }
+ },
+ "la": {
+  "473971": {
+   "support": [
+    "Jesse Sykes and the Sweet Hereafter"
+   ],
+   "why": "Lodge Room calendar lists Jesse Sykes and the Sweet Hereafter as support. (https://lodgeroomhlp.com/, audit 2026-10-19)"
+  },
+  "480201": {
+   "support": [
+    "Paper Wings"
+   ],
+   "why": "Lodge Room calendar lists Paper Wings as support. (https://lodgeroomhlp.com/, audit 2026-10-19)"
+  },
+  "tm:rZ7HnEZ1Af0kOS": {
+   "support": [
+    "Sophia Mengrosso",
+    "Leave It To Cleaver",
+    "Mote It Be",
+    "Los Coyotes",
+    "Don't Follow",
+    "Superweapon"
+   ],
+   "why": "Whisky calendar bills Michale Graves with these acts. (https://www.whiskyagogo.com/calendar/, audit 2026-10-19)"
+  },
+  "tm:rZ7HnEZ1Af7wf0": {
+   "support": [
+    "Vixen",
+    "American Jetset",
+    "Power Tribe",
+    "Carry-On Band",
+    "Maxilla",
+    "Diamantide"
+   ],
+   "why": "Whisky calendar lists a multi-act bill: Vixen, American Jetset, Power Tribe, Carry-On Band, Maxilla, Diamantide, Giselle. (https://www.whiskyagogo.com/calendar/, audit 2026-10-19)"
+  },
+  "tm:rZ7HnEZ1AfGO-7": {
+   "support": [
+    "VOXXX",
+    "Sweet Corvette"
+   ],
+   "why": "Whisky calendar bills The SoapGirls, VOXXX, Sweet Corvette. (https://www.whiskyagogo.com/calendar/, audit 2026-10-19)"
+  },
+  "467859": {
+   "support": [
+    "Ballet"
+   ],
+   "why": "Lodge Room calendar lists Lime Garden with Ballet. (https://www.lodgeroomhlp.com/, audit 2026-10-19)"
+  },
+  "477641": {
+   "support": [
+    "Delivery Boys"
+   ],
+   "why": "Lodge Room calendar lists Bruiser Wolf with Delivery Boys. (https://www.lodgeroomhlp.com/, audit 2026-10-19)"
+  },
+  "475733": {
+   "support": [
+    "Chiabiee"
+   ],
+   "why": "Troubadour calendar lists Natalie Jinju with Chiabiee (sold out). (https://www.troubadour.com/, audit 2026-10-19)"
+  },
+  "480032": {
+   "support": [
+    "Beauty School Dropout"
+   ],
+   "why": "Songkick lists Palaye Royale and Beauty School Dropout at the Roxy on May 14. (https://www.songkick.com/venues/1300-roxy-theatre/calendar, audit 2026-10-19)"
+  },
+  "480054": {
+   "support": [
+    "Moon Bandits"
+   ],
+   "why": "Songkick lists Friends in Real Life and Moon Bandits at Zebulon on Dec 27. (https://www.songkick.com/venues/3497989-zebulon/calendar, audit 2026-10-19)"
+  },
+  "471263": {
+   "support": [
+    "Ballet Folklórico de Los Ángeles"
+   ],
+   "why": "LA Phil lists Lila Downs with Ballet Folklórico de Los Ángeles for the Día de Muertos program. (https://www.laphil.com/events/performances/4388/2026-10-30/lila-downs, audit 2026-10-19)"
+  },
+  "480323": {
+   "support": [
+    "The Black Dahlia Murder",
+    "Septicflesh",
+    "Crypta",
+    "Thrown Into Exile"
+   ],
+   "why": "Arch Enemy and The Black Dahlia Murder co-headline the Wrath Across America tour (ends Nov 19) with Septicflesh, Crypta and Thrown Into Exile; LA date itself not confirmed. (https://blabbermouth.net/news/arch-enemy-and-the-black-dahlia-murder-announce-wrath-across-america-fall-2026-tour, audit 2026-10-19)"
+  }
+ }
 }
