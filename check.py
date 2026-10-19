@@ -111,9 +111,13 @@ with sync_playwright() as p:
         lines = open(dl.value.path(), encoding="utf-8-sig", newline="").read().split("\r\n")
         check("export CSV has a header and one row per show", lines[0].startswith("Announced,") and len(lines) - 1 == n, f"{len(lines) - 1} rows vs {n}")
         page.click("#xpText")
-        txt = page.input_value("#xpTextOut")
-        check("export copy-as-text uses the venue / * [Artist](link) – Day M/D format",
-              n == 0 or (bool(re.search(r"^\* .+ – (Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d+/\d+", txt, re.M)) and txt.split("\n")[0].isupper()), txt[:80])
+        txt = page.evaluate("xpText(xpRows().rows)")
+        links = page.locator("#xpTextOut a").count()
+        check("export copy-as-text: venue headings, * [Artist](link) – Day M/D, and real links in the rich copy",
+              n == 0 or (bool(re.search(r"^\* .+ – (Mon|Tue|Wed|Thu|Fri|Sat|Sun) \d+/\d+", txt, re.M)) and txt.split("\n")[0].isupper() and links > 0), f"{links} links; {txt[:60]}")
+        with page.expect_download() as dl:
+            page.click("#xpXlsx")
+        check("export Excel downloads a real .xlsx", dl.value.suggested_filename.endswith(".xlsx") and open(dl.value.path(), "rb").read(2) == b"PK", dl.value.suggested_filename)
         page.check("#xpNoSup")
         page.select_option("#xpCapLo", "4")  # 1,000+
         n2 = int(page.inner_text("#xpN").split()[0])

@@ -35,6 +35,7 @@ button { font: inherit; color: inherit; }
 .mast .wrap { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding-block: 18px; flex-wrap: wrap; }
 .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); flex: none; }
 .checked { color: var(--muted); display: flex; align-items: center; gap: 8px; }
+.checked .byline { margin-left: 10px; padding-left: 12px; border-left: 1px solid var(--grey4); color: var(--ink); }
 .checked .dot { width: 7px; height: 7px; }
 
 /* hero */
@@ -185,7 +186,8 @@ main { padding-block: 8px 80px; }
 .xp-foot { display: flex; gap: 10px; align-items: center; justify-content: flex-end; border-top: 1px solid var(--grey1); padding-top: 14px; flex-wrap: wrap; }
 .xp-n { margin-right: auto; font-size: 13px; color: var(--muted); }
 .xp-main { background: var(--ink); color: var(--bg); }
-.xp-text { width: 100%; min-height: 160px; font: 12px/1.45 ui-monospace, Menlo, monospace; border: 1px solid var(--grey4); background: var(--panel); color: var(--ink); padding: 8px; resize: vertical; }
+.xp-text { max-height: 220px; overflow: auto; font-size: 13px; line-height: 1.45; border: 1px solid var(--grey4); background: var(--panel); color: var(--ink); padding: 4px 12px; }
+.xp-text p { margin: 10px 0 4px; } .xp-text ul { margin: 0; padding-left: 18px; } .xp-text a { color: var(--accent); }
 .ics-btn { background: none; border: 0; padding: 4px 0; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--ink); border-bottom: 1px solid var(--grey4); display: inline-flex; gap: 6px; align-items: center; }
 .ics-btn svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.5; }
 .ics-btn:hover { color: var(--accent); border-bottom-color: var(--accent); }
@@ -265,7 +267,7 @@ body.compact { font-size: 12.5px; }
       <a href="#nyc" data-page="week">Next two weeks</a>
       <a href="#nyc/announced" data-page="new">Just announced<span class="new-count" id="newN"></span></a>
     </nav>
-    <div class="checked label"><span class="dot"></span><span id="checked"></span></div>
+    <div class="checked label"><span class="dot"></span><span id="checked"></span><span class="byline">Jonah Bierman 2026</span></div>
   </div>
 </header>
 
@@ -340,11 +342,12 @@ body.compact { font-size: 12.5px; }
         <option value="cap">Room size, largest first</option>
       </select></div>
     </fieldset>
-    <textarea id="xpTextOut" class="xp-text" readonly hidden aria-label="Copied text"></textarea>
+    <div id="xpTextOut" class="xp-text" hidden aria-label="Copied text"></div>
     <div class="xp-foot">
       <span class="xp-n" id="xpN"></span>
       <button type="button" class="toggle" id="xpText" title="Venue by venue: * [Artist](tickets) – Tue 9/29">Copy text</button>
-      <button type="button" class="toggle" id="xpCsv">Download CSV</button>
+      <button type="button" class="toggle" id="xpXlsx" title="A formatted spreadsheet for Excel, Numbers or Google Sheets">Download Excel</button>
+      <button type="button" class="toggle" id="xpCsv" title="Plain values, for importing elsewhere">CSV</button>
       <button type="button" class="toggle xp-main" id="xpPdf">Save PDF</button>
     </div>
   </form>
@@ -765,7 +768,6 @@ const XP_COLS = [
   ["support", "Support", true, s => s.support.join(", ") || (coBill(s) ? "Shared bill" : "")],
   ["venue", "Venue", true, s => s.venue],
   ["city", "City", true, (s, c) => c.name],
-  ["cap", "Cap (approx.)", true, s => s.cap || ""],
   ["age", "Age", false, s => s.age || ""],
   ["team", "THE·TEAM acts", false, s => s.clients.map(c => c.artist).join(", ")],
   ["link", "Tickets", false, s => xpLink(s)],
@@ -850,7 +852,7 @@ xpEl("xpCsv").addEventListener("click", () => {
   const cell = v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
   // The headliner links to the tickets: Excel and Google Sheets show a HYPERLINK cell as a link.
   const q = v => String(v).replace(/"/g, '""');
-  const val = (col, s, c) => col[0] === "headliner" && xpLink(s) ? `=HYPERLINK("${q(xpLink(s))}","${q(s.headliner)}")` : col[3](s, c);
+  const val = (col, s, c) => col[3](s, c);
   const csv = [cols.map(c => c[1]), ...rows.map(([s, c]) => cols.map(col => val(col, s, c)))].map(r => r.map(cell).join(",")).join("\r\n");
   xpSave("\ufeff" + csv, "text/csv;charset=utf-8", `announcements-${TODAY_ISO}.csv`);  // the BOM keeps Excel on UTF-8
 });
@@ -868,7 +870,7 @@ function xpPdfDoc(rows, cols, keys) {
     const sup = on("support") ? (s.support.length ? esc(s.support.join(", ")) : coBill(s) ? "<i>Shared bill</i>" : "") : "";
     return h + (sup ? `<div class="sub">${on("headliner") ? "with " : ""}${sup}</div>` : "");
   }]);
-  if (on("venue") || on("cap")) C.push(["Venue", "", s => (on("venue") ? esc(s.venue) : "") + (on("cap") && s.cap ? `<div class="sub">${s.cap.toLocaleString("en-US")} cap</div>` : "")]);
+  if (on("venue")) C.push(["Venue", "", s => esc(s.venue)]);
   if (on("city") && !many) C.push(["City", "", (s, c) => esc(c.name)]);
   if (on("age")) C.push(["Age", "n", s => esc(s.age || "")]);
   if (on("team")) C.push(["THE·TEAM", "", s => esc(s.clients.map(c => c.artist).join(", "))]);
@@ -916,9 +918,52 @@ function xpPdfDoc(rows, cols, keys) {
   <header><div><h1>${esc(title)}</h1><div class="meta">${esc([cities, ...filters].join(" · "))}</div></div>
     <div class="stamp"><b>${rows.length.toLocaleString("en-US")} show${rows.length === 1 ? "" : "s"}</b>Exported ${esc(new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }))}</div></header>
   ${groups.map(([c, list]) => (c ? `<h2>${esc(c.name)} <span>${list.length} show${list.length === 1 ? "" : "s"}</span></h2>` : "") + table(list)).join("")}
-  <p class="foot">${on("headliner") ? "Headliners link to their ticket page. " : ""}${on("cap") ? "Capacities are approximate. " : ""}Times are local to each city.</p>
+  <p class="foot">${on("headliner") ? "Headliners link to their ticket page. " : ""}Times are local to each city.</p>
   </body></html>`;
 }
+// A formatted .xlsx: title, filters line, dark header row, banded rows, column widths, wrapped
+// support, frozen header with filter buttons, artists linked to their tickets. ExcelJS loads
+// from cdnjs on first use only.
+const xpScript = src => new Promise((ok, bad) => { const t = document.createElement("script"); t.src = src; t.onload = ok; t.onerror = bad; document.head.appendChild(t); });
+xpEl("xpXlsx").addEventListener("click", async () => {
+  const btn = xpEl("xpXlsx"); btn.textContent = "Preparing…";
+  try {
+    if (!window.ExcelJS) await xpScript("https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.4.0/exceljs.min.js");
+    const { rows, cols, keys } = xpRows();
+    const wb = new ExcelJS.Workbook(), ws = wb.addWorksheet("Shows", { views: [{ state: "frozen", ySplit: 3 }] });
+    const W = { announced: 12, date: 26, headliner: 30, support: 46, venue: 28, city: 14, age: 9, team: 26, link: 44 };
+    ws.columns = cols.map(c => ({ key: c[0], width: W[c[0]] || 16 }));
+    const n = cols.length, last = String.fromCharCode(64 + n);
+    ws.mergeCells(`A1:${last}1`); ws.mergeCells(`A2:${last}2`);
+    ws.getCell("A1").value = xpTitle(keys);
+    ws.getCell("A1").font = { name: "Arial", size: 15, bold: true, color: { argb: "FF2E7040" } };
+    ws.getCell("A2").value = `${rows.length} show${rows.length === 1 ? "" : "s"} · exported ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })} · artists link to tickets`;
+    ws.getCell("A2").font = { name: "Arial", size: 9, italic: true, color: { argb: "FF6B6A63" } };
+    ws.getRow(1).height = 24;
+    const head = ws.getRow(3);
+    cols.forEach((c, i) => { const cell = head.getCell(i + 1); cell.value = c[1];
+      cell.font = { name: "Arial", size: 9, bold: true, color: { argb: "FFFFFFFF" } };
+      cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "FF1B1B18" } };
+      cell.alignment = { vertical: "middle" }; });
+    head.height = 20;
+    rows.forEach(([s, c], r) => {
+      const row = ws.getRow(r + 4);
+      cols.forEach((col, i) => {
+        const cell = row.getCell(i + 1), v = col[3](s, c);
+        cell.value = col[0] === "headliner" && xpLink(s) ? { text: v, hyperlink: xpLink(s) } : col[0] === "link" && v ? { text: v, hyperlink: v } : v;
+        cell.font = { name: "Arial", size: 10, bold: col[0] === "headliner",
+          ...(col[0] === "headliner" && xpLink(s) || col[0] === "link" && v ? { color: { argb: "FF24603A" }, underline: true } : {}) };
+        cell.alignment = { vertical: "top", wrapText: col[0] === "support" || col[0] === "team" };
+        if (r % 2) cell.fill = { type: "pattern", pattern: "solid", fgColor: { argb: "FFF4F2EC" } };
+        cell.border = { bottom: { style: "thin", color: { argb: "FFE2DFD6" } } };
+      });
+    });
+    ws.autoFilter = { from: { row: 3, column: 1 }, to: { row: 3, column: n } };
+    const buf = await wb.xlsx.writeBuffer();
+    xpSave(buf, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", `${xpList() === "week" ? "upcoming-shows" : "announcements"}-${TODAY_ISO}.xlsx`);
+    btn.textContent = "Download Excel";
+  } catch (e) { btn.textContent = "Couldn't load, try CSV"; setTimeout(() => { btn.textContent = "Download Excel"; }, 3000); }
+});
 xpEl("xpPdf").addEventListener("click", () => {
   const { rows, cols, keys } = xpRows();
   const doc = xpPdfDoc(rows, cols, keys);
@@ -930,7 +975,7 @@ xpEl("xpPdf").addEventListener("click", () => {
 });
 // Copy as text, venue by venue (favorites first, in their order), each show as
 //   * [Artist](ticket link) – Tue 9/29
-function xpText(rows) {
+function xpTextGroups(rows) {
   const groups = new Map();
   for (const [s, c] of rows) {
     const k = favKey(c.key, s.venue);
@@ -939,16 +984,30 @@ function xpText(rows) {
   const rank = k => FAV.has(k) ? FAV.get(k).i : 1e3;
   const thisYear = new Date().getFullYear();
   const day = d => { const x = d8(d); return `${FULLDAY[x.getDay()].slice(0, 3)} ${x.getMonth() + 1}/${x.getDate()}${x.getFullYear() !== thisYear ? "/" + String(x.getFullYear()).slice(2) : ""}`; };
-  return [...groups.entries()].sort((a, b) => rank(a[0]) - rank(b[0]) || a[1].v.localeCompare(b[1].v)).map(([k, g]) =>
-    (FAV.has(k) ? FAV.get(k).head : g.v.toUpperCase()) + "\n\n" +
-    g.list.sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99"))
-      .map(s => `* ${xpLink(s) ? `[${s.headliner}](${xpLink(s)})` : s.headliner} – ${day(s.date)}`).join("\n")).join("\n\n");
+  return [...groups.entries()].sort((a, b) => rank(a[0]) - rank(b[0]) || a[1].v.localeCompare(b[1].v)).map(([k, g]) => ({
+    head: FAV.has(k) ? FAV.get(k).head : g.v.toUpperCase(),
+    items: g.list.sort((a, b) => a.date.localeCompare(b.date) || (a.time || "99").localeCompare(b.time || "99"))
+      .map(s => ({ name: s.headliner, url: xpLink(s), day: day(s.date) })) }));
 }
+// Plain text keeps the "* [Artist](link) – Tue 9/29" form; the rich copy makes each artist a
+// real link, so it pastes as links into email, Google Docs, Notes, Slack and the like.
+const xpText = rows => xpTextGroups(rows).map(g => g.head + "\n\n" +
+  g.items.map(i => `* ${i.url ? `[${i.name}](${i.url})` : i.name} – ${i.day}`).join("\n")).join("\n\n");
+const xpTextHtml = rows => xpTextGroups(rows).map(g => `<p><b>${esc(g.head)}</b></p><ul>` +
+  g.items.map(i => `<li>${i.url ? `<a href="${esc(i.url)}">${esc(i.name)}</a>` : esc(i.name)} – ${esc(i.day)}</li>`).join("") + "</ul>").join("");
 xpEl("xpText").addEventListener("click", async () => {
-  const text = xpText(xpRows().rows), box = xpEl("xpTextOut"), btn = xpEl("xpText");
-  box.value = text; box.hidden = false;
+  const rows = xpRows().rows, text = xpText(rows), html = xpTextHtml(rows), box = xpEl("xpTextOut"), btn = xpEl("xpText");
+  box.innerHTML = html; box.hidden = false;
   let ok = false;
-  try { await navigator.clipboard.writeText(text); ok = true; } catch (e) { box.select(); try { ok = document.execCommand("copy"); } catch (e2) {} }
+  try {
+    await navigator.clipboard.write([new ClipboardItem({ "text/html": new Blob([html], { type: "text/html" }), "text/plain": new Blob([text], { type: "text/plain" }) })]);
+    ok = true;
+  } catch (e) {  // older browsers: select the rendered preview and copy that (keeps the links)
+    const r = document.createRange(); r.selectNodeContents(box);
+    const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    try { ok = document.execCommand("copy"); } catch (e2) {}
+    sel.removeAllRanges();
+  }
   btn.textContent = ok ? "Copied" : "Select and copy below";
   setTimeout(() => { btn.textContent = "Copy text"; }, 2000);
 });
