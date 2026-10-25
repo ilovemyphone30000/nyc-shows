@@ -1,60 +1,55 @@
-nyc | 314 Scholes | 10-31 Schrotthagen
-nyc | 92NY | 10-28 Sō Percussion (Steve Reich's Drumming)
-nyc | Alice Tully Hall | 10-21 Fuji||||||||||ta
-nyc | Arlene's Grocery | 11-01 Good Time Mystery Vision
-nyc | Blue Note | 10-21 Robert Glasper; 10-21 Robert Glasper
+nyc | 20 Meadow St | 11-07 Collateral
+nyc | 314 Scholes | 10-31 Schrotthagen; 11-06 Moodymann
+nyc | 92NY | 10-28 Sō Percussion (Steve Reich's Drumming); 11-07 Sandbox Percussion
+nyc | Arlene's Grocery | 10-28 The Dashing Blumpkins; 11-01 Good Time Mystery Vision
 nyc | Brooklyn Storehouse | 10-30 Beltran; 10-31 Aline Umber; 11-01 Bedouin
-nyc | C'mon Everybody | 10-30 The Rocky Horror Picture Show (Live); 10-31 The Rocky Horror Picture Show (Live)
+nyc | C'mon Everybody | 10-30 The Rocky Horror Picture Show (Live); 10-31 The Rocky Horror Picture Show (Live); 11-05 Miranda Del Sol
 nyc | Café Carlyle | 10-27 St. Vincent; 10-28 St. Vincent; 10-29 St. Vincent
-nyc | David Rubenstein Atrium at Lincoln Center | 10-22 claire rousay; 10-23 suhREEtah; 10-28 Topaz Jones
-nyc | Dead Letter No. 9 | 10-23 Lauren Flax; 10-24 Mike Servito; 10-30 Ron Like Hell
+nyc | David Rubenstein Atrium at Lincoln Center | 10-28 Topaz Jones
+nyc | Dead Letter No. 9 | 10-30 Ron Like Hell; 10-31 Sterling Juan Diaz
 nyc | Friends and Lovers | 10-30 Alta Cumbia
 nyc | Full Kit Garage | 10-27 Drook
-nyc | H0L0 | 10-23 Effy
-nyc | Hammerstein Ballroom | 10-20 Sienna Spiro
-nyc | Joe's Pub | 10-23 Stephin Merritt (of The Magnetic Fields)
+nyc | Hammerstein Ballroom | 11-07 Sleeping With Sirens
+nyc | Joe's Pub | 11-05 Basia Bulat; 11-06 Kate Nash
 nyc | Jupiter Disco | 10-30 Ayanna Heaven; 10-31 Stacey Hotwaxx Hale
-nyc | Kings Theatre | 10-23 Thundercat; 10-25 Maher Zain; 11-01 Blade Runner (screening + live score)
+nyc | Kings Theatre | 10-25 Maher Zain; 11-01 Blade Runner (screening + live score); 11-05 Rocky (In Concert)
 nyc | Los Depressos | 10-29 JSWISS
-nyc | Mayo Performing Arts | 10-21 Toad the Wet Sprocket; 10-22 AJ Croce
-nyc | MoMA PS1 | 10-22 Isabella Lovestory
+nyc | Mudhouse | 10-30 Or Best Offer (as The Microphones)
+nyc | Mulcahy's Pub and Concert Hall | 11-06 Built to Spill
 nyc | No Such Thing | 10-31 Debt
-nyc | Nublu 151 | 10-23 Sorry Darling
-nyc | Our Wicked Lady | 10-22 Jupiter Boys
-nyc | P.I.T. | 10-24 first president of japan
+nyc | Nublu | 11-04 duendita
 nyc | Pine Box Rock Shop | 10-31 Mike Nowotarski
 nyc | Reforesters Laboratory | 10-25 Cecilio
-nyc | Rodrigue's Coffee House | 10-23 Whisper Doll
-nyc | Rubulad | 10-19 Carpool; 10-22 Cowboygirl (as Tom Petty); 10-25 The Celestines
+nyc | Rubulad | 10-25 The Celestines; 10-28 Velvet Penny; 10-31 Every Flavor Weather Machine
+nyc | Secret Location | 10-31 Good Flying Birds (as Television Personalities)
 nyc | Talon Bar | 10-31 Vick Vapors
 nyc | The 1896 | 10-30 Sistek
 nyc | The Bitter End | 10-28 Elizabeth and the Catapult
-nyc | The Brooklyn Monarch | 10-23 Aria Vega
-nyc | The Capitol Theatre | 10-24 Trombone Shorty & Orleans Avenue
-nyc | UBS Arena | 10-24 KATSEYE
-nyc | Woodhaven Public Library | 10-22 The Trees
+nyc | The Metropolitan Pavilion | 11-06 WFMU DJs; 11-07 The Elevator Operators (4:30pm); 11-08 Erasers (1pm)
+nyc | The Scratcher | 10-25 Niall Connolly
+nyc | The Stone | 11-04 Ikue Mori; 11-05 Zeena Parkins; 11-06 Zeena Parkins
+nyc | Williams Center | 11-07 Built to Spill
 nyc | Yonkers Brewing Company | 10-31 Downtown Boys
-nyc | [untitled] | 10-22 Isobel
-chi | GMan Tavern | 10-21 Dogwood Tales
+nyc | [untitled] | 11-02 Horsegirl
+chi | GMan Tavern | 11-07 Dalek; 11-08 Gauntlets
+chi | Logan Square Auditorium | 11-07 P.E.E.
 chi | Navy Pier | 10-30 Dom Dolla; 10-31 Dom Dolla
-chi | Ramova Theatre | 10-24 Mobb Deep; 10-30 Periphery
+chi | Ramova Theatre | 10-30 Periphery; 11-07 Caspa
 chi | Tack Room | 11-01 Elanor Moss
 chi | The WC Social Club | 11-01 Claudio Simonetti's Goblin (performing live score to Tenebre)
-la | Crypto.com Arena | 10-19 Kacey Musgraves; 10-24 Weezer
-la | Dolby Theatre | 11-01 The Chicks; 11-02 The Chicks
-la | Exposition Park | 10-23 Gryffin; 10-24 Gryffin
-la | Fox Theater Pomona | 10-26 Animal Collective (Feels Live)
-la | Giggles | 10-23 Helen Sun
-la | Great Park, Irvine | 10-23 Rise Against
-la | Grove of Anaheim | 10-23 Fred Armisen
+la | Alex Theatre | 11-07 bis
+la | Brookside at the Rose Bowl | 11-07 Moby
+la | City Market | 11-07 I Hate Models
+la | Dolby Theatre | 11-01 The Chicks; 11-02 The Chicks; 11-03 The Chicks
+la | Fox Theater Pomona | 10-26 Animal Collective (Feels Live); 11-08 The Story So Far
 la | Hollywood Roosevelt Hotel | 10-31 The Dare
-la | In Sheep's Clothing HQ | 10-22 Fenne Lily
 la | Intuit Dome | 10-30 Phoebe Bridgers; 10-31 Phoebe Bridgers; 11-01 Phoebe Bridgers
-la | Kiss Kiss Bang Bang | 10-22 Flamingosis
-la | LACMA | 10-20 Melissa Auf der Maur
-la | Milky's | 10-24 Romeos; 10-30 LUCY (Cooper B. Handy); 10-31 Knumears
+la | Joshua Tree Retreat Center | 10-28 Sunn O)))
+la | Milky's | 10-30 LUCY (Cooper B. Handy); 10-31 Knumears; 11-04 Mystic 100s
+la | Petco Park San Diego | 11-07 Deftones
+la | Pico-Union Project | 11-03 Lennon Stella
 la | Run Out Groove Records | 10-25 Silversun Pickups
-la | Shrine Auditorium | 10-21 Chappell Roan; 10-22 Chappell Roan
-la | The Haven | 10-23 Thee Heart Tones; 10-24 Levitation Room; 10-25 Tropa Magica
-la | The Peppermint Club | 10-21 Post Sex Nachos
-la | Walt Disney Concert Hall | 10-23 Andrew Bird; 10-30 Lila Downs
+la | The Haven | 10-25 Tropa Magica; 11-07 Foxtails; 11-08 Dogs On Shady Lane
+la | The Peppermint Club | 11-06 Dave Hause
+la | The Spotlight | 11-07 Pete Tong
+la | Walt Disney Concert Hall | 10-30 Lila Downs
