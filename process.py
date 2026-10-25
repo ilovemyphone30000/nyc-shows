@@ -78,6 +78,11 @@ TIER["Pier 17"] = "Seasonal"
 DJ_NIGHT = re.compile(r"(?i)\bboiler room\b|\bdj\b|\bdj[ -]set\b|\(dj\)|\bb2b\b|all night long|extended set|vinyl set")
 
 
+# Cover nights: acts billed "as" another band ("Or Best Offer (as The Microphones)"), or a
+# "cover set". Halloween brings dozens.
+COVER_NIGHT = re.compile(r"(?i)\(as [^)]+\)|\bcover set\b|\(covers?\)")
+
+
 def excluded(city, venue, acts):
     """Why a show at this (already renamed) venue with these acts is left off, or None.
     Also applied at build time to the announcement log, so a rule added later clears old entries."""
@@ -89,6 +94,7 @@ def excluded(city, venue, acts):
     if any(re.search(r"\((?:film )?screening\)", a, re.I) for a in acts): return "film screening"
     if re.search(r"\((?:in-?store )?signing\)", acts[0], re.I): return "record-store signing"
     if DJ_NIGHT.search(acts[0]): return "DJ night"
+    if COVER_NIGHT.search(acts[0]): return "cover night"
     if re.fullmatch(r"(?i)(schedule|lineup|artist)s? (tbd|tba)|tbd|tba", acts[0].strip()): return "placeholder, no act named"
     return None
 

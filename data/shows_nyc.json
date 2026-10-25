@@ -1411,22 +1411,6 @@
    "pick": false
   },
   {
-   "id": "480163",
-   "date": "2026-10-28",
-   "time": "19:00",
-   "headliner": "Michael Eliran (as The Beatles)",
-   "support": [
-    "Helenor (as The Kinks)"
-   ],
-   "venue": "TV Eye",
-   "borough": "Queens",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventim.us/event/diyween-2026/707153",
-   "pick": false
-  },
-  {
    "id": "478512",
    "date": "2026-10-28",
    "time": "19:00",
@@ -1856,20 +1840,6 @@
    "pick": false
   },
   {
-   "id": "479078",
-   "date": "2026-10-29",
-   "time": "19:00",
-   "headliner": "Florry (as The Florring Stones)",
-   "support": [],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/eonwl2-the-florring-stones-and-big-star-29th-oct-alphaville-new-york-tickets",
-   "pick": false
-  },
-  {
    "id": "473213",
    "date": "2026-10-29",
    "time": "19:00",
@@ -2065,25 +2035,6 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventbrite.com/e/girliecurse-w-leone-head-level-pipe-fed-ish-tickets-2003357963598",
-   "pick": false
-  },
-  {
-   "id": "479347",
-   "date": "2026-10-29",
-   "time": "19:00",
-   "headliner": "Mixed State (as Bikini Kill)",
-   "support": [
-    "Bastards of Young (as The Replacements)",
-    "Weird Children (as Joy Division/New Order)",
-    "Things on Fire (as Pixies)",
-    "Le Big Zero (as The Police)"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "RSVP",
-   "ticketUrl": "https://bandnada.com/p/82888-gutterween-thurs-bikini-kill-mixed-state-the",
    "pick": false
   },
   {
@@ -2344,20 +2295,6 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketweb.com/event/gatekeeper-gobby-glasser-dj-logan-night-club-101-tickets/14307874",
-   "pick": false
-  },
-  {
-   "id": "479079",
-   "date": "2026-10-29",
-   "time": "22:30",
-   "headliner": "Florry (as The Florring Stones)",
-   "support": [],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/ryo9ow-the-florring-stones-and-big-star-late-show-29th-oct-alphaville-new-york-tickets",
    "pick": false
   },
   {
@@ -2649,33 +2586,6 @@
    "pick": true
   },
   {
-   "id": "481255",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Or Best Offer (as The Microphones)",
-   "support": [
-    "Like a Doll (as The Velvet Underground)",
-    "The Bronx River (as Jonathan Richman)",
-    "Aggie Miller (as Lucinda Williams)",
-    "Germ Patrol (as The Byrds)",
-    "Paris Archives (as Big Star)",
-    "IQUAN (as Elvis Presley)",
-    "Patching (as Prince)",
-    "Jogo (as The Roches)",
-    "Celebrity Wife Swap (as New York Dolls)",
-    "Kevin Wulf (as Paul Simon)",
-    "No Bones (as Arthur Russell)",
-    "Marvin (Variety Cover Set)"
-   ],
-   "venue": "Mudhouse",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.instagram.com/p/Deb8keChaXF/",
-   "pick": false
-  },
-  {
    "id": "475766",
    "date": "2026-10-30",
    "time": "19:00",
@@ -2770,23 +2680,6 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventbrite.com/e/balloween-strange-neighbors-teddy-hold-on-atrophy-wife-justin-pussylake-tickets-2002321560689",
-   "pick": false
-  },
-  {
-   "id": "479346",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Steal, Cheat and Gamble (as Creed)",
-   "support": [
-    "Cherch (as Kendrick Lamar)",
-    "Scarys On The Wall (as Alice in Chains)"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "RSVP",
-   "ticketUrl": "https://bandnada.com/p/82891-gutterween-friday-distillers-brody-baby",
    "pick": false
   },
   {
@@ -3531,44 +3424,6 @@
    "pick": false
   },
   {
-   "id": "479340",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "Sana Sana (as Deftones)",
-   "support": [
-    "Bad Timing (as Joyce Manor)",
-    "Fear Not Ourselves Alone (as Modest Mouse)",
-    "Bellcave (as Siouxsie and the Banshees)"
-   ],
-   "venue": "The Broadway",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/halloween-cover-show-ft-deftones-joyce-manor-modest-mouse-siouxsie-tickets-2001931311443",
-   "pick": false
-  },
-  {
-   "id": "479345",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "Sammi Lanzetta (as Amy Winehouse)",
-   "support": [
-    "Pete Mancini (as Oasis)",
-    "Pink Phony Club (as Chappell Roan)",
-    "Mel And The Tall Boys (as Madonna)",
-    "Nite Music (as Tom Petty)",
-    "It's Britney Bitch (as Britney Spears)"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "RSVP",
-   "ticketUrl": "https://bandnada.com/p/82892-gutterween-saturday-amy-winehouse-sammi",
-   "pick": false
-  },
-  {
    "id": "480370",
    "date": "2026-10-31",
    "time": "19:00",
@@ -3680,25 +3535,6 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://pools.events/event/jjg8OiDP/the-brooklyn-witch-trials/",
-   "pick": false
-  },
-  {
-   "id": "481356",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "Good Flying Birds (as Television Personalities)",
-   "support": [
-    "Horsegirl (as The Strokes)",
-    "Guyscrapers (as Weezer)",
-    "TV Buddha (as The Modern Lovers)",
-    "Jason Shapiro (as Count Shapula)"
-   ],
-   "venue": "Secret Location",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.instagram.com/p/De2H58eRhnl/",
    "pick": false
   },
   {
@@ -3962,26 +3798,6 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/l8pw3p-teksupport-circoloco-halloween-sunday-1st-nov-brooklyn-storehouse-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "480556",
-   "date": "2026-11-01",
-   "time": "15:30",
-   "headliner": "Freyja (as The Cranberries)",
-   "support": [
-    "The Planes (as Violent Femmes)",
-    "Moon Sand Land (as Steely Dan)",
-    "Sailor Boyfriend (as David Bowie)",
-    "The Big Easy (as The Strokes)",
-    "Tea Eater (as Hole)"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/83025-owl-o-ween-prom-post-gutterween-rager-the",
    "pick": false
   },
   {
