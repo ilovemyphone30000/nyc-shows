@@ -1,100 +1,50 @@
-## Changes since the last refresh (2026-10-25)
+## Changes since the last refresh (2026-10-28)
 
 ### New York
-- **New:** 10-25 Dashboard Confessional (solo acoustic) @ Mercury Lounge
-- **New:** 10-25 Xeno & Oaklander + MSHR, Victoria Keddie, Laura Ortman, Ivan Berko @ Pianos
-- **New:** 10-25 Niall Connolly + Ali Aslam @ The Scratcher
-- **New:** 10-25 Sam Cope + Panther Hollow, D.A. Crimson, untitled freak @ Hart Bar
-- **New:** 10-26 Jenny Kern + Alexa Kate, Aimee Bayles @ The Sultan Room
-- **New:** 10-28 The Dashing Blumpkins + Scarys On The Wall, Singles Soundtrack, Power Pose @ Arlene's Grocery
-- **New:** 10-28 Bomb Valley + Blesser, Seconds Before The Crash, Silvera @ Gold Sounds
-- **New:** 10-29 Mathilde + Isabelle Kline, Emme Renai @ Pianos
-- **New:** 10-30 Or Best Offer (as The Microphones) + Like a Doll (as The Velvet Underground), The Bronx River (as Jonathan Richman), Aggie Miller (as Lucinda Williams), Germ Patrol (as The Byrds), Paris Archives (as Big Star), IQUAN (as Elvis Presley), Patching (as Prince), Jogo (as The Roches), Celebrity Wife Swap (as New York Dolls), Kevin Wulf (as Paul Simon), No Bones (as Arthur Russell), Marvin (Variety Cover Set) @ Mudhouse
-- **New:** 10-30 Juan Gabriel @ Sleepwalk
-- **New:** 10-30 Papi Juice @ Elsewhere
-- **New:** 10-31 Jacuzzi Boys + Abby Jeane, Jonathan Toubin (DJ) @ Alphaville
-- **New:** 10-31 Milagro Verde @ Sleepwalk
-- **New:** 10-31 Good Flying Birds (as Television Personalities) + Horsegirl (as The Strokes), Guyscrapers (as Weezer), TV Buddha (as The Modern Lovers), Jason Shapiro (as Count Shapula) @ Secret Location
-- **New:** 10-31 Major League DJz + SAIDAH, D Stone, Ariel Lights, Sissy Elliott @ Elsewhere
-- **New:** 11-01 Mugs and Coasters + Live You, Computer @ Gold Sounds
-- **New:** 11-02 Horsegirl + Anastasia Coope, Autobahn @ [untitled]
-- **Added to the bill:** John-Lewis Anderson → 10-26 Dazies @ Nightclub 101
-- **Added to the bill:** Ella Isaacson, Kyle Payne → 10-27 Bentley Robles @ Mercury Lounge
-- **Added to the bill:** Breakfield, Band of Silver → 10-27 Judah & the Lion @ Webster Hall
-- **Added to the bill:** Private School → 10-27 Vince Staples @ Brooklyn Steel
-- **Added to the bill:** youbet → 10-27 Drook @ Full Kit Garage
-- **Added to the bill:** O Slow → 10-27 Frau @ Nightclub 101
-- **Added to the bill:** Messenger Birds → 10-28 Eivør @ Racket
-- **Added to the bill:** Victoria Princi → 10-28 Smidley @ Nightclub 101
-- **Added to the bill:** The Pinkerton Raid, Kyle Morgan → 10-28 Griffin William Sherry @ Mercury Lounge
-- **Added to the bill:** SHEBAD → 10-29 Chanpan @ Baby's All Right
-- **Added to the bill:** Tracey → 10-29 ERISTHEPLANET @ Baby's All Right
-- **Added to the bill:** Southcourt → 10-29 Harbour @ Gramercy Theatre
-- **Added to the bill:** Benet → 10-29 Dent May @ Public Records
-- **Added to the bill:** Hipsy Gap → 10-29 Loose Buttons @ Union Pool
-- **Added to the bill:** Jon Lampley, aron! → 10-29 Lawrence @ Brooklyn Paramount
-- **Added to the bill:** Babe City → 10-29 Man/Woman/Chainsaw @ Nightclub 101
-- **Added to the bill:** Cold Court → 10-30 Evil Island (mrbs of Blood Brothers/Glassjaw/Trail of Dead/OFF!) @ Bowery Ballroom
-- **Added to the bill:** 10xTantrum, Junior Varsity (DJ) → 10-30 Laundry Day @ Brooklyn Steel
-- **Added to the bill:** Will Linley → 10-30 MICO @ Webster Hall
-- **Added to the bill:** Windy 500, Flirty800 → 10-30 Mackeeper @ Nightclub 101
-- **Added to the bill:** Emma Nissen, The Stowaways → 10-30 Lawrence @ Brooklyn Paramount
-- **Added to the bill:** Rugi Rugz, Dr. Slice, Trip Villain, Torrestial → 10-30 Harlan Steed @ The Meadows
-- **Added to the bill:** Fastball, Sam Greenfield → 10-31 Lawrence @ Brooklyn Paramount
-- **Added to the bill:** Emma Andersen → 11-01 Yana @ Bowery Ballroom
-- **Added to the bill:** The Burning Hell → 11-01 Carsie Blanton @ Littlefield
-- **Added to the bill:** Le Keep, Jiwon → 11-01 Late Again @ Baby's All Right
-- **Added to the bill:** mercury → 11-02 Holywatr @ Irving Plaza
+- **New:** 10-28 The Frankenfurters (Tim Curry Tribute) + Nihiloceros, The Planes, Nite Music (as Tom Petty & The Heartbreakers), What 8 Was For (as Violent Femmes) @ Bar Freda
+- **New:** 10-28 Tim Reale + Stoven, Harbour Haunts, Market @ Hart Bar
+- **New:** 10-29 Flairity + Heretic and the Weasel, Interstate Ate, Anavrin @ Hart Bar
+- **New:** 10-29 Dasychira + Misty Xelibri, Violence, Qualiatik, Arcitexture @ Trans-Pecos
+- **New:** 10-30 Katmoji + Maxxant, Miss Teen America, Polybius, Tearaway, Sledgehammer, Coin-Op @ Main Drag Music
+- **New:** 10-30 TV Moms + Munster, Lost Dog, Drop Dead Gorgeous @ The Cobra Club
+- **New:** 10-30 Tiny City + Glitter Etiquette, Child Eater, Harbour Haunts @ The Sultan Room
+- **New:** 10-30 Machine Girl + DJ Chaotic Ugly, Angelicmix, yesterday never happened, xxhardbit3s, 3mouth, Rabbit Crime, Citysproblem @ H0L0
+- **New:** 10-30 Melon + ALI IRL, Tormenta, DJ kyxm, Mausam @ Trans-Pecos
+- **New:** 11-01 Neurosis + High on Fire @ Saint Vitus
+- **New:** 11-02 Mercy + Excess Blood, Acid Test, Animal Boys, Dread @ Gold Sounds
+- **New:** 11-03 PS 118 All-Stars @ Le Poisson Rouge
+- **New:** 11-04 No Jersey + The Planes, Deep Wimp @ Main Drag Music
+- **New:** 11-06 "Danger Boss" + Angel Puppet, Concealer @ 20 Meadow St
+- **New:** 11-06 Horsehell + Postmark, Slowpoke @ The Broadway
+- **New:** 11-08 Jukebox The Ghost + Extremely Accurate Birds @ Baby's All Right
+- **New:** 11-08 Saya Gray @ Nightclub 101
+- **Added to the bill:** Fish Hunt → 10-30 Man/Woman/Chainsaw @ Union Pool
+- **Added to the bill:** Dirt Helmet → 11-01 Paledusk @ Le Poisson Rouge
+- **Added to the bill:** Alice Iguchi → 11-02 The Blaze @ Knockdown Center
+- **Added to the bill:** Loosey, Phantasia → 11-07 Fish Narc @ Stone Circle Theatre
+- **Added to the bill:** faiith → 11-07 the olllam @ Le Poisson Rouge
+- **Added to the bill:** Ela Minus → 11-07 Danny L Harle @ Knockdown Center
+- **Added to the bill:** Stone Cold Grace → 11-08 Olivia Barton @ Le Poisson Rouge
 
 ### Chicago
-- **New:** 10-29 Vortis + Phet Mak, Spaceracer @ Cobra Lounge
-- **New:** 11-02 Chocolate Labs + Tri-County Liquidators, Joe Glass, Rent Party @ Empty Bottle
-- **Added to the bill:** Lisa Curtis, Lainey Jean → 10-25 Taylor Bickett @ Schubas
-- **Added to the bill:** Styrofoam Winos → 10-27 Colin Miller @ Hideout
-- **Added to the bill:** Dead Sullivan, Sacred Heart Academy → 10-27 Wishy @ Lincoln Hall
-- **Added to the bill:** Emma Andersen → 10-28 Yana @ Lincoln Hall
-- **Added to the bill:** Glass-Beagle (as The Big Byrds), Growing Boys (as One Direction) → 10-28 Poolish (as The Rolling Stones) @ Schubas
-- **Added to the bill:** Moravian, Scorched Waves → 10-29 Parrotfish @ Schubas
-- **Added to the bill:** Smut → 10-30 Yada Yada @ Lincoln Hall
-- **Added to the bill:** GameboyJones, SugarVision → 10-30 The Living Tombstone @ Aragon Ballroom
-- **Added to the bill:** Ganser, Gloin → 11-01 DITZ @ Schubas
-- **Added to the bill:** Starcharm → 11-02 Man/Woman/Chainsaw @ Schubas
-- **Added to the bill:** Manwolves → 11-02 The Hails @ Lincoln Hall
+- **New:** 10-30 Pig Destroyer + Necrot, Eternal Champion, Lair of the Minotaur @ Bottom Lounge
+- **New:** 11-04 High Plains Ripper + Rareforms, Autoflamingo @ Cobra Lounge
+- **Added to the bill:** Lace For Leisure → 11-04 Lime Garden @ Subterranean
+- **Added to the bill:** The Schizophonics → 11-06 Sleep @ Metro
 
 ### Los Angeles
-- **New:** 10-25 Antioch Arrow + The Pine, Allure, Blazed @ The Observatory
-- **New:** 10-25 Hong Kong Fuck You + Dead City, ACxDC, Violencia, Desmadre, Dogface Bastards, Marred @ The Observatory
-- **New:** 10-27 Supercoze + Spiral Teeth, Trash Ferrari @ The Smell
-- **New:** 10-28 Sunn O))) + Black Mountain (DUO), Leila Bordreuil @ Joshua Tree Retreat Center
-- **New:** 10-30 Carter Faith @ The Observatory
-- **New:** 10-31 Catch Your Breath + TX2, Arankai, Colorblind @ The Observatory
-- **New:** 11-01 Pradabagshawty @ The Regent Theater
-- **Added to the bill:** Xavier Lynn → 10-26 Gary Clark Jr. @ Orpheum Theatre
-- **Added to the bill:** Jesse Sykes and the Sweet Hereafter → 10-26 Great Lake Swimmers @ Lodge Room
-- **Added to the bill:** Maral → 10-26 Animal Collective (Feels Live) @ Fox Theater Pomona
-- **Added to the bill:** Landon Conrath → 10-26 The Wldlfe @ The Roxy
-- **Added to the bill:** Salt+ → 10-27 ASAVA @ The Echo
-- **Added to the bill:** Jacob Ray → 10-27 Joon @ The Roxy
-- **Added to the bill:** The Rare Occasions → 10-27 Ax and the Hatchetmen @ The Bellwether
-- **Added to the bill:** Spencer Zahn → 10-27 Mdou Moctar (solo) @ Sid The Cat Auditorium
-- **Added to the bill:** Ryan Ellis → 10-28 Blessing Offor @ Moroccan Lounge
-- **Added to the bill:** Jiwon, Mirror Ball, Veronicavon → 10-28 Late Again @ Gold-Diggers
-- **Added to the bill:** Harrison Gordon, Sobs → 10-28 Mom Jeans @ Riverside Municipal Auditorium
-- **Added to the bill:** 54 Ultra → 10-28 Malcolm Todd @ The Greek Theatre
-- **Added to the bill:** Yearn, DXRKKNGHT → 10-28 60 Juno @ Sid The Cat Auditorium
-- **Added to the bill:** Ballet → 10-28 Lime Garden @ Lodge Room
-- **Added to the bill:** 54 Ultra → 10-29 Malcolm Todd @ The Greek Theatre
-- **Added to the bill:** Clark D → 10-29 Token @ Moroccan Lounge
-- **Added to the bill:** Delivery Boys → 10-29 Bruiser Wolf @ Lodge Room
-- **Added to the bill:** Chiabiee → 10-29 natalie jinju @ Troubadour
-- **Added to the bill:** Mac Luster → 10-29 The Haunted Youth @ Oblivion
-- **Added to the bill:** The Gontiks → 10-29 Cardinal Bloom @ The Echo
-- **Added to the bill:** Suzy Clue → 10-29 Violet Grohl @ The Observatory
-- **Added to the bill:** Eleazar, Twin Seas → 10-30 Inner Wave @ The Glass House
-- **Added to the bill:** DIIV, Dorian Electra, POBBLES, Hyd → 10-30 PC Music @ 1720
-- **Added to the bill:** Pearl & The Oysters, Twin Seas → 10-31 Inner Wave @ The Glass House
-- **Added to the bill:** Ben Po → 10-31 Parra For Cuva @ The Bellwether
-- **Added to the bill:** Ben Hackett → 10-31 Surprise Chef @ Sid The Cat Auditorium
-- **Added to the bill:** Aidan Corcoran → 10-31 bleood @ Fonda Theatre
-- **Added to the bill:** Touch Girl Apple Blossom → 10-31 The Tubs @ The Observatory
+- **New:** 10-28 Cold War Kids @ LA River
+- **New:** 10-29 Sasami + The Paranoyds, Mike Watt & The Secondmen @ The Smell
+- **New:** 10-30 Lemmo + The Watchers, India Thieriot, Br!x @ Los Globos
+- **New:** 10-30 The Whops + Iron Orchids, Kickstart @ The Smell
+- **New:** 10-31 Black Flute Brigade @ Townhouse Venice
+- **New:** 11-04 The Sophs + Gelatines, Disrot @ The Airliner
+- **New:** 11-05 Paralysis Expletive @ The Sardine
+- **Added to the bill:** Black Mountain (duo) → 10-28 Sunn O))) @ Joshua Tree Retreat Center
+- **Added to the bill:** Mamalarky, Lucky → 10-30 Freak Slug @ The Roxy
+- **Added to the bill:** 54 Ultra → 10-30 Malcolm Todd @ The Greek Theatre
+- **Added to the bill:** Madelline → 10-30 Emei @ The Novo
+- **Added to the bill:** Katie Alice Greer → 11-03 Thao @ Lodge Room
+- **Added to the bill:** Quinto Sol → 11-06 Alborosie @ The Regent Theater
+- **No longer listed:** 10-30 Fime + Hot Hot Fuss, Iconique @ Permanent Records Roadhouse
 
