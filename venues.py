@@ -133,8 +133,8 @@ def main():
             if slug in BILL_AS_LIST and "," in raw:  # "Jawdropped, The Heaven": the whole bill, headliner first
                 raw = raw.replace(",", " with ", 1)
             head, support = split_name(raw)
-            support += [tidy_case(x.strip().lstrip("& ")) for x in re.split(r",\s*", item.get("support") or "")
-                        if x.strip() and not re.search(r"(?i)produced|presented|partnership|anniversary|concerts?$|\btour\b|series|performances", x)]
+            support += [tidy_case(re.sub(r"(?i)^special guests?:?\s+", "", x.strip().lstrip("& "))) for x in re.split(r",\s*", item.get("support") or "")
+                        if x.strip() and not re.search(r"(?i)produced|presented|partnership|anniversary|concerts?$|\btour\b|series|performances|^late night$", x.strip())]
             support += [p for p in item.get("perf", []) if p.lower() not in (head.lower(), "organization", "person", "performinggroup") and p not in support]
             support = [y for y in (re.sub(r"(?i)\s+presented by .*$", "", x.lstrip("& ")).strip() for x in support) if y]
             key = lambda x: re.sub(r"[^a-z0-9]", "", re.sub(r"\(.*?\)", "", x.lower()))

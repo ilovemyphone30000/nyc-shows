@@ -2,7 +2,7 @@
 "scanned": {
 "Aragon Ballroom": "2026-10-05",
 "Chicago Theatre": "2026-10-05",
-"The Salt Shed": "2026-10-11"
+"The Salt Shed": "2026-10-28"
 },
 "seenAt": {},
 "rows": [
@@ -516,150 +516,17 @@ null,
 0
 ],
 [
-"v-saltshed-2026-10-11-interpol",
-"2026-10-11",
-[
-"Interpol"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/interpol-north-america-tour-2026-with-chicago-illinois-10-11-2026/event/0400649CDA9C0E9C",
-0
-],
-[
-"v-saltshed-2026-10-16-tinashe",
-"2026-10-16",
-[
-"Tinashe"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/tinashe-one-night-with-a-popstar-chicago-illinois-10-16-2026/event/040064F4C56FC327",
-0
-],
-[
-"v-saltshed-2026-10-17-jesse-welles",
-"2026-10-17",
-[
-"Jesse Welles"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/jesse-welles-presented-by-xrt-chicago-illinois-10-17-2026/event/04006471FF4FB554",
-0
-],
-[
-"v-saltshed-2026-10-18-movements",
-"2026-10-18",
-[
-"Movements"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/movements-happier-now-usa-tour-chicago-illinois-10-18-2026/event/040064A7E5646845",
-0
-],
-[
-"v-saltshed-2026-10-20-the-black-keys",
-"2026-10-20",
-[
-"The Black Keys",
-"Eddie 9v"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/the-black-keys-with-eddie-9v-chicago-illinois-10-20-2026/event/04006503F3401026",
-0
-],
-[
-"v-saltshed-2026-10-21-the-black-keys",
-"2026-10-21",
-[
-"The Black Keys",
-"Eddie 9v"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/the-black-keys-with-eddie-9v-chicago-illinois-10-21-2026/event/04006503F2D60F48",
-0
-],
-[
-"v-saltshed-2026-10-22-sylvan-esso",
-"2026-10-22",
-[
-"Sylvan Esso",
-"Sen Morimoto"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/sylvan-esso-with-sen-morimoto-presented-chicago-illinois-10-22-2026/event/0400649CF45E4588",
-0
-],
-[
-"v-saltshed-2026-10-23-sammy-rae-the-friends",
-"2026-10-23",
-[
-"Sammy Rae & The Friends"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/sammy-rae-the-friends-the-get-chicago-illinois-10-23-2026/event/04006477BA496E98",
-0
-],
-[
-"v-saltshed-2026-10-24-fruit-bats",
-"2026-10-24",
-[
-"Fruit Bats",
-"Matthew Logan Vasquez"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/fruit-bats-with-matthew-logan-vasquez-chicago-illinois-10-24-2026/event/04006474B2AB731F",
-0
-],
-[
-"v-saltshed-2026-10-25-sleeping-with-sirens",
-"2026-10-25",
-[
-"Sleeping With Sirens"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-chicago-illinois-10-25-2026/event/040064CBC7A3E2C8",
-0
-],
-[
 "v-saltshed-2026-10-29-the-dresden-dolls",
 "2026-10-29",
 [
-"The Dresden Dolls"
+"The Dresden Dolls",
+"Aurora Gozmic"
 ],
 "The Salt Shed",
 [],
 null,
 "Tickets",
-"https://www.ticketmaster.com/the-dresden-dolls-chicago-illinois-10-29-2026/event/040064A8C315EAAF",
+"https://www.ticketmaster.com/the-dresden-dolls-with-aurora-gozmic-chicago-illinois-10-29-2026/event/040064A8C315EAAF",
 0
 ],
 [
@@ -809,19 +676,6 @@ null,
 0
 ],
 [
-"v-saltshed-2026-11-25-turnover",
-"2026-11-25",
-[
-"Turnover"
-],
-"The Salt Shed",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/turnover-down-on-earth-tour-chicago-illinois-11-25-2026/event/040064D3BF4DA5FC",
-0
-],
-[
 "v-saltshed-2026-11-27-daily-bread",
 "2026-11-27",
 [
@@ -835,10 +689,11 @@ null,
 0
 ],
 [
-"v-saltshed-2026-11-27-interpol",
+"v-saltshed-2026-11-27-the-dresden-dolls",
 "2026-11-27",
 [
-"Interpol"
+"The Dresden Dolls",
+"Aurora Gozmic"
 ],
 "The Salt Shed",
 [],
@@ -968,6 +823,19 @@ null,
 0
 ],
 [
+"v-saltshed-2027-02-17-meshuggah",
+"2027-02-17",
+[
+"Meshuggah"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/meshuggah-the-fortyyear-anomaly-w-testament-chicago-illinois-02-17-2027/event/04006557D6DFA6CE",
+0
+],
+[
 "v-saltshed-2027-02-19-chelsea-cutler",
 "2027-02-19",
 [
@@ -991,6 +859,19 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/level-up-the-ritual-tour-2027-chicago-illinois-02-20-2027/event/04006541C0E7BBBF",
+0
+],
+[
+"v-saltshed-2027-02-25-chvrches-live-2027",
+"2027-02-25",
+[
+"Chvrches Live 2027"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/chvrches-live-2027-chicago-illinois-02-25-2027/event/04006554AE62613B",
 0
 ],
 [
@@ -1021,6 +902,19 @@ null,
 0
 ],
 [
+"v-saltshed-2027-03-10-remi-wolf",
+"2027-03-10",
+[
+"Remi Wolf"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/remi-wolf-the-mud-tour-chicago-illinois-03-10-2027/event/04006548D8C61293",
+0
+],
+[
 "v-saltshed-2027-03-13-michael-shannon-jason-narducy-and-friend",
 "2027-03-13",
 [
@@ -1031,6 +925,19 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/michael-shannon-jason-narducy-and-friends-chicago-illinois-03-13-2027/event/0400653C9F93670E",
+0
+],
+[
+"v-saltshed-2027-03-27-lucky-daye",
+"2027-03-27",
+[
+"Lucky Daye"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/lucky-daye-the-aloud-tour-chicago-illinois-03-27-2027/event/0400654FEB548950",
 0
 ],
 [
@@ -1057,6 +964,19 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/nothing-but-thieves-the-stray-dogs-chicago-illinois-04-12-2027/event/040064B836E9D942",
+0
+],
+[
+"v-saltshed-2027-04-15-the-plot-in-you",
+"2027-04-15",
+[
+"The Plot In You"
+],
+"The Salt Shed",
+[],
+null,
+"Tickets",
+"https://www.ticketmaster.com/the-plot-in-you-world-tour-chicago-illinois-04-15-2027/event/04006557C20C8A15",
 0
 ],
 [

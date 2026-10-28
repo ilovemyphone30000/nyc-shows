@@ -2,10 +2,10 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-10-11",
+"Pier 17": "2026-10-28",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-10-11",
+"Webster Hall": "2026-10-28",
 "Nightclub 101": "2026-10-05"
 },
 "seenAt": {},
@@ -1353,16 +1353,16 @@ null,
 0
 ],
 [
-"v-pier17-2026-10-24-steve-aoki",
-"2026-10-24",
+"v-pier17-2026-10-30-after-dark",
+"2026-10-30",
 [
-"Steve Aoki"
+"After Dark"
 ],
 "Pier 17",
 [],
 null,
 "Tickets",
-"https://rooftopatpier17.com/events/steve-aoki-2026/",
+"https://rooftopatpier17.com/events/after-dark-2026/",
 0
 ],
 [
@@ -1848,98 +1848,6 @@ null,
 0
 ],
 [
-"v-websterhall-2026-10-13-remi-wolf",
-"2026-10-13",
-[
-"Remi Wolf"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-15-show-me-the-body",
-"2026-10-15",
-[
-"Show Me The Body"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-17-rebecca-black",
-"2026-10-17",
-[
-"Rebecca Black"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-17-habibi-s-house",
-"2026-10-17",
-[
-"Habibi's House",
-"DJ Habibeats"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-18-rebecca-black",
-"2026-10-18",
-[
-"Rebecca Black"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-20-the-tallest-man-on-earth",
-"2026-10-20",
-[
-"The Tallest Man On Earth"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-10-27-judah-the-lion",
-"2026-10-27",
-[
-"Judah & The Lion"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
 "v-websterhall-2026-10-28-dj-meredith-marks",
 "2026-10-28",
 [
@@ -1969,7 +1877,8 @@ null,
 "v-websterhall-2026-10-30-mico",
 "2026-10-30",
 [
-"MICO"
+"MICO",
+"Will Linley"
 ],
 "Webster Hall",
 [],
@@ -1982,7 +1891,8 @@ null,
 "v-websterhall-2026-11-02-she-wants-revenge",
 "2026-11-02",
 [
-"She Wants Revenge"
+"She Wants Revenge",
+"Rosegarden Funeral Party"
 ],
 "Webster Hall",
 [],
@@ -1995,7 +1905,9 @@ null,
 "v-websterhall-2026-11-03-the-wrecks",
 "2026-11-03",
 [
-"The Wrecks"
+"The Wrecks",
+"Worry Club",
+"Kid Sistr"
 ],
 "Webster Hall",
 [],
@@ -2008,7 +1920,8 @@ null,
 "v-websterhall-2026-11-04-hovvdy",
 "2026-11-04",
 [
-"Hovvdy"
+"Hovvdy",
+"Christian Lee Hutson"
 ],
 "Webster Hall",
 [],
@@ -2034,7 +1947,10 @@ null,
 "v-websterhall-2026-11-07-saosin",
 "2026-11-07",
 [
-"Saosin"
+"Saosin",
+"Silent Planet",
+"Like Moths To Flames",
+"Save Us"
 ],
 "Webster Hall",
 [],
@@ -2047,7 +1963,8 @@ null,
 "v-websterhall-2026-11-11-fruit-bats",
 "2026-11-11",
 [
-"Fruit Bats"
+"Fruit Bats",
+"Sarah Klang"
 ],
 "Webster Hall",
 [],
@@ -2060,7 +1977,8 @@ null,
 "v-websterhall-2026-11-12-protomartyr",
 "2026-11-12",
 [
-"Protomartyr"
+"Protomartyr",
+"J.R.C.G."
 ],
 "Webster Hall",
 [],
@@ -2073,7 +1991,8 @@ null,
 "v-websterhall-2026-11-13-nia-archives",
 "2026-11-13",
 [
-"Nia Archives"
+"Nia Archives",
+"Bambii"
 ],
 "Webster Hall",
 [],
@@ -2099,7 +2018,8 @@ null,
 "v-websterhall-2026-11-14-strawberry-guy",
 "2026-11-14",
 [
-"Strawberry Guy"
+"Strawberry Guy",
+"Jean-luc Eldenwood"
 ],
 "Webster Hall",
 [],
@@ -2112,7 +2032,8 @@ null,
 "v-websterhall-2026-11-15-stella-lefty",
 "2026-11-15",
 [
-"Stella Lefty"
+"Stella Lefty",
+"Grace Enger"
 ],
 "Webster Hall",
 [],
@@ -2138,7 +2059,10 @@ null,
 "v-websterhall-2026-11-19-menahan-street-band",
 "2026-11-19",
 [
-"Menahan Street Band"
+"Menahan Street Band",
+"Black Thought",
+"Kirby",
+"DJ Set By Edan"
 ],
 "Webster Hall",
 [],
@@ -2151,7 +2075,9 @@ null,
 "v-websterhall-2026-11-20-greg-freeman",
 "2026-11-20",
 [
-"Greg Freeman"
+"Greg Freeman",
+"Robber Robber",
+"Kleenex Girl Wonder"
 ],
 "Webster Hall",
 [],
@@ -2177,7 +2103,10 @@ null,
 "v-websterhall-2026-11-21-richard-finger",
 "2026-11-21",
 [
-"Richard Finger"
+"Richard Finger",
+"Integrate",
+"RSUN",
+"D!lemma"
 ],
 "Webster Hall",
 [],
@@ -2190,7 +2119,8 @@ null,
 "v-websterhall-2026-11-22-yaelokre",
 "2026-11-22",
 [
-"Yaelokre"
+"Yaelokre",
+"Ben Caplan"
 ],
 "Webster Hall",
 [],
@@ -2213,10 +2143,25 @@ null,
 0
 ],
 [
+"v-websterhall-2026-11-28-m-e-a-t-x-webster-hall",
+"2026-11-28",
+[
+"M.E.A.T. X Webster Hall"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
 "v-websterhall-2026-12-01-lucy-dacus-all-request-set",
 "2026-12-01",
 [
-"Lucy Dacus All Request Set"
+"Lucy Dacus All Request Set",
+"Infinity Song",
+"Julio Torres"
 ],
 "Webster Hall",
 [],
@@ -2242,7 +2187,8 @@ null,
 "v-websterhall-2026-12-04-shintaro-sakamoto",
 "2026-12-04",
 [
-"Shintaro Sakamoto"
+"Shintaro Sakamoto",
+"Hannah Cohen"
 ],
 "Webster Hall",
 [],
@@ -2268,7 +2214,9 @@ null,
 "v-websterhall-2026-12-05-dexter-and-the-moonrocks",
 "2026-12-05",
 [
-"Dexter And The Moonrocks"
+"Dexter And The Moonrocks",
+"Cigarettes @ Sunset",
+"High June"
 ],
 "Webster Hall",
 [],
@@ -2281,7 +2229,9 @@ null,
 "v-websterhall-2026-12-06-dexter-and-the-moonrocks",
 "2026-12-06",
 [
-"Dexter And The Moonrocks"
+"Dexter And The Moonrocks",
+"Cigarettes @ Sunset",
+"High June"
 ],
 "Webster Hall",
 [],
@@ -2304,10 +2254,25 @@ null,
 0
 ],
 [
+"v-websterhall-2026-12-08-jalen-ngonda",
+"2026-12-08",
+[
+"Jalen Ngonda",
+"Brooke Combe"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
 "v-websterhall-2026-12-09-shakey-graves",
 "2026-12-09",
 [
-"Shakey Graves"
+"Shakey Graves",
+"Jobi Riccio"
 ],
 "Webster Hall",
 [],
@@ -2320,7 +2285,8 @@ null,
 "v-websterhall-2026-12-11-lucy-bedroque",
 "2026-12-11",
 [
-"Lucy Bedroque"
+"Lucy Bedroque",
+"Pinponpanpon"
 ],
 "Webster Hall",
 [],
@@ -2333,7 +2299,8 @@ null,
 "v-websterhall-2026-12-12-lucy-bedroque",
 "2026-12-12",
 [
-"Lucy Bedroque"
+"Lucy Bedroque",
+"Pinponpanpon"
 ],
 "Webster Hall",
 [],
@@ -2347,6 +2314,19 @@ null,
 "2026-12-12",
 [
 "Amtrac"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
+"v-websterhall-2026-12-19-club-90s",
+"2026-12-19",
+[
+"Club 90s"
 ],
 "Webster Hall",
 [],
@@ -2395,6 +2375,33 @@ null,
 0
 ],
 [
+"v-websterhall-2027-02-17-asaf-avidan",
+"2027-02-17",
+[
+"Asaf Avidan"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
+"v-websterhall-2027-02-18-greensky-bluegrass",
+"2027-02-18",
+[
+"Greensky Bluegrass",
+"Clay Street Unit"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
 "v-websterhall-2027-03-04-twin-temple",
 "2027-03-04",
 [
@@ -2411,7 +2418,8 @@ null,
 "v-websterhall-2027-03-06-mei-semones",
 "2027-03-06",
 [
-"Mei Semones"
+"Mei Semones",
+"Aron!"
 ],
 "Webster Hall",
 [],
@@ -2424,7 +2432,34 @@ null,
 "v-websterhall-2027-03-17-valley",
 "2027-03-17",
 [
-"Valley"
+"Valley",
+"Moody Joody"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
+"v-websterhall-2027-03-23-caroline-rose",
+"2027-03-23",
+[
+"Caroline Rose"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
+"v-websterhall-2027-03-25-jersey",
+"2027-03-25",
+[
+"Jersey"
 ],
 "Webster Hall",
 [],
@@ -2438,6 +2473,19 @@ null,
 "2027-03-30",
 [
 "Kid Francescoli"
+],
+"Webster Hall",
+[],
+null,
+"Tickets",
+"https://www.websterhall.com/events/detail",
+0
+],
+[
+"v-websterhall-2027-04-08-john-splithoff",
+"2027-04-08",
+[
+"John Splithoff"
 ],
 "Webster Hall",
 [],
