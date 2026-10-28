@@ -77,6 +77,48 @@
     "Deante' Hitchcock"
    ],
    "why": "Ticket title is 'Augustus Banks w/ Deante' Hitchcock'. (https://www.ticketweb.com/event/augustus-banks-w-deante-hitchcock-the-broadway-tickets/14368284, audit 2026-10-19)"
+  },
+  "476633": {
+   "support": [
+    "Shrimpnose",
+    "Lapa"
+   ],
+   "why": "Elsewhere calendar bills Shrimpnose and Lapa with Emancipator on Nov 6. (https://www.elsewhere.club/events, audit 2026-10-28)"
+  },
+  "v-pier17-2026-10-30-after-dark": {
+   "support": [
+    "Lil Xan",
+    "Armani White",
+    "DJ Soda",
+    "Nate Wyatt"
+   ],
+   "why": "PremierX \"After Dark\" bill at Pier 17 lists Lil Xan, Armani White, DJ Soda and Nate Wyatt; the page headliner is the event name. (https://rooftopatpier17.com/events/after-dark-2026/, audit 2026-10-28)"
+  },
+  "476778": {
+   "support": [
+    "Alex Vaughn"
+   ],
+   "why": "Event page lists Alex Vaughn as support. (https://kydlabs.com/e/EV413d989b-cba3-48cb-80c0-0d6425e04b80, audit 2026-10-28)"
+  },
+  "475946": {
+   "support": [
+    "The Hopeless Romantics"
+   ],
+   "why": "Event page titled \"w/\" lists The Hopeless Romantics as support. (https://kydlabs.com/e/EVac92dbee-4e42-4e96-b9d9-74f0dd27cf83, audit 2026-10-28)"
+  },
+  "480142": {
+   "support": [
+    "Conor Hanick",
+    "Elspeth Davis"
+   ],
+   "why": "Met page names guest artists Conor Hanick (piano) and Elspeth Davis (mezzo-soprano) with Sandbox Percussion. (https://engage.metmuseum.org/events/metlivearts/2026-27-season/sandbox-percussion, audit 2026-10-28)"
+  },
+  "479893": {
+   "support": [
+    "Lucy Railton",
+    "Stephen O'Malley"
+   ],
+   "why": "Billed as \"Kali Malone presents Burning Song\" with Lucy Railton and Stephen O'Malley. (https://kydlabs.com/e/EV308a2da9-8506-4bc8-9e7e-e0273868cef3, audit 2026-10-28)"
   }
  },
  "chi": {
@@ -244,6 +286,166 @@
     "iKeda"
    ],
    "why": "Tour announcements name MGNA CRRRTA and iKeda as support on the January 2027 run that includes Chicago. (https://www.nylon.com/nylon-nights/on-tour-with-ninajirachi, audit 2026-10-19)"
+  },
+  "479830": {
+   "support": [
+    "Colette Elyse"
+   ],
+   "why": "Venue calendar lists additional acts. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "473384": {
+   "support": [
+    "Jeremy Passion"
+   ],
+   "why": "Venue calendar lists additional acts. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "477850": {
+   "support": [
+    "Kyrie"
+   ],
+   "why": "Venue calendar lists additional acts. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "470755": {
+   "support": [
+    "Julia Barfield"
+   ],
+   "why": "Venue calendar lists additional acts. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "480280": {
+   "support": [
+    "Alana Markel"
+   ],
+   "why": "Venue calendar lists additional acts. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "479464": {
+   "support": [
+    "Emily How"
+   ],
+   "why": "Venue calendar lists additional acts. (https://www.beatkitchen.com/, audit 2026-10-28)"
+  },
+  "470219": {
+   "support": [
+    "James the Seventh"
+   ],
+   "why": "Venue calendar lists additional acts. (https://bottomlounge.com/, audit 2026-10-28)"
+  },
+  "469002": {
+   "support": [
+    "sports.",
+    "Rosacade",
+    "Cable-Knit"
+   ],
+   "why": "Venue calendar lists additional acts. (https://bottomlounge.com/, audit 2026-10-28)"
+  },
+  "475880": {
+   "support": [
+    "The Iron Spiders",
+    "Won't Stay Dead"
+   ],
+   "why": "Venue calendar lists additional acts. (https://www.subt.net/, audit 2026-10-28)"
+  },
+  "479043": {
+   "support": [
+    "J.Y.N."
+   ],
+   "why": "Venue calendar lists additional acts. (https://www.subt.net/, audit 2026-10-28)"
+  },
+  "481588": {
+   "support": [
+    "DJ Taye"
+   ],
+   "why": "Venue calendar lists additional acts. (https://www.subt.net/, audit 2026-10-28)"
+  },
+  "480460": {
+   "support": [
+    "Flesh Panthers"
+   ],
+   "why": "Venue calendar lists additional acts. (https://sleeping-village.com/, audit 2026-10-28)"
+  },
+  "474302": {
+   "support": [
+    "Mykey"
+   ],
+   "why": "Venue calendar lists support. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "478319": {
+   "support": [
+    "Carlile",
+    "Clairice"
+   ],
+   "why": "Venue calendar lists support. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "477142": {
+   "support": [
+    "Computerwife"
+   ],
+   "why": "Venue calendar lists support. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "477851": {
+   "support": [
+    "Herons"
+   ],
+   "why": "Venue calendar lists support. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "470018": {
+   "support": [
+    "Places To Be",
+    "The 4411"
+   ],
+   "why": "Venue calendar lists support. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "479046": {
+   "support": [
+    "Orbital Gate",
+    "Beheading The Icon",
+    "Gutnoose"
+   ],
+   "why": "Subterranean calendar lists the full bill. (, audit 2026-10-28)"
+  },
+  "469585": {
+   "support": [
+    "The Braymores"
+   ],
+   "why": "Venue calendar lists support. (https://lh-st.com/shows/, audit 2026-10-28)"
+  },
+  "476770": {
+   "support": [
+    "Tye Turner",
+    "Julienne By",
+    "Sweet N Sour"
+   ],
+   "why": "Venue calendar bills these acts with Juelz on the Dramatica Tour. (https://concordmusichall.com/calendar/, audit 2026-10-28)"
+  },
+  "474325": {
+   "support": [
+    "roseli"
+   ],
+   "why": "Beat Kitchen calendar lists roseli as support. (https://www.beatkitchen.com/, audit 2026-10-28)"
+  },
+  "473894": {
+   "support": [
+    "Caroline Romano"
+   ],
+   "why": "Beat Kitchen calendar lists Caroline Romano as support. (https://www.beatkitchen.com/, audit 2026-10-28)"
+  },
+  "469477": {
+   "support": [
+    "Cancer House",
+    "ARDO"
+   ],
+   "why": "Constellation calendar bills \"Diles que no me maten w/ Cancer House + ARDO\". (https://www.constellation-chicago.com/, audit 2026-10-28)"
+  },
+  "479834": {
+   "support": [
+    "Julian Saunders"
+   ],
+   "why": "Subterranean calendar lists Darryl Rahn w/ Julian Saunders. (https://subt.net/, audit 2026-10-28)"
+  },
+  "v-saltshed-2027-03-10-remi-wolf": {
+   "support": [
+    "Emma Ogier"
+   ],
+   "why": "Listings for The Mud Tour name Emma Ogier as special guest at the Salt Shed; one listing dates it Mar 9 rather than Mar 10. (https://www.eventworld.com/remi-wolf-chicago-tickets-03-09-2027/event/583101, audit 2026-10-28)"
   }
  },
  "la": {
@@ -332,6 +534,74 @@
     "Thrown Into Exile"
    ],
    "why": "Arch Enemy and The Black Dahlia Murder co-headline the Wrath Across America tour (ends Nov 19) with Septicflesh, Crypta and Thrown Into Exile; LA date itself not confirmed. (https://blabbermouth.net/news/arch-enemy-and-the-black-dahlia-murder-announce-wrath-across-america-fall-2026-tour, audit 2026-10-19)"
+  },
+  "476667": {
+   "support": [
+    "Lecx Stacy"
+   ],
+   "why": "DICE page bills \"Sobs with Lecx Stacy\". (https://dice.fm/event/mxnr8r-minty-boi-presents-sobs-live-in-los-angeles-5th-nov-el-cid-los-angeles-tickets, audit 2026-10-28)"
+  },
+  "476970": {
+   "support": [
+    "Nikolai Shveitser",
+    "Jonny Fritz"
+   ],
+   "why": "DICE page bills Chris Acker with Nikolai Shveitser, plus Jonny Fritz. (https://dice.fm/event/xe3nkk-chris-acker-6th-nov-permanent-records-roadhouse-los-angeles-tickets, audit 2026-10-28)"
+  },
+  "471328": {
+   "support": [
+    "Josh da Costa"
+   ],
+   "why": "DICE page lists Alex Cameron and Josh da Costa. (https://dice.fm/event/3oa78l-alex-cameron-6th-nov-zebulon-los-angeles-tickets, audit 2026-10-28)"
+  },
+  "478177": {
+   "support": [
+    "Ruqqiyah"
+   ],
+   "why": "DICE page: Ruqqiyah performs an opening set before Shungu live-scores a film. (https://dice.fm/event/yo5vnx-shungo-live-scores-faith-in-the-unknown-10th-nov-2220-arts-archives-los-angeles-tickets, audit 2026-10-28)"
+  },
+  "481093": {
+   "support": [
+    "Cure For Youth",
+    "Hyper Minds"
+   ],
+   "why": "Redwood Bar event page lists Cure For Youth and Hyper Minds with Generacion Suicida. (https://theredwoodbar.com/shows/generacion-suicida, audit 2026-10-28)"
+  },
+  "481557": {
+   "support": [
+    "King Sickabilly"
+   ],
+   "why": "Redwood Bar event page lists King Sickabilly with The Goddamn Gallows. (https://www.theredwoodbar.com/shows/goddamn-gallows-king-sickabilly, audit 2026-10-28)"
+  },
+  "472150": {
+   "support": [
+    "After Louise"
+   ],
+   "why": "Lodge Room page: \"Featuring After Louise\". (https://www.lodgeroomhlp.com/shows/genesis-owusu-red-star-wus-pirate-radio-tour/, audit 2026-10-28)"
+  },
+  "480031": {
+   "support": [
+    "Beauty School Dropout"
+   ],
+   "why": "Tour announcement names Beauty School Dropout as special guest on US/Canada dates incl. May 13 El Rey. (https://www.melodicmag.com/news/album-announcements/a-new-chapter-a-new-world-a-little-more-everything-palaye-royales-newest-album-announced-2027-world-tour-dates/, audit 2026-10-28)"
+  },
+  "480873": {
+   "support": [
+    "The Lathums"
+   ],
+   "why": "Tour announcement says The Lathums support on all North American dates. (https://music.mxdwn.com/2026/10/20/news/the-wombats-announce-spring-2027-north-american-tour-dates/amp/, audit 2026-10-28)"
+  },
+  "471761": {
+   "support": [
+    "Constant Insult"
+   ],
+   "why": "Tour announcement says Constant Insult supports on West Coast dates. (https://blabbermouth.net/news/green-day-frontman-billie-joe-armstrongs-side-project-pinhead-gunpowder-announces-fall-2026-north-american-tour, audit 2026-10-28)"
+  },
+  "471771": {
+   "support": [
+    "Constant Insult"
+   ],
+   "why": "Tour announcement says Constant Insult supports on West Coast dates. (https://blabbermouth.net/news/green-day-frontman-billie-joe-armstrongs-side-project-pinhead-gunpowder-announces-fall-2026-north-american-tour, audit 2026-10-28)"
   }
  }
 }
