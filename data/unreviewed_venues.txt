@@ -1,55 +1,66 @@
-nyc | 20 Meadow St | 11-06 "Danger Boss"; 11-07 Collateral
-nyc | 314 Scholes | 10-31 Schrotthagen; 11-06 Moodymann
-nyc | 92NY | 10-28 Sō Percussion (Steve Reich's Drumming); 11-07 Sandbox Percussion
-nyc | Arlene's Grocery | 10-28 The Dashing Blumpkins; 11-01 Good Time Mystery Vision
-nyc | Blue Note | 11-10 Vic Mensa; 11-10 Vic Mensa
-nyc | Brooklyn Storehouse | 10-30 Beltran; 10-31 Aline Umber; 11-01 Bedouin
-nyc | C'mon Everybody | 10-30 The Rocky Horror Picture Show (Live); 10-31 The Rocky Horror Picture Show (Live); 11-05 Miranda Del Sol
-nyc | Café Carlyle | 10-28 St. Vincent; 10-29 St. Vincent
-nyc | David Rubenstein Atrium at Lincoln Center | 10-28 Topaz Jones
-nyc | Dead Letter No. 9 | 10-30 Ron Like Hell; 10-31 Sterling Juan Diaz
-nyc | Friends and Lovers | 10-30 Alta Cumbia
-nyc | H0L0 | 10-30 Machine Girl
-nyc | Hammerstein Ballroom | 11-07 Sleeping With Sirens
-nyc | Joe's Pub | 11-05 Basia Bulat; 11-06 Kate Nash
-nyc | Jupiter Disco | 10-30 Ayanna Heaven; 10-31 Stacey Hotwaxx Hale
-nyc | Kings Theatre | 11-01 Blade Runner (screening + live score); 11-05 Rocky (In Concert); 11-11 Andrea Gibson
-nyc | Los Depressos | 10-29 JSWISS
+nyc | 148 Frost Street | 11-14 Grumpy
+nyc | 20 Meadow St | 11-06 "Danger Boss"; 11-07 Collateral; 11-13 Hotline TNT
+nyc | 314 Scholes | 11-06 Moodymann; 11-14 Bolo
+nyc | 92NY | 11-07 Sandbox Percussion
+nyc | Arlene's Grocery | 11-13 Brandi & The Alexanders
+nyc | Art House Productions | 11-14 Negativland
+nyc | Blue Note | 11-10 Vic Mensa; 11-10 Vic Mensa; 11-12 dodie
+nyc | C'mon Everybody | 11-05 Miranda Del Sol
+nyc | Dada | 11-13 Gabby's World
+nyc | Hammerstein Ballroom | 11-07 Sleeping With Sirens; 11-12 Beartooth
+nyc | Jalopy Theater | 11-14 Chloe Kimes
+nyc | Joe's Pub | 11-05 Basia Bulat; 11-06 Kate Nash; 11-13 Alice Smith
+nyc | KGB Bar | 11-02 Cab Ellis; 11-09 Cab Ellis; 11-16 Cab Ellis
+nyc | Kings Theatre | 11-05 Rocky (In Concert); 11-11 Andrea Gibson; 11-12 Bunbury
+nyc | Limited to One Records | 11-08 Best Ex
+nyc | Loew's Jersey Theatre | 11-13 Trey Anastasio Band; 11-14 The War on Drugs
+nyc | Los Depressos | 11-13 Shallow Alcove
+nyc | Lucinda's | 11-12 Kelsey Waldon
+nyc | Maggie's Bar & Restaurant | 11-14 First Day Back
 nyc | Mulcahy's Pub and Concert Hall | 11-06 Built to Spill
 nyc | New Jersey Performing Arts Center | 11-09 BEAT (performing King Crimson)
-nyc | No Such Thing | 10-31 Debt
-nyc | Nublu | 11-04 duendita
+nyc | Nublu | 11-04 duendita; 11-12 Two Point Oh
+nyc | Nublu 151 | 11-14 Kaleta & Super Yamba Band
+nyc | Old First Church | 11-14 Despair Sanctuary
+nyc | Otto's Shrunken Head | 11-10 Christopher Piefer
+nyc | Palladium Times Square | 11-14 Imminence
 nyc | Pete's Candy Store | 11-10 Ruby Waters
-nyc | Pine Box Rock Shop | 10-31 Mike Nowotarski
-nyc | Rubulad | 10-28 Velvet Penny; 10-31 Every Flavor Weather Machine
-nyc | Talon Bar | 10-31 Vick Vapors
-nyc | The 1896 | 10-30 Sistek
-nyc | The Bitter End | 10-28 Elizabeth and the Catapult
+nyc | SILO Brooklyn | 11-14 Eli Escobar
+nyc | Soho Live | 11-14 Flairity
+nyc | St. John's Lutheran Church | 11-14 Vacations; 11-14 Vacations
+nyc | The Brooklyn Monarch | 11-13 Arizmenda; 11-16 The Spill Canvas
 nyc | The Metropolitan Pavilion | 11-06 WFMU DJs; 11-07 The Elevator Operators (4:30pm); 11-08 Erasers (1pm)
 nyc | The Stone | 11-04 Ikue Mori; 11-05 Zeena Parkins; 11-06 Zeena Parkins
+nyc | Whitney Museum | 11-13 Emily A. Sprague
 nyc | Williams Center | 11-07 Built to Spill
-nyc | Yonkers Brewing Company | 10-31 Downtown Boys
+nyc | Wonderville | 11-13 Lacey Spacecake
+nyc | Young Ethel's | 11-14 The Modern Airline
 nyc | [untitled] | 11-02 Horsegirl
 chi | GMan Tavern | 11-07 Dalek; 11-08 Gauntlets
 chi | Logan Square Auditorium | 11-07 P.E.E.
-chi | Navy Pier | 10-30 Dom Dolla; 10-31 Dom Dolla
-chi | Ramova Theatre | 10-30 Periphery; 11-07 Caspa
-chi | Tack Room | 11-01 Elanor Moss
-chi | The WC Social Club | 11-01 Claudio Simonetti's Goblin (performing live score to Tenebre)
+chi | Ramova Theatre | 11-07 Caspa; 11-14 Pedro Sampaio
+chi | Reckless Records - N. Milwaukee | 11-04 Mike Kinsella (of American Football)
+chi | Rockefeller Chapel, University of Chicago | 11-14 William Basinski
+la | Above The Bridge | 11-05 Essencer; 11-06 Wayword; 11-07 Pluie
 la | Alex Theatre | 11-07 bis; 11-11 Claudio Simonetti's Goblin
 la | Brookside at the Rose Bowl | 11-07 Moby
+la | City Hall Park | 11-13 Billy Idol
 la | City Market | 11-07 I Hate Models
-la | Dolby Theatre | 11-01 The Chicks; 11-02 The Chicks; 11-03 The Chicks
+la | Dodger Stadium | 11-14 Turnstile
+la | Dolby Theatre | 11-02 The Chicks; 11-03 The Chicks
 la | Fox Theater Pomona | 11-08 The Story So Far
-la | Hollywood Roosevelt Hotel | 10-31 The Dare
-la | Intuit Dome | 10-30 Phoebe Bridgers; 10-31 Phoebe Bridgers; 11-01 Phoebe Bridgers
-la | Joshua Tree Retreat Center | 10-28 Sunn O)))
-la | LA River | 10-28 Cold War Kids
-la | Milky's | 10-30 LUCY (Cooper B. Handy); 10-31 Knumears; 11-04 Mystic 100s
+la | Grove of Anaheim | 11-13 Blue Oyster Cult
+la | Harvard & Stone | 11-13 Serious Face
+la | Huntington State Beach | 11-14 Morrissey
+la | In Sheep's Clothing HQ | 11-13 Steve Gunn
+la | La Cita | 11-13 Tropa Magica
+la | La Santa | 11-12 Soft Vein
+la | Milky's | 11-04 Mystic 100s
 la | Petco Park San Diego | 11-07 Deftones
 la | Pico-Union Project | 11-03 Lennon Stella
-la | The Haven | 11-07 Foxtails; 11-08 Dogs On Shady Lane
-la | The Peppermint Club | 11-06 Dave Hause
+la | Sound Nightclub | 11-14 Volkoder
+la | Sunset Strip | 11-14 Sheryl Crow
+la | The Haven | 11-07 Foxtails; 11-08 Dogs On Shady Lane; 11-13 Ozomatli
+la | The Peppermint Club | 11-06 Dave Hause; 11-13 Stop Light Observations
 la | The Spotlight | 11-07 Pete Tong
-la | Townhouse Venice | 10-31 Black Flute Brigade
-la | Walt Disney Concert Hall | 10-30 Lila Downs
+la | Venue TBA | 11-13 Theo Parrish

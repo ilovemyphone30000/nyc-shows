@@ -1,50 +1,96 @@
-## Changes since the last refresh (2026-10-28)
+## Changes since the last refresh (2026-11-02)
 
 ### New York
-- **New:** 10-28 The Frankenfurters (Tim Curry Tribute) + Nihiloceros, The Planes, Nite Music (as Tom Petty & The Heartbreakers), What 8 Was For (as Violent Femmes) @ Bar Freda
-- **New:** 10-28 Tim Reale + Stoven, Harbour Haunts, Market @ Hart Bar
-- **New:** 10-29 Flairity + Heretic and the Weasel, Interstate Ate, Anavrin @ Hart Bar
-- **New:** 10-29 Dasychira + Misty Xelibri, Violence, Qualiatik, Arcitexture @ Trans-Pecos
-- **New:** 10-30 Katmoji + Maxxant, Miss Teen America, Polybius, Tearaway, Sledgehammer, Coin-Op @ Main Drag Music
-- **New:** 10-30 TV Moms + Munster, Lost Dog, Drop Dead Gorgeous @ The Cobra Club
-- **New:** 10-30 Tiny City + Glitter Etiquette, Child Eater, Harbour Haunts @ The Sultan Room
-- **New:** 10-30 Machine Girl + DJ Chaotic Ugly, Angelicmix, yesterday never happened, xxhardbit3s, 3mouth, Rabbit Crime, Citysproblem @ H0L0
-- **New:** 10-30 Melon + ALI IRL, Tormenta, DJ kyxm, Mausam @ Trans-Pecos
-- **New:** 11-01 Neurosis + High on Fire @ Saint Vitus
-- **New:** 11-02 Mercy + Excess Blood, Acid Test, Animal Boys, Dread @ Gold Sounds
-- **New:** 11-03 PS 118 All-Stars @ Le Poisson Rouge
-- **New:** 11-04 No Jersey + The Planes, Deep Wimp @ Main Drag Music
-- **New:** 11-06 "Danger Boss" + Angel Puppet, Concealer @ 20 Meadow St
-- **New:** 11-06 Horsehell + Postmark, Slowpoke @ The Broadway
-- **New:** 11-08 Jukebox The Ghost + Extremely Accurate Birds @ Baby's All Right
-- **New:** 11-08 Saya Gray @ Nightclub 101
-- **Added to the bill:** Fish Hunt → 10-30 Man/Woman/Chainsaw @ Union Pool
-- **Added to the bill:** Dirt Helmet → 11-01 Paledusk @ Le Poisson Rouge
-- **Added to the bill:** Alice Iguchi → 11-02 The Blaze @ Knockdown Center
-- **Added to the bill:** Loosey, Phantasia → 11-07 Fish Narc @ Stone Circle Theatre
-- **Added to the bill:** faiith → 11-07 the olllam @ Le Poisson Rouge
-- **Added to the bill:** Ela Minus → 11-07 Danny L Harle @ Knockdown Center
-- **Added to the bill:** Stone Cold Grace → 11-08 Olivia Barton @ Le Poisson Rouge
+- **New:** 11-02 Water Gun + Lava Gulls, Shearing, Forrest Philpot @ Nightclub 101
+- **New:** 11-02 Cab Ellis @ KGB Bar
+- **New:** 11-07 Jesse Gold @ Racket
+- **New:** 11-08 Rebelmatic + Infesticons, Oedipus Triple Rex, Carlos theChords, Astral Surf, LT Headtrip @ Bar Freda
+- **New:** 11-08 Best Ex + Kiri Oliver @ Limited to One Records
+- **New:** 11-09 Cab Ellis @ KGB Bar
+- **New:** 11-10 Christopher Piefer + Dave Achelis, Oedipus Triple Rex, 8ACE @ Otto's Shrunken Head
+- **Added to the bill:** Olivia Ellen Lloyd → 11-02 Willi Carlisle @ Baby's All Right
+- **Added to the bill:** Mary-Elaine Jenkins → 11-03 Marty O'Reilly @ Mercury Lounge
+- **Added to the bill:** Jackson and the Janks → 11-03 Twisted Teens @ Bowery Ballroom
+- **Added to the bill:** Zero 9:36, aurorawave → 11-03 SiM @ Irving Plaza
+- **Added to the bill:** Willie J. Healey → 11-04 Palace @ Brooklyn Paramount
+- **Added to the bill:** Christian Lee Hutson → 11-04 Hovvdy @ Webster Hall
+- **Added to the bill:** Patch+ → 11-04 Suzy Sheer @ Market Hotel
+- **Added to the bill:** Judith → 11-04 Bad Gyal @ Terminal 5
+- **Added to the bill:** Wilby → 11-04 Fenne Lily @ Rough Trade NYC
+- **Added to the bill:** Gay Meat → 11-04 Imperial Teen @ Baby's All Right
+- **Added to the bill:** Alex Vaughn → 11-04 Dawn Richard @ Le Poisson Rouge
+- **Added to the bill:** The Burning Hell → 11-05 Carsie Blanton @ Le Poisson Rouge
+- **Added to the bill:** Brye → 11-05 Madds Buckley @ Racket
+- **Added to the bill:** Dave P → 11-05 Avalon Emerson (& the Charm) @ Music Hall of Williamsburg
+- **Added to the bill:** Gnarcissists → 11-05 Bass Drum of Death @ Baby's All Right
+- **Added to the bill:** Von → 11-05 Earth To Emily @ Elsewhere
+- **Added to the bill:** Irma Thomas, Joan Osborne → 11-05 Preservation Hall Jazz Band @ City Winery
+- **Added to the bill:** Hannah Lee Thompson → 11-05 Darryl Rahn @ Union Pool
+- **Added to the bill:** Preston Bell → 11-05 The Haunted Youth @ Nightclub 101
+- **Added to the bill:** Sylvester Stallone → 11-05 Rocky (In Concert) @ Kings Theatre
+- **Added to the bill:** JP Jofre → 11-06 Daniela Mack @ National Sawdust
+- **Added to the bill:** Shrimpnose, Lapa → 11-06 Emancipator @ Elsewhere
+- **Added to the bill:** Sneaky Miles → 11-06 Late Night Thoughts @ Mercury Lounge
+- **Added to the bill:** youbet → 11-06 Hudson Freeman @ Bowery Ballroom
+- **Added to the bill:** Fetch Tiger → 11-06 Rebounder @ Nightclub 101
+- **Added to the bill:** Lou Ridley → 11-07 Bryan Andrews @ Mercury Lounge
+- **Added to the bill:** Daisy's Room, Whisper Doll → 11-07 Deux Visages @ Nightclub 101
+- **Added to the bill:** Torr → 11-07 Oxis @ Bowery Ballroom
+- **Added to the bill:** Feel Trip → 11-08 Almost Monday @ Irving Plaza
+- **Added to the bill:** Abbie Callahan → 11-09 Orville Peck @ Brooklyn Paramount
+- **Added to the bill:** Abbie Callahan → 11-10 Orville Peck @ Brooklyn Paramount
+- **Added to the bill:** Little Luna → 11-11 Parachute @ Racket
+- **Added to the bill:** Sarah Klang → 11-11 Fruit Bats @ Webster Hall
 
 ### Chicago
-- **New:** 10-30 Pig Destroyer + Necrot, Eternal Champion, Lair of the Minotaur @ Bottom Lounge
-- **New:** 11-04 High Plains Ripper + Rareforms, Autoflamingo @ Cobra Lounge
-- **Added to the bill:** Lace For Leisure → 11-04 Lime Garden @ Subterranean
-- **Added to the bill:** The Schizophonics → 11-06 Sleep @ Metro
+- **New:** 11-04 Mike Kinsella (of American Football) @ Reckless Records - N. Milwaukee
+- **New:** 11-06 Friko (solo) + Hazel City, Growing Boys, Laceles @ Not Not
+- **New:** 11-07 Lovergirl + Mittens, One Good Year, The World In Broken Glass @ Lowdown
+- **New:** 11-11 Laceles + Libby Quinn, Hot Lettuce, Common Ghosts @ Lowdown
+- **Added to the bill:** Chrysalis, Hannah Sandoz → 11-02 June Henry @ Beat Kitchen
+- **Added to the bill:** Flesh Panthers → 11-03 Wine Lips @ Sleeping Village
+- **Added to the bill:** Jeremy Passion → 11-03 Jesse Gold @ Schubas
+- **Added to the bill:** Midori Jaeger → 11-04 Eivør @ Park West
+- **Added to the bill:** Ben Quad → 11-04 Boston Manor @ Bottom Lounge
+- **Added to the bill:** Cancer House → 11-04 Diles Que No Me Maten @ Constellation
+- **Added to the bill:** Sports., rosacade, Cable-Knit → 11-06 Weatherday @ Bottom Lounge
 
 ### Los Angeles
-- **New:** 10-28 Cold War Kids @ LA River
-- **New:** 10-29 Sasami + The Paranoyds, Mike Watt & The Secondmen @ The Smell
-- **New:** 10-30 Lemmo + The Watchers, India Thieriot, Br!x @ Los Globos
-- **New:** 10-30 The Whops + Iron Orchids, Kickstart @ The Smell
-- **New:** 10-31 Black Flute Brigade @ Townhouse Venice
-- **New:** 11-04 The Sophs + Gelatines, Disrot @ The Airliner
-- **New:** 11-05 Paralysis Expletive @ The Sardine
-- **Added to the bill:** Black Mountain (duo) → 10-28 Sunn O))) @ Joshua Tree Retreat Center
-- **Added to the bill:** Mamalarky, Lucky → 10-30 Freak Slug @ The Roxy
-- **Added to the bill:** 54 Ultra → 10-30 Malcolm Todd @ The Greek Theatre
-- **Added to the bill:** Madelline → 10-30 Emei @ The Novo
-- **Added to the bill:** Katie Alice Greer → 11-03 Thao @ Lodge Room
-- **Added to the bill:** Quinto Sol → 11-06 Alborosie @ The Regent Theater
-- **No longer listed:** 10-30 Fime + Hot Hot Fuss, Iconique @ Permanent Records Roadhouse
+- **New:** 11-05 Essencer + Heavywake, Exosphere, Cherry Sky @ Above The Bridge
+- **New:** 11-06 Wayword + Yearn, Practically People, Sister @ Above The Bridge
+- **New:** 11-07 James K + Ms* Gloom, Sassy 009, Jawnino, Lancer, Dylan Thom, voyeur, BOYG1RL, PHF, Angels In America, Horse Laugh, Eintracht @ Echoplex
+- **New:** 11-07 Pluie + Fat, Evil Children, Donna, Sticko @ Above The Bridge
+- **New:** 11-08 Sophia Stel + Carissa's Wierd, EQ, Rockie Rode, Nation, The Sound Chalk Makes, Molina, School Fair, Corridos Ketamina, Ari, goldenstar, Tracy, Cicada @ Echoplex
+- **New:** 11-09 Dashboard Confessional @ Troubadour
+- **New:** 11-10 Kevin Abstract + Knox Write @ The Roxy
+- **Added to the bill:** Grace Enger → 11-02 Stella Lefty @ Fonda Theatre
+- **Added to the bill:** Lauren Juzang → 11-03 Six60 @ Teragram Ballroom
+- **Added to the bill:** Insect Surfers → 11-03 Southern Culture on the Skids @ Zebulon
+- **Added to the bill:** Mamalarky, Lucky → 11-03 Freak Slug @ The Observatory
+- **Added to the bill:** Ally Salort → 11-03 Lexi Jayde @ El Rey Theatre
+- **Added to the bill:** The Last Wild Buffalo → 11-04 Clay Street Unit @ Moroccan Lounge
+- **Added to the bill:** Mori → 11-04 Taylor Bickett @ Moroccan Lounge
+- **Added to the bill:** worthitpurchase → 11-04 Man/Woman/Chainsaw @ The Echo
+- **Added to the bill:** Silverdeer → 11-04 After @ El Rey Theatre
+- **Added to the bill:** Daffo → 11-04 Tommy LeFroy @ El Cid
+- **Added to the bill:** Bayli → 11-05 Rebecca Black @ Fonda Theatre
+- **Added to the bill:** Lecx Stacy → 11-05 Sobs @ El Cid
+- **Added to the bill:** Allie Sandt → 11-05 Liana Flores @ Sid The Cat Auditorium
+- **Added to the bill:** Dirty Dell → 11-05 kwn @ The Novo
+- **Added to the bill:** Silverdeer → 11-05 After @ El Rey Theatre
+- **Added to the bill:** Brad Oberhofer, Shags Chamberain → 11-05 Kate Bollinger @ 2220 Arts + Archives
+- **Added to the bill:** After Louise → 11-05 Genesis Owusu @ Lodge Room
+- **Added to the bill:** Josh Da Costa → 11-06 Alex Cameron @ Zebulon
+- **Added to the bill:** Bonnie Bishop, Ryan McMullan → 11-06 Foy Vance @ El Rey Theatre
+- **Added to the bill:** Bambii → 11-06 Nia Archives @ Fonda Theatre
+- **Added to the bill:** 3kelves → 11-06 Supertaste @ The Echo
+- **Added to the bill:** Omri → 11-06 Carl Cox @ Hollywood Palladium
+- **Added to the bill:** Jonny Fritz → 11-06 Chris Acker @ Permanent Records Roadhouse
+- **Added to the bill:** Harry Teardrop → 11-06 James Ivy @ The Paramount
+- **Added to the bill:** The Wilder Blue → 11-07 Paul Cauthen @ The Observatory
+- **Added to the bill:** Bonnie Bishop, Ryan McMullan → 11-07 Foy Vance @ El Rey Theatre
+- **Added to the bill:** Rebby → 11-08 Ebony Loren @ Moroccan Lounge
+- **Added to the bill:** Skating Polly → 11-08 Heavens to Betsy @ Sid The Cat Auditorium
+- **Added to the bill:** DRAM → 11-08 Yuki Chiba @ El Rey Theatre
+- **Added to the bill:** Crayon → 11-08 bunii @ The Observatory
 

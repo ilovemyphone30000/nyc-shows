@@ -475,6 +475,11 @@
    "why": "Anthony Jeselnik is comedy, and NJPAC is in New Jersey.",
    "source": "",
    "on": "2026-10-28"
+  },
+  "481683": {
+   "why": "Screening and listening event, not a concert",
+   "source": "scan review",
+   "on": "2026-11-02"
   }
  },
  "chi": {
@@ -592,6 +597,11 @@
    "why": "Comedy.",
    "source": "",
    "on": "2026-10-28"
+  },
+  "481696": {
+   "why": "DJ set",
+   "source": "scan review",
+   "on": "2026-11-02"
   }
  },
  "la": {
@@ -819,6 +829,11 @@
    "why": "Grammy Museum event is an interview/conversation with Peter Hook, not a concert.",
    "source": "https://grammymuseum.org/event/a-conversation-with-peter-hook-of-joy-division-new-order/",
    "on": "2026-10-28"
+  },
+  "tm:vv170Z_4GkwLRFHS": {
+   "why": "90s hip-hop and R&B theme night",
+   "source": "scan review",
+   "on": "2026-11-02"
   }
  }
 }

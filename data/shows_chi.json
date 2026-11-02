@@ -1,1208 +1,10 @@
 {
- "checked": "2026-10-28",
+ "checked": "2026-11-02",
  "week": [
-  "2026-10-28",
-  "2026-11-11"
+  "2026-11-02",
+  "2026-11-16"
  ],
  "shows": [
-  {
-   "id": "474961",
-   "date": "2026-10-28",
-   "time": "18:30",
-   "headliner": "Wolf & Bear",
-   "support": [
-    "Coletta",
-    "Origami Button"
-   ],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/wolf-and-bear/697509",
-   "pick": false
-  },
-  {
-   "id": "475894",
-   "date": "2026-10-28",
-   "time": "19:00",
-   "headliner": "Isabel van Gelder",
-   "support": [],
-   "venue": "Beat Kitchen",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/isabel-van-gelder/699486",
-   "pick": false
-  },
-  {
-   "id": "478300",
-   "date": "2026-10-28",
-   "time": "19:00",
-   "headliner": "Lexi Jayde",
-   "support": [],
-   "venue": "Chop Shop",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/bbgabo-lexi-jayde-28th-oct-chop-shop-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "475031",
-   "date": "2026-10-28",
-   "time": "19:30",
-   "headliner": "Shakey Graves",
-   "support": [
-    "Wild Pink"
-   ],
-   "venue": "The Vic Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/shakey-graves-fondness-etc-tour-1448386",
-   "pick": true
-  },
-  {
-   "id": "476315",
-   "date": "2026-10-28",
-   "time": "20:00",
-   "headliner": "Yana",
-   "support": [
-    "Emma Andersen"
-   ],
-   "venue": "Lincoln Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-28-2026-yana/",
-   "pick": false
-  },
-  {
-   "id": "479837",
-   "date": "2026-10-28",
-   "time": "20:00",
-   "headliner": "Maximum Wage",
-   "support": [
-    "Stander",
-    "Retroregression"
-   ],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/maximum-wage/706127",
-   "pick": false
-  },
-  {
-   "id": "474503",
-   "date": "2026-10-28",
-   "time": "20:00",
-   "headliner": "Phillip Phillips",
-   "support": [
-    "Katie Lynne Sharbaugh"
-   ],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/phillip-phillips-lets-thalia-hall-tickets/14203884",
-   "pick": false
-  },
-  {
-   "id": "479801",
-   "date": "2026-10-28",
-   "time": "20:00",
-   "headliner": "T. Maguire",
-   "support": [
-    "Milkswarm",
-    "When The Wall Breaks Down"
-   ],
-   "venue": "The Burlington",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/eo9kl6-t-maguire-milkswarm-when-the-wall-breaks-down-28th-oct-the-burlington-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "473868",
-   "date": "2026-10-28",
-   "time": "21:00",
-   "headliner": "Delicate Steve",
-   "support": [
-    "Yellow Ostrich"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/delicate-steve-empty-bottle-tickets/14987483",
-   "pick": true
-  },
-  {
-   "id": "479870",
-   "date": "2026-10-28",
-   "time": "21:30",
-   "headliner": "Alga",
-   "support": [
-    "Adelaide",
-    "Sleep Tight Tiger"
-   ],
-   "venue": "Hideout",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hideoutchicago.com/shows/alga-adelaide-sleep-tight-tiger-28-oct",
-   "pick": false
-  },
-  {
-   "id": "472772",
-   "date": "2026-10-29",
-   "time": "18:00",
-   "headliner": "Dweezil Zappa",
-   "support": [],
-   "venue": "Riviera Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/dweezil-zappa-dz20-like-father-like-son-1464605",
-   "pick": false
-  },
-  {
-   "id": "480479",
-   "date": "2026-10-29",
-   "time": "18:30",
-   "headliner": "Microgoblet",
-   "support": [
-    "Naomi 10 Million",
-    "BABY"
-   ],
-   "venue": "Lowdown",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.instagram.com/p/DePhL-Hp_Qk/",
-   "pick": false
-  },
-  {
-   "id": "481132",
-   "date": "2026-10-29",
-   "time": "19:00",
-   "headliner": "Vortis",
-   "support": [
-    "Phet Mak",
-    "Spaceracer"
-   ],
-   "venue": "Cobra Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/g5vdga-vortis-phet-mak-spaceracer-29th-oct-cobra-lounge-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "475006",
-   "date": "2026-10-29",
-   "time": "19:00",
-   "headliner": "gavn!",
-   "support": [],
-   "venue": "Reggie's Rock Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/gavn-tba-reggies-rock-club-tickets/14208404",
-   "pick": false
-  },
-  {
-   "id": "476766",
-   "date": "2026-10-29",
-   "time": "19:30",
-   "headliner": "Tommy LeFroy",
-   "support": [],
-   "venue": "Hideout",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hideoutchicago.com/shows/tommy-lefroy-29-oct",
-   "pick": false
-  },
-  {
-   "id": "480277",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "headliner": "Zoofunkyou",
-   "support": [
-    "San Leandro",
-    "Eve Casino"
-   ],
-   "venue": "Chop Shop",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/l8p2vx-zoofunkyou-san-leandro-eve-casino-29th-oct-chop-shop-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "479061",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "headliner": "Little Barrie",
-   "support": [],
-   "venue": "Old Town School of Folk Music",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.oldtownschool.org/concerts/2026/10-29-2026-little-barrie",
-   "pick": false
-  },
-  {
-   "id": "477135",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "headliner": "Parrotfish",
-   "support": [
-    "Moravian",
-    "Scorched Waves"
-   ],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-29-2026-parrotfish/",
-   "pick": false
-  },
-  {
-   "id": "475355",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "headliner": "Cortisa Star",
-   "support": [],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/cortisa-star-for-all-the-dolls-tour/696971",
-   "pick": false
-  },
-  {
-   "id": "472413",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "headliner": "The Tallest Man On Earth",
-   "support": [
-    "Gwenifer Raymond"
-   ],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/the-tallest-man-on-earth-thalia-hall-tickets/14940063",
-   "pick": true
-  },
-  {
-   "id": "471098",
-   "date": "2026-10-29",
-   "time": "20:00",
-   "headliner": "The Dresden Dolls",
-   "support": [],
-   "venue": "The Salt Shed",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/the-dresden-dolls-chicago-illinois-10-29-2026/event/040064A8C315EAAF",
-   "pick": false
-  },
-  {
-   "id": "479846",
-   "date": "2026-10-29",
-   "time": "21:00",
-   "headliner": "Spread Joy",
-   "support": [
-    "Body Shop",
-    "Goo",
-    "Crassostrea LLC",
-    "Elyse Johnson"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/spread-joy-album-release-empty-bottle-tickets/14343974",
-   "pick": false
-  },
-  {
-   "id": "474355",
-   "date": "2026-10-29",
-   "time": "21:00",
-   "headliner": "Flamingosis",
-   "support": [
-    "Pure Colors"
-   ],
-   "venue": "Sleeping Village",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/l8kalw-flamingosis-29th-oct-sleeping-village-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "473423",
-   "date": "2026-10-30",
-   "time": "18:00",
-   "headliner": "Periphery",
-   "support": [
-    "Greyhaven",
-    "Ne Obliviscaris",
-    "Ando San"
-   ],
-   "venue": "Ramova Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.tixr.com/groups/ramovatheatre/events/periphery-a-pale-white-dot-us-tour-190297",
-   "pick": false
-  },
-  {
-   "id": "479810",
-   "date": "2026-10-30",
-   "time": "18:30",
-   "headliner": "Snuffed",
-   "support": [
-    "Daybreaker",
-    "Mano A Mano",
-    "Don't Front",
-    "New Found Power",
-    "Lavender"
-   ],
-   "venue": "Cobra Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/nvxxr3-beavers-halloween-26-snuffed-daybreaker-mano-a-mano-dont-front-new-found-power-lavender-30th-oct-cobra-lounge-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "477563",
-   "date": "2026-10-30",
-   "time": "18:30",
-   "headliner": "Weston Estate",
-   "support": [],
-   "venue": "Outset",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/040065061E2BADE8",
-   "pick": false
-  },
-  {
-   "id": "470790",
-   "date": "2026-10-30",
-   "time": "18:30",
-   "headliner": "Amble",
-   "support": [],
-   "venue": "Riviera Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/amble-1425701",
-   "pick": false
-  },
-  {
-   "id": "481529",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Pig Destroyer",
-   "support": [
-    "Necrot",
-    "Eternal Champion",
-    "Lair of the Minotaur"
-   ],
-   "venue": "Bottom Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/three-floyds-30th-anniversary-event-bottom-lounge-tickets/15021343",
-   "pick": false
-  },
-  {
-   "id": "472848",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Taper's Choice",
-   "support": [],
-   "venue": "Garcia's",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/tapers-choice-chicago-illinois-10-30-2026/event/040064BBC0C0F8BF",
-   "pick": false
-  },
-  {
-   "id": "479868",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Derry's Substance",
-   "support": [],
-   "venue": "Hideout",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hideoutchicago.com/shows/derry-s-substance-early-30-oct",
-   "pick": false
-  },
-  {
-   "id": "476344",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Quadeca",
-   "support": [
-    "Derby"
-   ],
-   "venue": "Metro",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://metrochicago.com/event/quadeca/",
-   "pick": false
-  },
-  {
-   "id": "477310",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Dom Dolla",
-   "support": [],
-   "venue": "Navy Pier",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.tixr.com/groups/navypiereventcenter/events/dom-dolla-194113",
-   "pick": false
-  },
-  {
-   "id": "475629",
-   "date": "2026-10-30",
-   "time": "19:00",
-   "headliner": "Zanias",
-   "support": [
-    "Buzz Kull",
-    "Crash Course in Science",
-    "Kontravoid",
-    "Automelodi",
-    "Sleek Teeth",
-    "Grave Love"
-   ],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250534",
-   "pick": false
-  },
-  {
-   "id": "466941",
-   "date": "2026-10-30",
-   "time": "20:00",
-   "headliner": "The Living Tombstone",
-   "support": [
-    "GameboyJones",
-    "SugarVision"
-   ],
-   "venue": "Aragon Ballroom",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/the-living-tombstone-the-multiplayer-tour-chicago-illinois-10-30-2026/event/04006458BF7193C2",
-   "pick": false
-  },
-  {
-   "id": "478315",
-   "date": "2026-10-30",
-   "time": "20:00",
-   "headliner": "Yada Yada",
-   "support": [
-    "Pat and the Pissers",
-    "Smut",
-    "Cool Heat"
-   ],
-   "venue": "Lincoln Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-30-2026-yada-yada/",
-   "pick": false
-  },
-  {
-   "id": "472780",
-   "date": "2026-10-30",
-   "time": "20:00",
-   "headliner": "MARIS",
-   "support": [],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-30-2026-maris/",
-   "pick": false
-  },
-  {
-   "id": "479021",
-   "date": "2026-10-30",
-   "time": "20:00",
-   "headliner": "Hollyy",
-   "support": [
-    "Kid Copter",
-    "Sabina",
-    "Free Joel"
-   ],
-   "venue": "The Burlington",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/6dgl33-hollyy-kid-copter-sabina-free-joel-30th-oct-the-burlington-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "479869",
-   "date": "2026-10-30",
-   "time": "21:00",
-   "headliner": "Derry's Substance",
-   "support": [],
-   "venue": "Hideout",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hideoutchicago.com/shows/derry-s-substance-late-show-30-oct",
-   "pick": false
-  },
-  {
-   "id": "473353",
-   "date": "2026-10-30",
-   "time": "21:00",
-   "headliner": "The Symposium",
-   "support": [
-    "MTV Ghosts"
-   ],
-   "venue": "Sleeping Village",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/3oxawv-the-symposium-w-mtv-ghosts-30th-oct-sleeping-village-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "471330",
-   "date": "2026-10-30",
-   "time": "22:00",
-   "headliner": "Sweeping Promises",
-   "support": [
-    "Clickbait",
-    "Uniflora"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/sweeping-promises-empty-bottle-tickets/14910863",
-   "pick": true
-  },
-  {
-   "id": "477901",
-   "date": "2026-10-30",
-   "time": "22:00",
-   "headliner": "ATLiens",
-   "support": [
-    "Borgore",
-    "Benda"
-   ],
-   "venue": "Radius",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.radius-chicago.com/events/detail/1534963",
-   "pick": false
-  },
-  {
-   "id": "479863",
-   "date": "2026-10-30",
-   "time": "22:00",
-   "headliner": "COBRAH",
-   "support": [
-    "Pixel Grip",
-    "Shaun J. Wright",
-    "Kirk",
-    "BKHQ"
-   ],
-   "venue": "Radius",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1605542/cobrah-gag-ball-set-pixel-grip-dj-set-shaun-j-wright-kirk-bkhq-tickets",
-   "pick": false
-  },
-  {
-   "id": "479457",
-   "date": "2026-10-31",
-   "time": "14:00",
-   "headliner": "Mucca Pazza",
-   "support": [],
-   "venue": "Color Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/l8mdgb-mucca-pazza-gets-spooky-31st-oct-color-club-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "478432",
-   "date": "2026-10-31",
-   "time": "17:00",
-   "headliner": "OsamaSon",
-   "support": [
-    "Waka Flocka Flame",
-    "Speed",
-    "2slimey",
-    "DJ Smokey",
-    "Buckshot",
-    "Big Ass Truck I.E.",
-    "Warlord Colossus",
-    "Boltcutter",
-    "Chamber",
-    "Private School"
-   ],
-   "venue": "Aragon Ballroom",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/gods-of-chaos-halloween-chicago-illinois-10-31-2026/event/0400650DC5E4C826",
-   "pick": false
-  },
-  {
-   "id": "477539",
-   "date": "2026-10-31",
-   "time": "18:30",
-   "headliner": "Post Animal",
-   "support": [
-    "GIFT"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/sold-out-the-empty-bottle-empty-bottle-tickets/15036023",
-   "pick": true
-  },
-  {
-   "id": "477564",
-   "date": "2026-10-31",
-   "time": "18:30",
-   "headliner": "Weston Estate",
-   "support": [],
-   "venue": "Outset",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/040065061F65B002",
-   "pick": false
-  },
-  {
-   "id": "479455",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "Sincere Engineer",
-   "support": [
-    "Won't Stay Dead"
-   ],
-   "venue": "Cobra Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/v3l6rd-sincere-engineer-friends-halloween-cover-set-show-31st-oct-cobra-lounge-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "469862",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "The Damned",
-   "support": [
-    "Flamin' Groovies",
-    "The Courettes"
-   ],
-   "venue": "Concord Music Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://concordmusichall.com/calendar/the-damned-2/",
-   "pick": false
-  },
-  {
-   "id": "472788",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "Noah Gundersen",
-   "support": [
-    "Runnner",
-    "Breakup Shoes"
-   ],
-   "venue": "Lincoln Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-31-2026-noah-gundersen/",
-   "pick": false
-  },
-  {
-   "id": "477311",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "Dom Dolla",
-   "support": [],
-   "venue": "Navy Pier",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.tixr.com/groups/navypiereventcenter/events/dom-dolla-194113",
-   "pick": false
-  },
-  {
-   "id": "479063",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "The Soul Avengers",
-   "support": [],
-   "venue": "SPACE",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/the-soul-avengers-tribute-to-space-tickets/14316204",
-   "pick": false
-  },
-  {
-   "id": "475347",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "A Split Second",
-   "support": [
-    "Aux Animaux",
-    "Sacred Skin",
-    "MVTANT",
-    "The Treasury",
-    "Pink Stiletto",
-    "Children's Crusade"
-   ],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/sanctum-dark-music-festival-thalia-hall-tickets/14250544",
-   "pick": false
-  },
-  {
-   "id": "477177",
-   "date": "2026-10-31",
-   "time": "19:00",
-   "headliner": "Allison Russell",
-   "support": [],
-   "venue": "The Vic Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/allison-russell-1556099",
-   "pick": false
-  },
-  {
-   "id": "470219",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "lilyisthatyou",
-   "support": [],
-   "venue": "Bottom Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/lilyisthatyou-the-flowers-bottom-lounge-tickets/14862513",
-   "pick": false
-  },
-  {
-   "id": "475410",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "Talker",
-   "support": [
-    "OK Cool",
-    "Snowcuffs"
-   ],
-   "venue": "Cole's",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://colesbarchicago.com/shows/talker-ok-cool-snowcuffs-dj-atlas-aurora-october-31-2026-728424",
-   "pick": false
-  },
-  {
-   "id": "475399",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "Marshall Crenshaw",
-   "support": [],
-   "venue": "Old Town School of Folk Music",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.oldtownschool.org/concerts/2026/10-31-2026-marshall-crenshaw",
-   "pick": false
-  },
-  {
-   "id": "468644",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "Teen Jesus and The Jean Teasers",
-   "support": [],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/10-31-2026-teen-jesus-and-the-jean-teasers/",
-   "pick": true
-  },
-  {
-   "id": "476728",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "Turning Birds",
-   "support": [
-    "Sock Jock",
-    "Binaural Head",
-    "Madeline Farr"
-   ],
-   "venue": "The Burlington",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/dkdn5v-sock-jock-turning-birds-binaural-head-madeline-farr-31st-oct-the-burlington-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "469936",
-   "date": "2026-10-31",
-   "time": "20:00",
-   "headliner": "Geese",
-   "support": [
-    "Easy Star All-Stars"
-   ],
-   "venue": "The Salt Shed",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/geese-getting-killed-again-tour-chicago-illinois-10-31-2026/event/04006490A0FD6E40",
-   "pick": true
-  },
-  {
-   "id": "480728",
-   "date": "2026-10-31",
-   "time": "21:00",
-   "headliner": "SWMRS",
-   "support": [
-    "Repent",
-    "North By North"
-   ],
-   "venue": "Reggie's Rock Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/swmrs-north-by-north-repent-reggies-rock-club-tickets/14334684",
-   "pick": false
-  },
-  {
-   "id": "479550",
-   "date": "2026-10-31",
-   "time": "21:00",
-   "headliner": "SWMRS",
-   "support": [
-    "north by",
-    "Repent"
-   ],
-   "venue": "Reggie's Rock Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/swmrs-north-by-north-repent-reggies-rock-club-tickets/14334684",
-   "pick": false
-  },
-  {
-   "id": "477094",
-   "date": "2026-10-31",
-   "time": "22:00",
-   "headliner": "Post Animal",
-   "support": [
-    "GIFT"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/sold-out-the-empty-bottle-empty-bottle-tickets/15009003",
-   "pick": true
-  },
-  {
-   "id": "479862",
-   "date": "2026-10-31",
-   "time": "22:00",
-   "headliner": "Bree Runway",
-   "support": [
-    "deBasement",
-    "Boots",
-    "Pageant Queens"
-   ],
-   "venue": "Radius",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1605543/bree-runway-debasement-boots-dj-set-pageant-queens-daru-b2b-dj-gaybash-tickets",
-   "pick": false
-  },
-  {
-   "id": "480698",
-   "date": "2026-10-31",
-   "time": "22:00",
-   "headliner": "Iglesias",
-   "support": [],
-   "venue": "Spybar",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/oemwqa-halloween-night-ft-iglesias-31st-oct-spybar-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "479449",
-   "date": "2026-11-01",
-   "time": "18:00",
-   "headliner": "Friday Pilots Club",
-   "support": [],
-   "venue": "Cobra Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/3obwrx-friday-pilots-club-1st-nov-cobra-lounge-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "470287",
-   "date": "2026-11-01",
-   "time": "18:00",
-   "headliner": "Bad Gyal",
-   "support": [],
-   "venue": "Riviera Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/bad-gyal-mas-cara-world-tour-2026-1414956",
-   "pick": false
-  },
-  {
-   "id": "478421",
-   "date": "2026-11-01",
-   "time": "18:30",
-   "headliner": "Claudio Simonetti's Goblin (performing live score to Tenebre)",
-   "support": [],
-   "venue": "The WC Social Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://skeletix.com/4787-claudio-simonettis-goblin-tenebre-tour/",
-   "pick": false
-  },
-  {
-   "id": "474875",
-   "date": "2026-11-01",
-   "time": "19:00",
-   "headliner": "Radiator Hospital",
-   "support": [
-    "DUSK"
-   ],
-   "venue": "Beat Kitchen",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/radiator-hospital/697266",
-   "pick": false
-  },
-  {
-   "id": "479836",
-   "date": "2026-11-01",
-   "time": "19:00",
-   "headliner": "Flycatcher",
-   "support": [],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/flycatcher/705257",
-   "pick": false
-  },
-  {
-   "id": "477168",
-   "date": "2026-11-01",
-   "time": "19:00",
-   "headliner": "New Constellations",
-   "support": [
-    "Vox Rea"
-   ],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/new-constellations-it-comes-in-thalia-hall-tickets/14264304",
-   "pick": false
-  },
-  {
-   "id": "470889",
-   "date": "2026-11-01",
-   "time": "19:30",
-   "headliner": "L7",
-   "support": [],
-   "venue": "The Vic Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1434675/l7-the-last-hurrah-tour-2026-tickets",
-   "pick": true
-  },
-  {
-   "id": "477544",
-   "date": "2026-11-01",
-   "time": "20:00",
-   "headliner": "DITZ",
-   "support": [
-    "Ganser",
-    "Gloin"
-   ],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/11-01-2026-ditz-uk/",
-   "pick": true
-  },
-  {
-   "id": "475009",
-   "date": "2026-11-01",
-   "time": "20:00",
-   "headliner": "Elanor Moss",
-   "support": [],
-   "venue": "Tack Room",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/elanor-moss-tack-room-tickets/14240714",
-   "pick": false
-  },
-  {
-   "id": "470440",
-   "date": "2026-11-01",
-   "time": "20:00",
-   "headliner": "Geese",
-   "support": [
-    "Gwenifer Raymond"
-   ],
-   "venue": "The Salt Shed",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/geese-getting-killed-again-tour-chicago-illinois-11-01-2026/event/0400649BCC0D98FE",
-   "pick": true
-  },
-  {
-   "id": "479193",
-   "date": "2026-11-01",
-   "time": "21:00",
-   "headliner": "Jeremiah Chiu",
-   "support": [
-    "Josh Johnson"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/international-anthem-presents-jeremiah-chiu-empty-bottle-tickets/14316654",
-   "pick": false
-  },
   {
    "id": "480278",
    "date": "2026-11-02",
@@ -1241,7 +43,10 @@
    "date": "2026-11-02",
    "time": "19:00",
    "headliner": "June Henry",
-   "support": [],
+   "support": [
+    "Chrysalis",
+    "Hannah Sandoz"
+   ],
    "venue": "Beat Kitchen",
    "borough": null,
    "tier": null,
@@ -1397,7 +202,9 @@
    "date": "2026-11-03",
    "time": "20:00",
    "headliner": "Jesse Gold",
-   "support": [],
+   "support": [
+    "Jeremy Passion"
+   ],
    "venue": "Schubas",
    "borough": null,
    "tier": null,
@@ -1456,14 +263,16 @@
    "date": "2026-11-03",
    "time": "21:00",
    "headliner": "Wine Lips",
-   "support": [],
+   "support": [
+    "Flesh Panthers"
+   ],
    "venue": "Sleeping Village",
    "borough": null,
    "tier": null,
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/nvra69-wine-lips-3rd-nov-sleeping-village-chicago-tickets",
-   "pick": false
+   "pick": true
   },
   {
    "id": "477865",
@@ -1482,6 +291,20 @@
    "pick": false
   },
   {
+   "id": "481707",
+   "date": "2026-11-04",
+   "time": "18:00",
+   "headliner": "Mike Kinsella (of American Football)",
+   "support": [],
+   "venue": "Reckless Records - N. Milwaukee",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://www.instagram.com/p/DfIZboZoyJg/",
+   "pick": true
+  },
+  {
    "id": "477561",
    "date": "2026-11-04",
    "time": "18:30",
@@ -1495,14 +318,16 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://concordmusichall.com/calendar/george-clanton/",
-   "pick": false
+   "pick": true
   },
   {
    "id": "470286",
    "date": "2026-11-04",
    "time": "18:30",
    "headliner": "Eivør",
-   "support": [],
+   "support": [
+    "Midori Jaeger"
+   ],
    "venue": "Park West",
    "borough": null,
    "tier": null,
@@ -1545,7 +370,8 @@
    "time": "19:00",
    "headliner": "Boston Manor",
    "support": [
-    "Spaced"
+    "Spaced",
+    "Ben Quad"
    ],
    "venue": "Bottom Lounge",
    "borough": null,
@@ -1587,22 +413,6 @@
    "pick": false
   },
   {
-   "id": "468225",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Lime Garden",
-   "support": [
-    "Lace For Leisure"
-   ],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/lime-garden/684448",
-   "pick": false
-  },
-  {
    "id": "479045",
    "date": "2026-11-04",
    "time": "19:00",
@@ -1618,6 +428,22 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.seetickets.us/event/my-upside-down/704668",
    "pick": false
+  },
+  {
+   "id": "468225",
+   "date": "2026-11-04",
+   "time": "19:00",
+   "headliner": "Lime Garden",
+   "support": [
+    "Lace For Leisure"
+   ],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/lime-garden/684448",
+   "pick": true
   },
   {
    "id": "469261",
@@ -1655,7 +481,9 @@
    "date": "2026-11-04",
    "time": "20:00",
    "headliner": "Diles Que No Me Maten",
-   "support": [],
+   "support": [
+    "Cancer House"
+   ],
    "venue": "Constellation",
    "borough": null,
    "tier": null,
@@ -2189,6 +1017,24 @@
    "pick": false
   },
   {
+   "id": "481667",
+   "date": "2026-11-06",
+   "time": "19:30",
+   "headliner": "Friko (solo)",
+   "support": [
+    "Hazel City",
+    "Growing Boys",
+    "Laceles"
+   ],
+   "venue": "Not Not",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/p/DfDgc9vyOWV/",
+   "pick": true
+  },
+  {
    "id": "475423",
    "date": "2026-11-06",
    "time": "20:00",
@@ -2207,7 +1053,11 @@
    "date": "2026-11-06",
    "time": "20:00",
    "headliner": "Weatherday",
-   "support": [],
+   "support": [
+    "Sports.",
+    "rosacade",
+    "Cable-Knit"
+   ],
    "venue": "Bottom Lounge",
    "borough": null,
    "tier": null,
@@ -2444,6 +1294,24 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.seetickets.us/event/darryl-rahn/706075",
+   "pick": false
+  },
+  {
+   "id": "481701",
+   "date": "2026-11-07",
+   "time": "18:30",
+   "headliner": "Lovergirl",
+   "support": [
+    "Mittens",
+    "One Good Year",
+    "The World In Broken Glass"
+   ],
+   "venue": "Lowdown",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/p/De1sEyAkVm1/",
    "pick": false
   },
   {
@@ -3393,6 +2261,24 @@
    "pick": false
   },
   {
+   "id": "481700",
+   "date": "2026-11-11",
+   "time": "18:30",
+   "headliner": "Laceles",
+   "support": [
+    "Libby Quinn",
+    "Hot Lettuce",
+    "Common Ghosts"
+   ],
+   "venue": "Lowdown",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/p/DesG0zTxX7K/",
+   "pick": false
+  },
+  {
    "id": "473897",
    "date": "2026-11-11",
    "time": "18:30",
@@ -3421,20 +2307,6 @@
    "pick": false
   },
   {
-   "id": "480267",
-   "date": "2026-11-11",
-   "time": "19:00",
-   "headliner": "Dead Butterflies",
-   "support": [],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/dead-butterflies/707055",
-   "pick": false
-  },
-  {
    "id": "479043",
    "date": "2026-11-11",
    "time": "19:00",
@@ -3446,6 +2318,20 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.seetickets.us/event/eldon/703800",
+   "pick": false
+  },
+  {
+   "id": "480267",
+   "date": "2026-11-11",
+   "time": "19:00",
+   "headliner": "Dead Butterflies",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/dead-butterflies/707055",
    "pick": false
   },
   {
@@ -3482,20 +2368,6 @@
    "pick": false
   },
   {
-   "id": "480280",
-   "date": "2026-11-11",
-   "time": "20:00",
-   "headliner": "Mother Soki",
-   "support": [],
-   "venue": "Color Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/av82aq-mother-soki-11th-nov-color-club-chicago-tickets",
-   "pick": false
-  },
-  {
    "id": "479023",
    "date": "2026-11-11",
    "time": "20:00",
@@ -3509,6 +2381,20 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/q2d79y-mel-bryant-the-mercy-makers-molly-compton-11th-nov-color-club-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "480280",
+   "date": "2026-11-11",
+   "time": "20:00",
+   "headliner": "Mother Soki",
+   "support": [],
+   "venue": "Color Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/av82aq-mother-soki-11th-nov-color-club-chicago-tickets",
    "pick": false
   },
   {
@@ -3613,6 +2499,1302 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/bb9y3g-marci-11th-nov-sleeping-village-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "472839",
+   "date": "2026-11-12",
+   "time": "17:00",
+   "headliner": "VOILA",
+   "support": [
+    "Weathers",
+    "Ella Red",
+    "No Love For The Middle Child"
+   ],
+   "venue": "House of Blues Chicago",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/voila-presents-moonbloom-chicago-illinois-11-12-2026/event/040064BBDD8F67F0",
+   "pick": false
+  },
+  {
+   "id": "477524",
+   "date": "2026-11-12",
+   "time": "18:00",
+   "headliner": "Worst Party Ever",
+   "support": [
+    "Equipment",
+    "Rosevile Sucks",
+    "Ogbert The Nerd"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/dkd2ko-worst-party-ever-equipment-rosevile-sucks-ogbert-the-nerd-12th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "477988",
+   "date": "2026-11-12",
+   "time": "18:30",
+   "headliner": "Frost Children",
+   "support": [],
+   "venue": "Radius",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1587915/frost-children-tickets",
+   "pick": true
+  },
+  {
+   "id": "478328",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "headliner": "Surely Tempo",
+   "support": [],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/surely-tempo/699102",
+   "pick": false
+  },
+  {
+   "id": "478751",
+   "date": "2026-11-12",
+   "time": "19:00",
+   "headliner": "James Ivy",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/james-ivy/703796",
+   "pick": false
+  },
+  {
+   "id": "480294",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "headliner": "Disaster Kid",
+   "support": [
+    "Sara Geist",
+    "Julian Saunders"
+   ],
+   "venue": "Hideout",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.hideoutchicago.com/shows/disaster-kid-single-release-with-sara-geist-and-julian-saunders-12-nov",
+   "pick": false
+  },
+  {
+   "id": "476749",
+   "date": "2026-11-12",
+   "time": "19:30",
+   "headliner": "John Carroll Kirby",
+   "support": [],
+   "venue": "SPACE",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/john-carroll-kirby-space-tickets/15001403",
+   "pick": false
+  },
+  {
+   "id": "474856",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "headliner": "Nori Reed",
+   "support": [],
+   "venue": "Lincoln Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-12-2026-nori-reed/",
+   "pick": false
+  },
+  {
+   "id": "474846",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "headliner": "Jackie Evans",
+   "support": [],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-12-2026-jackie-evans/",
+   "pick": false
+  },
+  {
+   "id": "465245",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "headliner": "Hiss Golden Messenger",
+   "support": [
+    "Sam Amidon"
+   ],
+   "venue": "Thalia Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/hiss-golden-messenger-thalia-hall-tickets/14146084",
+   "pick": true
+  },
+  {
+   "id": "477872",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "headliner": "Marie Ann Hedonia",
+   "support": [
+    "Anne Helen Wells",
+    "Simonne Wrath",
+    "Laura Armless Palmer"
+   ],
+   "venue": "The Burlington",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/8e7367-marie-ann-hedonia-anne-helen-wells-simonne-wrath-laura-armless-palmer-12th-nov-the-burlington-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "471806",
+   "date": "2026-11-12",
+   "time": "20:00",
+   "headliner": "Charles Wesley Godwin",
+   "support": [
+    "Tyler Nance"
+   ],
+   "venue": "The Salt Shed",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/charles-wesley-godwin-christian-name-tour-chicago-illinois-11-12-2026/event/040064AED766D32E",
+   "pick": false
+  },
+  {
+   "id": "477870",
+   "date": "2026-11-12",
+   "time": "21:00",
+   "headliner": "Alix Perez",
+   "support": [],
+   "venue": "Chop Shop",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/8e9dw2-alix-perez-12th-nov-chop-shop-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "475333",
+   "date": "2026-11-12",
+   "time": "21:00",
+   "headliner": "Improvement Movement",
+   "support": [
+    "Jalen Reyes"
+   ],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/improvement-movement-jalen-reyes-empty-bottle-tickets/14256874",
+   "pick": false
+  },
+  {
+   "id": "478587",
+   "date": "2026-11-12",
+   "time": "21:00",
+   "headliner": "Sleepwalk",
+   "support": [
+    "Cuss",
+    "Left of Heaven"
+   ],
+   "venue": "Sleeping Village",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/l8mr3b-sleepwalk-w-cuss-left-of-heaven-12th-nov-sleeping-village-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "475416",
+   "date": "2026-11-13",
+   "time": "18:00",
+   "headliner": "Kamasi Washington",
+   "support": [
+    "Ami Taf Ra"
+   ],
+   "venue": "City Winery",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://tickets.citywinery.com/event/kamasi-washington-ami-taf-ra-presenting-the-prof-jp71ey",
+   "pick": true
+  },
+  {
+   "id": "478717",
+   "date": "2026-11-13",
+   "time": "18:00",
+   "headliner": "Sunday Cruise",
+   "support": [
+    "Arcadia Grey",
+    "Friend"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/py3q2k-sunday-cruise-arcadia-grey-friend-13th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "481699",
+   "date": "2026-11-13",
+   "time": "18:30",
+   "headliner": "Dysform",
+   "support": [
+    "Cue Ball",
+    "Pure Joy",
+    "Bad Guy",
+    "Staring Contest"
+   ],
+   "venue": "Lowdown",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/p/Deru_MwkdRv/",
+   "pick": false
+  },
+  {
+   "id": "474047",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "headliner": "Almost Monday",
+   "support": [],
+   "venue": "House of Blues Chicago",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/almost-monday-thank-god-its-almost-chicago-illinois-11-13-2026/event/040064D2D734C5FC",
+   "pick": false
+  },
+  {
+   "id": "475897",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "headliner": "Six60",
+   "support": [],
+   "venue": "Metro",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://metrochicago.com/event/six60/metro-chicago/chicago-illinois/",
+   "pick": false
+  },
+  {
+   "id": "472777",
+   "date": "2026-11-13",
+   "time": "19:30",
+   "headliner": "Ethan Regan",
+   "support": [
+    "Lily Kershaw"
+   ],
+   "venue": "Thalia Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/ethan-regan-young-thalia-hall-tickets/14956253",
+   "pick": false
+  },
+  {
+   "id": "476397",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Patrick Wolf",
+   "support": [],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/patrick-wolf/699169",
+   "pick": false
+  },
+  {
+   "id": "473921",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Gatsby's American Dream",
+   "support": [],
+   "venue": "Chop Shop",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/8eqvxr-gatsbys-american-dream-13th-nov-chop-shop-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "480464",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Twin Talk",
+   "support": [],
+   "venue": "Constellation",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/twin-talk-delights-album-release/706523",
+   "pick": false
+  },
+  {
+   "id": "475346",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Porch Light",
+   "support": [],
+   "venue": "Lincoln Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-13-2026-porch-light/",
+   "pick": false
+  },
+  {
+   "id": "474365",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Liana Flores",
+   "support": [
+    "Allie Sandt"
+   ],
+   "venue": "Old Town School of Folk Music",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.oldtownschool.org/concerts/2026/11-13-2026-liana-flores",
+   "pick": false
+  },
+  {
+   "id": "479377",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Danny Brown",
+   "support": [],
+   "venue": "Outset",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/040065350FDD9E0D",
+   "pick": true
+  },
+  {
+   "id": "478318",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Fraxiom",
+   "support": [
+    "Ell!psis",
+    "Naughta"
+   ],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-13-2026-fraxiom/",
+   "pick": false
+  },
+  {
+   "id": "480279",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Maria and the Coins",
+   "support": [
+    "Boundary Waters",
+    "Em Grace",
+    "The Bits"
+   ],
+   "venue": "The Burlington",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/pyx788-maria-and-the-coins-boundary-waters-em-grace-the-bits-13th-nov-the-burlington-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "469950",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "Palace",
+   "support": [
+    "Willie J Healey"
+   ],
+   "venue": "The Salt Shed",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-chicago-illinois-11-13-2026/event/040064909EF36C2F",
+   "pick": false
+  },
+  {
+   "id": "479072",
+   "date": "2026-11-13",
+   "time": "21:00",
+   "headliner": "Street Dove",
+   "support": [
+    "Shredded Sun",
+    "Humdrum"
+   ],
+   "venue": "Cole's",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://colesbarchicago.com/shows/street-dove-shredded-sun-humdrum-november-13-2026-746477",
+   "pick": false
+  },
+  {
+   "id": "475417",
+   "date": "2026-11-13",
+   "time": "21:30",
+   "headliner": "Kamasi Washington",
+   "support": [
+    "Ami Taf Ra"
+   ],
+   "venue": "City Winery",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://tickets.citywinery.com/event/kamasi-washington-ami-taf-ra-presenting-the-prof-l5uk3p",
+   "pick": false
+  },
+  {
+   "id": "477895",
+   "date": "2026-11-13",
+   "time": "22:00",
+   "headliner": "ØTTA",
+   "support": [],
+   "venue": "Concord Music Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://concordmusichall.com/calendar/otta/",
+   "pick": false
+  },
+  {
+   "id": "479860",
+   "date": "2026-11-13",
+   "time": "22:00",
+   "headliner": "Westend",
+   "support": [],
+   "venue": "Radius",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1570599/westend-tickets",
+   "pick": false
+  },
+  {
+   "id": "481130",
+   "date": "2026-11-14",
+   "time": "15:00",
+   "headliner": "Cliffhanger",
+   "support": [
+    "Midway Down"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/nvrka5-cliffhanger-midway-down-14th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "462889",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "headliner": "Nikki Glaser",
+   "support": [],
+   "venue": "Chicago Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.jamusa.com/events/detail/nikki-glaser-chi26",
+   "pick": false
+  },
+  {
+   "id": "475418",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "headliner": "Kamasi Washington",
+   "support": [
+    "Ami Taf Ra"
+   ],
+   "venue": "City Winery",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://tickets.citywinery.com/event/kamasi-washington-ami-taf-ra-presenting-the-prof-o8pgfu",
+   "pick": false
+  },
+  {
+   "id": "479453",
+   "date": "2026-11-14",
+   "time": "18:00",
+   "headliner": "Ryan Jesse",
+   "support": [],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/xegkwe-ryan-jesse-14th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "481702",
+   "date": "2026-11-14",
+   "time": "18:30",
+   "headliner": "Disposable Thumbs",
+   "support": [
+    "Monastica",
+    "Tollbooth",
+    "Try a Dull Knife"
+   ],
+   "venue": "Lowdown",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/p/DfAPiFJyQE3/",
+   "pick": false
+  },
+  {
+   "id": "470019",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "Low Cut Connie",
+   "support": [],
+   "venue": "Lincoln Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-14-2026-low-cut-connie/",
+   "pick": false
+  },
+  {
+   "id": "472836",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "The Afghan Whigs",
+   "support": [
+    "Night Moves"
+   ],
+   "venue": "Metro",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://metrochicago.com/event/the-afghan-whigs/metro-chicago/chicago-illinois/",
+   "pick": true
+  },
+  {
+   "id": "469023",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "Grateful Shred",
+   "support": [],
+   "venue": "Park West",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1400461/grateful-shred-tickets",
+   "pick": false
+  },
+  {
+   "id": "476326",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "William Basinski",
+   "support": [
+    "Purelink"
+   ],
+   "venue": "Rockefeller Chapel, University of Chicago",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/92323o-reflections-william-basinski-purelink-14th-nov-rockefeller-memorial-chapel-chicago-tickets",
+   "pick": true
+  },
+  {
+   "id": "469819",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "Francis of Delirium",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/francis-of-delirium/688717",
+   "pick": false
+  },
+  {
+   "id": "470521",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "The Menzingers",
+   "support": [
+    "Hot Water Music",
+    "Weakened Friends"
+   ],
+   "venue": "The Salt Shed",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-chicago-illinois-11-14-2026/event/040064A1A499A16D",
+   "pick": true
+  },
+  {
+   "id": "471387",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "Michelle Wolf",
+   "support": [],
+   "venue": "The Vic Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.jamusa.com/events/detail/michelle-wolf-1438414",
+   "pick": false
+  },
+  {
+   "id": "472464",
+   "date": "2026-11-14",
+   "time": "19:30",
+   "headliner": "Julia Jacklin",
+   "support": [],
+   "venue": "Riviera Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1471219/julia-jacklin-tickets",
+   "pick": true
+  },
+  {
+   "id": "477171",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Babehoven",
+   "support": [
+    "Shoulderbird"
+   ],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/babehoven/700921",
+   "pick": false
+  },
+  {
+   "id": "477151",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "the olllam",
+   "support": [],
+   "venue": "Chop Shop",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/3orgo8-the-olllam-14th-nov-chop-shop-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "474515",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Heavens to Betsy",
+   "support": [
+    "Bonfire Madigan"
+   ],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/sold-out-heavens-to-betsy-empty-bottle-tickets/14218454",
+   "pick": true
+  },
+  {
+   "id": "480729",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "The Slackers",
+   "support": [
+    "The Crombies",
+    "Dirty Notion",
+    "Mel Tepid & Them Ska Soul Farmers"
+   ],
+   "venue": "Reggie's Rock Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/9th-annual-slackfest-reggies-rock-club-tickets/14199054",
+   "pick": false
+  },
+  {
+   "id": "471787",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Amythyst Kiah",
+   "support": [],
+   "venue": "SPACE",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/amythyst-kiah-space-tickets/14921043",
+   "pick": false
+  },
+  {
+   "id": "477849",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Memphis LK",
+   "support": [],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-14-2026-memphis-lk/",
+   "pick": false
+  },
+  {
+   "id": "479042",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Girl Tones",
+   "support": [
+    "Modern Cult",
+    "Four Degrees Colder"
+   ],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/girl-tones/702185",
+   "pick": false
+  },
+  {
+   "id": "474505",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "The Wooten Brothers",
+   "support": [],
+   "venue": "Thalia Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/the-wooten-brothers-thalia-hall-tickets/14203614",
+   "pick": false
+  },
+  {
+   "id": "478310",
+   "date": "2026-11-14",
+   "time": "21:00",
+   "headliner": "Nightbreakers",
+   "support": [
+    "Lake Drive",
+    "Nick Karchner"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/q2d2ma-nightbreakers-lake-drive-nick-karchner-14th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "477189",
+   "date": "2026-11-14",
+   "time": "21:00",
+   "headliner": "Big Bill",
+   "support": [
+    "Bugoff!",
+    "Wild Zero"
+   ],
+   "venue": "Cole's",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://colesbarchicago.com/shows/big-bill-bugoff-wild-zero-november-14-2026-727178",
+   "pick": false
+  },
+  {
+   "id": "480004",
+   "date": "2026-11-14",
+   "time": "21:00",
+   "headliner": "Only Fire",
+   "support": [
+    "DJ Dave",
+    "Alice Longyu Gao",
+    "Kylie Exotic",
+    "Ariel Zetina"
+   ],
+   "venue": "Outset",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/040065291FD6DF50",
+   "pick": false
+  },
+  {
+   "id": "473356",
+   "date": "2026-11-14",
+   "time": "21:00",
+   "headliner": "Sassy 009",
+   "support": [],
+   "venue": "Sleeping Village",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/bb7rbv-sassy-009-14th-nov-sleeping-village-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "473372",
+   "date": "2026-11-14",
+   "time": "21:00",
+   "headliner": "Michelle Wolf",
+   "support": [],
+   "venue": "The Vic Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1483056/michelle-wolf-tickets",
+   "pick": false
+  },
+  {
+   "id": "475419",
+   "date": "2026-11-14",
+   "time": "21:30",
+   "headliner": "Kamasi Washington",
+   "support": [
+    "Ami Taf Ra"
+   ],
+   "venue": "City Winery",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://tickets.citywinery.com/event/kamasi-washington-ami-taf-ra-presenting-the-prof-9hboxg",
+   "pick": false
+  },
+  {
+   "id": "477894",
+   "date": "2026-11-14",
+   "time": "22:00",
+   "headliner": "Tobiahs",
+   "support": [],
+   "venue": "Concord Music Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://concordmusichall.com/calendar/tobiahs/",
+   "pick": false
+  },
+  {
+   "id": "478338",
+   "date": "2026-11-14",
+   "time": "22:00",
+   "headliner": "Brutalismus 3000",
+   "support": [
+    "Cannelle",
+    "10cust"
+   ],
+   "venue": "Radius",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.radius-chicago.com/events/detail/1592097",
+   "pick": false
+  },
+  {
+   "id": "477194",
+   "date": "2026-11-14",
+   "time": "22:00",
+   "headliner": "Pedro Sampaio",
+   "support": [],
+   "venue": "Ramova Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.tixr.com/groups/ramovatheatre/events/pedro-sampaio-196418",
+   "pick": false
+  },
+  {
+   "id": "476769",
+   "date": "2026-11-15",
+   "time": "17:30",
+   "headliner": "Honey Revenge",
+   "support": [
+    "Dead Poet Society",
+    "Hunny",
+    "Broadside"
+   ],
+   "venue": "Concord Music Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://concordmusichall.com/calendar/honey-revenge-x-dead-poet-society/",
+   "pick": false
+  },
+  {
+   "id": "477170",
+   "date": "2026-11-15",
+   "time": "18:00",
+   "headliner": "Allison Mahal",
+   "support": [],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/allison-mahal/701314",
+   "pick": false
+  },
+  {
+   "id": "478586",
+   "date": "2026-11-15",
+   "time": "18:00",
+   "headliner": "Spanish Love Songs",
+   "support": [],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/avkg3v-spanish-love-songs-the-cost-of-living-tour-15th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "471415",
+   "date": "2026-11-15",
+   "time": "18:00",
+   "headliner": "Saosin",
+   "support": [
+    "Silent Planet",
+    "Like Moths to Flames",
+    "Save Us"
+   ],
+   "venue": "House of Blues Chicago",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/saosin-20-years-of-selftitled-chicago-illinois-11-15-2026/event/0400648EAE116A87",
+   "pick": false
+  },
+  {
+   "id": "477882",
+   "date": "2026-11-15",
+   "time": "18:30",
+   "headliner": "Jason Narducy",
+   "support": [
+    "Lizz Winstead"
+   ],
+   "venue": "SPACE",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/conversation-on-politics-comedy-and-space-tickets/14277424",
+   "pick": false
+  },
+  {
+   "id": "478334",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "headliner": "Fox Stevenson",
+   "support": [
+    "Mystery Skulls"
+   ],
+   "venue": "Bottom Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/fox-stevenson-mystery-skulls-bottom-lounge-tickets/14261764",
+   "pick": false
+  },
+  {
+   "id": "477145",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "headliner": "Internet Girl",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/internet-girl/701289",
+   "pick": false
+  },
+  {
+   "id": "479169",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "headliner": "Hamilton Leithauser",
+   "support": [
+    "Rostam",
+    "Johanna Samuels"
+   ],
+   "venue": "Thalia Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/hamilton-leithauser-rostam-thalia-hall-tickets/14311824",
+   "pick": true
+  },
+  {
+   "id": "478089",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "headliner": "Manchester Orchestra",
+   "support": [],
+   "venue": "The Vic Theatre",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1580776/manchester-orchestra-i-m-like-a-virgin-losing-a-child-20th-anniversary-tickets",
+   "pick": true
+  },
+  {
+   "id": "474861",
+   "date": "2026-11-15",
+   "time": "20:00",
+   "headliner": "Heavens to Betsy",
+   "support": [
+    "No Men"
+   ],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/heavens-to-betsy-empty-bottle-tickets/14229334",
+   "pick": true
+  },
+  {
+   "id": "480730",
+   "date": "2026-11-15",
+   "time": "20:00",
+   "headliner": "The Slackers",
+   "support": [
+    "Todd Hembrook",
+    "Detroit Riddim Crew",
+    "Tone Zone Skam"
+   ],
+   "venue": "Reggie's Rock Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/9th-annual-slackfest-reggies-rock-club-tickets/14199054",
+   "pick": false
+  },
+  {
+   "id": "479829",
+   "date": "2026-11-15",
+   "time": "20:00",
+   "headliner": "Durtnap",
+   "support": [
+    "Broken Demeanor",
+    "Brain Sex",
+    "Guttural"
+   ],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-15-2026-durtnap/",
+   "pick": false
+  },
+  {
+   "id": "479448",
+   "date": "2026-11-16",
+   "time": "18:00",
+   "headliner": "Discontent",
+   "support": [
+    "Ethic Another Enemy",
+    "Viscera Crown",
+    "Suffering",
+    "Absent Soul",
+    "Kartika 55"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/53kpbk-discontent-ethic-another-enemy-viscera-crown-suffering-absent-soul-kartika-55-16th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "477863",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "headliner": "Sap",
+   "support": [
+    "Sludge Mother",
+    "Awannabe"
+   ],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/saps-erasure-tour/702943",
+   "pick": false
+  },
+  {
+   "id": "471236",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "headliner": "Gene",
+   "support": [],
+   "venue": "Bottom Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/gene-bottom-lounge-tickets/14901513",
+   "pick": false
+  },
+  {
+   "id": "476312",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "headliner": "Lighthearted",
+   "support": [
+    "Kate Stephenson"
+   ],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-16-2026-lighthearted-kate-stephenson/",
+   "pick": false
+  },
+  {
+   "id": "478251",
+   "date": "2026-11-16",
+   "time": "19:30",
+   "headliner": "Laura Anglade",
+   "support": [],
+   "venue": "SPACE",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/laura-anglade-space-tickets/14290524",
+   "pick": false
+  },
+  {
+   "id": "477885",
+   "date": "2026-11-16",
+   "time": "20:00",
+   "headliner": "Jessie Reyez",
+   "support": [],
+   "venue": "Aragon Ballroom",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/jessie-reyez-a-little-vengeance-tour-chicago-illinois-11-16-2026/event/04006515B0D11331",
+   "pick": false
+  },
+  {
+   "id": "481340",
+   "date": "2026-11-16",
+   "time": "21:00",
+   "headliner": "Rent Control (ft. Nonnie Parry)",
+   "support": [
+    "Twice Told Tale",
+    "Timelife",
+    "Tender Object Systems"
+   ],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://www.ticketweb.com/event/free-monday-w-rent-control-empty-bottle-tickets/14382684",
    "pick": false
   }
  ]
