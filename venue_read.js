@@ -102,3 +102,39 @@ const greek = () => {
   }
   return out;
 };
+
+// 9. unionpool: union-pool.com/calendar is a DICE widget. Click "LOAD MORE" until it's gone, then
+//    read the cards. Titles are the whole bill ("A • B • C", or "A + B" when there is no •); dates print as
+//    "Wed 27 Jan 2027 ― 7:00pm", year only when it isn't this one.
+const unionPool = () => [...document.querySelectorAll("article")].map(a => {
+  const t = a.querySelector(".dice_event-title"); if (!t) return null;
+  const m = (t.nextElementSibling?.textContent || "").match(/(\d{1,2}) ([A-Z][a-z]{2})(?: (20\d\d))? ― (\d{1,2}:\d\d[ap]m)/);
+  if (!m) return null;
+  const bill = t.textContent.trim(), [head, ...rest] = bill.split(bill.includes("•") ? /\s+•\s+/ : /\s+\+\s+/);  // "Dr. S + M" is one act
+  return { name: head, support: rest.join(", "), date: `${m[2]} ${m[1]}${m[3] ? ", " + m[3] : ""}`, time: m[4], url: t.href };
+}).filter(Boolean);
+
+// 10. mercurylounge: mercuryeastpresents.com/mercurylounge/, cards a page at /page/<n>/.
+//     Fetch pages from that same site until one has no cards; cancelled shows are skipped. A title
+//     sometimes carries the whole bill ("Toona, Kingsland", support "Toona"): the first act not
+//     billed as support is the headliner.
+const mercuryLounge = async () => {
+  const out = [], seen = new Set();
+  for (let n = 1; n < 40; n++) {
+    const doc = new DOMParser().parseFromString(await (await fetch(n === 1 ? "/mercurylounge/" : `/mercurylounge/page/${n}/`)).text(), "text/html");
+    const cards = [...doc.querySelectorAll(".tw-section")].filter(c => c.querySelector(".tw-name a") && c.querySelector(".tw-event-date"));
+    if (!cards.length) break;
+    for (const c of cards) {
+      const a = c.querySelector(".tw-name a");
+      if (/cancel/i.test(c.textContent) || seen.has(a.href)) continue;
+      seen.add(a.href);
+      const sup = [...c.querySelectorAll(".tw-attractions span")].map(s => s.textContent.trim());
+      const acts = a.textContent.replace(/^\*[^*]+\*\s*/, "").trim().split(/,\s+(?!and\b)/);
+      const key = x => x.toLowerCase().replace(/[^a-z0-9]/g, "");
+      const head = acts.length > 1 ? acts.find(x => !sup.some(y => key(y) === key(x))) || acts[0] : acts[0];
+      out.push({ name: head, support: [...acts.filter(x => x !== head), ...sup].join(", "),
+        date: c.querySelector(".tw-event-date").textContent.trim(), time: c.querySelector(".tw-event-time")?.textContent, url: a.href });
+    }
+  }
+  return out;
+};

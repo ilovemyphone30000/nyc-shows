@@ -125,15 +125,16 @@ def cross_support(key, shows, near):
     by = {}
     for date, venue, acts in rows:
         by.setdefault((date, tm_rules.room(venue)), []).append(acts)
+    act = lambda x: re.sub(r"^dj ", "", norm(x))  # "DJ Katie Von Schleicher" is "Katie Von Schleicher (DJ)"
     for show in shows:
-        billed = [norm(x) for x in [show["headliner"], *show["support"]]]
+        billed = [act(x) for x in [show["headliner"], *show["support"]]]
         for acts in by.get((show["date"], tm_rules.room(show["venue"])), []):
-            if not acts or not near(norm(acts[0]), billed[0]):
+            if not acts or not near(act(acts[0]), billed[0]):
                 continue  # another show in the room that night
             for a in acts[1:]:
-                if norm(a) and not FILLER_ACTS.search(a.strip()) and not any(near(norm(a), b) for b in billed):
+                if act(a) and not FILLER_ACTS.search(a.strip()) and not any(near(act(a), b) for b in billed):
                     show["support"] = [*show["support"], a]
-                    billed.append(norm(a))
+                    billed.append(act(a))
                     show["_grew"] = 1
     ours = None
     for show in shows:

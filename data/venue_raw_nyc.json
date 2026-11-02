@@ -2,11 +2,13 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-10-28",
+"Pier 17": "2026-11-02",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-10-28",
-"Nightclub 101": "2026-10-05"
+"Webster Hall": "2026-11-02",
+"Nightclub 101": "2026-10-05",
+"Mercury Lounge": "2026-11-02",
+"Union Pool": "2026-11-02"
 },
 "seenAt": {},
 "rows": [
@@ -270,6 +272,1276 @@ null,
 null,
 "Tickets",
 "https://www.livenation.com/event/k7vGF_8MeNMlL/yll-limani-international-live-tour-2026-new-york",
+0
+],
+[
+"v-mercurylounge-2026-11-02-lily-detaeye",
+"2026-11-02T18:00:00",
+[
+"Lily DeTaeye",
+"The Women’s National Hockey League"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/lily-detaeye/",
+0
+],
+[
+"v-mercurylounge-2026-11-02-coyle-girelli",
+"2026-11-02T21:00:00",
+[
+"Coyle Girelli"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/coyle-girelli/",
+0
+],
+[
+"v-mercurylounge-2026-11-03-marty-o-reilly",
+"2026-11-03T18:00:00",
+[
+"Marty O’Reilly",
+"Mary-Elaine Jenkins"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/marty-oreilly/",
+0
+],
+[
+"v-mercurylounge-2026-11-04-gavn",
+"2026-11-04T18:00:00",
+[
+"gavn!"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/gavn/",
+0
+],
+[
+"v-mercurylounge-2026-11-04-keenan-trevon",
+"2026-11-04T21:00:00",
+[
+"Keenan TreVon"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/keenan-trevon/",
+0
+],
+[
+"v-mercurylounge-2026-11-05-friday-pilots-club",
+"2026-11-05T18:00:00",
+[
+"Friday Pilots Club"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/friday-pilots-club/",
+0
+],
+[
+"v-mercurylounge-2026-11-05-gus-dapperton",
+"2026-11-05T21:00:00",
+[
+"Gus Dapperton"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/gus-dapperton/",
+0
+],
+[
+"v-mercurylounge-2026-11-06-late-night-thoughts",
+"2026-11-06T18:00:00",
+[
+"Late Night Thoughts",
+"Sneaky Miles"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/late-night-thoughts-days-like-this-tour/",
+0
+],
+[
+"v-mercurylounge-2026-11-06-madra-salach",
+"2026-11-06T21:00:00",
+[
+"Madra Salach"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/madra-salach/",
+0
+],
+[
+"v-mercurylounge-2026-11-07-bryan-andrews",
+"2026-11-07T18:00:00",
+[
+"Bryan Andrews",
+"Lou Ridley"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/bryan-andrews/",
+0
+],
+[
+"v-mercurylounge-2026-11-07-brothel-in-belize",
+"2026-11-07T21:00:00",
+[
+"Brothel in Belize"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/brothel-in-belize/",
+0
+],
+[
+"v-mercurylounge-2026-11-08-the-paradox",
+"2026-11-08T17:00:00",
+[
+"The Paradox",
+"Meet Me @ The Altar"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-paradox/",
+0
+],
+[
+"v-mercurylounge-2026-11-08-modern-alibi",
+"2026-11-08T20:00:00",
+[
+"Modern Alibi"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/modern-alibi/",
+0
+],
+[
+"v-mercurylounge-2026-11-09-the-paradox",
+"2026-11-09T18:00:00",
+[
+"The Paradox",
+"Meet Me @ The Altar"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-paradox-2/",
+0
+],
+[
+"v-mercurylounge-2026-11-09-connor-sobieri",
+"2026-11-09T21:00:00",
+[
+"Connor Sobieri",
+"Dylan K. Smith"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/connor-sobieri/",
+0
+],
+[
+"v-mercurylounge-2026-11-10-eldon",
+"2026-11-10T18:00:00",
+[
+"eldon"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/eldon/",
+0
+],
+[
+"v-mercurylounge-2026-11-10-vaultboy",
+"2026-11-10T21:00:00",
+[
+"vaultboy"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/vaultboy/",
+0
+],
+[
+"v-mercurylounge-2026-11-11-red-leather",
+"2026-11-11T18:00:00",
+[
+"Red Leather",
+"The Romance"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/red-leather-tahoe-tour/",
+0
+],
+[
+"v-mercurylounge-2026-11-11-camylio",
+"2026-11-11T21:00:00",
+[
+"Camylio",
+"Friend of a Friend"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/camylio/",
+0
+],
+[
+"v-mercurylounge-2026-11-12-thao",
+"2026-11-12T19:00:00",
+[
+"Thao"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/thao/",
+0
+],
+[
+"v-mercurylounge-2026-11-13-the-kilans",
+"2026-11-13T18:00:00",
+[
+"The Kilans",
+"Carver Jones"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-kilans/",
+0
+],
+[
+"v-mercurylounge-2026-11-13-wilmah",
+"2026-11-13T21:00:00",
+[
+"Wilmah",
+"Emmylou"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/wilmah/",
+0
+],
+[
+"v-mercurylounge-2026-11-13-nudey",
+"2026-11-13T23:59:00",
+[
+"Nudey"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/nudey/",
+0
+],
+[
+"v-mercurylounge-2026-11-14-will-dempsey",
+"2026-11-14T18:00:00",
+[
+"Will Dempsey",
+"Cold Weather Company"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/will-dempsey-carry-the-weight-tour/",
+0
+],
+[
+"v-mercurylounge-2026-11-15-shanghai-qiutian",
+"2026-11-15T17:00:00",
+[
+"Shanghai Qiutian",
+"Dabda"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/shanghai-qiutian/",
+0
+],
+[
+"v-mercurylounge-2026-11-15-michaela-anne",
+"2026-11-15T20:00:00",
+[
+"Michaela Anne"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/michaela-anne/",
+0
+],
+[
+"v-mercurylounge-2026-11-16-hohyun",
+"2026-11-16T18:00:00",
+[
+"Hohyun",
+"Sarah Kang"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/hohyun/",
+0
+],
+[
+"v-mercurylounge-2026-11-16-forrest-nolan",
+"2026-11-16T21:00:00",
+[
+"Forrest Nolan"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/forrest-nolan/",
+0
+],
+[
+"v-mercurylounge-2026-11-17-first-to-eleven",
+"2026-11-17T18:00:00",
+[
+"First To Eleven"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/first-to-eleven/",
+0
+],
+[
+"v-mercurylounge-2026-11-17-making-movies",
+"2026-11-17T21:00:00",
+[
+"Making Movies"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/making-movies/",
+0
+],
+[
+"v-mercurylounge-2026-11-18-girl-tones",
+"2026-11-18T18:00:00",
+[
+"Girl Tones",
+"JT Loux"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/girl-tones/",
+0
+],
+[
+"v-mercurylounge-2026-11-18-the-wave",
+"2026-11-18T21:00:00",
+[
+"The Wave",
+"Never Home"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-wave/",
+0
+],
+[
+"v-mercurylounge-2026-11-19-austin-giorgio",
+"2026-11-19T18:00:00",
+[
+"Austin Giorgio"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/austin-giorgio/",
+0
+],
+[
+"v-mercurylounge-2026-11-19-la-cassandra",
+"2026-11-19T21:00:00",
+[
+"La Cassandra",
+"Dariel Amant"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/la-cassandra-dariel-amant/",
+0
+],
+[
+"v-mercurylounge-2026-11-20-james-ivy",
+"2026-11-20T18:00:00",
+[
+"James Ivy",
+"Harry Teardrop"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/james-ivy/",
+0
+],
+[
+"v-mercurylounge-2026-11-20-for-opal",
+"2026-11-20T21:00:00",
+[
+"For Opal",
+"Whiskey Ginger",
+"Night Hawk"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/for-opal-whiskey-ginger/",
+0
+],
+[
+"v-mercurylounge-2026-11-21-aeter",
+"2026-11-21T18:00:00",
+[
+"aeter",
+"Ja66"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/aeter/",
+0
+],
+[
+"v-mercurylounge-2026-11-21-cortex",
+"2026-11-21T21:00:00",
+[
+"cortex"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/cortex/",
+0
+],
+[
+"v-mercurylounge-2026-11-22-keenan-te",
+"2026-11-22T20:30:00",
+[
+"Keenan Te"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/keenan-te-2/",
+0
+],
+[
+"v-mercurylounge-2026-11-23-annalise-the-mother-underground",
+"2026-11-23T21:00:00",
+[
+"Annalise & The Mother Underground"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/annalise-the-mother-underground/",
+0
+],
+[
+"v-mercurylounge-2026-11-25-the-deep-drags",
+"2026-11-25T18:00:00",
+[
+"The Deep Drags",
+"Density Black Cat"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-deep-drags/",
+0
+],
+[
+"v-mercurylounge-2026-11-27-emmett-the-dead-ends",
+"2026-11-27T18:00:00",
+[
+"Emmett & the Dead Ends",
+"Dog House"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/emmett-the-dead-ends-w-dog-house/",
+0
+],
+[
+"v-mercurylounge-2026-11-27-chemical-x",
+"2026-11-27T21:00:00",
+[
+"Chemical X"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/chemical-x/",
+0
+],
+[
+"v-mercurylounge-2026-11-28-the-manly-hero",
+"2026-11-28T18:00:00",
+[
+"The Manly Hero",
+"Dizzie"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-manly-hero/",
+0
+],
+[
+"v-mercurylounge-2026-11-28-cassie-bouchard",
+"2026-11-28T21:00:00",
+[
+"Cassie Bouchard",
+"Sucker Puncher",
+"The Nightly Noodle"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/cassie-bouchard/",
+0
+],
+[
+"v-mercurylounge-2026-11-29-p-h-0",
+"2026-11-29T20:00:00",
+[
+"P.H.0"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/p-h-0/",
+0
+],
+[
+"v-mercurylounge-2026-12-01-kathy-zimmer",
+"2026-12-01T18:00:00",
+[
+"Kathy Zimmer",
+"Silbin Sandovar"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/kathy-zimmer-silbin-sandovar/",
+0
+],
+[
+"v-mercurylounge-2026-12-02-the-silos",
+"2026-12-02T18:00:00",
+[
+"The Silos",
+"Jon Langford"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-silos/",
+0
+],
+[
+"v-mercurylounge-2026-12-02-chris-garneau",
+"2026-12-02T21:00:00",
+[
+"Chris Garneau",
+"Eliot Krimsky"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/chris-garneau/",
+0
+],
+[
+"v-mercurylounge-2026-12-03-anson-jones",
+"2026-12-03T18:00:00",
+[
+"Anson Jones",
+"Donnie T Smith"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/anson-jones-donnie-t-smith/",
+0
+],
+[
+"v-mercurylounge-2026-12-03-sum-sun",
+"2026-12-03T21:00:00",
+[
+"Sum Sun"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/sum-sun-rendezvous-album-release-show/",
+0
+],
+[
+"v-mercurylounge-2026-12-04-kingsland",
+"2026-12-04T21:00:00",
+[
+"Kingsland",
+"Toona"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/toona-kingsland/",
+0
+],
+[
+"v-mercurylounge-2026-12-05-triple-charm",
+"2026-12-05T18:00:00",
+[
+"Triple Charm"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/triple-charm/",
+0
+],
+[
+"v-mercurylounge-2026-12-05-out-of-pocket",
+"2026-12-05T21:00:00",
+[
+"Out of Pocket"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/out-of-pocket/",
+0
+],
+[
+"v-mercurylounge-2026-12-06-jam-young",
+"2026-12-06T17:00:00",
+[
+"Jam Young",
+"El Gant & Maticulous",
+"El Gant",
+"Jackson Whalan",
+"DJ Toshi"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/jam-young-el-gant-maticulous/",
+0
+],
+[
+"v-mercurylounge-2026-12-06-the-well",
+"2026-12-06T20:00:00",
+[
+"The Well",
+"John Dorney",
+"Lucas Lusher",
+"and Besche"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-well-paul-babe-john-dorney-lucas-lusher-and-besche/",
+0
+],
+[
+"v-mercurylounge-2026-12-08-ezcodylee",
+"2026-12-08T18:00:00",
+[
+"ezcodylee",
+"ninexteen"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/ezcodylee/",
+0
+],
+[
+"v-mercurylounge-2026-12-08-jess-yaffa",
+"2026-12-08T21:00:00",
+[
+"Jess Yaffa"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/jess-yaffa/",
+0
+],
+[
+"v-mercurylounge-2026-12-09-devon-gabriella",
+"2026-12-09T18:00:00",
+[
+"Devon Gabriella"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/devon-gabriella/",
+0
+],
+[
+"v-mercurylounge-2026-12-09-devkota",
+"2026-12-09T21:00:00",
+[
+"Devkota",
+"NateTaylorr"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/devkota-recovery-nights/",
+0
+],
+[
+"v-mercurylounge-2026-12-10-joe-jordan",
+"2026-12-10T21:00:00",
+[
+"Joe Jordan"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/joe-jordan-the-heart-sessions-tour/",
+0
+],
+[
+"v-mercurylounge-2026-12-11-tall-heights",
+"2026-12-11T18:00:00",
+[
+"Tall Heights"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/tall-heights/",
+0
+],
+[
+"v-mercurylounge-2026-12-12-milk-bone",
+"2026-12-12T18:00:00",
+[
+"Milk & Bone"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/milk-bone/",
+0
+],
+[
+"v-mercurylounge-2026-12-13-the-last-bison",
+"2026-12-13T17:00:00",
+[
+"The Last Bison"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-last-bison/",
+0
+],
+[
+"v-mercurylounge-2026-12-14-rozes",
+"2026-12-14T18:00:00",
+[
+"Rozes"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/rozes/",
+0
+],
+[
+"v-mercurylounge-2026-12-14-your-old-droog",
+"2026-12-14T21:00:00",
+[
+"Your Old Droog"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/your-old-droog/",
+0
+],
+[
+"v-mercurylounge-2026-12-16-chris-simpson",
+"2026-12-16T18:00:00",
+[
+"Chris Simpson"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/chris-simpson-of-mineral/",
+0
+],
+[
+"v-mercurylounge-2026-12-17-a-very-mercury-christmas",
+"2026-12-17T18:30:00",
+[
+"A Very Mercury Christmas",
+"Wormburner",
+"Christopher John Campion",
+"Vincent Brue"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/a-very-mercury-christmas-20th-anniversary-show-featuring-yule-dogs/",
+0
+],
+[
+"v-mercurylounge-2026-12-19-morrissey-blvd",
+"2026-12-19T18:00:00",
+[
+"Morrissey Blvd"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/morrissey-blvd/",
+0
+],
+[
+"v-mercurylounge-2026-12-20-aaron-abramowitz",
+"2026-12-20T17:00:00",
+[
+"Aaron Abramowitz",
+"Mae & Henry",
+"Andie Mechanic"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/aaron-abramowitz-mae-henry-andie-mechanic/",
+0
+],
+[
+"v-mercurylounge-2027-01-08-huron-hash",
+"2027-01-08T21:00:00",
+[
+"Huron Hash",
+"Coco Sachs & The Nuts"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/huron-hash-coco-sachs-the-nuts/",
+0
+],
+[
+"v-mercurylounge-2027-01-12-tender-misfit",
+"2027-01-12T18:00:00",
+[
+"Tender Misfit"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/tender-misfit/",
+0
+],
+[
+"v-mercurylounge-2027-01-16-amani-burnham",
+"2027-01-16T18:00:00",
+[
+"Amani Burnham"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/amani-burnham/",
+0
+],
+[
+"v-mercurylounge-2027-01-21-bleech-9-3",
+"2027-01-21T21:00:00",
+[
+"Bleech 9:3"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/bleech-93/",
+0
+],
+[
+"v-mercurylounge-2027-01-23-isabel-van-gelder",
+"2027-01-23T18:00:00",
+[
+"Isabel van Gelder"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/isabel-van-gelder/",
+0
+],
+[
+"v-mercurylounge-2027-01-24-isabel-van-gelder",
+"2027-01-24T17:00:00",
+[
+"Isabel van Gelder"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/isabel-van-gelder-2/",
+0
+],
+[
+"v-mercurylounge-2027-01-29-danz-cm",
+"2027-01-29T21:00:00",
+[
+"Danz CM"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/danz-cm/",
+0
+],
+[
+"v-mercurylounge-2027-02-06-emelie-trahan",
+"2027-02-06T18:00:00",
+[
+"Emelie Trahan"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/emelie-trahan/",
+0
+],
+[
+"v-mercurylounge-2027-02-07-caroline-claire",
+"2027-02-07T20:00:00",
+[
+"Caroline Claire",
+"Eliot Thompson Band",
+"Yaely"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/caroline-claire-eliot-thompson-band-yaely/",
+0
+],
+[
+"v-mercurylounge-2027-02-08-starbenders",
+"2027-02-08T18:00:00",
+[
+"Starbenders"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/starbenders-the-beast-goes-on-u-s-tour-2027/",
+0
+],
+[
+"v-mercurylounge-2027-02-09-jon-spencer",
+"2027-02-09T18:00:00",
+[
+"Jon Spencer"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/jon-spencer/",
+0
+],
+[
+"v-mercurylounge-2027-02-15-nemzzz",
+"2027-02-15T21:00:00",
+[
+"Nemzzz"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/nemzzz/",
+0
+],
+[
+"v-mercurylounge-2027-02-20-mike-viola",
+"2027-02-20T18:00:00",
+[
+"Mike Viola"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/mike-viola/",
+0
+],
+[
+"v-mercurylounge-2027-02-23-zach-seabaugh",
+"2027-02-23T21:00:00",
+[
+"Zach Seabaugh"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/zach-seabaugh/",
+0
+],
+[
+"v-mercurylounge-2027-02-26-luca-fogale",
+"2027-02-26T18:00:00",
+[
+"Luca Fogale"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/luca-fogale/",
+0
+],
+[
+"v-mercurylounge-2027-03-07-kate-yeager",
+"2027-03-07T17:00:00",
+[
+"Kate Yeager"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/kate-yeager/",
+0
+],
+[
+"v-mercurylounge-2027-03-18-anna-shoemaker",
+"2027-03-18T18:00:00",
+[
+"Anna Shoemaker"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/anna-shoemaker/",
+0
+],
+[
+"v-mercurylounge-2027-03-20-gyasi",
+"2027-03-20T18:00:00",
+[
+"Gyasi"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/gyasi/",
+0
+],
+[
+"v-mercurylounge-2027-03-23-alex-sampson",
+"2027-03-23T18:00:00",
+[
+"Alex Sampson"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/alex-sampson/",
+0
+],
+[
+"v-mercurylounge-2027-03-31-sleaford-mods",
+"2027-03-31T19:00:00",
+[
+"Sleaford Mods"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/sleaford-mods/",
+0
+],
+[
+"v-mercurylounge-2027-04-10-sarah-julia",
+"2027-04-10T18:00:00",
+[
+"Sarah Julia"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/sarah-julia-2027-tour/",
+0
+],
+[
+"v-mercurylounge-2027-04-17-the-f16s",
+"2027-04-17T18:00:00",
+[
+"The F16s"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/the-f16s-all-dogs-go-to-heaven-north-america-27/",
+0
+],
+[
+"v-mercurylounge-2027-04-24-kaylee-rose",
+"2027-04-24T21:00:00",
+[
+"Kaylee Rose"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/kaylee-rose/",
+0
+],
+[
+"v-mercurylounge-2027-05-07-paloma-morphy",
+"2027-05-07T18:00:00",
+[
+"Paloma Morphy"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/paloma-morphy-2/",
 0
 ],
 [
@@ -1353,19 +2625,6 @@ null,
 0
 ],
 [
-"v-pier17-2026-10-30-after-dark",
-"2026-10-30",
-[
-"After Dark"
-],
-"Pier 17",
-[],
-null,
-"Tickets",
-"https://rooftopatpier17.com/events/after-dark-2026/",
-0
-],
-[
 "v-radiocity-2026-10-08-jessie-ware",
 "2026-10-08T20:00:00",
 [
@@ -1848,43 +3107,500 @@ null,
 0
 ],
 [
-"v-websterhall-2026-10-28-dj-meredith-marks",
-"2026-10-28",
+"v-unionpool-2026-11-02-rev-vince-anderson-the-love-choir",
+"2026-11-02T20:30:00",
 [
-"DJ Meredith Marks"
+"Rev. Vince Anderson & The Love Choir!"
 ],
-"Webster Hall",
+"Union Pool",
 [],
 null,
 "Tickets",
-"https://www.websterhall.com/events/detail",
+"https://link.dice.fm/F12f9d8e6078",
 0
 ],
 [
-"v-websterhall-2026-10-29-grateful-shred",
-"2026-10-29",
+"v-unionpool-2026-11-03-nu-jazz",
+"2026-11-03T19:00:00",
 [
-"Grateful Shred"
+"Nu Jazz",
+"Dr. S + M",
+"Dahjyn"
 ],
-"Webster Hall",
+"Union Pool",
 [],
 null,
 "Tickets",
-"https://www.websterhall.com/events/detail",
+"https://link.dice.fm/k3393a92549e",
 0
 ],
 [
-"v-websterhall-2026-10-30-mico",
-"2026-10-30",
+"v-unionpool-2026-11-04-patching",
+"2026-11-04T19:00:00",
 [
-"MICO",
-"Will Linley"
+"Patching",
+"Chammeili",
+"Aubrey Haddard",
+"Alright Star"
 ],
-"Webster Hall",
+"Union Pool",
 [],
 null,
 "Tickets",
-"https://www.websterhall.com/events/detail",
+"https://link.dice.fm/h2b24fef319c",
+0
+],
+[
+"v-unionpool-2026-11-05-darryl-rahn",
+"2026-11-05T19:00:00",
+[
+"Darryl Rahn",
+"Hannah Lee Thompson"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/k9a214f37c28",
+0
+],
+[
+"v-unionpool-2026-11-06-wilder-maker",
+"2026-11-06T19:00:00",
+[
+"Wilder Maker",
+"Scree",
+"Mutual Benefit",
+"DJ Katie Von Schleicher"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/zb3be8e64374",
+0
+],
+[
+"v-unionpool-2026-11-07-madra-salach",
+"2026-11-07T19:00:00",
+[
+"Madra Salach"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/U49137e244db",
+0
+],
+[
+"v-unionpool-2026-11-09-rev-vince-anderson-the-love-choir",
+"2026-11-09T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Rc5b7c416c5b",
+0
+],
+[
+"v-unionpool-2026-11-10-hohnen-ford",
+"2026-11-10T19:00:00",
+[
+"Hohnen Ford"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Bad6af9e008f",
+0
+],
+[
+"v-unionpool-2026-11-11-aaron-lee-tasjan",
+"2026-11-11T19:00:00",
+[
+"Aaron Lee Tasjan",
+"Madeleine Kelson"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/cde086706c5e",
+0
+],
+[
+"v-unionpool-2026-11-12-gwenifer-raymond",
+"2026-11-12T19:00:00",
+[
+"Gwenifer Raymond"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/M309fce0d998",
+0
+],
+[
+"v-unionpool-2026-11-13-snowmen",
+"2026-11-13T19:00:00",
+[
+"Snowmen",
+"QIRL"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/ucffd526cab7",
+0
+],
+[
+"v-unionpool-2026-11-15-charlie-parr",
+"2026-11-15T19:00:00",
+[
+"Charlie Parr",
+"Maisy Owen"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/bfdcb2034e78",
+0
+],
+[
+"v-unionpool-2026-11-16-rev-vince-anderson-the-love-choir",
+"2026-11-16T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/O0fe959c0a63",
+0
+],
+[
+"v-unionpool-2026-11-18-honeycrush",
+"2026-11-18T19:00:00",
+[
+"Honeycrush",
+"Scout Pare-Phillips",
+"Riley McBride"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/A18a28c6317b",
+0
+],
+[
+"v-unionpool-2026-11-19-pat-party",
+"2026-11-19T19:00:00",
+[
+"Pat Party"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/W34a61d8beb0",
+0
+],
+[
+"v-unionpool-2026-11-20-dog-date",
+"2026-11-20T19:00:00",
+[
+"Dog Date",
+"The Screech Boys",
+"Bog Imp",
+"$500"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/sa6986329230",
+0
+],
+[
+"v-unionpool-2026-11-21-ben-vaughn-quintet",
+"2026-11-21T19:00:00",
+[
+"Ben Vaughn Quintet",
+"Sweet Pete",
+"The Wigouts",
+"DJ Todd-O-Phonic Todd"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Xafa66927703",
+0
+],
+[
+"v-unionpool-2026-11-22-real-young",
+"2026-11-22T19:00:00",
+[
+"Real Young",
+"Lazy Horse"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Xb82f305e8e0",
+0
+],
+[
+"v-unionpool-2026-11-23-rev-vince-anderson-the-love-choir",
+"2026-11-23T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Q930da141ef5",
+0
+],
+[
+"v-unionpool-2026-11-30-rev-vince-anderson-the-love-choir",
+"2026-11-30T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/t7c855abd846",
+0
+],
+[
+"v-unionpool-2026-12-01-activity",
+"2026-12-01T19:00:00",
+[
+"Activity",
+"Psincerity",
+"Beck Zegans (solo)"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/L3c3d0c821ed",
+0
+],
+[
+"v-unionpool-2026-12-02-rois-2nd-show-added",
+"2026-12-02T19:00:00",
+[
+"RÓIS *2nd Show Added!*"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/L20615798b74",
+0
+],
+[
+"v-unionpool-2026-12-03-rois",
+"2026-12-03T19:00:00",
+[
+"RÓIS"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/dc38ecaf38e7",
+0
+],
+[
+"v-unionpool-2026-12-04-tami-hart",
+"2026-12-04T19:00:00",
+[
+"Tami Hart",
+"Eviee Echoes and the Locations",
+"Hannah Lee Thompson",
+"Joanie and the Chasers"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/e408cbccee8c",
+0
+],
+[
+"v-unionpool-2026-12-06-real-young",
+"2026-12-06T19:00:00",
+[
+"Real Young",
+"Lazy Horse"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Eeba6c87fcd6",
+0
+],
+[
+"v-unionpool-2026-12-07-rev-vince-anderson-the-love-choir",
+"2026-12-07T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/W8d60c0c5831",
+0
+],
+[
+"v-unionpool-2026-12-08-bcmc",
+"2026-12-08T19:00:00",
+[
+"BCMC",
+"GIFT HORSE *Record Release*"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/x0a8c0e4f589",
+0
+],
+[
+"v-unionpool-2026-12-10-manas",
+"2026-12-10T19:00:00",
+[
+"Manas"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/X8c34aa5d4cb",
+0
+],
+[
+"v-unionpool-2026-12-11-angela-autumn",
+"2026-12-11T19:00:00",
+[
+"Angela Autumn",
+"Ramsey Thornton"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/R79052677534",
+0
+],
+[
+"v-unionpool-2026-12-12-the-last-waltz",
+"2026-12-12T19:00:00",
+[
+"The Last Waltz"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/f855d60922ff",
+0
+],
+[
+"v-unionpool-2026-12-13-the-last-waltz",
+"2026-12-13T19:00:00",
+[
+"The Last Waltz"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/H3770670d9f9",
+0
+],
+[
+"v-unionpool-2026-12-14-rev-vince-anderson-the-love-choir",
+"2026-12-14T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/kc485249ab70",
+0
+],
+[
+"v-unionpool-2026-12-16-the-fiery-furnaces",
+"2026-12-16T19:00:00",
+[
+"The Fiery Furnaces"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Yac8bd8708c2",
+0
+],
+[
+"v-unionpool-2026-12-17-pat-party",
+"2026-12-17T19:00:00",
+[
+"Pat Party"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/u22e862be12e",
+0
+],
+[
+"v-unionpool-2026-12-21-rev-vince-anderson-the-love-choir-xmas-s",
+"2026-12-21T20:30:00",
+[
+"Rev. Vince Anderson & The Love Choir XMas Supertacular!"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Q49f763cd2c2",
+0
+],
+[
+"v-unionpool-2027-01-27-heathers",
+"2027-01-27T19:00:00",
+[
+"Heathers"
+],
+"Union Pool",
+[],
+null,
+"Tickets",
+"https://link.dice.fm/Gf1a72a85921",
 0
 ],
 [
