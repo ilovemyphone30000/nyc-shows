@@ -21,7 +21,8 @@ OUT_OF_CITY = {"Bearsville Theater", "Starland Ballroom", "PNC Bank Arts Center"
                # Long Island, New Jersey and upstate rooms OMR lists
                "Massapequa VFW Hall", "Amityville Music Hall", "The Count Basie Center for the Arts",
                "Count Basie Center for the Arts", "Basilica Hudson", "Tarrytown Music Hall",
-               "Prudential Center"}
+               "Prudential Center",
+               "Art House Productions", "Loew's Jersey Theatre", "Maggie's Bar & Restaurant", "Mulcahy's Pub and Concert Hall", "New Jersey Performing Arts Center", "Williams Center"}
 NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park",
                 "Robert F. Wagner Jr. Park", "Co-Cathedral of Saint Joseph", "St. Francis Xavier Church",
                 "St. Bartholomew's Church", "New York Society for Ethical Culture"}
@@ -37,7 +38,7 @@ CITY = {
     "nyc": {"rename": None, "out": None, "acts": None},
     "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon", "iliza shlesinger", "jerry seinfeld"}},
     "la": {"rename": {"Amoeba Music- Hollywood": "Amoeba Music Hollywood"},
-           "out": {"Pappy & Harriet's"}, "acts": {"dynasty handbag", "carmen christopher"}},
+           "out": {"Pappy & Harriet's", "Petco Park San Diego"}, "acts": {"dynasty handbag", "carmen christopher"}},
 }
 
 MN, BK, QN = "Manhattan", "Brooklyn", "Queens"
@@ -47,7 +48,8 @@ BOROUGH = {
          "Gramercy Theatre", "Madison Square Garden", "Radio City Music Hall", "Terminal 5", "Pier 17",
          "Bowery Palace", "Central Park SummerStage", "Sony Hall", "Apollo Theater", "DROM",
          "David Geffen Hall", "Pianos", "Cooper Union", "Metropolitan Museum of Art", "The Greene Space",
-         "Silver Lining Lounge", "Pacha New York", "Berlin", "Racket", "Rough Trade NYC", "Town Hall"],
+         "Silver Lining Lounge", "Pacha New York", "Berlin", "Racket", "Rough Trade NYC", "Town Hall",
+         "92NY", "Arlene's Grocery", "Blue Note", "Hammerstein Ballroom", "Joe's Pub", "KGB Bar", "Limited to One Records", "Lucinda's", "Nublu", "Nublu 151", "Otto's Shrunken Head", "Palladium Times Square", "Soho Live", "The Metropolitan Pavilion", "The Stone", "Whitney Museum"],
     BK: ["Elsewhere", "Music Hall of Williamsburg", "Pioneer Works", "Public Records", "Sleepwalk",
          "Cassette", "Brooklyn Paramount", "Barclays Center", "The Bell House", "The Meadows",
          "The Sultan Room", "Union Pool", "Baby's All Right", "Warsaw", "Brooklyn Steel", "Brooklyn Bowl",
@@ -55,9 +57,11 @@ BOROUGH = {
          "The Broadway", "The Wood Shop", "Maker Park", "99 Scott", "Market Hotel", "National Sawdust",
          "House of Yes", "Littlefield", "The Gutter", "Hart Bar", "Mama Tried", "Maria Hernandez Park",
          "Xanadu", "St. Ann & The Holy Trinity", "Roulette", "Good Room", "Purgatory",
-         "BAM: Brooklyn Academy of Music"],
+         "BAM: Brooklyn Academy of Music",
+         "148 Frost Street", "20 Meadow St", "314 Scholes", "C'mon Everybody", "Jalopy Theater", "Kings Theatre", "Los Depressos", "Old First Church", "Pete's Candy Store", "SILO Brooklyn", "St. John's Lutheran Church", "The Brooklyn Monarch", "Wonderville", "Young Ethel's"],
     QN: ["TV Eye", "Knockdown Center", "Trans-Pecos", "Stone Circle Theatre", "Flushing Meadows-Corona Park",
-         "Forest Hills Stadium", "Bar Freda", "Footlight Underground"],
+         "Forest Hills Stadium", "Bar Freda", "Footlight Underground",
+         "Dada"],
 }
 BORO_OF = {v: b for b, vs in BOROUGH.items() for v in vs}
 

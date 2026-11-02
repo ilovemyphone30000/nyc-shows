@@ -1721,29 +1721,6 @@
    "pick": false
   },
   {
-   "id": "474409",
-   "date": "2026-11-07",
-   "time": "15:30",
-   "headliner": "Deftones",
-   "support": [
-    "The Neighbourhood",
-    "AFI",
-    "Bktherula",
-    "Jehnny Beth",
-    "Converge",
-    "Ladrones",
-    "Lip Critic",
-    "Lustsickpuppy"
-   ],
-   "venue": "Petco Park San Diego",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/dia-de-los-deftones-san-diego-california-11-07-2026/event/0A0064D597284BBD",
-   "pick": true
-  },
-  {
    "id": "477702",
    "date": "2026-11-07",
    "time": "16:00",
