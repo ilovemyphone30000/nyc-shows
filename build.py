@@ -75,6 +75,13 @@ def tm_only(key, d, announced, ledger, tm, near):
         acts = r["acts"] or [re.sub(r"\s*[-–(]?\s*(ages? )?\d\d\s*(\+|and over).*$|\s*\(.*?\)\s*$", "", r["name"], flags=re.I).strip()]
         if len(acts) == 1 and " | " in acts[0]:
             acts = [a.strip() for a in acts[0].split(" | ") if a.strip()]
+        if len(acts) == 1 and not r["acts"]:  # "YARN w/ special guest Terry White at FITZGERALDS Nightclub"
+            acts = [re.sub(r"(?i)\s+(?:at|@)\s+[\w' ]*\b(?:nightclub|club|theatre|theater|hall|lounge)\b.*$", "", acts[0])]
+            m = re.split(r"(?i)\s+w/\s+(?:special guests?\s+)?", acts[0], maxsplit=1)
+            if len(m) == 2:
+                acts = [m[0], *[a.strip() for a in re.split(r",\s*|\s+&\s+|\s+and\s+", m[1]) if a.strip()]]
+        if len(acts) == 1 and not r["acts"] and ", " in acts[0] and all(len(a.split()) <= 4 for a in acts[0].split(", ")):
+            acts = [a.strip() for a in acts[0].split(", ") if a.strip()]  # "superhero, Perfect 100": a bill
         nacts = {norm(a) for a in acts}
         if any(any(near(a, h) for a in nacts for h in hs) for _, hs in have.get(r["date"], [])):
             continue  # already listed that night (any room): OMR or a venue calendar has it

@@ -19,10 +19,20 @@ from ticketmaster import norm
 
 TM_ONLY = True
 
-# Only these Ticketmaster genres count. "Other", "Undefined" and no genre at all are where
-# tribute bands, talk shows, film tours, recitals and theme nights hide (Jonah: tighten up).
+# Only these Ticketmaster genres count. "Undefined" and no genre at all are where tribute
+# bands, talk shows, film tours, recitals and theme nights hide (Jonah: tighten up).
 GENRES = {"Rock", "Pop", "Alternative", "Hip-Hop/Rap", "R&B", "Dance/Electronic", "Country", "Folk",
           "Metal", "Latin", "Reggae", "World"}
+# "Other" also holds plenty of real club shows (LCD Soundsystem, superhero at Nightclub 101), so it
+# counts too, but only away from the concert halls and with a stricter name check.
+OTHER_SKIP_VENUES = {"David Geffen Hall", "Carnegie Hall", "Town Hall", "Symphony Center", "Walt Disney Concert Hall"}
+OTHER_SKIP_NAMES = re.compile(r"(?i)\b((mon|tues|wednes|thurs|fri|satur|sun)days?|nite|night|dj|benefit|anniversary|"
+                              r"celebration|new year.?s eve|nye|in the round|perform the|setlist|crew|b-?day|birthday|students|holiday|christmas|"
+                              r"xmas|classical|vinyl|tells the stories|rehearsal|special|jamz|[0-9]0.?s|dance party)\b")
+# Rooms where every Ticketmaster/TicketWeb listing counts, whatever its genre or name, except a
+# reading (Jonah: "all of Nightclub 101 if not a reading").
+EVERY_SHOW_ROOMS = {"Nightclub 101"}
+READING = re.compile(r"(?i)\b(readings?|book (launch|release|club)|poetry|poets?|literary|author|in conversation|lit night)\b")
 SKIP_GENRES = {"Jazz", "Classical", "Blues", "Religious", "Children's Music", "Holiday", "New Age"}
 SKIP_NAMES = re.compile(
     r"(?i)\b(tributes?|symphony|orchestra|philharmonic|opera|ballet|choir|chorus|big band|happy hour|brunch|"
@@ -33,14 +43,14 @@ SKIP_NAMES = re.compile(
     r"reading|film fest|short film|cabaret|awards?|rumble|show and tell|rave|disco|emo night|"
     r"sessions?|in the mix|disney|halloween|dance feat|dancing with the stars|american idol|the voice|"
     r"so you think|on ice|cirque|magic|illusion|experience|variety show|showcase|talk|live podcast|"
-    r"film tour|mountainfilm|birthday bash|k-pop night|next level k-pop|real estate|storytelling|podcast)\b")
+    r"film tour|mountainfilm|birthday bash|b-?day celebration|students of|christmas special|dance party|calendar show|classical blast|k-pop night|next level k-pop|real estate|storytelling|podcast)\b")
 # Dance clubs: their Ticketmaster listings are DJ nights (DJ-named headliners are dropped
 # everywhere by process.DJ_NIGHT).
 SKIP_VENUES = {"Pacha New York", "TIME Nightclub", "Exchange LA", "Avalon Hollywood", "Academy LA",
                "Sound Nightclub", "Smartbar", "Spybar"}
 # lowercased. Tribute bands, drag and comedy tours, a kids' show: names that don't give it away.
 SKIP_ACTS = {"shane dawson", "led zeppelin 2", "bruce in the usa", "alaska thunderf**k", "bianca del rio",
-             "the rock and roll playhouse"}
+             "the rock and roll playhouse", "desi banks", "desert hearts"}
 SKIP_EVENTS = set()   # e.g. {"G5diZ_KRvp7Ot"}
 
 STATE = {"nyc": "NY", "chi": "IL", "la": "CA"}
@@ -56,7 +66,7 @@ def room(name):
     n = norm(name)
     for _ in range(3):
         n = FILLER.sub("", n).strip()
-    return n
+    return n.replace(" ", "")  # "Night Club 101" is "Nightclub 101"
 
 
 def in_city(key, r):
@@ -69,9 +79,14 @@ def wanted(r, known_room):
     """Is this Ticketmaster event a show the dashboard wants? known_room: the venue is one we cover."""
     if r["status"] == "cancelled" or r["tmId"] in SKIP_EVENTS:
         return False
+    if any(room(r["venue"] or "") == room(v) for v in EVERY_SHOW_ROOMS):
+        return not READING.search(r["name"] or "")
     if r["segment"] not in ("Music", "Undefined"):
         return False
-    if r["genre"] in SKIP_GENRES or r["genre"] not in GENRES:
+    if r["genre"] == "Other":
+        if OTHER_SKIP_NAMES.search(r["name"] or "") or any(room(r["venue"] or "") == room(v) for v in OTHER_SKIP_VENUES):
+            return False
+    elif r["genre"] in SKIP_GENRES or r["genre"] not in GENRES:
         return False
     if not known_room:  # only rooms Oh My Rockness, a venue calendar or our review already covers
         return False
