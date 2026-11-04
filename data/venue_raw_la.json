@@ -1,29 +1,15 @@
 {
 "scanned": {
-"Fonda Theatre": "2026-11-02",
-"The Ford": "2026-11-02",
-"The Greek Theatre": "2026-11-02",
-"Hollywood Bowl": "2026-11-02",
-"Hollywood Forever": "2026-11-02",
-"The Novo": "2026-11-02",
+"Fonda Theatre": "2026-11-04",
+"The Ford": "2026-11-04",
+"The Greek Theatre": "2026-11-04",
+"Hollywood Bowl": "2026-11-04",
+"Hollywood Forever": "2026-11-04",
+"The Novo": "2026-11-04",
 "Hollywood Palladium": "2026-10-05"
 },
 "seenAt": {},
 "rows": [
-[
-"v-fonda-2026-11-02-stella-lefty",
-"2026-11-02T19:00:00",
-[
-"Stella Lefty",
-"Grace Enger"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
 [
 "v-fonda-2026-11-04-the-black-angels",
 "2026-11-04T19:00:00",

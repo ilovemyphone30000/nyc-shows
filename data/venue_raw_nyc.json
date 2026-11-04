@@ -2,13 +2,13 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-11-02",
+"Pier 17": "2026-11-04",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-11-02",
+"Webster Hall": "2026-11-04",
 "Nightclub 101": "2026-10-05",
-"Mercury Lounge": "2026-11-02",
-"Union Pool": "2026-11-02"
+"Mercury Lounge": "2026-11-04",
+"Union Pool": "2026-11-04"
 },
 "seenAt": {},
 "rows": [
@@ -275,47 +275,6 @@ null,
 0
 ],
 [
-"v-mercurylounge-2026-11-02-lily-detaeye",
-"2026-11-02T18:00:00",
-[
-"Lily DeTaeye",
-"The Women’s National Hockey League"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/lily-detaeye/",
-0
-],
-[
-"v-mercurylounge-2026-11-02-coyle-girelli",
-"2026-11-02T21:00:00",
-[
-"Coyle Girelli"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/coyle-girelli/",
-0
-],
-[
-"v-mercurylounge-2026-11-03-marty-o-reilly",
-"2026-11-03T18:00:00",
-[
-"Marty O’Reilly",
-"Mary-Elaine Jenkins"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/marty-oreilly/",
-0
-],
-[
 "v-mercurylounge-2026-11-04-gavn",
 "2026-11-04T18:00:00",
 [
@@ -385,7 +344,8 @@ null,
 "v-mercurylounge-2026-11-06-madra-salach",
 "2026-11-06T21:00:00",
 [
-"Madra Salach"
+"Madra Salach",
+"Roisin McKeown"
 ],
 "Mercury Lounge",
 [],
@@ -599,11 +559,11 @@ null,
 0
 ],
 [
-"v-mercurylounge-2026-11-15-shanghai-qiutian",
+"v-mercurylounge-2026-11-15-dabda",
 "2026-11-15T17:00:00",
 [
-"Shanghai Qiutian",
-"Dabda"
+"Dabda",
+"Wince"
 ],
 "Mercury Lounge",
 [],
@@ -803,6 +763,21 @@ null,
 0
 ],
 [
+"v-mercurylounge-2026-11-23-hello-dreamer",
+"2026-11-23T18:00:00",
+[
+"Hello Dreamer",
+"ELIS",
+"Audrey Mason"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/hello-dreamer-elis-audrey-mason/",
+0
+],
+[
 "v-mercurylounge-2026-11-23-annalise-the-mother-underground",
 "2026-11-23T21:00:00",
 [
@@ -813,6 +788,22 @@ null,
 null,
 "Tickets",
 "https://mercuryeastpresents.com/tm-event/annalise-the-mother-underground/",
+0
+],
+[
+"v-mercurylounge-2026-11-24-del-coda",
+"2026-11-24T18:00:00",
+[
+"Del Coda",
+"Off the Hook",
+"Dylan Taganas",
+"and more!"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/del-coda-off-the-hook-dylan-taganas-and-more/",
 0
 ],
 [
@@ -847,7 +838,10 @@ null,
 "v-mercurylounge-2026-11-27-chemical-x",
 "2026-11-27T21:00:00",
 [
-"Chemical X"
+"Chemical X",
+"Eviction Notice",
+"Deadly Skies",
+"Error 403"
 ],
 "Mercury Lounge",
 [],
@@ -1041,6 +1035,21 @@ null,
 0
 ],
 [
+"v-mercurylounge-2026-12-07-misc",
+"2026-12-07T21:00:00",
+[
+"misc.",
+"Red Girl’s Blue",
+"Circle of Sevens"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/misc-red-girls-blue-circle-of-sevens/",
+0
+],
+[
 "v-mercurylounge-2026-12-08-ezcodylee",
 "2026-12-08T18:00:00",
 [
@@ -1227,6 +1236,35 @@ null,
 null,
 "Tickets",
 "https://mercuryeastpresents.com/tm-event/aaron-abramowitz-mae-henry-andie-mechanic/",
+0
+],
+[
+"v-mercurylounge-2026-12-20-enstrife",
+"2026-12-20T20:00:00",
+[
+"Enstrife",
+"Starfox and the Fleet",
+"Witchforce",
+"Calliope Wren and the Mus"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/enstrife-starfox-and-the-fleet-witchforce-calliope-wren-and-the-mus/",
+0
+],
+[
+"v-mercurylounge-2026-12-26-big-shrimp",
+"2026-12-26T21:00:00",
+[
+"Big Shrimp"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/big-shrimp-visions-album-release-party/",
 0
 ],
 [
@@ -1529,6 +1567,19 @@ null,
 null,
 "Tickets",
 "https://mercuryeastpresents.com/tm-event/kaylee-rose/",
+0
+],
+[
+"v-mercurylounge-2027-04-26-yellow-house",
+"2027-04-26T18:00:00",
+[
+"Yellow House"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/yellow-house/",
 0
 ],
 [
@@ -3107,34 +3158,6 @@ null,
 0
 ],
 [
-"v-unionpool-2026-11-02-rev-vince-anderson-the-love-choir",
-"2026-11-02T20:30:00",
-[
-"Rev. Vince Anderson & The Love Choir!"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/F12f9d8e6078",
-0
-],
-[
-"v-unionpool-2026-11-03-nu-jazz",
-"2026-11-03T19:00:00",
-[
-"Nu Jazz",
-"Dr. S + M",
-"Dahjyn"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/k3393a92549e",
-0
-],
-[
 "v-unionpool-2026-11-04-patching",
 "2026-11-04T19:00:00",
 [
@@ -3601,35 +3624,6 @@ null,
 null,
 "Tickets",
 "https://link.dice.fm/Gf1a72a85921",
-0
-],
-[
-"v-websterhall-2026-11-02-she-wants-revenge",
-"2026-11-02",
-[
-"She Wants Revenge",
-"Rosegarden Funeral Party"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-11-03-the-wrecks",
-"2026-11-03",
-[
-"The Wrecks",
-"Worry Club",
-"Kid Sistr"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
 0
 ],
 [

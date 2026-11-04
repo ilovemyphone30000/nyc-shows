@@ -43,14 +43,14 @@ CITY = {
 
 MN, BK, QN = "Manhattan", "Brooklyn", "Queens"
 BOROUGH = {
-    MN: ["Bowery Ballroom", "Central Park Naumburg Bandshell", "Irving Plaza", "Le Poisson Rouge",
+    MN: ["Bleecker Bell", "Bowery Ballroom", "Central Park Naumburg Bandshell", "Irving Plaza", "Le Poisson Rouge",
          "Mercury Lounge", "Nightclub 101", "Webster Hall", "Beacon Theatre", "Cafe Wha?", "Carnegie Hall",
          "Gramercy Theatre", "Madison Square Garden", "Radio City Music Hall", "Terminal 5", "Pier 17",
          "Bowery Palace", "Central Park SummerStage", "Sony Hall", "Apollo Theater", "DROM",
          "David Geffen Hall", "Pianos", "Cooper Union", "Metropolitan Museum of Art", "The Greene Space",
          "Silver Lining Lounge", "Pacha New York", "Berlin", "Racket", "Rough Trade NYC", "Town Hall",
          "92NY", "Arlene's Grocery", "Blue Note", "Hammerstein Ballroom", "Joe's Pub", "KGB Bar", "Limited to One Records", "Lucinda's", "Nublu", "Nublu 151", "Otto's Shrunken Head", "Palladium Times Square", "Soho Live", "The Metropolitan Pavilion", "The Stone", "Whitney Museum"],
-    BK: ["Elsewhere", "Music Hall of Williamsburg", "Pioneer Works", "Public Records", "Sleepwalk",
+    BK: ["East Williamsburg Econo Lodge", "Lucky 13 Saloon", "Paragon", "Elsewhere", "Music Hall of Williamsburg", "Pioneer Works", "Public Records", "Sleepwalk",
          "Cassette", "Brooklyn Paramount", "Barclays Center", "The Bell House", "The Meadows",
          "The Sultan Room", "Union Pool", "Baby's All Right", "Warsaw", "Brooklyn Steel", "Brooklyn Bowl",
          "Gold Sounds", "Alphaville", "Main Drag Music", "Saint Vitus", "Industry City", "Park Slope",
@@ -59,7 +59,7 @@ BOROUGH = {
          "Xanadu", "St. Ann & The Holy Trinity", "Roulette", "Good Room", "Purgatory",
          "BAM: Brooklyn Academy of Music",
          "148 Frost Street", "20 Meadow St", "314 Scholes", "C'mon Everybody", "Jalopy Theater", "Kings Theatre", "Los Depressos", "Old First Church", "Pete's Candy Store", "SILO Brooklyn", "St. John's Lutheran Church", "The Brooklyn Monarch", "Wonderville", "Young Ethel's"],
-    QN: ["TV Eye", "Knockdown Center", "Trans-Pecos", "Stone Circle Theatre", "Flushing Meadows-Corona Park",
+    QN: ["H0L0", "TV Eye", "Knockdown Center", "Trans-Pecos", "Stone Circle Theatre", "Flushing Meadows-Corona Park",
          "Forest Hills Stadium", "Bar Freda", "Footlight Underground",
          "Dada"],
 }

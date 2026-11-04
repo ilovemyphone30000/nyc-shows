@@ -1,279 +1,10 @@
 {
- "checked": "2026-11-02",
+ "checked": "2026-11-04",
  "week": [
-  "2026-11-02",
-  "2026-11-16"
+  "2026-11-04",
+  "2026-11-18"
  ],
  "shows": [
-  {
-   "id": "480278",
-   "date": "2026-11-02",
-   "time": "18:00",
-   "headliner": "Archer Oh",
-   "support": [
-    "Integra Pink"
-   ],
-   "venue": "Cobra Lounge",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/dkywqg-archer-oh-integra-pink-2nd-nov-cobra-lounge-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "479046",
-   "date": "2026-11-02",
-   "time": "18:00",
-   "headliner": "Party Cannon",
-   "support": [
-    "Orbital Gate",
-    "Beheading The Icon"
-   ],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/party-cannon/703675",
-   "pick": false
-  },
-  {
-   "id": "477553",
-   "date": "2026-11-02",
-   "time": "19:00",
-   "headliner": "June Henry",
-   "support": [
-    "Chrysalis",
-    "Hannah Sandoz"
-   ],
-   "venue": "Beat Kitchen",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/june-henry/701483",
-   "pick": false
-  },
-  {
-   "id": "479867",
-   "date": "2026-11-02",
-   "time": "19:30",
-   "headliner": "Beginningless",
-   "support": [
-    "Jeremy Cunningham"
-   ],
-   "venue": "Hideout",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hideoutchicago.com/shows/northern-spy-presents-anna-butterss-trio-jeremy-cunningham-special-quartet-02-nov",
-   "pick": false
-  },
-  {
-   "id": "472357",
-   "date": "2026-11-02",
-   "time": "19:30",
-   "headliner": "Man/Woman/Chainsaw",
-   "support": [
-    "Starcharm"
-   ],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/11-02-2026-man-woman-chainsaw/",
-   "pick": true
-  },
-  {
-   "id": "474305",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "The Hails",
-   "support": [
-    "Manwolves"
-   ],
-   "venue": "Lincoln Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/11-02-2026-the-hails/",
-   "pick": false
-  },
-  {
-   "id": "479835",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "jackzebra",
-   "support": [],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/jackzebra/704721",
-   "pick": false
-  },
-  {
-   "id": "474308",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "The Blasting Company",
-   "support": [],
-   "venue": "Thalia Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/the-blasting-company-plays-over-thalia-hall-tickets/14202394",
-   "pick": false
-  },
-  {
-   "id": "481339",
-   "date": "2026-11-02",
-   "time": "21:00",
-   "headliner": "Chocolate Labs",
-   "support": [
-    "Tri-County Liquidators",
-    "Joe Glass",
-    "Rent Party"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "RSVP",
-   "ticketUrl": "https://www.ticketweb.com/event/free-monday-w-chocolate-labs-empty-bottle-tickets/14384144",
-   "pick": false
-  },
-  {
-   "id": "471836",
-   "date": "2026-11-03",
-   "time": "17:00",
-   "headliner": "Arch Enemy",
-   "support": [
-    "The Black Dahlia Murder"
-   ],
-   "venue": "Concord Music Hall",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://concordmusichall.com/calendar/arch-enemy-the-black-dahlia-murder/",
-   "pick": false
-  },
-  {
-   "id": "479866",
-   "date": "2026-11-03",
-   "time": "19:30",
-   "headliner": "SUSS",
-   "support": [
-    "Luke Schneider"
-   ],
-   "venue": "Hideout",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hideoutchicago.com/shows/northern-spy-presents-suss-luke-schneider-03-nov",
-   "pick": false
-  },
-  {
-   "id": "479060",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "Margaret Glaspy",
-   "support": [
-    "Olive Klug"
-   ],
-   "venue": "Old Town School of Folk Music",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.oldtownschool.org/concerts/2026/11-03-2026-margaret-glaspy",
-   "pick": false
-  },
-  {
-   "id": "473384",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "Jesse Gold",
-   "support": [
-    "Jeremy Passion"
-   ],
-   "venue": "Schubas",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://lh-st.com/shows/11-03-2026-jesse-gold/",
-   "pick": false
-  },
-  {
-   "id": "480268",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "Inayah",
-   "support": [],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/inayah/697872",
-   "pick": false
-  },
-  {
-   "id": "475372",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "The Blasting Company",
-   "support": [],
-   "venue": "The Vic Theatre",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.jamusa.com/events/detail/the-blasting-company-1518061",
-   "pick": false
-  },
-  {
-   "id": "479194",
-   "date": "2026-11-03",
-   "time": "21:00",
-   "headliner": "Tear Dungeon",
-   "support": [
-    "Bussy Kween Power Trip",
-    "Bliss Cemetery"
-   ],
-   "venue": "Empty Bottle",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/tear-dungeon-empty-bottle-tickets/14329434",
-   "pick": false
-  },
-  {
-   "id": "480460",
-   "date": "2026-11-03",
-   "time": "21:00",
-   "headliner": "Wine Lips",
-   "support": [
-    "Flesh Panthers"
-   ],
-   "venue": "Sleeping Village",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/nvra69-wine-lips-3rd-nov-sleeping-village-chicago-tickets",
-   "pick": true
-  },
   {
    "id": "477865",
    "date": "2026-11-04",
@@ -441,7 +172,7 @@
    "borough": null,
    "tier": null,
    "age": null,
-   "ticketLabel": "Tickets",
+   "ticketLabel": "RSVP",
    "ticketUrl": "https://wl.seetickets.us/event/lime-garden/684448",
    "pick": true
   },
@@ -2307,20 +2038,6 @@
    "pick": false
   },
   {
-   "id": "479043",
-   "date": "2026-11-11",
-   "time": "19:00",
-   "headliner": "Eldon",
-   "support": [],
-   "venue": "Subterranean",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/eldon/703800",
-   "pick": false
-  },
-  {
    "id": "480267",
    "date": "2026-11-11",
    "time": "19:00",
@@ -2332,6 +2049,20 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.seetickets.us/event/dead-butterflies/707055",
+   "pick": false
+  },
+  {
+   "id": "479043",
+   "date": "2026-11-11",
+   "time": "19:00",
+   "headliner": "Eldon",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/eldon/703800",
    "pick": false
   },
   {
@@ -2368,6 +2099,20 @@
    "pick": false
   },
   {
+   "id": "480280",
+   "date": "2026-11-11",
+   "time": "20:00",
+   "headliner": "Mother Soki",
+   "support": [],
+   "venue": "Color Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/av82aq-mother-soki-11th-nov-color-club-chicago-tickets",
+   "pick": false
+  },
+  {
    "id": "479023",
    "date": "2026-11-11",
    "time": "20:00",
@@ -2381,20 +2126,6 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/q2d79y-mel-bryant-the-mercy-makers-molly-compton-11th-nov-color-club-chicago-tickets",
-   "pick": false
-  },
-  {
-   "id": "480280",
-   "date": "2026-11-11",
-   "time": "20:00",
-   "headliner": "Mother Soki",
-   "support": [],
-   "venue": "Color Club",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/av82aq-mother-soki-11th-nov-color-club-chicago-tickets",
    "pick": false
   },
   {
@@ -2874,6 +2605,20 @@
    "pick": false
   },
   {
+   "id": "481864",
+   "date": "2026-11-13",
+   "time": "20:00",
+   "headliner": "The Pink Stones",
+   "support": [],
+   "venue": "Judson & Moore Distillery",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/99e27o-the-pink-stones-13th-nov-judson-moore-distillery-chicago-tickets",
+   "pick": false
+  },
+  {
    "id": "475346",
    "date": "2026-11-13",
    "time": "20:00",
@@ -2966,6 +2711,23 @@
    "age": null,
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-chicago-illinois-11-13-2026/event/040064909EF36C2F",
+   "pick": false
+  },
+  {
+   "id": "481874",
+   "date": "2026-11-13",
+   "time": "21:00",
+   "headliner": "Vick Vapors",
+   "support": [
+    "Holy Water",
+    "Sleep of Mirrors"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/w833qg-vick-vapors-holy-water-sleep-of-mirrors-13th-nov-cobra-lounge-chicago-tickets",
    "pick": false
   },
   {
@@ -3752,6 +3514,20 @@
    "pick": false
   },
   {
+   "id": "481860",
+   "date": "2026-11-16",
+   "time": "19:00",
+   "headliner": "Hank Garrett",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/hank-garrett/708108",
+   "pick": false
+  },
+  {
    "id": "478251",
    "date": "2026-11-16",
    "time": "19:30",
@@ -3795,6 +3571,336 @@
    "age": null,
    "ticketLabel": "RSVP",
    "ticketUrl": "https://www.ticketweb.com/event/free-monday-w-rent-control-empty-bottle-tickets/14382684",
+   "pick": false
+  },
+  {
+   "id": "478590",
+   "date": "2026-11-17",
+   "time": "18:30",
+   "headliner": "Girl Of Glass",
+   "support": [
+    "Thus Spoke Zarathustra"
+   ],
+   "venue": "Cobra Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/7d5y39-girl-of-glass-thus-spoke-zarathustra-xmercyx-17th-nov-cobra-lounge-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "475893",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Surfing For Daisy",
+   "support": [],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/surfing-for-daisy-dont-quit-your-day-job-tour/699285",
+   "pick": false
+  },
+  {
+   "id": "478601",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Prateek Kuhad",
+   "support": [],
+   "venue": "Park West",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.jamusa.com/events/detail/an-acoustic-evening-with-prateek-kuhad-1599923",
+   "pick": false
+  },
+  {
+   "id": "475879",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Token",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/token-im-leaving-soon-tour/699485",
+   "pick": false
+  },
+  {
+   "id": "479864",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "KVL(B)",
+   "support": [
+    "Bill Dolan"
+   ],
+   "venue": "Hideout",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.hideoutchicago.com/shows/kvl-b-17-nov",
+   "pick": false
+  },
+  {
+   "id": "471802",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "Other Lives",
+   "support": [],
+   "venue": "Lincoln Hall",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-17-2026-other-lives/",
+   "pick": false
+  },
+  {
+   "id": "476369",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "Ana Gasteyer",
+   "support": [],
+   "venue": "Northwestern University",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/ana-gasteyer-sugar-booze-holiday-spectacular-evanston-illinois-11-17-2026/event/040064FA8EF6650Cd",
+   "pick": false
+  },
+  {
+   "id": "477848",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "LUCY (Cooper B. Handy)",
+   "support": [
+    "God's Wisdom"
+   ],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-17-2026-lucy-cooper-b-handy/",
+   "pick": false
+  },
+  {
+   "id": "477154",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "A Good Year",
+   "support": [],
+   "venue": "Sleeping Village",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/923x77-a-good-year-17th-nov-sleeping-village-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "479845",
+   "date": "2026-11-17",
+   "time": "21:00",
+   "headliner": "Porcelain",
+   "support": [
+    "ZASTAVA",
+    "Attic Reels"
+   ],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/porcelain-zastava-empty-bottle-tickets/14343194",
+   "pick": true
+  },
+  {
+   "id": "477890",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Havok",
+   "support": [
+    "Hellripper",
+    "Slackjaw",
+    "Xoth"
+   ],
+   "venue": "Reggie's Rock Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/havok-hellripper-slackjaw-xoth-reggies-rock-club-tickets/15034993",
+   "pick": false
+  },
+  {
+   "id": "479040",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "cortex (sweden)",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/cortex/704474",
+   "pick": false
+  },
+  {
+   "id": "481629",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "The Neighbourhood",
+   "support": [
+    "Nessa Barrett",
+    "Noise Dept"
+   ],
+   "venue": "United Center",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-neighbourhood-the-wourld-tour-chicago-illinois-11-18-2026/event/04006449E2046622",
+   "pick": false
+  },
+  {
+   "id": "475949",
+   "date": "2026-11-18",
+   "time": "19:30",
+   "headliner": "Humbird",
+   "support": [],
+   "venue": "SPACE",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/humbird-space-tickets/14270404",
+   "pick": false
+  },
+  {
+   "id": "475365",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Keenan Te",
+   "support": [],
+   "venue": "Beat Kitchen",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/keenan-te/697515",
+   "pick": false
+  },
+  {
+   "id": "475387",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Ours",
+   "support": [],
+   "venue": "Bottom Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/ours-bottom-lounge-tickets/14984813",
+   "pick": false
+  },
+  {
+   "id": "477868",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Shallow Alcove",
+   "support": [],
+   "venue": "Color Club",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/3obonp-shallow-alcove-album-release-18th-nov-color-club-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "479441",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Shanghai Qiutian",
+   "support": [],
+   "venue": "Schubas",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://lh-st.com/shows/11-18-2026-shanghai-qiutian/",
+   "pick": false
+  },
+  {
+   "id": "479041",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Dogs On Shady Lane",
+   "support": [],
+   "venue": "Subterranean",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.seetickets.us/event/dogs-on-shady-lane/702953",
+   "pick": false
+  },
+  {
+   "id": "481594",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Tennis Weather",
+   "support": [
+    "Sun Roads",
+    "Paper Frames"
+   ],
+   "venue": "The Burlington",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/k677x8-tennis-weather-sun-roads-paper-frames-18th-nov-the-burlington-chicago-tickets",
+   "pick": false
+  },
+  {
+   "id": "479430",
+   "date": "2026-11-18",
+   "time": "21:00",
+   "headliner": "Makaya McCraven",
+   "support": [],
+   "venue": "Empty Bottle",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/makaya-mccraven-empty-bottle-tickets/14312104",
+   "pick": true
+  },
+  {
+   "id": "480282",
+   "date": "2026-11-18",
+   "time": "21:00",
+   "headliner": "Devyn Crimson & The Frivolities",
+   "support": [
+    "Tom Henry",
+    "Voice Memo"
+   ],
+   "venue": "Sleeping Village",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/2wn9om-devyn-crimson-the-frivolities-w-tom-henry-voice-memo-triple-release-party-18th-nov-sleeping-village-chicago-tickets",
    "pick": false
   }
  ]

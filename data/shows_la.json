@@ -1,397 +1,10 @@
 {
- "checked": "2026-11-02",
+ "checked": "2026-11-04",
  "week": [
-  "2026-11-02",
-  "2026-11-16"
+  "2026-11-04",
+  "2026-11-18"
  ],
  "shows": [
-  {
-   "id": "480022",
-   "date": "2026-11-02",
-   "time": "19:00",
-   "headliner": "her favorite band",
-   "support": [
-    "Mad Hunny",
-    "American Cherry"
-   ],
-   "venue": "Oblivion",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/eo9792-her-favorite-band-mad-hunny-american-cherry-2nd-nov-oblivion-los-angeles-tickets",
-   "pick": false
-  },
-  {
-   "id": "474714",
-   "date": "2026-11-02",
-   "time": "19:00",
-   "headliner": "Todd Rundgren",
-   "support": [],
-   "venue": "The Wiltern",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/090064D9E64B1A67",
-   "pick": false
-  },
-  {
-   "id": "480760",
-   "date": "2026-11-02",
-   "time": "19:30",
-   "headliner": "Boys Noize (in conversation)",
-   "support": [],
-   "venue": "The Grammy Museum",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://grammymuseum.org/event/a-conversation-with-boys-noize",
-   "pick": false
-  },
-  {
-   "id": "471972",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "Stella Lefty",
-   "support": [
-    "Grace Enger"
-   ],
-   "venue": "Fonda Theatre",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1457721/stella-lefty-tickets",
-   "pick": false
-  },
-  {
-   "id": "477967",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "Olivia O'Brien",
-   "support": [
-    "Sophie Cates"
-   ],
-   "venue": "Pacific Electric",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/olivia-obrien-presents-the-pixie-tour-los-angeles-california-11-02-2026/event/090064B5818A58EB",
-   "pick": false
-  },
-  {
-   "id": "471594",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "mary in the junkyard",
-   "support": [
-    "Lefty Parker"
-   ],
-   "venue": "Sid The Cat Auditorium",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/6da7oq-mary-in-the-junkyard-2nd-nov-zebulon-los-angeles-tickets",
-   "pick": true
-  },
-  {
-   "id": "477934",
-   "date": "2026-11-02",
-   "time": "20:00",
-   "headliner": "Jorjiana",
-   "support": [],
-   "venue": "The Echo",
-   "borough": null,
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/jorjiana-los-angeles-california-11-02-2026/event/09006504D9D9B883",
-   "pick": false
-  },
-  {
-   "id": "472331",
-   "date": "2026-11-02",
-   "time": "20:30",
-   "headliner": "The Chicks",
-   "support": [],
-   "venue": "Dolby Theatre",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/the-chicks-taking-the-long-way-hollywood-california-11-02-2026/event/090064B785414609",
-   "pick": false
-  },
-  {
-   "id": "479417",
-   "date": "2026-11-03",
-   "time": "18:00",
-   "headliner": "Friday Pilots Club",
-   "support": [],
-   "venue": "El Cid",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/53kxyk-friday-pilots-club-3rd-nov-el-cid-los-angeles-tickets",
-   "pick": false
-  },
-  {
-   "id": "481101",
-   "date": "2026-11-03",
-   "time": "18:00",
-   "headliner": "Judd Apatow",
-   "support": [
-    "Fred Armisen",
-    "Very Special Guest"
-   ],
-   "venue": "Largo",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/judd-apatow-and-fred-armisen-present-an-absolute-legend/708952",
-   "pick": false
-  },
-  {
-   "id": "478489",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Bizou",
-   "support": [
-    "LANDROID",
-    "Nightjacket"
-   ],
-   "venue": "Gold-Diggers",
-   "borough": null,
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/7d5amv-bizou-w-landroid-nightjacket-3rd-nov-gold-diggers-los-angeles-tickets",
-   "pick": false
-  },
-  {
-   "id": "472241",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "6LACK",
-   "support": [
-    "Eem Triplin"
-   ],
-   "venue": "Hollywood Palladium",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/10-years-of-6lack-tour-hollywood-california-11-03-2026/event/090064B61A982EB0",
-   "pick": false
-  },
-  {
-   "id": "476386",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Thao",
-   "support": [
-    "Katie Alice Greer"
-   ],
-   "venue": "Lodge Room",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.lodgeroomhlp.com/shows/thao/",
-   "pick": true
-  },
-  {
-   "id": "480250",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Fatal Wounds",
-   "support": [
-    "Strut",
-    "$USD",
-    "Plagas",
-    "EXIT"
-   ],
-   "venue": "Oblivion",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/wwnxxx-fatal-wounds-strut-usd-plagas-exit-3rd-nov-oblivion-los-angeles-tickets",
-   "pick": false
-  },
-  {
-   "id": "471197",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Squirrel Flower",
-   "support": [
-    "Sour Widows"
-   ],
-   "venue": "Sid The Cat Auditorium",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/53l2b8-squirrel-flower-3rd-nov-sid-the-cat-auditorium-south-pasadena-tickets",
-   "pick": true
-  },
-  {
-   "id": "475843",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Six60",
-   "support": [
-    "Lauren Juzang"
-   ],
-   "venue": "Teragram Ballroom",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/six60-los-angeles-california-11-03-2026/event/090064CC2C9AE978",
-   "pick": false
-  },
-  {
-   "id": "472302",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Armored Saint",
-   "support": [
-    "Metal Church"
-   ],
-   "venue": "The Glass House",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/bb7wbm-armored-saint-x-metal-church-the-metal-saint-tour-3rd-nov-the-glass-house-pomona-tickets",
-   "pick": false
-  },
-  {
-   "id": "474163",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Stanley Simmons",
-   "support": [],
-   "venue": "Troubadour",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/artists/1122964/stanley-simmons-tickets",
-   "pick": false
-  },
-  {
-   "id": "470868",
-   "date": "2026-11-03",
-   "time": "19:00",
-   "headliner": "Southern Culture on the Skids",
-   "support": [
-    "Insect Surfers"
-   ],
-   "venue": "Zebulon",
-   "borough": null,
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/oedp8a-southern-culture-on-the-skids-3rd-nov-zebulon-los-angeles-tickets",
-   "pick": false
-  },
-  {
-   "id": "474818",
-   "date": "2026-11-03",
-   "time": "19:30",
-   "headliner": "Freak Slug",
-   "support": [
-    "Mamalarky",
-    "Lucky"
-   ],
-   "venue": "The Observatory",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/freak-slug-santa-ana-california-11-03-2026/event/090064DEE946C022",
-   "pick": false
-  },
-  {
-   "id": "478256",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "Lexi Jayde",
-   "support": [
-    "Ally Salort"
-   ],
-   "venue": "El Rey Theatre",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1575282/lexi-jayde-tickets",
-   "pick": false
-  },
-  {
-   "id": "479515",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "Lennon Stella",
-   "support": [],
-   "venue": "Pico-Union Project",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/lennon-stella-los-angeles-california-11-03-2026/event/0B006535DF9E62EA",
-   "pick": false
-  },
-  {
-   "id": "475515",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "El David Aguilar",
-   "support": [],
-   "venue": "The Echo",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/el-david-aguilar-los-angeles-california-11-03-2026/event/090064C1F2DBFA67",
-   "pick": false
-  },
-  {
-   "id": "477990",
-   "date": "2026-11-03",
-   "time": "20:00",
-   "headliner": "AZ Chike",
-   "support": [],
-   "venue": "The Roxy",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1583527/az-chike-tickets",
-   "pick": false
-  },
-  {
-   "id": "476937",
-   "date": "2026-11-03",
-   "time": "20:30",
-   "headliner": "The Chicks",
-   "support": [],
-   "venue": "Dolby Theatre",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/the-chicks-taking-the-long-way-hollywood-california-11-03-2026/event/090064B78544460E",
-   "pick": false
-  },
   {
    "id": "476705",
    "date": "2026-11-04",
@@ -486,6 +99,22 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/dkyveo-kareen-lomax-4th-nov-gold-diggers-los-angeles-tickets",
+   "pick": false
+  },
+  {
+   "id": "481910",
+   "date": "2026-11-04",
+   "time": "19:00",
+   "headliner": "Aaron Goldberg",
+   "support": [
+    "Pendleton Ward"
+   ],
+   "venue": "Gold-Diggers",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/dlgvvq-aaron-goldberg-improvised-loops-live-animations-ft-pendleton-ward-4th-nov-gold-diggers-los-angeles-tickets",
    "pick": false
   },
   {
@@ -728,24 +357,6 @@
    "pick": false
   },
   {
-   "id": "479569",
-   "date": "2026-11-05",
-   "time": "18:00",
-   "headliner": "Dead City Punks",
-   "support": [
-    "Scanners",
-    "Battery Acid",
-    "Fusion"
-   ],
-   "venue": "1720",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/v3lkv6-dead-city-punks-5th-nov-1720-los-angeles-tickets",
-   "pick": false
-  },
-  {
    "id": "480228",
    "date": "2026-11-05",
    "time": "18:00",
@@ -762,6 +373,24 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://1720.la/event/dead-city-punks/1720/los-angeles-california/",
+   "pick": false
+  },
+  {
+   "id": "479569",
+   "date": "2026-11-05",
+   "time": "18:00",
+   "headliner": "Dead City Punks",
+   "support": [
+    "Scanners",
+    "Battery Acid",
+    "Fusion"
+   ],
+   "venue": "1720",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/v3lkv6-dead-city-punks-5th-nov-1720-los-angeles-tickets",
    "pick": false
   },
   {
@@ -816,7 +445,7 @@
    "pick": false
   },
   {
-   "id": "479284",
+   "id": "479210",
    "date": "2026-11-05",
    "time": "19:00",
    "headliner": "Wyatt Lowe",
@@ -832,7 +461,7 @@
    "pick": false
   },
   {
-   "id": "479210",
+   "id": "479284",
    "date": "2026-11-05",
    "time": "19:00",
    "headliner": "Wyatt Lowe",
@@ -989,6 +618,20 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://troubadour.com/calendar/",
+   "pick": false
+  },
+  {
+   "id": "481921",
+   "date": "2026-11-05",
+   "time": "19:00",
+   "headliner": "Sister Hazel",
+   "support": [],
+   "venue": "Troubadour",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.troubadour.com/events/detail/sister-hazel-1579140",
    "pick": false
   },
   {
@@ -1902,6 +1545,23 @@
    "pick": false
   },
   {
+   "id": "481821",
+   "date": "2026-11-07",
+   "time": "19:00",
+   "headliner": "Shades of Blue",
+   "support": [
+    "Your Mom's Best Friend",
+    "Roderick Porter"
+   ],
+   "venue": "Gold-Diggers",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/yy2oav-shadesofblue-your-moms-best-friend-roderick-porter-7th-nov-gold-diggers-los-angeles-tickets",
+   "pick": false
+  },
+  {
    "id": "476308",
    "date": "2026-11-07",
    "time": "19:00",
@@ -2117,7 +1777,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/artist/kumo-99-lwvnr",
-   "pick": false
+   "pick": true
   },
   {
    "id": "475937",
@@ -2276,6 +1936,20 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/oe99ma-pete-tong-7th-nov-the-spotlight-los-angeles-tickets",
    "pick": false
+  },
+  {
+   "id": "481780",
+   "date": "2026-11-08",
+   "time": "12:00",
+   "headliner": "The Format",
+   "support": [],
+   "venue": "Griffith Park",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.instagram.com/theformat/p/DfQOigIhaYy/",
+   "pick": true
   },
   {
    "id": "481719",
@@ -2601,6 +2275,20 @@
    "pick": false
   },
   {
+   "id": "481756",
+   "date": "2026-11-08",
+   "time": "20:00",
+   "headliner": "SWIGGY",
+   "support": [],
+   "venue": "Troubadour",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/swiggy-live-at-the-troubadour-troubadour-tickets/14357194",
+   "pick": false
+  },
+  {
    "id": "469798",
    "date": "2026-11-08",
    "time": "20:00",
@@ -2674,6 +2362,23 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/event/0900653EEA807E0C",
+   "pick": false
+  },
+  {
+   "id": "481822",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "headliner": "Yogurt",
+   "support": [
+    "Grover Norquist",
+    "Grover"
+   ],
+   "venue": "Oblivion",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/x9ve6m-yogurt-sean-atkins-grover-9th-nov-oblivion-los-angeles-tickets",
    "pick": false
   },
   {
@@ -2847,6 +2552,22 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/sienna-spiro-my-house-tour-los-angeles-california-11-10-2026/event/090064C5BDF81666",
+   "pick": false
+  },
+  {
+   "id": "481920",
+   "date": "2026-11-10",
+   "time": "19:00",
+   "headliner": "Kingston Rossdale",
+   "support": [
+    "Cursing"
+   ],
+   "venue": "Troubadour",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.troubadour.com/events/detail/kingston-rossdale-1633925",
    "pick": false
   },
   {
@@ -3854,6 +3575,24 @@
    "pick": false
   },
   {
+   "id": "481827",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "headliner": "A-Wall",
+   "support": [
+    "Pretty Boy Aaron",
+    "Phantasma",
+    "Andria Rose"
+   ],
+   "venue": "Above The Bridge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://slingshot.events/abovethebridge_/maybe-next-year-a-flog-gnaw",
+   "pick": false
+  },
+  {
    "id": "476814",
    "date": "2026-11-13",
    "time": "19:00",
@@ -4680,7 +4419,9 @@
    "date": "2026-11-14",
    "time": "19:00",
    "headliner": "Jake Minch",
-   "support": [],
+   "support": [
+    "Alix Page"
+   ],
    "venue": "Troubadour",
    "borough": null,
    "tier": null,
@@ -4864,6 +4605,23 @@
    "pick": false
   },
   {
+   "id": "481830",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Toys That Kill",
+   "support": [
+    "Lenguas Largas",
+    "Shepards"
+   ],
+   "venue": "The Sardine",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://recessops.com/collections/tickets",
+   "pick": false
+  },
+  {
    "id": "470890",
    "date": "2026-11-14",
    "time": "20:00",
@@ -5039,7 +4797,7 @@
    "time": "19:00",
    "headliner": "Goldwing",
    "support": [
-    "Noir Dalis",
+    "The Noir Dalis",
     "Love Pig"
    ],
    "venue": "The Airliner",
@@ -5094,6 +4852,20 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/the-damned-santa-ana-california-11-15-2026/event/09006523C581AA8A",
    "pick": true
+  },
+  {
+   "id": "481750",
+   "date": "2026-11-15",
+   "time": "19:00",
+   "headliner": "A Celebration of Fela Kuti",
+   "support": [],
+   "venue": "The Regent Theater",
+   "borough": null,
+   "tier": null,
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/a-celebration-of-fela-kuti-induction-los-angeles-california-11-15-2026/event/0900654C2E163E28",
+   "pick": false
   },
   {
    "id": "466464",
@@ -5414,20 +5186,6 @@
    "pick": false
   },
   {
-   "id": "477373",
-   "date": "2026-11-16",
-   "time": "20:00",
-   "headliner": "Weston Estate",
-   "support": [],
-   "venue": "The Roxy",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1573673/weston-estate-tickets",
-   "pick": false
-  },
-  {
    "id": "474051",
    "date": "2026-11-16",
    "time": "20:00",
@@ -5442,6 +5200,20 @@
    "pick": false
   },
   {
+   "id": "477373",
+   "date": "2026-11-16",
+   "time": "20:00",
+   "headliner": "Weston Estate",
+   "support": [],
+   "venue": "The Roxy",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1573673/weston-estate-tickets",
+   "pick": false
+  },
+  {
    "id": "475962",
    "date": "2026-11-16",
    "time": "20:00",
@@ -5453,6 +5225,548 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/3orqnp-michael-nau-night-2-16th-nov-zebulon-los-angeles-tickets",
+   "pick": false
+  },
+  {
+   "id": "480622",
+   "date": "2026-11-17",
+   "time": "18:30",
+   "headliner": "Scott Helman",
+   "support": [],
+   "venue": "Moroccan Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/scott-helman-los-angeles-california-11-17-2026/event/0900654CC1029243",
+   "pick": false
+  },
+  {
+   "id": "480621",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Joe Pera",
+   "support": [
+    "Dan Licata",
+    "Charles Gould"
+   ],
+   "venue": "Lodge Room",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.lodgeroomhlp.com/shows/dan-joe-charles-show/",
+   "pick": true
+  },
+  {
+   "id": "481076",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Dylan Rodrigue",
+   "support": [
+    "Traps PS"
+   ],
+   "venue": "Oblivion",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/8ed8q2-dylan-rodrigue-traps-ps-17th-nov-oblivion-los-angeles-tickets",
+   "pick": false
+  },
+  {
+   "id": "473967",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Craig Finn (& The Band of Forgiveness)",
+   "support": [],
+   "venue": "Sid The Cat Auditorium",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/nv52g3-craig-finn-the-band-of-forgiveness-17th-nov-sid-the-cat-auditorium-south-pasadena-tickets",
+   "pick": true
+  },
+  {
+   "id": "477075",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Internet Girl",
+   "support": [],
+   "venue": "The Echo",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/internet-girl-los-angeles-california-11-17-2026/event/09006507DC9EECC5",
+   "pick": false
+  },
+  {
+   "id": "477478",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Static Dress",
+   "support": [
+    "I Promised The World",
+    "Car Underwater",
+    "Sherane"
+   ],
+   "venue": "The Regent Theater",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/static-dress-injury-episode-usa-tour-los-angeles-california-11-17-2026/event/09006507C6DCBF17",
+   "pick": false
+  },
+  {
+   "id": "469705",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "The Damned",
+   "support": [
+    "Flamin' Groovies",
+    "The Courettes"
+   ],
+   "venue": "The Wiltern",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/09006490C927A3CF",
+   "pick": true
+  },
+  {
+   "id": "472951",
+   "date": "2026-11-17",
+   "time": "19:00",
+   "headliner": "Margaret Glaspy",
+   "support": [
+    "Anna Tivel"
+   ],
+   "venue": "Troubadour",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1462906/margaret-glaspy-tickets",
+   "pick": true
+  },
+  {
+   "id": "481291",
+   "date": "2026-11-17",
+   "time": "19:30",
+   "headliner": "Niia",
+   "support": [],
+   "venue": "The Grammy Museum",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://grammymuseum.org/event/spotlight-niia",
+   "pick": false
+  },
+  {
+   "id": "477937",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "BabyBartier",
+   "support": [
+    "Sir Untre",
+    "Unitus"
+   ],
+   "venue": "Echoplex",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/echoe-events-presents-babybartier-sir-untre-los-angeles-california-11-17-2026/event/09006513124A3596",
+   "pick": false
+  },
+  {
+   "id": "478253",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "half alive",
+   "support": [],
+   "venue": "El Rey Theatre",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1513759/halfyalive-tickets",
+   "pick": false
+  },
+  {
+   "id": "478254",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "DANNA",
+   "support": [],
+   "venue": "Fonda Theatre",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1580327/danna-tickets",
+   "pick": false
+  },
+  {
+   "id": "477374",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "Weston Estate",
+   "support": [],
+   "venue": "The Roxy",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1573674/weston-estate-tickets",
+   "pick": false
+  },
+  {
+   "id": "477352",
+   "date": "2026-11-17",
+   "time": "20:00",
+   "headliner": "Hologram Teen",
+   "support": [
+    "Fred Armisen (on drums)",
+    "Pearl Charles",
+    "DJ Lance Rock",
+    "YACHT (DJ)"
+   ],
+   "venue": "Zebulon",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/6doak2-first-ever-hologram-teen-concert-with-fred-armisen-on-drums-17th-nov-zebulon-los-angeles-tickets",
+   "pick": true
+  },
+  {
+   "id": "474927",
+   "date": "2026-11-17",
+   "time": "21:30",
+   "headliner": "Elanor Moss",
+   "support": [],
+   "venue": "Moroccan Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/elanor-moss-los-angeles-california-11-17-2026/event/090064E6AC055790",
+   "pick": false
+  },
+  {
+   "id": "470206",
+   "date": "2026-11-18",
+   "time": "18:00",
+   "headliner": "GWAR",
+   "support": [
+    "Midnight",
+    "Mac Sabbath",
+    "Atomic Rule"
+   ],
+   "venue": "House Of Blues Anaheim",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/gwar-gor-gor-must-die-anaheim-california-11-18-2026/event/09006496FB11DA6D",
+   "pick": false
+  },
+  {
+   "id": "478143",
+   "date": "2026-11-18",
+   "time": "18:30",
+   "headliner": "The Moth StorySLAM",
+   "support": [],
+   "venue": "Los Globos",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.themoth.org/tickets/keeping-the-faith-5",
+   "pick": false
+  },
+  {
+   "id": "479734",
+   "date": "2026-11-18",
+   "time": "18:30",
+   "headliner": "Cherry Bomb",
+   "support": [],
+   "venue": "Moroccan Lounge",
+   "borough": null,
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/cherry-bomb-los-angeles-california-11-18-2026/event/09006536BDA3A75E",
+   "pick": false
+  },
+  {
+   "id": "481282",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "6LACK",
+   "support": [],
+   "venue": "Blue Note Los Angeles",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/6lack-blue-note-los-angeles-tickets/14349774",
+   "pick": false
+  },
+  {
+   "id": "479741",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Frances Whitney",
+   "support": [],
+   "venue": "El Cid",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/wwknkv-frances-whitney-presents-daisys-mixtape-tour-18th-nov-el-cid-los-angeles-tickets",
+   "pick": false
+  },
+  {
+   "id": "476115",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Parachute",
+   "support": [],
+   "venue": "El Rey Theatre",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1540240/parachute-tickets",
+   "pick": false
+  },
+  {
+   "id": "479492",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "RIP Magic",
+   "support": [],
+   "venue": "Oblivion",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/8e77v2-rip-magic-18th-nov-oblivion-los-angeles-tickets",
+   "pick": true
+  },
+  {
+   "id": "479091",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Haley Heynderickx",
+   "support": [],
+   "venue": "Sid The Cat Auditorium",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/7d5e29-haley-heynderickx-solo-18th-nov-sid-the-cat-auditorium-south-pasadena-tickets",
+   "pick": false
+  },
+  {
+   "id": "472230",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Manic Street Preachers",
+   "support": [
+    "Benches"
+   ],
+   "venue": "The Belasco",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/manic-street-preachers-moved-from-wiltern-los-angeles-california-11-18-2026/event/09006556E2023051",
+   "pick": false
+  },
+  {
+   "id": "476655",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Paige Fish",
+   "support": [],
+   "venue": "The Observatory",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/paige-fish-on-tour-santa-ana-california-11-18-2026/event/090064FCBAE4AC61",
+   "pick": false
+  },
+  {
+   "id": "481560",
+   "date": "2026-11-18",
+   "time": "19:00",
+   "headliner": "Jumpstarted Plowhards",
+   "support": [
+    "Bromb Treb",
+    "Direct Mutant Action"
+   ],
+   "venue": "The Sardine",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://recessops.com/collections/tickets",
+   "pick": false
+  },
+  {
+   "id": "474235",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Slothrust",
+   "support": [
+    "Um, Jennifer?"
+   ],
+   "venue": "Teragram Ballroom",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/slothrust-the-dystopian-theatre-tour-los-angeles-california-11-18-2026/event/090064CFD540AAB9",
+   "pick": true
+  },
+  {
+   "id": "481234",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "sahn",
+   "support": [],
+   "venue": "The Echo",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/sahn-ten-thousand-mistakes-tour-los-angeles-california-11-18-2026/event/09006546EBAB48CE",
+   "pick": false
+  },
+  {
+   "id": "478644",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "3Ballmty",
+   "support": [],
+   "venue": "The Glass House",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/nvxeml-3ballmty-sin-permiso-sessions-18th-nov-the-glass-house-pomona-tickets",
+   "pick": false
+  },
+  {
+   "id": "476533",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "CupcakKe",
+   "support": [],
+   "venue": "The Novo",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1542439/cupcakke-tickets",
+   "pick": false
+  },
+  {
+   "id": "471905",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Headache",
+   "support": [],
+   "venue": "The Regent Theater",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/headache-los-angeles-california-11-18-2026/event/090064A61BCF6856",
+   "pick": false
+  },
+  {
+   "id": "476665",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "John Craigie",
+   "support": [
+    "Lucy Clearwater"
+   ],
+   "venue": "Troubadour",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1525669/john-craigie-tickets",
+   "pick": false
+  },
+  {
+   "id": "476517",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Sofie Royer",
+   "support": [],
+   "venue": "Zebulon",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/53mv3l-sofie-royer-18th-nov-zebulon-los-angeles-tickets",
+   "pick": false
+  },
+  {
+   "id": "481819",
+   "date": "2026-11-18",
+   "time": "20:00",
+   "headliner": "Michael Hampton (of Funkadelic)",
+   "support": [
+    "ESCAPE-ISM",
+    "Monde UFO"
+   ],
+   "venue": "Zebulon",
+   "borough": null,
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://dice.fm/event/3kqogp-michael-hampton-of-funkadelic-escape-ism-monde-ufo-deejay-mikey-longhair-18th-nov-zebulon-los-angeles-tickets",
+   "pick": false
+  },
+  {
+   "id": "481283",
+   "date": "2026-11-18",
+   "time": "21:30",
+   "headliner": "6LACK",
+   "support": [],
+   "venue": "Blue Note Los Angeles",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/6lack-blue-note-los-angeles-tickets/14349784",
+   "pick": false
+  },
+  {
+   "id": "477944",
+   "date": "2026-11-18",
+   "time": "21:30",
+   "headliner": "Persona 749",
+   "support": [],
+   "venue": "Moroccan Lounge",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/persona-749-los-angeles-california-11-18-2026/event/090064F8066C8671",
    "pick": false
   }
  ]
