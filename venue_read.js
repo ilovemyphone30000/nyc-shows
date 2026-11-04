@@ -45,16 +45,23 @@ const novoCards = () => [...document.querySelectorAll('a[class*="c-axs-event-car
   return { date: L[0], name: L[1], support: w ? w.replace(/^with /i, "") : null, url: a.href };
 });
 
-// 4. hollywoodbowl, ford (LA Phil sites): one card per "Full details" link; acts above the date.
+// 4. hollywoodbowl, ford (LA Phil sites): /tickets-and-events/calendar since 2026-11 (the old
+//    /events/performances 404s). One card per /events/instances/ link: the date line first
+//    ("SAT  NOV 7, 2026  6:30PM"; JUNE and JULY are spelled out), then the bill, until "Special House Rules" / "Buy Now".
 const laPhil = () => {
-  const seen = new Set(), out = [], D = /^(MON|TUE|WED|THU|FRI|SAT|SUN), [A-Z]{3,5}\.? \d/i;
-  for (const a of document.querySelectorAll("a")) {
-    if (!/^full details$/i.test(a.textContent.trim())) continue;
-    const u = a.href.split("?")[0]; if (seen.has(u)) continue; seen.add(u);
-    let c = a; for (let i = 0; i < 6; i++) { c = c.parentElement; if (c.innerText.split("\n").some(s => D.test(s.trim()))) break; }
-    const L = c.innerText.split("\n").map(s => s.trim()).filter(Boolean), di = L.findIndex(s => D.test(s));
-    const acts = L.slice(0, di).filter(s => !/^\+$|EXPAND/i.test(s));
-    out.push({ name: acts[0], support: acts.slice(1).join(", ") || null, date: L[di], time: L[di + 1], url: u });
+  const D = /^(MON|TUE|WED|THU|FRI|SAT|SUN)\s+([A-Z]{3,5})\.?\s+(\d{1,2}),\s+(20\d\d)\s+(\d{1,2}(?::\d\d)?\s*[AP]M)/i, seen = new Set(), out = [];
+  for (const a of document.querySelectorAll('a[href*="/events/instances/"]')) {
+    const u = a.href.split("?")[0]; if (seen.has(u)) continue;
+    let c = a;
+    for (let i = 0; i < 8 && c; i++) { c = c.parentElement; if (c && D.test(c.innerText.trim())) break; }
+    if (!c) continue;
+    const L = c.innerText.split("\n").map(s => s.trim()).filter(Boolean), m = L[0].match(D);
+    if (!m || L.filter(s => D.test(s)).length > 1) continue;  // climbed past one card
+    seen.add(u);
+    const end = L.findIndex((s, i) => i > 0 && /^(special house rules|buy now|buy tickets|more info|sold out|on sale|artists & program)/i.test(s));
+    const acts = L.slice(1, end < 0 ? undefined : end).filter(s => !/^\+$|expand/i.test(s));
+    const t = m[5].replace(/\s+/g, "").replace(/^(\d+)([AP]M)$/i, "$1:00$2").toLowerCase();
+    out.push({ name: acts[0], support: acts.slice(1).join(", ") || null, date: `${m[2].slice(0, 3)} ${m[3]}, ${m[4]}`, time: t, url: u });
   }
   return out;
 };

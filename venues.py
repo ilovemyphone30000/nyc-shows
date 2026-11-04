@@ -28,8 +28,8 @@ VENUES = {
     "hammerstein":     ("nyc", "Hammerstein Ballroom",  "https://www.livenation.com/venue/KovZpZAEAE6A/manhattan-center-hammerstein-ballroom-events"),
     "terminal5":       ("nyc", "Terminal 5",            "https://www.ticketmaster.com/terminal-5-tickets-new-york/venue/1112"),
     "greek":           ("la",  "The Greek Theatre",     "https://www.lagreektheatre.com/events-tickets/"),
-    "hollywoodbowl":   ("la",  "Hollywood Bowl",        "https://www.hollywoodbowl.com/events/performances"),
-    "ford":            ("la",  "The Ford",              "https://www.theford.com/events/performances"),
+    "hollywoodbowl":   ("la",  "Hollywood Bowl",        "https://www.hollywoodbowl.com/tickets-and-events/calendar"),
+    "ford":            ("la",  "The Ford",              "https://www.theford.com/tickets-and-events/calendar"),
     "hollywoodforever": ("la", "Hollywood Forever",     "https://hollywoodforever.com/events-calendar/"),
     "unionpool":       ("nyc", "Union Pool",            "https://www.union-pool.com/calendar"),
     "mercurylounge":   ("nyc", "Mercury Lounge",        "https://mercuryeastpresents.com/mercurylounge/"),
@@ -45,7 +45,7 @@ NOT_MUSIC = re.compile(r"(?i)\b(comedy|comedian|stand-?up|podcast|anniversary sc
     r"jerry seinfeld|aziz ansari|john oliver|seth meyers|kara swisher|lucy darling|gary owen|elon gold|zarna garg|"
     r"mulaney|josh johnson|matt mathews|jeff arcuri|brad williams|ben schwartz|brett goldstein|dl hughley|joey diaz|"
     r"bert kreischer|ron white|nikki glaser|nurse john|george lopez|aries spears|basement yard|ali wong|iliza|"
-    r"taskmaster|variety show|the red party|expo of comics|the music of|vir das|matt rogers|two cuzzos|chicks in the office|yohay sponder|fred armisen|starbomb)")
+    r"taskmaster|variety show|legend of zelda|the red party|expo of comics|the music of|vir das|matt rogers|two cuzzos|chicks in the office|yohay sponder|fred armisen|starbomb)")
 # Promoters that put their name first: "Insomniac presents Valentino Khan" -> Valentino Khan.
 PROMOTERS = re.compile(r"(?i)^(?:ny comedy festival|insomniac|bassrush|mixed feelings|93xrt winter jam|voil[aà]|"
                        r"goldenvoice(?: & cmn)?|lucid live music & aivn|project91)\s+presents?\b[\s:–-]*")
