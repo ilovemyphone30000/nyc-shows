@@ -1,2822 +1,10 @@
 {
- "checked": "2026-11-04",
+ "checked": "2026-11-08",
  "week": [
-  "2026-11-04",
-  "2026-11-18"
+  "2026-11-08",
+  "2026-11-22"
  ],
  "shows": [
-  {
-   "id": "472630",
-   "date": "2026-11-04",
-   "time": "17:00",
-   "headliner": "Francisca Valenzuela",
-   "support": [],
-   "venue": "National Sawdust",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://ci.ovationtix.com/36490/production/1277795",
-   "pick": false
-  },
-  {
-   "id": "480159",
-   "date": "2026-11-04",
-   "time": "18:00",
-   "headliner": "Her Dark Heaven",
-   "support": [
-    "Death By Piano",
-    "E.W. Harris"
-   ],
-   "venue": "Berlin",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/her-dark-heaven-death-berlin-tickets/14364524",
-   "pick": false
-  },
-  {
-   "id": "474145",
-   "date": "2026-11-04",
-   "time": "18:00",
-   "headliner": "gavn!",
-   "support": [],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/gavn-new-york-new-york-11-04-2026/event/000064D21F888B38",
-   "pick": false
-  },
-  {
-   "id": "481306",
-   "date": "2026-11-04",
-   "time": "18:00",
-   "headliner": "Fenne Lily",
-   "support": [
-    "Wilby"
-   ],
-   "venue": "Rough Trade NYC",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/xe8ow3-fenne-lily-live-signing-4th-nov-rough-trade-below-new-york-city-tickets",
-   "pick": true
-  },
-  {
-   "id": "476946",
-   "date": "2026-11-04",
-   "time": "18:00",
-   "headliner": "Wolf & Bear",
-   "support": [
-    "Coletta",
-    "Origami Button"
-   ],
-   "venue": "Saint Vitus",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/yodnep-wolf-bear-coletta-origami-button-4th-nov-saint-vitus-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "475999",
-   "date": "2026-11-04",
-   "time": "18:30",
-   "headliner": "Mad Tsai",
-   "support": [],
-   "venue": "Baby's All Right",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/mad-tsai/696227",
-   "pick": false
-  },
-  {
-   "id": "476778",
-   "date": "2026-11-04",
-   "time": "18:30",
-   "headliner": "Dawn Richard",
-   "support": [
-    "Alex Vaughn"
-   ],
-   "venue": "Le Poisson Rouge",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV413d989b-cba3-48cb-80c0-0d6425e04b80",
-   "pick": true
-  },
-  {
-   "id": "474131",
-   "date": "2026-11-04",
-   "time": "18:30",
-   "headliner": "Jeff Tweedy (solo)",
-   "support": [
-    "Case Oats"
-   ],
-   "venue": "Music Hall of Williamsburg",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1496408/jeff-tweedy-solo-with-special-guest-case-oats-tickets",
-   "pick": true
-  },
-  {
-   "id": "479566",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Smokey Brights",
-   "support": [
-    "Dammu Ayala",
-    "Camp Bedford"
-   ],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/wwkkrn-smokey-brights-dammu-ayala-camp-bedford-4th-nov-alphaville-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "480548",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Sewer Pill",
-   "support": [
-    "Couch Surfer",
-    "Bad Humors",
-    "Zaltyz"
-   ],
-   "venue": "Bar Freda",
-   "borough": "Queens",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www-barfreda-com.filesusr.com/html/2e6f23_ce13a0ff7b94358fb95bd6c84de55c45.html",
-   "pick": false
-  },
-  {
-   "id": "469949",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Palace",
-   "support": [
-    "Willie J. Healey"
-   ],
-   "venue": "Brooklyn Paramount",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/palace-usa-canada-tour-2026-brooklyn-new-york-11-04-2026/event/0000648F2CF6C305",
-   "pick": false
-  },
-  {
-   "id": "479359",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Frank Maza",
-   "support": [
-    "Javier Limon"
-   ],
-   "venue": "Cafe Wha?",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/frank-maza-featuring-javier-limon-present-back-then-tickets-1991632744151",
-   "pick": false
-  },
-  {
-   "id": "478125",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Magi Merlin",
-   "support": [],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/magi-merlin-tickets-1999055438630",
-   "pick": false
-  },
-  {
-   "id": "477215",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Las Migas",
-   "support": [],
-   "venue": "Littlefield",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV9a601133-c357-4371-a57e-99d428a20e0a",
-   "pick": false
-  },
-  {
-   "id": "477433",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Suzy Sheer",
-   "support": [
-    "Patch+"
-   ],
-   "venue": "Market Hotel",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.markethotel.org/calendar",
-   "pick": false
-  },
-  {
-   "id": "481729",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Cute Door",
-   "support": [
-    "Axine M",
-    "SNL"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/cute-door-axine-m-snl-night-club-101-tickets/14370614",
-   "pick": false
-  },
-  {
-   "id": "479407",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "duendita",
-   "support": [],
-   "venue": "Nublu",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/py3n2w-duendita-4th-nov-nublu-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "480770",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Aidan Puntes",
-   "support": [
-    "Julia Barfield",
-    "Kristen Ingrid"
-   ],
-   "venue": "Pianos",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/8edkm7-aidan-puentes-julia-barfield-kristen-ingrid-4th-nov-pianos-showroom-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "474716",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Setting",
-   "support": [
-    "Wednesday Knudsen"
-   ],
-   "venue": "Public Records",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/bb2rmm-setting-wednesday-knudsen-4th-nov-public-records-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "478161",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Qtea",
-   "support": [
-    "Autumnatic",
-    "John-Lewis Anderson"
-   ],
-   "venue": "Sleepwalk",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/avknbq-qtea-autumnatic-john-lewis-anderson-4th-nov-sleepwalk-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "470084",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Bad Gyal",
-   "support": [
-    "Judith"
-   ],
-   "venue": "Terminal 5",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1415798/bad-gyal-tickets",
-   "pick": false
-  },
-  {
-   "id": "477663",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Jonathan Something",
-   "support": [
-    "Miles Hewitt"
-   ],
-   "venue": "The Sultan Room",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/923vo7-jonathan-something-miles-hewitt-4th-nov-the-sultan-room-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "481009",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Dearjune.",
-   "support": [
-    "Alester",
-    "Seconds Before The Crash"
-   ],
-   "venue": "Trans-Pecos",
-   "borough": "Queens",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.thetranspecos.com/",
-   "pick": false
-  },
-  {
-   "id": "480518",
-   "date": "2026-11-04",
-   "time": "19:00",
-   "headliner": "Patching",
-   "support": [
-    "Chammeili",
-    "Aubrey Haddard",
-    "Alright Star"
-   ],
-   "venue": "Union Pool",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/dkyn5e-patching-chammeili-aubrey-haddard-alright-star-4th-nov-union-pool-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "479626",
-   "date": "2026-11-04",
-   "time": "19:30",
-   "headliner": "Milehin",
-   "support": [
-    "Rosey Jones",
-    "Josephina",
-    "Angel Grace"
-   ],
-   "venue": "Gold Sounds",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/3o8kql-milehin-rosey-jones-josephina-angel-grace-4th-nov-gold-sounds-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "481438",
-   "date": "2026-11-04",
-   "time": "19:30",
-   "headliner": "No Jersey",
-   "support": [
-    "The Planes",
-    "Deep Wimp"
-   ],
-   "venue": "Main Drag Music",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/84823-11-04-26-no-jersey-the-planes-deep",
-   "pick": false
-  },
-  {
-   "id": "468552",
-   "date": "2026-11-04",
-   "time": "20:00",
-   "headliner": "Punch Brothers",
-   "support": [],
-   "venue": "Carnegie Hall",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.carnegiehall.org/calendar/2026/11/04/punch-brothers-0800pm",
-   "pick": false
-  },
-  {
-   "id": "478206",
-   "date": "2026-11-04",
-   "time": "20:00",
-   "headliner": "Maleficentt",
-   "support": [
-    "Melissa",
-    "Infernal Spawn",
-    "MRSA"
-   ],
-   "venue": "TV Eye",
-   "borough": "Queens",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventim.us/event/tickets/703483",
-   "pick": false
-  },
-  {
-   "id": "464037",
-   "date": "2026-11-04",
-   "time": "20:00",
-   "headliner": "Olafur Arnalds",
-   "support": [],
-   "venue": "Town Hall",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/03006428F84B282B",
-   "pick": true
-  },
-  {
-   "id": "471297",
-   "date": "2026-11-04",
-   "time": "20:00",
-   "headliner": "Hovvdy",
-   "support": [
-    "Christian Lee Hutson"
-   ],
-   "venue": "Webster Hall",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1445749/hovvdy-tickets",
-   "pick": true
-  },
-  {
-   "id": "478924",
-   "date": "2026-11-04",
-   "time": "20:30",
-   "headliner": "Ikue Mori",
-   "support": [
-    "Ingrid Laubrock",
-    "Tom Rainey",
-    "Zeena Parkins"
-   ],
-   "venue": "The Stone",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "http://thestonenyc.com/calendar.php",
-   "pick": false
-  },
-  {
-   "id": "478780",
-   "date": "2026-11-04",
-   "time": "21:00",
-   "headliner": "Keenan TreVon",
-   "support": [],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/keenan-trevon-new-york-new-york-11-04-2026/event/0000651CC6F37432",
-   "pick": false
-  },
-  {
-   "id": "475438",
-   "date": "2026-11-04",
-   "time": "21:30",
-   "headliner": "Imperial Teen",
-   "support": [
-    "Gay Meat"
-   ],
-   "venue": "Baby's All Right",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/imperial-teen/698889",
-   "pick": true
-  },
-  {
-   "id": "479508",
-   "date": "2026-11-05",
-   "time": "18:00",
-   "headliner": "Friday Pilots Club",
-   "support": [],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/friday-pilots-club-new-york-new-york-11-05-2026/event/0000652FD2DB531D",
-   "pick": false
-  },
-  {
-   "id": "477004",
-   "date": "2026-11-05",
-   "time": "18:00",
-   "headliner": "Forbidden",
-   "support": [
-    "Heathen",
-    "Void"
-   ],
-   "venue": "Saint Vitus",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/53mrxk-forbidden-heathen-void-5th-nov-saint-vitus-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "476140",
-   "date": "2026-11-05",
-   "time": "18:00",
-   "headliner": "Honey Revenge",
-   "support": [
-    "Dead Poet Society",
-    "Hunny",
-    "Broadside"
-   ],
-   "venue": "Warsaw",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/honey-revenge-x-dead-poet-society-brooklyn-new-york-11-05-2026/event/000064F6C123BFA5",
-   "pick": false
-  },
-  {
-   "id": "476690",
-   "date": "2026-11-05",
-   "time": "18:30",
-   "headliner": "Bass Drum of Death",
-   "support": [
-    "Gnarcissists"
-   ],
-   "venue": "Baby's All Right",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/bass-drum-of-death/701011",
-   "pick": true
-  },
-  {
-   "id": "465544",
-   "date": "2026-11-05",
-   "time": "18:30",
-   "headliner": "Carsie Blanton",
-   "support": [
-    "The Burning Hell"
-   ],
-   "venue": "Le Poisson Rouge",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV80b8838a-b930-4f57-a9b3-5416d7238624",
-   "pick": false
-  },
-  {
-   "id": "477008",
-   "date": "2026-11-05",
-   "time": "18:30",
-   "headliner": "Flagman",
-   "support": [
-    "Leon Trout"
-   ],
-   "venue": "The Wood Shop",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EVc4e4f518-49d9-431c-bc74-ee593349565b",
-   "pick": false
-  },
-  {
-   "id": "480373",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Sam Zalta",
-   "support": [
-    "Grape Wayne",
-    "Mimi Pretend"
-   ],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/mxwqer-sam-zalta-release-show-grape-wayne-mimi-pretend-5th-nov-alphaville-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "480378",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Feaster",
-   "support": [
-    "PFFU",
-    "Diary"
-   ],
-   "venue": "Berlin",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/feaster-pffu-diary-berlin-tickets/14364434",
-   "pick": false
-  },
-  {
-   "id": "464161",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Sammy Rae & The Friends",
-   "support": [
-    "Melt"
-   ],
-   "venue": "Brooklyn Paramount",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/sammy-rae-the-friends-brooklyn-new-york-11-05-2026/event/0000643700A3F2B5",
-   "pick": true
-  },
-  {
-   "id": "475059",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Deerhoof",
-   "support": [
-    "Mercy",
-    "My Trio"
-   ],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/deerhoof-mercy-my-trio-tickets-1992954959934",
-   "pick": true
-  },
-  {
-   "id": "480348",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Earth To Emily",
-   "support": [
-    "Von"
-   ],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/earth-to-emily-tickets-2003005535476",
-   "pick": false
-  },
-  {
-   "id": "479327",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Matt Quinn (of Mt. Joy)",
-   "support": [],
-   "venue": "Gramercy Theatre",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/jam-for-good-presents-matt-quinn-new-york-new-york-11-05-2026/event/00006530E957B450",
-   "pick": false
-  },
-  {
-   "id": "468582",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Akeem Ali",
-   "support": [],
-   "venue": "Irving Plaza",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/0000647E954B5463",
-   "pick": false
-  },
-  {
-   "id": "469764",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Basia Bulat",
-   "support": [],
-   "venue": "Joe's Pub",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://publictheater.org/performances-jp/2026/b/basia-bulat/",
-   "pick": true
-  },
-  {
-   "id": "473117",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Boy Harsher",
-   "support": [
-    "True Blue",
-    "Kassie Krut"
-   ],
-   "venue": "Knockdown Center",
-   "borough": "Queens",
-   "tier": null,
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/partner/tickets/event/3oxx8g-boy-harsher-5th-nov-knockdown-center-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "477496",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Giles Corey",
-   "support": [
-    "Kathryn Mohr"
-   ],
-   "venue": "Market Hotel",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/3orwyv-minty-boi-presents-giles-corey-live-in-new-york-w-kathryn-mohr-5th-nov-market-hotel-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "477997",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "The Haunted Youth",
-   "support": [
-    "Preston Bell"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/the-haunted-youth-night-club-101-tickets/15041053",
-   "pick": false
-  },
-  {
-   "id": "470596",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Flower Face",
-   "support": [
-    "Julia Barfield"
-   ],
-   "venue": "Public Records",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/92776o-flower-face-5th-nov-public-records-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "476137",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Madds Buckley",
-   "support": [
-    "Brye"
-   ],
-   "venue": "Racket",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1536708/madds-buckley-2026-2027-north-american-tour-tickets",
-   "pick": false
-  },
-  {
-   "id": "478853",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Peter Stampfel",
-   "support": [
-    "Kyp Malone",
-    "Catherine Russell",
-    "Luther Dickinson",
-    "Laura Cantrell",
-    "Grace Bergere",
-    "Stephanie Jenkins",
-    "Don Flemons"
-   ],
-   "venue": "St. Ann & The Holy Trinity",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.viewcy.com/event/singingthealanlomaxarchive",
-   "pick": true
-  },
-  {
-   "id": "474685",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Old Tower",
-   "support": [
-    "Alberich",
-    "Bereft Raven",
-    "Fury Within"
-   ],
-   "venue": "TV Eye",
-   "borough": "Queens",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventim.us/event/old-tower-alberich-bereft-raven-fury-within/696955",
-   "pick": false
-  },
-  {
-   "id": "480114",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Believe in Ghost!",
-   "support": [
-    "Diplomat",
-    "Captain Stan's Good Time Tavern",
-    "Metagirl & the Earth"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/82860-owl-presents-believe-in-ghost-diplomat",
-   "pick": false
-  },
-  {
-   "id": "471693",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Every Avenue",
-   "support": [
-    "In Her Own Words"
-   ],
-   "venue": "The Meadows",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV46b372ea-15d9-41aa-b355-f6b3e2815209",
-   "pick": false
-  },
-  {
-   "id": "468499",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "MaryAnne Muglia",
-   "support": [
-    "Phoebe Katis"
-   ],
-   "venue": "The Sultan Room",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/dkm276-maryanne-muglia-phoebe-katis-5th-nov-the-sultan-room-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "479112",
-   "date": "2026-11-05",
-   "time": "19:00",
-   "headliner": "Darryl Rahn",
-   "support": [
-    "Hannah Lee Thompson"
-   ],
-   "venue": "Union Pool",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/6dgla8-darryl-rahn-5th-nov-union-pool-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "480936",
-   "date": "2026-11-05",
-   "time": "19:30",
-   "headliner": "Miranda Del Sol",
-   "support": [
-    "Musas",
-    "Aricel Dulce"
-   ],
-   "venue": "C'mon Everybody",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/av83o7-miranda-del-sol-musas-aricel-dulce-5th-nov-cmon-everybody-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "480540",
-   "date": "2026-11-05",
-   "time": "19:30",
-   "headliner": "Plastic Baby Jesus",
-   "support": [
-    "Admin",
-    "Pond View",
-    "Canine Wedding"
-   ],
-   "venue": "Cassette",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/nvr8bl-plastic-baby-jesus-admin-pond-view-canine-wedding-5th-nov-cassette-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "480929",
-   "date": "2026-11-05",
-   "time": "19:30",
-   "headliner": "Trip Villain",
-   "support": [
-    "Dawglet",
-    "Barbarian Law",
-    "Salon"
-   ],
-   "venue": "Gold Sounds",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/wwnrmg-trip-villain-dawglet-barbarian-law-salon-5th-nov-gold-sounds-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "479337",
-   "date": "2026-11-05",
-   "time": "19:30",
-   "headliner": "Thalia Zedek",
-   "support": [
-    "Female Genius",
-    "Tahiti Syndrome"
-   ],
-   "venue": "Main Drag Music",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/82818-11-5-26-thalia-zedek-female-genius-tahiti",
-   "pick": true
-  },
-  {
-   "id": "475322",
-   "date": "2026-11-05",
-   "time": "20:00",
-   "headliner": "Michelle Branch",
-   "support": [],
-   "venue": "Beacon Theatre",
-   "borough": "Manhattan",
-   "tier": "Big room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/3B0064DDAF19395C",
-   "pick": false
-  },
-  {
-   "id": "473211",
-   "date": "2026-11-05",
-   "time": "20:00",
-   "headliner": "Rocky (In Concert)",
-   "support": [
-    "Sylvester Stallone"
-   ],
-   "venue": "Kings Theatre",
-   "borough": "Brooklyn",
-   "tier": "Big room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://us.atgtickets.com/events/rocky/kings-theatre-brooklyn/",
-   "pick": true
-  },
-  {
-   "id": "477457",
-   "date": "2026-11-05",
-   "time": "20:00",
-   "headliner": "Avalon Emerson (& the Charm)",
-   "support": [
-    "Sadie",
-    "Dave P"
-   ],
-   "venue": "Music Hall of Williamsburg",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1570049/avalon-emerson-the-charm-tickets",
-   "pick": true
-  },
-  {
-   "id": "473507",
-   "date": "2026-11-05",
-   "time": "20:00",
-   "headliner": "The Longest Johns",
-   "support": [
-    "Sean Dagher"
-   ],
-   "venue": "Sony Hall",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/the-longest-johns-new-york-new-york-11-05-2026/event/000064C8D40C8138",
-   "pick": false
-  },
-  {
-   "id": "463038",
-   "date": "2026-11-05",
-   "time": "20:00",
-   "headliner": "Olafur Arnalds",
-   "support": [],
-   "venue": "Town Hall",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/olafur-arnalds-new-york-new-york-11-05-2026/event/03006428F84E282E",
-   "pick": true
-  },
-  {
-   "id": "479559",
-   "date": "2026-11-05",
-   "time": "20:30",
-   "headliner": "Preservation Hall Jazz Band",
-   "support": [
-    "Irma Thomas",
-    "Joan Osborne"
-   ],
-   "venue": "City Winery",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://tickets.citywinery.com/event/preservation-hall-jazz-band-fundraiser-l3uczs",
-   "pick": true
-  },
-  {
-   "id": "476190",
-   "date": "2026-11-05",
-   "time": "20:30",
-   "headliner": "Zeena Parkins",
-   "support": [
-    "Ka Baird",
-    "Chris Williams"
-   ],
-   "venue": "The Stone",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "http://thestonenyc.com/calendar.php",
-   "pick": false
-  },
-  {
-   "id": "481015",
-   "date": "2026-11-05",
-   "time": "21:00",
-   "headliner": "Mojo Thunder",
-   "support": [
-    "Cabin Fever",
-    "The Breaks Inc."
-   ],
-   "venue": "Bowery Palace",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/mojo-thunder-cabin-fever-bowery-palace-tickets/15006223",
-   "pick": false
-  },
-  {
-   "id": "478667",
-   "date": "2026-11-05",
-   "time": "21:00",
-   "headliner": "3Ballmty",
-   "support": [],
-   "venue": "Brooklyn Steel",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1605544/3ballmty-tickets",
-   "pick": false
-  },
-  {
-   "id": "478880",
-   "date": "2026-11-05",
-   "time": "21:00",
-   "headliner": "Gus Dapperton",
-   "support": [],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/gus-dapperton-new-york-new-york-11-05-2026/event/0000652BC5D3A3C0",
-   "pick": true
-  },
-  {
-   "id": "478025",
-   "date": "2026-11-05",
-   "time": "22:00",
-   "headliner": "Tiny Gun",
-   "support": [
-    "Ultra Lights",
-    "Lost Boys"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/tiny-gun-ultra-lights-lost-night-club-101-tickets/14286884",
-   "pick": false
-  },
-  {
-   "id": "480529",
-   "date": "2026-11-06",
-   "time": "12:00",
-   "headliner": "WFMU DJs",
-   "support": [],
-   "venue": "The Metropolitan Pavilion",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wfmu.org/recordfair/",
-   "pick": true
-  },
-  {
-   "id": "471129",
-   "date": "2026-11-06",
-   "time": "17:00",
-   "headliner": "This Is Lorelei",
-   "support": [
-    "@"
-   ],
-   "venue": "Webster Hall",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1438453/this-is-lorelei-tickets",
-   "pick": true
-  },
-  {
-   "id": "479358",
-   "date": "2026-11-06",
-   "time": "18:00",
-   "headliner": "Lera Lynn",
-   "support": [],
-   "venue": "Cafe Wha?",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/lera-lynn-cafe-wha-tickets/14266744",
-   "pick": false
-  },
-  {
-   "id": "477736",
-   "date": "2026-11-06",
-   "time": "18:00",
-   "headliner": "Late Night Thoughts",
-   "support": [
-    "Sneaky Miles"
-   ],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/late-night-thoughts-days-like-this-new-york-new-york-11-06-2026/event/00006518C4A7717C",
-   "pick": false
-  },
-  {
-   "id": "478094",
-   "date": "2026-11-06",
-   "time": "18:00",
-   "headliner": "Flipper",
-   "support": [
-    "Crippling Alcoholism",
-    "95 Bulls"
-   ],
-   "venue": "Saint Vitus",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/7d58xb-flipper-crippling-alcoholism-95-bulls-6th-nov-saint-vitus-new-york-city-tickets",
-   "pick": true
-  },
-  {
-   "id": "475932",
-   "date": "2026-11-06",
-   "time": "18:30",
-   "headliner": "Natanya",
-   "support": [],
-   "venue": "Baby's All Right",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/g5qxla-natanya-the-attitude-tour-6th-nov-babys-all-right-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "477410",
-   "date": "2026-11-06",
-   "time": "18:30",
-   "headliner": "Rebounder",
-   "support": [
-    "Fetch Tiger"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/rebounder-downtown-people-night-club-101-tickets/15017973",
-   "pick": false
-  },
-  {
-   "id": "481564",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "\"Danger Boss\"",
-   "support": [
-    "Angel Puppet",
-    "Concealer"
-   ],
-   "venue": "20 Meadow St",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV0d1f26bd-66bd-43d2-a606-637c736f4229",
-   "pick": true
-  },
-  {
-   "id": "480374",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Valipala",
-   "support": [
-    "OK KAI",
-    "Nev Sings"
-   ],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/dk7n6q-valipala-ok-kai-nev-sings-6th-nov-alphaville-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "465500",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Sammy Rae & The Friends",
-   "support": [
-    "Melt"
-   ],
-   "venue": "Brooklyn Paramount",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/sammy-rae-the-friends-with-special-brooklyn-new-york-11-06-2026/event/0000643700A7F2C3",
-   "pick": false
-  },
-  {
-   "id": "476633",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Emancipator",
-   "support": [
-    "Shrimpnose",
-    "Lapa"
-   ],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/emancipator-tickets-1995465318484",
-   "pick": false
-  },
-  {
-   "id": "468095",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Lime Garden",
-   "support": [
-    "Nine Perfect Lives"
-   ],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/lime-garden-tickets-1985145677159",
-   "pick": true
-  },
-  {
-   "id": "480509",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Dollhouse",
-   "support": [
-    "Nisemono",
-    "Cruciform",
-    "Exploded America Soldier"
-   ],
-   "venue": "Gold Sounds",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/l8prow-dollhouse-nisemono-cruciform-exploded-america-soldier-6th-nov-gold-sounds-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "465244",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Hiss Golden Messenger",
-   "support": [
-    "Sam Amidon"
-   ],
-   "venue": "Irving Plaza",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/hiss-golden-messenger-im-people-tour-new-york-new-york-11-06-2026/event/00006449E304A866",
-   "pick": true
-  },
-  {
-   "id": "479663",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Kate Nash",
-   "support": [],
-   "venue": "Joe's Pub",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://publictheater.org/performances-jp/2026/k/kate-nash/",
-   "pick": false
-  },
-  {
-   "id": "479997",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Brutalismus 3000",
-   "support": [
-    "SPFDJ",
-    "Dorian Electra",
-    "Eera"
-   ],
-   "venue": "Knockdown Center",
-   "borough": "Queens",
-   "tier": null,
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/xe8qba-b3k-invites-ny-brutalismus-3000-spfdj-dorian-electra-more-6th-nov-knockdown-center-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "481937",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Burial for the Living",
-   "support": [
-    "Sirenfall",
-    "Shadow Solstice",
-    "Fallow Days",
-    "Enstrife"
-   ],
-   "venue": "Lucky 13 Saloon",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/phthalo-phest-4-pre-show-lucky-13-saloon-tickets-2003226640808",
-   "pick": false
-  },
-  {
-   "id": "479613",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Blu DeTiger",
-   "support": [],
-   "venue": "Music Hall of Williamsburg",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1566329/blu-detiger-tickets",
-   "pick": false
-  },
-  {
-   "id": "479115",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Gutter Pearl",
-   "support": [
-    "Seraphine's Cleaver",
-    "Dumpster Pink"
-   ],
-   "venue": "Pianos",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/bbg83g--gutter-pearl-seraphines-cleaver-dumpster-pink-6th-nov-pianos-showroom-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "480483",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Go Home",
-   "support": [
-    "Granite Garden",
-    "Kiss Machine"
-   ],
-   "venue": "Purgatory",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/6dy6n3-go-home-w-granite-garden-and-kiss-machine-6th-nov-purgatory-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "476552",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "The Deslondes",
-   "support": [
-    "Mama's Broke",
-    "Lonnie Holley",
-    "Feral Foster"
-   ],
-   "venue": "St. Ann & The Holy Trinity",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.brooklynfolkfest.com/schedule",
-   "pick": false
-  },
-  {
-   "id": "476992",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Fenne Lily",
-   "support": [
-    "Oldstar"
-   ],
-   "venue": "TV Eye",
-   "borough": "Queens",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventim.us/event/fenne-lily/701946",
-   "pick": true
-  },
-  {
-   "id": "471565",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Blondshell",
-   "support": [
-    "NoSo",
-    "Prewn"
-   ],
-   "venue": "Terminal 5",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1448392/blondshell-tickets",
-   "pick": true
-  },
-  {
-   "id": "479344",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Dummy Ache",
-   "support": [
-    "Hand Gestures",
-    "Second Adolescence",
-    "Parent Teacher"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/82683-owl-presents-dummy-ache-album-release-hand",
-   "pick": false
-  },
-  {
-   "id": "478863",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Rivkah Reyes",
-   "support": [],
-   "venue": "The Sultan Room",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/bbg3mx-rivkah-reyes-ep-release-show-party-6th-nov-the-sultan-room-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "475299",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Ziwe",
-   "support": [],
-   "venue": "Town Hall",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/event/030064E6C1B210FE",
-   "pick": false
-  },
-  {
-   "id": "476214",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Surely Tempo",
-   "support": [
-    "Dogs With Hats"
-   ],
-   "venue": "Trans-Pecos",
-   "borough": "Queens",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.thetranspecos.com/",
-   "pick": false
-  },
-  {
-   "id": "480016",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Wilder Maker",
-   "support": [
-    "Scree",
-    "Mutual Benefit",
-    "Katie Von Schleicher (DJ)"
-   ],
-   "venue": "Union Pool",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/6dypp8-wilder-maker-record-release-scree-mutual-benefit-dj-katie-von-schleicher-6th-nov-union-pool-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "477197",
-   "date": "2026-11-06",
-   "time": "19:00",
-   "headliner": "Pretty Sick",
-   "support": [
-    "Computerwife"
-   ],
-   "venue": "Warsaw",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/pretty-sick-brooklyn-new-york-11-06-2026/event/0000650AAE6EC042",
-   "pick": true
-  },
-  {
-   "id": "480764",
-   "date": "2026-11-06",
-   "time": "19:30",
-   "headliner": "Gutter Pearl",
-   "support": [
-    "T@b Grrrl",
-    "Dumpster Pink"
-   ],
-   "venue": "Cassette",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/mxw8ek-gutter-pearl-ep-release-tb-grrrl-dumpster-pink-6th-nov-cassette-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "476605",
-   "date": "2026-11-06",
-   "time": "19:30",
-   "headliner": "Crab",
-   "support": [
-    "Posture",
-    "Genuine Connection",
-    "Star Card"
-   ],
-   "venue": "Hart Bar",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hartbarnyc.com/shows",
-   "pick": false
-  },
-  {
-   "id": "478849",
-   "date": "2026-11-06",
-   "time": "19:30",
-   "headliner": "Dave Chappelle",
-   "support": [],
-   "venue": "Madison Square Garden",
-   "borough": "Manhattan",
-   "tier": "Big room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/new-york-comedy-festival-ln-present-new-york-new-york-11-06-2026/event/3B0065249F4D361A",
-   "pick": false
-  },
-  {
-   "id": "481216",
-   "date": "2026-11-06",
-   "time": "19:30",
-   "headliner": "Daniela Mack",
-   "support": [
-    "JP Jofre"
-   ],
-   "venue": "National Sawdust",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://ci.ovationtix.com/36490/production/1294000",
-   "pick": false
-  },
-  {
-   "id": "480857",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "headliner": "Moodymann",
-   "support": [
-    "Dam-Funk",
-    "Jael",
-    "DJ Lloyd",
-    "Las Flaquitas"
-   ],
-   "venue": "314 Scholes",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://tickets.venuepilot.com/e/the-do-over-20-year-anniversary-2026-11-06-lohi-brooklyn-eb439d",
-   "pick": false
-  },
-  {
-   "id": "477320",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "headliner": "Hudson Freeman",
-   "support": [
-    "youbet"
-   ],
-   "venue": "Bowery Ballroom",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/hudson-freeman-new-york-new-york-11-06-2026/event/00006507E6A4CA2A",
-   "pick": true
-  },
-  {
-   "id": "477449",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "headliner": "Cimafunk",
-   "support": [],
-   "venue": "Crown Hill Theatre",
-   "borough": null,
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/cimafunk/701026",
-   "pick": false
-  },
-  {
-   "id": "468620",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "headliner": "Teen Jesus and The Jean Teasers",
-   "support": [],
-   "venue": "Racket",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1393491/teen-jesus-and-the-jean-teasers-teen-jesus-and-the-jean-teasers-in-nor-tickets",
-   "pick": true
-  },
-  {
-   "id": "479653",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "headliner": "Visitor Coach",
-   "support": [
-    "Boy Afraid",
-    "Sid Simons",
-    "Holy Vulture",
-    "European Vampires"
-   ],
-   "venue": "Silver Lining Lounge",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://tickets.taogroup.com/e/silver-lining-lounge-11-6-26/tickets",
-   "pick": false
-  },
-  {
-   "id": "481481",
-   "date": "2026-11-06",
-   "time": "20:00",
-   "headliner": "Horsehell",
-   "support": [
-    "Postmark",
-    "Slowpoke"
-   ],
-   "venue": "The Broadway",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/horsehell-w-postmark-slowpoke-tickets-2003931050717",
-   "pick": false
-  },
-  {
-   "id": "477842",
-   "date": "2026-11-06",
-   "time": "20:30",
-   "headliner": "Tobiahs",
-   "support": [],
-   "venue": "Brooklyn Steel",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1556250/tobiahs-tickets",
-   "pick": false
-  },
-  {
-   "id": "480980",
-   "date": "2026-11-06",
-   "time": "20:30",
-   "headliner": "Prairie Princess",
-   "support": [
-    "Matthew Danger Lippman",
-    "Germ Patrol",
-    "Dream Ghoul"
-   ],
-   "venue": "Footlight Underground",
-   "borough": "Queens",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://pools.events/event/hxJ6ttj6/prairie-princess-matthew-danger-lippman-germ-patrol-dream-ghoul/",
-   "pick": false
-  },
-  {
-   "id": "476189",
-   "date": "2026-11-06",
-   "time": "20:30",
-   "headliner": "Zeena Parkins",
-   "support": [
-    "Nate Wooley",
-    "Nava Dunkelman"
-   ],
-   "venue": "The Stone",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "http://thestonenyc.com/calendar.php",
-   "pick": false
-  },
-  {
-   "id": "481731",
-   "date": "2026-11-06",
-   "time": "21:00",
-   "headliner": "Bella Litsa",
-   "support": [
-    "Nicole Vertigo",
-    "My Bitch Ex Wife"
-   ],
-   "venue": "Baby's All Right",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "RSVP",
-   "ticketUrl": "https://wl.eventim.us/event/BABY-DANCE/710036",
-   "pick": false
-  },
-  {
-   "id": "478090",
-   "date": "2026-11-06",
-   "time": "21:00",
-   "headliner": "Madra Salach",
-   "support": [],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/madra-salach-new-york-new-york-11-06-2026/event/0000651AD8D98B15",
-   "pick": true
-  },
-  {
-   "id": "481837",
-   "date": "2026-11-06",
-   "time": "21:30",
-   "headliner": "Yaeji",
-   "support": [
-    "DJ Swisha",
-    "OSSX"
-   ],
-   "venue": "Paragon",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/aab6r7-yaejis-ddr-yaeji-dj-swisha-ossx-6th-nov-paragon-new-york-city-tickets",
-   "pick": true
-  },
-  {
-   "id": "468139",
-   "date": "2026-11-06",
-   "time": "22:00",
-   "headliner": "Eli Escobar",
-   "support": [
-    "Sissies of Mercy"
-   ],
-   "venue": "House of Yes",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://shotgun.live/events/house-of-grooves-nov-6-2026",
-   "pick": false
-  },
-  {
-   "id": "478467",
-   "date": "2026-11-06",
-   "time": "22:00",
-   "headliner": "Bobbyy",
-   "support": [
-    "Akai Solo"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/bobbyy-akai-solo-dj-stacy-night-club-101-tickets/14289484",
-   "pick": false
-  },
-  {
-   "id": "479488",
-   "date": "2026-11-06",
-   "time": "22:30",
-   "headliner": "Fat Concubine",
-   "support": [
-    "Firstsex",
-    "Tear Dungeon"
-   ],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/q2ddap-fat-concubine-firstsex-tear-dungeon-6th-nov-alphaville-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "480029",
-   "date": "2026-11-06",
-   "time": "23:00",
-   "headliner": "Normal Bias",
-   "support": [
-    "MVTANT",
-    "Pink Stiletto"
-   ],
-   "venue": "TV Eye",
-   "borough": "Queens",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventim.us/event/normal-bias-mvtant-pink-stiletto/705722",
-   "pick": false
-  },
-  {
-   "id": "479687",
-   "date": "2026-11-06",
-   "time": "23:00",
-   "headliner": "Montycler",
-   "support": [
-    "Mushroom Cloud"
-   ],
-   "venue": "The Wood Shop",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EVe83c2350-9b1d-41f5-a48d-743ff108c1a8",
-   "pick": false
-  },
-  {
-   "id": "480527",
-   "date": "2026-11-07",
-   "time": "11:00",
-   "headliner": "The Elevator Operators (4:30pm)",
-   "support": [
-    "Quasi (2:30pm)",
-    "Kiki Cavazos (11am)",
-    "plus Live Broadcasts and A/V Lounge documentary screenings"
-   ],
-   "venue": "The Metropolitan Pavilion",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wfmu.org/recordfair/",
-   "pick": true
-  },
-  {
-   "id": "480050",
-   "date": "2026-11-07",
-   "time": "14:00",
-   "headliner": "The Goons",
-   "support": [
-    "Bowhead",
-    "Burn Him",
-    "Cocaine Mitch"
-   ],
-   "venue": "Gold Sounds",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/92vom6-the-goons-bowhead-burn-him-cocaine-mitch-7th-nov-gold-sounds-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "480311",
-   "date": "2026-11-07",
-   "time": "14:00",
-   "headliner": "Fish Narc",
-   "support": [],
-   "venue": "Rough Trade NYC",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/8edo8r-fish-narc-live-signing-7th-nov-rough-trade-below-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "480547",
-   "date": "2026-11-07",
-   "time": "16:00",
-   "headliner": "Standoffish",
-   "support": [
-    "Slugwater",
-    "Chip Away",
-    "Awful Din"
-   ],
-   "venue": "Bar Freda",
-   "borough": "Queens",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www-barfreda-com.filesusr.com/html/2e6f23_ce13a0ff7b94358fb95bd6c84de55c45.html",
-   "pick": false
-  },
-  {
-   "id": "471061",
-   "date": "2026-11-07",
-   "time": "17:30",
-   "headliner": "Saosin",
-   "support": [
-    "Silent Planet",
-    "Like Moths to Flames",
-    "Save Us"
-   ],
-   "venue": "Webster Hall",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1431904/saosin-tickets",
-   "pick": false
-  },
-  {
-   "id": "472569",
-   "date": "2026-11-07",
-   "time": "18:00",
-   "headliner": "VOILA",
-   "support": [
-    "Weathers",
-    "Ella Red",
-    "No Love For The Middle Child"
-   ],
-   "venue": "Irving Plaza",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/voila-presents-moonbloom-new-york-new-york-11-07-2026/event/000064BCCB624BB3",
-   "pick": false
-  },
-  {
-   "id": "478081",
-   "date": "2026-11-07",
-   "time": "18:00",
-   "headliner": "Danny L Harle",
-   "support": [
-    "Saya Gray",
-    "Ela Minus",
-    "Contact Sports"
-   ],
-   "venue": "Knockdown Center",
-   "borough": "Queens",
-   "tier": null,
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/53kwdd-outline-danny-l-harle-yeule-saya-gray-contact-sports-7th-nov-knockdown-center-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "475586",
-   "date": "2026-11-07",
-   "time": "18:00",
-   "headliner": "Bryan Andrews",
-   "support": [
-    "Lou Ridley"
-   ],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/bryan-andrews-new-york-new-york-11-07-2026/event/000064E29F3DBAEB",
-   "pick": false
-  },
-  {
-   "id": "477208",
-   "date": "2026-11-07",
-   "time": "18:00",
-   "headliner": "Torche",
-   "support": [
-    "Spotlights"
-   ],
-   "venue": "Saint Vitus",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/mxn7v9-torche-spotlights-7th-nov-saint-vitus-new-york-city-tickets",
-   "pick": true
-  },
-  {
-   "id": "480110",
-   "date": "2026-11-07",
-   "time": "18:30",
-   "headliner": "Collateral",
-   "support": [
-    "Steamroll",
-    "Shits Creek",
-    "Runnin Hot",
-    "Keep Pace"
-   ],
-   "venue": "20 Meadow St",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV39254cd6-04d2-4798-8d97-9380c151fe7a",
-   "pick": false
-  },
-  {
-   "id": "479237",
-   "date": "2026-11-07",
-   "time": "18:30",
-   "headliner": "my girlfriends boyfriends",
-   "support": [
-    "Soap",
-    "Molly Ganley",
-    "Dizzy & the Drapes"
-   ],
-   "venue": "Alphaville",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/py3b8y-my-girlfriends-boyfriends-soap-molly-ganley-dizzy-the-drapes-7th-nov-alphaville-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "476986",
-   "date": "2026-11-07",
-   "time": "18:30",
-   "headliner": "Babehoven",
-   "support": [
-    "Jane Lai"
-   ],
-   "venue": "Baby's All Right",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/babehoven/700885",
-   "pick": true
-  },
-  {
-   "id": "477216",
-   "date": "2026-11-07",
-   "time": "18:30",
-   "headliner": "the olllam",
-   "support": [
-    "faiith"
-   ],
-   "venue": "Le Poisson Rouge",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV922c51ba-9cde-443e-b871-380b701ea793",
-   "pick": false
-  },
-  {
-   "id": "472026",
-   "date": "2026-11-07",
-   "time": "18:30",
-   "headliner": "Boston Manor",
-   "support": [
-    "Ben Quad",
-    "Spaced"
-   ],
-   "venue": "Music Hall of Williamsburg",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1463164/boston-manor-tickets",
-   "pick": false
-  },
-  {
-   "id": "481936",
-   "date": "2026-11-07",
-   "time": "18:30",
-   "headliner": "The Goons",
-   "support": [
-    "ChumHuffer",
-    "The Juans",
-    "Apathetix",
-    "Promise"
-   ],
-   "venue": "The Broadway",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/the-goons-w-chumhuffer-the-juans-the-apathetix-promise-tickets-2004384569203",
-   "pick": false
-  },
-  {
-   "id": "470483",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Amble",
-   "support": [
-    "Vincent Lima"
-   ],
-   "venue": "Brooklyn Paramount",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/amble-brooklyn-new-york-11-07-2026/event/0000649EC4999749",
-   "pick": false
-  },
-  {
-   "id": "479985",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Victor Jones",
-   "support": [
-    "Marcus Dembinski"
-   ],
-   "venue": "Crown Hill Theatre",
-   "borough": null,
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.seetickets.us/event/victor-jones/706930",
-   "pick": true
-  },
-  {
-   "id": "473155",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Lime Garden",
-   "support": [
-    "Nine Perfect Lives"
-   ],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/lime-garden-tickets-1991242169933",
-   "pick": true
-  },
-  {
-   "id": "478666",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Ami Taf Ra",
-   "support": [
-    "Kamasi Washington"
-   ],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/ami-taf-ra-kamasi-washington-tickets-2000207327962",
-   "pick": true
-  },
-  {
-   "id": "473732",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Sleeping With Sirens",
-   "support": [
-    "Rain City Drive"
-   ],
-   "venue": "Hammerstein Ballroom",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/sleeping-with-sirens-an-ending-in-new-york-new-york-11-07-2026/event/000064CAA762E1A9",
-   "pick": false
-  },
-  {
-   "id": "472299",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Desire",
-   "support": [
-    "Johnny Jewel"
-   ],
-   "venue": "Market Hotel",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/8elwv7-desire-live-in-new-york-with-johnny-jewel-7th-nov-market-hotel-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "480879",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Deux Visages",
-   "support": [
-    "Daisy's Room",
-    "Whisper Doll"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/deux-visages-night-club-101-tickets/14365354",
-   "pick": true
-  },
-  {
-   "id": "478739",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Little Hag",
-   "support": [
-    "Jenny Alien",
-    "QWAM",
-    "Brook Pridemore"
-   ],
-   "venue": "Purgatory",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/nvx8k3-little-hag-jenny-alien-qwam-and-brook-pridemore-7th-nov-purgatory-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "479647",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Terri Lyne Carrington",
-   "support": [
-    "William Parker",
-    "Theo Bleckmann",
-    "Martha Redbone"
-   ],
-   "venue": "Roulette",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://roulette.org/event/m3-festival-2026/",
-   "pick": false
-  },
-  {
-   "id": "480099",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Grim River",
-   "support": [
-    "Jesse Serrano",
-    "Sophie Cozine"
-   ],
-   "venue": "Sleepwalk",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/v35m7l-grim-river-jesse-serrano-sophie-cozine-7th-nov-sleepwalk-new-york-city-tickets",
-   "pick": false
-  },
-  {
-   "id": "476553",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Mohamed Araki",
-   "support": [
-    "Louis Cato",
-    "Agalisiga ‘Chuj’ Mackey",
-    "Michael Daves",
-    "Bruce Molsky",
-    "Tony Trischka"
-   ],
-   "venue": "St. Ann & The Holy Trinity",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.brooklynfolkfest.com/schedule",
-   "pick": false
-  },
-  {
-   "id": "472523",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Starcleaner Reunion",
-   "support": [
-    "Trinket",
-    "Stice"
-   ],
-   "venue": "TV Eye",
-   "borough": "Queens",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://wl.eventim.us/event/starcleaner-reunion/693640",
-   "pick": true
-  },
-  {
-   "id": "480113",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Sunny Delight",
-   "support": [
-    "Top Nachos",
-    "Castle Black"
-   ],
-   "venue": "The Gutter",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/83574-owl-presents-sunny-delight-top-nachos-castle",
-   "pick": false
-  },
-  {
-   "id": "475469",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Banshee",
-   "support": [],
-   "venue": "The Sultan Room",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/k6l7d9-banshee-7th-nov-the-sultan-room-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "477745",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Sap",
-   "support": [
-    "Sludge Mother",
-    "Sir Echo"
-   ],
-   "venue": "The Wood Shop",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://kydlabs.com/e/EV95e05d8e-7257-473c-8da4-401c19d065dd",
-   "pick": false
-  },
-  {
-   "id": "478079",
-   "date": "2026-11-07",
-   "time": "19:00",
-   "headliner": "Madra Salach",
-   "support": [],
-   "venue": "Union Pool",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/7d5dnv-madra-salach-7th-nov-union-pool-new-york-tickets",
-   "pick": true
-  },
-  {
-   "id": "480150",
-   "date": "2026-11-07",
-   "time": "19:30",
-   "headliner": "Sandbox Percussion",
-   "support": [],
-   "venue": "92NY",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.92ny.org/event/sandbox-percussion-seven-pillars",
-   "pick": false
-  },
-  {
-   "id": "478153",
-   "date": "2026-11-07",
-   "time": "19:30",
-   "headliner": "Nightbreakers",
-   "support": [
-    "Lake Drive",
-    "Abbie Roper"
-   ],
-   "venue": "Gold Sounds",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/eon58d-nightbreakers-lake-drive-abbie-roper-7th-nov-gold-sounds-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "476195",
-   "date": "2026-11-07",
-   "time": "19:30",
-   "headliner": "Nectarine Girl",
-   "support": [
-    "Lady Lychee",
-    "Bruiser and Bicycle",
-    "Janna Jamison"
-   ],
-   "venue": "Main Drag Music",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://bandnada.com/p/80537-11-7-26-necatrine-girl-lady-lychee-bruiser",
-   "pick": false
-  },
-  {
-   "id": "477999",
-   "date": "2026-11-07",
-   "time": "19:30",
-   "headliner": "Fish Narc",
-   "support": [
-    "Loosey",
-    "Phantasia"
-   ],
-   "venue": "Stone Circle Theatre",
-   "borough": "Queens",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventim.us/event/tickets/700214",
-   "pick": true
-  },
-  {
-   "id": "477415",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "headliner": "Oxis",
-   "support": [
-    "Torr"
-   ],
-   "venue": "Bowery Ballroom",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/oxis-new-york-new-york-11-07-2026/event/0000650ED7FD09B7",
-   "pick": true
-  },
-  {
-   "id": "471156",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "headliner": "Donna The Buffalo",
-   "support": [
-    "Assembly of Dust"
-   ],
-   "venue": "Brooklyn Bowl",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/donna-the-buffalo-assembly-of-dust-brooklyn-new-york-11-07-2026/event/000064A1D532113B",
-   "pick": false
-  },
-  {
-   "id": "476599",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "headliner": "The Blasting Company",
-   "support": [],
-   "venue": "Brooklyn Steel",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1542146/the-blasting-company-plays-over-the-garden-wall-tickets",
-   "pick": false
-  },
-  {
-   "id": "479904",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "headliner": "Nod",
-   "support": [
-    "Vague Plot",
-    "Psincerity"
-   ],
-   "venue": "Hart Bar",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.hartbarnyc.com/shows",
-   "pick": false
-  },
-  {
-   "id": "481711",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "headliner": "Jesse Gold",
-   "support": [],
-   "venue": "Racket",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1476250/jesse-gold-tickets",
-   "pick": false
-  },
-  {
-   "id": "478790",
-   "date": "2026-11-07",
-   "time": "20:00",
-   "headliner": "The Goons",
-   "support": [
-    "ChumHuffer",
-    "The Juans",
-    "Apathetix",
-    "Promise"
-   ],
-   "venue": "The Broadway",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/o/the-broadway-20150099203",
-   "pick": false
-  },
-  {
-   "id": "476188",
-   "date": "2026-11-07",
-   "time": "20:30",
-   "headliner": "Zeena Parkins",
-   "support": [
-    "Ryan Sawyer",
-    "Brandon Lopez"
-   ],
-   "venue": "The Stone",
-   "borough": "Manhattan",
-   "tier": null,
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "http://thestonenyc.com/calendar.php",
-   "pick": true
-  },
-  {
-   "id": "480180",
-   "date": "2026-11-07",
-   "time": "21:00",
-   "headliner": "Brothel In Belize",
-   "support": [],
-   "venue": "Mercury Lounge",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": null,
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketmaster.com/brothel-in-belize-new-york-new-york-11-07-2026/event/00006542CB4E5CDA",
-   "pick": false
-  },
-  {
-   "id": "473167",
-   "date": "2026-11-07",
-   "time": "21:00",
-   "headliner": "Nimino",
-   "support": [],
-   "venue": "Terminal 5",
-   "borough": "Manhattan",
-   "tier": "Club",
-   "age": "18+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.axs.com/events/1480996/nimino-tickets",
-   "pick": false
-  },
-  {
-   "id": "479103",
-   "date": "2026-11-07",
-   "time": "22:00",
-   "headliner": "Benwal",
-   "support": [
-    "Diffrent",
-    "Kyle Starkey",
-    "Paige Tomlinson",
-    "STÜM"
-   ],
-   "venue": "99 Scott",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/elsewhere-presents-benwal-diffrent-kyle-starkey-paige-tomlinson-stum-tickets-2001092095325",
-   "pick": false
-  },
-  {
-   "id": "479689",
-   "date": "2026-11-07",
-   "time": "22:00",
-   "headliner": "tam tam",
-   "support": [
-    "Mike Guimond",
-    "Harim"
-   ],
-   "venue": "Good Room",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://ra.co/events/2548803",
-   "pick": false
-  },
-  {
-   "id": "480880",
-   "date": "2026-11-07",
-   "time": "22:00",
-   "headliner": "dance art center",
-   "support": [
-    "Chloe Scarlett",
-    "Oh So",
-    "Veronica Everheart (DJ)"
-   ],
-   "venue": "Nightclub 101",
-   "borough": "Manhattan",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.ticketweb.com/event/dance-arts-center-chloe-scarlett-night-club-101-tickets/14377814",
-   "pick": false
-  },
-  {
-   "id": "479814",
-   "date": "2026-11-07",
-   "time": "23:00",
-   "headliner": "Jewel House",
-   "support": [
-    "Ruthie Bandit",
-    "The Doodie Baby"
-   ],
-   "venue": "The Sultan Room",
-   "borough": "Brooklyn",
-   "tier": "Small room",
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/bbqabo-jewel-house-ruthie-bandit-the-doodie-baby-7th-nov-the-sultan-room-new-york-tickets",
-   "pick": false
-  },
-  {
-   "id": "481010",
-   "date": "2026-11-07",
-   "time": "23:00",
-   "headliner": "Nero's Day At Disneyland",
-   "support": [
-    "DV-i",
-    "Dani Rev"
-   ],
-   "venue": "Trans-Pecos",
-   "borough": "Queens",
-   "tier": null,
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.thetranspecos.com/",
-   "pick": false
-  },
   {
    "id": "480528",
    "date": "2026-11-08",
@@ -2831,6 +19,23 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wfmu.org/recordfair/",
+   "pick": true
+  },
+  {
+   "id": "481947",
+   "date": "2026-11-08",
+   "time": "13:45",
+   "headliner": "Big Girl",
+   "support": [
+    "Laveda",
+    "Dallas Wax"
+   ],
+   "venue": "Washington Square Park",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://www.eventbrite.com/e/season-finale-show-brain-at-washington-sq-park-tickets-2004328958871",
    "pick": true
   },
   {
@@ -3052,20 +257,6 @@
    "pick": false
   },
   {
-   "id": "472959",
-   "date": "2026-11-08",
-   "time": "19:00",
-   "headliner": "Arde Bogota",
-   "support": [],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/arde-bogota-tickets-1990883722808",
-   "pick": false
-  },
-  {
    "id": "468094",
    "date": "2026-11-08",
    "time": "19:00",
@@ -3079,6 +270,20 @@
    "age": "16+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventbrite.com/e/kyle-hume-tickets-1985726645852",
+   "pick": false
+  },
+  {
+   "id": "472959",
+   "date": "2026-11-08",
+   "time": "19:00",
+   "headliner": "Arde Bogota",
+   "support": [],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/arde-bogota-tickets-1990883722808",
    "pick": false
   },
   {
@@ -3457,20 +662,6 @@
    "pick": true
   },
   {
-   "id": "478663",
-   "date": "2026-11-09",
-   "time": "19:00",
-   "headliner": "Bed",
-   "support": [],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/bed-tickets-1999799576366",
-   "pick": false
-  },
-  {
    "id": "471605",
    "date": "2026-11-09",
    "time": "19:00",
@@ -3486,6 +677,20 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventbrite.com/e/adult-a-place-to-bury-strangers-tickets-1989618769298",
    "pick": true
+  },
+  {
+   "id": "478663",
+   "date": "2026-11-09",
+   "time": "19:00",
+   "headliner": "Bed",
+   "support": [],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/bed-tickets-1999799576366",
+   "pick": false
   },
   {
    "id": "477451",
@@ -3613,7 +818,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.instagram.com/p/DfFLTcsJ8l9/",
-   "pick": false
+   "pick": true
   },
   {
    "id": "478124",
@@ -3692,7 +897,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/orville-peck-man-turned-mule-tour-brooklyn-new-york-11-10-2026/event/000064F4C10A2E5B",
-   "pick": true
+   "pick": false
   },
   {
    "id": "471484",
@@ -3708,7 +913,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketweb.com/event/sweeping-promises-night-club-101-tickets/14908543",
-   "pick": true
+   "pick": false
   },
   {
    "id": "481321",
@@ -3738,7 +943,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/7dxg3v-durations-william-basinski-muein-10th-nov-public-records-new-york-tickets",
-   "pick": true
+   "pick": false
   },
   {
    "id": "477911",
@@ -3822,7 +1027,9 @@
    "date": "2026-11-10",
    "time": "19:00",
    "headliner": "Six60",
-   "support": [],
+   "support": [
+    "The Hopeless Romantics"
+   ],
    "venue": "Xanadu",
    "borough": "Brooklyn",
    "tier": null,
@@ -3908,7 +1115,7 @@
    "age": "18+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.axs.com/events/1616946/hamilton-leithauser-rostam-tickets",
-   "pick": true
+   "pick": false
   },
   {
    "id": "481709",
@@ -4050,7 +1257,9 @@
    "date": "2026-11-11",
    "time": "18:00",
    "headliner": "Red Leather",
-   "support": [],
+   "support": [
+    "The Romance"
+   ],
    "venue": "Mercury Lounge",
    "borough": "Manhattan",
    "tier": "Small room",
@@ -4174,7 +1383,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/sting-30-tour-brooklyn-new-york-11-11-2026/event/0000645905ABDC05",
-   "pick": false
+   "pick": true
   },
   {
    "id": "478288",
@@ -4199,7 +1408,10 @@
    "date": "2026-11-11",
    "time": "19:00",
    "headliner": "Internet Girl",
-   "support": [],
+   "support": [
+    "Godly The Ruler",
+    "Sipper"
+   ],
    "venue": "Elsewhere",
    "borough": "Brooklyn",
    "tier": "Club",
@@ -4288,7 +1500,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/6dok97-durations-william-basinski-chantal-michelle-11th-nov-public-records-new-york-tickets",
-   "pick": true
+   "pick": false
   },
   {
    "id": "481122",
@@ -4425,7 +1637,9 @@
    "date": "2026-11-11",
    "time": "20:00",
    "headliner": "George Clanton",
-   "support": [],
+   "support": [
+    "Ryan Hemsworth"
+   ],
    "venue": "Brooklyn Steel",
    "borough": "Brooklyn",
    "tier": "Club",
@@ -4439,7 +1653,9 @@
    "date": "2026-11-11",
    "time": "20:00",
    "headliner": "BAILEN",
-   "support": [],
+   "support": [
+    "Rebecca McCartney"
+   ],
    "venue": "National Sawdust",
    "borough": "Brooklyn",
    "tier": null,
@@ -4470,7 +1686,9 @@
    "date": "2026-11-11",
    "time": "21:00",
    "headliner": "Camylio",
-   "support": [],
+   "support": [
+    "Friend of a Friend"
+   ],
    "venue": "Mercury Lounge",
    "borough": "Manhattan",
    "tier": "Small room",
@@ -4495,21 +1713,23 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.eventim.us/event/laveda/707758",
-   "pick": false
+   "pick": true
   },
   {
    "id": "479918",
    "date": "2026-11-11",
    "time": "22:00",
    "headliner": "Dylan Thom",
-   "support": [],
+   "support": [
+    "Horse Laugh"
+   ],
    "venue": "Nightclub 101",
    "borough": "Manhattan",
    "tier": "Small room",
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketweb.com/event/dylan-thom-night-club-101-tickets/14342854",
-   "pick": false
+   "pick": true
   },
   {
    "id": "477453",
@@ -4583,7 +1803,9 @@
    "date": "2026-11-12",
    "time": "18:30",
    "headliner": "Genesis Owusu",
-   "support": [],
+   "support": [
+    "After Louise"
+   ],
    "venue": "Baby's All Right",
    "borough": "Brooklyn",
    "tier": "Small room",
@@ -4656,7 +1878,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.axs.com/events/1528031/trivium-tickets",
-   "pick": false
+   "pick": true
   },
   {
    "id": "479333",
@@ -4744,14 +1966,18 @@
    "date": "2026-11-12",
    "time": "19:00",
    "headliner": "Headache",
-   "support": [],
+   "support": [
+    "Colle",
+    "Baba Stiltz",
+    "amr*"
+   ],
    "venue": "Knockdown Center",
    "borough": "Queens",
    "tier": null,
    "age": "18+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/nv63x9-headache-12th-nov-knockdown-center-new-york-tickets",
-   "pick": false
+   "pick": true
   },
   {
    "id": "479532",
@@ -4904,7 +2130,9 @@
    "date": "2026-11-12",
    "time": "19:00",
    "headliner": "V.V. Lightbody",
-   "support": [],
+   "support": [
+    "Nuria Graham"
+   ],
    "venue": "The Broadway",
    "borough": "Brooklyn",
    "tier": null,
@@ -5149,7 +2377,7 @@
    "age": "18+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketmaster.com/the-pharcyde-slum-village-brooklyn-new-york-11-12-2026/event/00006538C5363C05",
-   "pick": false
+   "pick": true
   },
   {
    "id": "478471",
@@ -5299,7 +2527,9 @@
    "date": "2026-11-12",
    "time": "21:30",
    "headliner": "Memphis LK",
-   "support": [],
+   "support": [
+    "Doecaine"
+   ],
    "venue": "Baby's All Right",
    "borough": "Brooklyn",
    "tier": "Small room",
@@ -5320,7 +2550,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketweb.com/event/dodie-blue-note-jazz-club-tickets/14278574",
-   "pick": false
+   "pick": true
   },
   {
    "id": "479598",
@@ -5455,7 +2685,9 @@
    "date": "2026-11-13",
    "time": "18:30",
    "headliner": "WHY?",
-   "support": [],
+   "support": [
+    "Serengeti"
+   ],
    "venue": "DROM",
    "borough": "Manhattan",
    "tier": null,
@@ -5480,7 +2712,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://kydlabs.com/e/EV850874e2-c609-4981-ad20-536335324909",
-   "pick": false
+   "pick": true
   },
   {
    "id": "475210",
@@ -5536,14 +2768,17 @@
    "date": "2026-11-13",
    "time": "19:00",
    "headliner": "Emma Ogier",
-   "support": [],
+   "support": [
+    "Mali Velasquez",
+    "Harrison Whitford"
+   ],
    "venue": "Baby's All Right",
    "borough": "Brooklyn",
    "tier": "Small room",
    "age": "18+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.eventim.us/event/emma-ogier/706836",
-   "pick": false
+   "pick": true
   },
   {
    "id": "481016",
@@ -5684,20 +2919,6 @@
    "pick": true
   },
   {
-   "id": "477419",
-   "date": "2026-11-13",
-   "time": "19:00",
-   "headliner": "Meredith Graves (in conversation)",
-   "support": [],
-   "venue": "Public Records",
-   "borough": "Brooklyn",
-   "tier": null,
-   "age": "21+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://dice.fm/event/eo68a2-durations-in-conversation-with-meredith-graves-13th-nov-public-records-new-york-tickets",
-   "pick": false
-  },
-  {
    "id": "477421",
    "date": "2026-11-13",
    "time": "19:00",
@@ -5711,6 +2932,20 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/bb9oak-durations-suzanne-ciani-courtney-bailey-live-13th-nov-public-records-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "477419",
+   "date": "2026-11-13",
+   "time": "19:00",
+   "headliner": "Meredith Graves (in conversation)",
+   "support": [],
+   "venue": "Public Records",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/eo68a2-durations-in-conversation-with-meredith-graves-13th-nov-public-records-new-york-tickets",
    "pick": false
   },
   {
@@ -6116,7 +3351,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.eventim.us/event/Genesis-Owusu/694277",
-   "pick": true
+   "pick": false
   },
   {
    "id": "480564",
@@ -6178,7 +3413,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://ci.ovationtix.com/36490/performance/11853461",
-   "pick": true
+   "pick": false
   },
   {
    "id": "477422",
@@ -6381,7 +3616,11 @@
    "date": "2026-11-14",
    "time": "18:00",
    "headliner": "The OBGMs",
-   "support": [],
+   "support": [
+    "Oceanator",
+    "Lollirot",
+    "Fury in Few"
+   ],
    "venue": "The Wood Shop",
    "borough": "Brooklyn",
    "tier": null,
@@ -6442,7 +3681,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://kydlabs.com/e/EV73ca1411-9c31-4706-82f9-33f519e4301f",
-   "pick": false
+   "pick": true
   },
   {
    "id": "478554",
@@ -6476,7 +3715,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.ticketweb.com/event/the-sheila-divine-dracu-bowery-palace-tickets/14337934",
-   "pick": false
+   "pick": true
   },
   {
    "id": "466636",
@@ -6562,20 +3801,6 @@
    "pick": true
   },
   {
-   "id": "480078",
-   "date": "2026-11-14",
-   "time": "19:00",
-   "headliner": "Mother Soki",
-   "support": [],
-   "venue": "Elsewhere",
-   "borough": "Brooklyn",
-   "tier": "Club",
-   "age": "16+",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://www.eventbrite.com/e/mother-soki-tickets-2002749580909",
-   "pick": false
-  },
-  {
    "id": "475060",
    "date": "2026-11-14",
    "time": "19:00",
@@ -6591,6 +3816,23 @@
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventbrite.com/e/freak-slug-tickets-1992976963748",
    "pick": true
+  },
+  {
+   "id": "480078",
+   "date": "2026-11-14",
+   "time": "19:00",
+   "headliner": "Mother Soki",
+   "support": [
+    "Evil Adeline",
+    "Lockimara"
+   ],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/mother-soki-tickets-2002749580909",
+   "pick": false
   },
   {
    "id": "469488",
@@ -6639,7 +3881,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.thetranspecos.com/",
-   "pick": false
+   "pick": true
   },
   {
    "id": "469329",
@@ -6720,7 +3962,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/l87dwl-durations-jjjjjerome-ellis-fred-moten-brandon-lopez-14th-nov-public-records-new-york-tickets",
-   "pick": false
+   "pick": true
   },
   {
    "id": "479568",
@@ -6756,7 +3998,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://wl.eventim.us/event/first-president-of-japan-headfooter-daisys-room-bummer-c/708784",
-   "pick": false
+   "pick": true
   },
   {
    "id": "473139",
@@ -6806,7 +4048,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/q2d76o-haybaby-sunderstar-nihiloceros-shari-page-14th-nov-cassette-new-york-city-tickets",
-   "pick": false
+   "pick": true
   },
   {
    "id": "481024",
@@ -6871,20 +4113,6 @@
    "pick": false
   },
   {
-   "id": "471587",
-   "date": "2026-11-14",
-   "time": "20:00",
-   "headliner": "Bunbury",
-   "support": [],
-   "venue": "Kings Theatre",
-   "borough": "Brooklyn",
-   "tier": "Big room",
-   "age": "All Ages",
-   "ticketLabel": "Tickets",
-   "ticketUrl": "https://us.atgtickets.com/events/enrique-bunbury/kings-theatre-brooklyn/calendar/",
-   "pick": false
-  },
-  {
    "id": "465466",
    "date": "2026-11-14",
    "time": "20:00",
@@ -6899,6 +4127,20 @@
    "pick": false
   },
   {
+   "id": "471587",
+   "date": "2026-11-14",
+   "time": "20:00",
+   "headliner": "Bunbury",
+   "support": [],
+   "venue": "Kings Theatre",
+   "borough": "Brooklyn",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://us.atgtickets.com/events/enrique-bunbury/kings-theatre-brooklyn/calendar/",
+   "pick": false
+  },
+  {
    "id": "480445",
    "date": "2026-11-14",
    "time": "20:00",
@@ -6910,7 +4152,7 @@
    "age": "All Ages",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.despairsanctuary.org/",
-   "pick": false
+   "pick": true
   },
   {
    "id": "477574",
@@ -6952,7 +4194,11 @@
    "date": "2026-11-14",
    "time": "20:00",
    "headliner": "Juelz",
-   "support": [],
+   "support": [
+    "Romance Planet",
+    "Beebo",
+    "Squired"
+   ],
    "venue": "Terminal 5",
    "borough": "Manhattan",
    "tier": "Club",
@@ -7156,7 +4402,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://pacha-nyc.com/event/madeon-14-11-2026",
-   "pick": false
+   "pick": true
   },
   {
    "id": "477994",
@@ -7172,6 +4418,20 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/event/eonov6-eli-escobar-bag-raiders-14th-nov-silo-brooklyn-brooklyn-tickets",
+   "pick": false
+  },
+  {
+   "id": "482001",
+   "date": "2026-11-14",
+   "time": "23:00",
+   "headliner": "Nu Metal Night",
+   "support": [],
+   "venue": "Saint Vitus",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/g5v3kb-nu-metal-night-14th-nov-saint-vitus-new-york-city-tickets",
    "pick": false
   },
   {
@@ -7451,7 +4711,7 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://dice.fm/venue/gold-sounds-y3qr",
-   "pick": false
+   "pick": true
   },
   {
    "id": "477704",
@@ -7584,7 +4844,9 @@
    "date": "2026-11-15",
    "time": "19:00",
    "headliner": "Charlie Parr",
-   "support": [],
+   "support": [
+    "Maisy Owen"
+   ],
    "venue": "Union Pool",
    "borough": "Brooklyn",
    "tier": "Small room",
@@ -7713,7 +4975,9 @@
    "date": "2026-11-15",
    "time": "21:30",
    "headliner": "Frances Whitney",
-   "support": [],
+   "support": [
+    "Aggie Miller"
+   ],
    "venue": "Baby's All Right",
    "borough": "Brooklyn",
    "tier": "Small room",
@@ -8866,6 +6130,2229 @@
    "age": "21+",
    "ticketLabel": "Tickets",
    "ticketUrl": "https://www.eventim.us/event/8ro8/708237",
+   "pick": false
+  },
+  {
+   "id": "473727",
+   "date": "2026-11-19",
+   "time": "18:00",
+   "headliner": "Austin Giorgio",
+   "support": [],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/austin-giorgio-new-york-new-york-11-19-2026/event/000064CCBAF72699",
+   "pick": false
+  },
+  {
+   "id": "480841",
+   "date": "2026-11-19",
+   "time": "18:00",
+   "headliner": "SKORTS",
+   "support": [
+    "Paper Lady",
+    "Truman Flyer"
+   ],
+   "venue": "Saint Vitus",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/wwnran-skorts-paper-lady-truman-flyer-19th-nov-saint-vitus-new-york-city-tickets",
+   "pick": true
+  },
+  {
+   "id": "480491",
+   "date": "2026-11-19",
+   "time": "18:30",
+   "headliner": "Jessie Mazin",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/eo9evw-an-evening-with-jessie-mazin-19th-nov-babys-all-right-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "479668",
+   "date": "2026-11-19",
+   "time": "18:30",
+   "headliner": "Mary Lattimore",
+   "support": [],
+   "venue": "Guggenheim Museum",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.guggenheim.org/event/late-shift/2026-10-15",
+   "pick": true
+  },
+  {
+   "id": "480940",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Damage",
+   "support": [
+    "Candy and the Kids",
+    "Architrave",
+    "Bloodx3"
+   ],
+   "venue": "Bar Freda",
+   "borough": "Queens",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www-barfreda-com.filesusr.com/html/2e6f23_ce13a0ff7b94358fb95bd6c84de55c45.html",
+   "pick": false
+  },
+  {
+   "id": "472457",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Julia Jacklin",
+   "support": [
+    "Jordan Patterson"
+   ],
+   "venue": "Brooklyn Paramount",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/julia-jacklin-north-america-tour-2026-brooklyn-new-york-11-19-2026/event/000064BDCB318E96",
+   "pick": true
+  },
+  {
+   "id": "479105",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "James Ivy",
+   "support": [],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/james-ivy-tickets-2001020213324",
+   "pick": false
+  },
+  {
+   "id": "472957",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Sassy 009",
+   "support": [
+    "Lipsticism"
+   ],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/sassy-009-in-the-round-tickets-1990894268350",
+   "pick": true
+  },
+  {
+   "id": "479928",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "June Henry",
+   "support": [
+    "Chrysalis"
+   ],
+   "venue": "Gold Sounds",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/june-henry-chrysalis-gold-sounds-tickets/14301844",
+   "pick": false
+  },
+  {
+   "id": "479348",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Danny Brown",
+   "support": [],
+   "venue": "Irving Plaza",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/00006535FC4D3E74",
+   "pick": true
+  },
+  {
+   "id": "479878",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "LCD Soundsystem",
+   "support": [
+    "EXEK"
+   ],
+   "venue": "Knockdown Center",
+   "borough": "Queens",
+   "tier": null,
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1636852/lcd-soundsystem-tickets",
+   "pick": true
+  },
+  {
+   "id": "480886",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Nourished By Time",
+   "support": [
+    "Tromac"
+   ],
+   "venue": "MoMA PS1",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/school-nite-nourished-by-time-tromac-tickets-2003581632598",
+   "pick": true
+  },
+  {
+   "id": "478492",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Guster",
+   "support": [
+    "Adam Pally"
+   ],
+   "venue": "Music Hall of Williamsburg",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1593310/guster-tickets",
+   "pick": false
+  },
+  {
+   "id": "476061",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Bhangra Liberation Orchestra",
+   "support": [],
+   "venue": "Public Records",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/53meol-bhangra-liberation-orchestra-19th-nov-public-records-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "477342",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Weston Estate",
+   "support": [
+    "innlet"
+   ],
+   "venue": "Racket",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1573660/weston-estate-tickets",
+   "pick": false
+  },
+  {
+   "id": "481353",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Will Corona",
+   "support": [
+    "Waterfall Strainer",
+    "Dressup"
+   ],
+   "venue": "Sleepwalk",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/av855x-will-corona-waterfall-strainer-dressup-19th-nov-sleepwalk-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "479323",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Eliza Edens",
+   "support": [
+    "Alisa Amador",
+    "Jacob Drab"
+   ],
+   "venue": "TV Eye",
+   "borough": "Queens",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventim.us/event/eliza-edens-record-release-alisa-amador-jacob-drab/705103",
+   "pick": false
+  },
+  {
+   "id": "481939",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Tugg",
+   "support": [
+    "The Stems",
+    "April Sugar",
+    "sparklymeat"
+   ],
+   "venue": "The Broadway",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/tugg-w-the-stems-april-sugar-sparklymeat-tickets-2004386111817",
+   "pick": false
+  },
+  {
+   "id": "481792",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "One Train Down",
+   "support": [
+    "Christian Baracio",
+    "Tabatha Rose",
+    "Stella Gray"
+   ],
+   "venue": "The Gutter",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://bandnada.com/p/85425-owl-presents-one-train-down-christian-baracio",
+   "pick": false
+  },
+  {
+   "id": "479332",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Sleepwalk",
+   "support": [],
+   "venue": "The Wood Shop",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://kydlabs.com/e/EVea6e2d6e-5ee0-42cb-a44d-c7afb2b9ff16",
+   "pick": false
+  },
+  {
+   "id": "471200",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Michelle Wolf",
+   "support": [],
+   "venue": "Town Hall",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/michelle-wolf-best-job-in-the-new-york-new-york-11-19-2026/event/030064A1DA121E47",
+   "pick": false
+  },
+  {
+   "id": "479702",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Mel Bryant",
+   "support": [
+    "Alvah Klempt",
+    "Bertha Vanayshun"
+   ],
+   "venue": "Trans-Pecos",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.thetranspecos.com/",
+   "pick": false
+  },
+  {
+   "id": "481476",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "PAT Party",
+   "support": [
+    "JD Samson",
+    "Amber Valentine"
+   ],
+   "venue": "Union Pool",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://link.dice.fm/W34a61d8beb0",
+   "pick": false
+  },
+  {
+   "id": "478543",
+   "date": "2026-11-19",
+   "time": "19:00",
+   "headliner": "Menahan Street Band",
+   "support": [
+    "Black Thought",
+    "Kirby"
+   ],
+   "venue": "Webster Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1597333/menahan-street-band-tickets",
+   "pick": false
+  },
+  {
+   "id": "473512",
+   "date": "2026-11-19",
+   "time": "19:30",
+   "headliner": "The Philip Glass Ensemble",
+   "support": [],
+   "venue": "BAM: Brooklyn Academy of Music",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.bam.org/music/2026/einstein-on-the-beach-50",
+   "pick": true
+  },
+  {
+   "id": "480969",
+   "date": "2026-11-19",
+   "time": "19:30",
+   "headliner": "Julia Minkin",
+   "support": [
+    "Kendra McKinley",
+    "Emily Jeanne Brown"
+   ],
+   "venue": "Cassette",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/7d5enb-julia-minkin-kendra-mckinley-emily-jeanne-brown-19th-nov-cassette-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "481292",
+   "date": "2026-11-19",
+   "time": "19:30",
+   "headliner": "Sting",
+   "support": [],
+   "venue": "Florence Gould Hall",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://grammymuseum.org/event/a-new-york-evening-with-sting/",
+   "pick": false
+  },
+  {
+   "id": "481025",
+   "date": "2026-11-19",
+   "time": "19:30",
+   "headliner": "PUSH!",
+   "support": [
+    "Ecce Shnak",
+    "Dream Prescription",
+    "The After Hours"
+   ],
+   "venue": "Main Drag Music",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://bandnada.com/p/82445-11-19-26-push-ecce-shank-dream-presription",
+   "pick": false
+  },
+  {
+   "id": "477705",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Jessie Reyez",
+   "support": [],
+   "venue": "Barclays Center",
+   "borough": "Brooklyn",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/30006514808321F9",
+   "pick": false
+  },
+  {
+   "id": "469954",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Low Cut Connie",
+   "support": [
+    "Brian Dunne"
+   ],
+   "venue": "Bowery Ballroom",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/low-cut-connie-new-york-new-york-11-19-2026/event/00006495EABA13DE",
+   "pick": false
+  },
+  {
+   "id": "473214",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Pigeons Playing Ping Pong",
+   "support": [],
+   "venue": "Brooklyn Bowl",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-brooklyn-new-york-11-19-2026/event/000064C3D319882C",
+   "pick": false
+  },
+  {
+   "id": "481314",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Giveon",
+   "support": [],
+   "venue": "Carnegie Hall",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.carnegiehall.org/calendar/2026/11/19/giveon-0800pm",
+   "pick": false
+  },
+  {
+   "id": "473163",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Pouya",
+   "support": [],
+   "venue": "Gramercy Theatre",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/pouya-tickets/artist/1509178",
+   "pick": false
+  },
+  {
+   "id": "478468",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Stevie Wonder",
+   "support": [],
+   "venue": "Madison Square Garden",
+   "borough": "Manhattan",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/stevie-wonder-songs-in-the-key-new-york-new-york-11-19-2026/event/3B0064C5A0CF3D01",
+   "pick": true
+  },
+  {
+   "id": "474723",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "Jessica Cook",
+   "support": [],
+   "venue": "Roulette",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://ci.ovationtix.com/36368/production/1282000",
+   "pick": false
+  },
+  {
+   "id": "478634",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "The Breaks",
+   "support": [
+    "Eddie Roberts",
+    "Stanton Moore",
+    "Robert Walter"
+   ],
+   "venue": "Sony Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/000064F8D9105F86",
+   "pick": false
+  },
+  {
+   "id": "481987",
+   "date": "2026-11-19",
+   "time": "20:00",
+   "headliner": "OsamaSon",
+   "support": [],
+   "venue": "Terminal 5",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1691122/osamason-tickets",
+   "pick": false
+  },
+  {
+   "id": "480983",
+   "date": "2026-11-19",
+   "time": "20:30",
+   "headliner": "John Swanson",
+   "support": [
+    "Land",
+    "Store Bought"
+   ],
+   "venue": "Footlight Underground",
+   "borough": "Queens",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://pools.events/event/ewKNQQGF/john-swanson-land-store-bought/",
+   "pick": false
+  },
+  {
+   "id": "480076",
+   "date": "2026-11-19",
+   "time": "21:00",
+   "headliner": "La Cassandra",
+   "support": [
+    "Dariel Amant"
+   ],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/la-cassandra-dariel-amant-new-york-new-york-11-19-2026/event/00006541C361DC64",
+   "pick": false
+  },
+  {
+   "id": "481958",
+   "date": "2026-11-19",
+   "time": "21:30",
+   "headliner": "Quarters",
+   "support": [
+    "Wulfer"
+   ],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/quarters/709149",
+   "pick": false
+  },
+  {
+   "id": "481727",
+   "date": "2026-11-19",
+   "time": "22:00",
+   "headliner": "Mairead Band",
+   "support": [
+    "Theophobia",
+    "Clipping Wings",
+    "Talulah Paisley"
+   ],
+   "venue": "Nightclub 101",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/mairead-band-theophobia-clipping-wings-night-club-101-tickets/14395954",
+   "pick": false
+  },
+  {
+   "id": "477586",
+   "date": "2026-11-19",
+   "time": "22:30",
+   "headliner": "O'Flynn",
+   "support": [],
+   "venue": "Public Records",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/q2qqm9-oflynn-19th-nov-public-records-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "478749",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "headliner": "James Ivy",
+   "support": [],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/james-ivy-new-york-new-york-11-20-2026/event/00006522F119C92B",
+   "pick": false
+  },
+  {
+   "id": "477286",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "headliner": "Exhumed",
+   "support": [
+    "Jarhead Fertilizer",
+    "Savage Master",
+    "Molder"
+   ],
+   "venue": "Saint Vitus",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/v3xd8v-exhumed-jarhead-fertilizer-savage-master-molder-20th-nov-saint-vitus-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "480867",
+   "date": "2026-11-20",
+   "time": "18:00",
+   "headliner": "Superfan",
+   "support": [
+    "More Eaze",
+    "Threshold",
+    "Louisa Tantillo"
+   ],
+   "venue": "telos.haus",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.petalbooks.com/event-details/my-piledriver-heart",
+   "pick": true
+  },
+  {
+   "id": "480559",
+   "date": "2026-11-20",
+   "time": "18:30",
+   "headliner": "Book/Spirit",
+   "support": [
+    "Carter Brady",
+    "Echo Kid",
+    "Aidan Smyth"
+   ],
+   "venue": "Arlene's Grocery",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.arlenesgrocerynyc.com/upcoming-events",
+   "pick": false
+  },
+  {
+   "id": "469960",
+   "date": "2026-11-20",
+   "time": "18:30",
+   "headliner": "Francis of Delirium",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/francis-of-delirium/688698",
+   "pick": false
+  },
+  {
+   "id": "479357",
+   "date": "2026-11-20",
+   "time": "18:30",
+   "headliner": "Mason Jennings",
+   "support": [],
+   "venue": "Cafe Wha?",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/mason-jennings-tickets-1999405829659",
+   "pick": false
+  },
+  {
+   "id": "477570",
+   "date": "2026-11-20",
+   "time": "18:30",
+   "headliner": "Felukah",
+   "support": [
+    "SAFA",
+    "Quelle Rox"
+   ],
+   "venue": "Le Poisson Rouge",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://kydlabs.com/e/EV34b4ca1d-41cb-42dc-a773-b774f2d4bfac",
+   "pick": false
+  },
+  {
+   "id": "479303",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Investigation",
+   "support": [
+    "Crab",
+    "American Seraphim"
+   ],
+   "venue": "Alphaville",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/eon6vo-22-presents-investigation-crab-american-seraphim-20th-nov-alphaville-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "479588",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Sting",
+   "support": [
+    "Fiction Plane"
+   ],
+   "venue": "Brooklyn Paramount",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/sting-30-tour-brooklyn-new-york-11-20-2026/event/00006459059DDBE3",
+   "pick": false
+  },
+  {
+   "id": "480948",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Brooke Candy",
+   "support": [
+    "Bbyafricka",
+    "Mel 4ever"
+   ],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/brooke-candy-bbyafricka-mel-4evr-tickets-2003421332135",
+   "pick": false
+  },
+  {
+   "id": "469325",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "The Pineapple Thief",
+   "support": [],
+   "venue": "Gramercy Theatre",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/0000648AE37B1A3E",
+   "pick": false
+  },
+  {
+   "id": "475158",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Marky Ramone (plays Ramones classics)",
+   "support": [
+    "Screaming Rebel Angels"
+   ],
+   "venue": "Irving Plaza",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/marky-ramone-plays-the-ramones-classics-new-york-new-york-11-20-2026/event/000064E8FE94B82E",
+   "pick": false
+  },
+  {
+   "id": "479879",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "LCD Soundsystem",
+   "support": [
+    "EXEK"
+   ],
+   "venue": "Knockdown Center",
+   "borough": "Queens",
+   "tier": null,
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1636856/lcd-soundsystem-tickets",
+   "pick": true
+  },
+  {
+   "id": "480767",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Kevin Holliday",
+   "support": [],
+   "venue": "Los Depressos",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/yoqnv2-kevin-holliday-garden-album-release-show-20th-nov-los-depressos-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "479338",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "St. Divine",
+   "support": [
+    "The Jack Rubies",
+    "Natron Boys",
+    "Counter Service"
+   ],
+   "venue": "Main Drag Music",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://bandnada.com/p/81778-11-20-26-st-divine-the-jack-rubies-natron",
+   "pick": false
+  },
+  {
+   "id": "478493",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Guster",
+   "support": [
+    "Chloe Radcliffe"
+   ],
+   "venue": "Music Hall of Williamsburg",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1593450/guster-tickets",
+   "pick": false
+  },
+  {
+   "id": "480882",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Noise Dept",
+   "support": [],
+   "venue": "Nightclub 101",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/noise-dept-night-club-101-tickets/14385844",
+   "pick": false
+  },
+  {
+   "id": "481120",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Infinity Machine",
+   "support": [],
+   "venue": "Public Records",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/l8pe6p-infinity-machine-20th-nov-public-records-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "480538",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Wonny Jane",
+   "support": [
+    "Dog Shaped",
+    "Ndanu Mutisya"
+   ],
+   "venue": "Purgatory",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/6dyb58-wonny-jane-w-dog-shaped-and-ndanu-mutisya-20th-nov-purgatory-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "477343",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Weston Estate",
+   "support": [
+    "Mary Shelley"
+   ],
+   "venue": "Racket",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1573662/weston-estate-tickets",
+   "pick": false
+  },
+  {
+   "id": "480079",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Vivian",
+   "support": [
+    "OK Cuddle",
+    "first president of japan",
+    "Untitled Noise Night"
+   ],
+   "venue": "The Broadway",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/vivian-w-ok-cuddle-first-president-of-japan-untitled-noise-night-tickets-2002220113257",
+   "pick": false
+  },
+  {
+   "id": "478522",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Big Bill",
+   "support": [
+    "Young and Sick",
+    "Yuvees"
+   ],
+   "venue": "Trans-Pecos",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.thetranspecos.com/",
+   "pick": false
+  },
+  {
+   "id": "479629",
+   "date": "2026-11-20",
+   "time": "19:00",
+   "headliner": "Dog Date",
+   "support": [
+    "The Screech Boys",
+    "Bog Imp",
+    "$500"
+   ],
+   "venue": "Union Pool",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/92v926-dog-date-the-screech-boys-bog-imp-500-20th-nov-union-pool-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "473513",
+   "date": "2026-11-20",
+   "time": "19:30",
+   "headliner": "The Philip Glass Ensemble",
+   "support": [],
+   "venue": "BAM: Brooklyn Academy of Music",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.bam.org/music/2026/einstein-on-the-beach-50",
+   "pick": true
+  },
+  {
+   "id": "481955",
+   "date": "2026-11-20",
+   "time": "19:30",
+   "headliner": "Lightheaded",
+   "support": [
+    "Now",
+    "Bullseye",
+    "The Livers"
+   ],
+   "venue": "Gold Sounds",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/w83qxg-lightheaded-now-bullseye-the-livers-20th-nov-gold-sounds-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "475798",
+   "date": "2026-11-20",
+   "time": "19:30",
+   "headliner": "Greg Freeman",
+   "support": [
+    "Robber Robber",
+    "Kleenex Girl Wonder"
+   ],
+   "venue": "Webster Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1527332/greg-freeman-tickets",
+   "pick": true
+  },
+  {
+   "id": "469262",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "West 22nd",
+   "support": [],
+   "venue": "Bowery Ballroom",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/west-22nd-new-york-new-york-11-20-2026/event/00006487D350FA9B",
+   "pick": false
+  },
+  {
+   "id": "480146",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "Deep Sea Bistro",
+   "support": [],
+   "venue": "Bowery Palace",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/deep-sea-bistro-bowery-palace-tickets/14340824",
+   "pick": false
+  },
+  {
+   "id": "473215",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "Pigeons Playing Ping Pong",
+   "support": [],
+   "venue": "Brooklyn Bowl",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-brooklyn-new-york-11-20-2026/event/000064C3DA99A9EB",
+   "pick": false
+  },
+  {
+   "id": "469253",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "David Sedaris",
+   "support": [],
+   "venue": "Kings Theatre",
+   "borough": "Brooklyn",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://us.atgtickets.com/events/david-sedaris/kings-theatre-brooklyn/",
+   "pick": false
+  },
+  {
+   "id": "474724",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "Jessica Cook",
+   "support": [],
+   "venue": "Roulette",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://ci.ovationtix.com/36368/production/1281999",
+   "pick": false
+  },
+  {
+   "id": "471256",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "Gene",
+   "support": [],
+   "venue": "Sony Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/gene-sony-hall-tickets/14911213",
+   "pick": false
+  },
+  {
+   "id": "476523",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "CupcakKe",
+   "support": [],
+   "venue": "Terminal 5",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1542144/cupcakke-tickets",
+   "pick": false
+  },
+  {
+   "id": "479945",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "Heems",
+   "support": [
+    "Lee Ranaldo",
+    "Hisham Akira Bharoocha",
+    "Saudi Oil",
+    "Anand Wilder",
+    "Babas"
+   ],
+   "venue": "The Sultan Room",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/av8nlx-veenanyc-presents-in-improvisation-ft-heems-lee-ranaldo-hisham-bharoocha-more-20th-nov-the-sultan-room-new-york-tickets",
+   "pick": true
+  },
+  {
+   "id": "474425",
+   "date": "2026-11-20",
+   "time": "20:00",
+   "headliner": "John C. Reilly (John C. Reilly is Mister Romantic)",
+   "support": [],
+   "venue": "Town Hall",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/event/030064C5F5AD2274",
+   "pick": false
+  },
+  {
+   "id": "480984",
+   "date": "2026-11-20",
+   "time": "20:30",
+   "headliner": "Russian Baths",
+   "support": [
+    "Flavors Change All Day",
+    "Goodhue"
+   ],
+   "venue": "Footlight Underground",
+   "borough": "Queens",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://pools.events/event/JAsfetP0/russian-baths-flavors-change-all-day-goodhue/",
+   "pick": false
+  },
+  {
+   "id": "478625",
+   "date": "2026-11-20",
+   "time": "21:00",
+   "headliner": "Anetha",
+   "support": [
+    "Annie Lew",
+    "ChaseWest",
+    "DJ Tennis",
+    "Red Axes",
+    "Franky Rizardo",
+    "Indira Paganotto",
+    "VTSS",
+    "Silvie Loto",
+    "Kilopatrah Jones"
+   ],
+   "venue": "Duggal Greenhouse - Brooklyn Navy Yard",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/yo57ba-time-warp-nyc-friday-pass-20th-nov-duggal-greenhouse-brooklyn-navy-yard-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "480073",
+   "date": "2026-11-20",
+   "time": "21:00",
+   "headliner": "For Opal",
+   "support": [
+    "Whiskey Ginger",
+    "Night Hawk"
+   ],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/for-opal-whiskey-ginger-new-york-new-york-11-20-2026/event/00006541A75292DC",
+   "pick": false
+  },
+  {
+   "id": "480931",
+   "date": "2026-11-20",
+   "time": "21:30",
+   "headliner": "TYGAPAW",
+   "support": [
+    "1MORNING",
+    "Ether Pleaser",
+    "Purp"
+   ],
+   "venue": "Paragon",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/eo93m6-phantasma-tygapaw-1morning-ether-pleaser-purp-20th-nov-paragon-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "480932",
+   "date": "2026-11-20",
+   "time": "22:30",
+   "headliner": "49th & Main",
+   "support": [
+    "Tre Reynolds",
+    "Alive Girl",
+    "Glass Halo",
+    "Kylxr"
+   ],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/8ed8e5-49th-main-dj-set-tre-reynolds-crave-alive-girl-glass-halo-kylxr-20th-nov-elsewhere-brooklyn-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "480781",
+   "date": "2026-11-20",
+   "time": "23:00",
+   "headliner": "Switch Angel",
+   "support": [
+    "Wolf Cutt",
+    "Exjaynine",
+    "Bubucore69",
+    "Hannah Fortvne"
+   ],
+   "venue": "Market Hotel",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.markethotel.org/calendar",
+   "pick": false
+  },
+  {
+   "id": "480825",
+   "date": "2026-11-21",
+   "time": "14:00",
+   "headliner": "Sidney Gish",
+   "support": [],
+   "venue": "Rough Trade NYC",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/92vgmo-sidney-gish-live-signing-21st-nov-rough-trade-below-new-york-city-tickets",
+   "pick": true
+  },
+  {
+   "id": "478215",
+   "date": "2026-11-21",
+   "time": "16:00",
+   "headliner": "Freedy Johnston",
+   "support": [],
+   "venue": "Mama Tried",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "RSVP",
+   "ticketUrl": "https://mamatriedbk.com/upcoming-events/greedy-johnston",
+   "pick": false
+  },
+  {
+   "id": "480973",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "headliner": "Cold Brew",
+   "support": [
+    "Picture Show",
+    "Yna"
+   ],
+   "venue": "Berlin",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/cold-brew-picture-show-berlin-tickets/14366964",
+   "pick": false
+  },
+  {
+   "id": "476639",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "headliner": "Pain of Truth",
+   "support": [
+    "Madball",
+    "Rotting Out",
+    "Locked Shut"
+   ],
+   "venue": "Brooklyn Steel",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1541299/pain-of-truth-tickets",
+   "pick": false
+  },
+  {
+   "id": "473188",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "headliner": "Punchline",
+   "support": [],
+   "venue": "The Meadows",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://kydlabs.com/e/EV34699981-6a1b-4d63-a2b3-44067f2dba56",
+   "pick": false
+  },
+  {
+   "id": "478502",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "headliner": "Worst Party Ever",
+   "support": [
+    "Equipment"
+   ],
+   "venue": "The Wood Shop",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://kydlabs.com/e/EV3aee8070-81a2-453d-b789-5045bd2b0aeb",
+   "pick": false
+  },
+  {
+   "id": "480118",
+   "date": "2026-11-21",
+   "time": "18:00",
+   "headliner": "Earlybirds Club",
+   "support": [],
+   "venue": "Webster Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1629566/earlybirds-club-tickets",
+   "pick": false
+  },
+  {
+   "id": "479238",
+   "date": "2026-11-21",
+   "time": "18:30",
+   "headliner": "Shower Beers",
+   "support": [
+    "Cheer Up Dusty",
+    "Free Friends",
+    "Break Out Day"
+   ],
+   "venue": "Alphaville",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/xegoal-shower-beers-cheer-up-dusty-free-friends-break-out-day-21st-nov-alphaville-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "480560",
+   "date": "2026-11-21",
+   "time": "18:30",
+   "headliner": "Melody Del Mundo",
+   "support": [
+    "Turbo Goth",
+    "Sarah Orloff",
+    "Late Cambrian"
+   ],
+   "venue": "Arlene's Grocery",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.arlenesgrocerynyc.com/upcoming-events",
+   "pick": false
+  },
+  {
+   "id": "476135",
+   "date": "2026-11-21",
+   "time": "18:30",
+   "headliner": "Patrick Wolf",
+   "support": [],
+   "venue": "DROM",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/patrick-wolf-tour-of-the-drom-tickets/14992983",
+   "pick": false
+  },
+  {
+   "id": "481493",
+   "date": "2026-11-21",
+   "time": "18:30",
+   "headliner": "7038634357",
+   "support": [
+    "Thrilliam Angels",
+    "DJH",
+    ".cutspace",
+    "Chloe Scarlett",
+    "David Arms Deal"
+   ],
+   "venue": "Market Hotel",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://tickets.venuepilot.com/e/6-30-xqt-703-thrilliam-angels-djh-cutspace-chloe-scarlett-david-arms-deal-2026-11-21-market-hotel-114-a4bba3",
+   "pick": false
+  },
+  {
+   "id": "481373",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Shyness",
+   "support": [
+    "Juju Zissou"
+   ],
+   "venue": "Alphaville",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/pyxn9y-shyness-juju-zissou-single-release-21st-nov-alphaville-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "476176",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Resavoir",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/resavoir/698058",
+   "pick": true
+  },
+  {
+   "id": "479589",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Sting",
+   "support": [
+    "Fiction Plane"
+   ],
+   "venue": "Brooklyn Paramount",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/sting-30-tour-brooklyn-new-york-11-21-2026/event/00006459059ADBDD",
+   "pick": false
+  },
+  {
+   "id": "482006",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "AFK",
+   "support": [
+    "Libby Quinn",
+    "Halo3",
+    "Shemar",
+    "SASCO"
+   ],
+   "venue": "Cassette",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/ekgldy-afk-libby-quinn-halo3-shemar-x-sasco-21st-nov-cassette-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "479100",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Rachael Yamagata",
+   "support": [
+    "Will Dailey"
+   ],
+   "venue": "City Winery",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://citywinery.com/pages/genre/rachael-yamagata-new-york-city-multishow",
+   "pick": false
+  },
+  {
+   "id": "481931",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Michael Younker",
+   "support": [
+    "Short Porch",
+    "Cold Dice",
+    "Bad Guy Network",
+    "Something Bitter"
+   ],
+   "venue": "Gold Sounds",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/6937r7-michael-younker-short-porch-cold-dice-bad-guy-network-something-bitter-21st-nov-gold-sounds-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "474048",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Tiny Habits",
+   "support": [
+    "Marie Dresselhuis"
+   ],
+   "venue": "Irving Plaza",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/tiny-habits-new-york-new-york-11-21-2026/event/000064C93163EA87",
+   "pick": false
+  },
+  {
+   "id": "479880",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "LCD Soundsystem",
+   "support": [
+    "EXEK"
+   ],
+   "venue": "Knockdown Center",
+   "borough": "Queens",
+   "tier": null,
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1636862/lcd-soundsystem-tickets",
+   "pick": true
+  },
+  {
+   "id": "478126",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Ex Pilots",
+   "support": [
+    "Materialistics",
+    "Tracey Nelson"
+   ],
+   "venue": "Nightclub 101",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/ex-pilots-the-materialistics-tracey-night-club-101-tickets/14293004",
+   "pick": false
+  },
+  {
+   "id": "476232",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Tagua Tagua",
+   "support": [
+    "Orlas"
+   ],
+   "venue": "Public Records",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/ww9q6r-tagua-tagua-21st-nov-public-records-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "480934",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Fixations",
+   "support": [
+    "Shag Shop Roof Top",
+    "The New York Nightclubs",
+    "MEEP"
+   ],
+   "venue": "Sleepwalk",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/6dyneq-fixations-shag-shop-roof-top-the-new-york-nightclubs-meep-21st-nov-sleepwalk-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "478205",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Catie Turner",
+   "support": [
+    "Kiss Bang"
+   ],
+   "venue": "Stone Circle Theatre",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://kydlabs.com/e/EVb9d46daa-3478-42f1-9641-148c3ac19d9c",
+   "pick": false
+  },
+  {
+   "id": "478803",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Kapo",
+   "support": [],
+   "venue": "Terminal 5",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ohmyrockness.com/www.axs.com/events/1610246/kapo-tickets",
+   "pick": false
+  },
+  {
+   "id": "479343",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "EAT",
+   "support": [
+    "Ridiculous Bitch",
+    "The Lookout Honeys",
+    "Ratstar"
+   ],
+   "venue": "The Gutter",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://bandnada.com/p/82855-owl-presents-eat-ridiculous-bitch-the-lookout",
+   "pick": false
+  },
+  {
+   "id": "477832",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Boyfriend",
+   "support": [
+    "Lauren Ruth Ward"
+   ],
+   "venue": "The Sultan Room",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/v3x56l-boyfriend-lauren-ruth-ward-21st-nov-the-sultan-room-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "475214",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Boyfriend",
+   "support": [],
+   "venue": "The Sultan Room",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/53b66k-boyfriend-21st-nov-the-sultan-room-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "481489",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Nussy Andrews",
+   "support": [
+    "Juno Lev",
+    "Logan Pitt",
+    "Oeste"
+   ],
+   "venue": "Trans-Pecos",
+   "borough": "Queens",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.thetranspecos.com/",
+   "pick": false
+  },
+  {
+   "id": "479503",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Ben Vaughn Quintet",
+   "support": [
+    "Sweet Pete",
+    "The Wigouts",
+    "Todd-O-Phonic Todd"
+   ],
+   "venue": "Union Pool",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/dk777q-ben-vaughn-quintet-sweet-pete-the-wigouts-dj-todd-o-phonic-todd-21st-nov-union-pool-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "478075",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "headliner": "Fox Stevenson",
+   "support": [
+    "Mystery Skulls"
+   ],
+   "venue": "Warsaw",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/fox-stevenson-mystery-skulls-brooklyn-new-york-11-21-2026/event/00006518D16FA914",
+   "pick": false
+  },
+  {
+   "id": "473514",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "headliner": "The Philip Glass Ensemble",
+   "support": [],
+   "venue": "BAM: Brooklyn Academy of Music",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.bam.org/music/2026/einstein-on-the-beach-50",
+   "pick": true
+  },
+  {
+   "id": "465842",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "headliner": "The Neighbourhood",
+   "support": [],
+   "venue": "Barclays Center",
+   "borough": "Brooklyn",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-neighbourhood-the-wourld-tour-brooklyn-new-york-11-21-2026/event/30006449D4A6700C",
+   "pick": false
+  },
+  {
+   "id": "481026",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "headliner": "The Road To Ruin",
+   "support": [
+    "Frankie Sunswept and the Silver Moons",
+    "Fox Indigo",
+    "Green Lady"
+   ],
+   "venue": "Main Drag Music",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://bandnada.com/p/84242-11-21-26-the-road-to-ruin-single-release-w",
+   "pick": false
+  },
+  {
+   "id": "473499",
+   "date": "2026-11-21",
+   "time": "19:30",
+   "headliner": "Rising Appalachia",
+   "support": [],
+   "venue": "National Sawdust",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://ci.ovationtix.com/36490/production/1279948",
+   "pick": false
+  },
+  {
+   "id": "475935",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "headliner": "Surfing For Daisy",
+   "support": [],
+   "venue": "Bowery Ballroom",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/surfing-for-daisy-new-york-new-york-11-21-2026/event/000064F0D4A9E7DE",
+   "pick": false
+  },
+  {
+   "id": "473216",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "headliner": "Pigeons Playing Ping Pong",
+   "support": [],
+   "venue": "Brooklyn Bowl",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/pigeons-playing-ping-pong-brooklyn-new-york-11-21-2026/event/000064C3E1FEC41C",
+   "pick": false
+  },
+  {
+   "id": "476572",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "headliner": "Jorja Smith",
+   "support": [
+    "Wesley Joseph"
+   ],
+   "venue": "Kings Theatre",
+   "borough": "Brooklyn",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://us.atgtickets.com/events/jorja-smith/kings-theatre-brooklyn/",
+   "pick": true
+  },
+  {
+   "id": "480010",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "headliner": "Paper Skies",
+   "support": [],
+   "venue": "Racket",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1638950/paper-skies-tickets",
+   "pick": false
+  },
+  {
+   "id": "471619",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "headliner": "Other Lives",
+   "support": [],
+   "venue": "Sony Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/other-lives-sony-hall-tickets/14925833",
+   "pick": false
+  },
+  {
+   "id": "478472",
+   "date": "2026-11-21",
+   "time": "20:00",
+   "headliner": "Pepper Kings",
+   "support": [
+    "Jupiter Boys",
+    "Fly Ashtray"
+   ],
+   "venue": "Young Ethel's",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://youngethels.com/events",
+   "pick": false
+  },
+  {
+   "id": "480562",
+   "date": "2026-11-21",
+   "time": "20:30",
+   "headliner": "Miracle Sweepstakes",
+   "support": [
+    "Ace Bandage",
+    "Roomtones"
+   ],
+   "venue": "Footlight Underground",
+   "borough": "Queens",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://pools.events/event/SpQzRkmT/miracle-sweepstakes-ace-bandage-roomtones/",
+   "pick": false
+  },
+  {
+   "id": "478626",
+   "date": "2026-11-21",
+   "time": "21:00",
+   "headliner": "Adiel",
+   "support": [
+    "Quest",
+    "Ame",
+    "Brunello",
+    "Chlar",
+    "DVS1",
+    "Julya Karma",
+    "Klangkuenstler",
+    "KYRUH",
+    "Rose Kourts"
+   ],
+   "venue": "Duggal Greenhouse - Brooklyn Navy Yard",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/xeg5aa-time-warp-nyc-saturday-pass-21st-nov-duggal-greenhouse-brooklyn-navy-yard-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "478878",
+   "date": "2026-11-21",
+   "time": "21:00",
+   "headliner": "cortex (sweden)",
+   "support": [],
+   "venue": "Mercury Lounge",
+   "borough": "Manhattan",
+   "tier": "Small room",
+   "age": null,
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/cortex-new-york-new-york-11-21-2026/event/0000652EC9FED584",
+   "pick": false
+  },
+  {
+   "id": "479636",
+   "date": "2026-11-21",
+   "time": "21:30",
+   "headliner": "Yaego",
+   "support": [
+    "Sangre",
+    "Glass Halo",
+    "Nymph"
+   ],
+   "venue": "Paragon",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/532o88-yaego-sangre-glass-halo-nymph-21st-nov-paragon-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "477212",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "headliner": "A Good Year",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/a-good-year/700697",
+   "pick": true
+  },
+  {
+   "id": "479688",
+   "date": "2026-11-21",
+   "time": "22:00",
+   "headliner": "Juan MacLean",
+   "support": [],
+   "venue": "Good Room",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://ra.co/events/2545030",
+   "pick": false
+  },
+  {
+   "id": "475039",
+   "date": "2026-11-21",
+   "time": "22:30",
+   "headliner": "Snakehips",
+   "support": [
+    "TWOFACED"
+   ],
+   "venue": "Elsewhere",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.eventbrite.com/e/snakehips-tickets-1993478754618",
+   "pick": false
+  },
+  {
+   "id": "477056",
+   "date": "2026-11-21",
+   "time": "23:00",
+   "headliner": "Richard Finger",
+   "support": [
+    "Integrate",
+    "rSun",
+    "Dillema"
+   ],
+   "venue": "Webster Hall",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.axs.com/events/1561826/richard-finger-tickets",
+   "pick": false
+  },
+  {
+   "id": "470522",
+   "date": "2026-11-22",
+   "time": "18:00",
+   "headliner": "The Menzingers",
+   "support": [
+    "Hot Water Music",
+    "Weakened Friends"
+   ],
+   "venue": "Brooklyn Paramount",
+   "borough": "Brooklyn",
+   "tier": "Club",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-menzingers-everything-i-ever-saw-brooklyn-new-york-11-22-2026/event/0000649CB44A761F",
+   "pick": true
+  },
+  {
+   "id": "479926",
+   "date": "2026-11-22",
+   "time": "18:30",
+   "headliner": "Racecourse",
+   "support": [],
+   "venue": "Baby's All Right",
+   "borough": "Brooklyn",
+   "tier": "Small room",
+   "age": "18+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://wl.eventim.us/event/racecourse/699135",
+   "pick": true
+  },
+  {
+   "id": "482007",
+   "date": "2026-11-22",
+   "time": "18:30",
+   "headliner": "Hello Shark",
+   "support": [
+    "Anna McClellan",
+    "Matt Tillwick"
+   ],
+   "venue": "Cassette",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/w83xvv-hello-shark-anna-mcclellan-matt-tillwick-22nd-nov-cassette-new-york-city-tickets",
+   "pick": false
+  },
+  {
+   "id": "481126",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "headliner": "Common Sage",
+   "support": [
+    "Dauber",
+    "Cotillion",
+    "Star Card"
+   ],
+   "venue": "Alphaville",
+   "borough": "Brooklyn",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://dice.fm/event/oemrwa-common-sage-dauber-cotillion-star-card-22nd-nov-alphaville-new-york-tickets",
+   "pick": false
+  },
+  {
+   "id": "474116",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "headliner": "Father of Peace",
+   "support": [],
+   "venue": "Bowery Ballroom",
+   "borough": "Manhattan",
+   "tier": "Club",
+   "age": "16+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/father-of-peace-the-year-of-new-york-new-york-11-22-2026/event/000064D1B54844C1",
+   "pick": false
+  },
+  {
+   "id": "479101",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "headliner": "Rachael Yamagata",
+   "support": [
+    "Will Dailey"
+   ],
+   "venue": "City Winery",
+   "borough": null,
+   "tier": null,
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://tickets.citywinery.com/event/rachael-yamagata-h7q3rt",
+   "pick": false
+  },
+  {
+   "id": "469726",
+   "date": "2026-11-22",
+   "time": "19:30",
+   "headliner": "The Neighbourhood",
+   "support": [],
+   "venue": "Barclays Center",
+   "borough": "Brooklyn",
+   "tier": "Big room",
+   "age": "All Ages",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketmaster.com/the-neighbourhood-the-wourld-tour-brooklyn-new-york-11-22-2026/event/3000645478072229",
+   "pick": false
+  },
+  {
+   "id": "480144",
+   "date": "2026-11-22",
+   "time": "20:00",
+   "headliner": "Kelsey Blackstone",
+   "support": [
+    "Nordista Freeze",
+    "The Infamous Her"
+   ],
+   "venue": "Bowery Palace",
+   "borough": "Manhattan",
+   "tier": null,
+   "age": "21+",
+   "ticketLabel": "Tickets",
+   "ticketUrl": "https://www.ticketweb.com/event/kelsey-blackstone-nordista-freeze-bowery-palace-tickets/14321424",
    "pick": false
   }
  ]
