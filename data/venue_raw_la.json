@@ -1,57 +1,15 @@
 {
 "scanned": {
-"Fonda Theatre": "2026-11-04",
-"The Ford": "2026-11-04",
-"The Greek Theatre": "2026-11-04",
-"Hollywood Bowl": "2026-11-04",
-"Hollywood Forever": "2026-11-04",
-"The Novo": "2026-11-04",
+"Fonda Theatre": "2026-11-08",
+"The Ford": "2026-11-08",
+"The Greek Theatre": "2026-11-08",
+"Hollywood Bowl": "2026-11-08",
+"Hollywood Forever": "2026-11-08",
+"The Novo": "2026-11-08",
 "Hollywood Palladium": "2026-10-05"
 },
 "seenAt": {},
 "rows": [
-[
-"v-fonda-2026-11-04-the-black-angels",
-"2026-11-04T19:00:00",
-[
-"The Black Angels",
-"Ghostwoman"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
-[
-"v-fonda-2026-11-05-rebecca-black",
-"2026-11-05T20:00:00",
-[
-"Rebecca Black",
-"Bayli"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
-[
-"v-fonda-2026-11-06-nia-archives",
-"2026-11-06T20:00:00",
-[
-"Nia Archives",
-"Bambii"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
 [
 "v-fonda-2026-11-08-plini",
 "2026-11-08T18:00:00",
@@ -557,21 +515,6 @@ null,
 0
 ],
 [
-"v-hollywoodbowl-2026-11-07-jimmy-eat-world",
-"2026-11-07T18:30:00",
-[
-"Jimmy Eat World",
-"The Format",
-"The Linda Lindas"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/instances/e0z6am8d/2026-11-07/jimmy-eat-world-the-format",
-0
-],
-[
 "v-hollywoodbowl-2026-11-08-ms-lauryn-hill-wyclef-jean",
 "2026-11-08T19:30:00",
 [
@@ -669,19 +612,6 @@ null,
 null,
 "Tickets",
 "https://www.hollywoodbowl.com/events/instances/45xgdp1r/2027-06-09/matchbox-twenty-1",
-0
-],
-[
-"v-hollywoodforever-2026-11-04-cage-the-elephant",
-"2026-11-04T19:00:00",
-[
-"Cage the Elephant"
-],
-"Hollywood Forever",
-[],
-null,
-"Tickets",
-"https://hollywoodforever.com/event/cage-the-elephant/",
 0
 ],
 [
@@ -1258,19 +1188,6 @@ null,
 0
 ],
 [
-"v-greek-2026-11-04-rescheduled",
-"2026-11-04T20:00:00",
-[
-"Rescheduled"
-],
-"The Greek Theatre",
-[],
-null,
-"Tickets",
-"https://www.ticketmaster.com/event/090064B43E17B4D1",
-0
-],
-[
 "v-greek-2027-05-04-lola-young",
 "2027-05-04T20:00:00",
 [
@@ -1388,56 +1305,42 @@ null,
 0
 ],
 [
-"v-novo-2026-11-04-henry-lau",
-"2026-11-04",
+"v-greek-2027-10-28-malcolm-todd",
+"2027-10-28T20:00:00",
 [
-"Henry Lau"
+"Malcolm Todd"
 ],
-"The Novo",
+"The Greek Theatre",
 [],
 null,
 "Tickets",
-"https://www.thenovodtla.com/events/detail",
+"https://www.ticketmaster.com/event/090064C3B5A6FC88",
 0
 ],
 [
-"v-novo-2026-11-05-kwn",
-"2026-11-05",
+"v-greek-2027-10-29-malcolm-todd",
+"2027-10-29T20:00:00",
 [
-"KWN",
-"Dirty Dell"
+"Malcolm Todd"
 ],
-"The Novo",
+"The Greek Theatre",
 [],
 null,
 "Tickets",
-"https://www.thenovodtla.com/events/detail",
+"https://www.ticketmaster.com/event/090064C591D293A2",
 0
 ],
 [
-"v-novo-2026-11-06-pedro-sampaio",
-"2026-11-06",
+"v-greek-2027-10-30-malcolm-todd",
+"2027-10-30T20:00:00",
 [
-"Pedro Sampaio"
+"Malcolm Todd"
 ],
-"The Novo",
+"The Greek Theatre",
 [],
 null,
 "Tickets",
-"https://www.thenovodtla.com/events/detail",
-0
-],
-[
-"v-novo-2026-11-07-countess-luann",
-"2026-11-07",
-[
-"Countess Luann"
-],
-"The Novo",
-[],
-null,
-"Tickets",
-"https://www.thenovodtla.com/events/detail",
+"https://www.ticketmaster.com/event/090064C591DF93F9",
 0
 ],
 [
@@ -1697,6 +1600,47 @@ null,
 "2026-12-19",
 [
 "DJ Quik"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2027-10-29-shyne",
+"2027-10-29",
+[
+"Shyne",
+"Barrington Levy and Lil' Cease"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2027-10-30-emei",
+"2027-10-30",
+[
+"EMEI",
+"Madelline"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2027-10-31-nobuo-uematsu",
+"2027-10-31",
+[
+"Nobuo Uematsu"
 ],
 "The Novo",
 [],

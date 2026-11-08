@@ -2,13 +2,13 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-11-04",
+"Pier 17": "2026-11-08",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-11-04",
+"Webster Hall": "2026-11-08",
 "Nightclub 101": "2026-10-05",
-"Mercury Lounge": "2026-11-04",
-"Union Pool": "2026-11-04"
+"Mercury Lounge": "2026-11-08",
+"Union Pool": "2026-11-08"
 },
 "seenAt": {},
 "rows": [
@@ -275,113 +275,6 @@ null,
 0
 ],
 [
-"v-mercurylounge-2026-11-04-gavn",
-"2026-11-04T18:00:00",
-[
-"gavn!"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/gavn/",
-0
-],
-[
-"v-mercurylounge-2026-11-04-keenan-trevon",
-"2026-11-04T21:00:00",
-[
-"Keenan TreVon"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/keenan-trevon/",
-0
-],
-[
-"v-mercurylounge-2026-11-05-friday-pilots-club",
-"2026-11-05T18:00:00",
-[
-"Friday Pilots Club"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/friday-pilots-club/",
-0
-],
-[
-"v-mercurylounge-2026-11-05-gus-dapperton",
-"2026-11-05T21:00:00",
-[
-"Gus Dapperton"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/gus-dapperton/",
-0
-],
-[
-"v-mercurylounge-2026-11-06-late-night-thoughts",
-"2026-11-06T18:00:00",
-[
-"Late Night Thoughts",
-"Sneaky Miles"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/late-night-thoughts-days-like-this-tour/",
-0
-],
-[
-"v-mercurylounge-2026-11-06-madra-salach",
-"2026-11-06T21:00:00",
-[
-"Madra Salach",
-"Roisin McKeown"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/madra-salach/",
-0
-],
-[
-"v-mercurylounge-2026-11-07-bryan-andrews",
-"2026-11-07T18:00:00",
-[
-"Bryan Andrews",
-"Lou Ridley"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/bryan-andrews/",
-0
-],
-[
-"v-mercurylounge-2026-11-07-brothel-in-belize",
-"2026-11-07T21:00:00",
-[
-"Brothel in Belize"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/brothel-in-belize/",
-0
-],
-[
 "v-mercurylounge-2026-11-08-the-paradox",
 "2026-11-08T17:00:00",
 [
@@ -603,7 +496,8 @@ null,
 "v-mercurylounge-2026-11-16-forrest-nolan",
 "2026-11-16T21:00:00",
 [
-"Forrest Nolan"
+"Forrest Nolan",
+"Josephine's Next Million Miles"
 ],
 "Mercury Lounge",
 [],
@@ -1035,6 +929,20 @@ null,
 0
 ],
 [
+"v-mercurylounge-2026-12-07-chriswithawhy",
+"2026-12-07T18:00:00",
+[
+"Chriswithawhy",
+"Kristen Ingrid"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/chriswithawhy/",
+0
+],
+[
 "v-mercurylounge-2026-12-07-misc",
 "2026-12-07T21:00:00",
 [
@@ -1224,6 +1132,19 @@ null,
 0
 ],
 [
+"v-mercurylounge-2026-12-19-horizon-wireless",
+"2026-12-19T21:00:00",
+[
+"Horizon Wireless"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/horizon-wireless/",
+0
+],
+[
 "v-mercurylounge-2026-12-20-aaron-abramowitz",
 "2026-12-20T17:00:00",
 [
@@ -1268,6 +1189,22 @@ null,
 0
 ],
 [
+"v-mercurylounge-2027-01-02-two-headed-girl",
+"2027-01-02T21:00:00",
+[
+"Two Headed Girl",
+"Sky Castles",
+"At Risk",
+"Desk Job"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/two-headed-girl-sky-castles-at-risk-desk-job/",
+0
+],
+[
 "v-mercurylounge-2027-01-08-huron-hash",
 "2027-01-08T21:00:00",
 [
@@ -1292,6 +1229,19 @@ null,
 null,
 "Tickets",
 "https://mercuryeastpresents.com/tm-event/tender-misfit/",
+0
+],
+[
+"v-mercurylounge-2027-01-13-keenan-trevon",
+"2027-01-13T21:00:00",
+[
+"Keenan TreVon"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/keenan-trevon/",
 0
 ],
 [
@@ -1515,6 +1465,19 @@ null,
 null,
 "Tickets",
 "https://mercuryeastpresents.com/tm-event/alex-sampson/",
+0
+],
+[
+"v-mercurylounge-2027-03-27-ricky-chilton",
+"2027-03-27T21:00:00",
+[
+"Ricky Chilton"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/ricky-chilton/",
 0
 ],
 [
@@ -3158,65 +3121,6 @@ null,
 0
 ],
 [
-"v-unionpool-2026-11-04-patching",
-"2026-11-04T19:00:00",
-[
-"Patching",
-"Chammeili",
-"Aubrey Haddard",
-"Alright Star"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/h2b24fef319c",
-0
-],
-[
-"v-unionpool-2026-11-05-darryl-rahn",
-"2026-11-05T19:00:00",
-[
-"Darryl Rahn",
-"Hannah Lee Thompson"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/k9a214f37c28",
-0
-],
-[
-"v-unionpool-2026-11-06-wilder-maker",
-"2026-11-06T19:00:00",
-[
-"Wilder Maker",
-"Scree",
-"Mutual Benefit",
-"DJ Katie Von Schleicher"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/zb3be8e64374",
-0
-],
-[
-"v-unionpool-2026-11-07-madra-salach",
-"2026-11-07T19:00:00",
-[
-"Madra Salach"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/U49137e244db",
-0
-],
-[
 "v-unionpool-2026-11-09-rev-vince-anderson-the-love-choir",
 "2026-11-09T20:30:00",
 [
@@ -3624,49 +3528,6 @@ null,
 null,
 "Tickets",
 "https://link.dice.fm/Gf1a72a85921",
-0
-],
-[
-"v-websterhall-2026-11-04-hovvdy",
-"2026-11-04",
-[
-"Hovvdy",
-"Christian Lee Hutson"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-11-06-this-is-lorelei",
-"2026-11-06",
-[
-"This Is Lorelei"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
-0
-],
-[
-"v-websterhall-2026-11-07-saosin",
-"2026-11-07",
-[
-"Saosin",
-"Silent Planet",
-"Like Moths To Flames",
-"Save Us"
-],
-"Webster Hall",
-[],
-null,
-"Tickets",
-"https://www.websterhall.com/events/detail",
 0
 ],
 [
