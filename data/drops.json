@@ -500,6 +500,21 @@
    "why": "Theme night, not a concert",
    "source": "scan review",
    "on": "2026-11-08"
+  },
+  "481997": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
+  },
+  "481996": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
+  },
+  "tm:k7vGF_p91iGVV": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
   }
  },
  "chi": {
@@ -632,6 +647,21 @@
    "why": "Not a concert (Jonah's review)",
    "source": "scan review",
    "on": "2026-11-04"
+  },
+  "482000": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
+  },
+  "tm:vv167Zk40ZaZA52e51": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
+  },
+  "tm:rZ7HnEZ1Af8JFV": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
   }
  },
  "la": {
@@ -929,6 +959,16 @@
    "why": "Not a concert (Jonah's review)",
    "source": "scan review",
    "on": "2026-11-04"
+  },
+  "481998": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
+  },
+  "481999": {
+   "why": "Not a concert (Jonah's review)",
+   "source": "scan review",
+   "on": "2026-11-09"
   }
  }
 }

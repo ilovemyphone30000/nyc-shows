@@ -2,13 +2,13 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-11-08",
+"Pier 17": "2026-11-09",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-11-08",
+"Webster Hall": "2026-11-09",
 "Nightclub 101": "2026-10-05",
-"Mercury Lounge": "2026-11-08",
-"Union Pool": "2026-11-08"
+"Mercury Lounge": "2026-11-09",
+"Union Pool": "2026-11-09"
 },
 "seenAt": {},
 "rows": [
@@ -272,33 +272,6 @@ null,
 null,
 "Tickets",
 "https://www.livenation.com/event/k7vGF_8MeNMlL/yll-limani-international-live-tour-2026-new-york",
-0
-],
-[
-"v-mercurylounge-2026-11-08-the-paradox",
-"2026-11-08T17:00:00",
-[
-"The Paradox",
-"Meet Me @ The Altar"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/the-paradox/",
-0
-],
-[
-"v-mercurylounge-2026-11-08-modern-alibi",
-"2026-11-08T20:00:00",
-[
-"Modern Alibi"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/modern-alibi/",
 0
 ],
 [

@@ -1,29 +1,15 @@
 {
 "scanned": {
-"Fonda Theatre": "2026-11-08",
-"The Ford": "2026-11-08",
-"The Greek Theatre": "2026-11-08",
-"Hollywood Bowl": "2026-11-08",
-"Hollywood Forever": "2026-11-08",
-"The Novo": "2026-11-08",
+"Fonda Theatre": "2026-11-09",
+"The Ford": "2026-11-09",
+"The Greek Theatre": "2026-11-09",
+"Hollywood Bowl": "2026-11-09",
+"Hollywood Forever": "2026-11-09",
+"The Novo": "2026-11-09",
 "Hollywood Palladium": "2026-10-05"
 },
 "seenAt": {},
 "rows": [
-[
-"v-fonda-2026-11-08-plini",
-"2026-11-08T18:00:00",
-[
-"Plini",
-"Night Verses & Portraits"
-],
-"Fonda Theatre",
-[],
-null,
-"Tickets",
-"https://www.fondatheatre.com/events/detail",
-0
-],
 [
 "v-fonda-2026-11-10-quadeca",
 "2026-11-10T19:00:00",
@@ -512,19 +498,6 @@ null,
 null,
 "Tickets",
 "https://www.fondatheatre.com/events/detail",
-0
-],
-[
-"v-hollywoodbowl-2026-11-08-ms-lauryn-hill-wyclef-jean",
-"2026-11-08T19:30:00",
-[
-"Ms. Lauryn Hill & Wyclef Jean"
-],
-"Hollywood Bowl",
-[],
-null,
-"Tickets",
-"https://www.hollywoodbowl.com/events/instances/7kc73t15/2026-11-08/ms-lauryn-hill-and-wyclef-jean-celebrating-30-years-of-fugees-the-score",
 0
 ],
 [
@@ -1344,19 +1317,6 @@ null,
 0
 ],
 [
-"v-novo-2026-11-08-kwn",
-"2026-11-08",
-[
-"KWN"
-],
-"The Novo",
-[],
-null,
-"Tickets",
-"https://www.thenovodtla.com/events/detail",
-0
-],
-[
 "v-novo-2026-11-12-lawrence",
 "2026-11-12",
 [
@@ -1641,6 +1601,19 @@ null,
 "2027-10-31",
 [
 "Nobuo Uematsu"
+],
+"The Novo",
+[],
+null,
+"Tickets",
+"https://www.thenovodtla.com/events/detail",
+0
+],
+[
+"v-novo-2027-11-01-krs-one",
+"2027-11-01",
+[
+"Krs‐one"
 ],
 "The Novo",
 [],
