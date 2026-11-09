@@ -1049,7 +1049,12 @@ document.querySelector(".tabs").addEventListener("click", e => {
     if (t.dataset.group === state.group) { annDir[state.group] = annDir[state.group] === "desc" ? "asc" : "desc"; store.set("annDir", annDir); }
     else { state.group = t.dataset.group; store.set("annGroup", state.group); }
   }
-  else { state.view = t.dataset.view; store.set("view2", state.view); }
+  else {
+    // Saved toggles: a second click goes back to the view you came from.
+    if (t.dataset.view === "saved" && state.view === "saved") state.view = store.get("viewBeforeSaved", "date");
+    else { if (t.dataset.view === "saved") store.set("viewBeforeSaved", state.view); state.view = t.dataset.view; }
+    store.set("view2", state.view);
+  }
   render();
 });
 document.querySelector(".bar").addEventListener("click", e => {
