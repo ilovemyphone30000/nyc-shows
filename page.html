@@ -106,7 +106,7 @@ button { font: inherit; color: inherit; }
 
 .bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-block: 1px solid var(--grey1); }
 .bar .wrap { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; padding-block: 10px; }
-.chips { display: flex; gap: 4px; flex: 1 1 100%; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }  /* two weeks of days: one row that scrolls sideways */
+.chips { display: flex; gap: 4px; flex: 1 1 100%; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }  /* a month of days: one row that scrolls sideways */
 .chips::-webkit-scrollbar { display: none; }
 .chip { flex: none; }
 @media (min-width: 900px) { .chips { flex-wrap: wrap; overflow: visible; } }  /* room for two rows; no sideways scrolling with a mouse */
@@ -267,7 +267,7 @@ body.compact { font-size: 12.5px; }
 <header class="mast">
   <div class="wrap">
     <nav class="pages label" id="pages" aria-label="Page">
-      <a href="#nyc" data-page="week">Next two weeks</a>
+      <a href="#nyc" data-page="week">Next month</a>
       <a href="#nyc/announced" data-page="new">Just announced<span class="new-count" id="newN"></span></a>
     </nav>
     <div class="checked label"><span class="dot"></span><span id="checked"></span><span class="byline">Jonah Bierman 2026</span></div>
@@ -315,7 +315,7 @@ body.compact { font-size: 12.5px; }
     <div class="xp-head"><h2 id="exportTitle">Export</h2><button class="xp-x" value="cancel" aria-label="Close">×</button></div>
     <fieldset><legend>Cities</legend><div class="xp-row" id="xpCities"></div></fieldset>
     <fieldset><legend>List</legend>
-      <div class="xp-row"><label><input type="radio" name="xpList" value="new"> Just Announced</label><label><input type="radio" name="xpList" value="week"> Upcoming Shows (next two weeks)</label></div>
+      <div class="xp-row"><label><input type="radio" name="xpList" value="new"> Just Announced</label><label><input type="radio" name="xpList" value="week"> Upcoming Shows (next month)</label></div>
     </fieldset>
     <fieldset id="xpSinceBox"><legend>Announced</legend>
       <div class="xp-row">
@@ -414,7 +414,7 @@ let shows = city.shows;
 const iso = d => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
 const now = new Date(); now.setHours(0, 0, 0, 0);
 const winStart = new Date(now);
-const winEnd = new Date(now); winEnd.setDate(now.getDate() + 14);
+const winEnd = new Date(now); winEnd.setDate(now.getDate() + 30);
 const FROM = iso(winStart) > DATA.week[0] ? iso(winStart) : DATA.week[0];
 const TO = iso(winEnd) < DATA.week[1] ? iso(winEnd) : DATA.week[1];
 const TODAY_ISO = iso(now);

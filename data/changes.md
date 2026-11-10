@@ -1,3 +1,80 @@
-## Changes since the last refresh (2026-11-09)
+## Changes since the last refresh (2026-11-10)
 
-No changes to the listings already on the page.
+### New York
+- **New:** 11-12 Juliana Huxtable + DREAMINSLOW, Sissies of Mercy @ Le Bain
+- **New:** 11-13 Beach Broads + Misuser, IQUAN @ Purgatory
+- **New:** 11-13 Pons + DJ Eugene Hutz (of Gogol Bordello), Kay Bon Tempo (of Puzzled Panther), Victiricitta (of Puzzled Panther) @ The Red Pavilion
+- **New:** 11-14 girlsweetvoiced @ Baby's All Right
+- **New:** 11-15 Danny Krivit @ Good Room
+- **New:** 11-16 Modern Cult + Weathergirl, Bowling Shoes @ Nightclub 101
+- **New:** 11-19 Oh Lordy + Dylan Fader Trio, Electricicle @ Alphaville
+- **New:** 11-20 Toribio @ Good Room
+- **New:** 11-20 Laurel Halo @ Nowadays
+- **New:** 11-21 VÉRITÉ @ The Makers' Space
+- **New:** 11-21 "Danger Boss" + Chronophage, Now @ Nightclub 101
+- **New:** 11-22 Keenan Te @ Mercury Lounge
+- **New:** 11-22 Season of What + High Time @ Le Poisson Rouge
+- **New:** 11-22 H2O + Raw Brigade @ Saint Vitus
+- **New:** 11-22 Suicide Silence + Emmure, AngelMaker, Synestia @ The Brooklyn Monarch
+- **New:** 11-22 6LACK @ Irving Plaza
+- **New:** 11-22 LCD Soundsystem + EXEK @ Knockdown Center
+- **New:** 11-22 The Minarets + Screamin' Rebel Angels, The Satan Mares, Jack Devine @ TV Eye
+- **New:** 11-22 Warmachine + Microgoblet, IQUAN, Wiring @ The Broadway
+- **New:** 11-22 Ghostbound + Believe in Ghost!, Sploot, Loser Protagonist @ The Gutter
+- **New:** 11-22 A$AP Ant @ The Sultan Room
+- **New:** 11-22 Real Young & Lazy Horse @ Union Pool
+- **New:** 11-22 Yaelokre + Ben Caplan @ Webster Hall
+- **New:** 11-22 Dethwish + Ludoh, Tilt @ Gold Sounds
+- **New:** 11-22 Drunks With Guns + Flesh Narc, Chaser, Eyes Have It @ Main Drag Music
+- **New:** 11-22 Rising Appalachia @ National Sawdust
+- **New:** 11-22 Steve Gunn + Bridget St. John @ Stone Circle Theatre
+- **New:** 11-22 Jamila Woods + Mayyadda, DJ Baby Jazz @ Music Hall of Williamsburg
+- **New:** 11-22 Henry Threadgill @ Roulette
+- **New:** 11-22 Keenan Te @ Mercury Lounge
+- **New:** 11-22 Tom of England + Timo Lee, Farley, Chittom @ Good Room
+- **Added to the bill:** Ben Hackett → 11-13 Surprise Chef @ National Sawdust
+- **Added to the bill:** Gatlin → 11-13 Giant Rooks @ Brooklyn Steel
+- **Added to the bill:** Ben Hackett → 11-13 Surprise Chef @ National Sawdust
+- **Added to the bill:** Zombi → 11-16 Sleep @ Irving Plaza
+- **Added to the bill:** Lefty Parker → 11-17 mary in the junkyard @ Baby's All Right
+- **Added to the bill:** Lefty Parker → 11-18 mary in the junkyard @ Baby's All Right
+- **Added to the bill:** Ok Cowgirl → 11-20 Francis of Delirium @ Baby's All Right
+- **Added to the bill:** Heaven Slight, Izzy Goldbow (DJ Set) → 11-21 A Good Year @ Baby's All Right
+- **Added to the bill:** Declan → 11-21 Resavoir @ Baby's All Right
+- **Added to the bill:** Reading → 11-22 Racecourse @ Baby's All Right
+
+### Los Angeles
+- **New:** 11-11 School Fair @ Oblivion
+- **New:** 11-15 Future + The Alchemist, Isaiah Rashad, Steve Lacy, Latin Mafia, Magdalena Bay, Not For Radio, Lupe Fiasco, Syd, NSQK, Thee Sacred Souls, Concrete Boys, Quadeca, 54 Ultra, Mike G, Gabriel Jacoby, nomi., Casey Veggies, 310babii, Nick Cheo @ Dodger Stadium
+- **Added to the bill:** Summer Joy → 11-10 Sienna Spiro @ The Wiltern
+- **Added to the bill:** Lola Blue → 11-10 Forrest Nolan @ Moroccan Lounge
+- **Added to the bill:** Rozie Ramati → 11-11 Swordes @ Moroccan Lounge
+- **Added to the bill:** Elysia Biro → 11-11 Stephen Day @ El Rey Theatre
+- **Added to the bill:** Sofia Kourtesis → 11-11 Bonobo @ The Wiltern
+- **Added to the bill:** Colloboh → 11-11 Green-House @ Zebulon
+- **Added to the bill:** Frankie Venter → 11-12 Keenan Te @ The Mint
+- **Added to the bill:** Joh Chase → 11-12 Kate Nash @ The Observatory
+- **Added to the bill:** Family Company, Lindsey Lomis → 11-12 Lawrence @ The Novo
+- **Added to the bill:** Dougie Poole → 11-13 Jake Xerxes Fussell @ Sid The Cat Auditorium
+- **Added to the bill:** Allie Paige → 11-13 Jervis Campbell @ Echoplex
+- **Added to the bill:** OkayJake, Cozy Kev → 11-13 Dennett @ El Rey Theatre
+- **Added to the bill:** Weston Loney → 11-13 Gene @ The Regent Theater
+- **Added to the bill:** Runner and Bobby → 11-13 Stop Light Observations @ The Peppermint Club
+- **Added to the bill:** Hillbilly Vegas → 11-13 Blue Oyster Cult @ Grove of Anaheim
+- **Added to the bill:** Jacob Jeffries, Oh He Dead → 11-13 Lawrence @ The Novo
+- **Added to the bill:** Miles Spilsbury → 11-13 Puma Blue @ The Glass House
+- **Added to the bill:** Hames → 11-13 Nodaway @ Permanent Records Roadhouse
+- **Added to the bill:** Position Nuit → 11-14 The Courettes @ Gold-Diggers
+- **Added to the bill:** MIKE, Leon Thomas, Wallows, J.I.D., Lola Young, Domo Genesis, Audrey Nuna, AMA, Left Brain, Natanya, GENA, Wyatt Waddell, Liim, Sasha Marie → 11-14 Turnstile @ Dodger Stadium
+- **Added to the bill:** Patch+ → 11-14 Suzy Sheer @ 1720
+- **Added to the bill:** Wesley Joseph → 11-14 Jorja Smith @ Orpheum Theatre
+- **Added to the bill:** Conrad → 11-14 Jai Wolf @ The Bellwether
+- **Added to the bill:** Rozzi, Still Grounded → 11-14 Lawrence @ The Novo
+- **Added to the bill:** Katzu Oso → 11-14 Francisca Valenzuela @ The Roxy
+- **Added to the bill:** Kelcey Ayer → 11-14 Other Lives @ Teragram Ballroom
+- **Added to the bill:** Meldrop → 11-14 The Hails @ Echoplex
+- **Added to the bill:** Breezers → 11-15 Michael Nau @ Zebulon
+- **Added to the bill:** Harber Wynn → 11-15 Lissie @ The Venice West
+- **Added to the bill:** PIAO, bluhour → 11-15 Mad Tsai @ The Roxy
+- **Added to the bill:** Marinelli → 11-15 Young Friend @ The Echo
+

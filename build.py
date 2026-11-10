@@ -285,7 +285,7 @@ subprocess.run([
     "npx", "--no-install", "staticrypt", "plain/index.html", "-d", ".", "--short", "--remember", "30",
     "-p", password,
     "--template-title", "Shows",
-    "--template-instructions", "Enter the password to see this week's shows.",
+    "--template-instructions", "Enter the password to see the shows.",
     "--template-button", "Open",
     "--template-placeholder", "Password",
     "--template-remember", "Remember me for 30 days",

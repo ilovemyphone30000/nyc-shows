@@ -142,7 +142,7 @@ with sync_playwright() as p:
         page.click('#pages a[data-page="week"]')
         check("cap slider is on the week page too", page.locator("#capBox").is_visible())
         page.click("#exportBtn")
-        check("export on the two-week page defaults to that list", page.is_checked('input[name="xpList"][value="week"]') and page.locator("#xpSinceBox").is_hidden())
+        check("export on the month page defaults to that list", page.is_checked('input[name="xpList"][value="week"]') and page.locator("#xpSinceBox").is_hidden())
         page.keyboard.press("Escape")
         check("back to This week", page.inner_text("#range") != "Just announced" and rows(page) > 50)
 

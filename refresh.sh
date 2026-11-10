@@ -1,14 +1,14 @@
 #!/bin/bash
-# Refresh every city for today through two weeks ahead, rebuild, test, and publish.
+# Refresh every city for today through a month (30 days) ahead, rebuild, test, and publish.
 #   ./refresh.sh            scrape, process, merge clients, build, check, push
 #   ./refresh.sh --no-push  everything but the push (for a look first)
 # Runs locally, or by hand on GitHub Actions (.github/workflows/refresh.yml); no schedule.
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# Today through two weeks ahead (python: works the same on macOS and GitHub's Linux runners).
+# Today through 30 days ahead (python: works the same on macOS and GitHub's Linux runners).
 FROM=$(python3 -c 'import datetime as d; print(d.date.today())')
-TO=$(python3 -c 'import datetime as d; print(d.date.today() + d.timedelta(days=14))')
+TO=$(python3 -c 'import datetime as d; print(d.date.today() + d.timedelta(days=30))')
 PY=${PY:-.venv/bin/python}
 echo "== window $FROM .. $TO"
 

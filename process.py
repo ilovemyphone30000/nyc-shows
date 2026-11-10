@@ -6,9 +6,9 @@ Raw row: [id, iso_datetime, [acts], venue, extra, age, ticket_label, ticket_url,
 """
 import datetime, json, os, re, sys
 
-# Today through two weeks ahead. The page narrows this again by the viewer's own date.
+# Today through a month (30 days) ahead. The page narrows this again by the viewer's own date.
 TODAY = datetime.date.today()
-WEEK = [str(TODAY), str(TODAY + datetime.timedelta(days=14))]
+WEEK = [str(TODAY), str(TODAY + datetime.timedelta(days=30))]
 
 RENAME = {
     "(Le) Poisson Rouge": "Le Poisson Rouge", "TV EYE": "TV Eye", "ALPHAVILLE": "Alphaville",
@@ -16,7 +16,7 @@ RENAME = {
     "Lincoln Center - David Geffen Hall": "David Geffen Hall",
     "Footlight Underground at The Windjammer": "Footlight Underground",
 }
-OUT_OF_CITY = {"Mayo Performing Arts", "Bearsville Theater", "Starland Ballroom", "PNC Bank Arts Center", "Stone Pony",
+OUT_OF_CITY = {"The Capitol Theatre", "Mayo Performing Arts", "Bearsville Theater", "Starland Ballroom", "PNC Bank Arts Center", "Stone Pony",
                "The Wellmont Theater", "Crossroads", "MetLife Stadium", "The Paramount",
                # Long Island, New Jersey and upstate rooms OMR lists
                "Massapequa VFW Hall", "Amityville Music Hall", "The Count Basie Center for the Arts",
@@ -27,7 +27,7 @@ NOT_BOOKABLE = {"Strand Bookstore", "Columbia University", "Tompkins Square Park
                 "Robert F. Wagner Jr. Park", "Co-Cathedral of Saint Joseph", "St. Francis Xavier Church",
                 "St. Bartholomew's Church", "New York Society for Ethical Culture"}
 # Comedy, musical comedy and spoken word that share music calendars.
-DROP_ACTS = {"james acaster", "michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
+DROP_ACTS = {"suzanne vega (in conversation)", "james acaster", "michelle buteau", "the moth storyslam", "phoebe robinson", "starbomb",
              "olivia harrison",  # in conversation with Martin Scorsese at BAM
              "iliza shlesinger", "susan orlean", "jerry seinfeld",
              "comedy bang! bang! live!",
@@ -38,19 +38,19 @@ CITY = {
     "nyc": {"rename": None, "out": None, "acts": None},
     "chi": {"rename": {}, "out": set(), "acts": {"kyle gordon", "iliza shlesinger", "jerry seinfeld"}},
     "la": {"rename": {"Amoeba Music- Hollywood": "Amoeba Music Hollywood"},
-           "out": {"Pappy & Harriet's", "Petco Park San Diego"}, "acts": {"dynasty handbag", "patty schemel (panelist)", "carmen christopher"}},
+           "out": {"Pappy & Harriet's", "Petco Park San Diego"}, "acts": {"john waters (christmas)", "dynasty handbag", "patty schemel (panelist)", "carmen christopher"}},
 }
 
 MN, BK, QN = "Manhattan", "Brooklyn", "Queens"
 BOROUGH = {
-    MN: ["Florence Gould Hall", "Guggenheim Museum", "Washington Square Park", "Bleecker Bell", "Bowery Ballroom", "Central Park Naumburg Bandshell", "Irving Plaza", "Le Poisson Rouge",
+    MN: ["Le Bain", "The Bitter End", "Florence Gould Hall", "Guggenheim Museum", "Washington Square Park", "Bleecker Bell", "Bowery Ballroom", "Central Park Naumburg Bandshell", "Irving Plaza", "Le Poisson Rouge",
          "Mercury Lounge", "Nightclub 101", "Webster Hall", "Beacon Theatre", "Cafe Wha?", "Carnegie Hall",
          "Gramercy Theatre", "Madison Square Garden", "Radio City Music Hall", "Terminal 5", "Pier 17",
          "Bowery Palace", "Central Park SummerStage", "Sony Hall", "Apollo Theater", "DROM",
          "David Geffen Hall", "Pianos", "Cooper Union", "Metropolitan Museum of Art", "The Greene Space",
          "Silver Lining Lounge", "Pacha New York", "Berlin", "Racket", "Rough Trade NYC", "Town Hall",
          "92NY", "Arlene's Grocery", "Blue Note", "Hammerstein Ballroom", "Joe's Pub", "KGB Bar", "Limited to One Records", "Lucinda's", "Nublu", "Nublu 151", "Otto's Shrunken Head", "Palladium Times Square", "Soho Live", "The Metropolitan Pavilion", "The Stone", "Whitney Museum"],
-    BK: ["Duggal Greenhouse - Brooklyn Navy Yard", "Greenpoint Comedy Club", "telos.haus", "East Williamsburg Econo Lodge", "Lucky 13 Saloon", "Paragon", "Elsewhere", "Music Hall of Williamsburg", "Pioneer Works", "Public Records", "Sleepwalk",
+    BK: ["First Unitarian Congregational Society", "Signal", "The Red Pavilion", "Duggal Greenhouse - Brooklyn Navy Yard", "Greenpoint Comedy Club", "telos.haus", "East Williamsburg Econo Lodge", "Lucky 13 Saloon", "Paragon", "Elsewhere", "Music Hall of Williamsburg", "Pioneer Works", "Public Records", "Sleepwalk",
          "Cassette", "Brooklyn Paramount", "Barclays Center", "The Bell House", "The Meadows",
          "The Sultan Room", "Union Pool", "Baby's All Right", "Warsaw", "Brooklyn Steel", "Brooklyn Bowl",
          "Gold Sounds", "Alphaville", "Main Drag Music", "Saint Vitus", "Industry City", "Park Slope",
@@ -59,7 +59,7 @@ BOROUGH = {
          "Xanadu", "St. Ann & The Holy Trinity", "Roulette", "Good Room", "Purgatory",
          "BAM: Brooklyn Academy of Music",
          "148 Frost Street", "20 Meadow St", "314 Scholes", "C'mon Everybody", "Jalopy Theater", "Kings Theatre", "Los Depressos", "Old First Church", "Pete's Candy Store", "SILO Brooklyn", "St. John's Lutheran Church", "The Brooklyn Monarch", "Wonderville", "Young Ethel's"],
-    QN: ["MoMA PS1", "H0L0", "TV Eye", "Knockdown Center", "Trans-Pecos", "Stone Circle Theatre", "Flushing Meadows-Corona Park",
+    QN: ["Nowadays", "MoMA PS1", "H0L0", "TV Eye", "Knockdown Center", "Trans-Pecos", "Stone Circle Theatre", "Flushing Meadows-Corona Park",
          "Forest Hills Stadium", "Bar Freda", "Footlight Underground",
          "Dada"],
 }

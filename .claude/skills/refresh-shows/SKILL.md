@@ -63,7 +63,7 @@ shows with no support, support added, status flags, and every room with its size
 
 ## 1c. Export (on the page)
 
-Both pages have an **Export** button (list: Just announced or Next two weeks): cities, announced window (24h / 3 / 7 / 14 / 30 days or
+Both pages have an **Export** button (list: Just announced or Next month): cities, announced window (24h / 3 / 7 / 14 / 30 days or
 since a date), optional show-date range, the page's own filters (cap slider, THE·TEAM only, no
 support, search), a "Favorite venues only" box, "No support only", a capacity range, columns (announced, show date with day and time, headliner, support, venue, city, cap, age, THE·TEAM acts, tickets) and sort, then **Copy text** (venue headings,
 `* [Artist](tickets) – Tue 9/29`), **Download CSV** (headliners as HYPERLINK cells) or **Save PDF**

@@ -2,13 +2,13 @@
 "scanned": {
 "Beacon Theatre": "2026-10-05",
 "Hammerstein Ballroom": "2026-10-05",
-"Pier 17": "2026-11-09",
+"Pier 17": "2026-11-10",
 "Radio City Music Hall": "2026-10-05",
 "Terminal 5": "2026-10-05",
-"Webster Hall": "2026-11-09",
+"Webster Hall": "2026-11-10",
 "Nightclub 101": "2026-10-05",
-"Mercury Lounge": "2026-11-09",
-"Union Pool": "2026-11-09"
+"Mercury Lounge": "2026-11-10",
+"Union Pool": "2026-11-10"
 },
 "seenAt": {},
 "rows": [
@@ -272,34 +272,6 @@ null,
 null,
 "Tickets",
 "https://www.livenation.com/event/k7vGF_8MeNMlL/yll-limani-international-live-tour-2026-new-york",
-0
-],
-[
-"v-mercurylounge-2026-11-09-the-paradox",
-"2026-11-09T18:00:00",
-[
-"The Paradox",
-"Meet Me @ The Altar"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/the-paradox-2/",
-0
-],
-[
-"v-mercurylounge-2026-11-09-connor-sobieri",
-"2026-11-09T21:00:00",
-[
-"Connor Sobieri",
-"Dylan K. Smith"
-],
-"Mercury Lounge",
-[],
-null,
-"Tickets",
-"https://mercuryeastpresents.com/tm-event/connor-sobieri/",
 0
 ],
 [
@@ -648,7 +620,8 @@ null,
 "v-mercurylounge-2026-11-23-annalise-the-mother-underground",
 "2026-11-23T21:00:00",
 [
-"Annalise & The Mother Underground"
+"Annalise & The Mother Underground",
+"Roisin McKeown"
 ],
 "Mercury Lounge",
 [],
@@ -750,7 +723,8 @@ null,
 "v-mercurylounge-2026-11-29-p-h-0",
 "2026-11-29T20:00:00",
 [
-"P.H.0"
+"P.H.0",
+"Ultra Deluxe"
 ],
 "Mercury Lounge",
 [],
@@ -948,7 +922,8 @@ null,
 "v-mercurylounge-2026-12-08-jess-yaffa",
 "2026-12-08T21:00:00",
 [
-"Jess Yaffa"
+"Jess Yaffa",
+"Izzy MacArthur"
 ],
 "Mercury Lounge",
 [],
@@ -1063,16 +1038,30 @@ null,
 0
 ],
 [
-"v-mercurylounge-2026-12-16-chris-simpson",
-"2026-12-16T18:00:00",
+"v-mercurylounge-2026-12-15-james-bruner-sons-of-silver",
+"2026-12-15T18:00:00",
 [
-"Chris Simpson"
+"James Bruner & Sons of Silver",
+"Sons of Silver"
 ],
 "Mercury Lounge",
 [],
 null,
 "Tickets",
-"https://mercuryeastpresents.com/tm-event/chris-simpson-of-mineral/",
+"https://mercuryeastpresents.com/tm-event/james-bruner-sons-of-silver/",
+0
+],
+[
+"v-mercurylounge-2026-12-16-hailo",
+"2026-12-16T21:00:00",
+[
+"hailo"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/hailo/",
 0
 ],
 [
@@ -1149,6 +1138,19 @@ null,
 0
 ],
 [
+"v-mercurylounge-2026-12-22-kiss-me-under-the-streetlamp",
+"2026-12-22T21:00:00",
+[
+"Kiss Me Under The Streetlamp"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/kiss-me-under-the-streetlamp-the-streetlamp/",
+0
+],
+[
 "v-mercurylounge-2026-12-26-big-shrimp",
 "2026-12-26T21:00:00",
 [
@@ -1175,6 +1177,19 @@ null,
 null,
 "Tickets",
 "https://mercuryeastpresents.com/tm-event/two-headed-girl-sky-castles-at-risk-desk-job/",
+0
+],
+[
+"v-mercurylounge-2027-01-08-alan-vuong",
+"2027-01-08T18:00:00",
+[
+"Alan Vuong"
+],
+"Mercury Lounge",
+[],
+null,
+"Tickets",
+"https://mercuryeastpresents.com/tm-event/alan-vuong/",
 0
 ],
 [
@@ -3091,19 +3106,6 @@ null,
 null,
 "Tickets",
 "https://www.ticketmaster.com/event/Z7r9jZ1AAvt4k",
-0
-],
-[
-"v-unionpool-2026-11-09-rev-vince-anderson-the-love-choir",
-"2026-11-09T20:30:00",
-[
-"Rev. Vince Anderson & The Love Choir!"
-],
-"Union Pool",
-[],
-null,
-"Tickets",
-"https://link.dice.fm/Rc5b7c416c5b",
 0
 ],
 [

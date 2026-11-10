@@ -147,10 +147,10 @@ for key, name in CITIES:
 <h3>Recently announced on Ticketmaster <span class=n>{len(fresh)}</span></h3>
 <p class=note>On sale (or presale) in the last 7 days, or not on sale yet. Times {TZ_NOTE[key]}. "On our site" says whether the dashboard already has the show.</p>
 {table(["Show date", "Bill", "Venue", "Size", "Price", "On sale", "Presale", "On our site"], rows1, "None this week.")}
-<h3>On Ticketmaster in our two-week window, missing from our list <span class=n>{len(runs)}</span></h3>
+<h3>On Ticketmaster in our one-month window, missing from our list <span class=n>{len(runs)}</span></h3>
 <p class=note>Concerts in the city through {day(two_weeks)}, the end of the list's current window, that neither Oh My Rockness nor the venue calendars gave us. A run of nights at one room is one row.</p>
 {table(["Date", "Bill", "Venue", "Size", "Price", ""], rows2, "Nothing missing.")}
-<h3>Our two-week shows with no support <span class=n>{len(nosup)}</span></h3>
+<h3>Our next-month shows with no support <span class=n>{len(nosup)}</span></h3>
 {table(["Date", "Headliner", "Venue", "Ticketmaster"], rows3, "Every show lists support.")}
 <h3>Support Ticketmaster added <span class=n>{len(added)}</span></h3>
 <p class=note>Acts on the Ticketmaster listing that Oh My Rockness left off; now shown on the dashboard.</p>
