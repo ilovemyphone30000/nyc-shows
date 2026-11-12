@@ -221,7 +221,9 @@ for key, name in CITIES:
     fixes = json.load(open("data/corrections.json")).get(key, {}) if os.path.exists("data/corrections.json") else {}
     for show in d["shows"] + announced:  # hand fixes win over every source (data/corrections.json)
         for k, v in fixes.get(show["id"], {}).items():
-            if k == "support":  # merged: a source may add acts after the fix was made
+            if k == "support" and fixes[show["id"]].get("replace"):  # the whole bill, as given
+                show[k] = list(v)
+            elif k == "support":  # merged: a source may add acts after the fix was made
                 show[k] = list(dict.fromkeys([*show.get("support", []), *v]))
             elif k in ("headliner", "venue", "date", "time", "ticketUrl", "age"):
                 show[k] = v
